@@ -1,0 +1,739 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>13. Equity Research (Part 1) - Varsity mdBook</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><div><strong aria-hidden="true">1.</strong> Introduction to Stock Markets</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/1.html"><strong aria-hidden="true">1.1.</strong> 1. The Need to Invest</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/2.html"><strong aria-hidden="true">1.2.</strong> 2. Regulators</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/3.html"><strong aria-hidden="true">1.3.</strong> 3. Financial Intermediaries</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/4.html"><strong aria-hidden="true">1.4.</strong> 4. The IPO Markets – Part 1</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/5.html"><strong aria-hidden="true">1.5.</strong> 5. The IPO Markets – Part 2</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/6.html"><strong aria-hidden="true">1.6.</strong> 6. The Stock Markets</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/7.html"><strong aria-hidden="true">1.7.</strong> 7. The Stock Markets Index</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/8.html"><strong aria-hidden="true">1.8.</strong> 8. Commonly Used Jargons</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/9.html"><strong aria-hidden="true">1.9.</strong> 9. The Trading Terminal</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/10.html"><strong aria-hidden="true">1.10.</strong> 10. Clearing and Settlement Process</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/11.html"><strong aria-hidden="true">1.11.</strong> 11. Five Corporate Actions and Its Impact on Stock Prices</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/12.html"><strong aria-hidden="true">1.12.</strong> 12. Key Events and Their Impact on Markets</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/13.html"><strong aria-hidden="true">1.13.</strong> 13. Getting started!</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/14.html"><strong aria-hidden="true">1.14.</strong> 14. Supplementary note – Rights, OFS, FPO</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/15.html"><strong aria-hidden="true">1.15.</strong> 15. Supplementary note – The 20 market depth or level 3 data</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Technical Analysis</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/1.html"><strong aria-hidden="true">2.1.</strong> 1. Background</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/2.html"><strong aria-hidden="true">2.2.</strong> 2. Introducing Technical Analysis</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/3.html"><strong aria-hidden="true">2.3.</strong> 3. The Chart Types</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/4.html"><strong aria-hidden="true">2.4.</strong> 4. Getting Started with Candlesticks</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/5.html"><strong aria-hidden="true">2.5.</strong> 5. Single Candlestick patterns (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/6.html"><strong aria-hidden="true">2.6.</strong> 6. Single Candlestick patterns (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/7.html"><strong aria-hidden="true">2.7.</strong> 7. Single Candlestick patterns (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/8.html"><strong aria-hidden="true">2.8.</strong> 8. Multiple candlestick patterns (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/9.html"><strong aria-hidden="true">2.9.</strong> 9. Multiple Candlestick Patterns (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/10.html"><strong aria-hidden="true">2.10.</strong> 10. Multiple Candlestick Patterns (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/11.html"><strong aria-hidden="true">2.11.</strong> 11. The Support and Resistance</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/12.html"><strong aria-hidden="true">2.12.</strong> 12. Volumes</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/13.html"><strong aria-hidden="true">2.13.</strong> 13. Moving Averages</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/14.html"><strong aria-hidden="true">2.14.</strong> 14. Indicators (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/15.html"><strong aria-hidden="true">2.15.</strong> 15. Indicators (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/16.html"><strong aria-hidden="true">2.16.</strong> 16. The Fibonacci Retracements</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/17.html"><strong aria-hidden="true">2.17.</strong> 17. The Dow Theory (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/18.html"><strong aria-hidden="true">2.18.</strong> 18. The Dow Theory (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/19.html"><strong aria-hidden="true">2.19.</strong> 19. The Finale – Helping you get started</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/20.html"><strong aria-hidden="true">2.20.</strong> 20. Other indicators</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/21.html"><strong aria-hidden="true">2.21.</strong> 21. Interesting features on TradingView</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/22.html"><strong aria-hidden="true">2.22.</strong> 22. The Central Pivot Range</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Fundamental Analysis</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/1.html"><strong aria-hidden="true">3.1.</strong> 1. Introduction to Fundamental Analysis</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/2.html"><strong aria-hidden="true">3.2.</strong> 2. Mindset of an Investor</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/3.html"><strong aria-hidden="true">3.3.</strong> 3. How to Read the Annual Report of a Company</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/4.html"><strong aria-hidden="true">3.4.</strong> 4. Understanding the P&L Statement (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/5.html"><strong aria-hidden="true">3.5.</strong> 5. Understanding P&L Statement (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/6.html"><strong aria-hidden="true">3.6.</strong> 6. Understanding Balance Sheet Statement (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/7.html"><strong aria-hidden="true">3.7.</strong> 7. Understanding the Balance Sheet Statement (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/8.html"><strong aria-hidden="true">3.8.</strong> 8. The Cash Flow statement</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/9.html"><strong aria-hidden="true">3.9.</strong> 9. The Financial Ratio Analysis (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/10.html"><strong aria-hidden="true">3.10.</strong> 10. The Financial Ratio Analysis (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/11.html"><strong aria-hidden="true">3.11.</strong> 11. The Financial Ratio Analysis (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/12.html"><strong aria-hidden="true">3.12.</strong> 12. The Investment Due Diligence</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/13.html" class="active"><strong aria-hidden="true">3.13.</strong> 13. Equity Research (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/14.html"><strong aria-hidden="true">3.14.</strong> 14. DCF Primer</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/15.html"><strong aria-hidden="true">3.15.</strong> 15. Equity Research (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/16.html"><strong aria-hidden="true">3.16.</strong> 16. The Finale</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Futures Trading</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/1.html"><strong aria-hidden="true">4.1.</strong> 1. Background – Forwards Market</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/2.html"><strong aria-hidden="true">4.2.</strong> 2. Introducing Futures Contract</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/3.html"><strong aria-hidden="true">4.3.</strong> 3. The Futures Trade</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/4.html"><strong aria-hidden="true">4.4.</strong> 4. Leverage & Payoff</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/5.html"><strong aria-hidden="true">4.5.</strong> 5. Margin & M2M</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/6.html"><strong aria-hidden="true">4.6.</strong> 6. Margin Calculator (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/7.html"><strong aria-hidden="true">4.7.</strong> 7. Margin Calculator (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/8.html"><strong aria-hidden="true">4.8.</strong> 8. All about Shorting</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/9.html"><strong aria-hidden="true">4.9.</strong> 9. The Nifty Futures</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/10.html"><strong aria-hidden="true">4.10.</strong> 10. The Futures Pricing</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/11.html"><strong aria-hidden="true">4.11.</strong> 11. Hedging with Futures</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/12.html"><strong aria-hidden="true">4.12.</strong> 12. Open Interest</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/13.html"><strong aria-hidden="true">4.13.</strong> 13. Quick Note on Physical Settlement</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> Options Theory for Professional Trading</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/1.html"><strong aria-hidden="true">5.1.</strong> 1. Call Option Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/2.html"><strong aria-hidden="true">5.2.</strong> 2. Basic Option Jargons</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/3.html"><strong aria-hidden="true">5.3.</strong> 3. Buying a Call Option</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/4.html"><strong aria-hidden="true">5.4.</strong> 4. Selling/Writing a Call Option</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/5.html"><strong aria-hidden="true">5.5.</strong> 5. The Put Option Buying</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/6.html"><strong aria-hidden="true">5.6.</strong> 6. The Put Option selling</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/7.html"><strong aria-hidden="true">5.7.</strong> 7. Summarizing Call & Put Options</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/8.html"><strong aria-hidden="true">5.8.</strong> 8. Moneyness of an Option Contract</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/9.html"><strong aria-hidden="true">5.9.</strong> 9. The Option Greeks (Delta) Part 1</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/10.html"><strong aria-hidden="true">5.10.</strong> 10. Delta (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/11.html"><strong aria-hidden="true">5.11.</strong> 11. Delta (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/12.html"><strong aria-hidden="true">5.12.</strong> 12. Gamma (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/13.html"><strong aria-hidden="true">5.13.</strong> 13. Gamma (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/14.html"><strong aria-hidden="true">5.14.</strong> 14. Theta</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/15.html"><strong aria-hidden="true">5.15.</strong> 15. Volatility Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/16.html"><strong aria-hidden="true">5.16.</strong> 16. Volatility Calculation (Historical)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/17.html"><strong aria-hidden="true">5.17.</strong> 17. Volatility & Normal Distribution</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/18.html"><strong aria-hidden="true">5.18.</strong> 18. Volatility Applications</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/19.html"><strong aria-hidden="true">5.19.</strong> 19. Vega</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/20.html"><strong aria-hidden="true">5.20.</strong> 20. Greek Interactions</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/21.html"><strong aria-hidden="true">5.21.</strong> 21. Greek Calculator</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/22.html"><strong aria-hidden="true">5.22.</strong> 22. Re-introducing Call & Put Options</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/23.html"><strong aria-hidden="true">5.23.</strong> 23. Case studies – wrapping it all up!</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/24.html"><strong aria-hidden="true">5.24.</strong> 24. Quick note on Physical Settlement</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/25.html"><strong aria-hidden="true">5.25.</strong> 25. Options M2M and P&L calculation</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> Option Strategies</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/1.html"><strong aria-hidden="true">6.1.</strong> 1. Orientation</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/2.html"><strong aria-hidden="true">6.2.</strong> 2. Bull Call Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/3.html"><strong aria-hidden="true">6.3.</strong> 3. Bull Put Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/4.html"><strong aria-hidden="true">6.4.</strong> 4. Call Ratio Back Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/5.html"><strong aria-hidden="true">6.5.</strong> 5. Bear Call Ladder</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/6.html"><strong aria-hidden="true">6.6.</strong> 6. Synthetic Long & Arbitrage</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/7.html"><strong aria-hidden="true">6.7.</strong> 7. Bear Put Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/8.html"><strong aria-hidden="true">6.8.</strong> 8. Bear Call Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/9.html"><strong aria-hidden="true">6.9.</strong> 9. Put Ratio Back spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/10.html"><strong aria-hidden="true">6.10.</strong> 10. The Long Straddle</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/11.html"><strong aria-hidden="true">6.11.</strong> 11. The Short Straddle</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/12.html"><strong aria-hidden="true">6.12.</strong> 12. The Long & Short Strangle</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/13.html"><strong aria-hidden="true">6.13.</strong> 13. Max Pain & PCR Ratio</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/14.html"><strong aria-hidden="true">6.14.</strong> 14. Iron Condor</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> Markets and Taxation</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/1.html"><strong aria-hidden="true">7.1.</strong> 1. Introduction (Setting the Context)</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/2.html"><strong aria-hidden="true">7.2.</strong> 2. Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/3.html"><strong aria-hidden="true">7.3.</strong> 3. Classifying Your Market Activity</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/4.html"><strong aria-hidden="true">7.4.</strong> 4. Taxation for Investors</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/5.html"><strong aria-hidden="true">7.5.</strong> 5. Taxation for Traders</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/6.html"><strong aria-hidden="true">7.6.</strong> 6. Turnover, Balance Sheet, and P&L</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/7.html"><strong aria-hidden="true">7.7.</strong> 7. ITR Forms (The Finale)</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> Currency, Commodity, and Government Securities</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/1.html"><strong aria-hidden="true">8.1.</strong> 1. Currency Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/2.html"><strong aria-hidden="true">8.2.</strong> 2. Reference Rates & Impact of events</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/3.html"><strong aria-hidden="true">8.3.</strong> 3. Impact of events (Brexit) & Interest Rate Parity</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/4.html"><strong aria-hidden="true">8.4.</strong> 4. The USD INR Pair (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/5.html"><strong aria-hidden="true">8.5.</strong> 5. The USD INR Pair (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/6.html"><strong aria-hidden="true">8.6.</strong> 6. EUR, GBP, and JPY</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/7.html"><strong aria-hidden="true">8.7.</strong> 7. Gold (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/8.html"><strong aria-hidden="true">8.8.</strong> 8. Gold (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/9.html"><strong aria-hidden="true">8.9.</strong> 9. Silver</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/10.html"><strong aria-hidden="true">8.10.</strong> 10. Crude Oil (Part 1), digging the past</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/11.html"><strong aria-hidden="true">8.11.</strong> 11. Crude Oil (Part 2), the crude oil eco system</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/12.html"><strong aria-hidden="true">8.12.</strong> 12. Crude Oil (Part 3), the crude oil contract</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/13.html"><strong aria-hidden="true">8.13.</strong> 13. Copper & Aluminium</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/14.html"><strong aria-hidden="true">8.14.</strong> 14. Lead & Nickel</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/15.html"><strong aria-hidden="true">8.15.</strong> 15. Cardamom & Mentha Oil</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/16.html"><strong aria-hidden="true">8.16.</strong> 16. Natural Gas</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/17.html"><strong aria-hidden="true">8.17.</strong> 17. Commodity Options</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/18.html"><strong aria-hidden="true">8.18.</strong> 18. Cross Currency Pairs</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/19.html"><strong aria-hidden="true">8.19.</strong> 19. Government Securities</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.</strong> Risk Management & Trading Psychology</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/1.html"><strong aria-hidden="true">9.1.</strong> 1. Orientation note</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/2.html"><strong aria-hidden="true">9.2.</strong> 2. Risk (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/3.html"><strong aria-hidden="true">9.3.</strong> 3. Risk (Part 2) – Variance & Covariance</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/4.html"><strong aria-hidden="true">9.4.</strong> 4. Risk (Part 3) – Variance & Covariance Matrix</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/5.html"><strong aria-hidden="true">9.5.</strong> 5. Risk (Part 4) – Correlation Matrix & Portfolio Variance</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/6.html"><strong aria-hidden="true">9.6.</strong> 6. Equity Curve</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/7.html"><strong aria-hidden="true">9.7.</strong> 7. Expected Returns</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/8.html"><strong aria-hidden="true">9.8.</strong> 8. Portfolio Optimization (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/9.html"><strong aria-hidden="true">9.9.</strong> 9. Portfolio Optimization (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/10.html"><strong aria-hidden="true">9.10.</strong> 10. Value at Risk</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/11.html"><strong aria-hidden="true">9.11.</strong> 11. Position Sizing for active trader</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/12.html"><strong aria-hidden="true">9.12.</strong> 12. Position Sizing for active traders (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/13.html"><strong aria-hidden="true">9.13.</strong> 13. Position Sizing for active traders (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/14.html"><strong aria-hidden="true">9.14.</strong> 14. Kelly’s Criterion</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/15.html"><strong aria-hidden="true">9.15.</strong> 15. Trading Biases</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/16.html"><strong aria-hidden="true">9.16.</strong> 16. Trading Biases (Part 2)</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">10.</strong> Trading Systems</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/1.html"><strong aria-hidden="true">10.1.</strong> 1. What to expect?</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/2.html"><strong aria-hidden="true">10.2.</strong> 2. Pair Trading logic</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/3.html"><strong aria-hidden="true">10.3.</strong> 3. Pair Trading, Method 1, Chapter 1 (PTM1, C1) -Tracking Pairs</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/4.html"><strong aria-hidden="true">10.4.</strong> 4. PTM1, C2 – Pair stats</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/5.html"><strong aria-hidden="true">10.5.</strong> 5. PTM1, C3 – Pre trade setup</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/6.html"><strong aria-hidden="true">10.6.</strong> 6. PTM1, C4 – The Density Curve</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/7.html"><strong aria-hidden="true">10.7.</strong> 7. PTM1,C5 – The Pair Trade</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/8.html"><strong aria-hidden="true">10.8.</strong> 8. Pair trade Method 2, Chapter 1 (PTM2, C1) – Straight line Equation</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/9.html"><strong aria-hidden="true">10.9.</strong> 9. PTM2, C2 – Linear Regression</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/10.html"><strong aria-hidden="true">10.10.</strong> 10. PTM2, C3 – The Error Ratio</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/11.html"><strong aria-hidden="true">10.11.</strong> 11. PTM2, C4 – The ADF test</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/12.html"><strong aria-hidden="true">10.12.</strong> 12. Trade Identification</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/13.html"><strong aria-hidden="true">10.13.</strong> 13. Live Example -1</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/14.html"><strong aria-hidden="true">10.14.</strong> 14. Live Example – 2</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/15.html"><strong aria-hidden="true">10.15.</strong> 15. Calendar Spreads</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/16.html"><strong aria-hidden="true">10.16.</strong> 16. Momentum Portfolios</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">11.</strong> Personal Finance - Mutual Funds</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/1.html"><strong aria-hidden="true">11.1.</strong> 1. Background and Orientation</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/2.html"><strong aria-hidden="true">11.2.</strong> 2. Personal Finance Math (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/3.html"><strong aria-hidden="true">11.3.</strong> 3. Personal Finance Math (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/4.html"><strong aria-hidden="true">11.4.</strong> 4. The retirement problem (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/5.html"><strong aria-hidden="true">11.5.</strong> 5. The retirement problem (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/6.html"><strong aria-hidden="true">11.6.</strong> 6. Introduction to Mutual Funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/7.html"><strong aria-hidden="true">11.7.</strong> 7. Concept of fund & NAV</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/8.html"><strong aria-hidden="true">11.8.</strong> 8. The mutual fund fact-sheet</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/9.html"><strong aria-hidden="true">11.9.</strong> 9. The Equity scheme (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/10.html"><strong aria-hidden="true">11.10.</strong> 10. Equity Scheme (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/11.html"><strong aria-hidden="true">11.11.</strong> 11. The Debt funds (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/12.html"><strong aria-hidden="true">11.12.</strong> 12. The Debt funds (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/13.html"><strong aria-hidden="true">11.13.</strong> 13. The Debt funds (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/14.html"><strong aria-hidden="true">11.14.</strong> 14. The Debt Funds (Part 4)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/15.html"><strong aria-hidden="true">11.15.</strong> 15. Investing in Bonds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/16.html"><strong aria-hidden="true">11.16.</strong> 16. Index Funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/17.html"><strong aria-hidden="true">11.17.</strong> 17. Arbitrage Funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/18.html"><strong aria-hidden="true">11.18.</strong> 18. Measuring Mutual fund Returns</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/19.html"><strong aria-hidden="true">11.19.</strong> 19. Rolling Returns</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/20.html"><strong aria-hidden="true">11.20.</strong> 20. Mutual fund Expense Ratio, Direct, and Regular plans</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/21.html"><strong aria-hidden="true">11.21.</strong> 21. Mutual Benchmarking</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/22.html"><strong aria-hidden="true">11.22.</strong> 22. Mutual Fund Beta, SD, and Sharpe Ratio</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/23.html"><strong aria-hidden="true">11.23.</strong> 23. Sortino and the Capture Ratios</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/24.html"><strong aria-hidden="true">11.24.</strong> 24. How to analyse an Equity Mutual fund?</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/25.html"><strong aria-hidden="true">11.25.</strong> 25. How to analyze a debt mutual fund?</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/26.html"><strong aria-hidden="true">11.26.</strong> 26. The Mutual Fund Portfolio</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/27.html"><strong aria-hidden="true">11.27.</strong> 27. Smart-beta funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/28.html"><strong aria-hidden="true">11.28.</strong> 28. Asset Allocation, An Introduction</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/29.html"><strong aria-hidden="true">11.29.</strong> 29. Exchange-traded funds (ETF)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/30.html"><strong aria-hidden="true">11.30.</strong> 30. Basics of Macro Economics</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">12.</strong> Innerworth — Mind over markets</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">13.</strong> Integrated Financial Modelling</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/1.html"><strong aria-hidden="true">13.1.</strong> 1. Introduction to Financial Modelling</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/2.html"><strong aria-hidden="true">13.2.</strong> 2. Excel workbook setup</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/3.html"><strong aria-hidden="true">13.3.</strong> 3. Historical Data</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/4.html"><strong aria-hidden="true">13.4.</strong> 4. Assumptions (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/5.html"><strong aria-hidden="true">13.5.</strong> 5. Assumptions (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/6.html"><strong aria-hidden="true">13.6.</strong> 6. Revenue model</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/7.html"><strong aria-hidden="true">13.7.</strong> 7. Asset Schedule (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/8.html"><strong aria-hidden="true">13.8.</strong> 8. Asset Schedule (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/9.html"><strong aria-hidden="true">13.9.</strong> 9. Debt Schedule</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/10.html"><strong aria-hidden="true">13.10.</strong> 10. Reserves Schedule (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/11.html"><strong aria-hidden="true">13.11.</strong> 11. Reserves Schedule (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/12.html"><strong aria-hidden="true">13.12.</strong> 12. Projections</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/13.html"><strong aria-hidden="true">13.13.</strong> 13. Cash flow statement</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/14.html"><strong aria-hidden="true">13.14.</strong> 14. Valuation (Part 1) – Overview</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/15.html"><strong aria-hidden="true">13.15.</strong> 15. Valuation (Part 2) – FCFF & FCFE</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/16.html"><strong aria-hidden="true">13.16.</strong> 16. Valuation (Part 3) – Risk Premium & Tax Shield</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/17.html"><strong aria-hidden="true">13.17.</strong> 17. Weighted average cost of capital and Terminal Growth</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/18.html"><strong aria-hidden="true">13.18.</strong> 18. Discounted Cash Flow Analysis (DCF)</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">14.</strong> Personal Finance - Insurance</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/1.html"><strong aria-hidden="true">14.1.</strong> 1. Introduction</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/2.html"><strong aria-hidden="true">14.2.</strong> 2. Perverse Incentives</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/3.html"><strong aria-hidden="true">14.3.</strong> 3. The nudge</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/4.html"><strong aria-hidden="true">14.4.</strong> 4. Skin in the game</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/5.html"><strong aria-hidden="true">14.5.</strong> 5. Dunning Kruger effect</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/6.html"><strong aria-hidden="true">14.6.</strong> 6. A mighty defence</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/7.html"><strong aria-hidden="true">14.7.</strong> 7. No free lunch</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/8.html"><strong aria-hidden="true">14.8.</strong> 8. Gimmick or not (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/9.html"><strong aria-hidden="true">14.9.</strong> 9. Gimmick or not (Part 2)</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Varsity mdBook</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <div class="post">
+<h2 id="131--what-to-expect"><a class="header" href="#131--what-to-expect">13.1 – What to expect?</a></h2>
+<p>Having set the context in the previous chapter, we will now develop a methodology for conducting a ‘limited resource’ equity research. The reason why I call it ‘limited resource’ is because you and I, as a retail investor, have access to just a few resources to conduct equity research. These resources are – internet, company annual report, and MS Excel. Whilst an Institution has access to human resource (analyst), access to company management, financial database (such as Bloomberg, Reuters, Factset etc.), industry reports etc. So my objective here is to demonstrate how one can better understand a company and its business with the limited resources at hand. Of course, we will do this exercise keeping the end objective in perspective, i.e., deciding whether to buy or not to buy a stock.</p>
+<p>As mentioned in the previous chapter, we will structure the equity research process in 3 stages-</p>
+<ol>
+<li>Understanding the Business</li>
+<li>Application of the checklist</li>
+<li>Intrinsic Value estimation (Valuation) to understand the fair price of the stock</li>
+</ol>
+<p>Each stage mentioned above has several steps within it. One must understand that there is no shortcut to this, and one must not compromise any of these steps.</p>
+<h2 id="132--stock-price-vs-business-fundamentals"><a class="header" href="#132--stock-price-vs-business-fundamentals">13.2 – Stock Price vs Business Fundamentals</a></h2>
+<p>When we take up a company for research, the first step is to understand the business as much as possible. People often miss this crucial step and go directly into the stock price analysis. Well, just analyzing the stock price is great if you have a short term perspective. However, for long term investments, understanding the business is essential.</p>
+<p>Why is it important you may wonder? Well, the reason is simple: the more you know the company, the higher is your conviction to stay put with the investment, especially during bad times (aka bear markets). Remember, during bear markets, the prices react and not the business fundamentals. Understanding the company and its business well gives you the required conviction to reason why it makes sense to stay invested in the stock even though the market may think otherwise. They say bear markets creates value, so if you have a high conviction on the company, you should consider buying into the stock during bear markets and not really selling the stock. Needless to say, this is highly counter-intuitive, and it takes years of investment practice to internalize this fact.</p>
+<p>Anyway, moving ahead the best source to get information related to the business is the company’s website and its annual report. We need to study at least the last 5-year annual report to understand how it is evolving across business cycles.</p>
+<p><img alt="M3-Ch13-title" class="aligncenter size-full wp-image-1258" height="300" sizes="(max-width: 600px) 100vw, 600px" src="http://zerodha.com/varsity/wp-content/uploads/2014/12/M3-Ch13-title.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2014/12/M3-Ch13-title.jpg 600w, https://zerodha.com/varsity/wp-content/uploads/2014/12/M3-Ch13-title-300x150.jpg 300w" width="600"/></p>
+<h2 id="133--understanding-the-business"><a class="header" href="#133--understanding-the-business">13.3 – Understanding the Business</a></h2>
+<p>As a first step towards understanding the business, we need to make a list of questions we need to find answers to. Do note, the answers to all these questions can be found out by reading through the company’s annual report and website.</p>
+<p>Here are a bunch of questions that I think helps us in our quest to understand the business. I have discussed the rationale behind each question.</p>
+<table>
+<tbody>
+<tr>
+<th>Sl No</th>
+<th>Question</th>
+<th>The rationale behind the question</th>
+</tr>
+<tr>
+<td>1</td>
+<td style="text-align: left;">What does the company do?</td>
+<td style="text-align: left;">To get a basic understanding of the business</td>
+</tr>
+<tr>
+<td>2</td>
+<td style="text-align: left;">Who are its promoters? What are their backgrounds?</td>
+<td style="text-align: left;">To know the people behind the business. Sanity check to eliminate criminal background, intense political affiliation etc</td>
+</tr>
+<tr>
+<td>3</td>
+<td style="text-align: left;">What do they manufacture (in case it is a manufacturing company)?</td>
+<td style="text-align: left;">To know their products better, helps us get a sense of the product’s demand-supply dynamics</td>
+</tr>
+<tr>
+<td>4</td>
+<td style="text-align: left;">How many plants do they have and where are they located?</td>
+<td style="text-align: left;">To get a sense of their geographic presence. Also at times, their plants could be located in a &nbsp;prime location, and &nbsp;the value of such location could go off-balance sheet, making the company highly undervalued</td>
+</tr>
+<tr>
+<td>5</td>
+<td style="text-align: left;">Are they running the plant in full capacity?</td>
+<td style="text-align: left;">Gives us an idea on their operational abilities, demand for their products, and their positioning for future demand</td>
+</tr>
+<tr>
+<td>6</td>
+<td style="text-align: left;">What kind of raw material is required?</td>
+<td style="text-align: left;">Helps us understand the dependency of the company. For example, the raw material could be regulated by Govt (like Coal) or the raw material needs to be imported either of which needs further investigation</td>
+</tr>
+<tr>
+<td>7</td>
+<td style="text-align: left;">Who are the company’s clients or end-users?</td>
+<td style="text-align: left;">By knowing the client base, we can get a sense of the sales cycle and efforts required to sell the company’s products</td>
+</tr>
+<tr>
+<td>8</td>
+<td style="text-align: left;">Who are their competitors?</td>
+<td style="text-align: left;">Helps in knowing the competitors. Too many competing companies means margin pressure. In such a case, the company has to do something innovative. Margins are higher if the company operates in – monopoly, duopoly, or oligopoly market structure</td>
+</tr>
+<tr>
+<td>9</td>
+<td style="text-align: left;">Who are the major shareholders of the company?</td>
+<td style="text-align: left;">Besides the promoter and promoter group, it helps to know who else owns the company’s shares. If a highly successful investor holds the shares in the company, then it could be a good sign</td>
+</tr>
+<tr>
+<td>10</td>
+<td style="text-align: left;">Do they plan to launch any new products?</td>
+<td style="text-align: left;">Gives a sense of how ambitious and innovative the company is. While at the same time a company launching products outside their domain raises some red flags – is the company losing focus?</td>
+</tr>
+<tr>
+<td>11</td>
+<td style="text-align: left;">Do they plan to expand to different countries?</td>
+<td style="text-align: left;">Same rationale as above</td>
+</tr>
+<tr>
+<td>12</td>
+<td style="text-align: left;">What is the revenue mix? Which product sells the most?</td>
+<td style="text-align: left;">Helps us understand which segment (and therefore, the product) is contributing the most to revenue. This in turns helps us understand the drivers for future revenue growth</td>
+</tr>
+<tr>
+<td>13</td>
+<td style="text-align: left;">Do they operate under a heavy regulatory environment?</td>
+<td style="text-align: left;">This is both good and bad – Good because it acts a natural barrier from new competition to enter the market, bad because they are limited with choices when it comes to being innovative in the industry</td>
+</tr>
+<tr>
+<td>14</td>
+<td style="text-align: left;">Who are their bankers, auditors?</td>
+<td style="text-align: left;">Good to know, and to rule out the possibility of the companies associated with scandalous agencies</td>
+</tr>
+<tr>
+<td>15</td>
+<td style="text-align: left;">How many employees do they have? Does the company have labour issues?</td>
+<td style="text-align: left;">Gives us a sense of how labour-intensive the company’s operations are. Also, if the company requires a lot of people with a niche skillset, then this could be another red flag</td>
+</tr>
+<tr>
+<td>16</td>
+<td style="text-align: left;">What are the entry barriers for new participants to enter the industry?</td>
+<td style="text-align: left;">Helps us understand how easy or difficult it is for new companies to enter the market and eat away the margins</td>
+</tr>
+<tr>
+<td>17</td>
+<td style="text-align: left;">Is the company manufacturing products that can be easily replicated in a country with cheap labour?</td>
+<td style="text-align: left;">If yes, the company may be sitting on a time bomb – think about companies manufacturing computer hardware, mobile handsets, garments etc</td>
+</tr>
+<tr>
+<td>18</td>
+<td style="text-align: left;">Does the company have too many subsidiaries?</td>
+<td style="text-align: left;">If yes, you need to question why? Is it away for the company to siphon off funds?</td>
+</tr>
+</tbody>
+</table>
+<p>These questions are thought starters for understanding any company. In finding answers, you will automatically start posting new questions for which you will have to find answers to. It does not matter which company you are looking at if you follow this Q&amp;A framework. I’m very confident your understanding of the company would drastically increase. This is because the Q&amp;A process requires you to read and dig out so much information about the company that you will start getting a greater understanding of the company.</p>
+<p>Remember, this is the first step in the equity research process. If you find red flags (or something not right about the company) while discovering the answers, I would advise you to drop researching the company further irrespective of how attractive the business looks. In case of a red flag, there is no point proceeding to stage 2 of equity research.</p>
+<p>From my experience, I can tell you that stage 1 of equity research, i.e. ‘Understanding the Company’ takes about 15 hours. After going through this process, I usually try to summarize my thoughts on a single sheet of paper which would encapsulate all the important things I have discovered about the company. This information sheet has to be crisp and to the point. If I’m unable to achieve this, then it is clear that I do not know enough about the company. After going through stage 1, I proceed to stage 2 of equity research, which is “Application of Checklist”. Please do bear in mind the equity research stages are sequential and should follow the same order.</p>
+<p>We will now proceed to stage 2 of equity research. The best way to understand stage 2 is by actually implementing the checklist on a company.</p>
+<p>We have worked with Amara Raja Batteries Limited (ARBL) throughout this module. Hence I guess it makes sense to go ahead and evaluate the checklist on the same company. Do remember, the company may differ, but the equity research framework remains the same.</p>
+<p>As we proceed, a word of caution at this point – the discussion going forward will mainly revolve around ARBL as we will understand this company better. The idea here is not to showcase how good or bad ARBL is but instead illustrate a framework of what I perceive as a ‘fairly adequate’ equity research process.</p>
+<h2 id="134--application-of-checklist"><a class="header" href="#134--application-of-checklist">13.4 – Application of checklist</a></h2>
+<p>Stage 1 of the equity research process helps us understand how, what, who, and why. It helps us develop a holistic view of the company. However, as they say – the proof of the pudding is in the eating; so no matter how attractive the business looks, the numbers of the company should also look attractive.</p>
+<p>The objective of the 2<sup>nd</sup> stage of equity research’s objective is to help us comprehend the numbers and actually evaluate if both the nature of the business and the business’s financial performance complement each other. If they do not complement each other, then clearly the company will not qualify as an investible grade.</p>
+<p>We looked at the checklist in the previous chapter; I’ll reproduce the same here for quick reference.</p>
+<table>
+<tbody>
+<tr>
+<th>Sl No</th>
+<th>Variable</th>
+<th>Comment</th>
+<th>What does it signify</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Net Profit Growth</td>
+<td>In line with the gross profit growth</td>
+<td>Revenue growth should be in line with the profit growth</td>
+</tr>
+<tr>
+<td>2</td>
+<td>EPS</td>
+<td>EPS should be consistent with the Net Profits</td>
+<td>If a company is diluting its equity, then it is not good for its shareholders</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Gross Profit Margin (GPM)</td>
+<td>&gt; 20%</td>
+<td>Higher the margin, higher is the evidence of a sustainable moat</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Debt Level</td>
+<td>The company should not be highly leveraged</td>
+<td>High debt means the company is operating on high leverage. Plus the finance cost eats away the earnings</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Inventory</td>
+<td>Applicable for manufacturing companies</td>
+<td>A growing inventory, along with a growing PAT margin is a good sign. Always check the inventory number of days</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Sales vs Receivables</td>
+<td>Sales backed by receivables is not a great sign</td>
+<td>This signifies that the company is just pushing its products to show revenue growth</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Cash flow from operations</td>
+<td>Has to be positive</td>
+<td>If the company is not generating cash from operations, then it indicates operating stress</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Return on Equity</td>
+<td>&gt;25%</td>
+<td>Higher the ROE, better it is for the investor, however, make sure you check the debt levels along with this</td>
+</tr>
+</tbody>
+</table>
+<p>Let us go ahead and evaluate each of the checklist items on Amara Raja Batteries and see what the numbers are suggesting. First, we will look into the P&amp;L items – Gross Profit, Net Profit, and EPS of the company.</p>
+<p><strong style="background-color: #eacf32;">Revenue &amp; Pat Growth</strong></p>
+<p>The first sign of a company that may qualify as the investable grade is the rate at which it is growing. To evaluate the growth of the company, we need to check the revenue and PAT growth. We will evaluate growth from two perspectives –</p>
+<ol>
+<li>Year on Year growth – this will give us a sense of progress the company makes every year. Do note; industries do go through cyclical shifts. From that perspective, if a company has a flat growth, it is ok. However, just make sure you check the competition and ensure the growth is a flat industry-wide.</li>
+<li>Compounded Annual Growth Rate (CAGR) – The CAGR gives us a sense of how the company is evolving and growing across business cycles. A good, investable grade company is usually the first company to overcome the shifts in business cycles. This will eventually reflect in a healthy CAGR.</li>
+</ol>
+<p>I prefer to invest in growing (Revenue and PAT) companies over and above 15% on a CAGR basis.</p>
+<p>Let us see how ARBL fares here…</p>
+<table>
+<tbody>
+<tr>
+<th></th>
+<th>FY 09 -10</th>
+<th>FY 10-11</th>
+<th>FY 11-12</th>
+<th>FY 12 -13</th>
+<th>FY 13 – 14</th>
+</tr>
+<tr>
+<td>Revenue (INR Crs)</td>
+<td>1481</td>
+<td>1769</td>
+<td>2392</td>
+<td>3005</td>
+<td>3482</td>
+</tr>
+<tr>
+<td>Revenue Growth</td>
+<td></td>
+<td>19.4%</td>
+<td>35.3%</td>
+<td>25.6%</td>
+<td>15.9%</td>
+</tr>
+<tr>
+<td>PAT (INR Crs)</td>
+<td>167</td>
+<td>148</td>
+<td>215</td>
+<td>287</td>
+<td>367</td>
+</tr>
+<tr>
+<td>PAT Growth</td>
+<td></td>
+<td>(11.3%)</td>
+<td>45.2%</td>
+<td>33.3%</td>
+<td>27.8%</td>
+</tr>
+</tbody>
+</table>
+<p>The 5-year CAGR revenue growth is 18.6%, and the 5-year CAGR PAT growth is 17.01%. These are an interesting set of numbers; they qualify as a healthy set of numbers. However, we still need to evaluate the other numbers on the checklist.</p>
+<p><strong style="background-color: #eacf32;">Earnings per Share (EPS)</strong></p>
+<p>The earnings per share represent the profitability on a per-share basis. The EPS and PAT growing at a similar rate indicate that the company does not dilute the earnings by issuing new shares, which is good for the existing shareholders. One can think of this as a reflection of the company’s management’s capabilities.</p>
+<table>
+<tbody>
+<tr>
+<th>FV Rs.1</th>
+<th>FY 09 -10</th>
+<th>FY 10-11</th>
+<th>FY 11-12</th>
+<th>FY 12 -13</th>
+<th>FY 13 – 14</th>
+</tr>
+<tr>
+<td>EPS (In INR)</td>
+<td>19.56</td>
+<td>17.34</td>
+<td>12.59</td>
+<td>16.78</td>
+<td>21.51</td>
+</tr>
+<tr>
+<td>Share Cap(INR Crs)</td>
+<td>17.08</td>
+<td>17.08</td>
+<td>17.08</td>
+<td>17.08</td>
+<td>17.08</td>
+</tr>
+<tr>
+<td>EPS Growth</td>
+<td>&nbsp; –</td>
+<td>-11.35%</td>
+<td>&nbsp;– 27.39%</td>
+<td>33.28%</td>
+<td>28.18%</td>
+</tr>
+</tbody>
+</table>
+<p>The 5 year EPS CAGR stands at 1.90% for the FY14.</p>
+<p><strong style="background-color: #eacf32;">Gross Profit margins</strong></p>
+<p>Gross profit margins, expressed as a percentage is calculated as a –</p>
+<p><strong>Gross Profits / Net Sales</strong></p>
+<p>Where,</p>
+<p>Gross Profits = [Net Sales – Cost of Goods Sold]</p>
+<p>Cost of goods sold is the cost involved in making the finished good; we had discussed this calculation while understanding the inventory turnover ratio. Let us proceed to check how ARBL’s Gross Profit margins have evolved over the years.</p>
+<table>
+<tbody>
+<tr>
+<th>In INR Crs, unless indicated.</th>
+<th>FY 09-10</th>
+<th>FY 10-11</th>
+<th>FY 11-12</th>
+<th>FY 12 -13</th>
+<th>FY 13 – 14</th>
+</tr>
+<tr>
+<td>Net Sales</td>
+<td>1464</td>
+<td>1757</td>
+<td>2359</td>
+<td>2944</td>
+<td>3404</td>
+</tr>
+<tr>
+<td>COGS</td>
+<td>1014</td>
+<td>1266</td>
+<td>1682</td>
+<td>2159</td>
+<td>2450</td>
+</tr>
+<tr>
+<td>Gross Profits</td>
+<td>450</td>
+<td>491</td>
+<td>677</td>
+<td>785</td>
+<td>954</td>
+</tr>
+<tr>
+<td>Gross Profit Margins</td>
+<td>30.7%</td>
+<td>27.9%</td>
+<td>28.7%</td>
+<td>26.7%</td>
+<td>28.0%</td>
+</tr>
+</tbody>
+</table>
+<p>Clearly, the Gross Profit Margins (GPM) looks very impressive. The checklist mandates a minimum GPM of 20%. ARBL has much more than the minimum GPM requirement. This implies a couple of things –</p>
+<ol>
+<li>ARBL enjoys a premium spot in the market structure. This may be because of the absence of competition in the sector, which enables a few companies to enjoy higher margins</li>
+<li>Good operational efficiency, which in turn is a reflection of management’s capabilities</li>
+</ol>
+<p><strong style="background-color: #eacf32;">Debt level – Balance Sheet check</strong></p>
+<p>The first three points in the checklist were mainly related to the company’s Profit &amp; Loss statement. We will now look through a few Balance sheet items. One of the most important line items that we need to look at on the Balance Sheet is the Debt. An increasingly high level of debt indicates a high degree of financial leverage. Growth at the cost of financial leverage is quite dangerous. Also do remember, a large debt on balance sheets means a large financial cost charge. This eats into the retained earnings of the firm.</p>
+<p>Here is how the debt stands for ARBL –</p>
+<p>Debt( INR Crs) Evaluation –</p>
+<table>
+<tbody>
+<tr>
+<th></th>
+<th>FY 09-10</th>
+<th>FY 10-11</th>
+<th>FY 11-12</th>
+<th>FY 12 -13</th>
+<th>FY 13 – 14</th>
+</tr>
+<tr>
+<td>Debt</td>
+<td>91.19</td>
+<td>95.04</td>
+<td>84.07</td>
+<td>87.17</td>
+<td>84.28</td>
+</tr>
+<tr>
+<td>EBIT</td>
+<td>261</td>
+<td>223</td>
+<td>321</td>
+<td>431</td>
+<td>541</td>
+</tr>
+<tr>
+<td>Debt/EBIT (%)</td>
+<td>35%</td>
+<td>42.61%</td>
+<td>26.19%</td>
+<td>20.22%</td>
+<td>15.57%</td>
+</tr>
+</tbody>
+</table>
+<p>The debt seems to have stabilized around 85Crs. In fact, it is encouraging to see that the debt has come down in comparison to FY 09-10. Besides checking for the interest coverage ratio (which we have discussed previously), I also like to check the debt as a per cent of ‘Earnings before interest and taxes’ (EBIT). This just gives a quick perspective on how the company is managing its finance. We can see that the Debt/EBIT ratio has consistently reduced.</p>
+<p>I personally think ARBL has done a good job here by managing its debt level efficiently.</p>
+<p><strong style="background-color: #eacf32;">Inventory Check</strong></p>
+<p>Checking for the inventory data makes sense only if the company under consideration is a manufacturing company. Scrutinizing the inventory data helps us in multiple ways –</p>
+<ol>
+<li>Raising inventory with raising PAT indicates are signs of a growing company</li>
+<li>A stable inventory number of days indicates management’s operational efficiency to some extent</li>
+</ol>
+<p>Let us see how ARBL fares on the inventory data –</p>
+<table>
+<tbody>
+<tr>
+<th></th>
+<th>FY 09-10</th>
+<th>FY 10-11</th>
+<th>FY 11-12</th>
+<th>FY 12 -13</th>
+<th>FY 13 – 14</th>
+</tr>
+<tr>
+<td>Inventory (INR Crs)</td>
+<td>217.6</td>
+<td>284.7</td>
+<td>266.6</td>
+<td>292.9</td>
+<td>335.0</td>
+</tr>
+<tr>
+<td>Inventory Days</td>
+<td>68</td>
+<td>72</td>
+<td>60</td>
+<td>47</td>
+<td>47</td>
+</tr>
+<tr>
+<td>PAT (INR Crs)</td>
+<td>167</td>
+<td>148</td>
+<td>215</td>
+<td>287</td>
+<td>367</td>
+</tr>
+</tbody>
+</table>
+<p>The inventory number of days is more or less stable. In fact, it does show some sign of a slight decline. Do note; we have discussed the calculation of the inventory number of days in the previous chapter. Both the inventory and PAT are showing a similar growth sign which is again a good sign.</p>
+<p><strong style="background-color: #eacf32;">Sales vs Receivables</strong></p>
+<p>We now look at the sales number in conjunction with the receivables of the company. A sale backed by receivables is not an encouraging sign. It signifies credit sales, and therefore many questions arise out of it. For instance – are the company sales personal force selling products on credit? Is the company offering attractive (but not sustainable) credit to suppliers to push sales?</p>
+<table>
+<tbody>
+<tr>
+<th></th>
+<th>FY 09-10</th>
+<th>FY 10-11</th>
+<th>FY 11-12</th>
+<th>FY 12 -13</th>
+<th>FY 13 – 14</th>
+</tr>
+<tr>
+<td>Net Sales(INR Crs)</td>
+<td>1464</td>
+<td>1758</td>
+<td>2360</td>
+<td>2944</td>
+<td>3403</td>
+</tr>
+<tr>
+<td>Receivables (INR Crs)</td>
+<td>242.3</td>
+<td>305.7</td>
+<td>319.7</td>
+<td>380.7</td>
+<td>452.6</td>
+</tr>
+<tr>
+<td>Receivables as a% of Net Sales</td>
+<td>16.5%</td>
+<td>17.4%</td>
+<td>13.5%</td>
+<td>12.9%</td>
+<td>13.3%</td>
+</tr>
+</tbody>
+</table>
+<p>The company has shown stability here. From the table above we can conclude a large part of their sales is not really backed back receivables, which is quite encouraging. In fact, just like the inventory number of days, the receivables as % of net sales has also shown signs of a decline, which is quite impressive.</p>
+<p><strong style="background-color: #eacf32;">Cash flow from Operations</strong></p>
+<p>In fact, this is one of the most important checks one needs to run before deciding to invest in a company. The company should generate cash flows from operations; this is, in fact, where the proof of the pudding lies. A company which is draining cash from operations raises some sort of red flag.</p>
+<table>
+<tbody>
+<tr>
+<th>In INR Cr</th>
+<th>FY 09-10</th>
+<th>FY 10-11</th>
+<th>FY 11-12</th>
+<th>FY 12 -13</th>
+<th>FY 13 – 14</th>
+</tr>
+<tr>
+<td>Cash flow from Operations</td>
+<td>214.2</td>
+<td>86.1</td>
+<td>298.4</td>
+<td>335.4</td>
+<td>278.7</td>
+</tr>
+</tbody>
+</table>
+<p>The cash flow from operations through a bit volatile has remained positive throughout the last 5 years. This only means ARBL’s core business operations are generating cash and therefore, can be considered successful.</p>
+<p><strong style="background-color: #eacf32;">Return on Equity</strong></p>
+<p>We have discussed at length about Return on Equity in chapter 9 of this module. I will encourage you to go through it again if you wish to refresh. Return on Equity (ROE) measures in percentage the return generated by the company keeping the shareholder’s equity in perspective. In a sense, ROE measures how successful the company’s promoters are for having invested their own funds in the company.</p>
+<p>Here is how ARBL’s ROE has fared for the last 5 years –</p>
+<table>
+<tbody>
+<tr>
+<th>In INR Cars</th>
+<th>FY 09-10</th>
+<th>FY 10-11</th>
+<th>FY 11-12</th>
+<th>FY 12 -13</th>
+<th>FY 13 – 14</th>
+</tr>
+<tr>
+<td>PAT</td>
+<td>167</td>
+<td>148</td>
+<td>215</td>
+<td>287</td>
+<td>367</td>
+</tr>
+<tr>
+<td>Shareholders’ Equity</td>
+<td>543.6</td>
+<td>645.7</td>
+<td>823.5</td>
+<td>1059.8</td>
+<td>1362.7</td>
+</tr>
+<tr>
+<td>ROE</td>
+<td>30.7%</td>
+<td>22.9%</td>
+<td>26.1%</td>
+<td>27.1%</td>
+<td>27.0%</td>
+</tr>
+</tbody>
+</table>
+<p>These numbers are awe-inspiring. I personally like to invest in companies that have an ROE of over 20%. Do remember, in case of ARBL, the debt is quite low. Hence the good set of return on equity numbers is not backed by excessive financial leverage, which is again highly desirable.</p>
+<p><strong style="background-color: #eacf32;">Conclusion</strong></p>
+<p>Remember, we are in stage 2 of equity research. I see ARBL qualifying quite well on almost all the required parameters in stage 2. As an equity research analyst, you have to view the output of stage 2 in conjunction with your finding from stage 1 (which deals with understanding the business). If you can develop a comfortable opinion (based on facts) after these 2 stages, the business surely appears to have investable grade attributes and therefore worth investing.</p>
+<p>However, before you buy the stock, you need to ensure the price is right. This is exactly what we do in stage 3 of equity research.</p>
+<hr/>
+<h3 id="key-takeaways-from-this-chapter"><a class="header" href="#key-takeaways-from-this-chapter">Key takeaways from this chapter</a></h3>
+<ol>
+<li>‘Limited Resource’ Equity Research can be performed in 3 stages
+<ol type="a">
+<li>Understanding the Business</li>
+<li>Application of the checklist</li>
+<li>Valuations</li>
+</ol>
+</li>
+<li>The objective of stage 1, i.e. understanding the business requires us to gather all business information. The best way to go about this is the Q&amp;A way</li>
+<li>In the Q&amp;A way, we begin with posting some simple and straightforward questions for which we find answers</li>
+<li>By the time we finish stage 1, we should be through with all the information related to the business</li>
+<li>Most of the answers required in stage 1 are present in the company’s annual report and website</li>
+<li>Do you remember while researching the company in stage 1, if there is something not very convincing about the company, it is often a good idea to stop researching further</li>
+<li>You need to get convinced (based on facts) about the company in stage 1. This is how you will develop a strong conviction to stay put during bear markets</li>
+<li>Stage 2 of Equity Research requires you to evaluate the performance of the company on various counts.</li>
+<li>You will proceed to stage 3 only after the company clears in stage 1 &amp; 2.</li>
+</ol>
+<div class="clear"> </div>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../mds/Fundamental+Analysis/12.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../mds/Fundamental+Analysis/14.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../mds/Fundamental+Analysis/12.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../mds/Fundamental+Analysis/14.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>

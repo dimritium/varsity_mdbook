@@ -1,0 +1,157 @@
+<div class="post">
+<h2><img alt="m8-c9-cartoon" class="aligncenter size-full wp-image-3878" height="400" sizes="(max-width: 600px) 100vw, 600px" src="http://zerodha.com/varsity/wp-content/uploads/2016/10/M8-C9-Cartoon.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/10/M8-C9-Cartoon.png 600w, https://zerodha.com/varsity/wp-content/uploads/2016/10/M8-C9-Cartoon-300x200.png 300w" width="600"/></h2>
+<h2>9.1 – The Bullion Twins</h2>
+<p>To begin with, I need to apologise for the delay in putting up this chapter. Perhaps this is the longest ‘in-between chapter’ break I’ve taken from the time I have started writing for Varsity. I’ve been working on another high priority project which required my time and attention, hence the delay.</p>
+<p>Anyway, let us get straight to work and discuss Silver. Precious metals such as Gold, Silver, and Platinum are collectively referred to as ‘Bullion’. There is a common perception that the market price of gold and silver makes similar moves. If this is true, then it gives rise to many trading opportunities such a ‘pair trading’. We will discuss pair trading in detail, perhaps in a different module altogether. However, let us go ahead and investigate if Gold and Silver move in tandem. I did run a correlation check on Gold and Silver using 30 minutes intraday data for the last 3 months (note this is over a 1000 data points) and here are the results –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/10/Image-1_Correl.png"><img alt="image-1_correl" class="aligncenter size-full wp-image-3871" height="442" loading="lazy" sizes="(max-width: 784px) 100vw, 784px" src="http://zerodha.com/varsity/wp-content/uploads/2016/10/Image-1_Correl.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/10/Image-1_Correl.png 784w, https://zerodha.com/varsity/wp-content/uploads/2016/10/Image-1_Correl-300x169.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/10/Image-1_Correl-768x433.png 768w" width="784"/></a></p>
+<p>The correlation on an intraday basis is <strong>0.7</strong>, which is quite remarkable. I’m guessing the correlation at the end of day basis would be even better. So what does this mean? Well, the correlation suggests that the two metals make similar moves on an intraday basis. If you recall, we discussed the concept of correlation in detail in the USD INR chapter. I’d suggest you read up <strong><a href="http://zerodha.com/varsity/chapter/the-usd-inr-pair-part-2/" rel="noopener noreferrer" target="_blank">section 5.3</a></strong>&nbsp;of&nbsp;chapter 5 if you haven’t already done so.</p>
+<p>If the intraday correlation is as tight as 0.7, then we can think about exploring trading ideas of going long on gold and short on silver or vice versa. This will be a kind of hedged strategy as you are long and short (on similar assets) at the same time. The idea here is just to let you know that building such a trading strategy is a possibility; please don’t jump in and set up a trade just with this information. J</p>
+<p>There are lots of other things to take care of when you initiate such trades; more on pair trading at a later point. Meanwhile, have a look at the intraday graph of both gold and silver; I’ve normalized it to start at 100 so that the graphs are more comparable –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/10/Image-2_intraday-graph.png"><img alt="image-2_intraday-graph" class="aligncenter size-full wp-image-3872" height="296" loading="lazy" sizes="(max-width: 501px) 100vw, 501px" src="http://zerodha.com/varsity/wp-content/uploads/2016/10/Image-2_intraday-graph.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/10/Image-2_intraday-graph.png 501w, https://zerodha.com/varsity/wp-content/uploads/2016/10/Image-2_intraday-graph-300x177.png 300w" width="501"/></a></p>
+<p>If you were to look at the graph and take a call on how closely the two metals move, then chances are you would disregard any correlation between them J, but the actual numbers paint a completely different picture!</p>
+<p>Anyway, as I mentioned earlier, I’ve used intraday data here to develop both the correlation and the graph. Longer-term data will portray more meaningful information. In fact, I dug up the correlation data between silver and gold from a recent survey by Thomson Reuters, and here is what they suggest –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/10/Image-3_correl2.png"><img alt="image-3_correl2" class="aligncenter size-full wp-image-3873" height="195" loading="lazy" sizes="(max-width: 322px) 100vw, 322px" src="http://zerodha.com/varsity/wp-content/uploads/2016/10/Image-3_correl2.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/10/Image-3_correl2.png 322w, https://zerodha.com/varsity/wp-content/uploads/2016/10/Image-3_correl2-300x182.png 300w" width="322"/></a></p>
+<p>The correlations are broken down every quarter (clearly a longer-term approach here) and as you can see the correlation between Gold and Silver is on average is about 0.8, which is why traders prefer to call this pair the ‘Bullion Twins’.</p>
+<p>The tight EOD correlation implies that traders and investors consider both gold and silver as safe havens in times of economic crisis. This further implies that any global geopolitical tensions tend to drive the price of not just gold, but silver as well.</p>
+<p>Also, please do note the correlation of Silver with Oil, it is quite erratic and gives a sense on unreliability here.</p>
+<h2>9.2 – The Silver Basics</h2>
+<p>Silver has applications in industrial fabrication, photography, fashion, electrical, and electronics industries. Hence, there is always a demand for silver. In fact, the recent survey from ‘‘The Silver Institute’ in the United States suggests that the global silver demand stands at 1170.5 million ounces. Historically, the demand for silver has grown at roughly 2.5% year on year. Out of the total global demand, the bulk of it comes from industrial fabrication and manufacturing. This directly suggests that the price of silver is influenced by the growth of manufacturing and industrial economies such as China and, to some extent, India.</p>
+<p>On the supply side, global mining production along with scarp and sovereign sales stands at 1040.6 million ounces, clearly indicating that silver as a commodity is under slight deficit. The supply has not really improved over the years; in fact, the data suggest that supply growth has just been about 1.4%.</p>
+<p>Here is the table which gives you the complete demand-supply scenario in silver –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/10/Image-4_Supply-demand.png"><img alt="image-4_supply-demand" class="aligncenter size-full wp-image-3874" height="471" loading="lazy" sizes="(max-width: 653px) 100vw, 653px" src="http://zerodha.com/varsity/wp-content/uploads/2016/10/Image-4_Supply-demand.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/10/Image-4_Supply-demand.png 653w, https://zerodha.com/varsity/wp-content/uploads/2016/10/Image-4_Supply-demand-300x216.png 300w" width="653"/></a></p>
+<p>You can read the complete <strong><a href="https://www.silverinstitute.org/WorldSilverSurvey2016.pdf" rel="noopener noreferrer" target="_blank">survey report.</a></strong></p>
+<p>Given how the supply and demand scenario plays out, there is a lot of scopes to trade silver as a commodity. This leads us back to the most important question – who decides the rate of silver? Well, silver rates are fixed the same way as that of gold, in London, by a pool of participating banks. To know how gold/silver rates are fixed, I’d recommend you <strong><a href="http://zerodha.com/varsity/chapter/gold-part-2/" rel="noopener noreferrer" target="_blank">read this</a>.</strong></p>
+<h2>9.3 – The Silver contracts</h2>
+<p>There are four variants of silver contracts that are available for you to trade on MCX. They differ mainly in terms of the contract value, and therefore the margin required. These contracts are as follows –</p>
+<table class="tableizer-table">
+<thead>
+<tr class="tableizer-firstrow">
+<th>Contracts</th>
+<th>Price Quote</th>
+<th>Lot Size</th>
+<th>Tick Size</th>
+<th>P&amp;L/tick</th>
+<th>Expiry</th>
+<th>Delivery Units</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Silver</td>
+<td>1 kilogram</td>
+<td>30 kgs</td>
+<td>Rs.1/tick</td>
+<td>Rs.30/tick</td>
+<td>5th day of the expiry month</td>
+<td>30 kgs</td>
+</tr>
+<tr>
+<td>Silver Mini</td>
+<td>1 kilogram</td>
+<td>5 kgs</td>
+<td>Rs.1/tick</td>
+<td>Rs.5/tick</td>
+<td>Last day of the expiry month</td>
+<td>30 kgs</td>
+</tr>
+<tr>
+<td>Silver Micro</td>
+<td>1 kilogram</td>
+<td>1 kg</td>
+<td>Rs.1/tick</td>
+<td>Rs.1/tick</td>
+<td>Last day of the expiry month</td>
+<td>30 kgs</td>
+</tr>
+<tr>
+<td>Silver 1000</td>
+<td>1 kilogram</td>
+<td>1 kg</td>
+<td>Rs.1/tick</td>
+<td>Rs.1/tick</td>
+<td>Last day of the expiry month</td>
+<td>1 kg</td>
+</tr>
+</tbody>
+</table>
+<p>Of all the four contracts, the ‘Silver’ 30 kg contract and ‘Silver Mini’ are most actively traded on MCX; we shall discuss both these contracts detail. Let us begin with the main Silver contract.</p>
+<p>The price quotation for the Silver contract is 1 kilogram. This means when you check the price of Silver on MCX or your trading terminal, the price that you see is for 1 kg of silver. This price includes the import duties, taxes, and all the other applicable duties. Have a look at the screenshot below (taken from Kite) –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/10/Image-5_Silverbig.png"><img alt="image-5_silverbig" class="aligncenter size-full wp-image-3875" height="294" loading="lazy" sizes="(max-width: 388px) 100vw, 388px" src="http://zerodha.com/varsity/wp-content/uploads/2016/10/Image-5_Silverbig.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/10/Image-5_Silverbig.png 388w, https://zerodha.com/varsity/wp-content/uploads/2016/10/Image-5_Silverbig-300x227.png 300w" width="388"/></a></p>
+<p>The current price of Silver December Future is Rs.42,266/-, note this is quoted on a per kg basis. Since the contract is for 30 kgs (lot size), the contract value will be –</p>
+<p>= 30 * 42,266</p>
+<p>= <strong>Rs.12,67,980/-</strong></p>
+<p>The margins on Silver is roughly 5%, in fact here is the snapshot of the margin required to trade these contracts –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/10/Image-6_silver-margin.png"><img alt="image-6_silver-margin" class="aligncenter wp-image-3876" height="258" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/10/Image-6_silver-margin.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/10/Image-6_silver-margin.png 1104w, https://zerodha.com/varsity/wp-content/uploads/2016/10/Image-6_silver-margin-300x97.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/10/Image-6_silver-margin-768x248.png 768w, https://zerodha.com/varsity/wp-content/uploads/2016/10/Image-6_silver-margin-1024x330.png 1024w" width="800"/></a></p>
+<p>This works out to –</p>
+<p>= 68619/1267980</p>
+<p>= <strong>5.41%</strong></p>
+<p>The P&amp;L per tick can be calculated using the following formula –</p>
+<p>P&amp;L per tick = (Lot Size / Quotation) * Tick Size</p>
+<p>= (30 kgs /1 kg) * Rs.1/-</p>
+<p>= <strong>Rs</strong>. <strong>30/-</strong></p>
+<p>So for every tick on Silver, you either make Rs.30/- or lose Rs.30/-.</p>
+<p>As far as the contracts expiries are concerned, here are the set of contracts that are available to trade as of now (as of Oct 2016), note all contracts expire on the 5<sup>th</sup> of the contract month –</p>
+<ul>
+<li>December 2016</li>
+<li>March 2017</li>
+<li>May 2017</li>
+<li>July 2017</li>
+<li>September 2017</li>
+</ul>
+<p>When the December 2016 contract expires, the December 2017 contract gets introduced to the market. You must be aware by now that the most liquid contract to trade would be the one which has the closest expiry date. For example, we were now in Oct 2016, and if I were to trade Silver, I’d choose the December 2016 contract.</p>
+<p>Do recall, settlement in equities is always in cash and not physical. However, when it comes to commodities, the settlement is physical and therefore ‘delivery’ is compulsory. This means if you hold 10 lots of Silver and you opt for delivery, then you will get delivery on 30 kg of Silver. To get the delivery of the commodity, one has to express his intention to do so. This has to be done any time before 4 days to expiry. So given that the expiry is on 5th, one has to express his intent to take delivery anytime on or before the 4th (1st, 2nd, 3rd, 4th).</p>
+<p>If you are trading with Zerodha, note that we do not allow you to get into the physical delivery of commodities. So you will be forced to close the position before 1st of the expiry month. In fact, I personally prefer to close the positions early on and not really get into the physical delivery of commodities just because of the logistics involved.</p>
+<p>Another important point to note here – while the delivery is mandatory for Silver (30 kgs) contract, delivery is not mandatory for the Silver Mini and Silver Micro contracts. This means to say that you can let the Silver Mini/Micro contract expire and settle for cash (or opt for delivery). However, you do not have the option to cash settle the Silver 30 kg contract.</p>
+<p>Finally, here is something else you should know. Have a look at this snapshot below –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/10/Image-7_spot-convergence.png"><img alt="image-7_spot-convergence" class="aligncenter size-full wp-image-3877" height="338" loading="lazy" sizes="(max-width: 613px) 100vw, 613px" src="http://zerodha.com/varsity/wp-content/uploads/2016/10/Image-7_spot-convergence.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/10/Image-7_spot-convergence.png 613w, https://zerodha.com/varsity/wp-content/uploads/2016/10/Image-7_spot-convergence-300x165.png 300w" width="613"/></a></p>
+<p>The table above maps a commodity with a location; for example, Silver Micro is mapped to Ahmedabad. Ever wondered what this really means?</p>
+<p>We all know that upon expiry, the price of the underlying in the spot market and its futures price converge to a single price point. Now in case of equities, the underlying and its futures are traded on the same platform, i.e. NSE (and now BSE as well). So, for example, Infosys Spot in NSE will converge with Infosys Futures on NSE. However, in the case of commodities, there are many different spot markets. For example, Pepper and Rubber are prominently traded in Kochi. Gold is traded in both Mumbai and Ahmedabad and so on. Given this, upon expiry, the futures of Gold should merge with which spot price? Should it be the one in Mumbai or the one in Ahmedabad? For this exact reason, MCX has mapped each commodity with a spot market, and upon expiry, the futures price will converge with the price of the designated spot market.</p>
+<h2>9.4 – The other Silver contracts</h2>
+<p>If you are comfortable with the contract details of Silver mentioned above, then it is fairly easy to understand the other silver contracts that are traded on MCX. They vary mainly in terms of the lot size and therefore the margin requirement.</p>
+<p>I’ll skip working out the math, but instead, put up the margin numbers and the delivery option directly for you. The delivery option helps you decided whether you would like to take delivery of the contract or simply cash settle.</p>
+<table class="tableizer-table">
+<thead>
+<tr class="tableizer-firstrow">
+<th>Contract</th>
+<th>Margin Required</th>
+<th>Margin as a %</th>
+<th>Delivery options</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Silver Mini</td>
+<td>Rs.13,158/-</td>
+<td>6.27%</td>
+<td>Cash/Physical</td>
+</tr>
+<tr>
+<td>Silver Micro</td>
+<td>Rs.2,618/-</td>
+<td>5.1%</td>
+<td>Cash/Physical</td>
+</tr>
+<tr>
+<td>Silver 1000</td>
+<td>Rs.2,711/-</td>
+<td>6.2%</td>
+<td>Physical only</td>
+</tr>
+</tbody>
+</table>
+<p>As you can see, the margins required are much lesser (quite naturally) compared to the big silver contract.</p>
+<p>As far as trading is concerned, similar to Gold, the Silver Fundamentals are quite complex – tracking them on a day to day basis may not really be possible and in fact, is not really required. Most traders I know trade commodities based on technical analysis. I personally think this a much better way to go about active commodity trading.</p>
+<p>Apart from technical analysis, one can even choose to trade based on quantitative techniques such as ‘Pair Trading’. As stated earlier in this chapter, we’ll discuss this technique in a separate module altogether.</p>
+<hr/>
+<p><strong>Key takeaways from this chapter</strong></p>
+<ol>
+<li>Gold and Silver are correlated both on an intraday basis and on an end of day basis.</li>
+<li>Gold and Silver make a good pair for trading based on the ‘Pair trading technique’.</li>
+<li>Silver does not have a great correlation with crude oil.</li>
+<li>There are 4 variants of silver traded on MCX.</li>
+<li>The main Silver contract has a lot size of 30 kgs and requires a margin close to Rs.75,000/-.</li>
+<li>The average margin requirement for silver is roughly between 5-6% of the contract value.</li>
+<li>Technical analysis works quite well on Silver.</li>
+</ol>
+<div class="clear"> </div>
+</div>

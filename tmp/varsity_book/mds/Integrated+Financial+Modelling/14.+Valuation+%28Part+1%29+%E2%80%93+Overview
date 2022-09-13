@@ -1,0 +1,103 @@
+<div class="post">
+<h2><strong>14.1 – Valuations basics </strong></h2>
+<p>We are at the last stage in our Financial Modelling journey. As the last step, we have to build a valuation model, which will sit within the integrated model that we are building. A valuation model helps us measure the value we are willing to pay for a given business. There are many ways to build a valuation model, but regardless of the approach you take, the final output results in estimating the worth of the company on a per-share basis.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/07/M13-C4-Web.png"><img alt="" class="aligncenter wp-image-9958" height="443" sizes="(max-width: 600px) 100vw, 600px" src="https://zerodha.com/varsity/wp-content/uploads/2021/07/M13-C4-Web-300x221.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/07/M13-C4-Web-300x221.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/07/M13-C4-Web-768x566.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/07/M13-C4-Web.png 800w" width="600"/></a></p>
+<p>With the valuation exercise, the idea is simple, we value the company and arrive at the share price. We refer to this as the fair price of the company’s stock. Fair price because we have considered everything that matters in our model (remember all the assumptions and schedules). We then compare the fair price of the company with the actual market price of the company traded on the stock exchange and conclude as –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Overvalued, if market price &gt; fair price</li>
+<li>Undervalued if market price &lt; fair price</li>
+<li>Fairly valued if market price = fair price</li>
+</ul>
+</li>
+</ul>
+<p>By the way, it almost feels weird to discuss ‘valuation’, in a world where almost no one cares about valuations. But that is a debate for another day, let us go ahead and do what we are supposed to do 😊</p>
+<p>Valuations in the context of investments help us understand the price we are willing to pay to acquire a portion of the business. There are three main techniques based on which we can value a company, they are –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Relative valuation</li>
+<li>Option based valuation</li>
+<li>Absolute valuation</li>
+</ul>
+</li>
+</ul>
+<p>In this chapter, I’ll briefly touch upon all three techniques to help you develop a perspective, and then in the subsequent chapters, we will discuss one of these techniques and figure out how we can implement that technique within our financial model.</p>
+<h2><strong>14.1 – Relative valuations </strong></h2>
+<p>The relative valuation is based on the theory that if there are two identical companies in the market, then their valuations should be similar too. By identical, I mean the companies you compare should be similar in terms of business, products, size, geographic spread, financials, etc, regulatory landscape, etc. &nbsp;You cannot compare TCS with HDFC Bank or for that matter, you cant compare SBI Bank with HDFC Bank although both are banks. SBI is a public sector bank and HDFC Bank is a private sector bank. You can however compare HDFC Bank with ICICI Bank, they are similar in all ways, probably even Kotak Bank. &nbsp;A few more examples of similar companies include Infy and TCS, Bajaj Auto and Hero, PVR, and INOX. Of course, there are many more companies that can be bucketed under the same category and can be compared.</p>
+<p>Let’s put this in context. Assume there are only 3 companies in the country that manufactures cars. The Profit after tax for these companies along with the respective stock prices are as below –</p>
+<p>Company 1 – PAT is Rs.100, a stock trading at Rs.1005 per share</p>
+<p>Company 2 – PAT is Rs.220, a stock trading at Rs.2185 per share</p>
+<p>Company 3 – PAT is Rs.75, a stock trading at Rs.785 per share</p>
+<p>If you do a simple ratio check i.e. dividing the company’s stock price by its profitability (measured in terms of PAT), we get the following results –</p>
+<p>Company 1 : 1005/100 = 10.05x</p>
+<p>Company 2 : 2185/220 = 9.93x</p>
+<p>Company 3 : 785/75 = 10.46x</p>
+<p>From the above, we know that the industry as such is valuing the car industry at roughly 10x its earnings. Now, assume a 4<sup>th</sup> company enters the market with similar dynamics. The earnings of this company are Rs.300, what is the likely stock price?</p>
+<p>Well, by the method of relative valuation, we can assign roughly 10x the earnings, so the stock price should be around Rs.3000. However, if the stock price is higher or lower than Rs.3000, then we can conclude that the stock is overvalued or undervalued respectively. While I’ve considered just one ratio to illustrate the relative valuation method, there are several other ratios that you can consider.</p>
+<p>Most investors find conducting relative valuations on companies easy since it is very intuitive and relative to the industry. But there are a few limitations with relative valuations.</p>
+<p>One, the markets themselves could be valuing the industry wrongly by sometimes assigning very high valuations to companies (remember the dot com era where all stocks were highly valued) or sometimes assigning super-low valuations. Super low valuations could be because the market as a whole can find it difficult to understand business models.</p>
+<p>The other problem is that there are no two companies that are the same. In reality, each company is different, and these differences have an impact on valuations. For example, in the above example, assume the 4<sup>th</sup> car manufacturing company has a revenue of Rs.600, that means the company enjoys a 50% PAT margin, which is phenomenal, and therefore maybe the market assigns a higher value.</p>
+<p>For this reason, as investors, it is best if we look at other valuation techniques as well. Let me quickly give you an overview of the options-based valuation before we move to absolute valuations.</p>
+<h2><strong>14.2 – Option based valuations </strong></h2>
+<p>I guess we all know who Rajinikanth is 😊 , just in case you’ve been living under a rock and the name Rajinikanth has escaped your attention, then look him up on Google. Don’t worry, I’m not digressing to discuss Rajinikanth or his movies. I’m only interested to explain how he charges his producers for the movies he acts in.</p>
+<p>Most normal actors in India get paid a certain amount before they signup and act in movies. However, I believe Rajinikanth does not do that. His remuneration is a percentage of the profits his movie generates, and the profits as such are based on the outcome of the movie. So if the movie does well, Rajinikanth makes money, or else he won’t make the money.</p>
+<p>Just to reiterate, the outcome of Rajinikanth’s financial success (or the monetary value of Rajinikanth) is contingent upon the success of the movie, and clearly, his success and the movie’s success are directly proportionate.</p>
+<p>Now, keep that in mind.</p>
+<p>Let us talk about a company, maybe an EV car manufacturing company. The company announces that they have set up an R&amp;D to develop an EV car that can run 2,000 Kms per single charge. The announcement is phenomenal as most EVs can run up to 450 km per charge.</p>
+<p>How will the market value such an announcement?</p>
+<p>Well, for now, it is just an announcement and the market knows that the R&amp;D experiment can fail. However, if it’s a success, the value of the company can grow multi-fold. In other words, the value of the company is contingent upon a certain event, the event happens to be the success of the R&amp;D experiment.</p>
+<p>We can generalize this – ‘the value of a company should be X provided Y happens’, this is similar to ‘Monetary value of Rajinikanth will be A provided B happens’. And both these are similar to – ‘The value of a certain option will be X, provided the spot value changes to Y’. For people who are familiar with options, you will immediately recognize that we are talking about a call option here.</p>
+<p>Remember this equation ‘ Intensive Value of a Call option = Max[(Spot-Strike), 0]. If you are familiar with it, good, else don’t worry about it as long as you get the point that the value of the company (or option) will be Rs.XYZ provided ABC happens.</p>
+<p>Given this, if you were asked to value such companies, how will you value them? Well, you can value the basis of the framework on how you value options. Such a valuation technique is called the ‘option-based valuation technique’.</p>
+<p>Option based valuation technique is a very niche technique and cant be used across all companies. But this is something you should be aware of. Many tech companies in the US are valued based on the option-based valuation technique. Probably in India too, this may become popular. For example, think about a company that has an internet business. Their business model can be dependent on acquiring n number of customers of which a certain percentage of them will turn into paying customers.</p>
+<p>We will now move to the last valuation technique, perhaps the most popular one called the ‘Absolute valuation’, of a company.</p>
+<h2><strong>14.3 – Absolute valuations </strong></h2>
+<p>When we value a company based on absolute valuation, we do so based on the stock concept. What do I mean by that?</p>
+<p>Well, after we do the valuation, the result is the value of the company. The value of the company is as of today. The valuation is not based on what the value was last year or the year before nor is the value based on what it will be next year or the year after. We are calculating the value as of today based on all the inputs. The inputs however are based on how we expect the future to unfold 😊</p>
+<p>In this chapter, I’ll give you an overview of the absolute valuation technique and in the subsequent chapters, we will develop our understanding of all the different components of absolute valuation, and eventually build the absolute valuation piece within the main model.</p>
+<p>Let us start with the basic balance sheet equation that we are all familiar with. For any balance sheet to balance, we know =</p>
+<p>Asset = Liabilities.</p>
+<p>Now, the assets can be broken down into two parts</p>
+<p>Assets = Cash + Fixed Assets</p>
+<p>The value of cash is easy to figure, it is how much it is. For example, if a company has Rs.100Cr cash on its balance sheet, the value is Rs.100Crs, nothing more, nothing less.</p>
+<p>On the liabilities side, we can break it down into two parts –</p>
+<p>Liabilities = External Borrowings (Debt) + Equity</p>
+<p>Given this, we can rewrite the balance sheet equation i.e. Assets = Liabilities&nbsp; as</p>
+<p>Cash + Fixed Assets = Debt + Equity</p>
+<p>We can now further modify this as –</p>
+<p>Fixed Assets = (Debt – Cash) + Equity</p>
+<p>Debt – Cash, is also called the Net debt of the company. So,</p>
+<p><strong>Fixed Assets = Net Debt + Equity </strong></p>
+<p>This is a balance sheet equation, re-ordered. Now, if you were to value any company, you can either value its assets or its Equity. If you choose to value the assets of the company, then you are essentially valuing the overall company and that’s called the ‘Enterprise Value’, of the company, also called the value of the firm.</p>
+<p>However, if you choose to look at only the equity portion, then it is just that, you are valuing the company from an equity holder’s perspective because the value of equity is what matters to the shareholders.</p>
+<p>Both techniques are fine, as long as you understand their nuances.</p>
+<p>When it comes to measuring the value of a company (either via the enterprise or equity holders), you need three things –</p>
+<ul>
+<li>Cashflow estimation</li>
+<li>Discount rate</li>
+<li>Timing of cash flow</li>
+</ul>
+<p>The cashflow is either &nbsp;–</p>
+<ul>
+<li>The cash flow to the firm/ enterprise or</li>
+<li>The cash flow to the equity holders</li>
+</ul>
+<p>Once you identify the cash flow (past and future), you need to discount the cash flow. The concept of net present value kicks in here. I hope you are familiar with it, else please do look it up <a href="https://zerodha.com/varsity/chapter/dcf-primer/">here</a>.</p>
+<p>The question however is at what rate do we discount the cash flow? The debt holders will expect a lower rate of return compared to equity holders. The Equity holders will expect a higher return than the risk-free rate.</p>
+<p>Equity Holders = Rf + Rm</p>
+<p>Where Rf = Risk-free rate and Rm = Equity risk premium.</p>
+<p>Since an enterprise will have both debt and equity holders, the discount rate should reflect the expectation of both these parties. The blended discount rate is called, ”Weighted average cost of capital”, or just WACC. We will discuss more on WACC in the subsequent chapters.</p>
+<p>Lastly, we need to know the timing of the cash flow so that we can discount these cash flows appropriately. Of course, you will know what I’m referring to here if you are familiar with the concept of net present value. Over the next few chapters, we will build the valuation model step by step and integrate it within the main model.</p>
+<h3><strong>Key takeaways from this chapter</strong></h3>
+<ul>
+<li>Relative valuation is based on valuing two or more companies on similar metrics</li>
+<li>Relative valuation works only if two companies are identical</li>
+<li>Option based valuation is applicable if the financial outcome of a company is dependent on a certain event</li>
+<li>One can apply the framework of the option theory to value companies whose fortunes are dependent on the outcome of events</li>
+<li>An absolute valuation can be done either by valuing assets or the equity</li>
+<li>The three variables that are important for absolute valuation are cash flow (either to the firm or equity holders), discount rate (we consider WACC), and the timing of the cash flow.</li>
+</ul>
+<div class="clear"> </div>
+</div>

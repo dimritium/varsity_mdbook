@@ -1,0 +1,120 @@
+<div class="post">
+<h2>11.1 – Co-Integration of two-time series</h2>
+<p>I guess this chapter will get a little complex. We would be skimming the surface of some higher order statistical theory. I will try my best and stick to practical stuff and avoid all the fluff. I’ll try and explain these things from a trading point of view, but I’m afraid, some amount of theory will be necessary for you to know.</p>
+<p>Given the path ahead I think it is necessary to re-rack our learnings so far and put some order to it. Hence let me just summarize our journey so far –</p>
+<ol>
+<li>Starting from Chapter 1 to 7, we discussed a very basic version of a pair trade. We discussed this simply to lay out a strong foundation for the higher order pair trading technique, which is generally known as the relative value trade</li>
+<li>The relative value trade requires the use of linear regression</li>
+<li>In linear regression, we regress an independent variable, X against a dependent variable Y.</li>
+<li>When we regress – some of the outputs that are of interest are the intercept, slope, residuals, standard error, and the standard error of the intercept</li>
+<li>The decision to classify a stock as dependent and independent really depends on the error ratio.</li>
+<li>We calculate the error ratio by interchanging both X and Y. The one which offers the lowest error ratio will define which stock is X and which on as Y.</li>
+</ol>
+<p>I hope you have read and understood everything that we have discussed up to this point. If not, I’d suggest you read the chapters again, get clarity, and then proceed.</p>
+<p>Recollect, in the previous chapter, we discussed the residuals. In fact, I also mentioned that the bulk of the focus going forward will be on the residuals. It is time we study the residuals in more detail and try and establish the kind of behavior the residuals exhibit. In our attempt to do this, we will be introduced to two new jargons – Cointegration and Stationarity.</p>
+<p><img alt="" class="aligncenter wp-image-4988" height="342" sizes="(max-width: 513px) 100vw, 513px" src="https://zerodha.com/varsity/wp-content/uploads/2018/04/M10-C11-cartoon.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/04/M10-C11-cartoon.png 600w, https://zerodha.com/varsity/wp-content/uploads/2018/04/M10-C11-cartoon-300x200.png 300w" width="513"/></p>
+<p>Generally speaking, if two time series are ‘co integrated’ (stock X and stock Y in our case), then it means, that the two stocks move together and if at all there is a deviation from this movement, it is either temporary or can be attributed to a stray event, and one can expect the two time series to revert to its regular orbit i.e. converge and move together again. Which is exactly what we want while pair trading. This means to say, the pair that we choose to pair trade on, should be cointegrated.</p>
+<p>So the question is – how do we evaluate if the two stocks are cointegrated?</p>
+<p>Well, to check if the two stock is cointegrated, we first need to run a linear regression on the two stocks, then take up the residuals obtained from the linear regression algorithm, and check if the residual is ‘stationary’.</p>
+<p>If the residuals are stationary, then it implies that the two stocks are cointegrated, if the two stocks are cointegrated, then the two stocks move together, and therefore the ‘pair’ is ripe for tracking pair trading opportunity.</p>
+<p>Here is an interesting way to look at this – one can take any two-time series and apply regression, the regression algorithm will always throw out an output. How would one know if the output is reliable? This is where stationarity comes into play. The regression equation is valid if and only if residuals are stationary. If the residuals are not stationary, regression relation shouldn’t be used.</p>
+<p>Speculating and setting up trades on a co-integrated time series is a lot more meaningful and is independent of market direction.</p>
+<p>So, essentially, this boils down to figuring out if the residuals are stationary or not.</p>
+<p>At this point, I can straight away show you how to check if the residuals are stationary or not, there is a simple test called the ‘ADF test’ to do this – frankly, this is all you need to know. However, I think you are better off if you spend few minutes to understand what ‘Stationarity’ really means (without actually deep diving into the quants).</p>
+<p>So, read the following section only if you are curious to know more, else go to the section which talks about ADF test.</p>
+<h2>11.2 Stationary and non-stationary series</h2>
+<p>A time series is considered ‘Stationary’ if it follows three 3 simple statistical conditions. &nbsp;If the time series partially satisfies these conditions, like 2 out of 3 or 1 out of 3, then the stationarity is considered weak. If none of the three conditions are satisfied, then the time series is ‘non-stationary’.</p>
+<p>The three simple statistical conditions are –</p>
+<ul>
+<li>The <strong>mean</strong> of the series should be same or within a tight range</li>
+<li>The <strong>standard deviation</strong> of the series should be within a range</li>
+<li>There should be no <strong>autocorrelation</strong> within the series – this means any particular value in the time series – say value ‘n’, should not be dependent on any other value before ‘n’. Will talk more about this at a later stage.</li>
+</ul>
+<p>While pair trading, we only look for pairs which exhibit complete stationarity. Non-stationary series or weak stationary series will not work for us.</p>
+<p>I guess it is best to take up an example (like a sample time series) and figure out what the above three conditions really mean and hopefully, that will help you understand ‘stationarity’ better.</p>
+<p>For the sake of this example, I have two-time series data, with 9000 data points in each. I’ve named them Series A and Series B, and on this time series data, I will evaluate the above three stationarity conditions.</p>
+<p><strong>Condition 1 – The mean of the series should be same or within a tight range</strong></p>
+<p>To evaluate this, I will split each of the time series data into 3 parts and calculate the respective mean for each part. The mean for all three different parts should be around the same value. If this is true, then I can conclude that the mean will more or less be the same even when new data points flow in the future.</p>
+<p>So let us go ahead and do this. To begin with, I’m splitting the Series A data into three parts and calculating its respective means, here is how it looks –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-1_Mean.png"><img alt="" class="aligncenter wp-image-4989" height="204" loading="lazy" sizes="(max-width: 622px) 100vw, 622px" src="https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-1_Mean.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-1_Mean.png 791w, https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-1_Mean-300x98.png 300w, https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-1_Mean-768x251.png 768w" width="622"/></a></p>
+<p>Like I mentioned, I have 9000 data points in Series A and Series B. I have split Series A data points into 3 parts and as you can see, I’ve even highlighted the starting and ending cells for these parts.</p>
+<p>The mean for all the three parts are similar, clearly satisfying the first condition.</p>
+<p>I’ve done the same thing for Series B, here is how the mean looks –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-2_mean-seriesb.png"><img alt="" class="aligncenter wp-image-4990" height="337" loading="lazy" sizes="(max-width: 591px) 100vw, 591px" src="https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-2_mean-seriesb.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-2_mean-seriesb.png 775w, https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-2_mean-seriesb-300x171.png 300w, https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-2_mean-seriesb-768x437.png 768w" width="591"/></a></p>
+<p>Now as you can see, the mean for Series B swings quite wildly and thereby not satisfying the first condition for stationarity.</p>
+<p><strong>Condition 2 -The</strong> <strong>standard deviation should be within a range</strong>.</p>
+<p>I’m following the same approach here – I will go ahead and calculate the standard deviation for all the three parts for both the series and observe the values.</p>
+<p>Here is the result obtained for Series A –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-3_sda.png"><img alt="" class="aligncenter wp-image-4991" height="203" loading="lazy" sizes="(max-width: 650px) 100vw, 650px" src="https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-3_sda.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-3_sda.png 895w, https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-3_sda-300x94.png 300w, https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-3_sda-768x239.png 768w" width="650"/></a></p>
+<p>The standard deviation oscillates between 14-19%, which is quite ‘tight’ and therefore qualifies the 2<sup>nd</sup> stationarity condition.</p>
+<p>Here is how the standard deviation works out for Series B –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-4_sdb.png"><img alt="" class="aligncenter wp-image-4992" height="298" loading="lazy" sizes="(max-width: 644px) 100vw, 644px" src="https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-4_sdb.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-4_sdb.png 900w, https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-4_sdb-300x139.png 300w, https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-4_sdb-768x356.png 768w" width="644"/></a></p>
+<p>Notice the difference? The range of standard deviation for Series B is quite random. Series B is clearly not a stationary series. However, Series A looks stationary at this point. However, we still need to evaluate the last condition i.e the autocorrelation bit, let us go ahead and do that.</p>
+<p><strong>Condition 3 – There should be no autocorrelation within the series</strong></p>
+<p>In layman words, autocorrelation is a phenomenon where any value in the time series is not really dependent on any other value before it.</p>
+<p>For example, have a look at the snapshot below –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-5_ac.png"><img alt="" class="aligncenter wp-image-4993" height="312" loading="lazy" sizes="(max-width: 214px) 100vw, 214px" src="https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-5_ac.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-5_ac.png 272w, https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-5_ac-206x300.png 206w" width="214"/></a></p>
+<p>The 9<sup>th</sup> value in Series A is 29, and if there is no autocorrelation in this series, the value 29 is not really dependent on any values before it i.e the values from cell 2 to cell 8.</p>
+<p>But the question is how do we establish this?</p>
+<p>Well, there is a technique for this.</p>
+<p>Assume there are 10 data points, I take the data from Cell 1 to Cell 9, call this series X, now take the data from Cell 2 to Cell 10, call this Series Y. Now, calculate the correlation between Series X and Y. This is called 1-lag correlation. The correlation should be near to 0.</p>
+<p>I can do this for 2 lag as well – i.e between Cell 1 to Cell 8, and then between Cell 3 to Cell 10, again, the correlation should be close to 0. If this is true, then it is safe to assume assumed that the series is not autocorrelated, and hence the 3<sup>rd</sup> condition for stationarity is proved.</p>
+<p>I’ve calculated 2 lag correlation for Series A, and here is how it looks –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-6_2lag.png"><img alt="" class="aligncenter wp-image-4994" height="109" loading="lazy" sizes="(max-width: 454px) 100vw, 454px" src="https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-6_2lag.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-6_2lag.png 553w, https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-6_2lag-300x72.png 300w" width="454"/></a></p>
+<p>Remember, I’m subdividing Series A into two parts and creating two subseries i.e series X and series Y. The correlation is calculated on these two subseries. Clearly, the correlation is close to zero and with this, we can safely conclude that Time Series A is stationary.</p>
+<p>Let’s do this for Series B as well.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-7_2lag.png"><img alt="" class="aligncenter wp-image-4995" height="127" loading="lazy" sizes="(max-width: 491px) 100vw, 491px" src="https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-7_2lag.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-7_2lag.png 557w, https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-7_2lag-300x78.png 300w" width="491"/></a></p>
+<p>I’ve taken a similar approach, and the correlation as you can see is quite close to 1.</p>
+<p>So, as you can see all the conditions for stationarity is met for Series A – which means the time series is stationary. While Series B is not.</p>
+<p>I know that I’ve taken a rather unconventional approach to explaining stationarity and co-integration. After all, no statistical explanation is complete without those scary looking formulas. But this is a deliberate approach and I thought this would be the best possible way to discuss these topics, as eventually, our goal is to learn how to pair trade efficiently and not really deep dive into statistics.</p>
+<p>Anyway, you could be thinking if it is really required for you to do all of the above to figure out if the time series (residuals) are indeed stationary. Well, like I said before, this is not required.</p>
+<p>We only need to look at the results of something called as the ‘The ADF Test’, to establish if the time series is stationary or not.</p>
+<p><strong>11.3 –</strong> <strong>The ADF test</strong></p>
+<p>The augmented Dickey-Fuller or the ADF test is perhaps one of the best techniques to test for the stationarity of a time series. Remember, in our case, the time series in consideration is the residuals series.</p>
+<p>Basically, the ADF test does everything that we discussed above, including a multiple lag process to check the autocorrelation within the series. Here is something you need to know – the output of the ADF test is not a definitive ‘Yes – this is a stationary series’ or ‘No – this is not a stationary series’. Rather, the output of the ADF test is a probability. It tells us the probability of the series, not being stationary.</p>
+<p>For example, if the output of the ADF test a time series is 0.25, then this means the series has a 25% chance of not being stationary or in other words, there is a 75% chance of the series being stationary. This probability number is also called ‘The P value’.</p>
+<p>To consider a time series stationary, the P value should be as low as 0.05 (5%) or lower. This essentially means the probability of the time series is stationary is as high as 95% (or higher).</p>
+<p>Alright, so how do you run an ADF test?</p>
+<p>Frankly, this is a highly complex process and unfortunately, I could not find a single source online which will help you run an ADF test for free. I do have an excel sheet (which has a paid plugin) to run an ADF test, but unfortunately, I cannot share it here. If I could, I would have.</p>
+<p>If you are a programmer, I’ve been told that there are Python plugins easily available to run an ADF test, so you could try that.</p>
+<p>But if you are a non-programmer like me, then you will be stuck at this stage. So here is what I will do, once in a weak or 15 days, I will try and upload a ‘Pair Data’ sheet, which will contain the following information of the best possible combination of pairs, this includes –</p>
+<ol>
+<li>You will know which stock is X and which stock is Y</li>
+<li>You will know the intercept and Beta of this combination</li>
+<li>You will also know the p-value of the combination</li>
+</ol>
+<p>The look back period for generating this is 200 trading days. I’ve restricted this just to banking stocks, but hopefully, I can include more sectors going forward. To help you understand this better, here is the snapshot of the latest Pair Datasheet for banking stocks –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-8_pd.png"><img alt="" class="aligncenter wp-image-4996" height="254" loading="lazy" sizes="(max-width: 415px) 100vw, 415px" src="https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-8_pd.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-8_pd.png 525w, https://zerodha.com/varsity/wp-content/uploads/2018/04/Image-8_pd-300x183.png 300w" width="415"/></a></p>
+<p>The first line suggests that Federal Bank as Y and PNB as X is a viable pair. This also means, that the regression of Federal as Y and PNB as X and Federal as X and PNB as Y was conducted and the error ratio for both the combination was calculated, and it was found that Federal as Y and PNB as X had the least error ratio.</p>
+<p>Once the order has been figured out (as in which one is Y and which one is X), the intercept and Beta for the combination has also been calculated. Finally, the ADF was conducted and the P value was calculated. If you see, the P value for Federal Bank as Y and PNB as X is 0.365.</p>
+<p>In other words, this is not a combination you should be dealing with as the probability of the residuals being stationary is only 63.5%.</p>
+<p>In fact, if you look at the snapshot above, you will find only 2 pairs which have the desired p-value i.e Kotak and PNB with a P value of 0.01 and HDFC and PNB with a P value of 0.037.</p>
+<p>The p values don’t usually change overnight. Hence, for this reason, I check for p-value once in 15 or 20 days and try and update them here.</p>
+<p>I think we have learned quite a bit in this chapter. A lot of information discussed here could be new for most of the readers. For this reason, I will summarize all the things you should know about Pair trading at this point –</p>
+<ol>
+<li>The basic premise of pair trading</li>
+<li>Basic overview of linear regression and how to perform one</li>
+<li>In linear regression, we regress an independent variable, X against a dependent variable Y.</li>
+<li>When we regress – some of the outputs that are of interest are the intercept, slope, residuals, standard error, and the standard error of the intercept</li>
+<li>The decision to classify a stock as dependent and independent really depends on the error ratio.</li>
+<li>We calculate the error ratio by interchanging both X and Y. The one which offers the lowest error ratio will define which stock is X and which on as Y</li>
+<li>The residuals obtained from the regression should be stationary. If they are stationary, then we can conclude that the two stocks are co-integrated</li>
+<li>If the stocks are cointegrated, then they move together</li>
+<li>Stationarity of a series can be evaluated by running an ADF test.</li>
+</ol>
+<p>If you are not clear on any of the points above, then I’d suggest you give this another shot and start reading from Chapter 7.</p>
+<p>In the next chapter, we will try and take up an example of a pair trade and understand its dynamics.</p>
+<p>You can <a href="https://zerodha.com/varsity/wp-content/uploads/2018/04/Pair-data.xlsx"><strong>download the Pair Data</strong></a> sheet, updated on 11<sup>th</sup> April 2018.</p>
+<p>Lastly, this module (and this chapter, in particular) could not have been possible without the inputs from my good friend and an old partner, <a href="https://in.linkedin.com/in/prakashlekkala"><strong>Prakash Lekkala</strong></a>. So I guess, we all need to thank him 🙂</p>
+<hr/>
+<h3>Key takeaways from this chapter –</h3>
+<ol>
+<li>If two stocks move together, then they are also cointegrated</li>
+<li>You can pair trade on stocks which are cointegrated</li>
+<li>If the residuals obtained from linear regression is stationary, then it implies the two stocks are co-integrated</li>
+<li>A time series is considered stationary if the series has a constant mean, constant standard deviation, and no autocorrelation</li>
+<li>The check for stationarity can be done by an ADF test</li>
+<li>The p-value of the ADF test should be 0.05% or lower for the series to be considered stationary.</li>
+</ol>
+<div class="clear"> </div>
+</div>

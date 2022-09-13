@@ -1,0 +1,139 @@
+<div class="post">
+<h2>7.1 – Remember these graphs</h2>
+<p>Over the last few chapters, we have looked at two basic option type’s, i.e. the ‘Call Option’ and the ‘Put Option’. Further, we looked at four different variants originating from these 2 options –</p>
+<ol>
+<li>Buying a Call Option</li>
+<li>Selling a Call Option</li>
+<li>Buying a Put Option</li>
+<li>Selling a Put Option</li>
+</ol>
+<p>With these 4 variants, a trader can create numerous different combinations and venture into some really efficient strategies, generally referred to as ‘Option Strategies’. Think of it this way – if you give a good artist a colour palette and canvas he can create some fascinating paintings, similarly a good trader can use these four option variants to create some outstanding trades. Imagination and intellect is the only requirement for creating these option trades. Hence before we get deeper into options, it is important to have a strong foundation on these four variants of options. For this reason, we will quickly summarize what we have learnt so far in this module.</p>
+<p>Please find below the pay off diagrams for the four different option variants –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/05/Image1_Payoff.png"><img alt="Image1_Payoff" class="aligncenter size-full wp-image-1920" height="550" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2015/05/Image1_Payoff.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/05/Image1_Payoff.png 800w, https://zerodha.com/varsity/wp-content/uploads/2015/05/Image1_Payoff-300x206.png 300w" width="800"/></a></p>
+<p>Arranging the Payoff diagrams in the above fashion helps us understand a few things better. Let me list them for you –</p>
+<ol>
+<li>Let us start from the left side – if you notice we have stacked the pay off diagram of Call Option (buy) and Call option (sell) one below the other. If you look at the payoff diagram carefully, they both look like a mirror image. The mirror image of the payoff emphasis the fact that the risk-reward characteristics of an option buyer and seller are opposite. The maximum loss of the call option buyer is the maximum profit of the call option seller. Likewise, the call option buyer has unlimited profit potential, mirroring this the call option seller has maximum loss potential.</li>
+<li>We have placed the payoff of Call Option (buy) and Put Option (sell) next to each other. This is to emphasize that both these option variants make money only when the market is expected to go higher. In other words, do not buy a call option or do not sell a put option when you sense there is a chance for the markets to go down. You will not make money doing so, or in other words, you will certainly lose money in such circumstances. Of course, there is an angle of volatility here which we have not discussed yet; we will discuss the same going forward. The reason why I’m talking about volatility is that volatility has an impact on option premiums.</li>
+<li>Finally, on the right, the pay off diagram of Put Option (sell) and the Put Option (buy) are stacked one below the other. Clearly, the pay off diagrams looks like the mirror image of one another. The mirror image of the payoff emphasizes the fact that the maximum loss of the put option buyer is the maximum profit of the put option seller. Likewise, the put option buyer has unlimited profit potential, mirroring this the put option seller has maximum loss potential.</li>
+</ol>
+<p>Further, here is a table where the option positions are summarized.</p>
+<table class="tableizer-table">
+<tbody>
+<tr class="tableizer-firstrow">
+<th>Your Market View</th>
+<th>Option Type</th>
+<th>Position also called</th>
+<th>Other Alternatives</th>
+<th>Premium</th>
+</tr>
+<tr>
+<td>Bullish</td>
+<td>Call Option (Buy)</td>
+<td>Long Call</td>
+<td>Buy Futures or Buy Spot</td>
+<td>Pay</td>
+</tr>
+<tr>
+<td>Flat or Bullish</td>
+<td>Put Option (Sell)</td>
+<td>Short Put</td>
+<td>Buy Futures or Buy Spot</td>
+<td>Receive</td>
+</tr>
+<tr>
+<td>Flat or Bearish</td>
+<td>Call Option (Sell)</td>
+<td>Short Call</td>
+<td>Sell Futures</td>
+<td>Receive</td>
+</tr>
+<tr>
+<td>Bearish</td>
+<td>Put Option (Buy)</td>
+<td>Long Put</td>
+<td>Sell Futures</td>
+<td>Pay</td>
+</tr>
+</tbody>
+</table>
+<p>It would help if you remembered that when you buy an option, it is also called a ‘Long’ position. Going by that, buying a call option and buying a put option is called Long Call and Long Put position respectively.</p>
+<p>Likewise, whenever you sell an option, it is called a ‘Short’ position. Going by that, selling a call option and selling a put option is also called Short Call and Short Put position respectively.</p>
+<p>Now here is another important thing to note, you can buy an option under 2 circumstances –</p>
+<ol>
+<li>You buy to create a fresh option position.</li>
+<li>You buy intending to close an existing short position.</li>
+</ol>
+<p>The position is called ‘Long Option’ only if you are creating a fresh buy position. If you are buying with and intention of closing an existing short position, then it is merely called a ‘square off’ position.</p>
+<p>Similarly, you can sell an option under 2 circumstances –</p>
+<ol>
+<li>You sell intending to create a fresh short position.</li>
+<li>You sell intending to close an existing long position.</li>
+</ol>
+<p>The position is called ‘Short Option’ only if you are creating a fresh sell (writing an option) position. If you are selling with and intention of closing an existing long position, then it is merely called a ‘square off’ position.</p>
+<p><img alt="M5-Ch7-title1" class="aligncenter size-full wp-image-1921" height="250" loading="lazy" sizes="(max-width: 350px) 100vw, 350px" src="http://zerodha.com/varsity/wp-content/uploads/2015/05/M5-Ch7-title1.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/05/M5-Ch7-title1.png 350w, https://zerodha.com/varsity/wp-content/uploads/2015/05/M5-Ch7-title1-300x214.png 300w" width="350"/></p>
+<h2>7.2 – Option Buyer in a nutshell</h2>
+<p>By now, I’m certain you would have a basic understanding of the call and put option both from the buyer’s and seller’s perspective. However, I think it is best to reiterate a few key points before we make further progress in this module.</p>
+<p>Buying an option (call or put) makes sense only when we expect the market to move strongly in a certain direction. If fact, for the option buyer to be profitable, the market should move away from the selected strike price. Selecting the right strike price to trade is a major task; we will learn this at a later stage. For now, here are a few key points that you should remember –</p>
+<ol>
+<li>P&amp;L (Long call) upon expiry is calculated as <em>P&amp;L = Max [0, (Spot Price – Strike Price)] – Premium Paid</em></li>
+<li>P&amp;L (Long Put) upon expiry is calculated as <em>P&amp;L = [Max (0, Strike Price – Spot Price)] – Premium Paid</em></li>
+<li>The above formula is applicable only when the trader intends to hold the long option till expiry</li>
+<li>The intrinsic value calculation we have looked at in the previous chapters is only applicable on the expiry day. We CANNOT use the same formula during the series</li>
+<li>The P&amp;L calculation changes when the trader intends to square off the position well before the expiry</li>
+<li>The buyer of an option has limited risk, to the extent of the premium paid. However, he enjoys an unlimited profit potential</li>
+</ol>
+<p><img alt="M5-Ch7-title2" class="aligncenter size-full wp-image-1922" height="250" loading="lazy" sizes="(max-width: 350px) 100vw, 350px" src="http://zerodha.com/varsity/wp-content/uploads/2015/05/M5-Ch7-title2.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/05/M5-Ch7-title2.png 350w, https://zerodha.com/varsity/wp-content/uploads/2015/05/M5-Ch7-title2-300x214.png 300w" width="350"/></p>
+<h2>7.2 – Option seller in a nutshell</h2>
+<p>The option sellers (call or put) are also called the option writers. The buyers and sellers have the exact opposite P&amp;L experience. Selling an option makes sense when you expect the market to remain flat or below the strike price (in case of calls) or above strike price (in case of put option).</p>
+<p>I want you to appreciate the fact that all else equal, markets are slightly favourable to option sellers. This is because, for the option sellers to be profitable the market has to be either flat or move in a certain direction (based on the type of option). However for the option buyer to be profitable, the market has to move in a certain direction. Clearly there are two favorable market conditions for the option seller versus one favorable condition for the option buyer. But of course, this in itself should not be a reason to sell options.</p>
+<p>Here are a few key points you need to remember when it comes to selling options –</p>
+<ol>
+<li>P&amp;L for a short call option upon expiry is calculated as <em>P&amp;L = Premium Received – Max [0, (Spot Price – Strike Price)]</em></li>
+<li>P&amp;L for a short put option upon expiry is calculated as <em>P&amp;L = Premium Received – Max (0, Strike Price – Spot Price)</em></li>
+<li>Of course the P&amp;L formula is applicable only if the trader intends to hold the position till expiry</li>
+<li>When you write options, margins are blocked in your trading account</li>
+<li>The seller of the option has unlimited risk but minimal profit potential (to the extent of the premium received)</li>
+</ol>
+<p>Perhaps this is the reason why Nassim Nicholas Taleb in his book “Fooled by Randomness” says “Option writers eat like a chicken but shit like an elephant”. This means to say that the option writers earn small and steady returns by selling options, but when a disaster happens, they tend to lose a fortune.</p>
+<p>Well, with this I hope you have developed a strong foundation on how a Call and Put option behaves. To give you a heads up, the focus going forward in this module will be on moneyness of an option, premiums, option pricing, option Greeks, and strike selection. &nbsp;Once we understand these topics, we will revisit the call and put option all over again. When we do so, I’m certain you will see the calls and puts in a new light and perhaps develop a vision to trade options professionally.</p>
+<h2>7.3 – A quick note on Premiums</h2>
+<p>Have a look at the snapshot below –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/05/Image-2_BHEL.png"><img alt="Image 2_BHEL" class="aligncenter size-full wp-image-1918" height="474" loading="lazy" sizes="(max-width: 575px) 100vw, 575px" src="http://zerodha.com/varsity/wp-content/uploads/2015/05/Image-2_BHEL.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/05/Image-2_BHEL.png 575w, https://zerodha.com/varsity/wp-content/uploads/2015/05/Image-2_BHEL-300x247.png 300w" width="575"/></a></p>
+<p>This is the snapshot of how the premium has behaved on an intraday basis (30<sup>th</sup> April 2015) for BHEL. The strike under consideration is 230, and the option type is a European Call Option (CE). This information is highlighted in the red box. Below the red box, I have highlighted the price information of the premium. If you notice, the premium of the 230 CE opened at Rs.2.25, shot up to make a high of Rs.8/- and closed the day at Rs.4.05/-.</p>
+<p>Think about it; the premium has gyrated over 350% intraday! i.e. from Rs.2.25/- to Rs.8/-, and it roughly closed up 180% &nbsp;for the day, i.e. from Rs.2.25/- to Rs.4.05/-. Moves like this should not surprise you. These are fairly common to expect in the options world.</p>
+<p>Assume in this massive swing you managed to capture just 2 points while trading this particular option intraday. This translates to a sweet Rs.2000/- in profits considering the lot size is 1000 (highlighted in green arrow). In fact this is exactly what happens in the real world. Traders trade premiums. Hardly any traders hold option contracts until expiry. Most of the traders are interested in initiating a trade now and squaring it off in a short while (intraday or maybe for a few days) and capturing the movements in the premium. They do not really wait for the options to expire.</p>
+<p>In fact, you might be interested to know that a return of 100% or so while trading options is not really a thing of surprise. But please don’t just get carried away with what I just said; to enjoy such returns consistently you need to develop a deep insight into options.</p>
+<p>Have a look at this snapshot –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/05/Image-3_Idea-option-chain.png"><img alt="Image 3_Idea option chain" class="aligncenter size-full wp-image-1919" height="473" loading="lazy" sizes="(max-width: 572px) 100vw, 572px" src="http://zerodha.com/varsity/wp-content/uploads/2015/05/Image-3_Idea-option-chain.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/05/Image-3_Idea-option-chain.png 572w, https://zerodha.com/varsity/wp-content/uploads/2015/05/Image-3_Idea-option-chain-300x248.png 300w" width="572"/></a></p>
+<p>This is the option contract of IDEA Cellular Limited, strike price is 190, expiry is on 30<sup>th</sup> April 2015 and the option type is a European Call Option . These details are marked in the blue box. Below this we can notice the OHLC data, which quite obviously is very interesting.</p>
+<p>The 190CE premium opened the day at Rs.8.25/- and made a low of Rs.0.30/-. I will skip the % calculation simply because it is a ridiculous figure for intraday. However assume you were a seller of the 190 call option intraday and you managed to capture just 2 points again, considering the lot size is 2000, the 2 point capture on the premium translates to Rs.4000/- in profits intraday, good enough for that nice dinner at Marriot with your better half J.</p>
+<p>The point that I’m trying to make is that, traders (most of them) trade options only to capture the variations in premium. They don’t really bother to hold till expiry. However by no means I am suggesting that you need not hold until expiry, in fact I do hold options till expiry in certain cases. Generally, speaking option sellers tend to hold contracts till expiry rather than option buyers. This is because if you have written an option for Rs.8/- you will enjoy the full premium received, i.e. Rs.8/- only on expiry.</p>
+<p>So having said that the traders prefer to trade just the premiums, you may have a few fundamental questions cropping up in your mind. Why do premiums vary? What is the basis for the change in premium? How can I predict the change in premiums? Who decides what should be the premium price of a particular option?</p>
+<p>Well, these questions and therefore, the answers to these form the crux of option trading. If you can master these aspects of an option, let me assure you that you would set yourself on a&nbsp; professional path to trade options.</p>
+<p>To give you a heads up – the answers to all these questions lies in understanding the 4 forces that simultaneously exerts its influence on options premiums, as a result of which the premiums vary. Think of this as a ship sailing in the sea. The speed at which the ship sails (assume its equivalent to the option premium) depends on various forces such as wind speed, sea water density, sea pressure, and the power of the ship. Some forces tend to increase the speed of the ship, while some tend to decrease the speed of the ship. The ship battles these forces and finally arrives at an optimal sailing speed.</p>
+<p>Likewise the premium of the option depends on certain forces called as the ‘Option Greeks’. Crudely put, some Option Greeks tends to increase the premium, while some try to reduce the premium. A formula called the ‘Black &amp; Scholes Option Pricing Formula’ employs these forces and translates the forces into a number, which is the premium of the option.</p>
+<p>Try and imagine this – the Option Greeks influence the option premium; however, the Option Greeks itself are controlled by the markets. As the markets change on a minute by minute basis, therefore the Option Greeks change and therefore the option premiums!</p>
+<p>In the future, in this module, we will understand each of these forces and their characteristics. We will understand how the force gets influenced by the markets and how the Option Greeks further influence the premium.</p>
+<p>So the end objective here would be to be –</p>
+<ol>
+<li>To get a sense of how the Option Greeks influence premiums</li>
+<li>To figure out how the premiums are priced considering Option Greeks and their influence</li>
+<li>Finally keeping the Greeks and pricing in perspective, we need to smartly select strike prices to trade</li>
+</ol>
+<p>One of the key things we need to know before we attempt to learn the option Greeks is to learn about the ‘Moneyness of an Option’. We will do the same in the next chapter.</p>
+<p>A quick note here – the topics in the future will get a little complex, although we will try our best to simplify it. While we do that, we would request you to please be thorough with all the concepts we have learnt so far.</p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>Buy a call option or sell a put option only when you expect the market to go up</li>
+<li>Buy a put option or sell a call option only when you expect the market to go down</li>
+<li>The buyer of an option has unlimited profit potential and limited risk (to the extent of the premium paid)</li>
+<li>The seller of an option has an unlimited risk potential and limited reward (to the extent of the premium received)</li>
+<li>Majority of options traders prefer to trade options only to capture the variation in premiums</li>
+<li>Option premiums tend to gyrate drastically – as an options trader, and you can expect this to happen quite frequently.</li>
+<li>Premiums vary as a function of 4 forces called the Option Greeks</li>
+<li>Black &amp; Sholes option pricing formula employs four forces as inputs to give out a price for the premium</li>
+<li>Markets control the Option Greeks and the Greek’s variation itself</li>
+</ol>
+<div class="clear"> </div>
+</div>

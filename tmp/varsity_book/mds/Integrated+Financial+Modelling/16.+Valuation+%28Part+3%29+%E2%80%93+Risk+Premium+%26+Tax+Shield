@@ -1,0 +1,84 @@
+<div class="post">
+<h2><strong>16.1 – Market risk premium </strong></h2>
+<p>In the previous chapter, we discussed that the equity holders expect a higher return than the debt holders. The higher return (rate) is what we will use to discount the free cash flow to the equity holders. But the question is, how much higher?</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2022/07/M13-C15-Web.png"><img alt="" class="aligncenter wp-image-11735" height="369" sizes="(max-width: 500px) 100vw, 500px" src="https://zerodha.com/varsity/wp-content/uploads/2022/07/M13-C15-Web-300x221.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2022/07/M13-C15-Web-300x221.png 300w, https://zerodha.com/varsity/wp-content/uploads/2022/07/M13-C15-Web-768x566.png 768w, https://zerodha.com/varsity/wp-content/uploads/2022/07/M13-C15-Web.png 800w" width="500"/></a></p>
+<p>You can think about it this way: if the risk-free rate (Rf) is 7%, how much more would you like (over and above the risk-free rate) so that you feel encouraged to invest in equities? If you were to ask a bunch of investors and take an average of the expected return, you would arrive at the rate. However, most individual investors won’t have access to such a consensus. Hence we can probably apply an equation to get our answer.</p>
+<p>Re = Risk free rate (Rf) + Risk premium</p>
+<p>Where Re = Return expectation of equity holders.</p>
+<p>The risk premium is the additional return over and above the risk-free return to encourage an investor to invest in equities. The risk premium is –</p>
+<p>Risk premium = β*(Rm – Rf), where</p>
+<p>Rf = Risk-free rate</p>
+<p>Β = Beta of the stock</p>
+<p>Rm = Market rate</p>
+<p>Of course, we can rearrange the Re equation –</p>
+<p><strong>Re = Rf + </strong><strong>β</strong><strong>*(Rm – Rf) </strong></p>
+<p>By the way, this equation in finance is called ‘The Capital Asset Pricing model’ or CAPM.</p>
+<p>Let’s take an example and see how this works. The best proxy for the risk-free rate is the 10-year-old Govt bond yield. We can look it up on the CCIL portal –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2022/07/Image-3_ccil.png"><img alt="" class="aligncenter wp-image-11734" height="192" loading="lazy" sizes="(max-width: 500px) 100vw, 500px" src="https://zerodha.com/varsity/wp-content/uploads/2022/07/Image-3_ccil-300x115.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2022/07/Image-3_ccil-300x115.png 300w, https://zerodha.com/varsity/wp-content/uploads/2022/07/Image-3_ccil-768x295.png 768w, https://zerodha.com/varsity/wp-content/uploads/2022/07/Image-3_ccil.png 869w" width="500"/></a></p>
+<p>I’ve highlighted the last traded yield of the 10-year Government bond maturing in 2032. The yield is 7.4586%. The yield indicates that if I were to invest in this bond and hold it for 10 years, I would earn a return of 7.4586% without any risk. Without any risk, because we don’t expect Govt of India to default on its debt obligations, default risk is almost non-existent.</p>
+<p>Government defaulting on debt is a severe issue, so governments try their best not to default. Also, why are we considering 10 years and not any shorter-term bond? This is because we are interested in longer-term yields as we also forecast the free cash flow for the long term.</p>
+<p>Next up is the Beta. Beta, as you may know, is the company’s stock price sensitivity with respect to the stock market. I’ve explained the concept of Beta and what it means in this chapter. I’d suggest you review it if you are not familiar with the idea of Beta as explained in section 11.5 of this <a href="https://zerodha.com/varsity/chapter/hedging-futures/">chapter</a>.</p>
+<p>Rm is the market rate, and this is the market’s long-term average return. I’d suggest you keep this around 8% to 9%, maybe 10 or 12%, if you are bullish.</p>
+<p>Please note that when we build the final model, all these rates can be changed to whatever you think makes sense. Let’s assume that the Beta of the company we are dealing with is riskier compared to market, and therefore we assign the Beta as 1.3.</p>
+<p>By the way, you can easily calculate the Beta of any company in excel. Anyway, let us plug in these numbers and see how the return expectation of equity holders works –</p>
+<p>= 7.4586% + (1.3) *( 8.5%-7.4586%)</p>
+<p>= <strong>8.81%</strong></p>
+<p>Of course, when we integrate this within our model, you are free to change the values to what you think makes sense. For example, if you feel the risk-free rate should be 8% instead of 7.45%, that’s fine, but whenever you make any change, make sure you have a reason for that change.</p>
+<h2><strong>16.2 – Tax shield </strong></h2>
+<p>In the last chapter, we learned that we could get the Free cash flow to the firm by adding non-cash expenses back to the Profit after taxes. The non-cash expenses included the following –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Depreciation</li>
+<li>Amortization</li>
+<li>Deferred taxes</li>
+<li>Proceeds from the sale of assets</li>
+<li>Interest expense</li>
+</ul>
+</li>
+</ul>
+<p>Adding the interest expense part is tricky, and we need to spend some time understanding how to add the interest. Let me take an arbitrary example to illustrate this, have a look at this –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2022/07/Image-1_normal.png"><img alt="" class="aligncenter wp-image-11732" height="183" loading="lazy" sizes="(max-width: 500px) 100vw, 500px" src="https://zerodha.com/varsity/wp-content/uploads/2022/07/Image-1_normal-300x110.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2022/07/Image-1_normal-300x110.png 300w, https://zerodha.com/varsity/wp-content/uploads/2022/07/Image-1_normal.png 533w" width="500"/></a></p>
+<p>As you can see, we have a fairly straightforward bottom line P&amp;L of a company. The EBIT is 700 Crs, and the company pays 70Cr as interest charges at 10%. The PBT is 630 Crs, and at a 25% tax rate, the company pays a tax of 157.5Crs. The bottom line i.e. PAT = PAT – Taxes = 472.5 Crs.</p>
+<p>Now, to calculate the Free cash flow to the firm, we start with PAT and add back non-cash expenses. We also add back the interest paid because the interest goes back to the debt holder of the company. If we were to do this –</p>
+<p>PAT = 472.5</p>
+<p>(Add) Interest = 70</p>
+<p>= 542.5</p>
+<p>But there is a problem doing this. You see, when we pay interest, the tax outflow reduces. For instance, the tax here is 157.5 Crs while the interest paid is 70. Now, consider the interest as 0, this would make PBT 700, and at 25% tax, the tax outflow is 175.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2022/07/Image-2_noint.png"><img alt="" class="aligncenter wp-image-11733" height="185" loading="lazy" sizes="(max-width: 500px) 100vw, 500px" src="https://zerodha.com/varsity/wp-content/uploads/2022/07/Image-2_noint-300x111.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2022/07/Image-2_noint-300x111.png 300w, https://zerodha.com/varsity/wp-content/uploads/2022/07/Image-2_noint.png 533w" width="500"/></a></p>
+<p>So in a sense, interest shields us from a higher tax outflow. So interest that we add back should be factored in for tax shield. To do that –</p>
+<p>Interest (with tax shield) = Interest *( 1 – tax)</p>
+<p>= 70*(1-25%)<br/>
+<strong>52.5</strong></p>
+<p>So when you add back interest to PAT to calculate the FCFF, we add 52.5 here and not 70. In this example –</p>
+<p>PAT = 472.5</p>
+<p>Interest = 52.5</p>
+<p><strong>525</strong></p>
+<p>Just to refresh, for FCFF calculation –</p>
+<p>FCFF = PAT + Depreiciation + Amortization + Interest*(1-tax rate) + deferred taxes – working capital changes – investment in fixed assets (CAPEX).</p>
+<p>We start the FCFF calculation with PAT, but instead, we can even begin with EBIT. If we were to start with EBIT, we need to add back the tax shield.</p>
+<p>FCFF = EBIT *(1-tax rate)+ Depreiciation + Amortization + deferred taxes – working capital changes – investment in fixed assets (CAPEX).</p>
+<p>Let’s plug in the above equation for the arbitrary example –</p>
+<p>= 700*(1-25%)</p>
+<p>= <strong>525</strong></p>
+<p>Of course, for the sake of simplicity, I’ve ignored the non-cash expense, CAPEX, and working capital changes. But the point is that you can start your FCFF calculation with either PAT or EBIT; both will lead you to the same result.</p>
+<p>You can extend the calculation to figure out the free cash flow to the equity holders by deducting the net debt from the free cash flow to the firm.</p>
+<p>Free Cash flow to Equity = FCFF + [Debt – Principal repayment]</p>
+<p>Where, [Debt – Principal repayment] = Net debt</p>
+<p>Hence,</p>
+<p>Free Cash flow to Equity = FCFF + Net debt</p>
+<p>We will get back to this later when we implement the FCFF and FCFE within our model.</p>
+<h3><strong>Key takeaways from this chapter</strong></h3>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Equity investors expect a return over and above the risk-free rate and that is called the risk premium</li>
+<li>The risk premium depends on the beta of the stock. Higher the beta, higher the premium</li>
+<li>When the company pays interest, it gets a tax shield</li>
+<li>When you add back in interest, you need to factor in the tax shield as well</li>
+<li>You can start the calculation of Free cash flow either by PAT or by EBIT, both yield similar results</li>
+</ul>
+</li>
+</ul>
+<div class="clear"> </div>
+</div>

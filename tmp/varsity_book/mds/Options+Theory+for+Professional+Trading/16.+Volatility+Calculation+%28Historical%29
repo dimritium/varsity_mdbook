@@ -1,0 +1,94 @@
+<div class="post">
+<h2><img alt="M5-Ch16-Cartoon" class="aligncenter size-full wp-image-2424" height="230" sizes="(max-width: 430px) 100vw, 430px" src="http://zerodha.com/varsity/wp-content/uploads/2015/07/M5-Ch16-Cartoon.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/07/M5-Ch16-Cartoon.png 430w, https://zerodha.com/varsity/wp-content/uploads/2015/07/M5-Ch16-Cartoon-300x160.png 300w" width="430"/></h2>
+<h2>16.1 – Calculating Volatility on Excel</h2>
+<p>In the previous chapter, we introduced the concept of standard deviation and how it can be used to evaluate ‘Risk or Volatility’ of a stock. Before we move any further on this topic I would like to discuss how one can calculate volatility. Volatility data is not easily available, hence its always good to know how to calculate the same yourself.</p>
+<p>Of course in the previous chapter we looked into this calculation (recall the Billy &amp; Mike example), we outlined the steps as follows –</p>
+<ol>
+<li>Calculate the average</li>
+<li>Calculate the deviation – Subtract the average from the actual observation</li>
+<li>Square and add up all deviations – this is called variance</li>
+<li>Calculate the square root of variance – this is called standard deviation</li>
+</ol>
+<p>The purpose of doing this in the previous chapter was to show you the mechanics behind the standard deviation calculation. In my opinion it is important to know what really goes beyond a formula, it only enhances your insights. In this chapter however, we will figure out an easier way to calculate standard deviation or the volatility of a given stock using MS Excel. MS Excel uses the exact same steps we outlined above, just that it happens at a click of a button.</p>
+<p>I’ll give you the border steps involved first and then elaborate on each step –</p>
+<ol>
+<li>Download the historical data of closing prices</li>
+<li>Calculate the daily returns</li>
+<li>Use the STDEV function</li>
+</ol>
+<p>So let us get to work straight away.</p>
+<p><strong>Step 1</strong> – Download the historical closing prices</p>
+<p>You can do this from any data source that you have. Some of the free and reliable data sources are NSE India website and Yahoo Finance.</p>
+<p>I will take the data from NSE India for now. At this point I must tell you that NSE’s website is quite resourceful, and in terms of information provided, I guess NSE’s website is one of the best stock exchange websites in the world.</p>
+<p>Anyway, in this chapter let us calculate Wipro’s volatility. To download the historical closing prices, visit – <a href="http://www.nseindia.com/products/content/equities/equities/equities.htm">http://www.nseindia.com/products/content/equities/equities/equities.htm</a> and click on historical data and select the search option.</p>
+<p>Here is a snapshot where I have highlighted the search option –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/07/Image-1_Search.png"><img alt="Image 1_Search" class="aligncenter size-full wp-image-2417" height="350" loading="lazy" sizes="(max-width: 716px) 100vw, 716px" src="http://zerodha.com/varsity/wp-content/uploads/2015/07/Image-1_Search.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/07/Image-1_Search.png 716w, https://zerodha.com/varsity/wp-content/uploads/2015/07/Image-1_Search-300x147.png 300w" width="716"/></a></p>
+<p>Once you hit search, a set of fields open up, filling them up is quite self explanatory – just fill in the required details and hit ‘Get Data’. Do make sure you get the data for the last 1 year. The dates that I have selected here is from 22<sup>nd</sup> July 2014 to 21<sup>st</sup> July 2015.</p>
+<p>Once you hit ‘get data’, NSE’s website will query your request and fetch you the required data. At this point you should see the following screen –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/07/Image-2_Download-CSV.png"><img alt="Image 2_Download CSV" class="aligncenter size-full wp-image-2418" height="441" loading="lazy" sizes="(max-width: 996px) 100vw, 996px" src="http://zerodha.com/varsity/wp-content/uploads/2015/07/Image-2_Download-CSV.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/07/Image-2_Download-CSV.png 996w, https://zerodha.com/varsity/wp-content/uploads/2015/07/Image-2_Download-CSV-300x133.png 300w" width="996"/></a></p>
+<p>Once you get this, click on ‘Download file in CSV format’ (highlighted in the green box), and that’s it.</p>
+<p>You now have the required data on Excel. Of course along with the closing prices, you have tons of other information as well. I usually like to delete all the other unwanted data and stick to just the date and closing price. This makes the sheet look clutter free and crisp.</p>
+<p>Here is a snapshot of how my excel sheet looks at this stage –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/07/Image-3_Excel.png"><img alt="Image 3_Excel" class="aligncenter size-full wp-image-2419" height="260" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2015/07/Image-3_Excel.png" width="235"/></a></p>
+<p>Do note, I have deleted all the unnecessary information. I have retained just the date and closing prices.</p>
+<p><strong>Step 2</strong> – Calculate Daily Returns</p>
+<p>We know that the daily returns can be calculated as –</p>
+<p>Return = (Ending Price / Beginning Price) – 1</p>
+<p>However for all practical purposes and ease of calculation, this equation can be approximated to:</p>
+<p><strong>Return = LN (Ending Price / Beginning Price)</strong>, where LN denotes&nbsp;Logarithm&nbsp;to Base ‘e’, note this is also called ‘Log Returns’.</p>
+<p>Here is a snap shot showing you how I’ve calculated the daily log returns of WIPRO –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/07/Image-4_LN-returns.png"><img alt="Image 4_LN returns" class="aligncenter size-full wp-image-2420" height="283" loading="lazy" sizes="(max-width: 374px) 100vw, 374px" src="http://zerodha.com/varsity/wp-content/uploads/2015/07/Image-4_LN-returns.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/07/Image-4_LN-returns.png 374w, https://zerodha.com/varsity/wp-content/uploads/2015/07/Image-4_LN-returns-300x227.png 300w" width="374"/></a></p>
+<p>I have used the Excel function ‘LN’ to calculate the long returns.</p>
+<p><strong>Step 3 </strong>– Use the STDEV Function</p>
+<p>Once the daily returns are calculated, you can use an excel function called ‘STDEV’ to calculate the standard deviation of daily returns, which if you realize is the daily Volatility of WIPRO.</p>
+<p>Note – In order to use the STDEV function all you need to do is this –</p>
+<ol>
+<li>Take the cursor an empty cell</li>
+<li>Press ‘=’</li>
+<li>Follow the = sign by the function syntax i.e STDEV and open a bracket, hence the empty cell would look like =STEDEV(</li>
+<li>After the open bracket, select all the daily return data points and close the bracket</li>
+<li>Press enter</li>
+</ol>
+<p>Here is the snapshot which shows the same –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/07/Image-5_STDEV.png"><img alt="Image 5_STDEV" class="aligncenter size-full wp-image-2421" height="218" loading="lazy" sizes="(max-width: 585px) 100vw, 585px" src="http://zerodha.com/varsity/wp-content/uploads/2015/07/Image-5_STDEV.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/07/Image-5_STDEV.png 585w, https://zerodha.com/varsity/wp-content/uploads/2015/07/Image-5_STDEV-300x112.png 300w" width="585"/></a></p>
+<p>Once this is done, Excel will instantly calculate the daily standard deviation aka volatility of WIPRO for you. I get the answer as 0.0147 which when converted to a percentage reads as 1.47%.</p>
+<p>This means the daily volatility of WIPRO is 1.47% !</p>
+<p>The value we have calculated is WIPRO’s daily volatility, but what about its annual volatility?</p>
+<p>Now here is a very important convention you will have to remember – in order to convert the daily volatility to annual volatility just multiply the daily volatility number with the square root of time.</p>
+<p>Likewise to convert the annual volatility to daily volatility, divide the annual volatility by square root of time.</p>
+<p>So in this case we have calculated the daily volatility, and we now need WIPRO’s annual volatility. We will calculate the same here –</p>
+<ul>
+<li>Daily Volatility = 1.47%</li>
+<li>Time = 252</li>
+<li>Annual Volatility = 1.47% * SQRT (252)</li>
+<li>= 23.33%</li>
+</ul>
+<p>In fact I have calculated the same on excel, have a look at the image below –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2015/07/Screenshot_22.png"><img alt="" class="aligncenter size-full wp-image-6026" height="306" loading="lazy" sizes="(max-width: 551px) 100vw, 551px" src="https://zerodha.com/varsity/wp-content/uploads/2015/07/Screenshot_22.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/07/Screenshot_22.png 551w, https://zerodha.com/varsity/wp-content/uploads/2015/07/Screenshot_22-300x167.png 300w" width="551"/></a></p>
+<p>So with this, we know WIPRO’s daily volatility is 1.47% and its annual volatility is about 23%.</p>
+<p>Lets double-check these numbers with what the NSE has published on their website. NSE publishes these numbers only for F&amp;O stocks and not other stocks. Here is the snapshot of the same –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/07/Image-6_NSE.png"><img alt="Image 6_NSE" class="aligncenter size-full wp-image-2423" height="546" loading="lazy" sizes="(max-width: 576px) 100vw, 576px" src="http://zerodha.com/varsity/wp-content/uploads/2015/07/Image-6_NSE.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/07/Image-6_NSE.png 576w, https://zerodha.com/varsity/wp-content/uploads/2015/07/Image-6_NSE-300x284.png 300w" width="576"/></a></p>
+<p>Our calculation is pretty much close to what NSE has calculated – as per NSE’s calculation Wipro’s daily volatility is about 1.34% and Annualized Volatility is about 25.5%.</p>
+<p>So why is there a slight difference between our calculation and NSE’s? – One possible reason could be that we are using spot price while NSE is using Futures price. However, I really don’t want to get into investigating why this slight difference exists. The agenda here is to know how to calculate the volatility of the security given its daily returns.</p>
+<p>Before we wrap up this chapter, let us just do one more calculation. Assume we directly get the annual volatility of WIPRO as 25.5%, how do we figure out its daily volatility?</p>
+<p>Like I mentioned earlier, to convert annual volatility to daily volatility you simply have to divide the annual volatility by the square root of time, hence in this particular case –</p>
+<p>= 25.5% / SQRT (252)</p>
+<p>= 1.60%</p>
+<p>So far we have understood what volatility is and how to calculate the same. In the next chapter, we will understand the practical application of volatility.</p>
+<p>Do remember we are still in the process of understanding volatility; however the final objective is to understand the options greek Vega and that really means. So please do not lose sight of our end objective.</p>
+<p>Please <a href="http://zerodha.com/varsity/wp-content/uploads/2015/07/Wipro.xlsx" rel="noopener noreferrer" target="_blank"><strong>click here</strong></a> to download the excel sheet.</p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>Standard Deviation represents volatility, which in turn represents risk</li>
+<li>We can use NSE website to get the daily closing prices of securities</li>
+<li>Daily return can be calculated as log returns</li>
+<li>Log function in excel is LN</li>
+<li>Daily return formula = LN (Today’s Value / Yesterday’s Value) expressed as a percentage</li>
+<li>Excel function to calculate volatility is STDEV</li>
+<li>Standard Deviation of daily return is equivalent of daily volatility</li>
+<li>To convert daily volatility to annual volatility multiply the daily volatility by the square root of time</li>
+<li>Likewise to convert annual volatility to daily volatility, divide the annual volatility by the square root of time</li>
+</ol>
+<div class="clear"> </div>
+</div>

@@ -1,0 +1,173 @@
+<div class="post">
+<h2>8.1 – A straight relationship</h2>
+<p>Today happens to be 14<sup>th</sup> of Feb, people around me are excited about Valentine’s Day, they are busy celebrating love and relationships. I think Valentine’s Day is a packaged affair, meant to boost the revenues of restaurants, jewelers, and gift shops, but then it’s just me and my random thoughts.</p>
+<p>Anyway, given its valentine’s day, I thought it would be a perfect idea to discuss relationships. Don’t worry, I’m not going to bore with a clichéd love story or give you any unsolicited advice on maintaining a great relationship, rather I’ll talk to you about two sets of numbers and how you can measure the relationship between them if at all there exists one.</p>
+<p>In the process, I’ll attempt to take you back to your school days, well, at least back to your high school math class ☺</p>
+<p>A quick recap here – Chapter 1 to 7 of this module, we discussed a rather simple technique of pair trading. This was as taught by Mark Whistler. Moving forward from this chapter, we will discuss a slightly more advanced technique of pair trade. This is also called ‘<strong>Statistical Arbitrage</strong>’ or ‘<strong>Relative value trading</strong>’ or RVT in short.</p>
+<p>So here we go.</p>
+<p>Do you remember the time your math teacher discussed the equation of a <a href="http://www.mathcentre.ac.uk/resources/uploaded/mc-ty-strtlines-2009-1.pdf" rel="noopener"><strong>straight line </strong></a>in the class? If you were like me, you’d have promptly ignored the lecture and looked outside of the window, quietly rebelling against the mainstream education.</p>
+<p>But then, if only the teacher had said ‘learn this, you’ll make money off it someday’, the interest level would have been totally different!</p>
+<p><img alt="" class="aligncenter wp-image-4787" height="280" sizes="(max-width: 480px) 100vw, 480px" src="https://zerodha.com/varsity/wp-content/uploads/2018/02/M10-C8-Cartoon.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/02/M10-C8-Cartoon.png 600w, https://zerodha.com/varsity/wp-content/uploads/2018/02/M10-C8-Cartoon-300x175.png 300w" width="480"/></p>
+<p>Anyway, life always gives you a second chance, so this time around, pay attention, and hopefully, you will make some money off it ☺</p>
+<p>The equation of a straight line reads something like this –</p>
+<p>Y = mx + ε</p>
+<p><strong><a href="http://www.mathcentre.ac.uk/resources/uploaded/mc-ty-strtlines-2009-1.pdf" rel="noopener">Click here</a></strong> for a detailed explanation, or continue reading for a barebone explanation.</p>
+<p>Before we discuss the equation, a quick note on the notations used –</p>
+<p>y = Dependent variable</p>
+<p>M = Slope</p>
+<p>X = Independent variable</p>
+<p>E = Intercept</p>
+<p>The equations states, the value of a dependent variable ‘y’ can be derived from an independent variable ‘x’, by multiplying x by its slope with y’ and adding the intercept ‘e’ to this product.</p>
+<p>Sounds confusing? I guess so ☺</p>
+<p>Let me elaborate on this and by the way before you start thinking why we are discussing the straight line equation instead of relative value trading (RVT), then please be rest assured, this concept has deep relevance to RVT!</p>
+<p>Consider two fitness freaks, let’s call them FF1 and FF2, between the two, FF2 is the kind of guy who wants to go that step extra and something more than what FF1 does. So if FF1 does 5 pushups, FF2 does 10. If FF1 does 20 pull-ups, then FF2 does 40. So on and so forth.&nbsp; &nbsp;Here is a table on how many pushups they did Monday to Saturday –</p>
+<table>
+<tbody>
+<tr>
+<th width="86"><strong>Day</strong></th>
+<th width="54"><strong>FF1</strong></th>
+<th width="54"><strong>FF2</strong></th>
+</tr>
+<tr>
+<td width="86">Monday</td>
+<td width="54">30</td>
+<td width="54">60</td>
+</tr>
+<tr>
+<td width="86">Tuesday</td>
+<td width="54">15</td>
+<td width="54">30</td>
+</tr>
+<tr>
+<td width="86">Wednesday</td>
+<td width="54">40</td>
+<td width="54">80</td>
+</tr>
+<tr>
+<td width="86">Thursday</td>
+<td width="54">20</td>
+<td width="54">40</td>
+</tr>
+<tr>
+<td width="86">Friday</td>
+<td width="54">10</td>
+<td width="54">20</td>
+</tr>
+<tr>
+<td width="86">Saturday</td>
+<td width="54">15</td>
+<td width="54">???</td>
+</tr>
+</tbody>
+</table>
+<p>Now, if you were to guess the number of push-ups FF2 would do on Saturday, what would it be? I guess it’s a no-brainer, it would be 30.</p>
+<p>This also means – the number of pushups FF2 does, is kind of dependent on the number of pushups FF1 does. FF1 does not really bother about FF2, he will go ahead and do as many pushups his body permits, but FF2, on the other hand, does twice the number of pushup as FF1.</p>
+<p>So this makes FF2 a dependent variable and FF1 an independent variable. Or in the straight line equation, FF2 = y and FF1 = x.</p>
+<p>FF2 = FF1*M + ɛ</p>
+<p>In simple English, the equation reads like this –</p>
+<p>The number of pushups FF2 does is equal to the number of pushups FF1 does, multiplied by a certain number, plus a constant.</p>
+<p>That certain number is called the slope (M), which happens to be 2, and the constant or ɛ happens to be 0. So the equation is –</p>
+<p>FF2 = FF1*2 + 0</p>
+<p>I hope this is fairly clear now. Let me copy paste the definition I had posted earlier –</p>
+<p><em>The straight line equations states, the value of a dependent variable ‘y’ can be derived from an independent variable ‘x’,&nbsp;by multiplying x by its slope with y’ and adding the intercept ‘e’ to this product.</em></p>
+<p>Now, think about another case –</p>
+<p>There are two hungry men, let’s call them H1 and H2. Just like FF1 and FF2, H2 eats twice the number of paratha as H1 plus 1.5 more. For example, if H1 eats 2 parathas, then H2 will eat 4 plus eat another 1.5. H2 will always ensure he eats that extra 1.5 parathas, no matter how full he is.</p>
+<p>So here is the table which gives you count of how many parathas these two hungry men ate over the last 6 days –</p>
+<table>
+<tbody>
+<tr>
+<th width="82"><strong>Day</strong></th>
+<th width="36"><strong>H1</strong></th>
+<th width="50"><strong>H2</strong></th>
+</tr>
+<tr>
+<td width="82">Monday</td>
+<td width="36">2</td>
+<td width="50">5.5</td>
+</tr>
+<tr>
+<td width="82">Tuesday</td>
+<td width="36">1.5</td>
+<td width="50">4.5</td>
+</tr>
+<tr>
+<td width="82">Wednesday</td>
+<td width="36">1</td>
+<td width="50">3.5</td>
+</tr>
+<tr>
+<td width="82">Thursday</td>
+<td width="36">3</td>
+<td width="50">7.5</td>
+</tr>
+<tr>
+<td width="82">Friday</td>
+<td width="36">3.5</td>
+<td width="50">8.5</td>
+</tr>
+<tr>
+<td width="82">Saturday</td>
+<td width="36">4</td>
+<td width="50">???</td>
+</tr>
+</tbody>
+</table>
+<p>If you notice, H2 (who is really hungry, all the time), eats twice as much as H1 plus 1.5 paratha extra. So on Saturday, he will eat –</p>
+<p>4*2 + 1.5 = 9.5 paratha!</p>
+<p>Remember, the number of parathas H2 eats is dependent on how many parathas H1 eats. H1, on the other hand, eats till he is satisfied. Given this, let us a construct a straight line equation for these two hungry men, just like the way we did for the two fitness freaks.</p>
+<p>H2 = H1*2 + 1.5</p>
+<p>Here, H2 is the dependent variable, whose value is dependent on H1. 2 is the slope, and 1.5 is the constant.</p>
+<p>Before we proceed, let’s make a small change in the paratha example, think of ‘Y’ as a diet conscious person. Every day, irrespective of how hungry or full Y is, he eats just 1.5 parathas. Not a morsel more or not morsel less.</p>
+<p>So, X eats 3 paratha, Y eats 1.5, X eats 5, Y eats 1.5, X eats 2.5, Y eats 1.5. So on and so forth. So what do you think the equation states?</p>
+<p>y = x*0 + 1.5</p>
+<p>The slope here is 0, hence, y is not really dependent on x, in fact, the value of y is a constant of 1.5, which is quite obvious.&nbsp; Hopefully, you get the point by now on how you can relate two sets of numbers.</p>
+<p>Now forget the fitness, forget the parathas, I’ll give you two sets of random numbers –</p>
+<table>
+<tbody>
+<tr>
+<th width="59"><strong>X</strong></th>
+<th width="59"><strong>Y</strong></th>
+</tr>
+<tr>
+<td width="59">10</td>
+<td width="59">3</td>
+</tr>
+<tr>
+<td width="59">12</td>
+<td width="59">6</td>
+</tr>
+<tr>
+<td width="59">8</td>
+<td width="59">4</td>
+</tr>
+<tr>
+<td width="59">9</td>
+<td width="59">17</td>
+</tr>
+<tr>
+<td width="59">20</td>
+<td width="59">36</td>
+</tr>
+<tr>
+<td width="59">18</td>
+<td width="59">22</td>
+</tr>
+</tbody>
+</table>
+<p>X is the independent variable and Y is the dependent variable. Given this, do you see a relationship between these two sets of numbers here? Eyeballing the numbers suggest that there is no relationship between X and Y, definitely not like the one which existed in the above two examples. But this does not mean that there is no relationship between the two at all. It’s just the relationship is not obvious to the naked eye.</p>
+<p>So how do we establish the relationship between the two? To be more precise, how do we figure out the values of the slope’ and the constant ‘ɛ’?</p>
+<p>Well, say hello to linear regression!</p>
+<p>I’ll introduce the same to you in the next chapter.</p>
+<hr/>
+<h2>Key takeaways from this chapter</h2>
+<ol>
+<li>A straight line equation can define the relationship between two variables</li>
+<li>Of the two variables, one of it is dependent and the other one is independent</li>
+<li>The slope of a straight-line equation, represented by ‘m’ helps you identify the extent by which the independent variable has to be scaled</li>
+<li>The term ɛ represents a constant term</li>
+<li>If the slope is zero, the Y = ɛ</li>
+<li>Sometimes, the relationship between two variables is not obvious</li>
+<li>When the relationship is not obvious, one can identify the relationship by employing a statistical technique called ‘Linear regression’.</li>
+</ol>
+<div class="clear"> </div>
+</div>

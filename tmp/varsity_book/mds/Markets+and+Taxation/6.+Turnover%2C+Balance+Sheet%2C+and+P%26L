@@ -1,0 +1,170 @@
+<div class="post">
+<h2><a href="https://zerodha.com/varsity/wp-content/uploads/2015/07/M7-Chapter6-new-illustration2.png"><img alt="" class="aligncenter wp-image-6962 size-full" height="400" sizes="(max-width: 600px) 100vw, 600px" src="https://zerodha.com/varsity/wp-content/uploads/2015/07/M7-Chapter6-new-illustration2.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/07/M7-Chapter6-new-illustration2.png 600w, https://zerodha.com/varsity/wp-content/uploads/2015/07/M7-Chapter6-new-illustration2-300x200.png 300w" width="600"/></a></h2>
+<h2>6.1 – Turnover &amp; Tax Audit</h2>
+<p>In the previous chapter, we discussed briefly on tax audit, and when it is required if you are declaring trading as a business income. To determine if an audit is required or not, we need to first determine the turnover of your trading business.</p>
+<p>Reiterating – the requirement of calculating turnover arises only when treating trading P&amp;L as a business income (An audit is not required if you only have capital gains income irrespective of the turnover). Turnover is only to determine if a tax audit is required or not. <strong>Your tax liability does not get affected by your turnover</strong>.</p>
+<p>An audit is required if –</p>
+<ul>
+<li><strong>Rs 5 Crores mark</strong> – Turnover for the year crosses the Rs 5 crores. Note, the Rs.5 Crore limit is applicable from the next financial year i.e.<strong> 2019 – 2020</strong>. This is in the case of digital transactions, and stock market trading is 100% digital.</li>
+<li><strong>Section 44AD</strong> – If the turnover is less than Rs 2 crore, and if <strong>profit less</strong> <strong>than</strong> 6% of turnover and total income exceeds basic exemption limit (this section applies only if person’s taxable income other than the loss from trading is more than the taxation slab) An audit is not required if turnover is less than Rs 5 crores but your total income is within the taxable limit of Rs 2.5lks. (This limit was extended to Rs 5 crores for FY 2019 – 20).</li>
+</ul>
+<p><strong>Note: </strong>The turnover value has been changed to 5 crores after the introduction of the Finance Bill 2020, effective from the FY 2019-2020 an audit is only required to be conducted if the turnover crosses the 5 crores limit.</p>
+<p>I am sure the first thing that came to your mind after reading turnover is contract turnover, i.e</p>
+<ul>
+<li>Nifty is at 8000, you buy 100 Nifty</li>
+<li>Buy-side value = 8000 * 100 = Rs.800,000/-</li>
+<li>Nifty goes to 8100, you square off the 100 Nifty</li>
+<li>Sell-side value = 8100 * 100 = Rs,810,000/-</li>
+<li>Turnover = Buy-side value + Sell-side value = 800,000 + 810,000 = <strong>1,610,000/-</strong></li>
+</ul>
+<p>But it is <strong>not</strong> the contract turnover the IT department is interested in; they are interested in your <strong>business turnover</strong>.</p>
+<p>Read below on how business turnover can be calculated –</p>
+<p>The method of calculating turnover is a debatable issue and what makes it a grey area is that there is no guideline as such from the IT department. One article of great help though is the guidance note on tax audit under Section 44AB by ICAI (Institute of chartered accountants of India, the governing body for CA’s). The article on <a href="http://resource.cdn.icai.org/34728gn-taxaudit-dtcicai.pdf">Page 23, Section 5.12 of this guidance note</a> has a guideline on how turnover can be calculated. It says:</p>
+<ul>
+<li><strong>Delivery based transactions </strong></li>
+</ul>
+<p>For all delivery based transactions, where you buy stocks and hold it more than 1 day and sell them, the total value of the sales is to be considered as turnover. So if you bought 100 Reliance shares at Rs 800 and sold them at Rs 820, the selling value of Rs 82000 (820 x 100) can be considered as turnover.</p>
+<p>But remember that the above calculation of turnover for delivery trades is only applicable if you are declaring equity delivery based trades also as a business income. If you are declaring them as capital gains or investments, there is no need to calculate turnover on such transactions. Also, there is no need for an audit if you have only capital gains irrespective of turnover or profitability.</p>
+<ul>
+<li><strong>Speculative transactions (intraday equity trading)</strong></li>
+</ul>
+<p>For all speculative transactions, aggregate or absolute sum of both positive and negative differences from trades is to be considered as a turnover. So if you buy 100 shares of Reliance at 800 in the morning and sell at 820 by afternoon, you make a profit or positive difference of Rs 2000, this Rs.2000 can be considered as turnover for this trade.</p>
+<ul>
+<li><strong>Non-speculative transactions (Futures and options)</strong></li>
+</ul>
+<p><span style="font-weight: 400;">For all non-speculative transactions, the article says that turnover to be determined as follows –</span></p>
+<ul>
+<li aria-level="1" style="font-weight: 400;"><span style="font-weight: 400;">The total of favourable and unfavourable differences shall be taken as turnover</span></li>
+<li aria-level="1" style="font-weight: 400;"><span style="font-weight: 400;">Premium received on sale of options </span><b>is also</b><span style="font-weight: 400;"> to be included in turnover. On Aug 19th 2022,</span><a href="https://drive.google.com/file/d/1lDHZmh7X3a3WASRfjLJ_PsOwfCBAwbTH/view?usp=sharing"> <span style="font-weight: 400;">ICAI clarified</span></a><span style="font-weight: 400;"> that however where the premium received is included for determining net profit for transactions, the same should not be separately included.&nbsp;</span></li>
+<li aria-level="1" style="font-weight: 400;"><span style="font-weight: 400;">In respect of any reverse trades entered, the difference thereon should also form part of the turnover.</span></li>
+</ul>
+<p><span style="font-weight: 400;">So if you buy 25 units or 1 lot of Nifty futures at 8000 and sell at 7900, Rs.2500 (25 x 100) the negative difference or loss on the trade is turnover.</span></p>
+<p><span style="font-weight: 400;">In options, if you buy 100 or 4 lots of Nifty 8200 calls at Rs.20 and sell at Rs.30. Firstly, the favourable difference or profit of Rs 1000 (10 x 100) is the turnover. So total turnover on this option trade = Rs 1000.&nbsp;</span></p>
+<p><span style="font-weight: 400;">The above calculations (points 1 to 3) are fairly straight forward; the next important thing to decide though is if you want to calculate turnover scrip wise or trade wise.</span></p>
+<p><b>Scrip wise</b><span style="font-weight: 400;"> is when you calculate the turnover by collating all trades on the particular contract/scrip for the financial year, find average buy/sell value, and then determine the turnover using the above 3 rules with the total profit/loss or favourable/unfavourable difference on this average price.</span></p>
+<p><b>Trade wise</b><span style="font-weight: 400;"> is when you calculate the turnover by summing up the absolute value of profit and loss of every trade done during the year and following the above rules.</span></p>
+<p><span style="font-weight: 400;">Let me explain both with some examples –</span></p>
+<ol>
+<li aria-level="1" style="font-weight: 400;"><span style="font-weight: 400;">100 Nifty Jan future bought at 8000 and sold at 8100 on 1</span><span style="font-weight: 400;">st</span><span style="font-weight: 400;"> Another 100 Nifty Jan future bought at 8100 and sold at 8050 on 10</span><span style="font-weight: 400;">th</span><span style="font-weight: 400;"> Jan. Determine turnover</span></li>
+</ol>
+<p><b>Using scrip wise</b><span style="font-weight: 400;">:</span></p>
+<p><span style="font-weight: 400;">Average Nifty Jan Fut buy: 200 Nifty Buy at 8050</span></p>
+<p><span style="font-weight: 400;">Average Nifty Jan Fut sell: 200 Nifty Sell at 8075</span></p>
+<p><span style="font-weight: 400;">Total profit/loss = 200 x Rs 25 = Profit of Rs 5000 = Turnover of Nifty Jan Futures</span></p>
+<p><b>Using trade wise</b><span style="font-weight: 400;">:</span></p>
+<p><span style="font-weight: 400;">100 Nifty Buy at 8000, Sell at 8100, Profit = Rs 10,000</span></p>
+<p><span style="font-weight: 400;">100 Nifty Buy at 8100, Sell at 8050, Loss = Rs 5000</span></p>
+<p><span style="font-weight: 400;">Turnover of Nifty Jan futures = Rs 10,000 + Rs 5000 (absolute sum of the loss) = Rs 15000</span></p>
+<ol>
+<li aria-level="1" style="font-weight: 400;"><span style="font-weight: 400;">100 Nifty Dec 8000 puts bought at 100 and sold at 50 on Dec 3</span><span style="font-weight: 400;">rd</span><span style="font-weight: 400;">. Another 100 Nifty Dec 8000 puts bought at 50 and sold at 30. Determine turnover</span></li>
+</ol>
+<p><b>Using scrip wise:</b></p>
+<p><span style="font-weight: 400;">Average of Nifty Dec 8000 puts buy: 200 puts at 75</span></p>
+<p><span style="font-weight: 400;">Average of Nifty Dec 8000 puts sell: 200 puts at 40</span></p>
+<p><span style="font-weight: 400;">Total profit/loss = 200 x Rs 35 = Loss of Rs 7000</span></p>
+<p><span style="font-weight: 400;">Total Turnover for Dec 8000 puts = Rs 7000&nbsp;</span></p>
+<p><b>Using trade wise:</b></p>
+<p><span style="font-weight: 400;">Trade 1</span></p>
+<p><span style="font-weight: 400;">100 Nifty Dec puts bought at 100 and sold at 50, Loss = Rs 5000</span></p>
+<p><span style="font-weight: 400;">Turnover = Rs 5000</span></p>
+<p><span style="font-weight: 400;">Trade 2</span></p>
+<p><span style="font-weight: 400;">100 Nifty Dec puts bought at 50 and sold at 30, Loss = Rs 2000</span></p>
+<p><span style="font-weight: 400;">Turnover = Rs 2000</span></p>
+<p><span style="font-weight: 400;">Total turnover = turnover of (trade 1+trade2) = Rs 7000</span></p>
+<p><strong>Which of the methods scrip wise or trade wise should I follow? </strong></p>
+<p>Calculating turnover trade wise is the most compliant way of determining turnover. The tricky bit calculating trade wise turnover though is that <strong>no broker (other than us at Zerodha)</strong> currently offers trade wise turnover reports. All brokers provide a P&amp;L with an average buy/sell price, which can be used to calculate scrip wise turnover. If you are not trading at Zerodha and are looking at calculating turnover trades, you will have to download all trades done during the year on an excel sheet and calculate turnover manually.</p>
+<p>Here are the scrip wise and trade wise turnover reports on <a href="https://console.zerodha.com/reports/taxpnl">Console</a></p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/06/M7C5-image1.jpg"><img alt="M7C5-image1" class="aligncenter size-full wp-image-2236" height="706" loading="lazy" sizes="(max-width: 754px) 100vw, 754px" src="http://zerodha.com/varsity/wp-content/uploads/2015/06/M7C5-image1.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/06/M7C5-image1.jpg 754w, https://zerodha.com/varsity/wp-content/uploads/2015/06/M7C5-image1-300x281.jpg 300w" width="754"/></a></p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/06/M7C5-image2.jpg"><img alt="M7C5-image2" class="aligncenter size-full wp-image-2237" height="396" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2015/06/M7C5-image2.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/06/M7C5-image2.jpg 800w, https://zerodha.com/varsity/wp-content/uploads/2015/06/M7C5-image2-300x149.jpg 300w" width="800"/></a></p>
+<p>Once you determine the turnover, you will know if you need an audit or not, that is if a visit to a CA and have him verify your balance sheet and P&amp;L statements is compulsory or not.</p>
+<h2>6.2 – Section 44AD</h2>
+<p>An audit is also required as discussed above if your profit is less than 6% of the turnover. By turnover, I am referring to all business turnover (speculative, non-speculative, and any other business you have), and by profit, I am referring to only your <strong>net business profits</strong> (not including, salary, capital gains, and others). This means that if you are trading as a business and incur a loss, you will most likely have to get the books audited.</p>
+<p>But an important thing to remember is that if your turnover is less than Rs 5 crore (was Rs 2 crore until &nbsp;FY 19/20) and if your profit is less than 6% of turnover an audit is not required if your total tax liability for the year is zero. That means if your total income (Salary + Business income + capital gain) is less than Rs 2.5lks (minimum tax slab), you have no tax liability, and hence audit not required. But it is advisable if losses are substantial to file the return with an audit.</p>
+<p><em>Applying section 44AD for trading as a business income is causing a huge inconvenience for the retail trading community. Turnover in an ordinary business to turnover while trading on the markets is hugely different. Unlike an ordinary business where there is a fixed margin every time there is a transaction, in the business of trading there is no such guarantee. This section is an unnecessary burden that indirectly gets most small retail traders to have their books audited. We at Zerodha have petitioned to the government through this </em><a href="https://www.change.org/p/minister-of-finance-exclude-business-of-trading-in-securities-and-derivatives-from-section-44ad" rel="noopener noreferrer" target="_blank"><em>campaign on Change.org</em></a><em>, make sure to support it and also get your trading friends to do the same. </em></p>
+<p>When you show trading as a business income, you will have to file using ITR3, which would mean that like any other business you are required to create and maintain –</p>
+<ul>
+<li>Balance Sheet</li>
+<li>P&amp;L statement</li>
+<li>Books of Accounts</li>
+</ul>
+<p>As discussed above, these will need to be audited based on your turnover (either turnover crosses the 5 Crore mark or in case the turnover is less than 5 Crore and your profits are less than 6% of the total turnover). Creating a balance sheet, P&amp;L, and maintaining books of account is quite simple for individuals with just trading as a business income, it is explained below in brief.</p>
+<h2>6.3 – Balance sheet, P&amp;L, Book of accounts</h2>
+<p><strong style="background-color: #78ddb9;">Balance sheet</strong></p>
+<p>A personal balance sheet provides an overall snapshot of your wealth at a specific period in time. It is a summary of your assets (what you own), your liabilities (what you owe), and your net worth (assets minus liabilities).</p>
+<p><strong>Creating a personal balance sheet </strong>is fairly simple first pull together all of this information:</p>
+<ul>
+<li>Your latest bank statements</li>
+<li>Loan statement,</li>
+<li>House loan statement</li>
+<li>Personal loan statements</li>
+<li>Principal balance of any outstanding loans</li>
+<li>Demat holding statement</li>
+</ul>
+<p>Once you have all of that information available, start developing your balance sheet by listing all of your assets (financial and tangible assets) with its respective values. Typical examples of the assets could be –</p>
+<ul>
+<li>Cash (in the bank, in hand, deposits with Bank)</li>
+<li>All investments (mutual funds, Shares, Debt investment )</li>
+<li>Property value ( Cost of Purchase + Duty any paid + Interiors etc)</li>
+<li>Automobile value ( Motor Car + Two-wheeler )</li>
+<li>Personal Property Value ( jewelry, household items, etc)</li>
+<li>Other assets ( Computers, Loans to friends, a plot of land, etc)</li>
+</ul>
+<p>The sum of all of those values is the total value of your <strong>assets</strong>.</p>
+<p>Next, you can look at your liabilities, which should be everything you owe. Here are some common liability categories:</p>
+<ul>
+<li>Remaining mortgage balance (Loan Statement)</li>
+<li>Car loans</li>
+<li>Student loans</li>
+<li>Any other personal loans</li>
+<li>Credit card balances</li>
+</ul>
+<p>The sum of all of the money you owe is your <strong>liabilities.</strong></p>
+<p>The difference between your assets and your liabilities is your <strong>net worth</strong>.</p>
+<p>That’s it; this is your balance sheet. Instead of creating one at the end of every financial year, it probably makes sense to update once every few months.</p>
+<p><strong style="background-color: #78ddb9;">Profit &amp; Loss statement</strong></p>
+<p>Profit and loss will summarize your revenue streams and your expenses for the financial year.</p>
+<p>To create your P&amp;L for the given Financial Year, you will have to list down all revenues and expenses.</p>
+<p>Revenue –</p>
+<ul>
+<li>Realized sale value from your stock holdings (Capital gains)</li>
+<li>The Income from F&amp;O, Intraday, or Commodity Trades. (Speculative and non-speculative business income)</li>
+</ul>
+<p>Remember that you can’t add your salary income (if you are working elsewhere) into your revenue stream on the P&amp;L.</p>
+<p>Expenses –</p>
+<ul>
+<li>Salaries, if you have people helping you trade.</li>
+<li>Rent, if you are using an office or any space for the trading activity for which you are paying a rental income</li>
+<li>Brokerage charges, taxes, and all other trade-related expenses.</li>
+<li>Advisory fees, consultancy, depreciation of computer, and etc (read the expenses section in the chapter on taxation-traders)</li>
+</ul>
+<p>Revenue minus the Expense equals profit.</p>
+<p>A <strong>Balance sheet</strong> helps you understand your networth between two dates and the <strong>P&amp;L</strong> will give you the reasons why your networth went up or down in that period. Maintaining financial discipline is the key to long term personal wealth creation. A personal balance sheet and P&amp;L will ensure that you are constantly in touch with reality – your assets and liabilities.</p>
+<p><strong style="background-color: #78ddb9;">Book of accounts/Book-keeping</strong></p>
+<p>Maintaining a book of accounts and Book-keeping seem like very complex tasks, and typical reactions I have seen from traders is to get scared of the word and try postponing the decision to learn more on the topic. Again for an individual with only trading as a business income and/or salary, it is super simple- you just need to maintain two books.</p>
+<p><strong>Bank book</strong>: Take an excel download of all your bank statements, and make a note next to every entry to identify the nature of the transaction. It is also best to keep a copy of all the bills in case of expenses.</p>
+<p><strong>Trading book</strong>: This should be automatically getting maintained for you by the broker where you trade. The broker should be able to give you a P&amp;L statement including all expenses for the year, ledger statement, and an online repository of contract notes if required. Unlike what many people think, contract notes aren’t really required unless scrutiny by the IT department, and even then if only asked for the same.</p>
+<p>As a person who has traded with over 10 online brokers in India, the ledger and P&amp;L statements with all expenses on it will show up any hidden charges by the broker.</p>
+<p>At Zerodha, <strong>we take great pride in the transparency we bring in as a business</strong>. Every charge other than brokerage is captured on the other credits/debits section on the tax P&amp;L on Console. We also give you a summary with value of all your open option positions starting April 1<sup>st</sup> and closing March 31<sup>st</sup>. This is extremely useful when you are trying to tally your ledger with your P&amp;L statement.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/06/M7C5-image3.jpg"><img alt="M7C5-image3" class="aligncenter size-full wp-image-2238" height="645" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2015/06/M7C5-image3.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/06/M7C5-image3.jpg 800w, https://zerodha.com/varsity/wp-content/uploads/2015/06/M7C5-image3-300x242.jpg 300w" width="800"/></a></p>
+<p>We are almost done with the taxation module. The last chapter will have an explanation of what kind of ITR forms to use, and also an excel download of a sample ITR 4 form with all details as an easy reference.</p>
+<hr/>
+<h3>Key takeaways from this chapter –</h3>
+<ol>
+<li>Audit of the books is required if turnover is more than Rs 5 Crore mark</li>
+<li>Audit of the books is required if turnover is less than Rs 5 Crore but if the profits are less than 6% and total income more than the basic exemption limit (was 2 cr until FY 2019/20)</li>
+<li>Audit of the books is NOT required if turnover is less than INR 5 Crore and profits higher than 6% of the turnover (was 2 cr until FY 2019/20)</li>
+<li>Turnover does not take into consideration the regular contract turnover</li>
+<li>Turnover refers to the business turnover</li>
+<li>Business turnover (for trading as a business) can be calculated scrip wise or trade wise</li>
+<li>Trade wise turnover is the most compliant way of declaring turnover.</li>
+<li>If you are declaring trading as a business then one needs to use the ITR3 (ITR 4 until 2016) form to file tax returns</li>
+<li>ITR3 requires you to have Balance Sheet and Profit and Loss statement along with books of account</li>
+<li>Balance sheet equation states that Net worth = Assets – Liabilities</li>
+<li>P&amp;L statement details the revenues and expenses</li>
+<li>If trading as a business maintaining 2 books of accounts becomes mandatory – Bank Book and Trade book</li>
+<li>It is advisable to maintain and update the Balance Sheet, P&amp;L, and books of accounts once in every quarter.</li>
+</ol>
+<p><strong>&nbsp;</strong></p>
+<p><strong>Disclaimer</strong> – Do consult a chartered accountant (CA) before filing your returns. The content above is in the context of taxation for retail individual investors/traders only.</p>
+<div class="clear"> </div>
+</div>

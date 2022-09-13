@@ -1,0 +1,58 @@
+<div class="post">
+<h2><a href="http://zerodha.com/varsity/wp-content/uploads/2014/07/Ch3-title.jpg"><img alt="Ch3-title" class="aligncenter size-full wp-image-170" height="300" sizes="(max-width: 600px) 100vw, 600px" src="http://zerodha.com/varsity/wp-content/uploads/2014/07/Ch3-title.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2014/07/Ch3-title.jpg 600w, https://zerodha.com/varsity/wp-content/uploads/2014/07/Ch3-title-300x150.jpg 300w" width="600"/></a></h2>
+<h2>3.1 Overview</h2>
+<p>From the time you access the market – let’s say, to buy a stock till the stocks come and hit your DEMAT account, many corporate entities are actively involved in making this work for you. These entities play their role quietly behind the scene, always complying with the rules laid out by SEBI and ensure an effortless and smooth experience for your transactions in the stock market. These entities are generally referred to as the Financial Intermediaries.</p>
+<p>Together, these financial intermediaries, interdependent of one another, create an ecosystem in which the financial markets exist. This chapter will help you get an overview of what these financial intermediaries are and the services they offer.</p>
+<h2><a href="http://zerodha.com/varsity/wp-content/uploads/2014/07/broker3.png"><img alt="broker3" class="sub-heading-img alignnone wp-image-191 size-full" height="48" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2014/07/broker3.png" width="48"/></a> 3.2 The Stock Broker</h2>
+<p>The stockbroker is probably one of the most important financial intermediaries that you need to know. A stockbroker is a corporate entity, registered as a trading member with the stock exchange and holds a stockbroking license. They operate under the guidelines prescribed by SEBI.</p>
+<p>A stockbroker is your gateway to stock exchanges. First, you need to open something called a ‘Trading Account’ with a broker who meets your requirements. Your requirement could be as simple as the proximity between the broker’s office and your house. Simultaneously, it can be as complicated as identifying a broker who can provide you with a single platform using which you can transact across multiple exchanges across the world. At a later point, we will discuss what these requirements could be and how to choose the right broker.</p>
+<p>A trading account lets you carry financial transactions in the market. A trading account is an account with the broker, which lets the investor buy/sell securities.</p>
+<p>So assuming you have a trading account – whenever you want to transact in the markets, you need to interact with your broker. There are a few standard ways through which you can interact with your broker.</p>
+<ol>
+<li>You can go to the broker’s office and meet the dealer in the broker’s office and tell him what you wish to do. A dealer is an executive at the stock broker’s office who carries out these transactions on your behalf.</li>
+<li>You can make a telephone call to your broker, identify yourself with your client code (account code) and place an order for your transaction. The dealer at the other end will execute the order for you and confirm the status of the same while you are still on the call.</li>
+<li>Do it yourself – this is perhaps the most popular way of transacting in the markets. The broker gives you access to the market through software called ‘Trading Terminal’. After you log in to the trading terminal, you can view live price quotes from the market and place orders yourself.</li>
+</ol>
+<p>The basic services provided by the brokers include…</p>
+<ol>
+<li>Give you access to markets and letting you transact</li>
+<li>Give you margins for trading – We will discuss this point at a later stage.</li>
+<li>Provide support – Dealing support if you have to call and trade. Software support if you have issues with the trading terminal</li>
+<li>Issue contract notes for the transactions – A contract note is a written confirmation detailing the transactions you have carried out during the day.</li>
+<li>Facilitate the fund transfer between your trading and bank account</li>
+<li>Provide you with a back-office login – using which you can see the summary of your account</li>
+<li>The broker charges a fee for the services he provides called the ‘brokerage charge’ or just brokerage. The brokerage rates vary, and it’s upto you to find a broker who strikes a balance between the fee he collects versus the services he provides.</li>
+</ol>
+<h2><img alt="broker3" class="sub-heading-img alignnone wp-image-191 size-full" height="48" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2014/07/broker3.png" width="48"/> 3.3 Depository and Depository Participants</h2>
+<p>When you buy a property, the only way to identify and claim that you actually own the property is by producing the property papers. Hence it becomes essential to store the property papers in a safe and secure place.</p>
+<p>Likewise, when you buy a share (a share represents part ownership in a company) the only way to claim your ownership is by producing your share certificate. A share certificate is nothing but a piece of document entitling you as the owner of the shares in a company.</p>
+<p>Before 1996 the share certificate was in paper format; however post 1996, the share certificates were converted to digital form. Converting a paper format share certificate into a digital format share certificate is called “Dematerialization” often abbreviated as DEMAT.</p>
+<p>The share certificate in DEMAT format has to be stored digitally. The storage place for the digital share certificate is the ‘DEMAT Account’. A Depository is a financial intermediary which offers the service of the Demat account. A DEMAT account in your name will have all the shares in the electronic format you bought. Think of the DEMAT account as a digital vault for your shares.</p>
+<p>As you may have guessed, your broker’s trading account and the DEMAT account from the Depository are interlinked.</p>
+<p>For example, if your idea is to buy Infosys shares, then all you need to do is open your trading account, look for Infosys’ prices, and buy it. Once the transaction is complete, the role of your trading account is done. After you buy, the shares of Infosys will automatically come and sit in your DEMAT account.</p>
+<p>Likewise, when you wish to sell Infosys shares, all you have to do is open your trading account and sell the stock. This takes care of the transaction part…however in the backend, the shares which are sitting in your DEMAT account will get debited, and the shares move out of your DEMAT account.</p>
+<p>At present, only two depositaries are offering you DEMAT account services. They are The National Securities Depository Limited (NSDL) and Central Depository Services (India) Limited. There is virtually no difference between the two, and both of them operate under strict SEBI regulations.</p>
+<p>Just like the way you cannot walk into National Stock Exchange’s office to open a trading account, you cannot walk into a Depository to open a DEMAT account. To open a DEMAT account, you need to liaison with a Depository Participant (DP). A DP helps you set up your DEMAT account with a Depository. A DP acts as an agent to the Depository. Needless to say, even the DP is governed by the regulations laid out by the SEBI.</p>
+<h2><img alt="broker3" class="sub-heading-img alignnone wp-image-191 size-full" height="48" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2014/07/broker3.png" width="48"/> 3.4 Banks</h2>
+<p>Banks play a very straightforward role in the market ecosystem. They help in facilitating the fund transfer from your bank account to your trading account. You cannot transfer money from a bank account that is not in your name.</p>
+<p>You can link multiple bank accounts to your trading through which you can transfer funds and trade. At Zerodha, you can add 1 primary bank account and up to 2 secondary bank accounts. You can use all the bank accounts to add funds, but withdrawals are only processed to the primary bank account. Also, dividend payments, money from buybacks will be sent to the primary bank account. The primary bank account is connected to your trading account and with the Depository and the Registrar and transfer agents (RTA).</p>
+<p>At this stage, you must have realized that the three financial intermediaries operate via three different accounts – trading account, DEMAT account and Bank account. All three accounts operate electronically and are interlinked, giving you a very seamless experience.</p>
+<h2><img alt="broker3" class="sub-heading-img alignnone wp-image-191 size-full" height="48" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2014/07/broker3.png" width="48"/> 3.5 NSCCL and ICCL</h2>
+<p>NSCCL – National Security Clearing Corporation Ltd and Indian Clearing Corporation are wholly owned subsidiaries of National Stock Exchange and Bombay Stock Exchange.</p>
+<p>The job of the clearing corporation is to ensure guaranteed settlement of your trades/transactions. For example, if you were to buy 1 share of Biocon at Rs.446 per share, there must be someone who has sold that 1 share to you at Rs.446. For this transaction, you will be debited Rs.446 from your trading account, and someone must be credited that Rs.446 toward the sale of Biocon. In a typical transaction like this, the clearing corporation’s role is to ensure the following:<br/>
+a) Identify the buyer and seller and match the debit and credit process<br/>
+b) Ensure no defaults – The clearing corporation also ensures there are no defaults by either party. For instance, after selling the shares, the seller should not be in a position to back out, thereby defaulting in his transaction.</p>
+<p>For all practical purposes, it’s ok not to know much about NSCCL or ICCL simply because, you as a trader or investor would not be interacting with these agencies directly. You need to be aware that certain professional institutions are heavily regulated and work towards a smooth settlement and efficient clearing activity.</p>
+<hr/>
+<h3>The key takeaway from this chapter</h3>
+<ol>
+<li>The market ecosystem is built by a cluster of financial intermediaries, each offering services unique to the functioning of markets.</li>
+<li>A stockbroker is your access to markets, so make sure you choose a broker that matches your requirements, and services well.</li>
+<li>A stockbroker provides you with a trading account which is used for all market-related transactions (buying and selling of financial instruments like shares)</li>
+<li>A Depository is a corporate entity which holds the shares in electronic form, against your name, in your account. Your account with the depository is called the ‘DEMAT’ account.</li>
+<li>There are only two depositories in India – NSDL and CDSL.</li>
+<li>To open a DEMAT account with one of the depositaries, you need to liaison with a Depository Participant (DP). A DP functions as an agent to the Depository</li>
+<li>A clearing corporation works towards clearing and settling of trades executed by you.</li>
+</ol>
+<div class="clear"> </div>
+</div>

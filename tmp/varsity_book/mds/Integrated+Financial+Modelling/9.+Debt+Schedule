@@ -1,0 +1,94 @@
+<div class="post">
+<h2><strong>9.1 – Dealing with debt</strong></h2>
+<p>We dealt with fixed assets in the previous chapter. The fixed assets, as you realize, is the most oversized line item on the asset side of the balance sheet. In this chapter, we will deal with the debt, which is present on the liabilities side of the balance sheet.</p>
+<p>We will use the base rule again to help us deal with debt.</p>
+<p>If you glance over the balance sheet, on the liabilities side, you’ll see the debt figures –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-1_bs.png"><img alt="" class="aligncenter wp-image-10268" height="62" sizes="(max-width: 531px) 100vw, 531px" src="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-1_bs-300x35.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-1_bs-300x35.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-1_bs-768x89.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-1_bs.png 859w" width="531"/></a></p>
+<p>There are three things to note here –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>The debt numbers are ‘non-current, in nature. This means these are long-standing debt, carried across multiple years</li>
+<li>Secured loan – loan against collateral (mainly in the form of tradable securities)</li>
+<li>Unsecured loan – Non-collateralized loan.</li>
+</ul>
+</li>
+</ul>
+<p>Generally speaking, an unsecured loan comes at a higher rate. In our model, we have secured and unsecured loans stated separately, but this may not always be the case.</p>
+<p>To give you a perspective, I’ve picked the balance sheet of Relaxo Footwear here to highlight the borrowings –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-2_fl.png"><img alt="" class="aligncenter wp-image-10269" height="236" loading="lazy" sizes="(max-width: 580px) 100vw, 580px" src="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-2_fl-300x122.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-2_fl-300x122.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-2_fl-768x312.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-2_fl.png 863w" width="580"/></a></p>
+<p>The borrowing is under current liability, which means the borrowing is short term in nature. As you can see, the company generalizes the ‘borrowing’ and does not specify if it’s secured or unsecured. To figure the nature of borrowing, you can dig deeper into the associated notes; note 15 in this case.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-3_notes.png"><img alt="" class="aligncenter wp-image-10270" height="525" loading="lazy" sizes="(max-width: 588px) 100vw, 588px" src="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-3_notes-300x268.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-3_notes-300x268.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-3_notes-768x686.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-3_notes.png 894w" width="588"/></a></p>
+<p>The notes specify that there is no non-current borrowing. But if you notice, there was a non-current, secured loan in 2019, which is repaid.</p>
+<p>For FY 2020, the current loan outstanding (Rs.19.16 Crs) is secure. Further, we can also see the securities tendered for securing the loan.</p>
+<p>Take another example –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-4_biobs.png"><img alt="" class="aligncenter wp-image-10271" height="294" loading="lazy" sizes="(max-width: 585px) 100vw, 585px" src="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-4_biobs-300x151.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-4_biobs-300x151.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-4_biobs-768x386.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-4_biobs.png 1018w" width="585"/></a></p>
+<p>We have the balance sheet of Biocon Limited for March 2021. The company has borrowings under both current and non-current liabilities side. Note that the company does not give any details of the nature of these borrowings in the balance sheet. Instead, the associated notes give us all the details.</p>
+<p>Here is the snapshot of Note 14, giving the details of the borrowings under the non-current liability side –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-5_borrow.png"><img alt="" class="aligncenter wp-image-10272" height="283" loading="lazy" sizes="(max-width: 585px) 100vw, 585px" src="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-5_borrow-300x145.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-5_borrow-300x145.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-5_borrow-768x372.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-5_borrow.png 1001w" width="585"/></a></p>
+<p>The borrowing is both secured and unsecured.</p>
+<p>The details of the current liability borrowings are as follows –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-6_stb.png"><img alt="" class="aligncenter wp-image-10273" height="138" loading="lazy" sizes="(max-width: 584px) 100vw, 584px" src="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-6_stb-300x71.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-6_stb-300x71.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-6_stb-1024x244.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-6_stb-768x183.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-6_stb.png 1028w" width="584"/></a></p>
+<p>Now, as long as you get the split of the loans, you can build a debt schedule using the technique we will discuss in this chapter.</p>
+<h2><strong>9.2 – Sheet setup</strong></h2>
+<p>We will set up a sheet similar to the asset schedule. I suppose you are pretty familiar with how to go about setting up the sheet –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-7_ds.png"><img alt="" class="aligncenter wp-image-10274" height="121" loading="lazy" sizes="(max-width: 585px) 100vw, 585px" src="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-7_ds-300x62.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-7_ds-300x62.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-7_ds-1024x212.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-7_ds-768x159.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-7_ds.png 1225w" width="585"/></a></p>
+<p>We follow the usual format protocol here, i.e., index columns A &amp; B, expand column C, freeze panes, and link Y1 to Y10 from cell E to N. I hope you are comfortable with the base rule to deal with the opening and closing balance figures. Else, I’d suggest you go through the previous chapters to figure how.</p>
+<p>As you can see below, I’ve set up the base rule for both secured and unsecured loans.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-8_debtob.png"><img alt="" class="aligncenter wp-image-10276" height="206" loading="lazy" sizes="(max-width: 588px) 100vw, 588px" src="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-8_debtob-300x105.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-8_debtob-300x105.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-8_debtob-1024x360.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-8_debtob-768x270.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-8_debtob.png 1224w" width="588"/></a></p>
+<p>In cell E8, I’ve linked the secured loan value of Year 1 to denote the closing balance for Y1. As per the base rule, the closing balance of Y1 works as the opening balance of Y2.</p>
+<p>For Y2, the closing balance of the secured loan is Rs.226.65 Crs, clearly suggesting that the company has new loan issues to the extent of Rs.119.16Crs.</p>
+<p>Further, in Y3, we see that the closing balance for the secured loan is Rs.207.83Crs, which implies that the company has repaid a portion of the loan.</p>
+<p>You can extend the same for all the years for secured and unsecured loans and build the sheet. Here is how my sheet looks now –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-9_debtfull.png"><img alt="" class="aligncenter wp-image-10275" height="191" loading="lazy" sizes="(max-width: 585px) 100vw, 585px" src="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-9_debtfull-300x98.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-9_debtfull-300x98.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-9_debtfull-1024x335.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-9_debtfull-768x251.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-9_debtfull.png 1224w" width="585"/></a></p>
+<p>The next bit is the projection of how the future year new issues and repayments will look like. The best way to estimate this is by understanding the management’s CAPEX plans. If the management has ambitious CAPEX plans, I think it’s fair to project the debt, keeping the management’s guidelines in perspective.</p>
+<p>I’d like you to watch this video clip, where the CMD of HPCL talks about CPAEX plans and the means to fund the CAPEX –</p>
+<p><a href="https://www.youtube.com/watch?v=HiCybI9sjEY">https://www.youtube.com/watch?v=HiCybI9sjEY</a></p>
+<p>The CMD also states figures to indicate the amount via debt. The point here is that when you have to project the new issue and repayment figures, always look for what the management has to say. You can find this information by skimming through the annual reports, analysts conference call transcripts, management interviews etc.</p>
+<p>If none of that is available, then you will have to project based on the previous trend. The trend in our model is easy to establish. In the years Y1 and Y2, the company had a large outstanding loan, which over time has reduced.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/11/M13-C9-Web.png"><img alt="" class="aligncenter wp-image-10283" height="405" loading="lazy" sizes="(max-width: 550px) 100vw, 550px" src="https://zerodha.com/varsity/wp-content/uploads/2021/11/M13-C9-Web-300x221.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/11/M13-C9-Web-300x221.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/11/M13-C9-Web-768x566.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/11/M13-C9-Web.png 800w" width="550"/></a>The company availed no new fresh issues, and we can also see that the company has repaid the loan. We can expect a similar trend to continue and project for the future years. To do that –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Keep new issue at zero</li>
+<li>Calculate the average repayment</li>
+</ul>
+</li>
+</ul>
+<p>If the above technique does not fit well with your approach, let the debt remain. The worst that will happen with some debt on the book is that our final valuation may turn out a bit conservative, which is not a bad outcome, in my opinion.</p>
+<p>I’ll keep the debt as is in this model and complete the secured and unsecured loan.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-10_ds.png"><img alt="" class="aligncenter wp-image-10277" height="206" loading="lazy" sizes="(max-width: 618px) 100vw, 618px" src="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-10_ds-300x100.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-10_ds-300x100.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-10_ds-1024x342.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-10_ds-768x257.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-10_ds.png 1196w" width="618"/></a></p>
+<p>Please look at the schedule at this point. There is an opening balance and a closing balance, and then there is secured and unsecured debt. If I were to estimate the company’s debt position, how can I do that? Should I consider the opening balance as on 31<sup>st</sup> March or the opening balance on 1<sup>st</sup> April?</p>
+<p>To address this, we can take the average across the opening and closing balance of both secured and unsecured debt and get the average loan outstanding.</p>
+<p>Next, from the P&amp;L, we know the interest expense for the year. By dividing the interest expense over the average outstanding loan, we get the interest rate applicable to the company. I’ve executed both these steps on excel, and here is how my sheet looks now –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-11_avg.png"><img alt="" class="aligncenter wp-image-10278" height="264" loading="lazy" sizes="(max-width: 639px) 100vw, 639px" src="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-11_avg-300x124.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-11_avg-300x124.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-11_avg-1024x423.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-11_avg-768x317.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-11_avg.png 1246w" width="639"/></a></p>
+<p>As you can see, I’ve calculated the average of the opening and closing balance across both secured and unsecured loans.</p>
+<p>I’ve divided the interest expense stated in P&amp;L over the average outstanding loan for the interest rate.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-12_int.png"><img alt="" class="aligncenter wp-image-10279" height="271" loading="lazy" sizes="(max-width: 645px) 100vw, 645px" src="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-12_int-300x126.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-12_int-300x126.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-12_int-1024x431.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-12_int-768x324.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-12_int.png 1227w" width="645"/></a></p>
+<p>Now that we have the applicable interest rate, we can project the future year interest rates by taking an average.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-13_avg.png"><img alt="" class="aligncenter wp-image-10280" height="280" loading="lazy" sizes="(max-width: 683px) 100vw, 683px" src="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-13_avg-300x123.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-13_avg-300x123.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-13_avg-1024x422.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-13_avg-768x316.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-13_avg.png 1239w" width="683"/></a></p>
+<p>At this point, we have the average interest applicable, plus we have the average loan outstanding, with we can project the future year’s interest expense as well. All we have to do is multiply the interest rate with the average loan outstanding.</p>
+<p>We can do this directly in the P&amp;L.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-14_pl.png"><img alt="" class="aligncenter wp-image-10281" height="244" loading="lazy" sizes="(max-width: 636px) 100vw, 636px" src="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-14_pl-300x115.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-14_pl-300x115.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-14_pl-1024x394.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-14_pl-768x295.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-14_pl.png 1340w" width="636"/></a></p>
+<p>Note the numbers from the debt schedule are flowing into the P&amp;L, and with that, we have made the 2<sup>nd</sup> P&amp;L projection.</p>
+<p>We can pull the numbers from the debt schedule to complete the non-current liabilities on the balance sheet.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-15_bs.png"><img alt="" class="aligncenter wp-image-10282" height="266" loading="lazy" sizes="(max-width: 639px) 100vw, 639px" src="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-15_bs-300x125.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-15_bs-300x125.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-15_bs-1024x426.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-15_bs-768x319.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/11/Image-15_bs.png 1243w" width="639"/></a></p>
+<p>You can <a href="https://zerodha.com/varsity/wp-content/uploads/2021/11/FM_Varsity_Main-model_Chapter-9.xlsx">download the excel sheet</a> used in this chapter here. In the next chapter, we will look at the reserves schedule.</p>
+<h3><strong>Key takeaways from this chapter</strong></h3>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Debt can be secured or unsecured</li>
+<li>The balance sheet gives us the overall debt; associated notes give us the split between secured and unsecured loan</li>
+<li>We can calculate the average of opening and closing balance across secured and unsecured loans to get the average loan</li>
+<li>The best way to project debt is by understanding the management’s view on CAPEX</li>
+<li>If there is no management guideline, its best to keep debt at the same level</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="clear"> </div>
+</div>

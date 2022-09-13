@@ -1,0 +1,110 @@
+<div class="post">
+<h2><img alt="" class="aligncenter size-full wp-image-4360" height="400" sizes="(max-width: 600px) 100vw, 600px" src="https://zerodha.com/varsity/wp-content/uploads/2017/08/M8-C17-Cartoon.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/08/M8-C17-Cartoon.png 600w, https://zerodha.com/varsity/wp-content/uploads/2017/08/M8-C17-Cartoon-300x200.png 300w" width="600"/></h2>
+<h2>17.1 – Commodity options, finally!</h2>
+<p>My first commodity trade was on pepper futures, and this was sometime towards the end of 2005 or early 2006. Since then, I’ve closely tracked the developments of the commodities market and the commodities exchanges in India. MCX has done a tremendous job in promoting commodities market in India. They have continuously introduced new contracts and enhanced market depth. Liquidity too has improved much fold since then. If I remember right, sometime around 2009, there was an attempt to introduce options in the commodity market. Needless to say, when I first heard about this, I was quite excited thinking about all the possibilities that one would have trading commodity options.</p>
+<p>But unfortunately, this never came through, and the commodities options were never introduced in the market. Since then, this topic on commodities options has surfaced a couple of times, but each time, it just remained a market rumour.</p>
+<p>However, it now appears that options on commodities will finally hit the market sometime soon. Around June 2017, SEBI cleared the files to permit commodities options.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2017/08/Commodity-Options-Clear.png"><img alt="" class="aligncenter size-full wp-image-4361" height="55" loading="lazy" src="https://zerodha.com/varsity/wp-content/uploads/2017/08/Commodity-Options-Clear.png" width="300"/></a></p>
+<p>You can read the new article <a href="http://economictimes.indiatimes.com/markets/commodities/news/all-clear-for-commodity-options-sebi-notifies-criterion-fixes-limits/articleshow/59128385.cms" rel="noopener noreferrer" target="_blank"><strong>here.</strong></a></p>
+<p>Since then, commodities exchanges have been working hard to build a good framework to introduce commodities options. Given this, I thought it would be good to have this quick note on what to expect and what to look for in the commodities options market.</p>
+<p>For those who are not too familiar about options, I’d suggest you start reading the module on Options <a href="https://zerodha.com/varsity/module/option-theory/" rel="noopener noreferrer" target="_blank"><strong>here.</strong></a></p>
+<p>Just like futures, the options theory for commodities would remain the same. You have just to pay attention to logistics, and that’s the objective of this chapter.</p>
+<h2>17.2 – Black 76</h2>
+<p>One of the important bits that you need to note with commodity options is that <strong>these are options on Futures</strong> and not really the spot market.</p>
+<p>For example, if you look at a call option on Biocon, the underlying for this option is the spot price of Biocon. Likewise, if you look at Nifty options, the underlying is the spot Nifty 50 index value. However, if you were to look at an option on Crude Oil, the underlying here is not the spot price of Crude Oil. This is quite intuitive as we do not have a spot market for Crude Oil or for that matter, any commodities in India. However, we do have a vibrant futures market. Hence the commodity options are based on the commodity futures market.</p>
+<p>If one were to talk about the crude oil options, then you need to remember the following –</p>
+<ol>
+<li>The underlying for Crude oil option is Crude oil Futures.</li>
+<li>The underlying for crude oil futures is the price of Crude Oil on NYMEX.</li>
+</ol>
+<p>So in a sense, this can be considered a derivative on a derivative. For all practical purpose, this should not really matter to you while trading. The only technical difference between a regular option (with spot as underlying) and option on futures is how the premium is calculated. For the former, the premium can be calculated by using a regular Black &amp; Scholes model, and for the latter, a model called Black 76 is used.</p>
+<p>The difference between these two models is how the continuous compounded risk-free rate is treated. I will not get into the details at this point. But do remember this – there are plenty of Black &amp; Scholes calculators online, so don’t be in a hurry to punch in the commodities variables in a standard B&amp;S calculator to extract the premium value and Greeks. It simply won’t work. ☺</p>
+<h2>17.3 – Contract Specifications</h2>
+<p>We still do not know how the exchanges will set up the framework for these options. However, we did take a look at the mock framework, and I’m guessing it won’t be too different from that.</p>
+<p>To begin with, exchanges may roll out Gold options, and would slowly but for surely introduce options on other commodities. Here is the highlight.</p>
+<p><strong>Option Type</strong> – Call and Puts</p>
+<p><strong>Lot size </strong>– Since these are options on futures, the lot size will be similar to the futures lot size</p>
+<p><strong>Order Types</strong> – All order types would be permitted (IOC, SL, SLM, GTC, Regular, Limit)</p>
+<p><strong>Exercise style</strong> – Options are likely to be European in nature.</p>
+<p><strong>Margins</strong> – SPAN + Exposure margin applicable for option writing and full premium to be paid for option buying. A concept of devilment margin will come into play, I’ve discussed this towards the end.</p>
+<p><strong>Last trading day (for Gold)</strong> – 3 days before the last tender day</p>
+<p><strong>Strikes</strong> – Considering one ‘At the money strike’ (ATM), there would be 15 strikes above and 15 strikes below ATM, taking the total to 31 strikes.</p>
+<p>This is where it gets a little tricky. Equity option traders are used to the following ‘Option Moneyness’ convention –</p>
+<ol>
+<li>At the Money (ATM) Options = This is when the spot is in and around the strike. So in a given series, only 1 strike is considered ATM.</li>
+<li>In the Money (ITM) = All call option strike below the ATM and call put option strikes above the ATM are considered ITM options.</li>
+<li>Out of the Money (OTM) = All call option strike above the ATM and call put option strikes below the ATM are considered Out of the Money (OTM) options.</li>
+</ol>
+<p>However, the commodities options will introduce us to a new terminology – ‘Close to Money’ (CTM) and this is how it will work –</p>
+<ol>
+<li>ATM – The strikes closest to the settlement price is considered ATM</li>
+<li>CTM – Two strikes above and two strikes below ATM are considered CTM</li>
+<li>OTM and ITM – The definition remains the same as in Equity.</li>
+</ol>
+<p><strong>Settlement – </strong>For daily M2M settlement in Futures, the exchange considers the commodities daily settlement price (DSP) as the reference value. The DSP of the commodity on the expiry day will therefore be the reference value for the options series as well.</p>
+<p>Let’s quickly understand how the settlement works. Consider this example – Assume the DSP of a commodity is 100. Assume this commodity has a strike interval at every 10 points. Given this, let’s identify the moneyness of strikes –</p>
+<ol>
+<li>ATM = 100</li>
+<li>CTM = 80, 90, 100, 110, and 120. Note, we have included two strikes above and below ATM</li>
+<li>OTM = All Call option above 100 and all Put options below 100 are considered OTM and therefore worthless</li>
+<li>ITM = All Call options below 100 (including 80 and 90, which are CTM) are ITM, and all Put options above 100 (including 110 and 120, which are CTM) are ITM.</li>
+</ol>
+<p>All long option holders which are ‘CTM’, will have to give something called as an ‘explicit instruction’. An explicit instruction will devolve the option into a futures contract. The futures contract will be at the strike. For example, if I hold 80 call option, then upon an ‘explicit instruction’, the call option will be devolved into a long futures position at 80. I’m guessing the ‘explicit instruction’, will be tendered via the trading terminal.</p>
+<p><span style="background-color: #eacf32;">Now, here is an important thing that you need to remember – If you do not give an explicit instruction to devolve your CTM option, then the option will be deemed worthless.</span></p>
+<p>All ITM option, except CTM, will get automatically settled. You need to be aware that settlement in the options market is using devolving the option into an equivalent futures position. If you are holding a non-CTM, ITM option and <strong>you wish not to settle this automatically</strong>, then you need to give a ‘Contrary instruction’. In the absence of which, the contract will be automatically settled using devolvement.</p>
+<p>Now, the question is, why would you not want to exercise an ITM option?</p>
+<p>There could be an instance where the ITM option that you have may not be worth exercising given the taxation and other applicable charges. So, in this case, you are better off not exercising your ITM option rather than exercising it. So, this is when you use the ‘Contrary instruction’, privilege and opt not to exercise your ITM option.</p>
+<h2>17.4 – Devolvement into a Futures contract</h2>
+<p>So assume you have an ITM (including CTM) option, and upon expiry, the option will be converted (or devolved) into a Futures position. Now, we all know that a futures position requires margins to be parked with the broker. How do we account for this? I mean, when I go long on option, I have to pay for the premium right? Naturally, at the time of buying the option, I would not park additional margin anticipating that the option ‘might’ get devolved into a futures position.</p>
+<p>To circumvent this, there is a concept of ‘Devolvement Margin’. I will cut through the technicalities and let you know what you should know and expect –</p>
+<ol>
+<li>Commodity options will expire a few days before the first tender date of the futures contract. This means, there will be a few days gap between the expiry of the futures contract and the options contract.</li>
+<li>Few days before the options can expire, exchanges will conduct a ‘What if scenario’ and generates a ‘Sensitivity Report’ to identify strikes which are likely to be ITM and CTM.</li>
+<li>For all such options, exchanges will start assigning ‘Devolvement Margin’, this means you will have to fund your account with enough margin money to carry forward the option position. Half of the required margin needs to be available a day before the expiry and the remaining half on the day of expiry of the options contract to convert the position to a futures contract.<br/>
+For example, The Expiry of the Gold option contract is on 28 November 2017, and the futures contract expires on 5 December 2017. Half of the margin needs to be added to the account on 27 November and the remaining on 28 November</li>
+<li>If you are holding a deep ITM option, then the profits arising out of this position will be considered to offset a portion of the margins required</li>
+<li>Given the above point, the deeper the option, lesser, would be the margin required. This also means CTM options will attract higher margins.</li>
+<li>In simpler words, if you are holding a commodity option, and it’s likely to expire ITM, and you intend to carry to expiry, then you need to ensure you bring in margin money as you approach expiry.</li>
+<li>How much margin, expiry dates, tender date etc. will vary based on the commodity</li>
+</ol>
+<p>Here is a quick note on how the options position will be devolved.</p>
+<table>
+<tbody>
+<tr>
+<th width="113"><strong>Option Position </strong></th>
+<th width="104"><strong>Devolved into </strong></th>
+</tr>
+<tr>
+<td width="113">Long Call</td>
+<td width="104">Long Futures</td>
+</tr>
+<tr>
+<td width="113">Short Call</td>
+<td width="104">Short Futures</td>
+</tr>
+<tr>
+<td width="113">Long Put</td>
+<td width="104">Short Futures</td>
+</tr>
+<tr>
+<td width="113">Shot Put</td>
+<td width="104">Long Futures.</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>I guess as, and when the option contracts roll out, we will have greater insight into the structure. I will update this chapter when the commodity options roll out with the exact information.</p>
+<p>Stay tuned.</p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>Options on commodities will be on Futures as underlying.</li>
+<li>One cannot use the regular Black &amp; Scholes Calculator for identifying the premium and Greeks.</li>
+<li>Black 76 is the model used for Options on futures.</li>
+<li>Upon exercising the option devolves into a futures position.</li>
+<li>CTM options are two strikes above and below ATM</li>
+<li>If a CTM option holder does not give explicit instruction, then the option is deemed worthless.</li>
+<li>An ITM option holder can give a ‘contrary instruction’, to choose not to exercise the option. You will opt for this if you know that the position is not going to be profitable owing to taxes and applicable charges</li>
+</ol>
+<div class="clear"> </div>
+</div>

@@ -1,0 +1,439 @@
+<div class="post">
+<h2>4.1 – A quick recap</h2>
+<p>With the Tata Consultancy Services (TCS) example in the previous chapter, we got a working knowledge of how Futures trading works. The futures trade example required us to go long on TCS futures as the expectation was that the TCS stock price would increase in due course. Further, we decided to square off the contract the very next day for a profit. However, if you recall, right at the beginning of the example, we posed a fundamental question; let me rephrase and repost the same for your ready reference.</p>
+<p>A rational to go long on TCS was built – the thought was that TCS stock price had overreacted to the management’s statement. I expected the stock price to increase in due course of time. A directional view was established, and hence a futures trade was initiated. The question was – anyway, the expectation is that the stock price will go higher, why should one bother about buying futures and why not the stock in the spot market?</p>
+<p>In fact, buying futures requires one to enter a digital agreement with the counterparty. Besides, a futures agreement is time-bound, meaning the directional view has to pan out within the specified time period. If it does not pan out within the specified time (as in the expiry), one has to suffer a loss. Contrast this (futures buying) with just buying stock and letting it reside in your DEMAT account. There is no obligation of an agreement or the pressure of time. So why does one really need futures? What makes it so attractive? Why not just buy the stock and stay oblivious to the stock price and the time?</p>
+<p>The answers to all these questions lie in the financial leverage inherent in financial derivatives, including futures. As they say, Leverage is a true financial innovation; if used in the right context and spirit, leverage can create wealth. Without much ado, let us explore this angle of futures trading.</p>
+<h2>4.2 – Leverage in perspective</h2>
+<p>Leverage is something we use at some point or the other in our lives. We don’t think about it in the way it is supposed to be thought about. We miss seeing through the numbers and therefore never really appreciate the essence of leverage.</p>
+<p>Here is a classic example of leverage – many of you may relate to this one.</p>
+<p>A friend of mine is a real estate trader; he likes to buy apartments, sites, and buildings, hold them for a while, and then sell them for a later stage. He believes this is better than trading inequities, and I beg to differ – I could go on and on debating this, but maybe some other time.</p>
+<p>Anyway, here is a summary of a recent real estate transaction he carried out. In November 2013, Prestige Builders (popular builders in Bangalore) identified land in South Bangalore. They announced a new project – A luxurious apartment complex with state of the art amenities. My friend jumped in and booked a 2 bedroom, hall, and kitchen apartment, expected to come up on the 9<sup>th</sup> floor for a sum of Rs.10,000,000/-. The project is expected to be completed by mid-2018. Since the apartment was just notified, and no work had started, the potential buyers were only required to pay 10% of the actual buy value. This is pretty much the norm when it comes to buying brand new apartments. The remaining 90% was scheduled to be paid as the construction progressed.</p>
+<p>So back in Nov 2013, for an initial cash outlay of Rs.10,00,000/- (10% of 10,000,000/-), my friend was entitled to buy a property worth Rs.10,000,000/-. In fact, the property was so hot; all the 120 apartments were sold out like hot cakes just within 2 months of Prestige Builder announcing the brand new project.</p>
+<p>Fast forward to Dec 2014, and my friend had a potential buyer for his apartment. Being a real estate trader, my friend jumped into the opportunity. A quick survey revealed that the area’s property value had appreciated by at least 25% (well, that’s how crazy real estate is in Bangalore). So my friend’s 9th-floor apartment was now valued at Rs.12,500,000/-. My friend and the potential buyer struck a deal and settled on the sale at Rs.12,500,000/-.</p>
+<p>Here is a table summarizing the transaction –</p>
+<table>
+<tbody>
+<tr>
+<th>Particulars</th>
+<th>Details</th>
+</tr>
+<tr>
+<td>Initial Value of Apartment</td>
+<td>Rs. 10,000,000/-</td>
+</tr>
+<tr>
+<td>Date of Purchase</td>
+<td>November 2013</td>
+</tr>
+<tr>
+<td>Initial Cash outlay @ 10% of the apartment value</td>
+<td>Rs.10,00,000/-</td>
+</tr>
+<tr>
+<td>Balance Payment to Builder</td>
+<td>Rs.90,00,000/-</td>
+</tr>
+<tr>
+<td>Appreciation in apartment value</td>
+<td>25%</td>
+</tr>
+<tr>
+<td>Value of the apartment in Dec 2014</td>
+<td>Rs.12,500,000/-</td>
+</tr>
+<tr>
+<td>New buyer agrees to pay the balance payment</td>
+<td>Rs.90,00,000/- to the builder</td>
+</tr>
+<tr>
+<td>My friend gets paid</td>
+<td>12,500,000 – 9000000 = <strong>Rs.35,00,000/-</strong></td>
+</tr>
+<tr>
+<td>My friend’s profit on the transaction</td>
+<td>Rs.35,00,000/- minus Rs.10,00,000/- = <strong>Rs.25,00,000/-</strong></td>
+</tr>
+<tr>
+<td>Return on investment</td>
+<td>25,00,000 / 10,00,000 = <strong>250%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Clearly, few things stand out in this transaction.</p>
+<ol>
+<li>My friend was able to participate in a <strong>large transaction</strong> by paying only 10% of the transaction value.</li>
+<li>To enter into the transaction, my friend had to pay 10% of the actual value (call it the contract value)</li>
+<li>The initial value he pays (10 lakhs) can be considered a token advance, or in terms of ‘Futures Agreement,’ it would be the initial margin deposit.</li>
+<li>A small change in the asset value impacts the return massively.</li>
+<li>This is quite obvious – a 25% increase in asset value resulted in a 250% return on investment.</li>
+<li>A transaction of this type is called a “<strong>Leveraged Transaction.</strong>”</li>
+</ol>
+<p>Do make sure you understand this example thoroughly because this is very similar to a futures trade, as all futures transactions are leveraged. Do keep this example in perspective as we will now move back to the TCS trade.</p>
+<p><img alt="M4-Ch4-title" class="aligncenter size-full wp-image-1444" height="300" sizes="(max-width: 600px) 100vw, 600px" src="http://zerodha.com/varsity/wp-content/uploads/2015/01/M4-Ch4-title.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/01/M4-Ch4-title.jpg 600w, https://zerodha.com/varsity/wp-content/uploads/2015/01/M4-Ch4-title-300x150.jpg 300w" width="600"/></p>
+<h2>4.3 – The Leverage</h2>
+<p>While we looked at the futures trade’s overall structure in the previous chapter, let us now re-work the TCS example with some specific details. For the sake of simplicity, the trade details are as follows: we will assume the opportunity to buy TCS occurs on the 15<sup>th</sup> of Dec at Rs.2362/- per share. Further, we will assume the opportunity to square off this position occurs on 23<sup>rd</sup> Dec 2014 at Rs.2519/-. Also, we will assume there is no difference between the spot and futures price.</p>
+<table>
+<tbody>
+<tr>
+<th>Particulars</th>
+<th>Details</th>
+</tr>
+<tr>
+<td>Underlying</td>
+<td>TCS Limited</td>
+</tr>
+<tr>
+<td>Directional View</td>
+<td>Bullish</td>
+</tr>
+<tr>
+<td>Action</td>
+<td>Buy</td>
+</tr>
+<tr>
+<td>Capital available for the trade</td>
+<td>Rs.100,000/-</td>
+</tr>
+<tr>
+<td>Trade Type</td>
+<td>Short term</td>
+</tr>
+<tr>
+<td>Remarks</td>
+<td>The expectation is that the stock price will increase over the next few days</td>
+</tr>
+<tr>
+<td>By Date</td>
+<td>15th Dec 2014</td>
+</tr>
+<tr>
+<td>Approximate buy Price</td>
+<td>Rs.2362/- per share</td>
+</tr>
+<tr>
+<td>Sell Date</td>
+<td>23rd Dec 2014</td>
+</tr>
+<tr>
+<td>Approximate Sell Price</td>
+<td>Rs.2519/- per share</td>
+</tr>
+</tbody>
+</table>
+<p>So with a bullish view on TCS stock price and Rs.100,000/ in hand, we have to decide between the two options at our disposal – <strong>Option 1</strong> – Buy TCS stock in the spot market or <strong>Option 2</strong> – Buy TCS futures from the Derivatives market. Let us evaluate each option to understand the respective dynamics.</p>
+<p><strong>Option 1</strong> – Buy TCS Stock in the spot market</p>
+<p>Buying TCS in the spot market requires us to check for the price at which the stock is trading and calculate the number of stocks we can afford to buy (with the capital at our disposal). After buying the stock in the spot market, we have to wait for at least two working days (T+2) to get credited to our DEMAT account. Once the stocks reside in the DEMAT account, we just have to wait for the right opportunity to sell them.</p>
+<p>Few salient features of buying the stock in the spot market (delivery based buying) –</p>
+<ol>
+<li>Once we buy the stock (for delivery to DEMAT), we have to wait for at least 2 working days before deciding to sell it. This means even if the very next day, if a good opportunity to sell comes up, we cannot really sell the stock.</li>
+<li>We can buy the stock to the extent of the capital at our disposal. Meaning if our disposable cash is Rs.100,000/- we can only buy to the extent of Rs.100,000/- not beyond this.</li>
+<li>There is no pressure of time – as long as one has the time and patience, one can wait for a really long time before deciding to sell</li>
+</ol>
+<p>Specifically, with Rs.100,000/- at our disposal, on 15<sup>th</sup> Dec 2014, we can buy –</p>
+<p>= 100,000 / 2362</p>
+<p>~ 42 shares</p>
+<p>Now, on 23<sup>rd</sup> Dec 2014, when TCS is trading at Rs.2519/- we can square off the position for a profit –</p>
+<p>= 42 * 2519</p>
+<p>= Rs.105,798/-</p>
+<p>So Rs.100,000/- invested in TCS on 14<sup>th</sup> Dec 2014 has now turned into Rs.105,798/- on 23<sup>rd</sup> Dec 2014, generating Rs.5,798/- in profits. Interesting, let us check the return generated by this trade –</p>
+<p>= [5798/100,000] * 100</p>
+<p>= 5.79 %</p>
+<p>A 5.79% return over 9 days is quite impressive. In fact, a 9-day return of 5.79% when annualized yields about 235%. This is phenomenal!</p>
+<p>But how does this contrast with option 2?</p>
+<p><strong>Option 2</strong> – Buy TCS Stock in the futures market</p>
+<p>Recall in futures market variables are predetermined. For instance, the minimum number of shares (lot size) that needs to be bought in TCS is 125 or in multiples of 125. The lot size multiplied by the futures price gives us the ‘contract value’. We know the futures price is Rs.2362/- per share; hence the contract value is –</p>
+<p>= 125 * 2362</p>
+<p>= Rs.295,250/-</p>
+<p>Does that mean to participate in the futures market, I need Rs.295,250/- in total cash? Not really; Rs. 295,250/- is the contract value; however, to participate in the futures market, one just needs to deposit a margin amount which is a certain % of the contract value. In the case of TCS futures, we need about 14% margin. At 14% margin (14% of Rs.295,250/-), Rs.41,335/- is all we need to enter into a futures agreement. At this stage, you may get the following questions in your mind –</p>
+<ol type="a">
+<li>What about the balance money? i.e Rs.253,915/- ( Rs.295,250/ minus Rs.41,335/-)
+<ul>
+<li>Well, that money is never really paid out.</li>
+</ul>
+</li>
+<li>What do I mean by ‘never really paid out’?
+<ul>
+<li>We will understand this in greater clarity when we take up the chapter on “Settlement – mark 2 markets.”</li>
+</ul>
+</li>
+<li>Is 14% fixed for all stocks?
+<ul>
+<li>No, it varies from stock to stock.</li>
+</ul>
+</li>
+</ol>
+<p>So, keeping these few points in perspective, let us explore the futures trade further. The cash available in hand is Rs.100,000/-. However, the cash requirement in terms of margin amount is just Rs. Rs.41,335/-.</p>
+<p>This means instead of 1 lot, maybe we can buy 2 lots of TCS futures. With 2 lots of TCS futures, the number of shares would be 250 (125 * 2) – at the cost of Rs.82,670/- as the margin requirement. After committing Rs.82,670/- as margin amount for 2 lots, we would still be left with Rs.17,330/- in cash. But we cannot really do anything with this money; hence it is best left untouched.</p>
+<p>Now here is how the TCS futures equation stacks up –</p>
+<p>Lot Size – 125</p>
+<p>No of lots – 2</p>
+<p>Futures Buy price – Rs. 2362/-</p>
+<p>Futures Contract Value at the time of buying = Lot size *number of lots* Futures Buy Price</p>
+<p>= 125 * 2 * Rs. 2362/-</p>
+<p>= Rs. 590,500/-</p>
+<p>Margin Amount – Rs.82,670/-</p>
+<p>Futures Sell price = Rs.2519/-</p>
+<p>Futures Contract Value at the time of selling = 125 * 2 * 2519</p>
+<p>= Rs.629,750/-</p>
+<p>This translates to a profit of Rs. 39,250/-!</p>
+<p>Can you see the difference? A move from 2361 to 2519 generated a profit of Rs.5,798/- in the spot market, but the same move generated Rs’ profit. 39,250/-. Let us see how juicy this looks in terms of % return.</p>
+<p>Remember our investment for the futures trade is Rs.82,670/-, hence the return has to be calculated keeping this as the base –</p>
+<p>[39,250 / 82,670]*100</p>
+<p>Well, this translates to a whopping 47% over 9 days! Contrast that with 5.79% in the spot market. For the sake of annualizing, this translates to an annual return of 1925 % …. With this, hopefully, I should have convinced you why short term traders prefer transactions in the Futures market as opposed to spot market transactions.</p>
+<p>Futures offer something more than a plain vanilla spot market transaction. Thanks to the existence of ‘Margins’, you require a much lesser amount to enter into a relatively large transaction. If your directional view is right, your profits can be huge.</p>
+<p>We can take positions much bigger than the capital available; this is called “Leverage”. Leverage is a double-edged sword. If used in the right spirit and knowledge, leverage can create wealth; if not, it can destroy wealth.</p>
+<p>Before we proceed further, let us just summarize the contrast between the spot and futures market in the following table –</p>
+<table>
+<tbody>
+<tr>
+<th>Particular</th>
+<th>Spot Market</th>
+<th>Futures Markets</th>
+</tr>
+<tr>
+<td>Capital Available</td>
+<td>Rs.100,000/-</td>
+<td>Rs.100,000/-</td>
+</tr>
+<tr>
+<td>By Date</td>
+<td>15th Dec 2014</td>
+<td>15th Dec 2014</td>
+</tr>
+<tr>
+<td>Buy Price</td>
+<td>Rs.2362 per share</td>
+<td>Rs.2362 per share</td>
+</tr>
+<tr>
+<td>Qty</td>
+<td>100,000 / 2362 = 42 shares</td>
+<td>Depends on Lot size</td>
+</tr>
+<tr>
+<td>Lot Size</td>
+<td>Not Applicable</td>
+<td>125</td>
+</tr>
+<tr>
+<td>Margin</td>
+<td>Not Applicable</td>
+<td>14%</td>
+</tr>
+<tr>
+<td>Contract value per lot</td>
+<td>Not Applicable</td>
+<td>125 * 2362 = 295,250/-</td>
+</tr>
+<tr>
+<td>Margin Deposit per lot</td>
+<td>Not Applicable</td>
+<td>14% * 295,250 = 41,335/-</td>
+</tr>
+<tr>
+<td>How many lots can be bought</td>
+<td>Not Applicable</td>
+<td>100,000/41,335= 2.4 or 2 Lots</td>
+</tr>
+<tr>
+<td>Margin Deposit</td>
+<td>Not Applicable</td>
+<td>41,335 * 2 = 82,670/-</td>
+</tr>
+<tr>
+<td>No of shares bought</td>
+<td>42 (as calculated above)</td>
+<td>125 * 2 = 250</td>
+</tr>
+<tr>
+<td>Buy Value (Contract Value)</td>
+<td>42 * 2362 = 100,000/-</td>
+<td>2 * 125 * 2362 = 590,500/-</td>
+</tr>
+<tr>
+<td>Sell Date</td>
+<td>23rd Dec 2014</td>
+<td>23rd Dec 2014</td>
+</tr>
+<tr>
+<td>No of days trade was live</td>
+<td>9 days</td>
+<td>9 days</td>
+</tr>
+<tr>
+<td>Sell Price</td>
+<td>Rs.2519/- per share</td>
+<td>Rs.2519/- per share</td>
+</tr>
+<tr>
+<td>Sell Value</td>
+<td>42 * 2519 = 105,798</td>
+<td>250 * 2519 = 629,750/-</td>
+</tr>
+<tr>
+<td>Profit earned</td>
+<td>105798 – 100000 = Rs.5798/-</td>
+<td>629750 – 590500 = Rs.39,250/-</td>
+</tr>
+<tr>
+<td>Absolute Return for 9 days</td>
+<td>5798 / 100,000 = 5.79 %</td>
+<td>39250 / 82670 = 47%</td>
+</tr>
+<tr>
+<td>% Return annualized</td>
+<td>235%</td>
+<td>1925%</td>
+</tr>
+</tbody>
+</table>
+<p>All through, we have discussed rewards of transacting in futures, but what about the risk involved? What if the directional view does not pan out as expected? To understand both the sides of a futures trade, we need to understand how much money we stand to make (or lose) based on the underlying movement. This is called the “Futures Payoff”.</p>
+<h2>4.4 – Leverage Calculation</h2>
+<p>Usually, when we talk about leverage, the common questions one gets asked is – “How many times leverage are you exposed to?” The higher the leverage, the higher is the risk, and the higher is the profit potential.</p>
+<p>Calculating leverage is quite easy –</p>
+<p><b>Leverage = [Contract Value/Margin]</b>. Hence for TCS trade the leverage is</p>
+<p>= [295,250/41,335]</p>
+<p>= 7.14, which is read as 7.14 times or simply as a ratio – 1: 7.14.</p>
+<p>This means every Rs.1/- in the trading account can buy upto Rs.7.14/- worth of TCS. This is a very manageable ratio. However, if the leverage increases, then the risk also increases. Allow me to explain.</p>
+<p>At 7.14 times leverage, TCS has to fall by 14% for one to lose all the margin amount; this can be calculated as –</p>
+<p><b>1 / Leverage</b></p>
+<p>= 1/ 7.14</p>
+<p>= 14%</p>
+<p>Now for a moment, assume the margin requirement was just Rs.7000/- instead of Rs.41,335/-. In this case, the leverage would be –</p>
+<p>= 295,250 / 7000</p>
+<p>= 42.17 times</p>
+<p>This is clearly is a very high leverage ratio. One will lose all his capital if TCS falls by –</p>
+<p>1/41.17</p>
+<p>= 2.3%.</p>
+<p>So, the higher the leverage, the higher is the risk. When leverage is high, only a small move in the underlying is required to wipe out the margin deposit.</p>
+<p>Alternatively, at roughly 42 times leverage, you just need a 2.3% move in the underlying to double your money.☺</p>
+<p>I personally don’t like to over-leverage. I stick to trades where the leverage is about 1:10 or about 1:12, not beyond this.</p>
+<h2>4.5 – The Futures payoff</h2>
+<p>Imagine this – when I bought TCS futures, the expectation was that TCS stock price would go higher, and therefore, I would financially benefit from the futures transaction. But what if instead of going up, TCS stock price went down? I would obviously make a loss. Think about it after initiating a futures trade. At every price point, I would either stand to make a profit or loss. The payoff structure of a futures transaction simply highlights the extent to which I either make a profit or loss at various possible price points.</p>
+<p>To understand the payoff structure better, let us build one for the TCS trade. Remember it is a long trade initiated at Rs.2362/- on 16<sup>th</sup> of Dec. After initiating the trade, by 23<sup>rd</sup> Dec, the price of TCS can go anywhere. Like I mentioned, at every price point, I will either make a profit or a loss. Hence while building the structure’s pay, I will assume various possible price point situations that can pan out by 23<sup>rd</sup> Dec, and I will analyze the P&amp;L situation at each of these possibilities. In fact, the table below does the same –</p>
+<table>
+<tbody>
+<tr>
+<th>Possible Price on 23rd Dec</th>
+<th>Buyer P&amp;L (Price on 23rd Dec – Buy Price)</th>
+</tr>
+<tr>
+<td>2160</td>
+<td style="color: red;">(202)</td>
+</tr>
+<tr>
+<td>2180</td>
+<td style="color: red;">(182)</td>
+</tr>
+<tr>
+<td>2200</td>
+<td style="color: red;">(162)</td>
+</tr>
+<tr>
+<td>2220</td>
+<td style="color: red;">(142)</td>
+</tr>
+<tr>
+<td>2240</td>
+<td style="color: red;">(122)</td>
+</tr>
+<tr>
+<td>2260</td>
+<td style="color: red;">(102)</td>
+</tr>
+<tr>
+<td>2280</td>
+<td style="color: red;">(82)</td>
+</tr>
+<tr>
+<td>2300</td>
+<td style="color: red;">(62)</td>
+</tr>
+<tr>
+<td>2320</td>
+<td style="color: red;">(42)</td>
+</tr>
+<tr>
+<td>2340</td>
+<td style="color: red;">(22)</td>
+</tr>
+<tr>
+<td>2360</td>
+<td style="color: red;">(2)</td>
+</tr>
+<tr>
+<td>2380</td>
+<td>18</td>
+</tr>
+<tr>
+<td>2400</td>
+<td>38</td>
+</tr>
+<tr>
+<td>2420</td>
+<td>58</td>
+</tr>
+<tr>
+<td>2440</td>
+<td>78</td>
+</tr>
+<tr>
+<td>2460</td>
+<td>98</td>
+</tr>
+<tr>
+<td>2480</td>
+<td>118</td>
+</tr>
+<tr>
+<td>2500</td>
+<td>138</td>
+</tr>
+<tr>
+<td>2520</td>
+<td>158</td>
+</tr>
+<tr>
+<td>2540</td>
+<td>178</td>
+</tr>
+<tr>
+<td>2560</td>
+<td>198</td>
+</tr>
+<tr>
+<td>2580</td>
+<td>218</td>
+</tr>
+<tr>
+<td>2600</td>
+<td>238</td>
+</tr>
+</tbody>
+</table>
+<p>This is the way you need to read this table – considering you are a buyer at Rs.2362/-, what would be the P&amp;L by 23<sup>rd</sup> Dec assuming TCS is trading is Rs.2160/-. As the table suggests, you would make a loss of Rs.202/-per share (2362 – 2160).</p>
+<p>Likewise, what would be your P&amp;L if TCS is trading at 2600? Well, as the table suggest, you would make a profit of Rs.238/- per share (2600 – 2362). So on and so forth.</p>
+<p>In fact, if you recollect from the previous chapter, we stated that if the buyer is making Rs. X/- as profit, then the seller is suffering a loss to the extent of Rs. X/-. So assuming&nbsp; 23<sup>rd</sup> Dec TCS is Trading at 2600, the buyer makes a profit of Rs.238/- per share, and the seller would be making a loss of Rs.238/- per share, provided that the seller has shorted the share at Rs.2362/-.</p>
+<p>Another way to look at this is that the money is being transferred from the seller’s pocket to the buyer’s pocket. It is just a transfer of money and not a creation of money!</p>
+<p>There is a difference between the transfer of money and creation of money. Money is generated when the value is created. For example, you have bought TCS shares from a long term perspective, TCS as a business does well, profits and margins improve. Obviously, you as a shareholder will benefit from under-appreciation in the share price. This is money creation or wealth generation. If you contrast this with Futures, money is not being created but moving from one pocket to another.</p>
+<p>Precisely for this reasons, Futures (rather financial derivatives in general) is called a “<strong>Zero Sum Game</strong>”.</p>
+<p>Further, let us now plot a graph of the possible price on 23<sup>rd</sup> December versus the buyers P&amp;L. This is also called the <strong>“Payoff Structure”.</strong></p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/01/M4-Ch4-Chart11.png"><img alt="M4-Ch4-Chart1" class="aligncenter size-full wp-image-1442" height="278" loading="lazy" sizes="(max-width: 500px) 100vw, 500px" src="http://zerodha.com/varsity/wp-content/uploads/2015/01/M4-Ch4-Chart11.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/01/M4-Ch4-Chart11.png 500w, https://zerodha.com/varsity/wp-content/uploads/2015/01/M4-Ch4-Chart11-300x167.png 300w" width="500"/></a></p>
+<p>As you can see, any price above the buy price (2362) results in a profit and any price below the buy price results in a loss. Since the trade involved purchasing 2 lots of futures (250 shares), a 1 point positive movement (from 2362 to 2363) results in a gain of Rs.250. Likewise, a 1 point negative movement (from 2362 to 2361) results in a loss of Rs.250. Clearly, there is a sense of proportionality here. The proportionality comes from the fact that the money made by the buyer is the loss suffered by the seller (provided they have bought/short the same price), and vice versa.</p>
+<p>Most importantly, because the P&amp;L is a smooth straight line, it is said that the futures are a “<strong>Linear Payoff Instrument</strong>”.</p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>Leverage plays a key role in futures trading.</li>
+<li>Margins allow us to deposit a small amount of money and take exposure to a large value transaction.</li>
+<li>Margins charged is usually a % of the contract value.</li>
+<li>Spot market transactions are not leveraged; we can transact to the extent of our capital.</li>
+<li>Under leverage, a small change in the underlying results in a massive impact on the P&amp;L</li>
+<li>The profits made by the buyer is equivalent to the loss made by the seller and vice versa.</li>
+<li>The higher the leverage, the higher is the risk and, therefore, the higher the chance of making money.</li>
+<li>Futures Instrument simply allows one to transfer money from one pocket to another. Hence it is called a “Zero Sum Game.”</li>
+<li>The payoff structure of a futures instrument is linear.</li>
+</ol>
+<div class="clear"> </div>
+</div>

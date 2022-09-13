@@ -1,0 +1,68 @@
+<div class="post">
+<h2>The 20 Market Depth (level 3 data) Window</h2>
+<p>I’ve driven a car for many years and I’ve even changed my car a few times now. Each time I changed my car, the engine remained more or less the same, but the features within the vehicle and its aesthetics continuously changed. Air conditioner, power steering, and power windows were all luxury features in the car at one point, but today, I guess no one buys a car without these essential features. The game-changer for me though was parking assist. The little camera at the back of the car gave me complete visibility of the parking space available. I was no longer required to pop and twist my head out and struggle to park the car, nor did I have to bug my co-passenger to get down and help me navigate my way into a parking spot. The parking assist feature did everything and helped me execute a perfect parallel park. The parking assist feature was my edge for hassle-free car parking.</p>
+<p>I feel the same edge while trading the markets with the level 3 data 🙂</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2019/11/M1-C14-illustration.jpg"><img alt="" class="aligncenter wp-image-6037 size-full" height="300" sizes="(max-width: 600px) 100vw, 600px" src="https://zerodha.com/varsity/wp-content/uploads/2019/11/M1-C14-illustration.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2019/11/M1-C14-illustration.jpg 600w, https://zerodha.com/varsity/wp-content/uploads/2019/11/M1-C14-illustration-300x150.jpg 300w" width="600"/></a></p>
+<p>Level 3 or the 20 market depth feature is unique and has multiple uses. You’ll probably appreciate the level 3 market window if you have traded at an institutional desk. A regular retail trader would not understand this feature anytime soon, simply because this feature was unavailable all these years until we introduced it for the very first time to the Indian retail traders.</p>
+<p>The purpose of this chapter is to help you understand how useful this feature is and get you started on building trading strategies around this feature.</p>
+<p>If you are entirely new to this, I’d suggest you <strong><a href="https://zerodha.com/z-connect/featured/introducing-20-depth-or-level-3-data-beta-on-kite">read this blog</a></strong> to understand what the level 3 data is all about.</p>
+<p>Assuming you know what it is, this chapter will help you understand the multiple uses of this feature.</p>
+<h2>Contract availability</h2>
+<p>For the option traders, the 20-depth order book gives great visibility into the availability of contracts to trade and help identify better price points to execute these trade. Without this visibility, it becomes really hard to trade illiquid contracts. While I’m specifically talking about options here, you can extend this to Futures contracts as well, especially the illiquid ones.</p>
+<p>Let us put this in context, have a look at the regular market depth (i.e. the top 5 bid-ask) of the 13000 CE expiring in Jan 2020.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-11_opt.png"><img alt="" class="aligncenter wp-image-6071" height="335" loading="lazy" sizes="(max-width: 464px) 100vw, 464px" src="https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-11_opt-300x217.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-11_opt-300x217.png 300w, https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-11_opt.png 478w" width="464"/></a></p>
+<p>We can see narrow bids on the right and a notch better offer to the left. You’d probably hesitate to trade this contract if you are someone looking at trading a few lots of Nifty.</p>
+<p>But check what’s hiding under the hood here by opening the level 3 data –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2019/11/image-12_opt.png"><img alt="" class="aligncenter wp-image-6072" height="721" loading="lazy" sizes="(max-width: 448px) 100vw, 448px" src="https://zerodha.com/varsity/wp-content/uploads/2019/11/image-12_opt.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2019/11/image-12_opt.png 464w, https://zerodha.com/varsity/wp-content/uploads/2019/11/image-12_opt-186x300.png 186w" width="448"/></a></p>
+<p>&nbsp;</p>
+<p>As you can see, there are many contracts available, but they are not visible in the regular market depth. In fact, the bid and offer quantities are heavily concentrated below the 8<sup>th</sup> row respectively.</p>
+<p>Given the availability of the contracts in this strike, the perspective to trade or not completely changes and will now depend upon your trading strategy.</p>
+<h2><strong>Execution control</strong></h2>
+<p>Level 3 data gives you full visibility of the approximate execution price for your trade. This is particularly useful when you decide to scalp the market. When you scalp the market —</p>
+<ul>
+<li>You trade large quantities, i.e. buy and sell large amounts in quick succession to profit from small tick moves in the stock</li>
+<li>Since these are quick trades, you place market orders only</li>
+</ul>
+<p>Let us say you want to buy and sell 5000 shares of Hindustan Zinc; the regular market depth window gives you the following information —</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-1_-reg.png"><img alt="" class="aligncenter wp-image-6030 size-full" height="331" loading="lazy" sizes="(max-width: 473px) 100vw, 473px" src="https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-1_-reg.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-1_-reg.png 473w, https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-1_-reg-300x210.png 300w" width="473"/></a></p>
+<p>&nbsp;</p>
+<p>As you can see, there is no visibility on how these 5000 shares will get filled. Now, take a look at the 20 depth window —</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-2_20.png"><img alt="" class="aligncenter wp-image-6031 size-full" height="743" loading="lazy" sizes="(max-width: 462px) 100vw, 462px" src="https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-2_20.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-2_20.png 462w, https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-2_20-187x300.png 187w" width="462"/></a></p>
+<p>&nbsp;</p>
+<p>The 20 depth window paints an entirely different picture. It not only tells me that I’ll get the 5000 shares, but it also gives me information about the approximate buy price. If I were to place a market order for 5000 shares, I’d be buying this order book from 210.5 to 211.25. I also see at 211; there are 2425 shares available, so I can expect the average price is at or around 211.</p>
+<p>Now, my decision to scalp the stock should depend on the pop I’d expect over and above 211. Maybe 211.5 or so. Of course, you’ll get the exact breakeven (post charges) if you were to use a brokerage calculator.</p>
+<h2><strong>Position sizing</strong></h2>
+<p>Level 3 market window plays a critical role in ‘guesstimating’ the number of shares to trade, given the liquidity of the stock. For the sake of this discussion, we will assume that the availability of capital is not an issue.</p>
+<p>Now, have a look at the regular market depth —</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-3_sie.png"><img alt="" class="aligncenter wp-image-6032 size-full" height="336" loading="lazy" sizes="(max-width: 463px) 100vw, 463px" src="https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-3_sie.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-3_sie.png 463w, https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-3_sie-300x218.png 300w" width="463"/></a></p>
+<p>You expect Siemens to move from 1675 to about 1690 over the next hour. So, given the fact that you are not constrained by capital, how many shares will you buy for this intraday trade?</p>
+<p>The regular market depth window suggests that you can buy close to 175 shares. However, the 20 depth opens up a different perspective altogether —</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-4_sie20.png"><img alt="" class="aligncenter wp-image-6033 size-full" height="747" loading="lazy" sizes="(max-width: 465px) 100vw, 465px" src="https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-4_sie20.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-4_sie20.png 465w, https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-4_sie20-187x300.png 187w" width="465"/></a></p>
+<p>In fact, the liquidity in this stock lies below the best five bid and ask, and the impact cost is reasonable. The regular market depth window fails to capture this information. Assuming you intend to buy about 1500 shares, the buy price will lie somewhere within 1675.5 to 1678, which is spread of 0.149%.</p>
+<p>In this case, assuming you are sure about the target price (1690), you can go all in and buy through whatever is available at that moment.</p>
+<h2><strong>Order placement</strong></h2>
+<p>You can extend the position sizing concept and use the 20 depth market watch to place a stop loss or a limit order. Assume you have an intraday buy position in VST Tillers at 1313.8.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-5_buy.png"><img alt="" class="aligncenter wp-image-6034 size-full" height="56" loading="lazy" sizes="(max-width: 472px) 100vw, 472px" src="https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-5_buy.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-5_buy.png 472w, https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-5_buy-300x36.png 300w" width="472"/></a></p>
+<p>The question is, where you would place the stop loss for this trade? Can the 20 market depth help us with this?</p>
+<p>Of course. Have a look at the 20 depth window for VST Tillers. As you can see, there is a concentration of bids in 1290. The good part is that the number of order count is also the highest (35) in 1290.</p>
+<p>This implies that several traders have placed an order at 1290, indicating some sort of price action at that level. This perhaps builds a case for placing the stop-loss.</p>
+<p>A prudent trader would probably place a stoploss not at 1290, but maybe at a price just below it.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-6_vst.png"><img alt="" class="aligncenter" height="512" loading="lazy" src="https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-6_vst.png" width="338"/></a></p>
+<p>So I was a buyer in this stock, then purely based on 20 depth I’d probably place my SL at 1290 or below, maybe at 1287 and by the same logic, set my target at 1340 or at 1338.8.</p>
+<h2><strong>Validate the support and resistance level</strong></h2>
+<p>I find this extremely interesting. In the example above, we identified 1290 as the stoploss price, simply because there was a concentration of bids. In other words, we expect 1290 as a support price.</p>
+<p>If this is indeed true, then it should show up on the charts as well, right? Have a look at the chart below –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-7_vst-chart.png"><img alt="" class="aligncenter wp-image-6036 size-large" height="668" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-7_vst-chart-1024x668.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-7_vst-chart-1024x668.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-7_vst-chart-300x196.png 300w, https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-7_vst-chart-768x501.png 768w, https://zerodha.com/varsity/wp-content/uploads/2019/11/Image-7_vst-chart.png 1201w" width="1024"/></a></p>
+<p>Clearly, there is some price action around 1296. Remember, support and resistance is not one price point, but rather a range. Therefore 1290 – 1300 marks as an intraday support for this stock.</p>
+<p>This is a perfect example of seeing the price action concept play out in the market.</p>
+<p>Another way to look at this is first to identify the S&amp;R level and then check the 20 depth to figure if there is a concentration of bids/offers in that zone.</p>
+<p>&nbsp;</p>
+<p>Hopefully, by now you’ve started to appreciate the immeasurable value 20 depth order book brings to you while trading.</p>
+<p>Remember, irrespective of which technique you use to develop a point of view (technical or quantitative analysis), things boil down to price, and the action trades take at that price.</p>
+<p>The 20 depth market window is essentially your ticket to validate the truth of this price action. Make sure you use your card wisely!</p>
+<p>Do post your comments and tell us how differently you will use the 20 depth window for identifying trading opportunities.</p>
+<p>Good luck!</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="clear"> </div>
+</div>

@@ -1,0 +1,153 @@
+<div class="post">
+<h2><strong>3.1 – Annual Report recce</strong></h2>
+<p>Picking up from the previous chapter, now that we have our excel sheet set up, we will extract the data from the annual report to our blank excel sheet. The excel sheet at this stage should look like this –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-1_starting.png"><img alt="" class="aligncenter wp-image-9889" height="265" sizes="(max-width: 403px) 100vw, 403px" src="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-1_starting-300x197.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-1_starting-300x197.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-1_starting.png 735w" width="403"/></a></p>
+<p>And a similar page set up for the profit and loss statement.</p>
+<p>Now, before we start extracting the financial statements data from the annual report to the excel sheet, we need to conduct a simple survey of the annual report. Remember, for our financial model; we need the historical financial data from the last five years. We will use the data of the last five years as the primary input for the model.</p>
+<p>It is essential to ensure that the last five years data is consistent and there no missing items in the statements. Let us understand this with a quick example.</p>
+<p>Assume this is the revenue section of the P&amp;L for an imaginary company –</p>
+<p><strong>Year 1 –</strong></p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Gross Income</li>
+<li>Duties</li>
+<li>Net Income</li>
+<li>Other income</li>
+</ul>
+</li>
+</ul>
+<p><strong>Year 2 </strong></p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Net income</li>
+<li>Other income</li>
+</ul>
+</li>
+</ul>
+<p>The company states the Gross income and duties paid in year one, but in year 2, the company states the net income directly. Inconsistencies like this can be a problem while modelling since it creates multiple gaps in the model. For this reason, even before we start copying the data from the annual report to the excel sheet, we need to first look at the last five years annual report and ensure that the statements are consistent over the years we are interested.</p>
+<p>Let us go ahead do this now.</p>
+<p>In the previous chapter, we discussed the ‘main model’ and the ‘helper model’. The main model is the one in which we will build a financial model end to end, and the helper model will help us understand concepts related to the financial model.</p>
+<p>So I guess it’s time to introduce the company which will act as the first ‘Helper Model’.</p>
+<p>We would be dealing with Relaxo Footwear. Relaxo is one of the largest manufacturers of footware in the country.</p>
+<p>As a first step, I download the company’s last five years’ annual report and put these in a single folder. Usually, a listed company puts up the annual report in the ‘Investors’ section of the website. I’d suggest you download the same from Relaxo’s website.</p>
+<p>My folder with the annual reports looks like this (I know this is basic stuff, but I’m posting an image just for clarification) –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-2_folder.png"><img alt="" class="aligncenter wp-image-9890" height="97" loading="lazy" sizes="(max-width: 416px) 100vw, 416px" src="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-2_folder-300x70.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-2_folder-300x70.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-2_folder-768x179.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-2_folder.png 771w" width="416"/></a></p>
+<p>I’ve even renamed these reports in a format that I like. I now go ahead and open all these annual reports side by side.</p>
+<p>Please note, we deal only with the consolidated financial statements and not the standalone statements.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/06/M13-C3-Integrated-Financial-Modelling-WEB.png"><img alt="" class="aligncenter wp-image-9912" height="323" loading="lazy" sizes="(max-width: 438px) 100vw, 438px" src="https://zerodha.com/varsity/wp-content/uploads/2021/06/M13-C3-Integrated-Financial-Modelling-WEB-300x221.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/06/M13-C3-Integrated-Financial-Modelling-WEB-300x221.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/06/M13-C3-Integrated-Financial-Modelling-WEB-768x566.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/06/M13-C3-Integrated-Financial-Modelling-WEB.png 800w" width="438"/></a></p>
+<p>I’ll start by reviewing the consolidated balance sheet of the company. At the very first inspection, I can see that company changed the accounting format in 2018. How did I figure this? Well, take a look at the below screenshots.</p>
+<p>Balance sheet as stated in March 2016 –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-3_mar16.png"><img alt="" class="aligncenter wp-image-9891" height="267" loading="lazy" sizes="(max-width: 428px) 100vw, 428px" src="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-3_mar16-300x187.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-3_mar16-300x187.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-3_mar16-768x480.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-3_mar16.png 900w" width="428"/></a></p>
+<p>&nbsp;</p>
+<p>Balance sheet as stated in March 2017 –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-4_mar17.png"><img alt="" class="aligncenter wp-image-9892" height="248" loading="lazy" sizes="(max-width: 442px) 100vw, 442px" src="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-4_mar17-300x168.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-4_mar17-300x168.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-4_mar17-768x431.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-4_mar17.png 872w" width="442"/></a></p>
+<p>You’d probably know that in every annual report, the company states the numbers for the financial statements for the year in review and the previous Financial year. This is the case in the above two snapshots. However, for the Financial Year 2018-19 –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-5_Mar18.png"><img alt="" class="aligncenter wp-image-9893" height="234" loading="lazy" sizes="(max-width: 428px) 100vw, 428px" src="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-5_Mar18-300x164.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-5_Mar18-300x164.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-5_Mar18-768x420.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-5_Mar18.png 956w" width="428"/></a></p>
+<p>The company has restated the Balance sheet for FY 2016, 2017, and 2018. So as a financial modeller, I’d ignore the financial statement from the 2016, 2017 Annual report and take the numbers for FY 2016, 2017, and 2018 from the 2018 Annual report.</p>
+<p>Next, when replicating the Balance sheet on excel, I’d take the line items as per the latest financial year. Let me explain why; here is the balance sheet snapshot as per the 2020 Annual Report –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-6_setup.png"><img alt="" class="aligncenter wp-image-9894" height="446" loading="lazy" sizes="(max-width: 400px) 100vw, 400px" src="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-6_setup-269x300.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-6_setup-269x300.png 269w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-6_setup-768x856.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-6_setup.png 782w" width="400"/></a></p>
+<p>Under current liabilities, there is a line item called ‘Lease Liabilities’, but this was missing in 2018 and 2019. But because it is present in the 2020 balance sheet, I will have to consider this line item and include it in my excel sheet; of course, the value against this line item will be 0 from 2016 to 2019, and INR 27.61 Cr in 2020.</p>
+<p>I’m trying to suggest that if you take the line items as stated in the latest year annual report, chances are you’d have covered almost all the line items. But this is just a hack; it may not work all the time.</p>
+<h2><strong>3.2 – Data extraction</strong></h2>
+<p>Alright, with that in place, let’s start extracting the data from the Annual report to the excel sheet we set up in the previous chapter. Of course, this is a lot of manual work, but there is no other way around this. Remember, we start with a blank excel sheet; we’ve only set up the skeleton for now. My sheet looks like this –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-7_blank.png"><img alt="" class="aligncenter wp-image-9895" height="267" loading="lazy" sizes="(max-width: 435px) 100vw, 435px" src="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-7_blank-300x184.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-7_blank-300x184.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-7_blank.png 728w" width="435"/></a></p>
+<p>&nbsp;</p>
+<p>To start with, on the left-hand side of the excel sheet, I type down the line items of the balance sheet. The order in which these line items are listed is the same order in which the balance sheet is reported. Please take a look at the snapshot below; I’ve typed out the assets side of the balance sheet.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-8_assets.png"><img alt="" class="aligncenter wp-image-9896" height="380" loading="lazy" sizes="(max-width: 416px) 100vw, 416px" src="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-8_assets-300x274.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-8_assets-300x274.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-8_assets-768x703.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-8_assets.png 798w" width="416"/></a></p>
+<p>Notice a few things here; I’ve used column A and B as an Index. I’ve typed out the heading and subheadings in these columns. I’ve highlighted what I mean by main and subheading here –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-9_Heading.png"><img alt="" class="aligncenter wp-image-9897" height="239" loading="lazy" sizes="(max-width: 412px) 100vw, 412px" src="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-9_Heading-300x174.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-9_Heading-300x174.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-9_Heading.png 748w" width="412"/></a></p>
+<p>In column C, I’ve mentioned the actual description of the line item. There are two main reasons to do this –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Indexing and segregation of heading and subheading is an excellent way to present financial statements. It not just looks easy on the eye but also captures more information</li>
+<li>Navigation becomes easy</li>
+</ul>
+</li>
+</ul>
+<p>What do I mean by navigation? When you have a lot of data to deal with, you need a quick way to navigate through it, and excel allows you to do that. I want you to do a small exercise to appreciate the ease of navigation.</p>
+<p>By the way, I’m assuming that at this stage, you’d have entered the asset side of the balance sheet in your respective excel sheet, in the same way as I’ve done. If not, I’d suggest you do that quickly before reading further.</p>
+<p>Now place your cursor in cell B5, where we’ve typed ‘Non – Current Assets’. Now, press the control key + the down arrow on your keyboard. The cursor should directly jump to the next indexed cell, i.e. ‘Financial Assets’.</p>
+<p>This quick jump helps you navigate faster and focus on the primary data chunks.</p>
+<p>I’ll proceed to set up the liabilities side of the balance sheet as well. So at this point, my balance sheet sans the values is set up. Here is the snapshot, but please excuse the compressed image; this is the only way I can present the entire balance sheet in the following image –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-10_BS.png"><img alt="" class="aligncenter wp-image-9898" height="567" loading="lazy" sizes="(max-width: 410px) 100vw, 410px" src="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-10_BS-217x300.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-10_BS-217x300.png 217w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-10_BS.png 526w" width="410"/></a></p>
+<p>Once you’ve reached this stage, the next step is to copy the data from the annual report to the excel sheet. Please do recollect; I’m looking at the 2018 balance sheet to copy the data for 2016, 2017, and 2018.</p>
+<p>Let’s deal with the ‘Non – Current Assets’ first. Here is the snapshot from the annual report –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-11_assets.png"><img alt="" class="aligncenter wp-image-9899" height="141" loading="lazy" sizes="(max-width: 423px) 100vw, 423px" src="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-11_assets-300x100.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-11_assets-300x100.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-11_assets-768x256.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-11_assets.png 940w" width="423"/></a></p>
+<p>I’ll go ahead and copy the same onto my excel sheet –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-12_copy-noncurrentasset.png"><img alt="" class="aligncenter wp-image-9900" height="245" loading="lazy" sizes="(max-width: 420px) 100vw, 420px" src="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-12_copy-noncurrentasset-300x175.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-12_copy-noncurrentasset-300x175.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-12_copy-noncurrentasset-768x449.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-12_copy-noncurrentasset.png 794w" width="420"/></a></p>
+<p>So far, so good, I suppose.</p>
+<h2><strong>3.3 – Assumptions, facts, and format</strong></h2>
+<p>In the image above, I’ve deliberately placed my cursor in cell E6 so that you can see that the number, 462.30, is copied from the balance sheet and not a calculated number. In a sense, this number is hardcoded.</p>
+<p>In the financial modelling world –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>The hardcoded number is considered as a fact because we are directly copying the number from the annual report</li>
+<li>A calculated number is considered an assumption since we apply a mathematical operation to arrive at the number.</li>
+</ul>
+</li>
+</ul>
+<p>Given this, it is essential to distinguish between the facts and assumptions in a financial model so that the user of the model can quickly identify which numbers are flowing directly from AR and the calculated numbers. Also, you will know where to look in case of an error in your model.</p>
+<p>I’ll explain how this can be done, but before that, let’s add up the total non-current assets.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-12_copy-noncurrentasset.png"><img alt="" class="aligncenter wp-image-9900" height="244" loading="lazy" sizes="(max-width: 418px) 100vw, 418px" src="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-12_copy-noncurrentasset-300x175.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-12_copy-noncurrentasset-300x175.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-12_copy-noncurrentasset-768x449.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-12_copy-noncurrentasset.png 794w" width="418"/></a></p>
+<p>I’ve used the ‘=sum()’ function in excel to calculate the total non-current asset. The calculated number is treated as an assumption since I’ve calculated this on my own. The easiest way to distinguish assumptions and facts is to colour code the numbers.</p>
+<p>You can easily colour code this by selecting all the hardcoded numbers in one go. Click the function + F5’ keys on your keyboard; you should get the following pop up –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-14_f5.png"><img alt="" class="aligncenter wp-image-9902" height="245" loading="lazy" sizes="(max-width: 415px) 100vw, 415px" src="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-14_f5-300x177.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-14_f5-300x177.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-14_f5.png 727w" width="415"/></a></p>
+<p>Now click on special, and select only constants and numbers like shown below –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-15_const.png"><img alt="" class="aligncenter wp-image-9903" height="284" loading="lazy" sizes="(max-width: 415px) 100vw, 415px" src="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-15_const-300x205.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-15_const-300x205.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-15_const.png 680w" width="415"/></a></p>
+<p>After you click ok, excel will highlight the hardcoded numbers or the facts.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-16_-hc.png"><img alt="" class="aligncenter wp-image-9904" height="216" loading="lazy" sizes="(max-width: 418px) 100vw, 418px" src="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-16_-hc-300x155.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-16_-hc-300x155.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-16_-hc.png 731w" width="418"/></a></p>
+<p>Now without deselecting the numbers, select a colour of your choice. I prefer light blue for this, but you can pick whatever you like –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-17_blue.png"><img alt="" class="aligncenter wp-image-9905" height="307" loading="lazy" sizes="(max-width: 415px) 100vw, 415px" src="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-17_blue-300x222.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-17_blue-300x222.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-17_blue-768x568.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-17_blue.png 790w" width="415"/></a></p>
+<p>After you select the colour of your choice, you can keep the total non-current assets in bold.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-18_bs.png"><img alt="" class="aligncenter wp-image-9906" height="375" loading="lazy" sizes="(max-width: 407px) 100vw, 407px" src="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-18_bs-300x276.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-18_bs-300x276.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-18_bs-768x706.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-18_bs.png 794w" width="407"/></a></p>
+<p>If you have managed to follow the above step, then the rest of it is pretty straightforward. All you need to do is extract the numbers from the balance sheet and P&amp;L and put them on your excel sheet.</p>
+<h2><strong>3.4 – Other things to note</strong></h2>
+<p>Some of you may wonder about the necessity to add up the numbers and colour code them. For example, one can copy the total non-current asset as well; why calculate it separately?</p>
+<p>We need to calculate these numbers because going further in the model, we will project each line item in the balance sheet for future years. The total is calculated anyway. Therefore, calculating it now will maintain consistency in the model.</p>
+<p>Before we conclude this chapter, few formatting tips –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Keep the numbers right-aligned</li>
+<li>Extend the decimal points up to two digits</li>
+<li>Keep all the heavy numbers in bold; these are usually the subtotal and main total numbers</li>
+<li>Use double borders for cells wherever necessary</li>
+</ul>
+</li>
+</ul>
+<p>I’ve completed filling up the balance sheet. I want you to pay attention to few last things –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-19_totalassets.png"><img alt="" class="aligncenter wp-image-9907" height="366" loading="lazy" sizes="(max-width: 413px) 100vw, 413px" src="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-19_totalassets-300x266.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-19_totalassets-300x266.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-19_totalassets-768x682.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-19_totalassets.png 776w" width="413"/></a></p>
+<p>I’ve calculated the total assets on the asset side by adding up the two subtotals, i.e. total non-current assets and total current assets. I’ve taken a similar approach on the liabilities side as well –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-20_liabilites.png"><img alt="" class="aligncenter wp-image-9908" height="412" loading="lazy" sizes="(max-width: 418px) 100vw, 418px" src="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-20_liabilites-300x296.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-20_liabilites-300x296.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-20_liabilites.png 701w" width="418"/></a></p>
+<p>Lastly, to ensure my balance sheet is balanced, I run a ‘True’ and ‘False’ check. Remember, if assets = liabilities, that means the balance sheet is balanced.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-21_TF.png"><img alt="" class="aligncenter wp-image-9909" height="383" loading="lazy" sizes="(max-width: 418px) 100vw, 418px" src="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-21_TF-300x275.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-21_TF-300x275.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-21_TF.png 736w" width="418"/></a></p>
+<p>Since it’s true, the total assets are equal to total liabilities. Hence my balance sheet is balanced. I’m not going to explain the data extraction method for P&amp;L. It is a similar process. Do let me know if you get stuck on any of the steps; I’ll be happy to explain. But I do hope your P&amp;L would look like this –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-22_pl.png"><img alt="" class="aligncenter wp-image-9910" height="384" loading="lazy" sizes="(max-width: 420px) 100vw, 420px" src="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-22_pl-300x274.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-22_pl-300x274.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-22_pl-768x701.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/06/Image-22_pl.png 845w" width="420"/></a></p>
+<p>If you are attempting the P&amp;L, you will notice that the ‘other expense’ in the expenses section is expanded. I’ve done this deliberately to showcase that when you have a heavy line item in the P&amp;L, then it probably is not a bad idea to break down its constituents. The reason for doing this is that we can model these lines items at a more granular level, thus ensuring our model is realistic.</p>
+<p>Remember, Relaxo is the helper model, and this won’t be our main model. We used this to help us understand how data can be copied from the financial statements to excel. We will move on to the main model in the next chapter.</p>
+<p>By the way, ‘Historical data’ was supposed to be the first step of financial modelling, but I hope you realise that many tiny little steps are hidden within the main step. You can expect the same for all the other steps.</p>
+<p>As an assignment, I’d suggest you replicate the balance sheet and P&amp;L on your own. I’m sure the learnings from this exercise will be exciting.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/06/Chapter-3_Historical-data.xlsx">Download the excel sheet used in this chapter here.</a></p>
+<h3><strong>Key takeaways from this chapter</strong></h3>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Perform an annual report recce before setting up the excel sheet</li>
+<li>It makes sense to take the latest year’s financial statement for the format; the chances are that you will cover all the line items. But this is only a hack</li>
+<li>Indexing helps in quick navigation</li>
+<li>Differentiate between fact and assumption data points. You can do this by colour coding</li>
+<li>Maintain format hygiene across the sheet</li>
+<li>If need be, breakdown the heavy line to get a better granular view</li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="clear"> </div>
+</div>

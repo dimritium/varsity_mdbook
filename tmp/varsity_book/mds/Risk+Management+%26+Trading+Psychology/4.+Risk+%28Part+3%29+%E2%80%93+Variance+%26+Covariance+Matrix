@@ -1,0 +1,95 @@
+<div class="post">
+<h2>4.1 – A quick recap</h2>
+<p>Let us begin this chapter with a quick recap of our discussion so far.</p>
+<p>We started this module with a discussion on the two kinds of risk a market participant is exposed to, when he or she purchases a stock – namely the systematic risk and the unsystematic risk. Having understood the basic difference between these two types of risk, we proceeded towards understanding <strong>risk from a portfolio perspective</strong>. In our discussion leading to portfolio risk or portfolio variance, we discussed two crucial concepts – variance and co variance. <strong>Variance</strong> is the deviation of a stock’s return with its own average returns. <strong>Co variance</strong> on the other hand is the variance of a stock’s return with respect to another stocks’ return. The discussion on variance and co variance was mainly with respect to a two stock portfolio; however we concluded that a typical equity portfolio contains multiple stocks. In order to estimate the variance co variance and the correlation of a multi stock portfolio, we need the help of <strong>matrix algebra</strong>.</p>
+<p>So that’s where we are as of now.</p>
+<p>In this chapter we will extent this discussion to estimate the ‘variance co variance’ of multiple stocks; this will introduce us to matrix multiplication and other concepts. However, the ‘variance covariance’ matrix alone does not convey much information. To make sense of this, we need to develop the correlation matrix. Once we are through with this part, we use the results of the correlation matrix to calculate the <strong>portfolio variance</strong>. Remember, our end goal is to estimate the portfolio variance. Portfolio variance tells us the amount of risk one is exposed to when he or she holds a set of stocks in the portfolio.</p>
+<p>At this stage you should realize that we are focusing on risk from the entire portfolio perspective. While we are at it we will also discuss ‘asset allocation’ and how it impacts portfolio returns and risk. This will also include a quick take on the concept of ‘value at risk’.</p>
+<p>Of course, we will also take a detailed look at risk from a trader’s perspective. How one can identify trading risk and ways to mitigate the same.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/03/M9C4-cartoon.png"><img alt="" class="aligncenter size-full wp-image-4123" height="400" sizes="(max-width: 600px) 100vw, 600px" src="http://zerodha.com/varsity/wp-content/uploads/2017/03/M9C4-cartoon.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/03/M9C4-cartoon.png 600w, https://zerodha.com/varsity/wp-content/uploads/2017/03/M9C4-cartoon-300x200.png 300w" width="600"/></a></p>
+<h2>4.2 – Variance Covariance matrix</h2>
+<p>Before we proceed any further, I’ve been talking about ‘Variance Covariance matrix’. Just to clear up any confusion – is it ‘variance covariance matrix’ or is it a variance matrix and a covariance matrix? &nbsp;Or is it just one matrix i.e the ‘Variance Covariance matrix’.</p>
+<p>Well, is it just one matrix i.e the ‘Variance Covariance matrix’. Think about it, if there are 5 stocks, then this matrix should convey information on the variance of a stock and it should also convey the covariance of between stock 1 and the other 4 stock. Soon we will take up an example and I guess you will have a lot more clarity on this.</p>
+<p>Please do note – it is advisable for you to know some basis on matrix operations. If not, here is a great video from Khan Academy which introduces matrix multiplication –</p>
+<p><center><iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" loading="lazy" src="https://www.youtube.com/embed/kT4Mp9EdVqs" width="560"></iframe></center></p>
+<p>Anyway, continuing from the previous chapter, let us now try and calculate the Variance Covariance matrix followed by the correlation matrix for a portfolio with multiple stocks. A well diversified (high conviction) portfolio typically consists of about 10-15 stocks. I’d have loved to take up a portfolio of this size to demonstrate the calculation of the variance covariance matrix, but then, it would be a very cumbersome affair on excel and there is a good a newbie could get intimidated with the sheer size of the matrix, hence for this reason, I just decided to have a 5 stock portfolio.</p>
+<p>The following 5 stocks constitutes my portfolio –</p>
+<ol>
+<li>Cipla</li>
+<li>Idea</li>
+<li>Wonderla</li>
+<li>PVR</li>
+<li>Alkem</li>
+</ol>
+<p>The size of the variance covariance matrix for a 5 stock portfolio will be 5 x 5. In general, if there are ‘k’ stocks in the portfolio, then the size of the variance covariance matrix will be <strong>k x k</strong> (read this as k by k).</p>
+<p>The formula to create a variance covariance matrix is as follows –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/03/matrix-formula.png"><img class="alignnone wp-image-4124 size-full" height="75" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2017/03/matrix-formula.png" width="200"/></a></p>
+<p>Where,</p>
+<p>k = number of stocks in the portfolio</p>
+<p>n = number of observations</p>
+<p>X = this is the n x k excess return matrix. We will understand this better shortly</p>
+<p>X<sup>T </sup>&nbsp;= transpose matrix of X</p>
+<p>Here is a quick explanation of what is going on in that formula. You may understand this better when we deal with its implementation.</p>
+<p>In simple terms, we first calculate the <strong>n x k excess return matrix</strong>; multiply this matrix by its own transpose matrix. This is a matrix multiplication and the resulting matrix will be a <strong>k x k</strong> matrix. We then divide each element of this k x k matrix by n, where n denotes the number of observations. The resulting matrix after this division is a <strong>k x k variance covariance matrix</strong>.</p>
+<p>Generating the k x k variance covariance matrix is one step away from our final objective i.e getting the correlation matrix.</p>
+<p>So, let us apply this formula and generate the variance covariance matrix for the 5 stocks listed above. I’m using MS excel for this. I have downloaded the daily closing prices for the 5 stocks for the last 6 months.</p>
+<p><strong>Step 1</strong> – Calculated the daily returns. I guess you are quite familiar with this by now. I’m not going to explain how to calculate the daily returns. Here is the excel snapshot.</p>
+<p><img alt="" class="aligncenter size-full wp-image-4110" height="206" loading="lazy" sizes="(max-width: 713px) 100vw, 713px" src="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-2_rt.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-2_rt.png 713w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-2_rt-300x87.png 300w" width="713"/></p>
+<p>&nbsp;</p>
+<p>As you can see, I’ve lined up the stock’s closing price and next to it I have calculated the daily returns. I have indicated the formula to calculate the daily return.</p>
+<p><strong>Step 2</strong> – Calculate the average daily returns for each stock. You can do this by using the ‘average’ function in excel.</p>
+<p><img class="aligncenter wp-image-4111" height="115" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-3_avg.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-3_avg.png 807w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-3_avg-300x43.png 300w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-3_avg-768x110.png 768w" width="800"/></p>
+<p><strong>Step 3</strong> – Set up the excess return matrix.</p>
+<p>Excess return matrix is defined as the difference between stock’s daily return over its average return. If you recall, we did this in the previous chapter while discussing covariance between two stocks.</p>
+<p>I’ve set up the excess return matrix in the following way –</p>
+<p><img class="aligncenter wp-image-4112" height="203" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-4_excess-rt.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-4_excess-rt.png 1074w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-4_excess-rt-300x76.png 300w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-4_excess-rt-768x195.png 768w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-4_excess-rt-1024x260.png 1024w" width="800"/></p>
+<p>Do note, the resulting matrix is of <strong>n x k </strong>size, where <strong>n</strong> represents the number of observations (127 in this case) and <strong>k</strong> denotes the number of stocks (5 stocks). So in our example the matrix size is 127 x 5. We have denoted this matrix as X.</p>
+<p><strong>Step 4</strong> – Generate the <strong>X<sup>T</sup> X</strong> matrix operation to create a k x k matrix</p>
+<p>This may sound fancy, but it is not.</p>
+<p>X<sup>T </sup>is a new matrix, formed by interchanging the rows and columns of the original matrix X. When you interchange the rows and columns of a matrix to form a new one, then it is referred to as a transpose matrix of X and denoted as X<sup>T</sup>. Our objective now is to multiply the original matrix with its transpose. This is denoted as X<sup>T</sup> X.</p>
+<p>Note, the resulting matrix from this operation will result in a k x k matrix, where k denotes the number of stocks in the portfolio. In our case this will be 5 x 5.</p>
+<p>We can do this in one shot in excel. I will use the following function steps to create the k x k matrix –</p>
+<p>List down the stocks in rows and columns –</p>
+<p><img alt="" class="aligncenter size-full wp-image-4113" height="217" loading="lazy" sizes="(max-width: 481px) 100vw, 481px" src="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-5_Xt.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-5_Xt.png 481w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-5_Xt-300x135.png 300w" width="481"/></p>
+<p>Apply the function = ‘MMULT ((transpose X), X). Remember X is the excess return matrix.</p>
+<p><img class="aligncenter wp-image-4114" height="225" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-6_mmult.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-6_mmult.png 1059w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-6_mmult-300x84.png 300w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-6_mmult-768x216.png 768w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-6_mmult-1024x288.png 1024w" width="800"/></p>
+<p>Do note, while applying this formula, you need to ensure that you highlight the k x k matrix. Once you finish typing the formula, do note – you cannot hit ‘enter’ directly. You will hit <strong>ctrl+shift+enter</strong>. In fact, for all array functions in excel, use ctrl+shift+enter.</p>
+<p>So once you hit ctrl+shift+enter, excel will present you with a beautiful k x k matrix, which in this case looks like this –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-7_xtx-complete.png"><img alt="" class="aligncenter size-full wp-image-4115" height="162" loading="lazy" sizes="(max-width: 545px) 100vw, 545px" src="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-7_xtx-complete.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-7_xtx-complete.png 545w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-7_xtx-complete-300x89.png 300w" width="545"/></a></p>
+<p><strong>Step 5</strong> – This is the last step in creating the variance covariance matrix. We now have to divide each element of the X<sup>T</sup> X matrix by the total number of observations i.e n. For your clarity, let me post the formula for the variance covariance matrix again –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/03/matrix-formula.png"><img class="alignnone wp-image-4124 size-full" height="75" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2017/03/matrix-formula.png" width="200"/></a></p>
+<p>Again, we start by creating the layout for k x k matrix –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-9_lay.png"><img alt="" class="aligncenter size-full wp-image-4117" height="165" loading="lazy" sizes="(max-width: 544px) 100vw, 544px" src="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-9_lay.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-9_lay.png 544w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-9_lay-300x91.png 300w" width="544"/></a></p>
+<p>Once the layout is set, without deselecting the cells, select the entire X<sup>T</sup> X matrix and divide it by n i.e 127. Do note, this is still an array function; hence you need to hit <strong>ctrl+shift+enter </strong>and not just enter.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-10_covar.png"><img alt="" class="aligncenter size-full wp-image-4118" height="375" loading="lazy" sizes="(max-width: 551px) 100vw, 551px" src="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-10_covar.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-10_covar.png 551w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-10_covar-300x204.png 300w" width="551"/></a></p>
+<p>Once you hit control shift enter, you will get the ‘Variance – Covariance’ matrix. Do note, the numbers in the matrix will be very small, do not worry about this. Here is the variance co variance matrix –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-11_complete.png"><img alt="" class="aligncenter size-full wp-image-4119" height="375" loading="lazy" sizes="(max-width: 555px) 100vw, 555px" src="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-11_complete.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-11_complete.png 555w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-11_complete-300x203.png 300w" width="555"/></a></p>
+<p>&nbsp;</p>
+<p>Let us spend some time to understand the ‘Variance – Covariance’ matrix better. Suppose I want to know the covariance between any two stocks, lets say Wonderla and PVR, then I simply have to look for Wonderla on the left hand side and in the same row, look for the value which coincides with PVR. This would be the covariance between the two stocks. I’ve highlighted the same in yellow –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-12_covar-1.png"><img alt="" class="aligncenter size-full wp-image-4122" height="156" loading="lazy" sizes="(max-width: 546px) 100vw, 546px" src="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-12_covar-1.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-12_covar-1.png 546w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-12_covar-1-300x86.png 300w" width="546"/></a></p>
+<p>So the matrix suggests that the covariance between Wonderla and PVR is 0.000034. Do note, this is the same as the covariance between PVR and Wonderla.</p>
+<p>Further, notice the number highlighted in blue. This value corresponds to Cipla and Cipla. What do you this represents? This represents the covariance between Cipla and Cipla, and if you realize, covariance of a stock with itself, is nothing but variance!</p>
+<p>This is exactly why this matrix is called ‘<strong>Variance – Covariance Matrix</strong>’, cause it gives us both the values.</p>
+<p>Now, here is the bitter pill – the variance and covariance matrix on its own is quite useless. These are extremely small numbers and it is hard to derive any meaning out of it. What we really need is the ‘Correlation Matrix’.</p>
+<p>In the next chapter, let us deal with generating the correlation matrix, and also work towards estimating the portfolio variance, which is our end objective. However, before we close this chapter, here are few tasks for you –</p>
+<ol>
+<li>Download the last 1 year data for 5 or more stocks.</li>
+<li>Calculate the Variance – Covariance matrix for the same</li>
+<li>For a given stock, identify the variance value. Apply the = ‘Var()’ function on excel on the returns of the same stock and evaluate if both are matching.</li>
+</ol>
+<p>You can <a href="http://zerodha.com/varsity/wp-content/uploads/2017/03/Chapter-4_Var-Covar-matrix.xlsx" target="_blank"><strong>download</strong></a> the excel sheet used in this chapter.</p>
+<hr/>
+<h3>Key Takeaways from this chapter</h3>
+<ol>
+<li>X is defined as an excess return matrix</li>
+<li>Excess return matrix is simply the time series difference daily return versus the average daily return</li>
+<li>X<sup>T</sup> is defined as the transpose of X</li>
+<li>Variable <strong>n </strong>is defined as the number of observations in the data set. For example if you have 6 months data, n is 127, for 1 year data n would be 252</li>
+<li>Excess return matrix is of the size n x k, where k is the number of stocks</li>
+<li>When you divide the matrix product of X<sup>T </sup>X by n, we get the variance covariance matrix</li>
+<li>The variance covariance matrix is of the size k x k</li>
+<li>The covariance of stock 1 with itself is the variance of stock 1</li>
+<li>The variance covariance matrix will lead us to the correlation matrix.</li>
+</ol>
+<div class="clear"> </div>
+</div>

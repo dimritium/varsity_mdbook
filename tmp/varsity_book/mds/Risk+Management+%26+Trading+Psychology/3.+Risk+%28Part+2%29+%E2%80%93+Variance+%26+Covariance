@@ -1,0 +1,141 @@
+<div class="post">
+<h2>3.1 – Variance</h2>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/03/M9-C3-cartoon.png"><img alt="" class="aligncenter size-full wp-image-4096" height="400" sizes="(max-width: 600px) 100vw, 600px" src="http://zerodha.com/varsity/wp-content/uploads/2017/03/M9-C3-cartoon.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/03/M9-C3-cartoon.png 600w, https://zerodha.com/varsity/wp-content/uploads/2017/03/M9-C3-cartoon-300x200.png 300w" width="600"/></a></p>
+<p>In the previous chapter, we touched upon the topic of expected return, continuing on it, we will understand the concept of ‘Portfolio variance’. Portfolio Variance helps us understand the risk at a portfolio level. I’m hoping you are familiar with ‘Standard Deviation’ as a measure of risk. We have discussed standard deviation multiple times in the previous modules (refer to <a href="http://zerodha.com/varsity/chapter/understanding-volatility-part-1/" target="_blank">Module 5, chapter 15 onwards</a>). I’d suggest you get familiar with it if you are not already. While we can easily measure the risk of a single stock by calculating its standard deviation, calculating the risk of a portfolio is a whole different ball game. When you put a few individual stocks together and create a portfolio, it becomes a different animal altogether. The agenda for this chapter is to help you understand how to estimate risk at a portfolio level.</p>
+<p>However, before we proceed, we need to understand the concept of Variance and Covariance. Both Variance and Covariance are statistical measures. Let’s deal with the Variance first.</p>
+<p>The variance of stock returns is a measure of how much a stock’s return varies with respect to its average daily returns. The formula to calculate variance is quite straight forward –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/03/Formula-variance.png"><img class="aligncenter wp-image-4086" height="109" loading="lazy" sizes="(max-width: 250px) 100vw, 250px" src="http://zerodha.com/varsity/wp-content/uploads/2017/03/Formula-variance.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/03/Formula-variance.png 454w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Formula-variance-300x131.png 300w" width="250"/></a></p>
+<p>Where,</p>
+<p>σ<sup>2</sup> = Variance</p>
+<p>X = Daily return</p>
+<p>µ = Average of daily return</p>
+<p>N = Total number of observation</p>
+<p>Note, the variance is measured as sigma squared; I will not get into the reasons for this as the explanation is quite complex and we could digress. For now, I’d request you to be aware of the fact that variance is sigma squared. Anyway, calculating variance is quite simple, I’ll take a simple example to help us understand this better.</p>
+<p>Assume the daily return for a stock for 5 consecutive days is as below –</p>
+<p>Day 1 – + 0.75%</p>
+<p>Day 2 – + 1.25%</p>
+<p>Day 3 – -0.55%</p>
+<p>Day 4 – -0.75%</p>
+<p>Day 5 – +0.8%.</p>
+<p>In this case, the average return is +0.3%. We now need to calculate the dispersion of daily return over its average return, and also square the dispersion.</p>
+<table>
+<thead>
+<tr>
+<th width="160"><strong>Daily Return</strong></th>
+<th width="160"><strong>Dispersion from average</strong></th>
+<th width="160"><strong>Dispersion squared</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="160">+ 0.75%</td>
+<td width="160">0.75% – 0.3% = + 0.45%</td>
+<td width="160">0.45%^2 = 0.002025%</td>
+</tr>
+<tr>
+<td width="160">+ 1.25%</td>
+<td width="160">+1.25% – 0.3% = + 0.95%</td>
+<td width="160">0.95%^2 = 0.009025%</td>
+</tr>
+<tr>
+<td width="160">-0.55%</td>
+<td width="160">-0.55% – 0.3% = -0.85%</td>
+<td width="160">-0.85%^2 = 0.007225%</td>
+</tr>
+<tr>
+<td width="160">-0.75%</td>
+<td width="160">-0.75% – 0.3% = -1.05%</td>
+<td width="160">-1.05%^2 = 0.011025%</td>
+</tr>
+<tr>
+<td width="160">+0.80%</td>
+<td width="160">+0.8% – 0.3% = +0.5%</td>
+<td width="160">0.50%^2 = 0.002500%</td>
+</tr>
+</tbody>
+</table>
+<p>We now sum up the dispersion squared to get 0.0318000%. We divide this over 5 (N) to get the variance i.e</p>
+<p>0.0318000% / 5</p>
+<p><strong>σ<sup>2&nbsp;</sup>= 0.0063600%.</strong></p>
+<p>So what does this number tell us? It gives us a sense of how the daily returns are spread out from the average expected returns. So you as an investor should look into the variance to determine the riskiness of the investment. A large variance indicates that the stock could be quite risky while a small variance can indicate lesser risk. In the above example, I would consider the variance high, since we are looking at just 5 days worth of data.</p>
+<p>Now, here is something you may be interested in knowing. Variance and standard deviation are related to each other by the following simple mathematical relationship –</p>
+<p><strong><span style="background-color: #4edfea;"> Square Root of Variance = Standard Deviation</span></strong></p>
+<p>We can apply this to the example above and calculate the 5-day standard deviation of the stock,</p>
+<p>%</p>
+<p><strong>~ 0.8% </strong></p>
+<p>which is the standard deviation a.k.a. the volatility of the stock (over the last 5 days). Anyway, at this point, I want you to be aware of Variance and what it really means. We will eventually plug variance along with covariance into the portfolio variance equation.</p>
+<h2>3.2 – Covariance</h2>
+<p>Covariance indicates how two (or more) variables move together. It tells us whether the two variables move together (in which case they share a positive covariance) or they move in the opposite direction (negatively covariance). &nbsp;Covariance in the context of stock market measures how the stock prices of two stocks (or more) move together. &nbsp;The two stocks prices are likely to move in the same direction if they have a positive covariance; likewise, a negative covariance indicates that they two stocks move in opposite direction.</p>
+<p>I understand covariance may sound similar to ‘correlation’, however, the two are different. We will discuss more on this further in the chapter.</p>
+<p>I guess calculating the covariance for two stocks will help us get a grip on understanding covariance better. The formula to calculate covariance of two stocks is as follows –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/03/Formula-covariance.png"><img class="aligncenter wp-image-4085" height="66" loading="lazy" sizes="(max-width: 400px) 100vw, 400px" src="http://zerodha.com/varsity/wp-content/uploads/2017/03/Formula-covariance.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/03/Formula-covariance.png 1296w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Formula-covariance-300x50.png 300w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Formula-covariance-768x127.png 768w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Formula-covariance-1024x169.png 1024w" width="400"/></a></p>
+<p>Where,</p>
+<p><strong>Rt S1</strong> = Daily stock return of stock 1</p>
+<p><strong>Avg Rt S1</strong> = Average return of stock 1 over n period</p>
+<p><strong>Rt S2</strong> = Daily stock return of stock 2</p>
+<p><strong>Avg Rt S2</strong> = Average return of stock 2 over n period</p>
+<p><strong>n</strong> – The total number of days</p>
+<p>In other words, you can calculate the covariance between two stocks by taking the sum product of the difference between the daily returns of the stock and its average return across both the stocks.</p>
+<p>Sounds confusing? I guess so. ☺</p>
+<p>Let us take up an example and see how we can calculate the covariance between two stocks.</p>
+<p>For the sake of this illustration, I’ve selected two stocks – Cipla Limited and Idea Cellular Limited. To calculate the covariance between these two stocks, we need to work around with the above formula. We will resort to good old excel to help us implement the formula.</p>
+<p>Before we proceed, if you were to guess the covariance between Cipla and Idea, what do you think it would be? Think about it – two large corporate, similar size, but in two completely unrelated sectors. What do you think would be the covariance? Give it a thought.</p>
+<p>Anyway, here are the steps involved in calculating covariance in excel (note, although there is a direct function in excel to calculate covariance, I’ll take the slightly longer approach, just to ensure clarity) –</p>
+<p><strong>Step 1</strong> – Download the daily stock prices. For the purpose of this illustration, I’ve downloaded 6 months data for both the stocks.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-1_daily-data.png"><img alt="" class="aligncenter size-full wp-image-4087" height="168" loading="lazy" sizes="(max-width: 466px) 100vw, 466px" src="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-1_daily-data.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-1_daily-data.png 466w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-1_daily-data-300x108.png 300w" width="466"/></a></p>
+<p><strong>Step 2</strong> – Calculate the daily returns for both the stocks. Daily returns can be calculated by dividing today’s stock price over yesterday’s stock price and subtracting 1 from the result of this division</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-2_daily-rt.png"><img alt="" class="aligncenter size-full wp-image-4088" height="163" loading="lazy" sizes="(max-width: 377px) 100vw, 377px" src="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-2_daily-rt.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-2_daily-rt.png 377w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-2_daily-rt-300x130.png 300w" width="377"/></a></p>
+<p><strong>Step 3</strong> – Calculate the average of the daily returns</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-3_avg-rt.png"><img alt="" class="aligncenter size-full wp-image-4089" height="186" loading="lazy" sizes="(max-width: 626px) 100vw, 626px" src="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-3_avg-rt.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-3_avg-rt.png 626w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-3_avg-rt-300x89.png 300w" width="626"/></a></p>
+<p><strong>Step 4 </strong>– Once the average is calculated, subtract the daily return by its average</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-4_rt-minus-avg.png"><img class="aligncenter wp-image-4090" height="198" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-4_rt-minus-avg.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-4_rt-minus-avg.png 822w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-4_rt-minus-avg-300x74.png 300w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-4_rt-minus-avg-768x190.png 768w" width="800"/></a></p>
+<p><strong>Step 5</strong> – Multiply the two series calculated in the previous step</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-5_rt12.png"><img alt="" class="aligncenter size-full wp-image-4091" height="187" loading="lazy" sizes="(max-width: 567px) 100vw, 567px" src="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-5_rt12.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-5_rt12.png 567w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-5_rt12-300x99.png 300w" width="567"/></a></p>
+<p><strong>Step 6</strong> – Sum up the calculation made in the previous step. Take a count of the number of data points. You can do this by using the count function in excel and giving any of the fields as the input array. I’ve used the count on the dates here.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-6_sum.png"><img alt="" class="aligncenter size-full wp-image-4092" height="172" loading="lazy" sizes="(max-width: 311px) 100vw, 311px" src="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-6_sum.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-6_sum.png 311w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-6_sum-300x166.png 300w" width="311"/></a></p>
+<p><strong>Step 7 – </strong>This is the final step in calculating the covariance. To do so, one needs to divide the sum by count minus 1 i.e (n-1). The count, in this case, is 127, so count-1 would be 126. Sum calculated in the previous step was 0.006642. Hence, covariance would be</p>
+<p>= 0.006642/126</p>
+<p>= <strong>0.00005230</strong></p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-7_cov.png"><img class="aligncenter wp-image-4093" height="200" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2017/03/Image-7_cov.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-7_cov.png 1027w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-7_cov-300x75.png 300w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-7_cov-768x192.png 768w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Image-7_cov-1024x256.png 1024w" width="800"/></a></p>
+<p>You can <a href="http://zerodha.com/varsity/wp-content/uploads/2017/03/Chapter-3_Covariance.xlsx"><strong>download</strong></a> the excel sheet.</p>
+<p>As you can see, the covariance number is quite small. However, that’s not the point here. We only look at whether the two stocks share a positive or negative covariance. Clearly, since the two stocks share a positive covariance, it means that the returns of the two stocks move in similar directions. It means that for a given situation in the market, both the stocks are likely to move in the same direction. Note – covariance does not tell us the degree to which the two stocks move. The degree or magnitude is captured by correlation. The correlation between Idea and Cipla is 0.106, which indicates that the two stocks are not tightly correlated.</p>
+<p>By the way, here is something very interesting fact. The mathematical equation for correlation between two stocks is as follows –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/03/Formula-correlation.png"><img class="aligncenter wp-image-4084" height="113" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="http://zerodha.com/varsity/wp-content/uploads/2017/03/Formula-correlation.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/03/Formula-correlation.png 640w, https://zerodha.com/varsity/wp-content/uploads/2017/03/Formula-correlation-300x113.png 300w" width="300"/></a></p>
+<p>Where,</p>
+<p>Cov (x,y) is the covariance between the two stocks</p>
+<p>σ<sub>x </sub>= Standard deviation of stock x</p>
+<p>σ<sub>y </sub>= Standard deviation of stock y</p>
+<p>Note, the standard deviation of a stock is simply the square root of the variance of the stock. Here is a task for you – we have calculated the correlation between Idea and Cipla using the direct excel function. Can you confirm the accuracy by implementing the formula?</p>
+<p>Anyway, in the case of building a stock portfolio, do you think a positive covariance is good or bad? Or rather do portfolio managers desire stocks (in their portfolio) which share a positive covariance or they don’t? Well, portfolio managers strive to select stocks which share a negative covariance. The reason is quite simple – they want stocks in the portfolio which can hold up. Meaning if one stock goes down, they want, at least the other to hold up. This kind of counter balances the portfolio and reduces the overall risk.</p>
+<p>Now, think about a regular portfolio – it will certainly contain more than 2 stocks. In fact, a good portfolio will contain at least 12-15 stocks. How would one measure covariance in this case? This is where things start getting complicated. One will have to measure covariance of each stock with all the other stocks in the portfolio. Let me illustrate this with a 4 stocks portfolio. Assume the portfolio is like this –</p>
+<ol>
+<li>ABB</li>
+<li>Cipla</li>
+<li>Idea</li>
+<li>Wipro</li>
+</ol>
+<p>In this case, we need to calculate the covariance across –</p>
+<ol>
+<li>ABB, Cipla</li>
+<li>ABB, Idea</li>
+<li>ABB, Wipro</li>
+<li>Cipla, Idea</li>
+<li>Cipla, Wipro</li>
+<li>Idea, Wipro</li>
+</ol>
+<p>Note, the covariance between stock 1 and stock 2 is the same as the covariance between stock 2 and stock 1. So as you can see, 4 stocks require us to compute 6 covariances. You can imagine the complexity when we have 15 or 20 stocks. In fact, when we have more than 2 stocks in the portfolio, the covariance between them is calculated and tabulated using a ‘Variance – Covariance Matrix’. I would love to talk about this now, but I guess, I’ll will keep it for the next chapter.</p>
+<p>Stay tuned for more!</p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>Variance measures the dispersion of returns over the expected average returns</li>
+<li>Higher variance indicates higher risk, lower variance indicates lower risk</li>
+<li>Square root of variance is standard deviation</li>
+<li>Covariance between the returns of two stock measures how the returns of the two stocks vary</li>
+<li>A positive covariance indicates that the returns move positively and a negative covariance indicates that while one stock returns moves up, the other comes down</li>
+<li>Correlation measures the strength of the movement</li>
+<li>Covariance between two stocks divided over their individual standard deviations results in a correlation between two stocks.</li>
+<li>When we have more than 2 stocks in a portfolio, we compute the variance-covariance using a matrix</li>
+</ol>
+<div class="clear"> </div>
+</div>

@@ -1,0 +1,137 @@
+<div class="post">
+<h2>3.1 – Before the Trade</h2>
+<p>In the last chapter, we learnt various concepts related to the futures market. <strong>Remember, the motivation for any trader entering into a futures agreement is to benefit financially. The trader needs to have a directional view of the price of the underlying asset</strong>. Perhaps it is time we take up a practical example of a futures trade to demonstrate how this is done. Let us move away from the Gold example and look into an example related to the stocks.</p>
+<p>Today (15<sup>th</sup> Dec 2014), Tata Consultancy Services (TCS) management, a leading Indian Software Company, had investors meet, wherein the TCS management announced that they are cautious about the revenue growth for the December Quarter. &nbsp;The markets do not like such cautious statements, especially from the company’s management. After the statement, the markets reacted to it, and as we can see from the TCS’s spot market quote, the stock went down by over 3.6%. In the snapshot below, the price per share is highlighted in blue. Ignore the red highlight; we will discuss it shortly.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/01/Image1_TCS.png"><img alt="Image1_TCS" class="aligncenter size-full wp-image-1453" height="429" sizes="(max-width: 568px) 100vw, 568px" src="http://zerodha.com/varsity/wp-content/uploads/2015/01/Image1_TCS.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/01/Image1_TCS.png 568w, https://zerodha.com/varsity/wp-content/uploads/2015/01/Image1_TCS-300x227.png 300w" width="568"/></a></p>
+<p>As a trader, I believe that the TCS stock price reaction to the management’s statement is exaggerated. Here is my rational – If you follow TCS or any Indian IT sector company in general, you will know that December is usually a lacklustre month for the Indian IT companies. December is the financial year-end in the US (the biggest market for the Indian IT companies) and the holiday season; hence the business moves quite slowly for such companies. This furlough has a significant impact on the IT sector revenues. This information is already known and factored in by the market. Hence, I believe the stock sinking by 3.6% is unwarranted.&nbsp; I also feel this could be an opportunity to buy TCS, as I believe the stock price will eventually go up. Hence I would be a buyer in TCS after such an announcement.</p>
+<p>Notice, based on my thoughts (which I perceive as rational), I have developed a ‘<strong>directional view</strong>’ on the asset’s price (TCS). I believe the TCS (underlying asset) stock price will increase in due course of time from my analysis. In other words, I am bullish about TCS at the current market price.</p>
+<p>Instead of buying TCS shares in the spot market, I decide to buy the TCS Futures (for reasons I will discuss in the next chapter). Having decided to buy futures, all I need to see is the price at which the TCS Futures is trading. The contract details are readily available on the NSE’s website. In fact, the link to get details for a TCS futures contract is available on the spot market quotes. I have highlighted the same in red in the image above.</p>
+<p>Recall, the futures price should always mimic the spot price, meaning if the spot price has gone down, the futures price should also go down. Here is a snapshot from NSE’s website showing the TCS Futures price.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/01/Image2_TCS.png"><img alt="Image2_TCS" class="aligncenter size-full wp-image-1454" height="482" loading="lazy" sizes="(max-width: 569px) 100vw, 569px" src="http://zerodha.com/varsity/wp-content/uploads/2015/01/Image2_TCS.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/01/Image2_TCS.png 569w, https://zerodha.com/varsity/wp-content/uploads/2015/01/Image2_TCS-300x254.png 300w" width="569"/></a></p>
+<p>As expected, the futures price has mimicked the spot price, and therefore the TCS Futures is also down by 3.77%. You may have two questions at this point –</p>
+<ol>
+<li>TCS in the spot market is down by 3.61%. However, TCS futures is down by 3.77%? Why the difference?</li>
+<li>TCS spot price is at Rs.2362.35, but Futures price is at Rs.2374.90? Why the difference?</li>
+</ol>
+<p>Both these are valid questions at this point, and the answer to these questions depends upon the “Futures Pricing Formula”, a topic we will deal with at a later point in time. But the most important point to note at this stage is that the futures price has moved in line with the spot price, and both of them are down for the day. Before we proceed any further, let us relook at the futures contract and inspect a few key elements. Allow me to repost the futures contract with a few important features highlighted.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/01/Image3_TCS.png"><img alt="Image3_TCS" class="aligncenter size-full wp-image-1455" height="482" loading="lazy" sizes="(max-width: 569px) 100vw, 569px" src="http://zerodha.com/varsity/wp-content/uploads/2015/01/Image3_TCS.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/01/Image3_TCS.png 569w, https://zerodha.com/varsity/wp-content/uploads/2015/01/Image3_TCS-300x254.png 300w" width="569"/></a></p>
+<p>Starting from the top, the box highlighted in red has three important bits of information –</p>
+<ol>
+<li><strong>Instrument Type</strong> – Remember, the underlying asset is the stock of a company, and we are interested in the asset’s future contract. Hence, the instrument type here is the ‘stock futures.’</li>
+<li><strong>Symbol</strong> – This highlights the name of the stock, TCS in this case</li>
+<li><strong>Expiry Date</strong> – This is the date on which the contract ceases to exist. As we can see, the TCS futures contract specifies 24<sup>th</sup> Dec 2014 as the expiry. You may be interested to know that all derivative contracts in India expire on the last Thursday of the month. We will discuss more what happens on the expiry date at a later point.</li>
+</ol>
+<p>We had looked at the blue box a little earlier; it just highlights the future price.</p>
+<p>Lastly, the black box highlights two important parameters – the underlying value and the market lot.</p>
+<ol>
+<li><strong>Underlying Value</strong> – This is the same as the price at which the underlying is trading in the spot market. We know TCS was trading at Rs.2362.35 per share; however, when I took the above snapshot, TCS fell by another few points. Hence the price we see here is Rs.2359.95. per share</li>
+<li><strong>Market lot (lot size) </strong>– Remember, a futures contract is a standardized contract. The parameters are prefixed. The lot size is the minimum number of shares that we need to buy/sell if we wish to agree. The lot size for the TCS futures is 125, which means a minimum of 125 shares (or a multiple of 125 shares) have to be transacted while trading the TCS futures.</li>
+</ol>
+<p>In the previous chapter, Recall discussed the ‘contract value’, which is ‘Lot size’ multiplied by the futures price. We can now calculate the contract value for TCS futures as follows–</p>
+<p>Contract Value = Lot size x Price of futures</p>
+<p>= 125 x Rs.2374.90</p>
+<p>= <strong>Rs. 296,862.5</strong></p>
+<p>Before we proceed to discuss the TCS futures trade, let us quickly look at another ‘Futures Contract’ to rivet our understanding so far. Here is the snapshot of the futures contract of ‘State Bank of India (SBI)’.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/01/Image4_SBI.png"><img alt="Image4_SBI" class="aligncenter size-full wp-image-1456" height="489" loading="lazy" sizes="(max-width: 569px) 100vw, 569px" src="http://zerodha.com/varsity/wp-content/uploads/2015/01/Image4_SBI.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/01/Image4_SBI.png 569w, https://zerodha.com/varsity/wp-content/uploads/2015/01/Image4_SBI-300x258.png 300w" width="569"/></a></p>
+<p>With the help of the above snapshot, you can perhaps answer the following questions –</p>
+<ol>
+<li>What is the instrument type?</li>
+<li>What is SBI’s futures price?</li>
+<li>How does SBI’s future price compare with its spot price?</li>
+<li>What is the expiry date of the Futures contract?</li>
+<li>What are the lot size and the contract value of SBI futures?</li>
+</ol>
+<h2>3.2 – The Futures Trade</h2>
+<p>Going back to the TCS futures trade, the idea is to buy a futures contract as I expect the TCS stock price to go up. The price at which I would buy TCS Futures is Rs.2374.9/- per share. Remember, the minimum number of shares that I need to buy is 125. The minimum number of shares is also colloquially called ‘one lot’.</p>
+<p>So how do we buy the ‘Futures Contract’? This is quite simple we can call our broker and ask him to buy 1 lot of TCS futures at Rs.2374.9/- or we can buy it ourselves through the broker’s trading terminal.</p>
+<p>I prefer to place trades myself through the trading terminal. If you are new to the trading terminal, I suggest you read through the chapter on the <a href="http://zerodha.com/varsity/chapter/the-trading-terminal/" rel="noopener noreferrer" target="_blank"><strong>Trading terminal.</strong></a> Once TCS Futures is loaded on my market watch, all I need to do is press F1 and buy the contract.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/01/M4-Ch3-title.jpg"><img alt="M4-Ch3-title" class="aligncenter size-full wp-image-1416" height="300" loading="lazy" sizes="(max-width: 600px) 100vw, 600px" src="http://zerodha.com/varsity/wp-content/uploads/2015/01/M4-Ch3-title.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/01/M4-Ch3-title.jpg 600w, https://zerodha.com/varsity/wp-content/uploads/2015/01/M4-Ch3-title-300x150.jpg 300w" width="600"/></a></p>
+<p>The moment I press the F1 key (expressing my interest to buy TCS futures) on my trading terminal, a couple of things happen in the background.</p>
+<ol>
+<li><strong>Margin Validation</strong> – Remember, whenever we enter into a futures agreement, we need to deposit a margin amount (sort of a token advance), which is simply a percentage of the contract value. We will discuss margins shortly. If there is insufficient margin, we cannot agree. So as the first step, the broker’s risk management system/ software checks if I have sufficient money in my trading account (to suffice the margin requirement) to enter into a futures agreement.</li>
+<li><strong>The counterparty search</strong> – After validating the margins, the system scouts for a relevant counterparty match. The match has to be made between me – the buyer of the TCS futures and the TCS futures seller. Remember, the stock exchange is a ‘Financial supermarket’ where one can find many participants with different views on an asset’s price. The seller of TCS futures obviously thinks TCS futures price will go further down. Like my rationale as to why the TCS stock price will go higher, the seller has his own rationale for his directional view. Hence he wants to be a seller.</li>
+<li><strong>The signoff – </strong>Once Step 1 and 2 are through, i.e. the margin validation and finding the counterparty, the buyer and the seller digitally sign the futures agreement. This is mainly a symbolic process. By agreeing to buy (or sell) the futures agreement, one gives the other consent to honour the contract specifications.</li>
+<li><strong>The margin block –</strong> After the signoff is done, the required margin is blocked in our trading account. We cannot use the blocked margin for any other purpose. The money will be blocked as long as we hold the futures contract.</li>
+</ol>
+<p>With the completion of these 4 steps, <strong>I now own 1 lot of TCS Futures Contract</strong>. You may be surprised to know, in the real markets, all the above-mentioned steps happen sequentially in a matter of a few seconds!</p>
+<p>Here is a critical question – What does it mean by “I now own 1 lot of TCS Futures Contract”? Well, it simply means by purchasing TCS futures on 15<sup>th</sup> Dec 2014, I have digitally agreed with a certain counterparty agreeing to buy 125 TCS shares from me (the counterparty) at Rs.2374.9/- per share. This futures agreement between me and the counterparty expires on 24<sup>th</sup> Dec 2014.</p>
+<h2>3.3 –The 3 possible scenarios post the agreement</h2>
+<p>After agreeing, 3 possible scenarios can pan out by 24<sup>th</sup> Dec 2014. We know what these scenarios are (we studied them in chapter 1) – the price of TCS can go up, the price of TCS can come down, or the price of TCS could stay the same. Let us arbitrarily take up a few possible price situations and see the price’s impact on both the parties involved.</p>
+<p><strong>Scenario 1 – TCS stock price goes up by 24<sup>th</sup> Dec.</strong></p>
+<p>This is a case where my directional view on TCS shares has come true. Therefore I stand to benefit.</p>
+<p>Assume on 24<sup>th</sup> Dec 2014, the stock price of TCS has gone up from Rs.2374.9/- to Rs.2450/- per share; by the increase in the spot price, the futures price would also increase. This means, as per the agreement, I am entitled to buy the TCS shares at Rs.2374.9/- per share, which is a much lower price compared to what is available in the market. My profit will be Rs.75.1/- per share (Rs.2450 – Rs.2374.9). Since the deal is for 125 shares, my overall profit will be Rs.9387.5/- (Rs.75.1/- * 125).</p>
+<p>The seller obviously incurs a loss, as he is forced to sell TCS shares at Rs.2374.9 per share instead of selling it in the open market at a much higher price of Rs.2450/- per share. Clearly, the buyer’s gain is the seller loss.</p>
+<p><strong>Scenario 2 – TCS stock price goes down by 24<sup>th</sup> Dec.</strong></p>
+<p>This is a case where my directional view on TCS shares has gone wrong. Therefore I would stand to lose.</p>
+<p>Assume on 24<sup>th</sup> Dec 2014, the stock price of TCS goes down from Rs.2374.9/- to Rs.2300/- per share; by this decrease, the futures price will also be around the same level. This means, as per the agreement, I am obligated to buy the TCS shares at Rs.2374.9/- per share, which is a much higher price compared to what is available in the market. My loss will be Rs.75./- per share (Rs.2374.9 – Rs.2300). Since the deal is for 125 shares, my overall loss will be Rs.9375/- (Rs.75/- * 125).</p>
+<p>I would obviously incur a loss as I’m forced to buy the TCS shares at Rs.2374.9/- per share instead of buying it in the open market at a much lower price of Rs.2300/- per share. Clearly, the sellers gain is the buyer’s loss.</p>
+<p><strong>Scenario 3 – TCS stock price remains unchanged.</strong></p>
+<p>Under such a situation, neither the buyer nor the seller benefit, hence there is no financial impact on either party.</p>
+<h2>3.3 – Exploiting a trading opportunity</h2>
+<p>So here is a situation – after buying the TCS futures on 15<sup>th</sup> Dec 2014 at Rs.2374.9/- the next day, i.e. 16<sup>th</sup> Dec 2014, TCS price shot up. It is now trading at Rs.2460/-. What do I do? Clearly, with the price increase, I stand to benefit significantly. To be precise, at the time of taking the snapshot, I am sitting at a profit of Rs.85.1/- per share or Rs.10,637.5/- (Rs.85.1/- * 125) as an overall profit.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/01/Image5_TCS.png"><img alt="Image5_TCS" class="aligncenter size-full wp-image-1457" height="503" loading="lazy" sizes="(max-width: 569px) 100vw, 569px" src="http://zerodha.com/varsity/wp-content/uploads/2015/01/Image5_TCS.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/01/Image5_TCS.png 569w, https://zerodha.com/varsity/wp-content/uploads/2015/01/Image5_TCS-300x265.png 300w" width="569"/></a></p>
+<p>Suppose I am happy with the money that I have made overnight. Can I close out the agreement? Or rather, at Rs.2460 per share, what if my view changes? What if I no longer feel bullish about TCS at Rs.2460? Do I really need to hold on to the agreement until the contract expiry date, i.e. 24<sup>th</sup> Dec 2014, by which time if the price goes down, it could lead to a loss?</p>
+<p>Well, as I had mentioned in the previous chapter, the futures agreement is tradable. Meaning, at any point after entering into a futures agreement, I can easily get out of the agreement by transferring the agreement to someone else. This means I can close the existing TCS futures position and book a profit of Rs.10,637.5/-. Not bad for a 1-day job, right? J</p>
+<p>Closing an existing futures position is called “square off”. By squaring off, I offset an existing open position. &nbsp;In the case of the TCS example, I initially bought 1 lot of TCS futures, and when I square off, I have to sell 1 lot of TCS futures (so that my initial buy position is offset). The following table summarizes the concept of square off in general –</p>
+<table>
+<tbody>
+<tr>
+<th>Serial No</th>
+<th>Initial Leg</th>
+<th>View at the time of initial leg</th>
+<th>Square off leg</th>
+<th>View at the time of squaring off</th>
+</tr>
+<tr>
+<td>01</td>
+<td>Buy / Long</td>
+<td>Expect the price to go higher – Bullish</td>
+<td>Sell</td>
+<td>No longer expect the price to go higher, or one wants to get out of the existing position (for whatever reason)</td>
+</tr>
+<tr>
+<td>02</td>
+<td>Sell/Short</td>
+<td>Expect the price to go lower – Bearish</td>
+<td>Buy</td>
+<td>No longer expect the price to go lower, or one wants to get out of the existing position (for whatever reason)</td>
+</tr>
+</tbody>
+</table>
+<p>When I intend to square off a position, I can either call my broker asking him to square off the open position or do it myself on the trading terminal. In the example, we have a buy open position in TCS futures (1 lot). To offset this open position, the square off position would be to “sell 1 lot of TCS futures”. The following things happen when I opt to square off the TCS position –</p>
+<ol>
+<li>The broker (via trading terminal) scouts for a counterparty that would be willing to buy the futures position from me. In simpler words, “my existing buy position will simply be transferred to someone else”. That ‘someone else’ by buying the contract from me now bears the TCS price’s risk going up or down. Hence this is referred to as the “Risk Transfer.”</li>
+<li>Note, the transfer will happen at the current futures price in the market, i.e. 2460/- per share.</li>
+<li>My position is considered to offset (or squared off) after the trade is executed.</li>
+<li>Once the trade is executed, the margins that were initially blocked would now be unblocked. I can utilize this cash for other transactions.</li>
+<li>The profit or loss made on the transaction will be credited or debited to my trading account the same evening itself.</li>
+</ol>
+<p>And with this, the futures trade is now set to be complete.</p>
+<p>Note, if at Rs.2460 I develop a view that the price will be much higher; I could continue to hold the stock futures. In fact, I can continue to hold the futures till the contract’s expiry, i.e. 24<sup>th</sup> Dec 2014. As long as I continue to hold the futures, I continue to hold the risk of TCS price fluctuation. In fact, here is the snapshot of TCS futures taken on 23<sup>rd</sup> Dec 2014, just 1 day before the expiry of the contract. Had I opted to hold the futures till 23<sup>rd</sup> Dec, my profits would have been much higher – TCS futures is trading at Rs.2519.25/- per share.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/01/Image6_TCS.png"><img alt="Image6_TCS" class="aligncenter size-full wp-image-1458" height="500" loading="lazy" sizes="(max-width: 571px) 100vw, 571px" src="http://zerodha.com/varsity/wp-content/uploads/2015/01/Image6_TCS.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/01/Image6_TCS.png 571w, https://zerodha.com/varsity/wp-content/uploads/2015/01/Image6_TCS-300x263.png 300w" width="571"/></a></p>
+<p>In fact, on 16<sup>th</sup> Dec 2014, when I decided to book profits at Rs.2460/-, ‘someone else’ bought the TCS futures from me. In other words, I transferred my buy position to someone else, and even that ‘someone else’ (the counterparty) would also have made money on this contract by buying the contract at Rs.2460/- from me and holding it until 23<sup>rd</sup> Dec 2014. Now here are two simple questions for you –</p>
+<ol>
+<li>What would be my Profit &amp; Loss (P&amp;L) on a per share and an overall basis had I held the TCS futures from 15<sup>th</sup> Dec 2014 (Rs.2374.9) to 23<sup>rd</sup> Dec 2015 (Rs.2519.25)</li>
+<li>On 16<sup>th</sup> Dec 2014, I squared off my position at Rs.2460/-, obviously by the contract’s square was transferred to a counterparty. Assuming the counterparty held on to the TCS futures position until 23<sup>rd</sup> Dec 2014, what would be his Profit &amp; Loss (P&amp;L) on a per-share basis and overall?</li>
+</ol>
+<p>If you cannot answer the above two questions, you can drop in a query in the comment box below, and I will be happy to explain the answer. But I sincerely hope you get the answers to the questions above yourself 🙂</p>
+<p>In the next chapter, we will discuss margins, an essential aspect of futures trading.</p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ul>
+<li>If you have a directional view on an assets price, you can financially benefit from it by entering into a futures agreement.</li>
+<li>To transact in a futures contract, one needs to deposit a token advance called the margin.</li>
+<li>When we transact in a futures contract, we digitally sign the agreement with the counterparty; this obligates us to honour the contract.</li>
+<li>The futures price and the spot price of an asset are different; this is attributable to the futures pricing formula (we will discuss this topic later)</li>
+<li>One lot refers to the minimum number of shares that needs to be transacted.</li>
+<li>Once we enter into a futures agreement, there is no obligation to stick to the agreement until the contract expires.</li>
+<li>Every futures trade requires a margin amount; the margins are blocked when you enter a futures trade.</li>
+<li>We can exit the agreement anytime, which means you can exit the agreement within seconds of entering the agreement.</li>
+<li>When we square off an agreement, we are essentially transferring the risk to someone else.</li>
+<li>Once we square off the futures position, margins are unblocked.</li>
+<li>The money that you make or lose in a futures transaction is credited or debited to your trading account the same day.</li>
+<li>In a futures contract, the buyer’s gain is the seller’s loss and vice versa.</li>
+</ul>
+<p>&nbsp;</p>
+<div class="clear"> </div>
+</div>

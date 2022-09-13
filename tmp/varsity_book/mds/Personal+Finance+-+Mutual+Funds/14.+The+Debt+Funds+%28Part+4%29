@@ -1,0 +1,153 @@
+<div class="post">
+<h2><strong>14.1 – Liquidity Risk</strong></h2>
+<p>In the previous chapter, we discussed the Franklin debt fund saga. Thanks to this episode, as investors, we now very clearly know that investing in debt fund should not be based on useless parameters such as the past returns or the current fund ranking. The market has taught us one two many times that this approach to fund selection is a pointless affair.</p>
+<p>The evaluation must be based on risk metrics. Unless the investor develops a sense of all the risk involved while investing in a debt fund, he or she should not even venture into the debt fund arena. &nbsp;The same holds for equity funds as well. However, thanks to the tag line ‘Mutual funds are subject to market risk’, investors somehow perceive market risk as a risk associated (only) with equity funds. Still, at least they are aware of the fact that equity funds are risky.</p>
+<p>Unfortunately, the same set of people assume that the debt funds do not carry any risk.</p>
+<p>If you have read the previous chapters, you know that debt funds are risky too, and you are even familiar with the risk types associated with debt funds, i.e. default risk, credit risk, and the interest rate risk. The recent Franklin episode formally introduced us to another dormant risk factor called the ‘Liquidity Risk’.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/05/M11-C14-Debt-Funds-Liquidity-Risk-WEB-1.jpg"><img alt="" class="aligncenter wp-image-7908" height="410" sizes="(max-width: 614px) 100vw, 614px" src="https://zerodha.com/varsity/wp-content/uploads/2020/05/M11-C14-Debt-Funds-Liquidity-Risk-WEB-1-300x200.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/05/M11-C14-Debt-Funds-Liquidity-Risk-WEB-1-300x200.jpg 300w, https://zerodha.com/varsity/wp-content/uploads/2020/05/M11-C14-Debt-Funds-Liquidity-Risk-WEB-1.jpg 600w" width="614"/></a></p>
+<p>We will start this chapter with a quick discussion on liquidity risk and then proceed to learn the other categories (sub) of debt funds.</p>
+<p>Liquidity risk, from the debt fund perspective, can mean two things –</p>
+<ul>
+<li>The lack of liquidity in the underlying market the debt funds invests in, i.e. the Indian bond markets.</li>
+<li>The lack of availability of funds with the AMCs to service investor’s redemption</li>
+</ul>
+<p>Both these are tightly related though.</p>
+<p>The lack of liquidity in the bond market implies that the AMCs cannot quickly liquidate the papers they hold in the bond market, which means to say that they are obligated to keep the paper to maturity, which further implies that the money is kind of ‘locked-in’.</p>
+<p>Now the primary job of an AMC is to collect money from an investor, invest that money on their behalf, generate returns for the investors, and return the funds when the investor redeems the units.</p>
+<p>To honour the investor’s redemption, the AMC must hold enough cash across each of the schemes. If the AMC does not have enough funds, then they cannot service the redemption requests that come in, especially in case the redemption requests come in large numbers.</p>
+<p>Think about it for a second – on the one hand; the AMC has invested in debt papers which it cannot sell as and when they wish (lack of liquidity in bonds market) and on the other hand, it has to maintain a cash pile to service redemptions. In the event redemption comes in large numbers, the lack of cash causes a liquidity crisis.</p>
+<p>Franklin India faced this same situation. One a day to day basis, AMCs maintain enough cash to service redemptions, after all, redemptions are a regular affair for an AMCs.</p>
+<p>However, if there is a surge in redemption, then the AMC will need extra cash to service the redemption. Question is where they will get this money?</p>
+<p>You guessed it right, they borrow.</p>
+<p>Under SEBI’s guidelines, an AMC can borrow up to 20% of its net asset under management (AUM). You can read the detailed directions <a href="https://www.sebi.gov.in/sebi_data/meetingfiles/sep-2019/1568030594032_1.pdf">here</a> –</p>
+<p>Here is the extract on AMC’s borrowing limits –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-1_guidelines.png"><img alt="" class="aligncenter wp-image-7896" height="82" loading="lazy" sizes="(max-width: 443px) 100vw, 443px" src="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-1_guidelines-300x55.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-1_guidelines-300x55.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-1_guidelines-768x140.png 768w, https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-1_guidelines.png 822w" width="443"/></a></p>
+<p>So, if an AMC is pulling this lever to borrow funds, then it probably indicates that the AMC’s usual cash pile is depleting; hence they need to borrow more to service redemption request.</p>
+<p>How do we get to know if the AMC&nbsp; is borrowing? Well, one needs to look at the monthly portfolio declaration that the AMC makes. If the cash component is positive, that means to say that the AMC is not borrowing funds, if it is negative, then that shows the presence of debt.</p>
+<p>Take a look at Franklin’s Ultra-short Term fund’s portfolio from Jan 2020 –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-2_Jan.png"><img alt="" class="aligncenter wp-image-7897" height="154" loading="lazy" sizes="(max-width: 571px) 100vw, 571px" src="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-2_Jan-300x81.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-2_Jan-300x81.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-2_Jan-1024x275.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-2_Jan-768x206.png 768w, https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-2_Jan.png 1319w" width="571"/></a></p>
+<p>Portfolio in Feb 2020 –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-3_Feb.png"><img alt="" class="aligncenter wp-image-7898" height="141" loading="lazy" sizes="(max-width: 580px) 100vw, 580px" src="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-3_Feb-300x73.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-3_Feb-300x73.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-3_Feb-1024x251.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-3_Feb-768x188.png 768w, https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-3_Feb.png 1307w" width="580"/></a></p>
+<p>Portfolio in March 2020 –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-4_Mar.png"><img alt="" class="aligncenter wp-image-7899" height="80" loading="lazy" sizes="(max-width: 572px) 100vw, 572px" src="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-4_Mar-300x42.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-4_Mar-300x42.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-4_Mar-1024x143.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-4_Mar-768x107.png 768w, https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-4_Mar.png 1224w" width="572"/></a></p>
+<p>As you can see, the cash component turned negative in March 2020, which means to say that the AMC had borrowed funds, showing some early signs of liquidity stress. Franklin folded this particular fund along with five others on 23<sup>rd</sup> April 2020. So there was some warning on the wall.</p>
+<p>There are a couple of things to note here –</p>
+<ul>
+<li>Just because you see a negative cash value, do not jump into the conclusion that the fund is about to go bust. Develop a sense to connect the dots to understand what is happening.</li>
+<li>The negative cash component can be a lagging indicator – remember the AMC’s portfolio details comes out with a delay; nevertheless, this is still a good indicator of trouble.</li>
+</ul>
+<p>So if you are a ‘do it yourself’ investor, then do keep an eye on this every month. The onus is on you to figure the development in the market and connect these dots.&nbsp; What do I mean by ‘connect the dots’? Could I connect the dots and developed a foresight into what would happen to Franklin in March itself?</p>
+<p>These are tough questions to answer. Today, I have the benefit of hindsight, and therefore I can lay down a list of things –</p>
+<ul>
+<li>Franklin’s Vodafone episode was the first warning sign.</li>
+<li>The individual portfolios consisted of papers below AA+; this was always questionable.</li>
+<li>Cash decreased, borrowings increased.</li>
+<li>The market itself was weak, thanks to COVID 19</li>
+<li>The street sentiment was negative.</li>
+</ul>
+<p>When you connect these things, you’d somehow see trouble brewing. I understand it may not be straightforward for a regular investor (or for that matter even seasoned analysts), with more market experience the ‘connect the dots’ bit becomes more intuitive and the call will eventually come from your gut 🙂</p>
+<p>We will discuss more on this and other aspects of risk in the ‘how to select mutual funds’, chapter. We will now proceed to understand three different types of debt funds – Banking &amp; PSU Debt Funds, Credit risk funds, and the Gilts.</p>
+<h2><strong>14.2 – Banking and PSU Debt Fund </strong></h2>
+<p>Ideally, I’d have stopped discussing debt funds right after the medium duration funds, because in my opinion, all the other types of debt funds are entirely pointless for a typical retail portfolio.</p>
+<p>However, I think it is important to discuss other debt fund types to let you know what they are and what to expect.</p>
+<p>Let us kick start this discussion with the&nbsp; Banking &amp; PSU Debt Funds.</p>
+<p>Before we proceed, think about this a bit and try to imagine what the ‘Banking and PSU debt Fund’, really means.</p>
+<p>If you are someone like me, I’m sure you’d have thought that the Banking and PSU debt Fund, as the name suggests is a fund that invests in papers from the banking and PSU sector. The banking and PSU sector is one of the safest in India.</p>
+<p>Fair enough now let’s see what SEBI has to say –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/05/Banking_and_PSU_Fund.png"><img alt="" class="size-full wp-image-10145 aligncenter" height="241" loading="lazy" sizes="(max-width: 737px) 100vw, 737px" src="https://zerodha.com/varsity/wp-content/uploads/2020/05/Banking_and_PSU_Fund.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/05/Banking_and_PSU_Fund.png 737w, https://zerodha.com/varsity/wp-content/uploads/2020/05/Banking_and_PSU_Fund-300x98.png 300w" width="737"/></a></p>
+<p>Well, it looks like we were almost right 🙂</p>
+<p>The fund invests in banking and PSU debt to the extent of 80%. Pay attention to the 80% part here!</p>
+<p>The remaining 20% gets invested in any paper.</p>
+<p>Suddenly what seemed like a harmless debt fund turns out tricky.</p>
+<p>This is an 80-20 cocktail, and there is a problem with it. Think about this from a regular retail investor, when he reads the fund’s title; it is only natural for him to expect the fund to be 100% Banking and PSU debt, he would not expect the fund to have papers from the private sector.</p>
+<p>If a default occurs in any of the paper from the 20% bucket, then the fund’s NAV takes a hit. Who is to blame here? The investor for expecting a pure-play Banking &amp; PSU fund, the fund manager for lousy investment, or SEBI for permitting this cocktail?</p>
+<p>Have a look at IDFC AMCs Banking &amp; PSU Debt Fund –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-6_port.png"><img alt="" class="aligncenter wp-image-7901" height="382" loading="lazy" sizes="(max-width: 400px) 100vw, 400px" src="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-6_port-300x286.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-6_port-300x286.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-6_port-768x733.png 768w, https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-6_port.png 943w" width="400"/></a></p>
+<p>The portfolio consists of paper from Reliance Industries to the extent of 1.27%, not that Reliance is terrible, could be a fantastic paper to hold. Still, the question is, does it belong here?</p>
+<p>&nbsp;</p>
+<p>Anyway, the good part of the Banking and PSU Debt fund is that the credit risk is kind of on the lower side, mainly for two reasons –</p>
+<ul>
+<li>RBI provides liquidity support to banks and NBFCs</li>
+<li>Implicit Sovereign guarantee by the Govt of India for PSUs</li>
+</ul>
+<p>But remember, the ‘credit risk comfort’ is for 80% of the portfolio; the same is not valid for the balance of 20% of the portfolio.</p>
+<p>Also, if you notice, SEBI has no specs on the Macaulay’s duration of the portfolio, which means the fund manager is flexible with the duration of the papers held in the portfolio. Given this, the modified duration will be on the higher side for these funds.</p>
+<p>Here are the parameters for the IDFC’s Banking &amp; PSU Debt fund –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-7_parameters.png"><img alt="" class="aligncenter wp-image-7902" height="37" loading="lazy" sizes="(max-width: 493px) 100vw, 493px" src="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-7_parameters-300x22.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-7_parameters-300x22.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-7_parameters-768x57.png 768w, https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-7_parameters.png 923w" width="493"/></a></p>
+<p>The average duration is about 3.1 years, which is in line with any mid duration fund. The modified duration is about 2.6, which for a debt fund is on the slightly higher end of the spectrum. If the interest rate goes up, the fund will take quite a bit of time to recover from the fallen NAV.</p>
+<p>Given this, an investor looking at investing in these debt funds should have at least 3-5 years perspective while investing in the Banking &amp; PSU Debt fund.</p>
+<p>At this point, I think it is important to remind the readers that so far in this module, we are only introducing different types of fund. We have made few passing comments on some of these categories, but we still haven’t figured how and why one should invest if at all one has to.</p>
+<p>At a later point in this module, we will try and figure two significant bits –</p>
+<ul>
+<li>How to analyse a Mutual Fund?</li>
+<li>How to build an MF portfolio?</li>
+</ul>
+<p>When we do this discussion, we will tie all loose ends and develop a holistic approach to personal finance.</p>
+<h2><strong>14.3 – Credit Risk Funds </strong></h2>
+<p>Before October 2017 (before SEBI’s huge MF reclassification circular), Credit Risk Funds were called ‘Credit Opportunities Fund’.</p>
+<p>Do you notice the change in perception here?</p>
+<p>Credit Opportunity Fund – the emphasis is on the opportunity, returns, and generally has a positive feel to it, hence easier to sell 🙂</p>
+<p>Credit Risk Fund – It’s the same fund, but by highlighting the term risk, the emphasis is on the risk, and rightly so.</p>
+<p>Anyway, the name ‘Credit risk fund’, should give you a heads up on what to expect in this fund 🙂</p>
+<p>Yes, you guessed it right, the fund is loaded with Credit Risk!</p>
+<p>As usual, let us start with SEBI’s definition –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/05/Credit_Risk_Fund.png"><img alt="" class="size-full wp-image-10147 aligncenter" height="477" loading="lazy" sizes="(max-width: 752px) 100vw, 752px" src="https://zerodha.com/varsity/wp-content/uploads/2020/05/Credit_Risk_Fund.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/05/Credit_Risk_Fund.png 752w, https://zerodha.com/varsity/wp-content/uploads/2020/05/Credit_Risk_Fund-300x190.png 300w" width="752"/></a></p>
+<p>&nbsp;</p>
+<p>And if you are wondering what the little circumflex next to the name points to –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-9_circumflex.png"><img alt="" class="aligncenter wp-image-7904" height="56" loading="lazy" sizes="(max-width: 467px) 100vw, 467px" src="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-9_circumflex-300x36.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-9_circumflex-300x36.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-9_circumflex-768x92.png 768w, https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-9_circumflex.png 789w" width="467"/></a></p>
+<p>SEBI here simply specifies that an AMC running a credit risk fund should invest 65% of the assets in corporate bonds, which are AA* and below investment grade, which means –</p>
+<ul>
+<li>These bonds carry maximum credit risk, hence the probability of both, default by the bond issuer and credit downgrade is very high</li>
+<li>No spec on where the balance 35% gets invested</li>
+</ul>
+<p>The Credit risk fund is where the fund managers cut themselves lose to chase yields. Think of it like a hungry kid in a buffet dinner party. The plate will be loaded, with zero control on what gets packed in the plate.</p>
+<p>Similarly, a fund manager running a credit risk fund loads up the portfolio with risky papers to chase yields. Let me explain this.</p>
+<p>The objective of a credit risk fund is to take on as much credit risk as possible to ensure a higher yield to the investors. What does this mean?</p>
+<p>This means the fund will lend the investor’s funds to corporates whose repayment track record or repayment capability is questionable. Why would the fund manager deliberately lend to a corporate who is unlikely to repay?</p>
+<p>He does so because the corporates in need of the fund say, ‘give me the money, and I’ll compensate you with higher interest rates’.</p>
+<p>You see the point, right? Corporate with bad credit history has to entice new lender by paying a higher coupon rate.</p>
+<p>The debt papers of such corporates usually have a lower rating. When the fund manager lends to such entities, he hopes for the following –</p>
+<ul>
+<li>The borrowing entity will repay and honour the interest paid regularly.</li>
+<li>He also hopes the corporate entity improves its creditworthiness.</li>
+<li>If the creditworthiness improves, then the rating of the bond/paper will improve.</li>
+<li>If the ratings improve, the bond price goes up, hence the NAV increases</li>
+</ul>
+<p>If these things were to happen, not only will the fund manager get higher interest rates for the money he has lent, but will benefit from the credit rating upgrade and the eventual increase in bond prices.</p>
+<p>Let us look at a portfolio of a Credit Risk Fund; this belongs to DSP’s Credit Risk fund –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-10_dsp.png"><img alt="" class="aligncenter wp-image-7905" height="259" loading="lazy" sizes="(max-width: 421px) 100vw, 421px" src="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-10_dsp-300x184.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-10_dsp-300x184.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-10_dsp-1024x629.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-10_dsp-768x471.png 768w, https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-10_dsp.png 1248w" width="421"/></a></p>
+<p>The fund manager here has decided to allocate nearly 30% of its assets to just one company. You can imagine the hit on the NAV of this fund if this company were to default on its obligation.</p>
+<p>The credit ratings of the other companies are not excellent either; well, this is expected from a credit risk fund. Still, the combination of concentrated positions coupled with lousy credit ratings makes this a hazardous category to invest.</p>
+<p>The credit risk fund is a complicated category to understand, but the good part is that a retail investor does not need to endure this pain.</p>
+<p>Almost all portfolio goals of a retail investor can be achieved without credit risk funds in the portfolio. So do avoid investing your money in a credit risk fund.</p>
+<h2><strong>14.4 – GILT Funds </strong></h2>
+<p>Back in the early 19th Century, when the Government would borrow money, they would do so by issuing a bond (a physical paper), on which the terms of the borrowing were written and signed. The edges of such a bond were laced in Gold, to showcase the sanctity of Government borrowing. Such bonds issued by the Government were called the ‘Gilt-edged bonds’, because of golden edges.</p>
+<p>The presence of Gold does not eliminate the credit or interest rate risk, at the end of the day, this technically is still a bond 🙂</p>
+<p>However, the fact that the borrower is the Government implies that there is virtually zero Credit risk, because, well, the Government cannot default on debt obligations.</p>
+<p>The legacy continues, and even today, the bonds issued by the Government is called a GILT, there is no gold lacing today, but the Sovereign Guarantee still exists.</p>
+<p>Now, as you can imagine, a mutual fund that invests predominantly in Government bonds or Gilts is called a ‘Gilt Fund’.</p>
+<p>Here is SEBI’s definition of a GILT fund –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-11_Gilt.png"><img alt="" class="aligncenter wp-image-7906" height="101" loading="lazy" sizes="(max-width: 439px) 100vw, 439px" src="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-11_Gilt-300x69.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-11_Gilt-300x69.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/05/Image-11_Gilt.png 748w" width="439"/></a></p>
+<p>There are two types of GILT funds –</p>
+<ul>
+<li>Gilt funds – Invests a minimum of 80% of its assets in Government securities. This implies 20% can go anywhere (again the cocktail problem)</li>
+<li>Gilt with ten-year constant duration – This fund is the same as above with the added clause that the Macaulay’s duration is at least ten years. By defining the duration, the entire risk profile of this fund changes.</li>
+</ul>
+<p>Agreed, there is no Credit risk for the investor here. We expect the Government never to default. But think about the interest rate risk in these funds, especially the constant duration one. As you can imagine the interest rate risk is quite significant in these funds,&nbsp; probably large enough to compensates for the absence of credit risk.</p>
+<p>I would urge you to look into the fact sheet of any GILT fund and observe the duration and modified duration to get a sense of how risky these funds are.</p>
+<p>If you ever decide to invest in these funds, then do so only with a long, really long term perspective. I’m talking about 8-10 year time frame here.</p>
+<p>I really don’t see a need for a GILT&nbsp; fund in any retail portfolio; you are better without this.</p>
+<p>Anyway, with this, we will wrap up our discussion on debt funds. Up next is ETFs and Index funds.</p>
+<h2><strong>Key takeaways from this chapter</strong></h2>
+<ul>
+<li>A debt fund investor should watch out for liquidity risk</li>
+<li>The cash borrowings of a fund is an indicator of liquidity risk</li>
+<li>The Banking and PSU debt funds invest predominantly in banking/financial services, and PSU debt</li>
+<li>The banking and PSU debt carries less credit risk (relatively) compared to its peers</li>
+<li>Credit risk fund carries a high degree of credit risk. A retail investor is better off avoiding this fund</li>
+<li>GILTS don’t have credit risk but have a significant amount of interest rate risk</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="clear"> </div>
+</div>

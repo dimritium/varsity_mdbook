@@ -1,0 +1,87 @@
+<div class="post">
+<p><img alt="M2-Ch16-title" class="aligncenter size-full wp-image-872" height="300" sizes="(max-width: 600px) 100vw, 600px" src="http://zerodha.com/varsity/wp-content/uploads/2014/10/M2-Ch16-title.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2014/10/M2-Ch16-title.jpg 600w, https://zerodha.com/varsity/wp-content/uploads/2014/10/M2-Ch16-title-300x150.jpg 300w" width="600"/></p>
+<p>The topic of Fibonacci retracements is quite intriguing. To fully understand and appreciate the concept of Fibonacci retracements, one must understand the Fibonacci series. The origins of the Fibonacci series can be traced back to the ancient Indian mathematic scripts, with some claims dating back to 200 BC. However, in the 12<sup>th</sup> century, Leonardo Pisano Bogollo, an Italian mathematician from Pisa, known to his friends as Fibonacci discovered Fibonacci numbers.</p>
+<p>The Fibonacci series is a sequence of numbers starting from zero arranged so that the value of any number in the series is the sum of the previous two numbers.</p>
+<p>The Fibonacci sequence is as follows:</p>
+<p>0 , 1, 1, 2, 3, 5, 8, 13, 21, 34,&nbsp; 55, 89, 144, 233, 377, 610…</p>
+<p>Notice the following:<br/>
+233 = 144 + 89<br/>
+144 = 89 + 55<br/>
+89 = 55 +34</p>
+<p>Needless to say, the series extends to infinity. There are few interesting properties of the Fibonacci series.</p>
+<p>Divide any number in the series by the previous number; the ratio is always approximately 1.618.</p>
+<p>For example:<br/>
+610/377 = 1.618<br/>
+377/233 = 1.618<br/>
+233/144 = 1.618</p>
+<p>The ratio of 1.618 is considered as the Golden Ratio, also referred to as the Phi. Fibonacci numbers have their connection to nature. The ratio can be found in the human face, flower petals, animal bodies, fruits, vegetables, rock formation, galaxy formations etc. Of course, let us not get into this discussion as we would be digressing from the main topic.&nbsp; For those interested, I would suggest you search on the internet for golden ratio examples, and you will be pleasantly surprised. Further into the ratio properties, one can find remarkable consistency when a number is in the Fibonacci series is divided by its immediate succeeding number.</p>
+<p>For example:<br/>
+89/144 = 0.618<br/>
+144/233 = 0.618<br/>
+377/610 = 0.618</p>
+<p>At this stage, do bear in mind that 0.618, when expressed in percentage is 61.8%.</p>
+<p>Similar consistency can be found when any number in the Fibonacci series is divided by a number two places higher.</p>
+<p>For example:<br/>
+13/34 = 0.382<br/>
+21/55 = 0.382<br/>
+34/89 = 0.382</p>
+<p>0.382, when expressed in percentage terms, is 38.2%</p>
+<p>Also, consistency is when a number in the Fibonacci series is divided by a number 3 place higher.</p>
+<p>For example:<br/>
+13/55 = 0.236<br/>
+21/89 = 0.236<br/>
+34/144 = 0.236<br/>
+55/233 = 0.236</p>
+<p>0.236, when expressed in percentage terms, is 23.6%.</p>
+<h2>16.1 – Relevance to stocks markets</h2>
+<p>It is believed that the Fibonacci ratios, i.e. 61.8%, 38.2%, and 23.6%, finds its application in stock charts. Fibonacci analysis can be applied when there is a noticeable up-move or down-move in prices. &nbsp;Whenever the stock moves either upwards or downwards sharply, it usually tends to retrace back before its next move. For example, if the stock has run up from Rs.50 to Rs.100, it is likely to retrace back to probably Rs.70 before moving Rs.120.</p>
+<p>‘The retracement level forecast’ is a technique that can identify upto which level retracement can happen. These retracement levels provide a good opportunity for the traders to enter new positions in the trend direction.&nbsp; The Fibonacci ratios, i.e. 61.8%, 38.2%, and 23.6%, help the trader identify the retracement’s possible extent. The trader can use these levels to position himself for trade.</p>
+<p>Have a look at the chart below:</p>
+<p><strong><img alt="M2Ch16-chart1" class="aligncenter size-full wp-image-832" height="241" loading="lazy" sizes="(max-width: 623px) 100vw, 623px" src="http://zerodha.com/varsity/wp-content/uploads/2014/10/M2Ch16-chart1.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2014/10/M2Ch16-chart1.jpg 623w, https://zerodha.com/varsity/wp-content/uploads/2014/10/M2Ch16-chart1-300x116.jpg 300w" width="623"/></strong></p>
+<p>I’ve encircled two points on the chart, at Rs.380 where the stock started its rally and at Rs.489, where the stock prices peaked.</p>
+<p>I would now define the move of 109 (380 – 489) as the Fibonacci upmove. &nbsp;As per the Fibonacci retracement theory, after the upmove one can anticipate a correction in the stock to last up to the Fibonacci ratios. For example, the first level up to which the stock can correct could be 23.6%. If this stock continues to correct further, the trader can watch out for the 38.2% and 61.8%&nbsp;levels.</p>
+<p>Notice in the example shown below, the stock had retraced up to 61.8%, which coincides with 421.9, before it resumed the rally.</p>
+<p><strong><img alt="M2Ch16-chart2" class="aligncenter size-full wp-image-833" height="241" loading="lazy" sizes="(max-width: 622px) 100vw, 622px" src="http://zerodha.com/varsity/wp-content/uploads/2014/10/M2Ch16-chart2.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2014/10/M2Ch16-chart2.jpg 622w, https://zerodha.com/varsity/wp-content/uploads/2014/10/M2Ch16-chart2-300x116.jpg 300w" width="622"/></strong></p>
+<p>We can arrive at 421 by using simple math as well –</p>
+<p>Total Fibonacci up move = 109</p>
+<p>61.8% of Fibonacci up move = 61.8% * 109 = 67.36</p>
+<p>Retracement @ 61.8% = 489- 67.36 = 421.6</p>
+<p>Likewise, we can calculate for 38.2% and the other ratios. However one need not manually do this as the software will do this for us.</p>
+<p>Here is another example where the chart has rallied from Rs.288 to Rs.338. Therefore 50 points move makes up for the Fibonacci upmove. The stock retraced back 38.2% to Rs.319 before resuming its up move.</p>
+<p><strong><img alt="M2Ch16-chart3" class="aligncenter size-full wp-image-834" height="311" loading="lazy" sizes="(max-width: 624px) 100vw, 624px" src="http://zerodha.com/varsity/wp-content/uploads/2014/10/M2Ch16-chart3.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2014/10/M2Ch16-chart3.jpg 624w, https://zerodha.com/varsity/wp-content/uploads/2014/10/M2Ch16-chart3-300x150.jpg 300w" width="624"/></strong></p>
+<p>The Fibonacci retracements can also be applied to falling stocks to identify levels upto which the stock can bounce back. In the chart below (DLF Limited), the stock started to decline from Rs.187 to Rs. 120.6 thus making 67 points as the Fibonacci down move.</p>
+<p><strong><img alt="M2Ch16-chart4" class="aligncenter size-full wp-image-835" height="149" loading="lazy" sizes="(max-width: 624px) 100vw, 624px" src="http://zerodha.com/varsity/wp-content/uploads/2014/10/M2Ch16-chart4.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2014/10/M2Ch16-chart4.jpg 624w, https://zerodha.com/varsity/wp-content/uploads/2014/10/M2Ch16-chart4-300x72.jpg 300w" width="624"/></strong></p>
+<p>After the down move, the stock attempted to bounce back retracing back to Rs.162, which is the 61.8% Fibonacci retracement level.</p>
+<h2>16.2 – Fibonacci Retracement construction</h2>
+<p>As we now know, Fibonacci retracements are movements in the chart that go against the trend. To use the Fibonacci retracements, we should first identify the 100% Fibonacci move. The 100% move can be an upward rally or a downward rally. To mark the 100% move, we need to pick the most recent peak and trough on the chart. Once this is identified, we connect them using a Fibonacci retracement tool. This is available in most of the technical analysis software packages including Zerodha’s Pi 🙂</p>
+<p>Here is a step by step guide:</p>
+<p>Step 1) Identify immediate peak and trough. In this case, the trough is at 150, and the peak is at 240. The 90 point moves make it 100%.</p>
+<p><strong><img alt="M2Ch16-chart5" class="aligncenter size-full wp-image-836" height="193" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2014/10/M2Ch16-chart5.jpg" width="624"/></strong></p>
+<p>Step 2) Select the Fibonacci retracement tool from the chart tools</p>
+<p><strong><img alt="M2Ch16-chart6" class="aligncenter size-full wp-image-837" height="219" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2014/10/M2Ch16-chart6.jpg" width="624"/></strong></p>
+<p>Step 3) Use the Fibonacci retracement tool to connect the trough and the peak.</p>
+<p><strong><img alt="M2Ch16-chart7" class="aligncenter size-full wp-image-838" height="227" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2014/10/M2Ch16-chart7.jpg" width="624"/></strong></p>
+<p>After selecting the Fibonacci retracement tool from the charts tool, the trader has to click on trough first, and without un-clicking, he has to drag the line till the peak. While doing this, simultaneously, the Fibonacci retracements levels start getting plotted on the chart. However, the software completes the retracement identification process only after selecting both the trough and the peak. This is how the chart looks after selecting both points.</p>
+<p><strong><img alt="M2Ch16-chart8" class="aligncenter size-full wp-image-839" height="227" loading="lazy" sizes="(max-width: 623px) 100vw, 623px" src="http://zerodha.com/varsity/wp-content/uploads/2014/10/M2Ch16-chart8.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2014/10/M2Ch16-chart8.jpg 1331w, https://zerodha.com/varsity/wp-content/uploads/2014/10/M2Ch16-chart8-300x109.jpg 300w, https://zerodha.com/varsity/wp-content/uploads/2014/10/M2Ch16-chart8-1024x373.jpg 1024w" width="623"/></strong></p>
+<p>You can now see the Fibonacci retracement levels are calculated and loaded on the chart. Use this information to position yourself in the market.</p>
+<h2>16.3 – How should you use the Fibonacci retracement levels?</h2>
+<p>Think of a situation where you wanted to buy a particular stock, but you have not been able to do so because of a sharp run-up in the stock. The most prudent action to take would be to wait for a retracement in the stock in such a situation. Fibonacci retracement levels such as 61.8%, 38.2%, and 23.6% act as a potential level upto which a stock can correct.</p>
+<p>By plotting the Fibonacci retracement levels, the trader can identify these retracement levels, and therefore position himself for an opportunity to enter the trade. However please note like any indicator, use the Fibonacci retracement as a confirmation tool.</p>
+<p>I would buy a stock only after it has passed the other checklist items. In other words, my conviction to buy would be higher if the stock has:</p>
+<ol>
+<li>Formed a recognizable candlestick pattern</li>
+<li>The stoploss coincides with the S&amp;R level.</li>
+<li>Volumes are above average.</li>
+</ol>
+<p>Along with the above points, if the stoploss also coincides with the Fibonacci level, I know the trade setup is well aligned to all the variables, and hence I would go in for a strong buy. The word ‘strong’ usage indicates the level of conviction in the trade set up. The more confirming factors we use to study the trend and reversal, more robust is the signal. The same logic can also be applied for the short trade.</p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>The Fibonacci series forms the basis for Fibonacci retracement</li>
+<li>A Fibonacci series has many mathematical properties. These mathematical properties are prevalent in many aspects of nature.</li>
+<li>Traders believe the Fibonacci series has its application in stock charts as it identified potential retracement levels.</li>
+<li>Fibonacci retracements are levels (61.8%, 38.2%, and 23.6% ) upto which a stock can retrace before it resumes the original directional move.</li>
+<li>At the Fibonacci retracement level, the trader can look at initiating a new trade. However, before initiating the trade, other points in the checklist should also confirm.</li>
+</ol>
+<div class="clear"> </div>
+</div>

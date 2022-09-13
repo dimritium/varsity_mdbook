@@ -1,0 +1,353 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>7. Single Candlestick patterns (Part 3) - Varsity mdBook</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><div><strong aria-hidden="true">1.</strong> Introduction to Stock Markets</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/1.html"><strong aria-hidden="true">1.1.</strong> 1. The Need to Invest</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/2.html"><strong aria-hidden="true">1.2.</strong> 2. Regulators</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/3.html"><strong aria-hidden="true">1.3.</strong> 3. Financial Intermediaries</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/4.html"><strong aria-hidden="true">1.4.</strong> 4. The IPO Markets – Part 1</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/5.html"><strong aria-hidden="true">1.5.</strong> 5. The IPO Markets – Part 2</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/6.html"><strong aria-hidden="true">1.6.</strong> 6. The Stock Markets</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/7.html"><strong aria-hidden="true">1.7.</strong> 7. The Stock Markets Index</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/8.html"><strong aria-hidden="true">1.8.</strong> 8. Commonly Used Jargons</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/9.html"><strong aria-hidden="true">1.9.</strong> 9. The Trading Terminal</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/10.html"><strong aria-hidden="true">1.10.</strong> 10. Clearing and Settlement Process</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/11.html"><strong aria-hidden="true">1.11.</strong> 11. Five Corporate Actions and Its Impact on Stock Prices</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/12.html"><strong aria-hidden="true">1.12.</strong> 12. Key Events and Their Impact on Markets</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/13.html"><strong aria-hidden="true">1.13.</strong> 13. Getting started!</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/14.html"><strong aria-hidden="true">1.14.</strong> 14. Supplementary note – Rights, OFS, FPO</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/15.html"><strong aria-hidden="true">1.15.</strong> 15. Supplementary note – The 20 market depth or level 3 data</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Technical Analysis</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/1.html"><strong aria-hidden="true">2.1.</strong> 1. Background</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/2.html"><strong aria-hidden="true">2.2.</strong> 2. Introducing Technical Analysis</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/3.html"><strong aria-hidden="true">2.3.</strong> 3. The Chart Types</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/4.html"><strong aria-hidden="true">2.4.</strong> 4. Getting Started with Candlesticks</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/5.html"><strong aria-hidden="true">2.5.</strong> 5. Single Candlestick patterns (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/6.html"><strong aria-hidden="true">2.6.</strong> 6. Single Candlestick patterns (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/7.html" class="active"><strong aria-hidden="true">2.7.</strong> 7. Single Candlestick patterns (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/8.html"><strong aria-hidden="true">2.8.</strong> 8. Multiple candlestick patterns (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/9.html"><strong aria-hidden="true">2.9.</strong> 9. Multiple Candlestick Patterns (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/10.html"><strong aria-hidden="true">2.10.</strong> 10. Multiple Candlestick Patterns (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/11.html"><strong aria-hidden="true">2.11.</strong> 11. The Support and Resistance</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/12.html"><strong aria-hidden="true">2.12.</strong> 12. Volumes</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/13.html"><strong aria-hidden="true">2.13.</strong> 13. Moving Averages</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/14.html"><strong aria-hidden="true">2.14.</strong> 14. Indicators (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/15.html"><strong aria-hidden="true">2.15.</strong> 15. Indicators (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/16.html"><strong aria-hidden="true">2.16.</strong> 16. The Fibonacci Retracements</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/17.html"><strong aria-hidden="true">2.17.</strong> 17. The Dow Theory (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/18.html"><strong aria-hidden="true">2.18.</strong> 18. The Dow Theory (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/19.html"><strong aria-hidden="true">2.19.</strong> 19. The Finale – Helping you get started</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/20.html"><strong aria-hidden="true">2.20.</strong> 20. Other indicators</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/21.html"><strong aria-hidden="true">2.21.</strong> 21. Interesting features on TradingView</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/22.html"><strong aria-hidden="true">2.22.</strong> 22. The Central Pivot Range</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Fundamental Analysis</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/1.html"><strong aria-hidden="true">3.1.</strong> 1. Introduction to Fundamental Analysis</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/2.html"><strong aria-hidden="true">3.2.</strong> 2. Mindset of an Investor</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/3.html"><strong aria-hidden="true">3.3.</strong> 3. How to Read the Annual Report of a Company</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/4.html"><strong aria-hidden="true">3.4.</strong> 4. Understanding the P&L Statement (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/5.html"><strong aria-hidden="true">3.5.</strong> 5. Understanding P&L Statement (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/6.html"><strong aria-hidden="true">3.6.</strong> 6. Understanding Balance Sheet Statement (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/7.html"><strong aria-hidden="true">3.7.</strong> 7. Understanding the Balance Sheet Statement (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/8.html"><strong aria-hidden="true">3.8.</strong> 8. The Cash Flow statement</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/9.html"><strong aria-hidden="true">3.9.</strong> 9. The Financial Ratio Analysis (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/10.html"><strong aria-hidden="true">3.10.</strong> 10. The Financial Ratio Analysis (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/11.html"><strong aria-hidden="true">3.11.</strong> 11. The Financial Ratio Analysis (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/12.html"><strong aria-hidden="true">3.12.</strong> 12. The Investment Due Diligence</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/13.html"><strong aria-hidden="true">3.13.</strong> 13. Equity Research (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/14.html"><strong aria-hidden="true">3.14.</strong> 14. DCF Primer</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/15.html"><strong aria-hidden="true">3.15.</strong> 15. Equity Research (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/16.html"><strong aria-hidden="true">3.16.</strong> 16. The Finale</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Futures Trading</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/1.html"><strong aria-hidden="true">4.1.</strong> 1. Background – Forwards Market</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/2.html"><strong aria-hidden="true">4.2.</strong> 2. Introducing Futures Contract</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/3.html"><strong aria-hidden="true">4.3.</strong> 3. The Futures Trade</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/4.html"><strong aria-hidden="true">4.4.</strong> 4. Leverage & Payoff</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/5.html"><strong aria-hidden="true">4.5.</strong> 5. Margin & M2M</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/6.html"><strong aria-hidden="true">4.6.</strong> 6. Margin Calculator (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/7.html"><strong aria-hidden="true">4.7.</strong> 7. Margin Calculator (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/8.html"><strong aria-hidden="true">4.8.</strong> 8. All about Shorting</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/9.html"><strong aria-hidden="true">4.9.</strong> 9. The Nifty Futures</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/10.html"><strong aria-hidden="true">4.10.</strong> 10. The Futures Pricing</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/11.html"><strong aria-hidden="true">4.11.</strong> 11. Hedging with Futures</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/12.html"><strong aria-hidden="true">4.12.</strong> 12. Open Interest</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/13.html"><strong aria-hidden="true">4.13.</strong> 13. Quick Note on Physical Settlement</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> Options Theory for Professional Trading</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/1.html"><strong aria-hidden="true">5.1.</strong> 1. Call Option Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/2.html"><strong aria-hidden="true">5.2.</strong> 2. Basic Option Jargons</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/3.html"><strong aria-hidden="true">5.3.</strong> 3. Buying a Call Option</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/4.html"><strong aria-hidden="true">5.4.</strong> 4. Selling/Writing a Call Option</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/5.html"><strong aria-hidden="true">5.5.</strong> 5. The Put Option Buying</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/6.html"><strong aria-hidden="true">5.6.</strong> 6. The Put Option selling</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/7.html"><strong aria-hidden="true">5.7.</strong> 7. Summarizing Call & Put Options</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/8.html"><strong aria-hidden="true">5.8.</strong> 8. Moneyness of an Option Contract</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/9.html"><strong aria-hidden="true">5.9.</strong> 9. The Option Greeks (Delta) Part 1</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/10.html"><strong aria-hidden="true">5.10.</strong> 10. Delta (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/11.html"><strong aria-hidden="true">5.11.</strong> 11. Delta (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/12.html"><strong aria-hidden="true">5.12.</strong> 12. Gamma (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/13.html"><strong aria-hidden="true">5.13.</strong> 13. Gamma (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/14.html"><strong aria-hidden="true">5.14.</strong> 14. Theta</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/15.html"><strong aria-hidden="true">5.15.</strong> 15. Volatility Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/16.html"><strong aria-hidden="true">5.16.</strong> 16. Volatility Calculation (Historical)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/17.html"><strong aria-hidden="true">5.17.</strong> 17. Volatility & Normal Distribution</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/18.html"><strong aria-hidden="true">5.18.</strong> 18. Volatility Applications</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/19.html"><strong aria-hidden="true">5.19.</strong> 19. Vega</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/20.html"><strong aria-hidden="true">5.20.</strong> 20. Greek Interactions</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/21.html"><strong aria-hidden="true">5.21.</strong> 21. Greek Calculator</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/22.html"><strong aria-hidden="true">5.22.</strong> 22. Re-introducing Call & Put Options</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/23.html"><strong aria-hidden="true">5.23.</strong> 23. Case studies – wrapping it all up!</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/24.html"><strong aria-hidden="true">5.24.</strong> 24. Quick note on Physical Settlement</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/25.html"><strong aria-hidden="true">5.25.</strong> 25. Options M2M and P&L calculation</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> Option Strategies</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/1.html"><strong aria-hidden="true">6.1.</strong> 1. Orientation</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/2.html"><strong aria-hidden="true">6.2.</strong> 2. Bull Call Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/3.html"><strong aria-hidden="true">6.3.</strong> 3. Bull Put Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/4.html"><strong aria-hidden="true">6.4.</strong> 4. Call Ratio Back Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/5.html"><strong aria-hidden="true">6.5.</strong> 5. Bear Call Ladder</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/6.html"><strong aria-hidden="true">6.6.</strong> 6. Synthetic Long & Arbitrage</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/7.html"><strong aria-hidden="true">6.7.</strong> 7. Bear Put Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/8.html"><strong aria-hidden="true">6.8.</strong> 8. Bear Call Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/9.html"><strong aria-hidden="true">6.9.</strong> 9. Put Ratio Back spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/10.html"><strong aria-hidden="true">6.10.</strong> 10. The Long Straddle</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/11.html"><strong aria-hidden="true">6.11.</strong> 11. The Short Straddle</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/12.html"><strong aria-hidden="true">6.12.</strong> 12. The Long & Short Strangle</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/13.html"><strong aria-hidden="true">6.13.</strong> 13. Max Pain & PCR Ratio</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/14.html"><strong aria-hidden="true">6.14.</strong> 14. Iron Condor</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> Markets and Taxation</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/1.html"><strong aria-hidden="true">7.1.</strong> 1. Introduction (Setting the Context)</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/2.html"><strong aria-hidden="true">7.2.</strong> 2. Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/3.html"><strong aria-hidden="true">7.3.</strong> 3. Classifying Your Market Activity</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/4.html"><strong aria-hidden="true">7.4.</strong> 4. Taxation for Investors</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/5.html"><strong aria-hidden="true">7.5.</strong> 5. Taxation for Traders</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/6.html"><strong aria-hidden="true">7.6.</strong> 6. Turnover, Balance Sheet, and P&L</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/7.html"><strong aria-hidden="true">7.7.</strong> 7. ITR Forms (The Finale)</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> Currency, Commodity, and Government Securities</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/1.html"><strong aria-hidden="true">8.1.</strong> 1. Currency Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/2.html"><strong aria-hidden="true">8.2.</strong> 2. Reference Rates & Impact of events</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/3.html"><strong aria-hidden="true">8.3.</strong> 3. Impact of events (Brexit) & Interest Rate Parity</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/4.html"><strong aria-hidden="true">8.4.</strong> 4. The USD INR Pair (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/5.html"><strong aria-hidden="true">8.5.</strong> 5. The USD INR Pair (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/6.html"><strong aria-hidden="true">8.6.</strong> 6. EUR, GBP, and JPY</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/7.html"><strong aria-hidden="true">8.7.</strong> 7. Gold (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/8.html"><strong aria-hidden="true">8.8.</strong> 8. Gold (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/9.html"><strong aria-hidden="true">8.9.</strong> 9. Silver</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/10.html"><strong aria-hidden="true">8.10.</strong> 10. Crude Oil (Part 1), digging the past</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/11.html"><strong aria-hidden="true">8.11.</strong> 11. Crude Oil (Part 2), the crude oil eco system</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/12.html"><strong aria-hidden="true">8.12.</strong> 12. Crude Oil (Part 3), the crude oil contract</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/13.html"><strong aria-hidden="true">8.13.</strong> 13. Copper & Aluminium</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/14.html"><strong aria-hidden="true">8.14.</strong> 14. Lead & Nickel</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/15.html"><strong aria-hidden="true">8.15.</strong> 15. Cardamom & Mentha Oil</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/16.html"><strong aria-hidden="true">8.16.</strong> 16. Natural Gas</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/17.html"><strong aria-hidden="true">8.17.</strong> 17. Commodity Options</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/18.html"><strong aria-hidden="true">8.18.</strong> 18. Cross Currency Pairs</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/19.html"><strong aria-hidden="true">8.19.</strong> 19. Government Securities</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.</strong> Risk Management & Trading Psychology</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/1.html"><strong aria-hidden="true">9.1.</strong> 1. Orientation note</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/2.html"><strong aria-hidden="true">9.2.</strong> 2. Risk (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/3.html"><strong aria-hidden="true">9.3.</strong> 3. Risk (Part 2) – Variance & Covariance</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/4.html"><strong aria-hidden="true">9.4.</strong> 4. Risk (Part 3) – Variance & Covariance Matrix</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/5.html"><strong aria-hidden="true">9.5.</strong> 5. Risk (Part 4) – Correlation Matrix & Portfolio Variance</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/6.html"><strong aria-hidden="true">9.6.</strong> 6. Equity Curve</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/7.html"><strong aria-hidden="true">9.7.</strong> 7. Expected Returns</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/8.html"><strong aria-hidden="true">9.8.</strong> 8. Portfolio Optimization (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/9.html"><strong aria-hidden="true">9.9.</strong> 9. Portfolio Optimization (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/10.html"><strong aria-hidden="true">9.10.</strong> 10. Value at Risk</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/11.html"><strong aria-hidden="true">9.11.</strong> 11. Position Sizing for active trader</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/12.html"><strong aria-hidden="true">9.12.</strong> 12. Position Sizing for active traders (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/13.html"><strong aria-hidden="true">9.13.</strong> 13. Position Sizing for active traders (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/14.html"><strong aria-hidden="true">9.14.</strong> 14. Kelly’s Criterion</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/15.html"><strong aria-hidden="true">9.15.</strong> 15. Trading Biases</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/16.html"><strong aria-hidden="true">9.16.</strong> 16. Trading Biases (Part 2)</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">10.</strong> Trading Systems</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/1.html"><strong aria-hidden="true">10.1.</strong> 1. What to expect?</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/2.html"><strong aria-hidden="true">10.2.</strong> 2. Pair Trading logic</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/3.html"><strong aria-hidden="true">10.3.</strong> 3. Pair Trading, Method 1, Chapter 1 (PTM1, C1) -Tracking Pairs</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/4.html"><strong aria-hidden="true">10.4.</strong> 4. PTM1, C2 – Pair stats</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/5.html"><strong aria-hidden="true">10.5.</strong> 5. PTM1, C3 – Pre trade setup</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/6.html"><strong aria-hidden="true">10.6.</strong> 6. PTM1, C4 – The Density Curve</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/7.html"><strong aria-hidden="true">10.7.</strong> 7. PTM1,C5 – The Pair Trade</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/8.html"><strong aria-hidden="true">10.8.</strong> 8. Pair trade Method 2, Chapter 1 (PTM2, C1) – Straight line Equation</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/9.html"><strong aria-hidden="true">10.9.</strong> 9. PTM2, C2 – Linear Regression</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/10.html"><strong aria-hidden="true">10.10.</strong> 10. PTM2, C3 – The Error Ratio</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/11.html"><strong aria-hidden="true">10.11.</strong> 11. PTM2, C4 – The ADF test</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/12.html"><strong aria-hidden="true">10.12.</strong> 12. Trade Identification</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/13.html"><strong aria-hidden="true">10.13.</strong> 13. Live Example -1</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/14.html"><strong aria-hidden="true">10.14.</strong> 14. Live Example – 2</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/15.html"><strong aria-hidden="true">10.15.</strong> 15. Calendar Spreads</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/16.html"><strong aria-hidden="true">10.16.</strong> 16. Momentum Portfolios</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">11.</strong> Personal Finance - Mutual Funds</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/1.html"><strong aria-hidden="true">11.1.</strong> 1. Background and Orientation</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/2.html"><strong aria-hidden="true">11.2.</strong> 2. Personal Finance Math (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/3.html"><strong aria-hidden="true">11.3.</strong> 3. Personal Finance Math (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/4.html"><strong aria-hidden="true">11.4.</strong> 4. The retirement problem (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/5.html"><strong aria-hidden="true">11.5.</strong> 5. The retirement problem (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/6.html"><strong aria-hidden="true">11.6.</strong> 6. Introduction to Mutual Funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/7.html"><strong aria-hidden="true">11.7.</strong> 7. Concept of fund & NAV</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/8.html"><strong aria-hidden="true">11.8.</strong> 8. The mutual fund fact-sheet</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/9.html"><strong aria-hidden="true">11.9.</strong> 9. The Equity scheme (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/10.html"><strong aria-hidden="true">11.10.</strong> 10. Equity Scheme (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/11.html"><strong aria-hidden="true">11.11.</strong> 11. The Debt funds (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/12.html"><strong aria-hidden="true">11.12.</strong> 12. The Debt funds (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/13.html"><strong aria-hidden="true">11.13.</strong> 13. The Debt funds (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/14.html"><strong aria-hidden="true">11.14.</strong> 14. The Debt Funds (Part 4)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/15.html"><strong aria-hidden="true">11.15.</strong> 15. Investing in Bonds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/16.html"><strong aria-hidden="true">11.16.</strong> 16. Index Funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/17.html"><strong aria-hidden="true">11.17.</strong> 17. Arbitrage Funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/18.html"><strong aria-hidden="true">11.18.</strong> 18. Measuring Mutual fund Returns</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/19.html"><strong aria-hidden="true">11.19.</strong> 19. Rolling Returns</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/20.html"><strong aria-hidden="true">11.20.</strong> 20. Mutual fund Expense Ratio, Direct, and Regular plans</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/21.html"><strong aria-hidden="true">11.21.</strong> 21. Mutual Benchmarking</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/22.html"><strong aria-hidden="true">11.22.</strong> 22. Mutual Fund Beta, SD, and Sharpe Ratio</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/23.html"><strong aria-hidden="true">11.23.</strong> 23. Sortino and the Capture Ratios</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/24.html"><strong aria-hidden="true">11.24.</strong> 24. How to analyse an Equity Mutual fund?</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/25.html"><strong aria-hidden="true">11.25.</strong> 25. How to analyze a debt mutual fund?</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/26.html"><strong aria-hidden="true">11.26.</strong> 26. The Mutual Fund Portfolio</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/27.html"><strong aria-hidden="true">11.27.</strong> 27. Smart-beta funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/28.html"><strong aria-hidden="true">11.28.</strong> 28. Asset Allocation, An Introduction</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/29.html"><strong aria-hidden="true">11.29.</strong> 29. Exchange-traded funds (ETF)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/30.html"><strong aria-hidden="true">11.30.</strong> 30. Basics of Macro Economics</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">12.</strong> Innerworth — Mind over markets</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">13.</strong> Integrated Financial Modelling</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/1.html"><strong aria-hidden="true">13.1.</strong> 1. Introduction to Financial Modelling</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/2.html"><strong aria-hidden="true">13.2.</strong> 2. Excel workbook setup</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/3.html"><strong aria-hidden="true">13.3.</strong> 3. Historical Data</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/4.html"><strong aria-hidden="true">13.4.</strong> 4. Assumptions (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/5.html"><strong aria-hidden="true">13.5.</strong> 5. Assumptions (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/6.html"><strong aria-hidden="true">13.6.</strong> 6. Revenue model</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/7.html"><strong aria-hidden="true">13.7.</strong> 7. Asset Schedule (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/8.html"><strong aria-hidden="true">13.8.</strong> 8. Asset Schedule (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/9.html"><strong aria-hidden="true">13.9.</strong> 9. Debt Schedule</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/10.html"><strong aria-hidden="true">13.10.</strong> 10. Reserves Schedule (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/11.html"><strong aria-hidden="true">13.11.</strong> 11. Reserves Schedule (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/12.html"><strong aria-hidden="true">13.12.</strong> 12. Projections</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/13.html"><strong aria-hidden="true">13.13.</strong> 13. Cash flow statement</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/14.html"><strong aria-hidden="true">13.14.</strong> 14. Valuation (Part 1) – Overview</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/15.html"><strong aria-hidden="true">13.15.</strong> 15. Valuation (Part 2) – FCFF & FCFE</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/16.html"><strong aria-hidden="true">13.16.</strong> 16. Valuation (Part 3) – Risk Premium & Tax Shield</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/17.html"><strong aria-hidden="true">13.17.</strong> 17. Weighted average cost of capital and Terminal Growth</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/18.html"><strong aria-hidden="true">13.18.</strong> 18. Discounted Cash Flow Analysis (DCF)</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">14.</strong> Personal Finance - Insurance</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/1.html"><strong aria-hidden="true">14.1.</strong> 1. Introduction</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/2.html"><strong aria-hidden="true">14.2.</strong> 2. Perverse Incentives</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/3.html"><strong aria-hidden="true">14.3.</strong> 3. The nudge</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/4.html"><strong aria-hidden="true">14.4.</strong> 4. Skin in the game</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/5.html"><strong aria-hidden="true">14.5.</strong> 5. Dunning Kruger effect</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/6.html"><strong aria-hidden="true">14.6.</strong> 6. A mighty defence</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/7.html"><strong aria-hidden="true">14.7.</strong> 7. No free lunch</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/8.html"><strong aria-hidden="true">14.8.</strong> 8. Gimmick or not (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/9.html"><strong aria-hidden="true">14.9.</strong> 9. Gimmick or not (Part 2)</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Varsity mdBook</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <div class="post">
+<h2 id=""><a class="header" href="#"></a></h2>
+<h2 id="-1"><a class="header" href="#-1"><img alt="M2-Ch7-title" class="aligncenter size-full wp-image-605" height="300" sizes="(max-width: 600px) 100vw, 600px" src="http://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-title.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-title.jpg 600w, https://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-title-300x150.jpg 300w" width="600"/></a></h2>
+<h2 id="71--paper-umbrella"><a class="header" href="#71--paper-umbrella">7.1 – Paper Umbrella</a></h2>
+<p>The paper umbrella is a single candlestick pattern which helps traders in setting up directional trades. The interpretation of the paper umbrella changes based on where it appears on the chart.</p>
+<p><img alt="M2-Ch7-D1a" class="aligncenter size-full wp-image-600" height="200" loading="lazy" sizes="(max-width: 400px) 100vw, 400px" src="http://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-D1a.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-D1a.jpg 400w, https://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-D1a-300x150.jpg 300w" width="400"/></p>
+<p>A paper umbrella consists of two trend reversal patterns, namely the hanging man and the hammer. The hanging man pattern is bearish, and the hammer pattern is relatively bullish. A paper umbrella is characterized by a long lower shadow with a small upper body.</p>
+<p>If the paper umbrella appears at the bottom end of a downward rally, it is called the<strong> ‘Hammer’</strong>.</p>
+<p>If the paper umbrella appears at the top end of an uptrend rally, it is called the<strong> ‘Hanging Man’</strong>.</p>
+<p>To qualify a candle as a paper umbrella, the lower shadow’s length should be at least twice the length of the real body. This is called the ‘<strong>shadow to real body ratio</strong>’.</p>
+<p>Let us look at this example: Open = 100, High = 103, Low = 94, Close = 102 (bullish candle).</p>
+<p>Here, the real body’s length is <strong>Close – Open, i.e. 102-100 = 2</strong> and the length of the lower shadow is <strong>Open – Low, i.e. 100 – 94 = 6</strong>. As the length of the lower shadow is more than twice the real body; hence we can conclude that a paper umbrella has formed.</p>
+<h2 id="72--the-hammer-formation"><a class="header" href="#72--the-hammer-formation">7.2 – The Hammer formation</a></h2>
+<p>The bullish hammer is a significant candlestick pattern that occurs at the bottom of the trend. A hammer consists of a small real body at the upper end of the trading range with a long lower shadow. The longer, the lower shadow, the more bullish the pattern.</p>
+<p>The chart below shows the presence of two hammers formed at the bottom of a downtrend.</p>
+<p><img alt="M2-Ch7-Chart1" class="aligncenter size-full wp-image-563" height="166" loading="lazy" sizes="(max-width: 624px) 100vw, 624px" src="http://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart1.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart1.jpg 624w, https://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart1-300x80.jpg 300w" width="624"/></p>
+<p>Notice the blue hammer has a very tiny upper shadow, which is acceptable considering the “Be flexible – quantify and verify” rule.</p>
+<p>A hammer can be of any colour as it does not really matter as long as it qualifies ‘the shadow to real body’ ratio. However, it is slightly more comforting to see a blue-coloured real body.</p>
+<p><strong>The prior trend for the hammer should be a downtrend</strong>. The prior trend is highlighted with the curved line. The thought process behind a hammer is as follows:</p>
+<ol>
+<li>The market is in a downtrend, where the bears are in absolute control of the markets.</li>
+<li>During a downtrend, every day the market would open lower compared to the previous day’s close and again closes lower to form a new low</li>
+<li>On the day the hammer pattern forms, the market as expected trades lower, and makes a new low</li>
+<li>However, at the low point, some amount of buying interest emerges, which pushes the prices higher to the extent that the stock closes near the high point of the day.</li>
+<li>The price action on the hammer formation day indicates that the bulls attempted to break the prices from falling further, and were reasonably successful.</li>
+<li>This action by the bulls has the potential to change the sentiment in the stock. Hence one should look at buying opportunities.</li>
+</ol>
+<p>The trade setup for the hammer is as follows:</p>
+<ol>
+<li>A hammer formation suggests a long trade.</li>
+<li>The trader’s entry time depends on the risk appetite of the trader. If the trader is a risk-taker, he can buy the stock the same day. Remember, the real body’s colour in hammer does not matter; hence there is no violation of Rule 1. If the trader is risk-averse, he can buy the stock the day after the pattern has formed only after ensuring that the day is a blue candle day
+<ol type="a">
+<li>Risk takers can qualify the day as a hammer by checking the following condition at 3:20 PM on the hammer day…
+<ol type="i">
+<li>Open and close should be almost the same (within 1-2% range)</li>
+<li>Lower shadow length should be at least twice the length of the real body.</li>
+<li>If both these conditions are met, then the pattern is a hammer, and the risk-taker can go long.</li>
+</ol>
+</li>
+<li>The risk-averse trader should evaluate the OHLC data on the 2<sup>nd</sup> If it’s a blue candle, the trade is valid so that he can go long.</li>
+</ol>
+</li>
+<li>The low of the hammer acts as the stoploss for the trade.</li>
+</ol>
+<p>The chart below shows a hammer’s formation where both the risk taker and the risk-averse would have set up a profitable trade. This is a 15 minutes intraday chart of Cipla Ltd.</p>
+<p><img alt="M2-Ch7-Chart2" class="aligncenter size-full wp-image-564" height="248" loading="lazy" sizes="(max-width: 624px) 100vw, 624px" src="http://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart2.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart2.jpg 1250w, https://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart2-300x119.jpg 300w, https://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart2-1024x407.jpg 1024w" width="624"/></p>
+<p>The trade set up would be as follows:</p>
+<p>Buy Price for a risk-taker – He takes the trade on the Hammer candle itself at – Rs.444/-</p>
+<p>Buy price for a risk-averse – He takes the trade on the next candle after evaluating that the candle is blue at – Rs. 445.4/-</p>
+<p>Stoploss for both the traders is at Rs.441.5/-,, which is the low of the hammer formation.</p>
+<p>Do notice how the trade has evolved, yielding a desirable intraday profit.</p>
+<p>Here is another chart where the risk-averse trader would have benefited under the ‘Buy strength and Sell weakness’ rule.</p>
+<p><img alt="M2-Ch7-Chart3" class="aligncenter size-full wp-image-565" height="188" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart3.jpg" width="624"/></p>
+<p>Here is another interesting chart with two hammer formation.</p>
+<p><img alt="M2-Ch7-Chart4" class="aligncenter size-full wp-image-566" height="242" loading="lazy" sizes="(max-width: 624px) 100vw, 624px" src="http://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart4.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart4.jpg 1254w, https://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart4-300x117.jpg 300w, https://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart4-1024x398.jpg 1024w" width="624"/></p>
+<p>Both the hammers qualified on the preconditions of a hammer, i.e.:</p>
+<ol>
+<li>The prior trend to be a downtrend</li>
+<li>Shadow to real body ratio</li>
+</ol>
+<p>The risk-averse trader would have saved himself from a loss-making trade on the first hammer, thanks to Rule 1 of candlesticks. However, the second hammer would have enticed both the risk-averse and risk-taker to enter a trade. After initiating the trade, the stock did not move up; it stayed nearly flat and cracked down eventually.</p>
+<p>Please note once you initiate the trade you stay in it until either the stop loss or the target is reached. It would help if you did not tweak the trade until one of these events occurs. The loss in this particular trade (first hammer) is inevitable. But remember this is a calculated risk and not a mere speculative risk.</p>
+<p>Here is another chart where a perfect hammer appears; however, it does not satisfy the prior trend condition, and hence <strong>it is not a defined pattern.</strong></p>
+<p><img alt="M2-Ch7-Chart5" class="aligncenter size-full wp-image-567" height="163" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart5.jpg" width="623"/></p>
+<h2 id="73--the-hanging-man"><a class="header" href="#73--the-hanging-man">7.3 – The Hanging man</a></h2>
+<p>If a paper umbrella appears at the top end of a trend, it is called a Hanging Man. The bearish hanging man is a single candlestick and a top reversal pattern. A hanging man signals a market high. The hanging man is classified as a hanging man <strong>only if an uptrend precedes it</strong>.&nbsp;&nbsp; Since the hanging man is seen after a high, the bearish hanging man pattern signals to sell pressure.</p>
+<p><img alt="M2-Ch7-Chart6" class="aligncenter size-full wp-image-568" height="242" loading="lazy" sizes="(max-width: 624px) 100vw, 624px" src="http://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart6.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart6.jpg 1251w, https://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart6-300x116.jpg 300w, https://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart6-1024x397.jpg 1024w" width="624"/></p>
+<p>A hanging man can be of any colour, and it does not really matter as long as it qualifies ‘the shadow to real body’ ratio. The hanging man’s prior trend <strong>should be an uptrend</strong>, as highlighted by the curved line in the chart above. The thought process behind a hanging man is as follows:</p>
+<ol>
+<li>The market is in an uptrend. Hence the bulls are in absolute control.</li>
+<li>New highs and higher lows characterize the market.</li>
+<li>The day the hanging man pattern appears, the bears have managed to make an entry.</li>
+<li>This is emphasized by a long lower shadow of the hanging man.</li>
+<li>The entry of bears signifies that they are trying to break the stronghold of the bulls.</li>
+</ol>
+<p>Thus, the hanging man makes a case for shorting the stock. The trade set up would be as follows:</p>
+<ol>
+<li>For the risk-taker, a short trade can be initiated the same day around the closing price.</li>
+<li>For the risk-averse, a short trade can be initiated at the close of the next day after ensuring that a red candle would appear.
+<ol type="a">
+<li>The method to validate the candle for the risk-averse, and risk-taker is the same as explained in a hammer pattern.</li>
+</ol>
+</li>
+</ol>
+<p>Once the short has been initiated, the candle’s high works as a stoploss for the trade.</p>
+<p><img alt="M2-Ch7-Chart7" class="aligncenter wp-image-569 size-full" height="259" loading="lazy" sizes="(max-width: 624px) 100vw, 624px" src="http://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart7.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart7.jpg 1173w, https://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart7-300x125.jpg 300w, https://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart7-1024x425.jpg 1024w" width="624"/></p>
+<p>In the chart above, BPCL Limited has formed a hanging man at 593. The OHLC details are –</p>
+<p>Open = 592, High = 593.75, Low = 587, Close = 593. Based on this, the trade set up would be as follows:</p>
+<ul>
+<li>The risk-taker initiates the short trade on the day the pattern appears (at 593)</li>
+<li>The risk-averse initiates the short trade on the next day at closing prices after ensuring it is a red candle day</li>
+<li>Both the risk-taker and the risk-averse would have initiated their respective trades</li>
+<li>The stoploss price for this trade would be the high price, i.e. above 593.75</li>
+</ul>
+<p>The trade would have been profitable for both the risk types.</p>
+<h2 id="74-my-experience-with-a-paper-umbrella"><a class="header" href="#74-my-experience-with-a-paper-umbrella">7.4 –My experience with a paper umbrella</a></h2>
+<p>While both the hammer and the hanging man are valid candlestick patterns, my dependence on a hammer is a little more as opposed to a hanging man. All else equal, if there were two trading opportunities in the market, one based on the hammer and the other based on hanging man I would prefer to place my money on the hammer. The reason to do so is based on my experience in trading with both the patterns.</p>
+<p>My only concern with a hanging man is that if the bears were indeed influential during the day, why did the price go up after making a low? This, in my opinion, re-establishes the bull’s supremacy in the market.</p>
+<p>I would encourage you to develop your own thesis based on observations that you make in the markets. This will help you calibrate your trade more accurately and help you develop structured market thinking.</p>
+<h2 id="75--the-shooting-star"><a class="header" href="#75--the-shooting-star"><img alt="shooting-star" class="alignleft size-full wp-image-607" height="131" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2014/09/shooting-star.png" width="131"/>7.5 – The shooting star</a></h2>
+<p>The shooting star is the last single candlestick pattern that we will learn about before moving to multiple candlestick patterns. The shooting star’s price action is quite powerful, thus making the shooting star a trendy candlestick pattern to trade.</p>
+<p>The shooting star looks just like an inverted paper umbrella.</p>
+<p><img alt="M2-Ch7-Chart8" class="aligncenter size-full wp-image-570" height="246" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart8.jpg" width="623"/></p>
+<p>Unlike a paper umbrella, the shooting star does not have a long lower shadow. Instead, it has a long upper shadow where the shadow’s length is at least twice the length of the real body. The body’s colour does not matter, but the pattern is slightly more reliable if the real body is red. The longer the upper wick, the more bearish is the pattern. The small real body is a common feature between the shooting star and the paper umbrella. Going by the textbook definition, the shooting star should not have a lower shadow. However, a small lower shadow, as seen in the chart above, is considered alright. The shooting star is a bearish pattern; <strong>hence the prior trend should be bullish</strong>.</p>
+<p>The thought process behind the shooting star is as follows:</p>
+<ul>
+<li>The stock is in an uptrend implying that the bulls are in absolute control. When bulls are in control, the stock or the market tends to make a new high and higher low.</li>
+<li>On the day the shooting star pattern forms, the market as expected trades higher, and in the process makes a new high</li>
+<li>However, at the high point of the day, there is a selling pressure where the stock price recedes to close near the low point of the day, thus forming a shooting star.</li>
+<li>The selling indicates that the bears have made an entry, and they were actually quite successful in pushing the prices down. This is evident by the long upper shadow.</li>
+<li>The expectation is that the bears will continue selling over the next few trading sessions. Hence the traders should look for shorting opportunities.</li>
+</ul>
+<p>Take a look at this chart where a shooting star has been formed right at the top of an uptrend.</p>
+<p><img alt="M2-Ch7-Chart9" class="aligncenter size-full wp-image-571" height="271" loading="lazy" sizes="(max-width: 623px) 100vw, 623px" src="http://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart9.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart9.jpg 623w, https://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart9-300x130.jpg 300w" width="623"/></p>
+<p>The OHLC data on the shooting star is; open = 1426, high = 1453, low = 1410, close = 1417. The short trade set up on this would be:</p>
+<ol>
+<li>The risk-taker will initiate the trade-in 1417, basically on the same day the shooting star forms.
+<ol type="a">
+<li>The risk-taker initiates the trade the same day after ensuring that the day has formed a shooting star. To confirm this, the trader has to validate:
+<ol type="i">
+<li>If the current market price is more or less equal to the low price</li>
+<li>The length of the upper shadow is at least twice the length of the real body.</li>
+</ol>
+</li>
+<li>The risk-averse will initiate the trade on the next day, only after ensuring that the 2<sup>nd</sup> day a red candle has formed.</li>
+</ol>
+</li>
+<li>Once the trade has been initiated, the stoploss is to be placed at the pattern’s high. In the case, the stop loss is at 1453</li>
+</ol>
+<p>As we have discussed this before, once a trade has been set up, we should wait for either the stoploss or the target to be triggered. It is advisable not to do anything else, except for maybe trailing your stoploss. Of course, we still haven’t discussed trailing stoploss yet. We will discuss it at a later stage.</p>
+<p>Here is a chart where both the risk taker and the risk-averse would have made a remarkable profit on a trade based on a shooting star.</p>
+<p><img alt="M2-Ch7-Chart10" class="aligncenter size-full wp-image-572" height="301" loading="lazy" sizes="(max-width: 622px) 100vw, 622px" src="http://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart10.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart10.jpg 622w, https://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart10-300x145.jpg 300w" width="622"/></p>
+<p>Here is an example, where both the risk-averse and the risk-taker would have initiated the trade based on a shooting star. However, the stoploss has been breached. Do remember, when the stop-loss triggers, the trader will have to exit the trade, as the trade no longer stands valid. More often than not, exiting the trade is the best thing to do when the stoploss triggers.</p>
+<p><img alt="M2-Ch7-Chart11" class="aligncenter size-full wp-image-573" height="243" loading="lazy" sizes="(max-width: 624px) 100vw, 624px" src="http://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart11.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart11.jpg 624w, https://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch7-Chart11-300x117.jpg 300w" width="624"/></p>
+<hr/>
+<h3 id="key-takeaways-from-this-chapter"><a class="header" href="#key-takeaways-from-this-chapter">Key takeaways from this chapter</a></h3>
+<ol>
+<li>A paper umbrella has a long lower shadow and a small real body. The lower shadow and the real body should maintain the ‘shadow to real body’ ratio. In the case of the paper umbrella, the lower shadow should be at least twice the real body’s length.</li>
+<li>Since the open and close prices are close to each other, the paper umbrella’s colour should not matter.</li>
+<li>If a paper umbrella appears at the bottom of a downtrend, it is called the ‘hammer.’</li>
+<li>If the paper umbrella appears at the top end of an uptrend, it is called the hanging man.</li>
+<li>The hammer is a bullish pattern, and one should look at buying opportunities when it appears.
+<ol type="a">
+<li>The low of the hammer acts as the stop-loss price trade.</li>
+</ol>
+</li>
+<li>The hanging man is a bearish pattern which appears at the top end of the trend, and one should look at selling opportunities when it appears.
+<ol type="a">
+<li>The high of the hanging man acts as the stop loss price for the trade.</li>
+</ol>
+</li>
+<li>The shooting star is a bearish pattern which appears at the top end of the trend. One should look at shorting opportunities when a shooting star appears.
+<ol type="a">
+<li>The high of the shooting star will be the stop loss price for the trade.</li>
+</ol>
+</li>
+</ol>
+<div class="clear"> </div>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../mds/Technical+Analysis/6.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../mds/Technical+Analysis/8.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../mds/Technical+Analysis/6.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../mds/Technical+Analysis/8.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>

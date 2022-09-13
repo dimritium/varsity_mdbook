@@ -1,0 +1,170 @@
+<div class="post">
+<h2><img alt="M2-Ch19-illustration1" class="aligncenter size-full wp-image-1169" height="180" src="http://zerodha.com/varsity/wp-content/uploads/2014/11/M2-Ch19-illustration1.jpg" width="250"/></h2>
+<h2>19.1 – The Charting Software</h2>
+<p>Over the last 18 chapters, we have learnt many aspects of Technical Analysis. If you have read through all the chapters and understood what is being discussed, you are certainly at a stage where you can start trading based on Technical Analysis. The objective of this chapter is to help you get started by identifying technical trading opportunities.</p>
+<p>Kindly note, the suggestions I have put forth in this chapter are based on my trading experience.</p>
+<p>To begin with, you need a chart visualization software, called the ‘Charting Software’. The charting software helps you look at the various stock charts and analyze the same. Needless to say, the charting software is an essential tool for a technical analyst.</p>
+<p>There are many charting software’s available. The two most popular ones are ‘Metastock’ and ‘Amibroker’. Majority of the technical analysts use one of the two charting software’s. Needless to say, these are paid software’s, and you need to purchase the software license before using it.</p>
+<p>A few online free charting tools are available that you can use – these are available on Yahoo Finance, Google Finance, and pretty much all the business media websites. However, my advice to you is – if you aspire to become a technical analyst, get access to good charting software.</p>
+<p>Think of the charting software as a DVD player; once you have a DVD player installed, you will still need to rent DVDs to watch movies. Similarly, once you have a charting software installed, you will still need to feed it with data to view the charts. The data feed required provided by the data vendors.</p>
+<p>There are many data vendors in India, giving you access to data feeds. I would suggest you look upon the internet for reliable vendors. &nbsp;You need to inform the data vendor which charting software you have, and he will provide you with the data feeds in a format that is compatible with your charting software. Of course, the data feeds come at a cost. Once you sign up with a data vendor, he will first give you all the historical data, after which you will have to update the data from his server daily to stay current.</p>
+<p>From my experience buying the latest version of a good charting software (Metastock or Amibroker) can cost you a onetime fee of anywhere between Rs.25,000/- and Rs.30,000/-. Add to this another Rs.15,000/- to Rs.25,000 towards the data feeds. Of course, while the software cost is one time, the cost of data feeds recurs annually. Do note, the older versions of the charting software may cost you much lesser.</p>
+<p>Now, if you are in no mood to spend so much for the charting software &amp; data feed combination, there is another alternative. And that would be Zerodha’s Pi.</p>
+<p>As you may know, Zerodha has a proprietary trading terminal called ‘Pi’. Pi helps you in many ways; I would like to draw your attention to some of its features in the context of Technical Analysis:</p>
+<ol>
+<li><strong>It is bundled</strong> – Pi is a charting software and a data feed package bundled into a single software.</li>
+<li><strong>Great Visualizations</strong> – Pi helps you visualize charts across multiple time frames, including intraday charts.</li>
+<li><strong>Advanced Features</strong> – Pi has advanced charting features and includes 80 built-in technical indicators and over 30 drawing tools.</li>
+<li><strong>Scripting you strategy</strong> – Pi has a scripting language employing which you can code technical strategies and backtest the same on historical data. Please do note, on Varsity we will soon include a module on building trading strategies and scripting.</li>
+<li><strong>Easy Opportunity Recognition</strong> – Pi has a pattern recognition feature that lets you draw a screen pattern. Once you draw, command Pi to scout for that pattern across the market, and it will do just that for you.</li>
+<li><strong>Trade from Pi</strong> – Pi also lets you execute trades directly from the chart (a huge plus point for a technical trader)</li>
+<li><strong>Data Dump</strong> – Pi has a massive historical data dump (over 50,000 candles) which means backtesting your strategy will be more efficient.</li>
+<li><strong>Your personal trading assistant</strong> – Pi’s ‘Expert Advisor’, keeps you informed about the patterns being developed in the live markets.</li>
+<li><strong>Super Advanced features</strong> – Pi has Artificial Intelligence and Genetic Algorithms. These are optimisation tools which help you optimize your trading algorithms.</li>
+<li><strong>It is free </strong>– Zerodha is giving it free of cost to all its active traders.</li>
+</ol>
+<p>The list is quite exhaustive, ranging from the basic to advanced features. I would strongly suggest you try out Pi before deciding to venture out for charting package and data feed bundle.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2014/11/M2-Ch19-illustration6.jpg"><img alt="M2-Ch19-illustration6" class="aligncenter size-full wp-image-1174" height="180" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2014/11/M2-Ch19-illustration6.jpg" width="250"/></a></p>
+<h2>19.2 – Which timeframe to choose?</h2>
+<p>We discussed ‘Timeframes in chapter 3. I would request you to read through it again to refresh your memory.</p>
+<p>Selecting the timeframe while scanning for trading opportunities is perhaps one of the biggest confusion a newbie technical analyst has. You can choose many timeframes from – 1 minute, 5 minutes, 10 minutes, 15 minutes, EOD, Weekly, Monthly, and Yearly. &nbsp;It is quite easy to get confused about this.</p>
+<p>As a thumb rule, the higher the timeframe, the more reliable the trading signal is. For example, a ‘Bullish Engulfing’ pattern on the 15-minute timeframe is far more reliable than a ‘Bullish Engulfing’ pattern on a 5-minute timeframe. Keeping this in perspective, one has to choose a timeframe based on the intended length of the trade.</p>
+<p>So how do you decide the intended length of your trade?</p>
+<p>If you are starting fresh or not a seasoned trader, I suggest you avoid day trading. Start with trades to hold the trade for a few days. This is called ‘Positional Trading’ or ‘Swing Trading’. An active swing trader usually keeps his trading position open for a few days. The best lookback period for a swing trader is 6 months to 1 year.</p>
+<p>On the other hand, a scalper is a seasoned day trader; typically, he uses 1minute or 5 minutes timeframe.</p>
+<p>Once you are comfortable with holding trades over multiple days, graduate yourself to ‘Day Trading’. My guess is, your transition from a positional trader to a day trader will take some time. Needless to say for a dedicated and disciplined trader, the transition period is remarkably lesser.</p>
+<p><img alt="M2-Ch19-illustration3" class="aligncenter size-full wp-image-1171" height="180" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2014/11/M2-Ch19-illustration3.jpg" width="250"/></p>
+<h2>19.3 – Lookback period</h2>
+<p>Look back period is simply the number of candles you wish to view before taking a trading decision. For instance, a lookback period of 3 months means you are looking at today’s candle in the backdrop of at least the recent 3 months data. By doing this, you will develop a perspective on today’s price action concerning last 3 months price action.</p>
+<p>For swing trading opportunities, what is the ideal look back period? From my experience, I would suggest that a swing trader should look for at least 6 months to 1-year data. Likewise, a scalper is better off looking at the last 5 days data.</p>
+<p>However, while plotting the S&amp;R levels, you should increase the look back period to at least 2 years.</p>
+<p><img alt="M2-Ch19-illustration4" class="aligncenter size-full wp-image-1172" height="180" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2014/11/M2-Ch19-illustration4.jpg" width="250"/></p>
+<h2>19.4 – The opportunity universe</h2>
+<p>There are roughly about 6000 listed stocks in the Bombay Stock Exchange (BSE) and close to about 2000 listed stocks in the National Stock Exchange (NSE). Does it make sense for you to scan for opportunities across these thousands of stocks, daily? Obviously not. Over a period of time, you need to identify a set of stocks that you are comfortable trading. These set of stocks would constitute your “Opportunity Universe’. Daily, you scan your opportunity universe to identify trading opportunities.</p>
+<p>Here are some pointers to select stocks to build your opportunity universe:</p>
+<ol>
+<li>Ensure the stock has adequate liquidity. One way to ensure adequate liquidity is to look at the bid-ask spread. The lesser the spread, the more liquid the stock
+<ol type="a">
+<li>Alternatively, you can have ‘minimum volume criteria’. For example, you can consider only those stocks where the volume per day is at least 500000</li>
+</ol>
+</li>
+<li>Make sure the stock is in the ‘EQ’ segment. This is basically because stocks in the ‘EQ’ segment can be day traded. I agree, I discouraged day trading for a newbie, however in a situation where you initiated a positional trade and the target is achieved the same day, there is no harm in closing the position intraday.</li>
+<li>This is a bit tricky, but make sure the stock is not operator driven. Unfortunately, there is no quantifiable method to identify operator driven stocks. This comes to you by sheer experience.</li>
+</ol>
+<p>If you find it difficult to find stocks that comply with the above points, I would advise you to stick to the Nifty 50 or the Sensex 30 stocks. These are called the index stocks. The exchanges carefully select index stocks; this selection process ensures they comply with many points, including those mentioned above.</p>
+<p>Keeping Nifty 50 as your opportunity universe is probably a good idea for both swing trader and scalper.</p>
+<p><img alt="M2-Ch19-illustration5" class="aligncenter size-full wp-image-1173" height="180" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2014/11/M2-Ch19-illustration5.jpg" width="250"/></p>
+<h2>19.5 – The Scout</h2>
+<p>Let us now proceed to understand how one should go about selecting stocks for trading. In other words, we will try and identify a process, employing which we can scan for trading opportunities. The process is mainly suited for a swing trader.</p>
+<p>We have now set the 4 important aspects –</p>
+<ol>
+<li>The charting software – Suggest you use Zerodha’s Pi</li>
+<li>Timeframe – End of Day data</li>
+<li>Opportunity Universe – Nifty 50 stocks</li>
+<li>Trade type – Positional trades with an option to square off intraday, provided the target hits the same day.</li>
+<li>Look back period – Between 6 months to 1 year. Increase to 2 years while plotting the S&amp;R level</li>
+</ol>
+<p>Having fixed these important practical aspects, I will now share my methodology of scanning trading opportunities. I have divided the process into 2 parts:</p>
+<p><strong>&nbsp;Part 1 – The &nbsp; Shortlisting process</strong></p>
+<ol>
+<li>I look at the chart of all the stocks within my opportunity universe.</li>
+<li>While looking at the chart, my attention is only on the recent 3 or maximum of 4 candles</li>
+<li>While looking at the recent 3 candles, I check if any recognisable candlestick pattern is developed.</li>
+<li>If I find an interesting pattern, I shortlist this stock for further investigation, and I continue the scouting process. I always ensure I check all the 50 charts.</li>
+</ol>
+<p><strong>Part 2 – The Evaluation process</strong></p>
+<p>At this stage, I am usually left with 4-5 shortlisted stocks (out of the 50 stocks in my opportunity universe) which exhibit a recognisable candlestick pattern. I then proceed to evaluate these 4-5 charts in detail. Typically I spend at least 15 – 20 minutes on each chart. Here is what I do when looking at the shortlisted chart:</p>
+<ol>
+<li>I generally look at how strong the pattern is – I am specifically interested in checking if there is any need for me to be more flexible.
+<ol type="a">
+<li>For example, if a Bullish Marubuzo has a shadow, I evaluate the shadow’s length concerning the range.</li>
+</ol>
+</li>
+<li>After this, I look at the ‘prior trend’. For all bullish patterns, the prior trend should be a downtrend, and for all bearish patterns, the prior trend should be an uptrend. I do pay a lot of attention to prior trends.</li>
+<li>At this stage, if everything looks good (i.e. I have identified a recognizable pattern with a well defined prior trend), I proceed to inspect the chart further.</li>
+<li>After this, I look at the volumes. The volume should be at least equal to or more than the 10-day average volume.</li>
+<li>Provided both the candlestick pattern and volumes confirm, I then check the support (in case of a long trade) and resistance (in case of a short trade) level.
+<ol type="a">
+<li>The S&amp;R level should coincide (as much as possible) with the stoploss of the trade (as defined by the candlestick pattern)</li>
+<li>If the S&amp;R level is more than 4% away from the stoploss, I stop evaluating the chart further and proceed to the next chart.</li>
+</ol>
+</li>
+<li>I then look for Dow patterns, particularly for double and triple top &amp; bottom formations, flags formations, and a range breakout possibility.
+<ol type="a">
+<li>Needless to say, I also establish the Primary and secondary market trend.</li>
+</ol>
+</li>
+<li>If the steps 1 to 5 are satisfactory, I proceed to calculate the risk to reward ratio (RRR)
+<ol type="a">
+<li>To calculate RRR, I first establish the target by plotting either the support or resistance level.</li>
+<li>The minimum RRR should be at least 1.5</li>
+</ol>
+</li>
+<li>Finally, I look at the MACD and RSI indicators to get a perspective if they confirm, and if I have spare cash, I increase my trade size.</li>
+</ol>
+<p>Usually out of the 4-5 shortlisted stocks, at the most 1 or 2 may qualify for a trade. There are days when there are no trading opportunities. Deciding not to trade in itself is a big trading decision. Remember this is a fairly stringent checklist; if a stock is confirming the checklist, my conviction to trade is very high.</p>
+<p>I have mentioned this many times in this module; I will mention this for one last time – once you place a trade, do nothing until your target is achieved, or stoploss is triggered. Of course, you can trail your stoploss, which is a healthy practice. Otherwise, do nothing if your trade complies with the checklist and do remember the trade is highly curetted; hence the chance of being successful is high. So it makes sense to stay put with conviction.</p>
+<p><img alt="M2-Ch19-illustration2" class="aligncenter size-full wp-image-1176" height="180" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2014/11/M2-Ch19-illustration21.jpg" width="250"/></p>
+<h2>19.5 – The Scalper</h2>
+<p>For a seasoned swing trader, scalping is another option. Scalping is a technique where the trader initiates a fairly large trade to hold the trade for a few minutes. Here is a typical example of the trade done by a scalper –</p>
+<table>
+<tbody>
+<tr>
+<th>1st Leg of the trade</th>
+<th>2nd leg of the trade</th>
+</tr>
+<tr>
+<td>Time – 10:15 AM</td>
+<td>Time – 10:25 AM</td>
+</tr>
+<tr>
+<td>Stock – Infosys</td>
+<td>Stock – Infosys</td>
+</tr>
+<tr>
+<td>Price – 3980</td>
+<td>Price – 3976</td>
+</tr>
+<tr>
+<td>Action – Sell</td>
+<td>Action – Buy</td>
+</tr>
+<tr>
+<td>Quantity – 1000 shares</td>
+<td>Quantity – 1000 shares</td>
+</tr>
+</tbody>
+</table>
+<p>Overall profit after applicable charges = Rs.2644/-</p>
+<p>The overall profit is calculated considering that you are trading with Zerodha, the overall profitability would shrink remarkably if you are scalping with expensive brokerage rates. Containing transaction charges is one of the keys to successful scalping.</p>
+<p>A scalper is a highly focused trader with a sharp sense for the price. He utilizes exact charts such with 1 minute and 5-minute timeframe to make his trading decisions. A successful scalper executes many such trades within the day. His objective is simple – large quantity trade intending to hold for a few minutes. He intends to profit from the small moves in the stock.</p>
+<p>If you aspire to be a scalper, here are few guidelines –</p>
+<ol>
+<li>Remember the checklist we have mentioned but do not expect all the checklist items to comply as the trade duration is very low.</li>
+<li>If I were to handpick just 1 or 2 items in the checklist for scalping, it would be candlestick pattern and volume.</li>
+<li>A risk-reward ratio of even 0.5 to 0.75 is acceptable while scalping.</li>
+<li>Scalping should be done only on liquid stocks.</li>
+<li>Have an effective risk management system – be really quick to book a loss if need be</li>
+<li>Keep a tab on the bid-ask spread to see how the volumes are building.</li>
+<li>Keep a tab on global markets – for example, if there is a sudden drop in the Hang Seng (Hong Kong stock exchange) it invariably leads to a sudden drop in local markets.</li>
+<li>Choose a low-cost broker to ensure your costs are controlled.</li>
+<li>Use margins effectively do not over leverage.</li>
+<li>Have a reliable intraday charting software</li>
+<li>If you sense the day is going wrong, stop trading and move away from your terminal.</li>
+</ol>
+<p>Scalping is a day trading technique requires a great presence of mind and a machine-like approach. A successful scalper embraces volatility and is indifferent to market swings.</p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>If you aspire to become a technical trader, ensure you equip yourself with good charting software. Zerodha’s Pi is my preference.</li>
+<li>Choose EOD chart for both day trading and swing trading.</li>
+<li>Look at intraday charts if you like scalping the markets.</li>
+<li>The lookback period should be at least 6 months to 1 year for swing trading.</li>
+<li>Nifty 50 is a great opportunity universe, to begin with</li>
+<li>The opportunity scanning can be done in 2 parts.</li>
+<li>Part 1 involves skimming through the charts of all the stocks in opportunity universe and shortlisting those charts that display a recognizable candlestick pattern.</li>
+<li>Part 2 involves investigating the shortlisted charts to figure out if they comply with the checklist.</li>
+<li>Scalping is advisable for seasoned swing traders</li>
+</ol>
+<div class="clear"> </div>
+</div>

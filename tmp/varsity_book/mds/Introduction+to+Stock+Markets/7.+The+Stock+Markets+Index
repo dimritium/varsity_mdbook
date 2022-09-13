@@ -1,0 +1,362 @@
+<div class="post">
+<h2>7.1 – Overview</h2>
+<p>If I were to ask you to give me a real-time summary of the traffic situation, how would you possibly do it?</p>
+<p>Your city may have 1000’s of roads and junctions; it is unlikely you would check every road in the city to find the answer. The wiser thing for you to do would be to quickly check a few important roads and junctions across the city’s four directions and observe how the traffic is moving. If you observe chaotic conditions across these roads, you would simply summarize the traffic situation as chaotic, else traffic can be considered normal.</p>
+<p>The few important roads and junctions that you tracked to summarize the traffic situation served as a barometer for the entire city’s traffic situation!</p>
+<p>Drawing parallels, if I were to ask you how the stock market is moving today, how would you answer my question? There are approximately 5,000 listed companies in the Bombay Stock Exchange and about 2,000 listed companies on the National Stock Exchange. It would be clumsy to check every company, figure out if they are up or down for the day and then give a detailed answer.</p>
+<p>Instead, you would just check a few important companies across key industrial sectors. If a majority of these companies are moving up, you would say markets are up, if the majority is down, you would say markets are down, and if there is a mixed trend, you would say markets are sideways!</p>
+<p>So essentially identify a few companies to represent the broader markets. Every time someone asks you how the markets are doing, you would just check the general trend of these selected stocks and then answer. These companies that you have identified collectively make up the stock market index!</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2014/08/Ch-7-title.jpg"><img alt="Ch-7-title" class="size-full wp-image-269 aligncenter" height="300" sizes="(max-width: 600px) 100vw, 600px" src="http://zerodha.com/varsity/wp-content/uploads/2014/08/Ch-7-title.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2014/08/Ch-7-title.jpg 600w, https://zerodha.com/varsity/wp-content/uploads/2014/08/Ch-7-title-300x150.jpg 300w" width="600"/></a></p>
+<h2>7.2 – The Index</h2>
+<p>Luckily you need not actually track these selected companies individually to get a sense of how the markets are doing. The important companies are pre-packaged and continuously monitored to give you this information. This pre-packaged market information tool is called the ‘Market Index’.</p>
+<p>There are two main market indices in India. The <strong>S&amp;P BSE Sensex</strong> representing the Bombay stock exchange and <strong>CNX Nifty</strong> representing the National Stock exchange.</p>
+<p>S&amp;P stands for Standard and Poor’s, a global credit rating agency. S&amp;P has the technical expertise in constructing the index which they have licensed to the BSE. Hence the index also carries the S&amp;P tag.</p>
+<p>CNX Nifty consists of the largest and most frequently traded stocks within the National Stock Exchange. It is maintained by India Index Services &amp; Products Limited (IISL), a joint venture of the National Stock Exchange and CRISIL. In fact, the term ‘CNX’ stands for CRISIL and NSE.</p>
+<p>An ideal index gives us minute by minute reading about how the market participants perceive the future. The movements in the Index reflect the changing expectations of the market participants. When the index goes up, it is because the market participants think the future will be better. The index drops if the market participants perceive the future pessimistically.</p>
+<h2>7.3 – Practical uses of the Index</h2>
+<p>Some of the practical uses of Index are discussed below.</p>
+<p><strong><em><img alt="info" class="alignleft size-full wp-image-263" height="131" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2014/08/info.png" width="131"/>Information</em></strong><em> – </em>The index reflects the general market trend for a period of time. The index is a broad representation of the country’s state of the economy. A stock market index that up indicates people are optimistic about the future. Likewise, when the stock market index is down, people are pessimistic about the future.</p>
+<p>For example, the Nifty value on the 1<sup>st</sup> of January 2014 was 6301, and the value as of 24<sup>th</sup> June 2014 was 7580. This represents a change of 1279 points in the index of a 20.3% increase. This simply means that during the time period under consideration, the markets have gone up quite significantly, indicating a strong optimistic economic future.</p>
+<p>The time frame for calculating the index can be for any length of time. For example, the Index at 9:30 AM on 25<sup>th</sup> June 2014 was at 7,583, but an hour later it moves to 7,565. A drop of 18 points during this period indicates that the market participants are not too enthusiastic.</p>
+<p><strong><em><img alt="benchmark" class="alignleft size-full wp-image-262" height="131" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2014/08/benchmark.png" width="131"/>Benchmarking</em></strong><em> – </em>For all the trading or investing activity that one does, a yardstick to measure the performance is required. &nbsp;Assume over the last 1 year you invested Rs.100,000/- and generated Rs.20,000 return to make your total corpus Rs.120,000/-. How do you think you performed? Well on the face of it, a 20% return looks great. However, what if Nifty moved to 7,800 points from 6,000 points generating a return on 30% during the same year?</p>
+<p>Well, suddenly it may seem to you that you have underperformed the market! If not for the Index, you can’t really figure out how you performed in the stock market. You need the index to benchmark the performance of a trader or investor. Usually, the objective of market participants is to outperform the Index.</p>
+<p><strong><em><img alt="trade" class="alignleft size-full wp-image-265" height="131" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2014/08/trade.png" width="131"/>Trading</em></strong> – Trading on the index is probably one of the most popular uses of the index. Majority of the traders in the market trade the index. They take a broader call on the economy or general state of affairs and translate that into a trade.</p>
+<p>For example, imagine this situation. At 10:30 AM, the Finance Minister is expected to deliver his budget speech. An hour before the announcement Nifty index is at 6,600 points. You expect the budget to be favourable to the nation’s economy. What do you think will happen to the index? Naturally, the index will move up. So to trade your point of view, you may want to buy the index at 6,600. After all, the index is the representation of the broader economy.</p>
+<p>So as per your expectation, the budget is good, and the index moves to 6,900. You can now book your profits, and exit the trade at a 300 points profit! &nbsp;Trades such as these are possible through what is known as the ‘Derivative’ segment of the markets. We are probably a bit early to explore derivatives, but for now, do remember that index trading is possible through the derivative markets.</p>
+<p><strong><em><img alt="portfolio" class="alignleft size-full wp-image-264" height="131" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2014/08/portfolio.png" width="131"/>Portfolio Hedgin</em></strong><em><strong>g</strong> – </em>Investors usually build a portfolio of securities. A typical portfolio contains 10 – 12 stocks which they would have bought from a long term perspective. While the stocks are held from a long term perspective, they could foresee a prolonged adverse movement in the market (2008), potentially eroding the capital in the portfolio. In such a situation, investors can use the index to hedge the portfolio. We will explore this topic in the risk management module.</p>
+<p>&nbsp;</p>
+<h2>7.4 – Index construction methodology</h2>
+<p>It is important to know how the index is constructed /calculated especially if one wants to advance as an index trader. As we discussed, the Index is a composition of many stocks from different sectors that collectively represent the economy’s state. To include a stock in the index, it should qualify certain criteria. Once qualified as an index stock, it should continue to qualify on the stated criteria. If it fails to maintain the criteria, the stock gets replaced by another stock that qualifies the prerequisites.</p>
+<p>Based on the selection procedure, the list of stocks is populated. Each stock in the index should be assigned a certain weightage. Weightage in simpler terms defines how much importance a certain stock in the index gets compared to the others.&nbsp; For example, if ITC Limited has 7.6% weightage on the Nifty 50 index, then it is as good as saying that the 7.6% of Nifty’s movement can be attributed to ITC.</p>
+<p>The obvious question is – How do we assign weights to the stock that make up the Index?</p>
+<p>There are many ways to assign weights, but the Indian stock exchange follows a <strong>free-float market capitalization method.</strong> The weights are assigned based on the company’s free-float market capitalization, the larger the market capitalization, the higher is the weight.</p>
+<p>Free float market capitalization is the product of the total number of shares outstanding in the market and the stock price.</p>
+<p>For example company, ABC has 100 shares outstanding in the market, and the stock price is at 50 then the free-float market cap of ABC is 100*50 = Rs.5,000.</p>
+<p>At the time of writing this chapter, the following are the 50 stocks in Nifty as per their weightage:</p>
+<table>
+<tbody>
+<tr>
+<th>Sl No</th>
+<th>Name of the company</th>
+<th>Industry</th>
+<th>The weightage (%)</th>
+</tr>
+<tr>
+<td>01</td>
+<td>ITC Limited</td>
+<td>Cigarettes</td>
+<td>7.60</td>
+</tr>
+<tr>
+<td>02</td>
+<td>ICICI Bank Ltd</td>
+<td>Banks</td>
+<td>6.55</td>
+</tr>
+<tr>
+<td>03</td>
+<td>HDFC Ltd</td>
+<td>Housing Finance</td>
+<td>6.45</td>
+</tr>
+<tr>
+<td>04</td>
+<td>Reliance Industry Ltd</td>
+<td>Refineries</td>
+<td>6.37</td>
+</tr>
+<tr>
+<td>05</td>
+<td>Infosys Ltd</td>
+<td>Computer Software</td>
+<td>6.26</td>
+</tr>
+<tr>
+<td>06</td>
+<td>HDFC Bank Ltd</td>
+<td>Banks</td>
+<td>5.98</td>
+</tr>
+<tr>
+<td>07</td>
+<td>TCS Ltd</td>
+<td>Computer Software</td>
+<td>5.08</td>
+</tr>
+<tr>
+<td>08</td>
+<td>L&amp;T Ltd</td>
+<td>Engineering</td>
+<td>4.72</td>
+</tr>
+<tr>
+<td>09</td>
+<td>Tata Motors Ltd</td>
+<td>Automobile</td>
+<td>3.09</td>
+</tr>
+<tr>
+<td>10</td>
+<td>SBI Ltd</td>
+<td>Banks</td>
+<td>2.90</td>
+</tr>
+<tr>
+<td>11</td>
+<td>ONGC Ltd</td>
+<td>Oil Exploration</td>
+<td>2.73</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Axis Bank Ltd</td>
+<td>Banks</td>
+<td>2.50</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Sun Pharma Ltd</td>
+<td>Pharmaceuticals</td>
+<td>2.29</td>
+</tr>
+<tr>
+<td>14</td>
+<td>M&amp;M Ltd</td>
+<td>Automobiles</td>
+<td>2.13</td>
+</tr>
+<tr>
+<td>15</td>
+<td>HUL Ltd</td>
+<td>FMCG</td>
+<td>1.87</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Bharti Airtel Ltd</td>
+<td>Telecom Services</td>
+<td>1.70</td>
+</tr>
+<tr>
+<td>17</td>
+<td>HCL Technologies Ltd</td>
+<td>Computer Software</td>
+<td>1.61</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Tata Steel Ltd</td>
+<td>Metal -Steel</td>
+<td>1.42</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Kotak Mahindra Bank Ltd</td>
+<td>Banks</td>
+<td>1.40</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Sesa Sterlite Ltd</td>
+<td>Mining</td>
+<td>1.38</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Dr Reddy’s Lab Ltd</td>
+<td>Pharmaceuticals</td>
+<td>1.37</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Wipro Ltd</td>
+<td>Computer Software</td>
+<td>1.37</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Maruti Suzuki India Ltd</td>
+<td>Automobile</td>
+<td>1.29</td>
+</tr>
+<tr>
+<td>24</td>
+<td>Tech Mahindra Ltd</td>
+<td>Computer Software</td>
+<td>1.24</td>
+</tr>
+<tr>
+<td>25</td>
+<td>Hero Motocorp Ltd</td>
+<td>Automobile</td>
+<td>1.20</td>
+</tr>
+<tr>
+<td>26</td>
+<td>NTPC Ltd</td>
+<td>Power</td>
+<td>1.15</td>
+</tr>
+<tr>
+<td>27</td>
+<td>Power Grid Corp Ltd</td>
+<td>Power</td>
+<td>1.13</td>
+</tr>
+<tr>
+<td>28</td>
+<td>Asian Paints Ltd</td>
+<td>Paints</td>
+<td>1.10</td>
+</tr>
+<tr>
+<td>29</td>
+<td>Lupin Ltd</td>
+<td>Pharmaceuticals</td>
+<td>1.09</td>
+</tr>
+<tr>
+<td>30</td>
+<td>Bajaj Auto Ltd</td>
+<td>Automobile</td>
+<td>1.07</td>
+</tr>
+<tr>
+<td>31</td>
+<td>Hindalco Industries Ltd</td>
+<td>Metal – Aluminum</td>
+<td>0.95</td>
+</tr>
+<tr>
+<td>32</td>
+<td>Ultratech Cements Ltd</td>
+<td>Cements</td>
+<td>0.95</td>
+</tr>
+<tr>
+<td>33</td>
+<td>Indusind Bank Ltd</td>
+<td>Banks</td>
+<td>0.94</td>
+</tr>
+<tr>
+<td>34</td>
+<td>Coal India Ltd</td>
+<td>Mining</td>
+<td>0.93</td>
+</tr>
+<tr>
+<td>35</td>
+<td>Cipla Ltd</td>
+<td>Pharmaceuticals</td>
+<td>0.89</td>
+</tr>
+<tr>
+<td>36</td>
+<td>BHEL Ltd</td>
+<td>Electrical Equipment</td>
+<td>0.79</td>
+</tr>
+<tr>
+<td>37</td>
+<td>Grasim Industries Ltd</td>
+<td>Cements</td>
+<td>0.79</td>
+</tr>
+<tr>
+<td>38</td>
+<td>Gail (India) Ltd</td>
+<td>Gas</td>
+<td>0.78</td>
+</tr>
+<tr>
+<td>39</td>
+<td>IDFC Ltd</td>
+<td>Financial Services</td>
+<td>0.74</td>
+</tr>
+<tr>
+<td>40</td>
+<td>Cairn India Ltd</td>
+<td>Oil Exploration</td>
+<td>0.72</td>
+</tr>
+<tr>
+<td>41</td>
+<td>United Spirits Ltd</td>
+<td>Distillery</td>
+<td>0.70</td>
+</tr>
+<tr>
+<td>42</td>
+<td>Tata Power Co.Ltd</td>
+<td>Power</td>
+<td>0.68</td>
+</tr>
+<tr>
+<td>43</td>
+<td>Bank of Baroda</td>
+<td>Banks</td>
+<td>0.63</td>
+</tr>
+<tr>
+<td>44</td>
+<td>Ambuja Cements Ltd</td>
+<td>Cements</td>
+<td>0.61</td>
+</tr>
+<tr>
+<td>45</td>
+<td>BPCL</td>
+<td>Refineries</td>
+<td>0.58</td>
+</tr>
+<tr>
+<td>46</td>
+<td>Punjab National Bank</td>
+<td>Banks</td>
+<td>0.55</td>
+</tr>
+<tr>
+<td>47</td>
+<td>NMDC Ltd</td>
+<td>Mining</td>
+<td>0.52</td>
+</tr>
+<tr>
+<td>48</td>
+<td>ACC Ltd</td>
+<td>Cements</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>49</td>
+<td>Jindal Steel &amp; Power</td>
+<td>Steel</td>
+<td>0.38</td>
+</tr>
+<tr>
+<td>50</td>
+<td>DLF Ltd</td>
+<td>Construction</td>
+<td>0.34</td>
+</tr>
+</tbody>
+</table>
+<p>As you can see, ITC Ltd has the highest weightage. This means the Nifty index is most sensitive to price changes in ITC Ltd and least sensitive to price changes in DLF Ltd.</p>
+<h2>7.5 – Sector-specific indices</h2>
+<p>While the Sensex and Nifty represent the broader markets, certain indices represent specific sectors. These are called the sectoral indices. For example, the Bank Nifty on NSE represents the mood specific to the banking industry. The CNX IT on NSE represents the behaviour of all the IT stocks in the stock markets. Both BSE and NSE have sector-specific indexes.&nbsp; The construction and maintenance of these indices are similar to the other major indices.</p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>&nbsp;An index acts as a barometer of the whole economy.</li>
+<li>An index going up indicates that the market participants are optimistic.</li>
+<li>An index going down indicates that the market participants are pessimistic.</li>
+<li>There are two main indices in India – The BSE Sensex and NSE’s Nifty</li>
+<li>&nbsp;An index can be used for a variety of purposes – information, benchmarking, trading and hedging.</li>
+<li>&nbsp;Index trading is probably the most popular use of the index.</li>
+<li>India follows the free-float market capitalization method to construct the index.</li>
+<li>&nbsp;There are sector-specific indices which convey the sentiment of specific sectors.</li>
+</ol>
+<div class="clear"> </div>
+</div>

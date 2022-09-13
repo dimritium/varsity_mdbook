@@ -1,0 +1,78 @@
+<div class="post">
+<h2><strong>23.1 – The Sortino’s Ratio</strong></h2>
+<p>In this chapter, we will discuss two other ratios related to the mutual fund performance/risk measures, i.e. the Sortino Ratio and the Capture Ratios. These are fairly easy to understand, so we will try to keep this chapter as a short note.</p>
+<p>We discussed the Sharpe Ratio in the previous chapter. The formula, if you remember looks like this –</p>
+<p><strong>Sharpe ratio = [Fund Return – Risk-Free Return]/Standard deviation of the fund</strong></p>
+<p>I want you to think about the denominator. The denominator has ‘Standard Deviation’, which, as you know, is an assessment of risk.</p>
+<p>What sort of risk?</p>
+<p>Well, we are talking about the risk of the returns varying from the average expected returns. Read that line again; we are defining risk as to the variation (or the variance) from the average expected returns. The variance can be both positive or negative.</p>
+<p>Let me explain, have a look at the image below –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/10/Image-1_sor.png"><img alt="" class="aligncenter wp-image-8976" height="416" sizes="(max-width: 429px) 100vw, 429px" src="https://zerodha.com/varsity/wp-content/uploads/2020/10/Image-1_sor-300x291.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/10/Image-1_sor-300x291.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/10/Image-1_sor.png 708w" width="429"/></a></p>
+<p>This is the sample daily NAV data for a Mutual fund. I’ve calculated the daily return for the fund for the time series, and I’ve also calculated the average daily return for the time series.</p>
+<p>The average return is 0.108%.</p>
+<p>Further, I calculate the excess return by subtracting the average return from the actual return. For example, the daily return for 4<sup>th</sup> August 2020 was 1.23%, the average return is 0.108%.</p>
+<p>Hence, Excess Return –</p>
+<p>= 1.23% – 0.108%</p>
+<p>= 1.13%.</p>
+<p>Of course, you square this return to get the variance, from which you further calculate the standard deviation or the risk.</p>
+<p>The point that I want to make here is that when you take the excess return, you get both positive and negative values. A positive value indicates a profit and negative value indicates a loss.</p>
+<p>Now, let us look at the Sharpe ratio again –</p>
+<p><strong>Sharpe ratio = [Fund Return – Risk-Free Return]/Standard deviation of the fund</strong></p>
+<p>By, using the ‘standard deviation’ in the denominator, we try to adjust the returns per unit of risk. However, the risk contains both positive and negative returns.</p>
+<p>After all, we do not want to penalize the fund for a positive return; we need to scrutinize it for only the negative returns.</p>
+<p>The Sortino’s ratio helps in this regard.</p>
+<p>The Sortino’s ratio is an improvisation over the Sharpe Ratio, wherein the denominator has only the negative returns or the ‘downside risk’, is considered.</p>
+<p>Hence, the Sortino’s Ratio is –</p>
+<p><strong>= [Fund Return – Risk-Free Return]/Downside Risk</strong></p>
+<p>The objective of Sortino’s ratio is to estimate the excess return adjusted for only the downside risk. Like the Sharpe ratio, higher the Sortino’s ratio, better it is.</p>
+<p>Apart from this one change, there is not much difference between the Sharpe and Sortino’s Ratio.</p>
+<h2><strong>23.2 – Capture Ratios</strong></h2>
+<p>I find the capture ratios very interesting. In my opinion, the capture ratios overshadow all other metrics and get straight to the point.</p>
+<p>Before I discuss these capture ratios, let me tell you a quick story from my college days.</p>
+<p>We were a group of friends in the first year of Engineering; we were young, restless, and misguided in life. 😊</p>
+<p>We were about 8-10 of us, always moved around in a group. Played cricket all day long, missed classroom sessions, and would sit in the parking lot spending hours talking about useless things in life. I must agree; it was a lot of fun 😊.</p>
+<p>So much fun that we at times ignored exams around the corner, to the extent that most of us would barely manage to get a passing mark.</p>
+<p>But there was this one guy in the group who was a little different. He would spend time with the rest of the gang, hang out, chit chat, play cricket, and go back home late. He would have all the fun the entire group had. However, around exam time, he would go back home to study and managed to do better than the rest of the group.&nbsp; Not that he scored great marks, but he certainly did better than the rest of us.</p>
+<p>&nbsp;</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/10/M11-C23-Sortino-and-Capture-Ratios-WEB.jpg"><img alt="" class="aligncenter wp-image-8980" height="307" loading="lazy" sizes="(max-width: 461px) 100vw, 461px" src="https://zerodha.com/varsity/wp-content/uploads/2020/10/M11-C23-Sortino-and-Capture-Ratios-WEB-300x200.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/10/M11-C23-Sortino-and-Capture-Ratios-WEB-300x200.jpg 300w, https://zerodha.com/varsity/wp-content/uploads/2020/10/M11-C23-Sortino-and-Capture-Ratios-WEB.jpg 600w" width="461"/></a></p>
+<p>And we would all wonder how this guy did it. Sounds typical right? I’m sure many of you reading this may have come across similar situations in your college life.</p>
+<p>But why am I telling you this story? Well, there is a reason for it.</p>
+<p>Please think about this smart friend of mine. While he had 100% of the fun with the group, he knew when to cut the slack. He knew it was too risky to not study for the exams.</p>
+<p>It may sound weird, but let’s extend this to mutual funds. Imagine this friend of mine as a mutual fund and the rest of us as the mutual fund’s benchmark.</p>
+<p>When the group (or the benchmark) was having fun (or let’s say generating positive returns), so did this friend of mine(the mutual fund) to his full capacity.</p>
+<p>When it was time to study, the group (benchmark) suffered (think of it as a negative return), but this friend had good risk management practise, he scored better than the group.</p>
+<p>If we were to summarize his performance, he had max fun, but managed risk well, and fared slightly better than the rest.</p>
+<p>The summary is nothing but the ‘Capture Ratio’.</p>
+<p>The capture ratio tells us, for a given period, to what extent did the fund capture the positive returns of its benchmark and also to what extent it captured the negative returns from the benchmark.</p>
+<p>Here is an example –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/10/Image-2_hdfc.png"><img alt="" class="aligncenter wp-image-8977" height="96" loading="lazy" sizes="(max-width: 497px) 100vw, 497px" src="https://zerodha.com/varsity/wp-content/uploads/2020/10/Image-2_hdfc-300x58.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/10/Image-2_hdfc-300x58.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/10/Image-2_hdfc.png 594w" width="497"/></a></p>
+<p>This is the capture ratio of HDFC Top 100, Direct, Growth fund on a 3-year basis. I’ve taken this from Morningstar India website.</p>
+<p>The fund has an upside capture ratio of 99, which implies that the fund has managed to capture 99% of the Index’s upmove.</p>
+<p>Likewise, the downside capture ratio is 119, which means that the fund has captured 119% of the downside returns of the Index.</p>
+<p>The math behind capture ratio is elementary, but I’ll skip that since as an investor, you’d not need it.</p>
+<p>All I want you to remember is that that the upside capture ratio conveys the extent to which the fund captures all the positive returns of its benchmark. The downside capture ratio indicates the extent to which the fund captures (or rather avoided) the negative returns of its benchmark.</p>
+<p>Given this, ask yourself, what should be the ideal capture ratio of a mutual fund? Well, we would want the fund which captures 100% of the upside if not more. At the same time, we would want the downside capture ratio to be as low as possible.</p>
+<p>Well, this is not easy 😊</p>
+<p>A fund will either have a great upside or a great downside capture ratio, but not both.</p>
+<p>A fund either has a great upside capture ratio along with a disappointing downside capture (like this HDFC fund) or you will find the other way round, where the upside capture is low and so is the downside capture.</p>
+<p>Check this –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/10/Image-3_ppfas.png"><img alt="" class="aligncenter wp-image-8978" height="101" loading="lazy" sizes="(max-width: 496px) 100vw, 496px" src="https://zerodha.com/varsity/wp-content/uploads/2020/10/Image-3_ppfas-300x61.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/10/Image-3_ppfas-300x61.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/10/Image-3_ppfas.png 600w" width="496"/></a></p>
+<p>This is the capture ratio for the Parag Parikh Long term equity fund on a 3-year basis. While the upside is not impressive at all, the downside capture ratio is quite impressive.</p>
+<p>So the point is that it is always a trade-off. You, as an investor, need to be clear on this – do you want the fund to be aggressive in chasing returns or do you want the fund to have a great risk management practice?</p>
+<p>I prefer to look at the latter. I like funds which manage the risk better, and I evaluate this by looking at the consistency of the downside capture ratio, over many years.</p>
+<p>If you look at HDFC Top 100, Regular Growth fund, the downside capture ratio on 3, 5, and 10 years are 120, 119, and 111 respectively. I like the consistency in risk management here, and I’d value this far higher than the upside capture ratio.</p>
+<p>By the way, the 3, 5, and 10 year upside capture ratio is 98, 103, 104 for the same fund, which is not bad at all. Also, it does not matter if you choose to analyse the upside or downside capture ratio; what matters is the consistency. Hence it’s important to look at capture ratios across multiple years.</p>
+<p>I usually check the capture ratios on the Morningstar India website. I’m not sure if these ratios are listed anywhere else.</p>
+<p>And with this and everything else we have discussed in the previous chapter, I hope you’ve got a sense of all the different mutual fund metrics.</p>
+<p>The next few chapters will focus on analyzing a mutual fund and building a mutual fund portfolio for specific financial goals.</p>
+<p>Stay tuned.</p>
+<h3><strong>Key takeaways from this chapter</strong></h3>
+<ul>
+<li>Sharpe ratio measures the return per unit of risk by considering both the positive and negative returns</li>
+<li>Sortino’s modifies the Sharpe ratio and includes just the downside risk</li>
+<li>Upside capture ratio gives you an estimate of how much of the Index’s upside the fund has captured</li>
+<li>Downside capture ratio gives you an estimate of how much of the Index’s downside returns the fund has captured.</li>
+<li>Look for consistency in capture ratio</li>
+</ul>
+<div class="clear"> </div>
+</div>

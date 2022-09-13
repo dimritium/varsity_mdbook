@@ -1,0 +1,116 @@
+<div class="post">
+<h2><strong>2.1 – Selecting a company </strong></h2>
+<p>I never expected such a tremendously positive response for the previous chapter. I’m a bit overwhelmed, and I also get a sense that there are many expectations from this module. I hope I won’t disappoint you all, and this module lives up to its expectation. I’ll give it my best shot to explain what I know about financial modelling.</p>
+<p>At this point, &nbsp;I’d like to spend some time to help you understand the kind of companies to pick when building a financial model for the very first time.</p>
+<p>A common mistake a newbie financial modeller makes is picking a complicated company to build the first financial model.</p>
+<p>When I was trying to learn financial modelling, I picked a company called ‘Hanung Toys’, and as the name suggests, the company made toys!</p>
+<p>The company had no other line of business apart from making toys; it had a simple P&amp;L, simple balance sheet, no complicated company structure, no complicated financial structure. If you read the annual report once, you’d get a quick hang of what the company does and the factors that influenced its growth.</p>
+<p>I’m so glad that I picked ‘Hanung Toys’ as my first company to model. It was easy to build a model due to the lack of complexities involved.</p>
+<p>At the same time, a friend of mine picked Hindalco as his first company to model.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/05/Integrated-Financial-Modelling-M13-C2-Web.png"><img alt="" class="aligncenter wp-image-9865" height="382" sizes="(max-width: 518px) 100vw, 518px" src="https://zerodha.com/varsity/wp-content/uploads/2021/05/Integrated-Financial-Modelling-M13-C2-Web-300x221.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/05/Integrated-Financial-Modelling-M13-C2-Web-300x221.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/05/Integrated-Financial-Modelling-M13-C2-Web-768x566.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/05/Integrated-Financial-Modelling-M13-C2-Web.png 800w" width="518"/></a></p>
+<p>Everything about Hindalco was intimidating – the annual report ran into several pages. The company manufactured Copper and Aluminium, captive power units, complex debt structure, complex financial statements,&nbsp; cyclicality in earnings; commodity prices were dependent on international markets, and whatnot.</p>
+<p>Eventually, my friend lost interest to learn financial modelling, and he never really got back to it. So don’t let this happen to you.</p>
+<p>Here is a suggestion, please model the same company that we would model in this module. Replicate what we discuss here by yourself and post that you can try to model a company independently.</p>
+<p>By the way, just to let you know, an experienced financial modeller would love to model a company like Hindalco for the same reasons I mentioned above😊</p>
+<p>Please note that I may not be able to help each one of you with the model you’d build. I’ll attempt to teach you a framework in this module; you will have to build on it. I hope you understand the difficulty of looking at 100’s of different models by the many readers here. It would be impossible for me 😊</p>
+<p>So if you are the first-timer, then keep these points in mind –</p>
+<ul>
+<li style="list-style-type: none;">
+<ol>
+<li>Pick a company that is simple to understand. For example, don’t straight away pick Reliance Industries. It is complex to model for a first-timer (for an experienced person too)</li>
+<li>Between a manufacturing and service-oriented company, pick manufacturing. It is easier to understand manufacturing concepts, i.e. number of units produced, raw material, inventory, etc. Services can be a bit vague.</li>
+<li>The company should have 1 or 2 products that contribute to the revenue. The higher the number of products, the higher the complexity involved. Think of an FMCG company; they have 100s of products, which means 100s of dependencies, making it tough to model such companies.</li>
+<li>Pick a company that gives out as much information as possible in its annual report. Just to let you know, Infosys is one of the best companies in terms of information provided in the annual report. The more information the company provides, the fewer assumptions you have to make in your model, and that’s good news.</li>
+<li>Ensure the company you pick is consistent in its annual report. Let me explain this. Assume, I pick a company which manufactures and sells mobiles phone. The company operates in India and Sri Lanka. The company states how many units sold in India and Sri Lanka in its first-year annual report. The company also reports the revenue generated in both these countries. In the 2<sup>nd</sup> year annual report, the company chooses to disclose only the revenue generated from both the countries but decides not to give the data on the number of units sold. This is an inconsistency in reporting, and such inconsistencies make it difficult to move ahead with the model</li>
+<li>Avoid banks, financial services, and NBFCs. They are just too complex and have a ton of regulatory issues. The model we are about to learn may not work for the BFSI sector, so please be aware of that.</li>
+</ol>
+</li>
+</ul>
+<p>Keep these few points in perspective before you pick a company to model. However, as your first model, I hope you will consider my suggestion and replicate the model we use in this module on your own.</p>
+<p>Throughout this module, we will have one ‘Main model’ running and few helper models. I want you to understand the context in which I will use these different models –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li><strong>The main model</strong> – In the main model, we will start with a blank excel workbook and build our model step by step. We will pick a company and stay with it throughout.</li>
+<li><strong>Helper model</strong> – I’ll probably use 1 or 2 different companies to help different sections of the main model slightly more detailed. The objective of the helper model is to help you understand concepts better.</li>
+</ul>
+</li>
+</ul>
+<p>Think about it as learning how to become a master chef. While the end goal is to create magic with your cooking, but along the way, you also need to practise your knife silks to cut veggies efficiently.</p>
+<p>By the way, I’d like to thank my ex-student and now a good friend Vishal Vindoorty, for helping me with this module. Many years ago, I taught him financial modelling and today; he teaches me.</p>
+<p>So I guess life has come a full circle 😊</p>
+<p>With that in place, let’s start by taking a baby step in this chapter.</p>
+<h2><strong>2.2 – Reimagine data presentation </strong></h2>
+<p>Like I mentioned in the previous chapter, the very first step in building a financial model is to refer to the annual report, extract the balance sheet and P&amp;L data and input the same in the excel sheet.</p>
+<p>Of course, this is a time-consuming task, but a super important task as the data that you copy from the annual report acts as the key input to the entire model. So please do this task with at most devotion. At any cost, resist your temptation to copy-paste numbers from 3<sup>rd</sup> party sources.</p>
+<p>Different people have a different opinion on how many years of historical data to consider. A common preference is to either take the last seven years or the last five years of data. I belong to the five-year camp.</p>
+<p>When I usually discuss the first step of financial modelling, i.e. copy the last five-year historical balance sheet and P&amp;L data from the annual report to an excel sheet, people imagine something like this –</p>
+<p>&nbsp;</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-1_-raw-data.png"><img alt="" class="aligncenter wp-image-9853" height="572" loading="lazy" sizes="(max-width: 441px) 100vw, 441px" src="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-1_-raw-data-231x300.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-1_-raw-data-231x300.png 231w, https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-1_-raw-data.png 527w" width="441"/></a></p>
+<p>You see above is the usual way people copy the balance sheet data from the AR to their excel sheet. The image below shows how historical P&amp;L gets copied –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-2_rawpl.png"><img alt="" class="aligncenter wp-image-9854" height="280" loading="lazy" sizes="(max-width: 491px) 100vw, 491px" src="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-2_rawpl-300x171.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-2_rawpl-300x171.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-2_rawpl-768x438.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-2_rawpl.png 846w" width="491"/></a></p>
+<p>Well, yes, what you see above is technically correct. One has indeed copied the data from the annual report to an excel sheet, but if you do it this way, as shown above, it’s called a ‘model suicide.</p>
+<p>The data is presented in a very unsystematic manner. So if you had imagined something like this, then it’s time to let go of that and reimagine how data is presented in a model friendly way.</p>
+<h2><strong>2.3 – Set up your excel sheet</strong></h2>
+<p>One has to set up the excel worksheet in a systematic way. The format should be consistent across all the other sheets within the workbook.</p>
+<p>Here are a series of steps to follow, even before we start copying the historical data from the annual report. Think of this as a sub-step to step 1.</p>
+<p>Open a blank excel sheet and save it with whatever name you’d like&nbsp; –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-3_blank.png"><img alt="" class="aligncenter wp-image-9855" height="341" loading="lazy" sizes="(max-width: 485px) 100vw, 485px" src="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-3_blank-300x211.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-3_blank-300x211.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-3_blank-768x539.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-3_blank.png 896w" width="485"/></a></p>
+<p>Index Column A and Columb B, expand Column C, and Index column D. ‘Index’ in this context means just to shrink the column.&nbsp; Here is how my excel looks after indexing the columns –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-4_index.png"><img alt="" class="aligncenter wp-image-9856" height="290" loading="lazy" sizes="(max-width: 494px) 100vw, 494px" src="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-4_index-300x176.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-4_index-300x176.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-4_index.png 757w" width="494"/></a></p>
+<p>One of the things I like to do is to get rid of the gridlines in excel. The gridlines in a financial model can be pretty distracting, especially when you have so many numbers and formulas to manage.</p>
+<p>So get rid of it if you can. After getting rid of the gridlines, I’d also like to freeze panes by keeping my cursor on cell D3.</p>
+<p>Here is how my excel looks now –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-5_gridlines.png"><img alt="" class="aligncenter wp-image-9857" height="274" loading="lazy" sizes="(max-width: 481px) 100vw, 481px" src="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-5_gridlines-300x171.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-5_gridlines-300x171.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-5_gridlines-1024x584.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-5_gridlines-768x438.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-5_gridlines.png 1260w" width="481"/></a></p>
+<p>I hope you are aware of how to get rid of gridlines and freeze panes. These are basic excel skills. If you are struggling at this point, please stop, maybe refresh your excel skills, and get back to this later.</p>
+<p>We now enter the years from E2 to I2 to indicate the year’s we are interested in. My excel now looks like this –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-6_years.png"><img alt="" class="aligncenter wp-image-9858" height="309" loading="lazy" sizes="(max-width: 493px) 100vw, 493px" src="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-6_years-300x188.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-6_years-300x188.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-6_years-768x481.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-6_years.png 854w" width="493"/></a></p>
+<p>We now label this sheet as the P&amp;L statement (in cell A1) as shown below –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-7_PL.png"><img alt="" class="aligncenter wp-image-9859" height="350" loading="lazy" sizes="(max-width: 491px) 100vw, 491px" src="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-7_PL-300x214.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-7_PL-300x214.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-7_PL-768x547.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-7_PL.png 817w" width="491"/></a></p>
+<p>I like to keep ‘Profit and Loss statement’, in bold, font size 14. You can see below the line that I’ve added another line that says that all the numbers stated in this sheet are in INR Crores unless specified.</p>
+<p>So if you see a number like 14.2, then it means that the number is 14.2 Crores Rupees and not just 14.2. I’ve italicized the line and reduced the font size to make it look better.</p>
+<p>What you see above is a basic skeleton of the model. We need a few similar-looking sheets within the workbook. Remember, we will have other data sheets to include the Balance sheet, assumption sheet, cash flow sheet, etc. So it’s a good practice to set up multiple sheets with similar structure in one shot. You can do this in the following way.</p>
+<p>Press the Control button in your system, and click on few sheets. By doing so, you’d be selecting a few sheets in 1 go. When you select multiple sheets, whatever changes you do in one sheet will replicate in the other sheets as well.</p>
+<p>Here is how my sheet looks <strong>before</strong> I press control and select the other sheets.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-8_sheets.png"><img alt="" class="aligncenter wp-image-9860" height="510" loading="lazy" sizes="(max-width: 510px) 100vw, 510px" src="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-8_sheets-300x300.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-8_sheets-300x300.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-8_sheets-150x150.png 150w, https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-8_sheets.png 764w" width="510"/></a></p>
+<p>As you can see, all the sheets except Sheet 1 are selected. I’ve not selected Sheet 1 since the sheet is already set up, and I don’t want to mess with it.</p>
+<p>Now, in sheet 2, I do all the above steps that we discussed, except –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Freezing panes, because freeze panes do not work when you have selected multiple steps (or at least I don’t know how to do it)</li>
+<li>Title the sheet (like Profit and Loss statement) because each sheet will be called something different.</li>
+</ul>
+</li>
+</ul>
+<p>After setting up sheet 2 –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-9_sheet2.png"><img alt="" class="aligncenter wp-image-9873" height="1005" loading="lazy" sizes="(max-width: 721px) 100vw, 721px" src="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-9_sheet2.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-9_sheet2.png 721w, https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-9_sheet2-215x300.png 215w" style="width: 510px;" width="721"/></a></p>
+<p>Please note, all the sheets continue to be selected. I’ve executed all the steps, except for the ones I mentioned above. Now excel will deselect the selected sheets the moment you click on a different (non selected) sheet. So go ahead and click on Sheet 1 to deselect.</p>
+<p>Now check sheet 3,4, and 5. These sheets should look precisely similar to Sheet2. In each sheet, go to cell D3 and free panes.</p>
+<p>While at this point I don’t know what I’ll do with Sheet 3, 4, and 5, I do know that Sheet 2 is for the Balance sheet. So I’ll title it as ‘balance sheet’ (cell A1).</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-10_rename.png"><img alt="" class="aligncenter wp-image-9862" height="457" loading="lazy" sizes="(max-width: 457px) 100vw, 457px" src="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-10_rename-300x300.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-10_rename-300x300.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-10_rename-150x150.png 150w, https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-10_rename.png 765w" width="457"/></a></p>
+<p>By the way, do notice that I’ve renamed Sheet 1 and 2 as Profit &amp; Loss and Balance sheet, respectively. You can do this by keeping your cursor on the sheet and right-clicking your mouse.</p>
+<p>I’d like you to take a minute to relook at what you’ve done so far.</p>
+<p>In fact, this is a big step in your financial modelling journey. What you’ve done so far is to ensure that you set up your excel in a very systematic way. You have five sheets open, and all five sheets have a similar structure.</p>
+<p>I now know that Column E represents FY16 data, F to FY17, E to FY18, and so forth across the entire model.</p>
+<p>The structure won’t change, and it’s a huge deal. It’s called the ‘ Hygiene factor’ in a model, and that, in my view, is a super important aspect.</p>
+<p>With this note, I’ll end this chapter. In the next chapter, we will copy the data from the annual report to our excel sheet.</p>
+<p>You can download the excel sheet for this chapter from here, and by the way, congratulations for successfully executing (well, almost) the very first step of financial modelling.</p>
+<p>PS: Are you curious to know what happened after I built the financial model for Hanung Toys? The model suggested that the company was way overvalued, and hence I never invested in it.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-11_hanung.png"><img alt="" class="aligncenter wp-image-9863" height="85" loading="lazy" sizes="(max-width: 520px) 100vw, 520px" src="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-11_hanung-300x49.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-11_hanung-300x49.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-11_hanung-1024x167.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-11_hanung-768x125.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/05/Image-11_hanung.png 1111w" width="520"/></a></p>
+<p>I’m so glad I dint.</p>
+<p><strong>Key takeaways from this chapter</strong></p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Pick a company that is easy to model (at least in your initial days of financial modelling)</li>
+<li>The manufacturing sector is slightly better to model compared to the services sector</li>
+<li>Look for reporting consistency in the annual report</li>
+<li>Do not blindly copy data from the annual report onto the excel sheet</li>
+<li>Set up your excel sheet before you can copy the data</li>
+<li>Ensure your excel sheet is consistent</li>
+</ul>
+</li>
+</ul>
+<div class="clear"> </div>
+</div>

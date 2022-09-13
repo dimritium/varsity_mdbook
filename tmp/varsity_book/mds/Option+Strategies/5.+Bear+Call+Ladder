@@ -1,0 +1,162 @@
+<div class="post">
+<h2><img alt="M6-C5-cartoon" class="aligncenter size-full wp-image-2967" height="400" sizes="(max-width: 600px) 100vw, 600px" src="http://zerodha.com/varsity/wp-content/uploads/2016/01/M6-C5-cartoon.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/01/M6-C5-cartoon.png 600w, https://zerodha.com/varsity/wp-content/uploads/2016/01/M6-C5-cartoon-300x200.png 300w" width="600"/></h2>
+<h2>5.1 – Background</h2>
+<p>The ‘Bear’ in the “Bear Call Ladder” should not deceive you to believe that this is a bearish strategy. The Bear Call Ladder is an improvisation over the Call ratio back spread; this clearly means you implement this strategy when you are out rightly bullish on the stock/index.</p>
+<p>In a Bear Call Ladder, the cost of purchasing call options is financed by selling an ‘in the money’ call option. Further, the Bear Call Ladder is also usually setup for a ‘net credit’, where the cash flow is invariably better than the cash flow of the call ratio back spread. However, do note that both these strategies showcase similar payoff structures but differ slightly in terms of the risk structure.</p>
+<h2>5.2 – Strategy Notes</h2>
+<p>The Bear Call Ladder is a 3 leg option strategy, usually setup for a “net credit”, and it involves –</p>
+<ol>
+<li>Selling 1 ITM call option</li>
+<li>Buying 1 ATM call option</li>
+<li>Buying 1 OTM call option</li>
+</ol>
+<p>This is the classic Bear Call Ladder setup, executed in a 1:1:1 combination. The bear Call Ladder has to be executed in the 1:1:1 ratio meaning for every 1 ITM Call option sold, 1 ATM and 1 OTM Call option has to be bought. Other combination like 2:2:2 or 3:3:3 (so on and so forth) is possible.</p>
+<p>Let’s take an example – assume Nifty Spot is at 7790 and you expect Nifty to hit 8100 by the end of expiry. This is clearly a bullish outlook on the market. To implement the Bear Call Ladder –</p>
+<ol>
+<li>Sell 1 ITM Call option</li>
+<li>Buy 1 ATM Call option</li>
+<li>Buy 1 OTM Call option</li>
+</ol>
+<p>Make sure –</p>
+<ol>
+<li>The Call options belong to the same expiry</li>
+<li>Belongs to the same underlying</li>
+<li>The ratio is maintained</li>
+</ol>
+<p>The trade set up looks like this –</p>
+<ol>
+<li>7600 CE, one lot short, the premium received for this is Rs.247/-</li>
+<li>7800 CE, one lot long, the premium paid for this option is Rs.117/-</li>
+<li>7900 CE, one lot long, the premium paid for this option is Rs.70/-</li>
+<li>The <strong>net credit</strong> would be 247-117-70 = <strong>60</strong></li>
+</ol>
+<p>With these trades, the bear call ladder is executed. Let us check what would happen to the overall cash flow of the strategies at different levels of expiry.</p>
+<p>Do note we need to evaluate the strategy payoff at various levels of expiry as the strategy payoff is quite versatile.</p>
+<p><strong>Scenario 1 – Market expires at 7600 (below the lower strike price)</strong></p>
+<p>We know the intrinsic value of a call option (upon expiry) is –</p>
+<p>Max [Spot – Strike, 0]</p>
+<p>The 7600 would have an intrinsic value of</p>
+<p>Max [7600 – 7600, 0]</p>
+<p>= 0</p>
+<p>Since we have sold this option, we get to retain the premium received i.e Rs.247/-</p>
+<p>Likewise the intrinsic value of 7800 CE and 7900 CE would also be zero; hence we lose the premium paid i.e Rs.117 and Rs.70 respectively.</p>
+<p>Net cash flow would Premium Received – Premium paid</p>
+<p>= 247 – 117 – 70</p>
+<p>= <strong>60</strong></p>
+<p><strong>Scenario 2 – Market expires at 7660 (lower strike + net premium received)</strong></p>
+<p>The 7600 CE would have an intrinsic value of –</p>
+<p>Max [Spot – Strike, 0]</p>
+<p>The 7600 would have an intrinsic value of</p>
+<p>Max [7660 – 7600, 0]</p>
+<p>= 60</p>
+<p>Since the 7600 CE is short, we will lose 60 from 247 and retain the balance</p>
+<p>= 247 – 60</p>
+<p>= 187</p>
+<p>The 7800 and 7900 CE would expire worthless, hence we lose the premium paid i.e 117 and 70 respectively.</p>
+<p>The total strategy payoff would be –</p>
+<p>= 187 – 117 – 70</p>
+<p>= 0</p>
+<p>Hence at 7660, the strategy would neither make money nor lose money. Hence this is considered a (lower) breakeven point.</p>
+<p><strong>Scenario 3 – Market expires at 7700 (between the breakeven point and middle strike i.e 7660 and 7800)</strong></p>
+<p>The intrinsic value of 7600 CE would be –</p>
+<p>Max [Spot – Strike, 0]</p>
+<p>= [7700 – 7600, 0]</p>
+<p>= 100</p>
+<p>Since, we have sold this option for 247 the net pay off from the option would be</p>
+<p>247 – 100</p>
+<p>= 147</p>
+<p>On the other hand we have bought 7800 CE and 7900 CE, both of which would expire worthless, hence we lose the premium paid for these options i.e 117 and 70 respectively –</p>
+<p>Net payoff from the strategy would be –</p>
+<p>147 – 117 – 70</p>
+<p>= <strong style="color: red;">– 40</strong></p>
+<p><strong>Scenario 4 – Market expires at 7800 (at the middle strike price)</strong></p>
+<p>Pay attention here, as this is where the tragedy strikes!</p>
+<p>The 7600 CE would have an intrinsic value of 200, considering we have written this option for a premium of Rs.247, we stand to lose the intrinsic value which is Rs.200.</p>
+<p>Hence on the 7600 CE, we lose 200 and retain –</p>
+<p>247 – 200</p>
+<p>= 47/-</p>
+<p>Both 7800 CE and 7900 CE would expire worthless, hence the premium that we paid goes waste, i.e 117 and 70 respectively. Hence our total payoff would be –</p>
+<p>47 – 117 – 70</p>
+<p>= <strong style="color: red;">-140</strong></p>
+<p><strong>Scenario 5 – Market expires at 7900 (at the higher strike price)</strong></p>
+<p>Pay attention again, tragedy strikes again ☺</p>
+<p>The 7600 CE would have an intrinsic value of 300, considering we have written this option for a premium of Rs.247, we stand to lose all the premium value plus more.</p>
+<p>Hence on the 7600 CE, we lose –</p>
+<p>247 – 300</p>
+<p>= -53</p>
+<p>Both 7800 CE would have an intrinsic value of 100, considering we have paid a premium of Rs.117, the pay off for this option would be –</p>
+<p>100 – 117</p>
+<p>= – 17</p>
+<p>Finally 7900 CE would expire worthless, hence the premium paid i.e 70 would go waste. The final strategy payoff would be –</p>
+<p>-53 – 17 – 70</p>
+<p>= <strong style="color: red;">-140</strong></p>
+<p>Do note, the loss at both 7800 and 7900 is the same.</p>
+<p><strong>Scenario 6 – Market expires at 8040 (sum of long strike minus short strike minus net premium)</strong></p>
+<p>Similar to the call ratio back spread, the bear call ladder has two breakeven points i.e the upper and lower breakeven. We evaluated the lower breakeven earlier (scenario 2), and this is the upper breakeven point. The upper breakeven is estimated as –</p>
+<p>(7900 + 7800) – 7600 – 60</p>
+<p>= 15700 – 7600 – 60</p>
+<p>= 8100 – 60</p>
+<p>= 8040</p>
+<p>Do note, both 7900 and 7800 are strikes we are long on, and 7600 is the strike we are short on. 60 is the net credit.</p>
+<p>So at 8040, all the call options would have an intrinsic value –</p>
+<p>7600 CE would have an intrinsic value of 8040 – 7600 = 440, since we are short on this at 247, we stand to lose 247 – 440 = <strong style="color: red;">-193.</strong></p>
+<p>7800 CE would have an intrinsic value of 8040 – 7800 = 240, since we are long on this at 117, we make 240 – 117 = <strong>+123</strong></p>
+<p>7900 CE would have an intrinsic value of 8040 – 7900 = 140, since we are long on this at 70, we make 140 – 70 = <strong>+70</strong></p>
+<p>Hence the total payoff from the Bear Call Ladder would be –</p>
+<p>-193 + 123 + 70</p>
+<p>= <strong>0</strong></p>
+<p>Hence at 8040, the strategy would neither make money nor lose money. Hence this is considered a (upper) breakeven point.</p>
+<p>Do note, at 7800 and 7900 the strategy was making a loss and at 8040 the strategy broke even. This should give you a sense that beyond 8040, the strategy would make money. Lets just validate this with another scenario.</p>
+<p><strong>Scenario 7 – Market expires at 8300 </strong></p>
+<p>At 8300 all the call options would have an intrinsic value.</p>
+<p>7600 CE would have an intrinsic value of 8300 – 7600 = 700, since we are short on this at 247, we stand to lose 247 – 700 = <strong style="color: red;">-453.</strong></p>
+<p>7800 CE would have an intrinsic value of 8300 – 7800 = 500, since we are long on this at 117, we make 500 – 117 = <strong>+383</strong></p>
+<p>7900 CE would have an intrinsic value of 8300 – 7900 = 400, since we are long on this at 70, we make 400 – 70 = <strong>+330</strong></p>
+<p>Hence the total payoff from the Bear Call Ladder would be –</p>
+<p>-453 + 383 + 330</p>
+<p>= <strong>260</strong></p>
+<p>As you can imagine, the higher the market move, the higher is the profit potential. Here is a table that gives you the payoffs at various levels.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/01/Image-1_Payoff.png"><img alt="Image 1_Payoff" class="aligncenter wp-image-2968" height="275" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/01/Image-1_Payoff-1024x352.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/01/Image-1_Payoff-1024x352.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2016/01/Image-1_Payoff-300x103.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/01/Image-1_Payoff.png 1206w" width="800"/></a></p>
+<p>Do notice, when the market goes below you stand to make a modest gain of 60 points, but when the market moves up the profits are uncapped.</p>
+<h2>5.3 – Strategy Generalization</h2>
+<p>Going by the above discussed scenarios we can make few generalizations –</p>
+<ul>
+<li>Spread = technically this is a ladder and not really a spread. However the 1<sup>st</sup> two option legs creates a classic “spread” wherein we sell ITM and buy ATM. Hence the spread could be taken as the difference between the ITM and ITM options. In this case it would be 200 (7800 – 7600)</li>
+<li>Net Credit = Premium Received from ITM CE – Premium paid to ATM &amp; OTM CE</li>
+<li>Max Loss = Spread (difference between the ITM and ITM options) – Net Credit</li>
+<li>Max Loss occurs at = ATM and OTM &nbsp;Strike</li>
+<li>The payoff when market goes down = Net Credit</li>
+<li>Lower Breakeven = Lower Strike + Net Credit</li>
+<li>Upper Breakeven = Sum of Long strike minus short strike minus net premium</li>
+</ul>
+<p>Here is a graph that highlights all these important points –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/01/Image-2_graph.png"><img alt="Image 2_graph" class="aligncenter size-full wp-image-2969" height="385" loading="lazy" sizes="(max-width: 535px) 100vw, 535px" src="http://zerodha.com/varsity/wp-content/uploads/2016/01/Image-2_graph.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/01/Image-2_graph.png 535w, https://zerodha.com/varsity/wp-content/uploads/2016/01/Image-2_graph-300x216.png 300w" width="535"/></a></p>
+<p>Notice how the strategy makes a loss between 7660 and 8040, but ends up making a huge profit if the market moves past 8040. Even if the market goes down you still end up making a modest profit. But you are badly hit if the market does not move at all. Given this characteristics of the Bear Call Ladder, I would suggest you implement the strategy only when you are absolutely sure that the market will move, irrespective of the direction.</p>
+<p>From my experience, I believe this strategy is best executed on stocks (rather than index) when the quarterly results are due.</p>
+<h2>5.4 – Effect of Greeks</h2>
+<p>The effect of Greeks on this strategy is very similar to the effect of Greeks on Call Ratio Back spread, especially the volatility bit. For your easy reference, I’m reproducing the discussion on volatility we had in the previous chapter.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/01/Image-3_volatility.png"><img alt="Image 3_volatility" class="aligncenter wp-image-2970" height="419" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/01/Image-3_volatility-1024x537.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/01/Image-3_volatility-1024x537.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2016/01/Image-3_volatility-300x157.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/01/Image-3_volatility.png 1253w" width="800"/></a></p>
+<p>There are three colored lines depicting the change of “net premium” aka the strategy payoff versus change in volatility. These lines help us understand the effect of increase in volatility on the strategy keeping time to expiry in perspective.</p>
+<ol>
+<li><strong>Blue Line</strong> – This line suggests that an increase in volatility when there is ample time to expiry (30 days) is beneficial for the Bear Call Ladder spread. As we can see the strategy payoff increases from -67 to +43 when the volatility increase from 15% to 30%. Clearly this means that when there is ample time to expiry, besides being right on the direction of stock/index you also need to have a view on volatility. For this reason, even though I’m bullish on the stock, I would be a bit hesitant to deploy this strategy at the start of the series if the volatility is on the higher side (say more than double of the usual volatility reading)</li>
+<li><strong>Green line</strong> – This line suggests that an increase in volatility when there are about 15 days time to expiry is beneficial, although not as much as in the previous case. As we can see the strategy payoff increases from -77 to -47 when the volatility increase from 15% to 30%.</li>
+<li><strong>Red line – </strong>This is an interesting, counter intuitive outcome. When there are very few days to expiry, increase in volatility has a negative impact on the strategy! Think about it, increase in volatility when there are few days to expiry enhances the possibility of the option to expiry OTM, hence the premium decreases. So, if you are bullish on a stock / index with few days to expiry, and you also expect the volatility to increase during this period then thread cautiously.</li>
+</ol>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>Bear Call Ladder is an improvisation over the Call Ratio Spread</li>
+<li>Invariably the cost of executing a bear call ladder is better than the Call Ratio Spread, but the range above which the market has to move also becomes large</li>
+<li>The Bear Call Ladder is executed by selling 1 ITM CE, buying 1 ATM CE, and 1 OTM CE</li>
+<li>Net Credit = Premium Received from ITM CE – Premium paid to ATM &amp; OTM CE</li>
+<li>Max Loss = Spread (difference between the ITM and ITM options) – Net Credit</li>
+<li>Max Loss occurs at = ATM and OTM&nbsp; Strike</li>
+<li>The payoff when market goes down = Net Credit</li>
+<li>Lower Breakeven = Lower Strike + Net Credit</li>
+<li>Upper Breakeven = Sum of Long strike minus short strike minus net premium</li>
+<li>Execute the strategy only when you are convinced that the market will move significantly higher.</li>
+</ol>
+<p>&nbsp;</p>
+<p style="text-align: center;"><a class="button" href="https://zerodha.com/varsity/wp-content/uploads/2016/01/C5_Bear-Call-Ladder.xlsx">Download Bear Call Ladder Excel Sheet</a></p>
+<div class="clear"> </div>
+</div>

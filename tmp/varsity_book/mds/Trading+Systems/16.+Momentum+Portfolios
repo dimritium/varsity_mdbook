@@ -1,0 +1,163 @@
+<div class="post">
+<h2><img alt="" class="aligncenter size-full wp-image-5416" height="400" sizes="(max-width: 600px) 100vw, 600px" src="https://zerodha.com/varsity/wp-content/uploads/2019/03/M10-C16-Cartoon.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2019/03/M10-C16-Cartoon.png 600w, https://zerodha.com/varsity/wp-content/uploads/2019/03/M10-C16-Cartoon-300x200.png 300w" width="600"/></h2>
+<h2><strong>16.1 – Defining Momentum</strong></h2>
+<p>If you have spent some time in the market, then I’m quite certain that you’ve been bombarded with market jargons of all sorts. Most of us get used to these jargons and in fact, start using these jargons without actually understanding what they really mean. I’m guilty of using few jargons without understanding the true meaning of it and I get a feeling that some of you reading this may have experienced the same.</p>
+<p>One such jargon is – momentum. I’m sure we have used momentum is our daily conversations related to the markets, but what exactly is momentum and how is it measured?</p>
+<p>When asked, traders loosely define momentum as the speed at which the markets move. This is correct to some extent, but that’s not all and we should certainly not limit our understanding to just that.</p>
+<p>‘Momentum’ is a physics term, it refers to the quantity of motion that an object has. If you look at this definition in the context of stocks markets, then everything remains the same, except that you will have to replace ‘object’ by stocks or the index.</p>
+<p>Simply put, momentum is the rate of change of returns of the stock or the index. If the rate of change of returns is high, then the momentum is considered high and if the rate of change of returns is low, the momentum is considered low.</p>
+<p>This leads us to to the next obvious question i.e is what is the rate of change of returns?.</p>
+<p>The rate of change of return, as it states the return generated&nbsp; (or eroded) between two reference time period. For the sake of this discussion, let’s stick to the rate of change of return on an end of day basis. So in this context, the rate of change of returns simply means the speed at which the daily return of the stock varies.</p>
+<p>To understand this better, consider this example –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2019/03/Image-1_stock-a.png"><img alt="" class="aligncenter size-full wp-image-5403" height="116" loading="lazy" sizes="(max-width: 606px) 100vw, 606px" src="https://zerodha.com/varsity/wp-content/uploads/2019/03/Image-1_stock-a.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2019/03/Image-1_stock-a.png 606w, https://zerodha.com/varsity/wp-content/uploads/2019/03/Image-1_stock-a-300x57.png 300w" width="606"/></a></p>
+<p>The table above shows the daily stock closing price of an arbitrary stock for 6 days. Two things to note here –</p>
+<ul>
+<li>The prices are moving up on day to day basis</li>
+<li>The percentage change is 0.5% or higher on a daily basis</li>
+</ul>
+<p>Consider another example –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2019/03/Image-3_total-change.png"><img alt="" class="aligncenter size-full wp-image-5405" height="232" loading="lazy" sizes="(max-width: 437px) 100vw, 437px" src="https://zerodha.com/varsity/wp-content/uploads/2019/03/Image-3_total-change.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2019/03/Image-3_total-change.png 437w, https://zerodha.com/varsity/wp-content/uploads/2019/03/Image-3_total-change-300x159.png 300w" width="437"/></a></p>
+<p>Two things need to note –</p>
+<ul>
+<li>The prices are moving up on day to day basis</li>
+<li>The percentage change is 1.5% or higher on a daily basis</li>
+</ul>
+<p>Given the behavior of these two stocks, I have two questions for you –</p>
+<ul>
+<li>Which stock has a higher rate of change in daily returns?</li>
+<li>Which stock has a higher momentum?</li>
+</ul>
+<p>To answer these above questions, you can look at either the absolute change in Rupee value or the percentage change from a close to close perspective.</p>
+<p>If you look at the absolute Rupee change, then obviously the change in Stock A is higher than Stock B. However, this is not the right way to look at the change in daily return. For instance, in absolute Rupee terms, stock in the range of say 2000 or 3000 will always have a higher change compared to Stock A.</p>
+<p>Hence, evaluating absolute Rupee change will not suffice and therefore we need to look at the percentage change. In terms of percentage change, clearly Stock B’s daily change is higher and therefore we can conclude that Stock B has a higher momentum.</p>
+<p>Here is another situation, consider this –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2019/03/image-5_rets.png"><img alt="" class="aligncenter size-full wp-image-5407" height="280" loading="lazy" sizes="(max-width: 443px) 100vw, 443px" src="https://zerodha.com/varsity/wp-content/uploads/2019/03/image-5_rets.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2019/03/image-5_rets.png 443w, https://zerodha.com/varsity/wp-content/uploads/2019/03/image-5_rets-300x190.png 300w" width="443"/></a></p>
+<p>Stock A, has trended up consistently on a day to day basis, while stock B has been quite a dud all along except for the last two days. On an overall basis if you check the percentage change over the 7 day period then both have delivered similar results. Given this, which of these two stock is considered to have good momentum?</p>
+<p>Well, clearly Stock A is consistent in terms of daily returns, exhibits a good uptrend, and therefore can be considered to have continuity in showcasing momentum.</p>
+<p>Now, what if I decide to measure momentum slightly differently? Instead of daily returns, what if we were to look at the return on a 7 days basis? If we were to do that, then both Stock A and B would qualify as momentum stocks.</p>
+<p>The point that I’m trying to make here is that traders generally tend to look at momentum in terms of daily returns, which is perfectly valid, but this is not necessarily the only way to look at momentum. In fact, the momentum strategy we will discuss later in this chapter looks at momentum on a larger time frame and not no daily basis. More on this later.</p>
+<p>I hope by now, you do have a sense of what exactly momentum means and understood the fact that momentum can be measured not just in terms of daily returns but also in terms of larger time frames. In fact, high-frequency traders measure momentum on a minute to minute or hourly basis.</p>
+<h2><strong>16.2 – Momentum Strategy</strong></h2>
+<p>Amongst the many trading strategies that the traders use, one of the most popular strategies is the momentum strategy. Traders measure momentum in many different ways to identify opportunity pockets. The core idea across all these strategies remains the same i.e to identify momentum and ride the wave.</p>
+<p>Momentum strategies can be developed on a single stock basis wherein the idea is to measure momentum across all the stocks in the tracking universe and trade the ones which showcase the highest momentum. Do note, momentum can be either way – long or short, so a trader following single stock momentum strategy will get both long and short trading opportunities.</p>
+<p>Traders also develop momentum strategies on a sector-specific basis and set up sector-specific trades. The idea here is to identify sector which exhibits strong momentum, this can be done by checking momentum in sector-specific indices. Once the sector is identified, further look for the stocks within the sector which display maximum strength in terms of momentum.</p>
+<p>Momentum can also be applied on a portfolio basis. This involves the concept of portfolio creation with say ‘n’ number of stock, with each stock in the portfolio showcasing momentum. In my opinion, this is a great strategy as it is not just plain vanilla momentum strategy but also offers safety in terms of diversification.</p>
+<p>We will discuss one such strategy wherein the idea is to create a basket of stock aka a portfolio consisting of 10 momentum stocks. Once created, the portfolio is held until the momentum lasts and then re-balanced.</p>
+<h2><strong>16.3 – Momentum Portfolio</strong></h2>
+<p>Before we discuss this strategy, I want you to note a few things –</p>
+<ul>
+<li>The agenda here is to highlight how a momentum portfolio can be set up. However, this is not the only way to build a momentum portfolio</li>
+<li>You will need programming skills to implement this strategy or to build any other momentum strategy. If you are not a coder like me, then do find a friend who can help</li>
+<li>Like any other strategy, this too has to be backtested</li>
+</ul>
+<p>Given the above, here is a systematic guide to building a ‘Momentum Portfolio’.</p>
+<h3><strong>Step 1</strong> <strong>– Define your stock universe</strong></h3>
+<p>As you may know, there are close to 4000 listed stocks on BSE and about 1800 on NSE. This includes highly valuable companies like TCS and absolute thuds such as pretty much all the Z category stocks on BSE. Companies such as these form the two extreme ends of the spectrum.&nbsp; The question is, do have to track all these stocks to build a momentum portfolio?</p>
+<p>Not really, doing so would be a waste of time.</p>
+<p>One has to filter out the stocks and create something called as the ‘tracking universe’. The tracking universe will consist of a large basket of stocks within which we will pick stocks to constitute the momentum portfolio. This means the momentum portfolio will always be a subset of the tracking universe.</p>
+<p>Think of the tracking universe as a collection of your favorite shopping malls. Maybe out of the 100s of malls in your city, you may end up going to 2-3 shopping malls repeatedly. Clothes bought from these 2-3 malls make up for your entire wardrobe (read portfolio). Hence, these 2-3 malls end up forming your tracking universe out of the 100s available in your city.</p>
+<p>The tracking universe can be quite straightforward – it can be the Nifty 50 stocks or the BSE 500 stocks. Therefore, the momentum portfolio will always be a subset of either the Nifty 50 or BSE 500 stocks. Keeping the BSE 500 stocks as your tracking universe is a good way to start, however, if you feel a little adventurous, you can custom create your tracking universe.</p>
+<p>Custom creation can be on any parameter – for example, out of the entire 1800 stocks on NSE, I could use a filter to weed out stocks, which has a market cap of at least 1000Crs. This filter alone will shrink the list to a much smaller, manageable set. Further, I may add other criteria such as the price of the stock should be less than 2000. So on and so forth.</p>
+<p>I am just randomly sharing few filter ideas, but you get the point. Using the custom creation techniques helps you filter out and build a tracking universe that exactly matches your requirement.</p>
+<p>Lastly, from my personal experience, I would suggest you have at least 150-200 stocks in your tracking universe if you wish to build a momentum portfolio of 12-15 stock.</p>
+<h3><strong>Step 2</strong> <strong>– Set up the data</strong></h3>
+<p>Assuming your tracking universe is set up, you are now good to proceed to the 2<sup>nd</sup> step. In this step, you need to ensure you get the closing prices of all the stocks in your tracking universe. Ensure the data set that you have is clean and adjusted for corporate actions like the bonus issue, splits, special dividends, and other corporate actions. Clean data is the key building block to any trading strategy. There are plenty of data sources from where you can download the data free, including the NSE/BSE websites.</p>
+<p>The question is – what is the lookback period? How many historical data points are required? To run this strategy, you only need 1-year data point. For example, today is 2<sup>nd</sup> March 2019, then I’d need data point from 1<sup>st</sup> March 2018 to 2<sup>nd</sup> March 2019.</p>
+<p>Please note, once you have the data points for last one-year set, you can update this on a daily basis, which means the daily closing prices are recorded.</p>
+<h3><strong>Step 3</strong> <strong>– Calculate returns</strong></h3>
+<p>This is a crucial part of the strategy; in this step, we calculate the returns of all the stocks in the tracking universe. As you may have already guessed, we calculate the return to get a sense of the momentum in each of the stocks.</p>
+<p>As we discussed earlier in this chapter, one can calculate the returns on any time frequency, be it daily/weekly/monthly or even yearly returns. We will stick to yearly returns for the sake of this discussion, however, please note; you can add your own twist to the entire strategy and calculate the returns on any time frequency you wish. Instead of yearly, you could calculate the half-yearly, monthly, or even fortnightly returns.</p>
+<p>So, at this stage, you should have a tracking universe consisting of about 150-200 stocks. All these stocks should have historical data for at least 1 year. Further, you need to calculate the yearly return for each of these stocks in your tracking universe.</p>
+<p>To help you understand this better, I’ve created a sample tracking universe with just about 10 stocks in it.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2019/03/image-4_tu.png"><img alt="" class="aligncenter wp-image-5406" height="425" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="https://zerodha.com/varsity/wp-content/uploads/2019/03/image-4_tu.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2019/03/image-4_tu.png 1019w, https://zerodha.com/varsity/wp-content/uploads/2019/03/image-4_tu-300x159.png 300w, https://zerodha.com/varsity/wp-content/uploads/2019/03/image-4_tu-768x408.png 768w" width="800"/></a></p>
+<p>The tracking universe contains the data for the last 365 days. The 1-year returns are calculated as well –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2019/03/Image-2_stock-b.png"><img alt="" class="aligncenter size-full wp-image-5404" height="119" loading="lazy" sizes="(max-width: 603px) 100vw, 603px" src="https://zerodha.com/varsity/wp-content/uploads/2019/03/Image-2_stock-b.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2019/03/Image-2_stock-b.png 603w, https://zerodha.com/varsity/wp-content/uploads/2019/03/Image-2_stock-b-300x59.png 300w" width="603"/></a></p>
+<p>If you are wondering how the returns are calculated, then this is quite straight forward, let us take the example of ABB –</p>
+<p>Return = [ending value/starting value]-1</p>
+<p>= [1244.55/1435.55]-1</p>
+<p>= <strong>-13.31%</strong></p>
+<p>Quite straightforward, I guess.</p>
+<h3><strong>Step 4 – Rank the returns</strong></h3>
+<p>Once the returns are calculated, you need to rank the returns from the highest to the lowest returns. For example, Asian paints have generated a return of 25.87%, which is the highest in the list. Hence, the rank of Asian paints is 1. The second highest is HDFC Bank, so that will get the 2<sup>nd</sup> rank.&nbsp; Infosys’s return, on the other hand, is -35.98%, the lowest in the list, hence the rank is 10. So on and so forth.</p>
+<p>Here is the ‘return ranking’ for this portfolio –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2019/03/Image-6_rank.png"><img alt="" class="aligncenter size-full wp-image-5408" height="280" loading="lazy" sizes="(max-width: 360px) 100vw, 360px" src="https://zerodha.com/varsity/wp-content/uploads/2019/03/Image-6_rank.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2019/03/Image-6_rank.png 360w, https://zerodha.com/varsity/wp-content/uploads/2019/03/Image-6_rank-300x233.png 300w" width="360"/></a></p>
+<p>If you are wondering why the returns are negative for most of the stocks, well then, that’s how stocks behave when deep corrections hit the market. I wish, I had opted to discuss this strategy at a better point</p>
+<p>So what does this ranking tell us?</p>
+<p>If you think about it, the ranking reorders our tracking universe to give us a list of stocks from the highest return stock to the lowest. For example, from this list, I know that Asian Paints has been the best performer (in terms of returns) over the last 12 months. Likewise, Infy has been the worst.</p>
+<h3><strong>Step 5 – Create the portfolio</strong></h3>
+<p>A typical tracking universe will have about 150-200 stocks, and with the help of the previous step, we would have reordered the tracking universe. Now, with the reordered tracking universe, we are good to create a momentum portfolio.</p>
+<p>Remember, momentum is the rate of change of return and the return itself is measured on a yearly basis.</p>
+<p>A good momentum portfolio contains about 10-12 stocks. I’m personally comfortable with up to 15 stocks in the portfolio, not more than that. For the sake of this discussion, let us assume that we are building a 12 stocks momentum portfolio.</p>
+<p>The momentum portfolio is now simply the top 12 stocks in the reordered tracking universe. In other words, we buy all the stocks starting from rank 1 to rank 12. In the example we were dealing with, if I were to build a 5 stock momentum portfolio, then it would contain –</p>
+<ul>
+<li>Asian Paints</li>
+<li>HDFC Bank</li>
+<li>Biocon</li>
+<li>ACC</li>
+<li>Ultratech</li>
+</ul>
+<p>The rest of the stocks would not constitute the portfolio but will continue to remain in the tracking universe.</p>
+<p>What is the logic of selecting this subset of stocks within the tracking universe, you may ask?</p>
+<p>Well, read this carefully – if the stock has done well (in terms of returns generated) for the last 12 months, then it implies that the stock has good momentum for the defined time frame. The expectation is that this momentum will continue onto the 13<sup>th</sup> month as well, and therefore the stock will continue to generate higher returns. &nbsp;So if you were to buy such stocks, then you are to benefit from the expected momentum in the stock.</p>
+<p>Clearly, this is a claim. I do not have data to back this, but I have personally used this exact technique for a couple of years with decent success. It is easy to back-test this strategy, and I encourage you to do so.</p>
+<p>Back in the days, my trading partner and I were encouraged to build this momentum portfolio after reading this <a href="https://zerodha.com/varsity/wp-content/uploads/2019/03/Momentum-Trend-Investing.pdf" rel="noopener noreferrer" target="_blank"><strong>‘Economist’</strong></a> article. You need to read this article before implementing this strategy.</p>
+<p>Once the momentum portfolio stocks are identified, the idea is to buy all the momentum stocks in equal proportion. So if the capital available is Rs.200,000/- and there are 12 stocks, then the idea is to buy Rs.16,666/- worth of each stock (200,000/12).</p>
+<p>By doing so, you create an equally weighted momentum portfolio. Of course, you can tweak the weights to create a skewed portfolio, there is no problem with it, but then you need to have a solid reason for doing so. &nbsp;This reason should come from backtested results.</p>
+<p>If you like to experiment with skewed portfolios, here are few ideas –</p>
+<ul>
+<li>50% of capital allocation across the top 5 momentum stocks (rank 1 to 5), and 50% across the remaining 7 stocks</li>
+<li>Top 3 stocks get 40% and the balance 60% across 9 stocks</li>
+<li>If you are a contrarian and expect the lower rank stocks to perform better than the higher rank stocks, then allocate more to last 5 stocks</li>
+</ul>
+<p>So on and so forth. Ideally, the approach to capital allocation should come from your backtesting process, this also means you will have to backtest various capital allocation techniques to figure out which works well for you.</p>
+<h3><strong>Step 6 – Rebalance the portfolio</strong></h3>
+<p>So far, we have created a tracking universe, calculated the 12-month returns, ranked the stocks in terms of the 12-month returns, and created a momentum portfolio by buying the top 12 stocks. The momentum portfolio was built based on the 12-month performance, with a hope that it will continue to showcase the same performance for the 13<sup>th</sup> month.</p>
+<p>There are few assumptions here –</p>
+<ul>
+<li>The portfolio is created and bought on the 1<sup>st</sup> trading day of the month</li>
+<li>The above implies that all the number crunching happens on the last day of the month, post-market close</li>
+<li>Once the portfolio is created and bought, you hold on to the stocks till the last day of the month</li>
+</ul>
+<p>Now the question is, what really happens at the end of the month?</p>
+<p>At the end of the month, you re-run the ranking engine and figure out the top 10 or 12 stocks which have performed well over the last 12 month. Do note, at any point we consider the latest 12 months of data.</p>
+<p>So, we now buy the stocks from rank 1 to 12, just like the way we did in the previous month. From my experience, chances are that out of the initial portfolio, only a hand full of stocks would have changed positions. So based on the list, you sell the stocks which no longer belongs in the portfolio and buy the new stocks which have featured in the latest momentum portfolio. In essence, you rebalance the portfolio and you do this at the end of every month.</p>
+<p>So on and so forth.</p>
+<h2><strong>16.4 – Momentum Portfolio variations</strong></h2>
+<p>Before we close this chapter (and this module), I’d like to touch upon a few variations to this strategy.</p>
+<p>The returns have been calculated on a 12-month portfolio and the stocks are held for a month. However, you don’t have to stick to this. You can try out various options, like –</p>
+<ul>
+<li>Calculate return and rank the stocks based on their monthly performance and hold the portfolio for the month</li>
+<li>Calculate return and rank the stocks based on fortnightly performance and hold the portfolio for 15 days</li>
+<li>Rank on a weekly basis and hold for a week</li>
+<li>Calculate on a daily basis and even do an intraday momentum portfolio</li>
+</ul>
+<p>As you can see, the options are plenty and it’s only restricted by your imagination. If you think about what we have discussed so far, the momentum portfolio is price based. However, you can build a fundamental based momentum strategy as well. Here are a few ideas –</p>
+<ul>
+<li>Build a tracking universe of fundamentally good stocks</li>
+<li>Note the difference in quarterly sales number (% wise)</li>
+<li>Rank the stocks based on quarterly sales. Company with the highest jump in sales gets rank one and so on</li>
+<li>Buy the top 10 – 12 stocks</li>
+<li>Rebalance at the end of the quarter</li>
+</ul>
+<p>You can do this on any fundamental parameter – EPS growth, profit margin, EBITDA margin etc. The beauty of these strategies is that the data is available, hence backtesting gets a lot easier.</p>
+<h2><strong>16.5 – Word of caution</strong></h2>
+<p>As good as it may seem, the price based momentum strategy works well only when the market is trending up. When the markets turn choppy, the momentum strategy performs poorly, and when the markets go down, the momentum portfolio bleeds heavier than the markets itself.</p>
+<p>Understanding the strategy’s behavior with respect to market cycle is quite crucial to the eventual success of this portfolio. I learned it the hard way. I had a great run with this strategy in 2009 and ’10 but took a bad hit in 2011. So before you execute this strategy, do your homework (backtesting) right.</p>
+<p>Having said all of that let me reassure you – a price based momentum strategy, if implemented in the right market cycle can give you great returns, in fact, better more often than not, better than the market returns.</p>
+<p>Good luck and happy trading.</p>
+<hr/>
+<h3><strong>Key takeaways from this chapter</strong></h3>
+<ul>
+<li>Momentum is the rate of change of return and can be measured across any time frame</li>
+<li>A price based momentum portfolio consists of stocks which have exhibited highest momentum over the desired time frame</li>
+<li>Tracking universe should be carefully populated. BSE 500 is a good tracking universe</li>
+<li>Calculate the returns for the tracking universe</li>
+<li>Rank the stocks based on highest to lowest return</li>
+<li>The momentum portfolio is simply the top 12 or 15 stocks</li>
+<li>The expectation is that the momentum will continue during the holding period</li>
+<li>The asset allocation technique can vary based on backtesting Equally weighted portfolio is a good asset allocation technique</li>
+<li>Momentum can be measured on fundamental data as well – growth in sales, EBITDA margins, EPS growth, net profit margin etc</li>
+<li>Price based momentum works best in an upward trending market and not really in a sideways or a down trending market.</li>
+</ul>
+<div class="clear"> </div>
+</div>

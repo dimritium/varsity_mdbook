@@ -1,0 +1,474 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>26. The Mutual Fund Portfolio - Varsity mdBook</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><div><strong aria-hidden="true">1.</strong> Introduction to Stock Markets</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/1.html"><strong aria-hidden="true">1.1.</strong> 1. The Need to Invest</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/2.html"><strong aria-hidden="true">1.2.</strong> 2. Regulators</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/3.html"><strong aria-hidden="true">1.3.</strong> 3. Financial Intermediaries</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/4.html"><strong aria-hidden="true">1.4.</strong> 4. The IPO Markets – Part 1</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/5.html"><strong aria-hidden="true">1.5.</strong> 5. The IPO Markets – Part 2</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/6.html"><strong aria-hidden="true">1.6.</strong> 6. The Stock Markets</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/7.html"><strong aria-hidden="true">1.7.</strong> 7. The Stock Markets Index</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/8.html"><strong aria-hidden="true">1.8.</strong> 8. Commonly Used Jargons</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/9.html"><strong aria-hidden="true">1.9.</strong> 9. The Trading Terminal</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/10.html"><strong aria-hidden="true">1.10.</strong> 10. Clearing and Settlement Process</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/11.html"><strong aria-hidden="true">1.11.</strong> 11. Five Corporate Actions and Its Impact on Stock Prices</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/12.html"><strong aria-hidden="true">1.12.</strong> 12. Key Events and Their Impact on Markets</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/13.html"><strong aria-hidden="true">1.13.</strong> 13. Getting started!</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/14.html"><strong aria-hidden="true">1.14.</strong> 14. Supplementary note – Rights, OFS, FPO</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/15.html"><strong aria-hidden="true">1.15.</strong> 15. Supplementary note – The 20 market depth or level 3 data</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Technical Analysis</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/1.html"><strong aria-hidden="true">2.1.</strong> 1. Background</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/2.html"><strong aria-hidden="true">2.2.</strong> 2. Introducing Technical Analysis</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/3.html"><strong aria-hidden="true">2.3.</strong> 3. The Chart Types</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/4.html"><strong aria-hidden="true">2.4.</strong> 4. Getting Started with Candlesticks</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/5.html"><strong aria-hidden="true">2.5.</strong> 5. Single Candlestick patterns (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/6.html"><strong aria-hidden="true">2.6.</strong> 6. Single Candlestick patterns (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/7.html"><strong aria-hidden="true">2.7.</strong> 7. Single Candlestick patterns (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/8.html"><strong aria-hidden="true">2.8.</strong> 8. Multiple candlestick patterns (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/9.html"><strong aria-hidden="true">2.9.</strong> 9. Multiple Candlestick Patterns (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/10.html"><strong aria-hidden="true">2.10.</strong> 10. Multiple Candlestick Patterns (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/11.html"><strong aria-hidden="true">2.11.</strong> 11. The Support and Resistance</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/12.html"><strong aria-hidden="true">2.12.</strong> 12. Volumes</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/13.html"><strong aria-hidden="true">2.13.</strong> 13. Moving Averages</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/14.html"><strong aria-hidden="true">2.14.</strong> 14. Indicators (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/15.html"><strong aria-hidden="true">2.15.</strong> 15. Indicators (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/16.html"><strong aria-hidden="true">2.16.</strong> 16. The Fibonacci Retracements</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/17.html"><strong aria-hidden="true">2.17.</strong> 17. The Dow Theory (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/18.html"><strong aria-hidden="true">2.18.</strong> 18. The Dow Theory (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/19.html"><strong aria-hidden="true">2.19.</strong> 19. The Finale – Helping you get started</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/20.html"><strong aria-hidden="true">2.20.</strong> 20. Other indicators</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/21.html"><strong aria-hidden="true">2.21.</strong> 21. Interesting features on TradingView</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/22.html"><strong aria-hidden="true">2.22.</strong> 22. The Central Pivot Range</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Fundamental Analysis</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/1.html"><strong aria-hidden="true">3.1.</strong> 1. Introduction to Fundamental Analysis</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/2.html"><strong aria-hidden="true">3.2.</strong> 2. Mindset of an Investor</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/3.html"><strong aria-hidden="true">3.3.</strong> 3. How to Read the Annual Report of a Company</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/4.html"><strong aria-hidden="true">3.4.</strong> 4. Understanding the P&L Statement (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/5.html"><strong aria-hidden="true">3.5.</strong> 5. Understanding P&L Statement (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/6.html"><strong aria-hidden="true">3.6.</strong> 6. Understanding Balance Sheet Statement (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/7.html"><strong aria-hidden="true">3.7.</strong> 7. Understanding the Balance Sheet Statement (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/8.html"><strong aria-hidden="true">3.8.</strong> 8. The Cash Flow statement</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/9.html"><strong aria-hidden="true">3.9.</strong> 9. The Financial Ratio Analysis (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/10.html"><strong aria-hidden="true">3.10.</strong> 10. The Financial Ratio Analysis (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/11.html"><strong aria-hidden="true">3.11.</strong> 11. The Financial Ratio Analysis (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/12.html"><strong aria-hidden="true">3.12.</strong> 12. The Investment Due Diligence</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/13.html"><strong aria-hidden="true">3.13.</strong> 13. Equity Research (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/14.html"><strong aria-hidden="true">3.14.</strong> 14. DCF Primer</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/15.html"><strong aria-hidden="true">3.15.</strong> 15. Equity Research (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/16.html"><strong aria-hidden="true">3.16.</strong> 16. The Finale</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Futures Trading</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/1.html"><strong aria-hidden="true">4.1.</strong> 1. Background – Forwards Market</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/2.html"><strong aria-hidden="true">4.2.</strong> 2. Introducing Futures Contract</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/3.html"><strong aria-hidden="true">4.3.</strong> 3. The Futures Trade</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/4.html"><strong aria-hidden="true">4.4.</strong> 4. Leverage & Payoff</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/5.html"><strong aria-hidden="true">4.5.</strong> 5. Margin & M2M</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/6.html"><strong aria-hidden="true">4.6.</strong> 6. Margin Calculator (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/7.html"><strong aria-hidden="true">4.7.</strong> 7. Margin Calculator (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/8.html"><strong aria-hidden="true">4.8.</strong> 8. All about Shorting</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/9.html"><strong aria-hidden="true">4.9.</strong> 9. The Nifty Futures</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/10.html"><strong aria-hidden="true">4.10.</strong> 10. The Futures Pricing</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/11.html"><strong aria-hidden="true">4.11.</strong> 11. Hedging with Futures</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/12.html"><strong aria-hidden="true">4.12.</strong> 12. Open Interest</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/13.html"><strong aria-hidden="true">4.13.</strong> 13. Quick Note on Physical Settlement</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> Options Theory for Professional Trading</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/1.html"><strong aria-hidden="true">5.1.</strong> 1. Call Option Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/2.html"><strong aria-hidden="true">5.2.</strong> 2. Basic Option Jargons</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/3.html"><strong aria-hidden="true">5.3.</strong> 3. Buying a Call Option</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/4.html"><strong aria-hidden="true">5.4.</strong> 4. Selling/Writing a Call Option</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/5.html"><strong aria-hidden="true">5.5.</strong> 5. The Put Option Buying</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/6.html"><strong aria-hidden="true">5.6.</strong> 6. The Put Option selling</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/7.html"><strong aria-hidden="true">5.7.</strong> 7. Summarizing Call & Put Options</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/8.html"><strong aria-hidden="true">5.8.</strong> 8. Moneyness of an Option Contract</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/9.html"><strong aria-hidden="true">5.9.</strong> 9. The Option Greeks (Delta) Part 1</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/10.html"><strong aria-hidden="true">5.10.</strong> 10. Delta (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/11.html"><strong aria-hidden="true">5.11.</strong> 11. Delta (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/12.html"><strong aria-hidden="true">5.12.</strong> 12. Gamma (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/13.html"><strong aria-hidden="true">5.13.</strong> 13. Gamma (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/14.html"><strong aria-hidden="true">5.14.</strong> 14. Theta</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/15.html"><strong aria-hidden="true">5.15.</strong> 15. Volatility Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/16.html"><strong aria-hidden="true">5.16.</strong> 16. Volatility Calculation (Historical)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/17.html"><strong aria-hidden="true">5.17.</strong> 17. Volatility & Normal Distribution</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/18.html"><strong aria-hidden="true">5.18.</strong> 18. Volatility Applications</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/19.html"><strong aria-hidden="true">5.19.</strong> 19. Vega</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/20.html"><strong aria-hidden="true">5.20.</strong> 20. Greek Interactions</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/21.html"><strong aria-hidden="true">5.21.</strong> 21. Greek Calculator</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/22.html"><strong aria-hidden="true">5.22.</strong> 22. Re-introducing Call & Put Options</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/23.html"><strong aria-hidden="true">5.23.</strong> 23. Case studies – wrapping it all up!</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/24.html"><strong aria-hidden="true">5.24.</strong> 24. Quick note on Physical Settlement</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/25.html"><strong aria-hidden="true">5.25.</strong> 25. Options M2M and P&L calculation</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> Option Strategies</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/1.html"><strong aria-hidden="true">6.1.</strong> 1. Orientation</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/2.html"><strong aria-hidden="true">6.2.</strong> 2. Bull Call Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/3.html"><strong aria-hidden="true">6.3.</strong> 3. Bull Put Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/4.html"><strong aria-hidden="true">6.4.</strong> 4. Call Ratio Back Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/5.html"><strong aria-hidden="true">6.5.</strong> 5. Bear Call Ladder</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/6.html"><strong aria-hidden="true">6.6.</strong> 6. Synthetic Long & Arbitrage</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/7.html"><strong aria-hidden="true">6.7.</strong> 7. Bear Put Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/8.html"><strong aria-hidden="true">6.8.</strong> 8. Bear Call Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/9.html"><strong aria-hidden="true">6.9.</strong> 9. Put Ratio Back spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/10.html"><strong aria-hidden="true">6.10.</strong> 10. The Long Straddle</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/11.html"><strong aria-hidden="true">6.11.</strong> 11. The Short Straddle</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/12.html"><strong aria-hidden="true">6.12.</strong> 12. The Long & Short Strangle</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/13.html"><strong aria-hidden="true">6.13.</strong> 13. Max Pain & PCR Ratio</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/14.html"><strong aria-hidden="true">6.14.</strong> 14. Iron Condor</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> Markets and Taxation</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/1.html"><strong aria-hidden="true">7.1.</strong> 1. Introduction (Setting the Context)</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/2.html"><strong aria-hidden="true">7.2.</strong> 2. Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/3.html"><strong aria-hidden="true">7.3.</strong> 3. Classifying Your Market Activity</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/4.html"><strong aria-hidden="true">7.4.</strong> 4. Taxation for Investors</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/5.html"><strong aria-hidden="true">7.5.</strong> 5. Taxation for Traders</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/6.html"><strong aria-hidden="true">7.6.</strong> 6. Turnover, Balance Sheet, and P&L</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/7.html"><strong aria-hidden="true">7.7.</strong> 7. ITR Forms (The Finale)</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> Currency, Commodity, and Government Securities</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/1.html"><strong aria-hidden="true">8.1.</strong> 1. Currency Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/2.html"><strong aria-hidden="true">8.2.</strong> 2. Reference Rates & Impact of events</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/3.html"><strong aria-hidden="true">8.3.</strong> 3. Impact of events (Brexit) & Interest Rate Parity</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/4.html"><strong aria-hidden="true">8.4.</strong> 4. The USD INR Pair (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/5.html"><strong aria-hidden="true">8.5.</strong> 5. The USD INR Pair (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/6.html"><strong aria-hidden="true">8.6.</strong> 6. EUR, GBP, and JPY</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/7.html"><strong aria-hidden="true">8.7.</strong> 7. Gold (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/8.html"><strong aria-hidden="true">8.8.</strong> 8. Gold (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/9.html"><strong aria-hidden="true">8.9.</strong> 9. Silver</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/10.html"><strong aria-hidden="true">8.10.</strong> 10. Crude Oil (Part 1), digging the past</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/11.html"><strong aria-hidden="true">8.11.</strong> 11. Crude Oil (Part 2), the crude oil eco system</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/12.html"><strong aria-hidden="true">8.12.</strong> 12. Crude Oil (Part 3), the crude oil contract</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/13.html"><strong aria-hidden="true">8.13.</strong> 13. Copper & Aluminium</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/14.html"><strong aria-hidden="true">8.14.</strong> 14. Lead & Nickel</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/15.html"><strong aria-hidden="true">8.15.</strong> 15. Cardamom & Mentha Oil</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/16.html"><strong aria-hidden="true">8.16.</strong> 16. Natural Gas</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/17.html"><strong aria-hidden="true">8.17.</strong> 17. Commodity Options</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/18.html"><strong aria-hidden="true">8.18.</strong> 18. Cross Currency Pairs</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/19.html"><strong aria-hidden="true">8.19.</strong> 19. Government Securities</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.</strong> Risk Management & Trading Psychology</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/1.html"><strong aria-hidden="true">9.1.</strong> 1. Orientation note</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/2.html"><strong aria-hidden="true">9.2.</strong> 2. Risk (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/3.html"><strong aria-hidden="true">9.3.</strong> 3. Risk (Part 2) – Variance & Covariance</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/4.html"><strong aria-hidden="true">9.4.</strong> 4. Risk (Part 3) – Variance & Covariance Matrix</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/5.html"><strong aria-hidden="true">9.5.</strong> 5. Risk (Part 4) – Correlation Matrix & Portfolio Variance</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/6.html"><strong aria-hidden="true">9.6.</strong> 6. Equity Curve</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/7.html"><strong aria-hidden="true">9.7.</strong> 7. Expected Returns</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/8.html"><strong aria-hidden="true">9.8.</strong> 8. Portfolio Optimization (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/9.html"><strong aria-hidden="true">9.9.</strong> 9. Portfolio Optimization (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/10.html"><strong aria-hidden="true">9.10.</strong> 10. Value at Risk</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/11.html"><strong aria-hidden="true">9.11.</strong> 11. Position Sizing for active trader</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/12.html"><strong aria-hidden="true">9.12.</strong> 12. Position Sizing for active traders (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/13.html"><strong aria-hidden="true">9.13.</strong> 13. Position Sizing for active traders (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/14.html"><strong aria-hidden="true">9.14.</strong> 14. Kelly’s Criterion</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/15.html"><strong aria-hidden="true">9.15.</strong> 15. Trading Biases</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/16.html"><strong aria-hidden="true">9.16.</strong> 16. Trading Biases (Part 2)</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">10.</strong> Trading Systems</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/1.html"><strong aria-hidden="true">10.1.</strong> 1. What to expect?</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/2.html"><strong aria-hidden="true">10.2.</strong> 2. Pair Trading logic</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/3.html"><strong aria-hidden="true">10.3.</strong> 3. Pair Trading, Method 1, Chapter 1 (PTM1, C1) -Tracking Pairs</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/4.html"><strong aria-hidden="true">10.4.</strong> 4. PTM1, C2 – Pair stats</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/5.html"><strong aria-hidden="true">10.5.</strong> 5. PTM1, C3 – Pre trade setup</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/6.html"><strong aria-hidden="true">10.6.</strong> 6. PTM1, C4 – The Density Curve</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/7.html"><strong aria-hidden="true">10.7.</strong> 7. PTM1,C5 – The Pair Trade</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/8.html"><strong aria-hidden="true">10.8.</strong> 8. Pair trade Method 2, Chapter 1 (PTM2, C1) – Straight line Equation</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/9.html"><strong aria-hidden="true">10.9.</strong> 9. PTM2, C2 – Linear Regression</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/10.html"><strong aria-hidden="true">10.10.</strong> 10. PTM2, C3 – The Error Ratio</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/11.html"><strong aria-hidden="true">10.11.</strong> 11. PTM2, C4 – The ADF test</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/12.html"><strong aria-hidden="true">10.12.</strong> 12. Trade Identification</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/13.html"><strong aria-hidden="true">10.13.</strong> 13. Live Example -1</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/14.html"><strong aria-hidden="true">10.14.</strong> 14. Live Example – 2</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/15.html"><strong aria-hidden="true">10.15.</strong> 15. Calendar Spreads</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/16.html"><strong aria-hidden="true">10.16.</strong> 16. Momentum Portfolios</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">11.</strong> Personal Finance - Mutual Funds</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/1.html"><strong aria-hidden="true">11.1.</strong> 1. Background and Orientation</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/2.html"><strong aria-hidden="true">11.2.</strong> 2. Personal Finance Math (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/3.html"><strong aria-hidden="true">11.3.</strong> 3. Personal Finance Math (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/4.html"><strong aria-hidden="true">11.4.</strong> 4. The retirement problem (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/5.html"><strong aria-hidden="true">11.5.</strong> 5. The retirement problem (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/6.html"><strong aria-hidden="true">11.6.</strong> 6. Introduction to Mutual Funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/7.html"><strong aria-hidden="true">11.7.</strong> 7. Concept of fund & NAV</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/8.html"><strong aria-hidden="true">11.8.</strong> 8. The mutual fund fact-sheet</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/9.html"><strong aria-hidden="true">11.9.</strong> 9. The Equity scheme (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/10.html"><strong aria-hidden="true">11.10.</strong> 10. Equity Scheme (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/11.html"><strong aria-hidden="true">11.11.</strong> 11. The Debt funds (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/12.html"><strong aria-hidden="true">11.12.</strong> 12. The Debt funds (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/13.html"><strong aria-hidden="true">11.13.</strong> 13. The Debt funds (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/14.html"><strong aria-hidden="true">11.14.</strong> 14. The Debt Funds (Part 4)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/15.html"><strong aria-hidden="true">11.15.</strong> 15. Investing in Bonds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/16.html"><strong aria-hidden="true">11.16.</strong> 16. Index Funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/17.html"><strong aria-hidden="true">11.17.</strong> 17. Arbitrage Funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/18.html"><strong aria-hidden="true">11.18.</strong> 18. Measuring Mutual fund Returns</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/19.html"><strong aria-hidden="true">11.19.</strong> 19. Rolling Returns</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/20.html"><strong aria-hidden="true">11.20.</strong> 20. Mutual fund Expense Ratio, Direct, and Regular plans</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/21.html"><strong aria-hidden="true">11.21.</strong> 21. Mutual Benchmarking</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/22.html"><strong aria-hidden="true">11.22.</strong> 22. Mutual Fund Beta, SD, and Sharpe Ratio</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/23.html"><strong aria-hidden="true">11.23.</strong> 23. Sortino and the Capture Ratios</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/24.html"><strong aria-hidden="true">11.24.</strong> 24. How to analyse an Equity Mutual fund?</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/25.html"><strong aria-hidden="true">11.25.</strong> 25. How to analyze a debt mutual fund?</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/26.html" class="active"><strong aria-hidden="true">11.26.</strong> 26. The Mutual Fund Portfolio</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/27.html"><strong aria-hidden="true">11.27.</strong> 27. Smart-beta funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/28.html"><strong aria-hidden="true">11.28.</strong> 28. Asset Allocation, An Introduction</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/29.html"><strong aria-hidden="true">11.29.</strong> 29. Exchange-traded funds (ETF)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/30.html"><strong aria-hidden="true">11.30.</strong> 30. Basics of Macro Economics</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">12.</strong> Innerworth — Mind over markets</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">13.</strong> Integrated Financial Modelling</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/1.html"><strong aria-hidden="true">13.1.</strong> 1. Introduction to Financial Modelling</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/2.html"><strong aria-hidden="true">13.2.</strong> 2. Excel workbook setup</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/3.html"><strong aria-hidden="true">13.3.</strong> 3. Historical Data</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/4.html"><strong aria-hidden="true">13.4.</strong> 4. Assumptions (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/5.html"><strong aria-hidden="true">13.5.</strong> 5. Assumptions (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/6.html"><strong aria-hidden="true">13.6.</strong> 6. Revenue model</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/7.html"><strong aria-hidden="true">13.7.</strong> 7. Asset Schedule (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/8.html"><strong aria-hidden="true">13.8.</strong> 8. Asset Schedule (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/9.html"><strong aria-hidden="true">13.9.</strong> 9. Debt Schedule</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/10.html"><strong aria-hidden="true">13.10.</strong> 10. Reserves Schedule (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/11.html"><strong aria-hidden="true">13.11.</strong> 11. Reserves Schedule (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/12.html"><strong aria-hidden="true">13.12.</strong> 12. Projections</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/13.html"><strong aria-hidden="true">13.13.</strong> 13. Cash flow statement</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/14.html"><strong aria-hidden="true">13.14.</strong> 14. Valuation (Part 1) – Overview</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/15.html"><strong aria-hidden="true">13.15.</strong> 15. Valuation (Part 2) – FCFF & FCFE</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/16.html"><strong aria-hidden="true">13.16.</strong> 16. Valuation (Part 3) – Risk Premium & Tax Shield</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/17.html"><strong aria-hidden="true">13.17.</strong> 17. Weighted average cost of capital and Terminal Growth</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/18.html"><strong aria-hidden="true">13.18.</strong> 18. Discounted Cash Flow Analysis (DCF)</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">14.</strong> Personal Finance - Insurance</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/1.html"><strong aria-hidden="true">14.1.</strong> 1. Introduction</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/2.html"><strong aria-hidden="true">14.2.</strong> 2. Perverse Incentives</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/3.html"><strong aria-hidden="true">14.3.</strong> 3. The nudge</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/4.html"><strong aria-hidden="true">14.4.</strong> 4. Skin in the game</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/5.html"><strong aria-hidden="true">14.5.</strong> 5. Dunning Kruger effect</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/6.html"><strong aria-hidden="true">14.6.</strong> 6. A mighty defence</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/7.html"><strong aria-hidden="true">14.7.</strong> 7. No free lunch</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/8.html"><strong aria-hidden="true">14.8.</strong> 8. Gimmick or not (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/9.html"><strong aria-hidden="true">14.9.</strong> 9. Gimmick or not (Part 2)</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Varsity mdBook</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <div class="post">
+<h2 id="261--assumptions"><a class="header" href="#261--assumptions"><strong>26.1 – Assumptions</strong></a></h2>
+<p>We have reached a stage where we have discussed almost everything related to Mutual funds, leaving us with the last crucial bit, i.e. the mutual fund portfolio construction. I’ve spent last several days to think through the best possible way to explain this, and finally concluded that this is a herculean task 😊</p>
+<p>I’ll explain why in a bit, but don’t worry, I will attempt to explain it 😊</p>
+<p>Before we proceed, I need to address a few assumptions I’ve made.</p>
+<p>When we talk about constructing a mutual fund portfolio or for that matter an equity portfolio to solve for a financial goal, we make two assumption –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>We are covered for the risk</li>
+<li>We are covered for emergency</li>
+</ul>
+</li>
+</ul>
+<p>Before a person can have a portfolio of any sort, these two things should be in place.</p>
+<p>Let me explain what I mean.</p>
+<p><strong>Cover for the risk – </strong>An individual faces many different kinds of risk in his/her lifetime. Risk across multiples areas of life – physical health, mental health, permanent disabilities, a prolonged state of joblessness, broken relationships, and whatnot.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/12/M11-C26-MF-Portfolio-WEB.jpg"><img alt="" class="aligncenter wp-image-9347" height="332" sizes="(max-width: 498px) 100vw, 498px" src="https://zerodha.com/varsity/wp-content/uploads/2020/12/M11-C26-MF-Portfolio-WEB-300x200.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/12/M11-C26-MF-Portfolio-WEB-300x200.jpg 300w, https://zerodha.com/varsity/wp-content/uploads/2020/12/M11-C26-MF-Portfolio-WEB.jpg 600w" width="498"/></a></p>
+<p>While it is impossible to anticipate everything and get a cover, an individual should get a cover for two things in life – loss of life and hospitalization.</p>
+<p>Of course, the cover comes in the form of insurance. Term insurance will ensure that your near and dear ones, your dependents are not financially burdened after your passing away.</p>
+<p>Health insurance will ensure you don’t spend your life’s earnings to pay for hospital bills while getting treated for chronic illness.</p>
+<p>Given this, you need to estimate the extent your family will be paid off if unfortunately, you pass away. Similarly, you need to figure out the extent of health insurance cover you need to get. Topics related to insurance are vast and have many technicalities. I won’t get into this at this point. But I want you to be aware that as an individual, the very first step in your ‘personal finance’ journey is to ensure you get cover for these two types of risks.</p>
+<p>I want to stress that don’t buy insurance products linked to investment plans. These are not worth it.</p>
+<p><strong>Cover for an emergency</strong> – I’m referring to an emergency corpus here, an emergency corpus to help you navigate your tough times. Tough time could be a job loss, or it could be as simple as having enough money to replace a piece of electronic equipment at home or a medical emergency.</p>
+<p>I understand medical emergencies are covered by health insurance but don’t take that for granted. &nbsp;To give you an example, in September 2020, both my parents were hit by Covid 19. When I took them to the hospital, the hospital made me pay a certain amount of money for admission and cover the initial expenses. Of course, I had an insurance cover for both of them, which later came in handy, but at that moment, I needed ready cash and needed a fairly large amount.</p>
+<p>Or take this, for example – thanks to Covid 19, schools went online, and I suddenly had to equip the house with a printer and a laptop for my 10-year-old daughter. That was an unplanned financial expense but had to be done.</p>
+<p>Emergencies can come in any form and can come at any time. One has to have sufficient funds, which is easily available to you when the emergency strikes. Given this, at the very initial stages of your ‘personal finance’ journey, I’d advise you to build this emergency corpus.</p>
+<p>The question is, how much money is good enough for the emergency corpus? Different people have different opinions, but I see most of them agree to have an emergency corpus equivalent to 6 months of expense. For example, if your monthly expense is 40K, then the emergency corpus should be at least 2.4L.</p>
+<p>But I don’t subscribe to the 6-month emergency corpus template.</p>
+<p>Each person is different; each family is different. It would help if you sat with your family, go through different scenarios and identify a corpus amount good enough to sail your family through these tough times.</p>
+<p>Anyway, I will make these two assumptions – that you have the basic insurance cover and have built an emergency corpus. With these things taken care of, we will now understand how to build a mutual fund portfolio.</p>
+<h2 id="262--financial-goal"><a class="header" href="#262--financial-goal"><strong>26.2 – Financial Goal</strong></a></h2>
+<p>Imagine a newly married couple. Both the husband and wife are young, say in the late ’20s, and both are working professionals.&nbsp; The couple aspires to buy a house of their own. Their idea of the home is a 2BHK apartment downtown, costing roughly 1.5Cr, and they give themselves a ten-year window to achieve this goal.</p>
+<p>Or think of this situation – A 40-year-old working woman wants to accumulate money to upgrade her car over the next five years. The estimated cost of the car is 55L.</p>
+<p>Or imagine this situation (last one, I promise) – A 21-year-old has just started working for an MNC. Wants to accumulate 20L in 8 years to fund his/her post-graduate degree in the UK.</p>
+<p>These are all examples of a ‘financial goal’. A financial goal has three specific attributes –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>The quantum of funds required</li>
+<li>The estimated time over which these funds need to be accumulated</li>
+<li>The current age of the person</li>
+</ul>
+</li>
+</ul>
+<p>Without these three attributes, a financial goal is incomplete.</p>
+<p>For instance, a young working professional intends to accumulate ‘enough money’ to go to the UK for post-graduate studies in a couple of years down the line, is not a reasonable financial goal.</p>
+<p>With the three random scenarios that I have quoted, you can imagine how diverse each person’s financial aspirations are. No two families or humans will have the same requirement (apart from retirement maybe). Financial goals are extremely diverse and very personal to your situation.</p>
+<p>However diverse the situation is, the good thing is that you eventually have to look at mutual funds to help you solve for the situation, well, at least in most cases.</p>
+<p>Of course, there are other financial instruments, but nothing as versatile as mutual funds (or ETFs).</p>
+<p>Given this, there are two ways in which I can help you understand how to build a mutual fund portfolio to solve for your financial goals –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Consider all sorts of life scenarios, build case studies around it, and stitch together a mutual fund portfolio to solve the given scenarios. You can then look at these scenarios, identify the one closest to your situation, and build a similar portfolio for yourself.</li>
+</ul>
+</li>
+</ul>
+<p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; or</strong></p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Help you understand the different attributes of funds from a portfolio perspective so that you can identify what sort of funds to pick given the situation.</li>
+</ul>
+</li>
+</ul>
+<p>The difference between the two approaches is like this – assume you like savoury dishes, so I give you 20 different dishes to try. You taste each one of these and dishes and finally figure which one to eat fully.</p>
+<p>Alternatively, I familiarize you with ten basic savoury ingredients. Once familiar, you can use these ingredients in the right measure to quickly prepare a savoury dish to satisfy your taste buds.</p>
+<p>I will take the second approach to build a mutual fund portfolio, and I hope this works out better.</p>
+<h2 id="263--mutual-fund-cheat-sheet"><a class="header" href="#263--mutual-fund-cheat-sheet"><strong>26.3 – Mutual Fund cheat sheet</strong></a></h2>
+<p>I’ve prepared this Mutual fund cheat sheet for you. The sheet summarizes all the key attributes of the different mutual funds we have discussed. Please click on the image to enlarge and get a better view.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/12/Image-1_CS.png"><img alt="" class="aligncenter wp-image-9344" height="191" loading="lazy" sizes="(max-width: 744px) 100vw, 744px" src="https://zerodha.com/varsity/wp-content/uploads/2020/12/Image-1_CS-300x77.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/12/Image-1_CS-300x77.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/12/Image-1_CS-1024x261.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2020/12/Image-1_CS-768x196.png 768w, https://zerodha.com/varsity/wp-content/uploads/2020/12/Image-1_CS-1536x392.png 1536w, https://zerodha.com/varsity/wp-content/uploads/2020/12/Image-1_CS.png 1861w" width="744"/></a></p>
+<p>The table is simple, has few basic information –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Fund type</li>
+<li>Category</li>
+<li>The main constituents of the fund</li>
+<li>Expected CAGR – as much as I hate it, I’ve included this 😊</li>
+<li>The minimum holding period – the minimum holding period for the fund if you were to invest in it. Not that you cannot invest in the fund and hold it for lesser than the minimum holding period, it is just that if you do so, recovering from a drawdown could be difficult.</li>
+<li>Financial Goal – The kind of financial goal the fund can be used for, more on this later.</li>
+<li>‘Special remark’ – Things you need to be aware.</li>
+</ul>
+</li>
+</ul>
+<p>I’d suggest you keep this table handy. This table will help you craft a mutual fund portfolio for most of the financial goals.</p>
+<p>Before we proceed further, we need to understand an important aspect of the number of funds one should have in a portfolio.</p>
+<p>I’ve seen investors with 10-12 mutual funds in their portfolio for a single financial goal. Usually, their portfolio will contain 3-4 large-cap fund, another 3-4 mid-cap funds, few random debt funds, and perhaps a hybrid fund tucked in.</p>
+<p>This is a classic example of a messy, directionless, and a pointless portfolio.</p>
+<p>Ideally, you need to have non-overlapping mutual funds to avoid redundancy.</p>
+<p>Let me explain, assume you have the following three large-cap funds in your portfolio –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Axis Bluechip fund</li>
+<li>Mirae Asset Large cap fund</li>
+<li>Canara Rob Blue chip Equity.</li>
+</ul>
+</li>
+</ul>
+<p>All three funds are good, but does that mean all the three funds should belong in your portfolio. &nbsp;Take a look at the top 10 holdings across all the three funds –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/12/Image-2_ct.png"><img alt="" class="aligncenter wp-image-9345" height="322" loading="lazy" sizes="(max-width: 400px) 100vw, 400px" src="https://zerodha.com/varsity/wp-content/uploads/2020/12/Image-2_ct-300x241.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/12/Image-2_ct-300x241.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/12/Image-2_ct.png 415w" width="400"/></a></p>
+<p>As you can see, nearly half the portfolio across all these funds are similar. All funds hold HDFC Bank to the extent of 10%. If you extend this across all the portfolio holdings, I’m sure the common overlap would be a much bigger number. Given this, the performance across these funds also tend to be similar. The economic/market factors that impact these funds will be similar, and the volatility will be similar.</p>
+<p>Hence, as an investor, if you buy multiple funds of the same type across different AMCs, then you need to realize that there is no significant advantage in you doing so.</p>
+<p>Of course, the only argument for having two funds of the same type is&nbsp; AMC diversification, where you split your money across two different AMCs. You can probably do this if you worry that one of the AMCs may fold during the tenure of your investment.</p>
+<p>The better way to do this is to see if you can include funds from different AMC, such as a large-cap fund from HDFC and a mid-cap fund from DSP, where you diversify across AMCs and market capitalizations.</p>
+<p>As an investor, build your portfolio so that the overlap between funds is minimum. Eliminating overlap is very tough; the idea is to ensure its minimum. Otherwise, you just end up paying just to get the same exposure and costs can eat into your returns significantly.</p>
+<h2 id="264--portfolio-by-the-method-of-elimination"><a class="header" href="#264--portfolio-by-the-method-of-elimination"><strong>26.4 – Portfolio, by the method of elimination </strong></a></h2>
+<p>Let us revisit the scenarios we looked at earlier and see how the table can craft a mutual fund portfolio.</p>
+<p><strong>Case 1 </strong>– A newly married couple, aspires to buy an apartment, estimated at 1.5Cr in 10 years. Both of them work, hence can save 30K each, every month.</p>
+<p>We have the following data –</p>
+<ol>
+<li style="list-style-type: none;">
+<ol>
+<li>Savings per month – 30K each</li>
+<li>Target corpus – 1.5Cr</li>
+<li>Time available – 10 Years</li>
+<li>Age – Young can afford to take financial risks in life.</li>
+</ol>
+</li>
+</ol>
+<p>Given this, let us try and arrive at the portfolio by the method of elimination. I find the elimination technique quite powerful; if not for anything, the technique helps us avoid the wrong fund for the given financial goal.</p>
+<p>Alright, with ten years’ time frame, we know that investing in debt is not required, so let us eliminate the debt category.</p>
+<p>When I say debt is not required, I mean not required as the main investment fund. Let me get back to this in a bit. Debt has another role to play here.</p>
+<p>The focus is clearly on Equity as the category. Within Equity as a category, we have a list of schemes available, which we need to start eliminating –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Large &amp; Midcap – may not work, since most of these ‘Large &amp; Midcap funds’ are mid-cap stocks anyway.</li>
+<li>Small-cap funds – These are risky, volatile. Of course, ten years is a good enough period for this fund, but I’d personally avoid given the quantum of volatility involved in these funds.</li>
+<li>Multi cap funds – These are again qazi mid, and small-cap stocks, may as well stick to a straight forward mid-cap fund.</li>
+<li>Focused fund – Concentrated bets. Highly dependent on fund manager skills. If the fund’s investment turns out to be a mistake, the realization may come in a bit too late.</li>
+<li>Thematic funds are sector dependent; if the call on sector goes wrong, the fund will take forever to recover.</li>
+<li>ELSS funds – Useless one needs to save on taxes as well.</li>
+<li>Index funds – While this is a great option, somehow, a strict 10-year period may not do justice for these funds. These funds are best used for hyper long-term financial goals like retirement.</li>
+</ul>
+</li>
+</ul>
+<p>Given the rationale, we can eliminate all the above funds, which leaves us with the following options –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Large-cap fund</li>
+<li>Mid-cap fund</li>
+<li>Value fund</li>
+</ul>
+</li>
+</ul>
+<p>I’d further eliminate the value fund due to the uncertainties involved in unlocking value stocks. Hence, the best option for the couple is to invest in a large-cap and mid-cap stock.</p>
+<p>They both can choose a fund each across both these categories and start their investment journey. Do recall we have discussed how to select an equity mutual fund in the previous chapters.</p>
+<p>The easiest way to invest the funds would be a systematic investment plan (SIP) in the selected mutual funds every month.</p>
+<p>So how do the numbers stack up assuming a CAGR of 10%? Take a look at the calculation table below. Note, this is a not the entire table, it is just a part for you to get the idea –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/12/Image-3_couple.png"><img alt="" class="aligncenter wp-image-9346" height="292" loading="lazy" sizes="(max-width: 515px) 100vw, 515px" src="https://zerodha.com/varsity/wp-content/uploads/2020/12/Image-3_couple-300x170.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/12/Image-3_couple-300x170.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/12/Image-3_couple-768x435.png 768w, https://zerodha.com/varsity/wp-content/uploads/2020/12/Image-3_couple.png 858w" width="515"/></a></p>
+<p>I’ve assumed a CAGR of 10% for both large-cap fund and mid-cap fund, of course, we can argue endlessly on how conservative/aggressive this return percentage is, but it would be a waste of time for both of us.</p>
+<p>As you can see, the couple accumulates 1.21Crs, which is quite close to the target funds over the 10-year window. A bank loan can plug in the deficit (which is not much).</p>
+<p>Now, here is another aspect to consider. What if, as an when you approach the target year, the market starts to fall and you lose the accumulated wealth? This is a possibility; after all, no one can time the market.</p>
+<p>One way to deal with this is to start to shift the corpus funds to a debt fund as and when you start approaching the target year. For example, from the 8<sup>th</sup> year onwards, they can withdraw the accumulated funds and park it in a debt fund. There are many different ways to do this –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Withdrawl can be made on a monthly/quarterly/semi-annual basis.</li>
+<li>The funds withdrawn, can go into an ultra short term fund since we only hold the funds for 3 years.</li>
+</ul>
+</li>
+</ul>
+<p>The idea here is to protect the corpus from a sequence risk, where in the market takes a hit as and when the target year approaches.</p>
+<p>Of course, this is a rather simplified approach, but I’d like to keep it simple and not over complicate it.</p>
+<p>You may ask if this is a ‘fill it, shut it’ approach with no intervention during the investment tenure. Yes, this is largely a fill it and shut it approach. But once in a way (like once a year), one should track the fund’s performance and take a call on continuity.</p>
+<p>Apart from that, you need to keep these two points in mind –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Use conservative estimates when dealing with returns in personal finance. If in the end, the returns turn out better, then it is good for you. Consider yourself lucky.</li>
+<li>You need to understand that the equity returns are lumpy and not smooth and steady like a bank FD returns. You may have no returns for a long time, but the bulk of the returns will come in a short burst of times. Unfortunately, no one can time this short burst, hence the need to SIP and give it adequate time.</li>
+</ul>
+</li>
+</ul>
+<p>Let us look at another case and see how elimination would help us build a Mutual fund portfolio.</p>
+<p><strong>Case 2</strong> – A 40-year-old person wants to save 25L over the next eight years for the kids’ overseas post-graduate degree. Monthly savings available for this goal is Rs.20,000/-</p>
+<p>Since the period is less than ten years, there is no point looking at 100% equity investment. The plan would largely involve debt, maybe a small equity portion.</p>
+<p>Ok, to begin with, let us keep Equity aside for now and look at the rest of the funds.</p>
+<p>Hybrid funds like the Arbitrage fund may be a decent option, but something like a balanced fund may not be.</p>
+<p>Debt funds are a good option –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Liquid funds and overnight funds won’t fit the bill since we are talking about eight-plus years</li>
+<li>All funds with Macaulay duration of fewer than two years can be ignored since these are relatively shorter maturity funds.</li>
+<li>Money market funds too can be ignored since the investor can take on a slightly higher degree of risk</li>
+<li>A short-duration fund is an option</li>
+<li>Credit risk is risky so that they can be avoided.</li>
+<li>Corporate bonds fund is an option</li>
+<li>GILTS won’t fit the bill either.</li>
+</ul>
+</li>
+</ul>
+<p>This leaves us with three good options –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Arbitrage Funds</li>
+<li>Short duration funds</li>
+<li>Corporate bond funds.</li>
+</ul>
+</li>
+</ul>
+<p>Investment in corporate bond fund requires a greater degree of involvement from the investor. If one decides to invest in it, then a regular review the scheme’s portfolio is mandatory. If this is not possible, then the only two options to invest in the short duration fund and the arbitrage fund. Probably the person can split the investment equally in both these funds.</p>
+<p>One thing to note, just because the investment is in a short duration fund and arbitrage fund, it does not mean that a period review of the fund’s portfolio is not necessary. Yes, the short duration fund may not need as much scrutiny as a corporate bond fund, but it does require you to look at, at least once a quarter. The arbitrage fund too as the portfolio contains a debt portion.</p>
+<p>I’ll spare you the maths here, but if you assume a 7% CAGR, the target funds can be accumulated over the given timeframe.</p>
+<p>Since this is anyway a longish tenure, i.e. 8 years, one can also consider a little equity exposure. Maybe 20-25% of the monthly SIP can go into a large-cap fund.</p>
+<p>Let us take up one last case – You’ve received a lump sum amount, say Rs.50L from the sale of an asset, maybe real estate. You want to use this amount and start a retirement corpus. However, you are worried about the current state of markets and fear that the current market level is unstainable.</p>
+<p>Retirement is a hyper long-term financial goal. By hyper long term, I mean 20 plus years but may vary based on your current age.</p>
+<p>Here is a plan assuming you are not comfortable investing the lump sum right away.</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Invest the lump sum in a fund which offers capital protection (to the best possible extent)</li>
+<li>Withdraw chunks of it every month and invest that into the designated fund for retirement</li>
+<li>Continue doing do so till you deploy the entire capital</li>
+</ul>
+</li>
+</ul>
+<p>In this case, you can decide to invest 50L over 3/6/12 months, based on your comfort.</p>
+<p>Assuming, six months, then every month you will invest –</p>
+<p>5,000,000/6</p>
+<p>= 8.3L.</p>
+<p>The question is, what is the choice of funds for such a plan of action.</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>We need a <strong>carrier fund</strong>, which will hold the capital, provide adequate capital protection over the next six months.</li>
+<li>The only funds which fulfil the purpose of the carrier funds are – the overnight or liquid fund.</li>
+<li>Identify a target fund for retirement. Recall, retirement is a hyper long-term financial goal so the funds you pick for this purpose should fit this bill</li>
+<li>The best funds for retirement (in my opinion) are Index funds, large-cap funds, or just a balanced fund.</li>
+</ul>
+</li>
+</ul>
+<p>So the set up here would look like this –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Park the entire 50L in a liquid fund to redeem the entire amount over six months</li>
+<li>Redeem 8.3L every month from the liquid fund over the next six months</li>
+<li>Invest the funds redeemed funds into the retirement fund – say a Balanced Fund and a Midcap fund. Or an Index fund and a mid-cap fund.</li>
+<li>If you are choosing two funds, the funds can be split equally.</li>
+</ul>
+</li>
+</ul>
+<p>Do remember, once you invest in these funds, this is largely on autopilot mode with no frequent intervention required from your end. However, you may need to look at the following –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Yearly review of performance – ensure your fund is not lagging its peers and behaving more volatile compared to the rest of the category</li>
+<li>You may want to rebalance based on your risk appetite, wherein you book some profits from the equity funds and deploy the same in debt funds.</li>
+</ul>
+</li>
+</ul>
+<p>Apart from the above two, you are fairly set. Please don’t attempt anything else, and let the market do what it is supposed to do.</p>
+<p>I’ll stop the case studies here since it is impossible to cover all sorts of cases.&nbsp; But I hope this chapter has given you a good starting point for designing your mutual fund portfolio.</p>
+<p>I’d love to dig deeper on this topic of goal-based investing, but at this stage, I’m not sure if I will take that route. If you do want me to do that, share your comments below.</p>
+<p>Over the next 2 or 3 chapters, I’d like to discuss the Sovereign gold bonds (SGB), NPS, and perhaps a bit about asset allocation, and wrap up this module.</p>
+<h3 id="key-takeaways-from-this-chapter"><a class="header" href="#key-takeaways-from-this-chapter"><strong>Key takeaways from this chapter</strong></a></h3>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>The first step in personal finance is to ensure you have health and term insurance</li>
+<li>2<sup>nd</sup> most important aspect is to ensure you have an emergency corpus</li>
+<li>The financial goal is defined by the amount of corpus required and the time frame available to accumulate the corpus</li>
+<li>One of the easier ways to build a mutual fund portfolio is by using the method of elimination</li>
+<li>Always use a conservative approach and tone down your return expectations</li>
+<li>Try and avoid having multiple funds of the same subcategory, have a minimum non-overlapping portfolio instead</li>
+<li>A common goal for all us to have a retirement corpus</li>
+<li>Once a portfolio is set, a yearly review of the funds is more than sufficient</li>
+<li>Do not over complicate mutual fund portfolio construct</li>
+</ul>
+</li>
+</ul>
+<div class="clear"> </div>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../mds/Personal+Finance+-+Mutual+Funds/25.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../mds/Personal+Finance+-+Mutual+Funds/27.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../mds/Personal+Finance+-+Mutual+Funds/25.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../mds/Personal+Finance+-+Mutual+Funds/27.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>

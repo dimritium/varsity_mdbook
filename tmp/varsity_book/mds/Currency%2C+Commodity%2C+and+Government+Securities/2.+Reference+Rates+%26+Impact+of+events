@@ -1,0 +1,112 @@
+<div class="post">
+<h2>2.1 – Dual View</h2>
+<p>Think about a stock, Infosys for example, when you buy or sell Infosys – your view on the stock is straightforward – you are either bullish or bearish on Infosys. Therefore, you buy or sell Infosys. Now think about a currency pair – say USD INR, when you buy or sell USD INR, whether you know or not, you have a dual view on the pair. For instance, when you buy USD INR; it implies you are bullish on the US Dollar and bearish on the Indian currency.</p>
+<p>Why is it this way you may ask?</p>
+<p>Well, the value of a currency is always quoted against another. Recall from the previous chapter – the currency pair is quoted as –</p>
+<p><strong>Base Currency / Quotation Currency = Value</strong></p>
+<p>In other words, this format tells us how many units of quotation currency one can buy for 1 unit of the base currency.</p>
+<p>If you buy a currency pair, clearly it implies that you expect the value of the pair to go up. Consider this example – USD INR = 65, one would buy the pair, hoping for the price of the pair to hit 68.</p>
+<p>Now if the price of the pair is expected to increase, then it implies that in the future 1 unit of base currency can buy more units of quotation currency, i.e. 1 USD to buy more INR.</p>
+<p><img alt="M8C2-Cartoon" class="aligncenter size-full wp-image-3672" height="299" sizes="(max-width: 600px) 100vw, 600px" src="http://zerodha.com/varsity/wp-content/uploads/2016/06/M8C2-Cartoon.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/06/M8C2-Cartoon.png 600w, https://zerodha.com/varsity/wp-content/uploads/2016/06/M8C2-Cartoon-300x150.png 300w" width="600"/></p>
+<p>In other words, if the value of the pair goes up, then the power of the Base currency goes up while at the same time, the quotation currency weakens. This translates to you being bullish on the Base currency and bearish on the quotation currency at the same time.</p>
+<p>Similarly, if you sell the USD INR pair, it implies that you anticipate the Base Currency to buy a lesser amount of quotation currency. This translates to you being bearish on base currency and bullish on the quotation currency.</p>
+<p>Given this, “strengthening/weakening of a currency” refers to the following situations –</p>
+<ol>
+<li>Base currency strengthens when it can <strong>buy more units of quotation currency</strong>. For example, USD INR moves from 67 to 68; it means the base currency (USD) strengths and the quotation currency (INR) weakens.</li>
+<li>Quotation currency strengths when the base currency <strong>buys lesser units of quotation currency. </strong>For example, USD INR moves from 66 to 65; it means the base currency (USD) weakens and the quotation currency (INR) strengthens.</li>
+</ol>
+<p>Note that strengthening and weakening of a currency are equivalent to a currency appreciating and depreciating. These terminologies are often used interchangeably.</p>
+<p>Before we proceed, here is something you need to know. Just like a stock, the currency (and the currency pair) has a ‘two-way quote’. The two-way quote enables one to identify the rate at which one can buy and sell the currency (and currency pair).</p>
+<p>Don’t get thinking on the ‘two-way quote’, it simply refers to ‘Bid and Ask’ rates J, but we do need to touch upon this as its vital to know how the two-way quote works.</p>
+<p>Have a look at the image below –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/06/Image-1_spot-2-way-quote.png"><img alt="Image 1_spot 2 way quote" class="aligncenter size-full wp-image-3673" height="420" loading="lazy" sizes="(max-width: 680px) 100vw, 680px" src="http://zerodha.com/varsity/wp-content/uploads/2016/06/Image-1_spot-2-way-quote.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/06/Image-1_spot-2-way-quote.png 680w, https://zerodha.com/varsity/wp-content/uploads/2016/06/Image-1_spot-2-way-quote-300x185.png 300w" width="680"/></a></p>
+<p>This is a snapshot of the currency spot rates, as quoted on a Forex trading site. For the sake of this discussion, I’ve highlighted the two-way quote for EUR USD and GBP USD. The quote gives you the rate at which you can buy and sell the currency pair.</p>
+<p>For example, if you want to buy the EUR/USD – you will have to buy the pair at the ‘Ask’ price, i.e. 1.1270. When you buy the pair, technically you are long EUR and short USD. Likewise, if you want to sell the EUR/USD, then you would do so at 1.1269 (Bid price), and here you would be short EUR and long USD (remember the dual view concept).</p>
+<p>The pairs are sometimes quoted in a short form, which is actually quite a popular way to quote currencies internationally. The shortened two-way quote would be something like this for the EUR/USD pair –</p>
+<p><strong style="background-color: #d1c36f;">EUR/USD – 1.1269/70.</strong></p>
+<p>If you notice in the shortened version, the ‘bid’ price is stated in full, but only the last two digits of ‘ask’ is stated.</p>
+<p>Further, in the Forex lingo, digits are referred to as ‘<strong>pips</strong>’. Therefore, if the EURUSD moves from 1.1270 to 1.1272, then it means that the pair has moved 2 pips.</p>
+<h2>2.2 – Rate fixing and conversion path</h2>
+<p>As of today, the USD/INR rate stands at 67.0737. This rate is fixed by the RBI daily, and is called RBI’s <strong>‘Reference Rate’</strong>; in fact, RBI publishes these rates daily on their website. The Reference rate acts as a crucial input for the currency futures trading as all settlements are based on this Reference rate.</p>
+<p>Have a look at this –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/06/Image-2_rbi-ref-rate.png"><img alt="Image 2_rbi ref rate" class="aligncenter size-full wp-image-3674" height="541" loading="lazy" sizes="(max-width: 317px) 100vw, 317px" src="http://zerodha.com/varsity/wp-content/uploads/2016/06/Image-2_rbi-ref-rate.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/06/Image-2_rbi-ref-rate.png 317w, https://zerodha.com/varsity/wp-content/uploads/2016/06/Image-2_rbi-ref-rate-176x300.png 176w" width="317"/></a></p>
+<p>The above is a snapshot from the RBI’s site showing the reference rate for 14<sup>th</sup> June 2016. Do note; these are <strong>spot rates </strong>and not future rates. Future rates are as seen on NSE’s website.</p>
+<p>Anyway, the obvious question is – how does the RBI arrive at this rate?</p>
+<p>Well, nothing hi-tech here, RBI follows the age-old method of polling to arrive at the spot rate! <strong><a href="https://rbidocs.rbi.org.in/rdocs/PressRelease/PDFs/IEPR276CDR0814.pdf">Click here</a></strong> to see the RBI circular that explains the rate-fixing procedure, but if you are in no mood to read the circular, you could read the following points that summarize the procedure.</p>
+<ol>
+<li>RBI has identified a list of banks based on their market share in the foreign exchange market. RBI calls them the ‘contributing banks’</li>
+<li>Every day between 11:30 AM and 12:30 PM RBI calls a set of banks (randomly selected) listed under the contributing banks and ask them to give a two-way quote on USD INR</li>
+<li>RBI collates these rates and averages out the rate based on the bid and ask</li>
+<li>The average rate is set as the USD INR rate for the day.</li>
+<li>The same process is repeated every day except for weekends and bank holidays.</li>
+</ol>
+<p>It’s as simple as that!</p>
+<p>The procedure is quite simple; however, RBI polls only for the USD INR rates. For the other major rates, i.e. EUR INR, GBP INR, JPY INR RBI adopts a technique called ‘Crossing’ also referred to as the cross rate mechanism.</p>
+<p>While crossing, the direct rate of one currency is not available concerning another. For example, the direct rate of Euro concerning INR is not readily available; one needs to cross these rates with a common denominator to arrive at the rates.</p>
+<p>Let me take the example of deriving the EUR INR rate by crossing, keeping USD as the common denominator. Hopefully, this will give you better clarity on the crossing technique.</p>
+<p>Let us begin with getting the spot rate for USD INR, as we can see from the snapshot above, the USD INR spot is –</p>
+<p>USD INR – 67.0737</p>
+<p>This is the spot rate; the two-way quote for this would be something like this –</p>
+<p>USD INR – 67.0730 / 67.0740</p>
+<p>This means if I have to buy 1 USD, I need to pay INR 67.0740 and if I have to sell 1 USD, I will receive INR 67.0730.</p>
+<p>Let’s keep this information aside. We now focus on EUR USD spot rates from the international markets.</p>
+<p>The two-way quote from Bloomberg suggests –</p>
+<p>EUR USD – 1.1134/40</p>
+<p>This means I need USD 1.1140 (Ask price) to buy 1 Euro. In other words, the cost of 1 Euro in terms of the US Dollar is 1.1140. Hence if I convert the price of 1.1140 USD to INR, then I will have enough INR to buy 1 Euro, and by doing so, I will also get the EUR/INR rate.</p>
+<p>Now going back to the USD INR rate –</p>
+<p>1 USD = Rs.67.0740</p>
+<p>1.1140 USD = How many Rupees?</p>
+<p>= 67.0740 * 1.1140</p>
+<p>= 74.72044</p>
+<p>Hence to buy 1 Euro I need 74.72400 INR, or <strong>EUR INR = 74.72400</strong></p>
+<p>Notice how the USD acts as a pivot in the crossing technique.</p>
+<p>Now here is a simple task for you – using the crossing technique, we have calculated the ASK price of the EUR INR pair, can you extend this logic to calculate the Bid price for the EUR INR pair? Feel free to post your answers in the comments section below.</p>
+<p>If you think about this, it’s now clear that the reference rates and the cross rates change every day based the sentiments of the contributing banks. This leads us to a bigger question – what influences the sentiment of the contributing banks?</p>
+<p>The answer is quite simple – domestic and international events.</p>
+<h2>2.3 – Events that matter</h2>
+<p>Think about an event that can potentially change the sentiment on a stock. Quarterly result of the company is one such event. Estimating the change in sentiment based on this event is quite straightforward. If the quarterly result is good, the sentiment is positive; therefore, the stock price is expected to go up. Alternatively, if the quarterly result is not great, the sentiment is hurt, and therefore the stock price is expected to go down. The point here is, there is some linearity between the event and the expected outcome.</p>
+<p>However, when it comes to currency pairs, there is no such linearity, which makes it a herculean task to assess the impact of events, a.k.a. fundamentals on currencies. The complexity mainly stems from the fact that currencies are quoted as pairs. While some factors lead to the strengthening of a pair, an event could occur at the same time that weakens the pair.</p>
+<p>Let me give you an example to illustrate this – imagine two economic events running in parallel. <strong>Event 1</strong> –&nbsp; &nbsp;India receives a continuous inflow of Foreign Direct Investments (FDI) geared towards long term investments. Clearly, this is a big positive for the economy, and therefore it tends to strengthen the INR. <strong>Event 2</strong> – There is an uptick in the US economy (or a fear of a crash in commodities) leading to an appreciation in the US Dollar.</p>
+<p>Given these two events occur in parallel – which direction will the USD INR currency pair move? Well, the answer to this is not straightforward. Eventually, the currency pair will take cues from the more dominant of the two factors and head in that direction, but until this happens, the pair invariably exhibits volatile behaviour. Hence, to successfully trade currencies, it becomes essential to track world events and assess their impact on the currency pair in question.</p>
+<p>Here are few such events and data that you should track –</p>
+<p><strong style="background-color: #d1c36f;">Import/Export Data</strong> – These numbers are highly significant, especially for a country like India, whose economy is susceptible to trade deficits. India exports goods and services such as rice and software and imports commodities such as crude oil and bullion. &nbsp;In general, an increase in exports tends to strong domestic currency, and an increase in imports tends to weaken the domestic currency. Why do you may ask?</p>
+<p>When imports are made (crude oil, for example), the purchase has to be made in the International market, which requires one to pay in USD. Therefore one has to sell INR and buy USD to facilitate this purchase, which in turn causes a demand for USD and hence USD strengths.</p>
+<p>We can extend the same logic to exports. When we export goods, we receive USD; we sell the USD received and convert to INR. This causes the INR to strength.</p>
+<p><strong style="background-color: #d1c36f;">The Trade Deficit</strong> – the excess of imports over exports is a key factor to track as it influences the direction in which the currency trades. In general, narrowing the trade deficit is positive for the domestic currency. The trade deficit is also referred to as the ‘Current account deficit’. I’d suggest you read this <strong><a href="http://in.reuters.com/article/india-economy-trade-deficit-idINKCN0Y41L7">news piece</a></strong>&nbsp;to reinforce your understanding of this topic.</p>
+<p><strong style="background-color: #d1c36f;">Interest Rates</strong><strong> – </strong>Typically, investors borrow money from countries where the interest rate is low and invest in countries where the interest rates are high and profit from the interest rate difference. This is called the ‘<strong>carry trade’</strong>. Clearly, the country offering higher interest attracts a lot more foreign investment into the country. Naturally, this leads to the strengthening of the domestic currency. This clearly implies that the ‘Interest rate’ is one big number of currency traders watch out for.</p>
+<p>The monetary policy review conducted by the central banks (RBI in India, Federal Reserves in the US, and ECB in the Euro region) reviews the interest rates of the country. This is the reason why there is so much attention paid for the policy review. Besides tracking the actual change in numbers in the on-going review, the market participants look for cues regarding the policy stance. The monetary stance helps the participants understand the future course of action concerning the interest rate.</p>
+<p><strong style="background-color: #d1c36f;">Dovish</strong><strong> – </strong>Dovish is a term used to describe the central bank’s stance wherein they are likely to lower the interest rate in the future. Remember, lower interest rate weakens the domestic currency. Here is a new headline talking about the relationship between a dovish stance and the currency.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/06/Image-3_dovish.png"><img alt="Image 3_dovish" class="aligncenter size-full wp-image-3675" height="82" loading="lazy" sizes="(max-width: 626px) 100vw, 626px" src="http://zerodha.com/varsity/wp-content/uploads/2016/06/Image-3_dovish.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/06/Image-3_dovish.png 626w, https://zerodha.com/varsity/wp-content/uploads/2016/06/Image-3_dovish-300x39.png 300w" width="626"/></a></p>
+<p><strong><a href="https://next.ft.com/content/3e256628-32a8-11e6-ad39-3fee5ffe5b5b">Click&nbsp;here</a></strong> to see the article.</p>
+<p><strong style="background-color: #d1c36f;">Hawkish</strong><strong> – </strong>Hawkish is a term used to describe the central bank’s stance wherein they are likely to increase the interest rate in the future. Remember, higher interest rates attract foreign investments to the country and therefore strengthens the domestic currency.</p>
+<p>And here is another new headline which talks about hawkish stance.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/06/Image-4_hawkish.png"><img alt="Image 4_hawkish" class="aligncenter size-full wp-image-3676" height="131" loading="lazy" sizes="(max-width: 1252px) 100vw, 1252px" src="http://zerodha.com/varsity/wp-content/uploads/2016/06/Image-4_hawkish.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/06/Image-4_hawkish.png 1252w, https://zerodha.com/varsity/wp-content/uploads/2016/06/Image-4_hawkish-300x31.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/06/Image-4_hawkish-768x80.png 768w, https://zerodha.com/varsity/wp-content/uploads/2016/06/Image-4_hawkish-1024x107.png 1024w" width="1252"/></a></p>
+<p><strong style="background-color: #d1c36f;">Inflation</strong><strong> – </strong>Inflation, as you may know, is the rate at which the prices of basic goods and services increase over time. If inflation increases, then it means the cost of necessities is increasing, therefore this affects the day to day living of the common man. Given this, the central bank strives hard to keep inflation in control. The link between inflation and currency movement is a bit tricky.</p>
+<p>One of the direct mechanisms to curb inflation is by tweaking the interest rates. If the inflation is perceived as high, then the central bank is likely to take a hawkish stance and increase the interest rates.</p>
+<p>What do you think is the logic here?</p>
+<p>Well, easy money in the hands-on consumers and corporates increases spending; when spending increase merchants smell an opportunity to make higher margins, and therefore this leads to a rapid increase in prices, and thus the inflation increases. When inflation increases, the central banks tend to curb the spending by cutting access to easy money. And how do they do that? Well, they increase interest rates!</p>
+<p>Therefore, when inflation is on the rise, expect the central banks to take a hawkish stance and increase the interest rates when interest rates increase, the domestic currency strengths!</p>
+<p>Therefore, as I mentioned earlier, the relationship between interest rates and currencies is a little tricky. So traders eagerly track inflation data to figure out what the central banks are likely to do and accordingly take positions on the currency pair.</p>
+<p>Remember this – if the inflation is high, expect a hawkish stance by the central government and therefore expect the domestic currency to strengthen. Likewise, if inflation is low, expect a dovish stance (as the central bankers want to encourage spending). Therefore the interest rates are likely to come down. This leads to domestic currency weakening.</p>
+<p><strong style="background-color: #d1c36f;">Consumer Price Index (CPI)</strong> – The CPI is a time-series data, averaged out to capture the prices of basic goods and services. Hence the CPI is a measure for inflation. A rising CPI means inflation is increasing, and vice versa. For the most accurate Indian CPI data and information check this <strong><a href="http://mospi.nic.in/Mospi_New/site/PressRelease.aspx">website</a>.</strong></p>
+<p><strong style="background-color: #d1c36f;">Gross Domestic Product (GDP) –</strong> The GDP of a country represents the total Rupee value (for Indian GDP of course) of all the goods and services produced in the country for a given year. <strong>&nbsp;</strong>As you can imagine, the GDP would be a massive number, and it does not make sense to repeat the GDP number while making estimates or during conversations. Therefore one always refers to the GDP as a growth rate. For example, if the GDP of a country is 7.1%, it means that the GPD number is growing at a rate of 7.1%.</p>
+<p>Higher the GDP growth rate, higher is the investor confidence in that country, and therefore the stronger the countries domestic currency.</p>
+<p>The list of events that matter while trading currencies is virtually endless. At some point, you will realize that every piece of data you can look at is interconnected with one another. Honestly, it would help if you had not known the unknowns of each event the way an economist would. Understanding the cause and effect relationship is good enough. I’ve listed some of the key events/data points that matter while trading currencies. I guess this would serve as a good start If nothing more.</p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>The base currency is said to strengthen/appreciate against the quotation currency when it can buy more units of quotation currency.</li>
+<li>The base currency is said to weaken/depreciate against the quotation currency when it buys lesser units of the quotation currency.</li>
+<li>When you go long on a currency pair, you are essentially going long on the base currency and short on the quotation currency.</li>
+<li>When you go short on a currency pair, you are essentially going short on the base currency and long on the quotation currency.</li>
+<li>The RBI sets the reference rate of USD INR daily by conducting a poll; the ‘contributing banks’ participate in this poll.</li>
+<li>The reference rates for other currency pairs are derived by crossing technique.</li>
+<li>Understanding events and its impact on currencies are complicated, simply because of the currency is quoted in pairs and impact on the pair could be similar.</li>
+<li>Eventually, the more dominating event will set the direction for the pair.</li>
+<li>Countries with higher interest rates tend to have stringer currencies and vice versa.</li>
+<li>Lower the trade deficit of the country; stronger is the country’s currency.</li>
+<li>Higher inflation leads to the strengthening of currency and vice versa.</li>
+<li>Knowing the cause and effect of events on currencies helps while trading currencies.</li>
+</ol>
+<div class="clear"> </div>
+</div>

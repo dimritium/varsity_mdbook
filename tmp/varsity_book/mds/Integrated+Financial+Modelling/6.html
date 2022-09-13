@@ -1,0 +1,450 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>6. Revenue model - Varsity mdBook</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><div><strong aria-hidden="true">1.</strong> Introduction to Stock Markets</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/1.html"><strong aria-hidden="true">1.1.</strong> 1. The Need to Invest</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/2.html"><strong aria-hidden="true">1.2.</strong> 2. Regulators</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/3.html"><strong aria-hidden="true">1.3.</strong> 3. Financial Intermediaries</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/4.html"><strong aria-hidden="true">1.4.</strong> 4. The IPO Markets – Part 1</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/5.html"><strong aria-hidden="true">1.5.</strong> 5. The IPO Markets – Part 2</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/6.html"><strong aria-hidden="true">1.6.</strong> 6. The Stock Markets</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/7.html"><strong aria-hidden="true">1.7.</strong> 7. The Stock Markets Index</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/8.html"><strong aria-hidden="true">1.8.</strong> 8. Commonly Used Jargons</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/9.html"><strong aria-hidden="true">1.9.</strong> 9. The Trading Terminal</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/10.html"><strong aria-hidden="true">1.10.</strong> 10. Clearing and Settlement Process</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/11.html"><strong aria-hidden="true">1.11.</strong> 11. Five Corporate Actions and Its Impact on Stock Prices</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/12.html"><strong aria-hidden="true">1.12.</strong> 12. Key Events and Their Impact on Markets</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/13.html"><strong aria-hidden="true">1.13.</strong> 13. Getting started!</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/14.html"><strong aria-hidden="true">1.14.</strong> 14. Supplementary note – Rights, OFS, FPO</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/15.html"><strong aria-hidden="true">1.15.</strong> 15. Supplementary note – The 20 market depth or level 3 data</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Technical Analysis</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/1.html"><strong aria-hidden="true">2.1.</strong> 1. Background</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/2.html"><strong aria-hidden="true">2.2.</strong> 2. Introducing Technical Analysis</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/3.html"><strong aria-hidden="true">2.3.</strong> 3. The Chart Types</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/4.html"><strong aria-hidden="true">2.4.</strong> 4. Getting Started with Candlesticks</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/5.html"><strong aria-hidden="true">2.5.</strong> 5. Single Candlestick patterns (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/6.html"><strong aria-hidden="true">2.6.</strong> 6. Single Candlestick patterns (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/7.html"><strong aria-hidden="true">2.7.</strong> 7. Single Candlestick patterns (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/8.html"><strong aria-hidden="true">2.8.</strong> 8. Multiple candlestick patterns (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/9.html"><strong aria-hidden="true">2.9.</strong> 9. Multiple Candlestick Patterns (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/10.html"><strong aria-hidden="true">2.10.</strong> 10. Multiple Candlestick Patterns (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/11.html"><strong aria-hidden="true">2.11.</strong> 11. The Support and Resistance</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/12.html"><strong aria-hidden="true">2.12.</strong> 12. Volumes</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/13.html"><strong aria-hidden="true">2.13.</strong> 13. Moving Averages</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/14.html"><strong aria-hidden="true">2.14.</strong> 14. Indicators (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/15.html"><strong aria-hidden="true">2.15.</strong> 15. Indicators (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/16.html"><strong aria-hidden="true">2.16.</strong> 16. The Fibonacci Retracements</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/17.html"><strong aria-hidden="true">2.17.</strong> 17. The Dow Theory (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/18.html"><strong aria-hidden="true">2.18.</strong> 18. The Dow Theory (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/19.html"><strong aria-hidden="true">2.19.</strong> 19. The Finale – Helping you get started</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/20.html"><strong aria-hidden="true">2.20.</strong> 20. Other indicators</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/21.html"><strong aria-hidden="true">2.21.</strong> 21. Interesting features on TradingView</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/22.html"><strong aria-hidden="true">2.22.</strong> 22. The Central Pivot Range</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Fundamental Analysis</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/1.html"><strong aria-hidden="true">3.1.</strong> 1. Introduction to Fundamental Analysis</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/2.html"><strong aria-hidden="true">3.2.</strong> 2. Mindset of an Investor</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/3.html"><strong aria-hidden="true">3.3.</strong> 3. How to Read the Annual Report of a Company</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/4.html"><strong aria-hidden="true">3.4.</strong> 4. Understanding the P&L Statement (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/5.html"><strong aria-hidden="true">3.5.</strong> 5. Understanding P&L Statement (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/6.html"><strong aria-hidden="true">3.6.</strong> 6. Understanding Balance Sheet Statement (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/7.html"><strong aria-hidden="true">3.7.</strong> 7. Understanding the Balance Sheet Statement (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/8.html"><strong aria-hidden="true">3.8.</strong> 8. The Cash Flow statement</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/9.html"><strong aria-hidden="true">3.9.</strong> 9. The Financial Ratio Analysis (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/10.html"><strong aria-hidden="true">3.10.</strong> 10. The Financial Ratio Analysis (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/11.html"><strong aria-hidden="true">3.11.</strong> 11. The Financial Ratio Analysis (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/12.html"><strong aria-hidden="true">3.12.</strong> 12. The Investment Due Diligence</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/13.html"><strong aria-hidden="true">3.13.</strong> 13. Equity Research (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/14.html"><strong aria-hidden="true">3.14.</strong> 14. DCF Primer</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/15.html"><strong aria-hidden="true">3.15.</strong> 15. Equity Research (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/16.html"><strong aria-hidden="true">3.16.</strong> 16. The Finale</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Futures Trading</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/1.html"><strong aria-hidden="true">4.1.</strong> 1. Background – Forwards Market</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/2.html"><strong aria-hidden="true">4.2.</strong> 2. Introducing Futures Contract</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/3.html"><strong aria-hidden="true">4.3.</strong> 3. The Futures Trade</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/4.html"><strong aria-hidden="true">4.4.</strong> 4. Leverage & Payoff</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/5.html"><strong aria-hidden="true">4.5.</strong> 5. Margin & M2M</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/6.html"><strong aria-hidden="true">4.6.</strong> 6. Margin Calculator (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/7.html"><strong aria-hidden="true">4.7.</strong> 7. Margin Calculator (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/8.html"><strong aria-hidden="true">4.8.</strong> 8. All about Shorting</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/9.html"><strong aria-hidden="true">4.9.</strong> 9. The Nifty Futures</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/10.html"><strong aria-hidden="true">4.10.</strong> 10. The Futures Pricing</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/11.html"><strong aria-hidden="true">4.11.</strong> 11. Hedging with Futures</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/12.html"><strong aria-hidden="true">4.12.</strong> 12. Open Interest</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/13.html"><strong aria-hidden="true">4.13.</strong> 13. Quick Note on Physical Settlement</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> Options Theory for Professional Trading</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/1.html"><strong aria-hidden="true">5.1.</strong> 1. Call Option Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/2.html"><strong aria-hidden="true">5.2.</strong> 2. Basic Option Jargons</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/3.html"><strong aria-hidden="true">5.3.</strong> 3. Buying a Call Option</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/4.html"><strong aria-hidden="true">5.4.</strong> 4. Selling/Writing a Call Option</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/5.html"><strong aria-hidden="true">5.5.</strong> 5. The Put Option Buying</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/6.html"><strong aria-hidden="true">5.6.</strong> 6. The Put Option selling</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/7.html"><strong aria-hidden="true">5.7.</strong> 7. Summarizing Call & Put Options</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/8.html"><strong aria-hidden="true">5.8.</strong> 8. Moneyness of an Option Contract</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/9.html"><strong aria-hidden="true">5.9.</strong> 9. The Option Greeks (Delta) Part 1</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/10.html"><strong aria-hidden="true">5.10.</strong> 10. Delta (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/11.html"><strong aria-hidden="true">5.11.</strong> 11. Delta (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/12.html"><strong aria-hidden="true">5.12.</strong> 12. Gamma (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/13.html"><strong aria-hidden="true">5.13.</strong> 13. Gamma (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/14.html"><strong aria-hidden="true">5.14.</strong> 14. Theta</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/15.html"><strong aria-hidden="true">5.15.</strong> 15. Volatility Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/16.html"><strong aria-hidden="true">5.16.</strong> 16. Volatility Calculation (Historical)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/17.html"><strong aria-hidden="true">5.17.</strong> 17. Volatility & Normal Distribution</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/18.html"><strong aria-hidden="true">5.18.</strong> 18. Volatility Applications</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/19.html"><strong aria-hidden="true">5.19.</strong> 19. Vega</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/20.html"><strong aria-hidden="true">5.20.</strong> 20. Greek Interactions</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/21.html"><strong aria-hidden="true">5.21.</strong> 21. Greek Calculator</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/22.html"><strong aria-hidden="true">5.22.</strong> 22. Re-introducing Call & Put Options</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/23.html"><strong aria-hidden="true">5.23.</strong> 23. Case studies – wrapping it all up!</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/24.html"><strong aria-hidden="true">5.24.</strong> 24. Quick note on Physical Settlement</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/25.html"><strong aria-hidden="true">5.25.</strong> 25. Options M2M and P&L calculation</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> Option Strategies</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/1.html"><strong aria-hidden="true">6.1.</strong> 1. Orientation</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/2.html"><strong aria-hidden="true">6.2.</strong> 2. Bull Call Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/3.html"><strong aria-hidden="true">6.3.</strong> 3. Bull Put Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/4.html"><strong aria-hidden="true">6.4.</strong> 4. Call Ratio Back Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/5.html"><strong aria-hidden="true">6.5.</strong> 5. Bear Call Ladder</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/6.html"><strong aria-hidden="true">6.6.</strong> 6. Synthetic Long & Arbitrage</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/7.html"><strong aria-hidden="true">6.7.</strong> 7. Bear Put Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/8.html"><strong aria-hidden="true">6.8.</strong> 8. Bear Call Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/9.html"><strong aria-hidden="true">6.9.</strong> 9. Put Ratio Back spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/10.html"><strong aria-hidden="true">6.10.</strong> 10. The Long Straddle</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/11.html"><strong aria-hidden="true">6.11.</strong> 11. The Short Straddle</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/12.html"><strong aria-hidden="true">6.12.</strong> 12. The Long & Short Strangle</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/13.html"><strong aria-hidden="true">6.13.</strong> 13. Max Pain & PCR Ratio</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/14.html"><strong aria-hidden="true">6.14.</strong> 14. Iron Condor</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> Markets and Taxation</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/1.html"><strong aria-hidden="true">7.1.</strong> 1. Introduction (Setting the Context)</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/2.html"><strong aria-hidden="true">7.2.</strong> 2. Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/3.html"><strong aria-hidden="true">7.3.</strong> 3. Classifying Your Market Activity</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/4.html"><strong aria-hidden="true">7.4.</strong> 4. Taxation for Investors</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/5.html"><strong aria-hidden="true">7.5.</strong> 5. Taxation for Traders</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/6.html"><strong aria-hidden="true">7.6.</strong> 6. Turnover, Balance Sheet, and P&L</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/7.html"><strong aria-hidden="true">7.7.</strong> 7. ITR Forms (The Finale)</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> Currency, Commodity, and Government Securities</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/1.html"><strong aria-hidden="true">8.1.</strong> 1. Currency Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/2.html"><strong aria-hidden="true">8.2.</strong> 2. Reference Rates & Impact of events</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/3.html"><strong aria-hidden="true">8.3.</strong> 3. Impact of events (Brexit) & Interest Rate Parity</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/4.html"><strong aria-hidden="true">8.4.</strong> 4. The USD INR Pair (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/5.html"><strong aria-hidden="true">8.5.</strong> 5. The USD INR Pair (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/6.html"><strong aria-hidden="true">8.6.</strong> 6. EUR, GBP, and JPY</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/7.html"><strong aria-hidden="true">8.7.</strong> 7. Gold (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/8.html"><strong aria-hidden="true">8.8.</strong> 8. Gold (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/9.html"><strong aria-hidden="true">8.9.</strong> 9. Silver</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/10.html"><strong aria-hidden="true">8.10.</strong> 10. Crude Oil (Part 1), digging the past</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/11.html"><strong aria-hidden="true">8.11.</strong> 11. Crude Oil (Part 2), the crude oil eco system</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/12.html"><strong aria-hidden="true">8.12.</strong> 12. Crude Oil (Part 3), the crude oil contract</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/13.html"><strong aria-hidden="true">8.13.</strong> 13. Copper & Aluminium</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/14.html"><strong aria-hidden="true">8.14.</strong> 14. Lead & Nickel</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/15.html"><strong aria-hidden="true">8.15.</strong> 15. Cardamom & Mentha Oil</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/16.html"><strong aria-hidden="true">8.16.</strong> 16. Natural Gas</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/17.html"><strong aria-hidden="true">8.17.</strong> 17. Commodity Options</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/18.html"><strong aria-hidden="true">8.18.</strong> 18. Cross Currency Pairs</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/19.html"><strong aria-hidden="true">8.19.</strong> 19. Government Securities</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.</strong> Risk Management & Trading Psychology</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/1.html"><strong aria-hidden="true">9.1.</strong> 1. Orientation note</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/2.html"><strong aria-hidden="true">9.2.</strong> 2. Risk (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/3.html"><strong aria-hidden="true">9.3.</strong> 3. Risk (Part 2) – Variance & Covariance</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/4.html"><strong aria-hidden="true">9.4.</strong> 4. Risk (Part 3) – Variance & Covariance Matrix</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/5.html"><strong aria-hidden="true">9.5.</strong> 5. Risk (Part 4) – Correlation Matrix & Portfolio Variance</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/6.html"><strong aria-hidden="true">9.6.</strong> 6. Equity Curve</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/7.html"><strong aria-hidden="true">9.7.</strong> 7. Expected Returns</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/8.html"><strong aria-hidden="true">9.8.</strong> 8. Portfolio Optimization (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/9.html"><strong aria-hidden="true">9.9.</strong> 9. Portfolio Optimization (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/10.html"><strong aria-hidden="true">9.10.</strong> 10. Value at Risk</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/11.html"><strong aria-hidden="true">9.11.</strong> 11. Position Sizing for active trader</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/12.html"><strong aria-hidden="true">9.12.</strong> 12. Position Sizing for active traders (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/13.html"><strong aria-hidden="true">9.13.</strong> 13. Position Sizing for active traders (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/14.html"><strong aria-hidden="true">9.14.</strong> 14. Kelly’s Criterion</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/15.html"><strong aria-hidden="true">9.15.</strong> 15. Trading Biases</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/16.html"><strong aria-hidden="true">9.16.</strong> 16. Trading Biases (Part 2)</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">10.</strong> Trading Systems</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/1.html"><strong aria-hidden="true">10.1.</strong> 1. What to expect?</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/2.html"><strong aria-hidden="true">10.2.</strong> 2. Pair Trading logic</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/3.html"><strong aria-hidden="true">10.3.</strong> 3. Pair Trading, Method 1, Chapter 1 (PTM1, C1) -Tracking Pairs</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/4.html"><strong aria-hidden="true">10.4.</strong> 4. PTM1, C2 – Pair stats</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/5.html"><strong aria-hidden="true">10.5.</strong> 5. PTM1, C3 – Pre trade setup</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/6.html"><strong aria-hidden="true">10.6.</strong> 6. PTM1, C4 – The Density Curve</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/7.html"><strong aria-hidden="true">10.7.</strong> 7. PTM1,C5 – The Pair Trade</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/8.html"><strong aria-hidden="true">10.8.</strong> 8. Pair trade Method 2, Chapter 1 (PTM2, C1) – Straight line Equation</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/9.html"><strong aria-hidden="true">10.9.</strong> 9. PTM2, C2 – Linear Regression</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/10.html"><strong aria-hidden="true">10.10.</strong> 10. PTM2, C3 – The Error Ratio</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/11.html"><strong aria-hidden="true">10.11.</strong> 11. PTM2, C4 – The ADF test</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/12.html"><strong aria-hidden="true">10.12.</strong> 12. Trade Identification</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/13.html"><strong aria-hidden="true">10.13.</strong> 13. Live Example -1</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/14.html"><strong aria-hidden="true">10.14.</strong> 14. Live Example – 2</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/15.html"><strong aria-hidden="true">10.15.</strong> 15. Calendar Spreads</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/16.html"><strong aria-hidden="true">10.16.</strong> 16. Momentum Portfolios</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">11.</strong> Personal Finance - Mutual Funds</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/1.html"><strong aria-hidden="true">11.1.</strong> 1. Background and Orientation</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/2.html"><strong aria-hidden="true">11.2.</strong> 2. Personal Finance Math (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/3.html"><strong aria-hidden="true">11.3.</strong> 3. Personal Finance Math (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/4.html"><strong aria-hidden="true">11.4.</strong> 4. The retirement problem (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/5.html"><strong aria-hidden="true">11.5.</strong> 5. The retirement problem (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/6.html"><strong aria-hidden="true">11.6.</strong> 6. Introduction to Mutual Funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/7.html"><strong aria-hidden="true">11.7.</strong> 7. Concept of fund & NAV</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/8.html"><strong aria-hidden="true">11.8.</strong> 8. The mutual fund fact-sheet</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/9.html"><strong aria-hidden="true">11.9.</strong> 9. The Equity scheme (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/10.html"><strong aria-hidden="true">11.10.</strong> 10. Equity Scheme (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/11.html"><strong aria-hidden="true">11.11.</strong> 11. The Debt funds (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/12.html"><strong aria-hidden="true">11.12.</strong> 12. The Debt funds (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/13.html"><strong aria-hidden="true">11.13.</strong> 13. The Debt funds (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/14.html"><strong aria-hidden="true">11.14.</strong> 14. The Debt Funds (Part 4)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/15.html"><strong aria-hidden="true">11.15.</strong> 15. Investing in Bonds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/16.html"><strong aria-hidden="true">11.16.</strong> 16. Index Funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/17.html"><strong aria-hidden="true">11.17.</strong> 17. Arbitrage Funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/18.html"><strong aria-hidden="true">11.18.</strong> 18. Measuring Mutual fund Returns</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/19.html"><strong aria-hidden="true">11.19.</strong> 19. Rolling Returns</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/20.html"><strong aria-hidden="true">11.20.</strong> 20. Mutual fund Expense Ratio, Direct, and Regular plans</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/21.html"><strong aria-hidden="true">11.21.</strong> 21. Mutual Benchmarking</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/22.html"><strong aria-hidden="true">11.22.</strong> 22. Mutual Fund Beta, SD, and Sharpe Ratio</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/23.html"><strong aria-hidden="true">11.23.</strong> 23. Sortino and the Capture Ratios</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/24.html"><strong aria-hidden="true">11.24.</strong> 24. How to analyse an Equity Mutual fund?</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/25.html"><strong aria-hidden="true">11.25.</strong> 25. How to analyze a debt mutual fund?</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/26.html"><strong aria-hidden="true">11.26.</strong> 26. The Mutual Fund Portfolio</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/27.html"><strong aria-hidden="true">11.27.</strong> 27. Smart-beta funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/28.html"><strong aria-hidden="true">11.28.</strong> 28. Asset Allocation, An Introduction</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/29.html"><strong aria-hidden="true">11.29.</strong> 29. Exchange-traded funds (ETF)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/30.html"><strong aria-hidden="true">11.30.</strong> 30. Basics of Macro Economics</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">12.</strong> Innerworth — Mind over markets</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">13.</strong> Integrated Financial Modelling</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/1.html"><strong aria-hidden="true">13.1.</strong> 1. Introduction to Financial Modelling</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/2.html"><strong aria-hidden="true">13.2.</strong> 2. Excel workbook setup</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/3.html"><strong aria-hidden="true">13.3.</strong> 3. Historical Data</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/4.html"><strong aria-hidden="true">13.4.</strong> 4. Assumptions (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/5.html"><strong aria-hidden="true">13.5.</strong> 5. Assumptions (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/6.html" class="active"><strong aria-hidden="true">13.6.</strong> 6. Revenue model</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/7.html"><strong aria-hidden="true">13.7.</strong> 7. Asset Schedule (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/8.html"><strong aria-hidden="true">13.8.</strong> 8. Asset Schedule (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/9.html"><strong aria-hidden="true">13.9.</strong> 9. Debt Schedule</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/10.html"><strong aria-hidden="true">13.10.</strong> 10. Reserves Schedule (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/11.html"><strong aria-hidden="true">13.11.</strong> 11. Reserves Schedule (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/12.html"><strong aria-hidden="true">13.12.</strong> 12. Projections</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/13.html"><strong aria-hidden="true">13.13.</strong> 13. Cash flow statement</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/14.html"><strong aria-hidden="true">13.14.</strong> 14. Valuation (Part 1) – Overview</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/15.html"><strong aria-hidden="true">13.15.</strong> 15. Valuation (Part 2) – FCFF & FCFE</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/16.html"><strong aria-hidden="true">13.16.</strong> 16. Valuation (Part 3) – Risk Premium & Tax Shield</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/17.html"><strong aria-hidden="true">13.17.</strong> 17. Weighted average cost of capital and Terminal Growth</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/18.html"><strong aria-hidden="true">13.18.</strong> 18. Discounted Cash Flow Analysis (DCF)</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">14.</strong> Personal Finance - Insurance</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/1.html"><strong aria-hidden="true">14.1.</strong> 1. Introduction</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/2.html"><strong aria-hidden="true">14.2.</strong> 2. Perverse Incentives</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/3.html"><strong aria-hidden="true">14.3.</strong> 3. The nudge</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/4.html"><strong aria-hidden="true">14.4.</strong> 4. Skin in the game</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/5.html"><strong aria-hidden="true">14.5.</strong> 5. Dunning Kruger effect</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/6.html"><strong aria-hidden="true">14.6.</strong> 6. A mighty defence</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/7.html"><strong aria-hidden="true">14.7.</strong> 7. No free lunch</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/8.html"><strong aria-hidden="true">14.8.</strong> 8. Gimmick or not (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/9.html"><strong aria-hidden="true">14.9.</strong> 9. Gimmick or not (Part 2)</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Varsity mdBook</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <div class="post">
+<h2 id="61--common-sense-approach"><a class="header" href="#61--common-sense-approach"><strong>6.1 – Common sense approach</strong></a></h2>
+<p>In the previous chapter, we built the Balance Sheet and P&amp;L assumption. Within the P&amp;L assumptions, we dealt with the revenue of the company as well. We did take a rather simplistic approach to estimate the revenue of the company. The approach is ok as long as you intend to build a simple financial model.</p>
+<p>However, at times, taking efforts to build a dedicated revenue model of a company pays off.&nbsp; With a dedicated revenue model, you can identify the key revenue drivers and get some granular insights into the behaviour of these revenue drivers.</p>
+<p>In this chapter, I’d like to discuss the approach you need to take while building a company’s revenue model. As you can imagine, the revenue model sits within the integrated financial model, just like the assumption sheet.</p>
+<p>Think of the revenue model as a sub-model within the financial model.</p>
+<p>I’ll take the example of Bajaj auto in this chapter to explain how one can build a company’s revenue model.</p>
+<p>A sensible way to start building a revenue model is by asking common sense questions about the company. In most cases, these questions themselves segways into a template for the revenue model. We will take the same approach to build Bajaj Auto’s revenue model.</p>
+<p>So here are a bunch of common-sense questions, and the answers to these questions will help us build the revenue model. &nbsp;By the way, the answers to all the questions are in the company’s annual report.</p>
+<p>So let us start.</p>
+<h2 id="62--digging-data"><a class="header" href="#62--digging-data"><strong>6.2 – Digging data</strong></a></h2>
+<p>As a first step, I download the latest annual report (FY 2020-21) from Bajaj Auto’s website. I’d suggest you do the same. Like I mentioned, the annual report is where you will find all the information you’d need.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/M13-C6-Web.png"><img alt="" class="aligncenter wp-image-10096" height="371" sizes="(max-width: 504px) 100vw, 504px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/M13-C6-Web-300x221.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/M13-C6-Web-300x221.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/M13-C6-Web-768x566.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/M13-C6-Web.png 800w" width="504"/></a></p>
+<p>Usually, from my experience, as the company matures, the annual report also evolves and provides you with all the necessary information you’d need.</p>
+<p>Anyway, let us get started with our common sense QnA. We will begin with a fundamental question.</p>
+<p><span style="color: #993300;"><em><strong>What does Bajaj Auto do?</strong></em></span></p>
+<p>No brainer, we have seen Bajaj Auto’s bikes and autorickshaws flood the Indian streets. So it is evident that Bajaj manufactures and sells 2 and 3 wheelers. We will cross-check our assumption from the annual report as well.</p>
+<p>&nbsp;</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-1_bikes.png"><img alt="" class="wp-image-10075 aligncenter" height="244" loading="lazy" sizes="(max-width: 452px) 100vw, 452px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-1_bikes-300x162.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-1_bikes-300x162.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-1_bikes.png 684w" width="452"/></a></p>
+<p>From their annual report, we can see that our assumption is correct (image above if from the annual report). Bajaj does manufacture bikes and autorickshaws. The bikes are further segregated into different segments.</p>
+<p>The image below shows the ‘sports segment’ or ’S segment’ bikes. Apart from the S segment, Bajaj has the Milage or M segment, Supersport or SS segment, Pro biking segment, and scooters.</p>
+<p>But the point is Bajaj manufactures’ bikes’ or two-wheelers, so let us stick to that for now and ignore the segmentation of bikes.</p>
+<p>Apart from bikes, they also manufacture autorickshaws’ Commerical Vehicles’ (CV) or the three-wheeler segment.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-2_cv.png"><img alt="" class="aligncenter wp-image-10076" height="171" loading="lazy" sizes="(max-width: 498px) 100vw, 498px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-2_cv-300x103.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-2_cv-300x103.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-2_cv.png 685w" width="498"/></a></p>
+<p>The CV category has different segments: passenger carrier (good old autorickshaws) and goods carrier.</p>
+<p>Why are the segments important to a revenue model?</p>
+<p>Well, if you know the segments within a category, you can also figure out the segment-wise revenue.</p>
+<p>For example, the S segment is a segment within the bikes category, it will interesting to understand how much revenue they make segment-wise, and which are their popular segments, and what drives these segments.</p>
+<p>With this information, you can build a granular revenue model. Unfortunately, the segment-wise revenue distribution is not available in the annual report. Hence we will consider revenue for the entire category as a whole, i.e. the two-wheeler (bikes) and the commercial vehicle (3 wheelers).</p>
+<p><em><span style="color: #993300;"><strong>How much does Bajaj Auto manufacture?</strong></span></em></p>
+<p>I suppose this is also a straightforward question. As a financial modeller (or even an investor), you need to understand the manufacturing capacity of the company. The reason is simple.</p>
+<p>Suppose they manufacture 100 bikes in the year, and if they are selling 60 bikes, then with this information we can interpret the following –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>The manufacturing plant operates at 60% capacity utilization. Capacity utilization is a simple ratio of how much they sell versus how much they manufacture.</li>
+<li>The company has enough manufacturing buffer to meet future demands</li>
+<li>The company is unlikely to spend more money in terms of CAPEX anytime soon</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Other perspectives –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Why is the company selling only 60?</li>
+<li>How much do their competitors sell?</li>
+<li>Where does the company stand in terms of competition?</li>
+<li>How big is the industry? How many bikes (across all companies) are sold in a year?</li>
+<li>What is the company’s market share? (company sales divided/industry sales)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>These questions will help us size up the company and eventually help the investors in the valuation process.</p>
+<p>Anyway, we will get back to the revenue model.&nbsp; I found this image in their annual report interesting –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-3_loc.png"><img alt="" class="aligncenter wp-image-10077" height="360" loading="lazy" sizes="(max-width: 501px) 100vw, 501px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-3_loc-300x216.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-3_loc-300x216.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-3_loc.png 729w" width="501"/></a></p>
+<p>The image gives us all the information in one shot. Let me list down the information for you –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>The company has three manufacturing units (or plants) in India, located in – Pantnagar, Waluj, and Chakan.</li>
+<li>Waluj is the oldest plant (set up in 1984), while the Pantnagar plant is their newest.</li>
+<li>All plants have been operational for a long time now.</li>
+<li>Pantnagar plant has a production capacity to manufacture 1.8M bikes, no commercial vehicles here.</li>
+<li>Waluj plant has a production capacity to manufacture 2.4M bikes and 9.3L commercial vehicles. Waluj is a super important plant for Bajaj auto since this plant has production of both categories plus this is the only plant to manufacture commercial vehicles.</li>
+<li>Chakan plant has a production capacity to manufacture 1.2M units of bikes.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Since all the manufacturing facilities are old enough, assuming that the company has had a similar production capacity for the last few years is fair.</p>
+<p><span style="color: #993300;"><em><strong>Where do they sell?</strong></em></span></p>
+<p>The question is to help us understand where their target market is. We have seen Bajaj vehicles across India. But do they sell in other countries apart from India?</p>
+<p>Here is an extract from the annual report –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-4_exports.png"><img alt="" class="aligncenter wp-image-10078" height="211" loading="lazy" sizes="(max-width: 502px) 100vw, 502px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-4_exports-300x126.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-4_exports-300x126.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-4_exports.png 706w" width="502"/></a></p>
+<p>Without reading much into the details, we know –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Bajaj Auto sells within India (domestic market)</li>
+<li>Bajaj Auto also sells outside India (international market)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>From the extract, we can quickly note that Bajaj Auto sells around 2M vehicles in the global market.</p>
+<p><span style="color: #993300;"><em><strong>How many units of two-wheelers and CVs does Bajaj Auto sell in India and the International market?</strong></em></span></p>
+<p>Now that we have established that Bajaj has a domestic and international market, it makes sense to figure out how many units of bikes and commercial vehicles are sold in India and in the International market.</p>
+<p>From the annual report –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-5_domestic-sale.png"><img alt="" class="aligncenter wp-image-10080" height="229" loading="lazy" sizes="(max-width: 471px) 100vw, 471px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-5_domestic-sale-300x146.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-5_domestic-sale-300x146.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-5_domestic-sale.png 494w" width="471"/></a></p>
+<p>The highlighted data indicates the sale of domestic bikes. For example, in the year 2020, Bajaj Auto sold 3.9M bikes. The break up of 3.9M across different segments of bikes is not available (therefore no segment-wise revenue). But that’s ok for now.</p>
+<p>Data for Domestic CV sales&nbsp; –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-6_0.png"><img alt="" class="aligncenter wp-image-10081" height="363" loading="lazy" sizes="(max-width: 498px) 100vw, 498px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-6_0-300x219.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-6_0-300x219.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-6_0.png 559w" width="498"/></a></p>
+<p>As far as the exports are concerned, here is the snapshot –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-6_Exp.png"><img alt="" class="aligncenter wp-image-10082" height="204" loading="lazy" sizes="(max-width: 502px) 100vw, 502px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-6_Exp-300x122.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-6_Exp-300x122.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-6_Exp.png 588w" width="502"/></a></p>
+<p>The company has only reported domestic sales numbers across motorcycles (bikes) and CV for FY20 and FY21. We will have to dig up the older annual reports for historical numbers.</p>
+<p>Ok, a quick recap at this point. So far we know –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>The product the company sells</li>
+<li>Places where it manufactures the products</li>
+<li>The capacity of each manufacturing plant</li>
+<li>The geographies in which the company sells</li>
+<li>How many units the company sells across all their markets</li>
+</ul>
+</li>
+</ul>
+<p>That’s a fair bit of information. We now have to steer our way to find out details about how much money the company earns in terms of revenues.</p>
+<p>Remember, so far, we collected information by asking ourselves a few common-sense questions. Once we collect all the necessary information, we make the revenue model on excel, step by step.</p>
+<p>Let us continue our QnA.</p>
+<p><span style="color: #993300;"><em><strong>How much revenue do they make?</strong></em></span></p>
+<p>The most crucial question perhaps 😊</p>
+<p>Clearly, when we talk about revenue for this company, we need to figure four essential things –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>How much revenue is from domestic bikes sales?</li>
+<li>How much revenue is from domestic CV sales?</li>
+<li>How much revenue is from international bikes sales?</li>
+<li>How much revenue is from international CV sales?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>If we can collect the above information, we are on track to build the revenue model.</p>
+<p>But here is where the challenge occurs; the company does not easily give out this information. The information we have is –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-7_rev.png"><img alt="" class="aligncenter wp-image-10083" height="105" loading="lazy" sizes="(max-width: 500px) 100vw, 500px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-7_rev-300x63.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-7_rev-300x63.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-7_rev-768x161.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-7_rev.png 890w" width="500"/></a></p>
+<p>Revenue is a consolidated number, which includes both domestic and export revenue. But thankfully, Bajaj Auto gives us the export revenue –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-8_exp-rev.png"><img alt="" class="aligncenter wp-image-10084" height="239" loading="lazy" sizes="(max-width: 501px) 100vw, 501px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-8_exp-rev-300x143.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-8_exp-rev-300x143.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-8_exp-rev.png 612w" width="501"/></a></p>
+<p>With both these bits of information, we have to back work the details. For example, for FY 2020,</p>
+<p>Revenue =Rs.29,111 Cr</p>
+<p>Export Revenue = Rs.12,216 Cr</p>
+<p>So Domestic revenue must be –</p>
+<p>29111 – 12216</p>
+<p>= <strong>Rs.16,895 Crs.</strong></p>
+<p>Once we have the revenue split from domestic and exports, we can do few other things to set up the revenue model.</p>
+<h2 id="63--connecting-the-dots"><a class="header" href="#63--connecting-the-dots"><strong>6.3 – Connecting the dots </strong></a></h2>
+<p>We have now gathered all the info required to build the revenue model. We now have to plug these values into an excel sheet and give it a logical sequence. Please note that if you are doing this yourself, as a first step, you will have to get the historical data from the annual report.&nbsp; In the section above, I’ve highlighted how the data is collected. Hopefully, that will help you accelerate your data collection process.</p>
+<p>Given the data in hand, here are the steps that I’ll follow to develop the revenue model. As I have stressed earlier, the steps that I follow make sense to me; if you feel there is a better way, you should explore. Remember, there is no prescribed methods to build a model.</p>
+<p>But I hope these steps will give you a good starting point.</p>
+<p>Here is the overview of the steps I’ll carry out on excel –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Organize the capacity data</li>
+<li>Gather the International sales data, i.e. the number of units of bikes and CV sold</li>
+<li>Gather the India sales data, i.e. the number of units of bikes and CV sold</li>
+<li>Add up the sales data to get consolidated bikes and CV sales data</li>
+<li>Input the historical revenue data</li>
+<li>Calculate the average cost of sale of bike and CV</li>
+<li>Identify the trend in change of average cost of sale</li>
+<li>Project the average price of the vehicle and reverse engineer the revenue data from the average prices.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>If the steps above confuse you, then don’t worry, we will execute each of the steps, one at a time.</p>
+<p>As a first step, we set up our excel sheet with the indexation. I’ve discussed this in the earlier chapters, so I’ll directly post the snapshot for your reference.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-9_setup.png"><img alt="" class="aligncenter wp-image-10085" height="126" loading="lazy" sizes="(max-width: 525px) 100vw, 525px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-9_setup-300x72.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-9_setup-300x72.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-9_setup-1024x244.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-9_setup-768x183.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-9_setup.png 1228w" width="525"/></a></p>
+<p>I guess you are reasonably familiar with the layout. Columns A and B are indexed, C expanded, panes frozen at E3. The actual financial years stated from F1 to J1, and the estimated years from K1 to O1.</p>
+<p>I have organized the manufacturing capacity data. Note I have segregated this in terms of bikes and CV, but you can also arrange the data from the manufacturing plant perspective.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-10_capacity.png"><img alt="" class="aligncenter wp-image-10086" height="141" loading="lazy" sizes="(max-width: 528px) 100vw, 528px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-10_capacity-300x80.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-10_capacity-300x80.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-10_capacity-1024x273.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-10_capacity-768x205.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-10_capacity.png 1193w" width="528"/></a></p>
+<p>I have populated the manufacturing capacity numbers –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-11_capacitynumbers.png"><img alt="" class="aligncenter wp-image-10087" height="123" loading="lazy" sizes="(max-width: 528px) 100vw, 528px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-11_capacitynumbers-300x70.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-11_capacitynumbers-300x70.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-11_capacitynumbers-1024x239.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-11_capacitynumbers-768x179.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-11_capacitynumbers.png 1361w" width="528"/></a></p>
+<p>Note, the numbers are constant historically and for the future years as well.</p>
+<p>Next up is the sales data. As I mentioned earlier, I’m interested in identifying the bike and CV sales in India and Internationally. Once I have the data, I’m also interested in year on year (YoY) changes in sales data.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-12_sales-data.png"><img alt="" class="aligncenter wp-image-10088" height="249" loading="lazy" sizes="(max-width: 530px) 100vw, 530px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-12_sales-data-300x141.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-12_sales-data-300x141.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-12_sales-data-1024x483.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-12_sales-data-768x362.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-12_sales-data.png 1376w" width="530"/></a></p>
+<p>As we saw earlier, most of the sales data is available in the annual report, except for the India sales data for bikes. But this is ok; the company gives us the total bike sales (India + International) and the total international bike sales data.</p>
+<p>If we calculate the difference, we get the India bikes sales data. So a bit of number jugglery that you will have to do.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-13_total-bikes.png"><img alt="" class="aligncenter wp-image-10089" height="267" loading="lazy" sizes="(max-width: 530px) 100vw, 530px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-13_total-bikes-300x151.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-13_total-bikes-300x151.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-13_total-bikes-1024x515.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-13_total-bikes-768x386.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-13_total-bikes.png 1362w" width="530"/></a></p>
+<p>Next, we calculate the YoY change (in percentage) bikes and CV sales in the Indian and the International markets.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-14_yoy.png"><img alt="" class="aligncenter wp-image-10090" height="269" loading="lazy" sizes="(max-width: 531px) 100vw, 531px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-14_yoy-300x152.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-14_yoy-300x152.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-14_yoy-1024x519.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-14_yoy-768x389.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-14_yoy.png 1362w" width="531"/></a></p>
+<p>The math is simple for the YoY change –</p>
+<p>= this year’s sales data/ previous year’s sales data – 1</p>
+<p>= year on year change in sales, expressed in percentage.</p>
+<p>The idea of calculating the YoY percentage change is to identify consistent trends if any. But clearly, there is no trend in the data we have.</p>
+<p>We could have taken a rolling average of the yoy change and projected for future years if there was a trend. But now, we have to assume a flat YoY change.</p>
+<p>I’ll project the YoY change without thinking much (to move ahead quickly), but of course, if this were a serious model (based on which you’d invest), then we would have to spend some time before we make the YoY change assumptions.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-15_yoyass.png"><img alt="" class="aligncenter wp-image-10079" height="281" loading="lazy" sizes="(max-width: 533px) 100vw, 533px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-15_yoyass-300x158.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-15_yoyass-300x158.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-15_yoyass-1024x540.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-15_yoyass-768x405.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-15_yoyass.png 1371w" width="533"/></a></p>
+<p>You can see the assumption I’ve made for the sales YoY change in percentage. You can also see the calculation that I’ve made to project the future year’s sale of bikes and CV. I’ve completed the math, and here is how the excel sheet looks –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-16_total.png"><img alt="" class="aligncenter wp-image-10091" height="277" loading="lazy" sizes="(max-width: 535px) 100vw, 535px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-16_total-300x155.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-16_total-300x155.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-16_total-1024x530.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-16_total-768x397.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-16_total.png 1368w" width="535"/></a></p>
+<p>Please note, I’ve summed up the bike and CV sales from both the Indian and the International markets to get the total sales. For your reference, I’ve highlighted the total sales of bikes for FY22E.</p>
+<p>In the next step, we move our attention to the revenue data. I’ve taken the revenue data (India and International) from the annual report.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-17_rev.png"><img alt="" class="aligncenter wp-image-10092" height="188" loading="lazy" sizes="(max-width: 537px) 100vw, 537px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-17_rev-300x105.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-17_rev-300x105.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-17_rev-1024x358.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-17_rev-768x269.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-17_rev.png 1364w" width="537"/></a></p>
+<p>Below the revenue numbers, I’ve set up excel to calculate the average sale cost for vehicles (bikes + CV) across the Indian and the international markets. To calculate this, we need to divide the India revenue number by the India vehicles sold data.</p>
+<p>Let me do this math for FY 17 –</p>
+<p>Revenue from India (FY17) = Rs.14,815 Cr</p>
+<p>Total vehicles sold in India (bikes+ CV) = 22,54,617</p>
+<p>Average selling price of a vehicle = 14815*(10^7)/2254617</p>
+<p>= Rs.65,709.61/-</p>
+<p>If you wonder why I used 10^7 in the math above, then it is to get the revenue number in Crores.</p>
+<p>Here is how it looks on Excel –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-18_avgcost.png"><img alt="" class="aligncenter wp-image-10094" height="268" loading="lazy" sizes="(max-width: 528px) 100vw, 528px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-18_avgcost-300x152.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-18_avgcost-300x152.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-18_avgcost-1024x518.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-18_avgcost-768x388.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-18_avgcost.png 1371w" width="528"/></a></p>
+<p>I’ve calculated the YoY change in average cost of sale as well. I hope at this stage; you can figure what to do next. If you do, then I’d be happy to know that my notes are helping you think ahead 😊</p>
+<p>Anyway, here are the last two steps to complete the revenue model.</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Assume a YoY change for future years, it could be a rolling average, or it could be a flat assumption</li>
+<li>Project the average cost of sale in the Indian and the International market</li>
+<li>Multiply the avg cost of sale and the number of vehicles sold to get the revenue in the Indian and International market</li>
+<li>Sum up both to get the total revenue.</li>
+</ul>
+</li>
+</ul>
+<p>I’ve executed all the above steps in excel, and here is how it looks –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-19_final.png"><img alt="" class="aligncenter wp-image-10095" height="266" loading="lazy" sizes="(max-width: 529px) 100vw, 529px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-19_final-300x151.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-19_final-300x151.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-19_final-1024x517.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-19_final-768x388.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-19_final.png 1403w" width="529"/></a></p>
+<p>I have highlighted both the cells so that you can see the formula I’ve used.</p>
+<p>Here are few other things that you can do with the revenue model –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>We have the total bike and CV sales data. Compare this with the production data. Ensure the company is not selling more than what it is making. If yes, then our model may be wrong and needs some tweaking</li>
+<li>If the vehicles sold are close to manufactured, the company may have to invest in a CAPEX cycle. This is valuable information from an overall financial modelling perspective</li>
+<li>Calculate the capacity utilization, i.e. number of vehicles manufacture versus the number of vehicles sold.</li>
+<li>Calculate the market share. You can get the industry bike/CV sales data from an industry report (guess even the annual report contains this), contrast this with what the company has sold, and get the market share number.</li>
+</ul>
+</li>
+</ul>
+<p>I guess this has turned into a lengthy chapter; I’ll stop it at this. But I hope this chapter has given you a sense of how you can develop a company’s revenue model using a common-sense approach. Always remember to start your revenue model by asking few basic questions.</p>
+<p>The revenue model we have built here can be used for other auto manufacturing companies like Hero Motors, TVS, MRF, Maruti, Tata Motors, and even Tesla!</p>
+<p>You can <a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Chapter-6_Revenue-model.xlsx">download the excel used in this chapter here</a>.</p>
+<h3 id="key-takeaways-from-this-chapter"><a class="header" href="#key-takeaways-from-this-chapter"><strong>Key takeaways from this chapter </strong></a></h3>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>The revenue model is a sub-model within your primary model</li>
+<li>You can build complex revenue models by starting with simple common sense questions</li>
+<li>All the data needed to make a revenue model is usually available in the annual report of the company</li>
+<li>Use the revenue model to extract other information like capacity utilization, CAPEX cycles, and industry market share.</li>
+</ul>
+</li>
+</ul>
+<div class="clear"> </div>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../mds/Integrated+Financial+Modelling/5.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../mds/Integrated+Financial+Modelling/7.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../mds/Integrated+Financial+Modelling/5.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../mds/Integrated+Financial+Modelling/7.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>

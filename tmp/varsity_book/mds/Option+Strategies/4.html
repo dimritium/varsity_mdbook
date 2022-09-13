@@ -1,0 +1,363 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>4. Call Ratio Back Spread - Varsity mdBook</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><div><strong aria-hidden="true">1.</strong> Introduction to Stock Markets</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/1.html"><strong aria-hidden="true">1.1.</strong> 1. The Need to Invest</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/2.html"><strong aria-hidden="true">1.2.</strong> 2. Regulators</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/3.html"><strong aria-hidden="true">1.3.</strong> 3. Financial Intermediaries</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/4.html"><strong aria-hidden="true">1.4.</strong> 4. The IPO Markets – Part 1</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/5.html"><strong aria-hidden="true">1.5.</strong> 5. The IPO Markets – Part 2</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/6.html"><strong aria-hidden="true">1.6.</strong> 6. The Stock Markets</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/7.html"><strong aria-hidden="true">1.7.</strong> 7. The Stock Markets Index</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/8.html"><strong aria-hidden="true">1.8.</strong> 8. Commonly Used Jargons</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/9.html"><strong aria-hidden="true">1.9.</strong> 9. The Trading Terminal</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/10.html"><strong aria-hidden="true">1.10.</strong> 10. Clearing and Settlement Process</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/11.html"><strong aria-hidden="true">1.11.</strong> 11. Five Corporate Actions and Its Impact on Stock Prices</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/12.html"><strong aria-hidden="true">1.12.</strong> 12. Key Events and Their Impact on Markets</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/13.html"><strong aria-hidden="true">1.13.</strong> 13. Getting started!</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/14.html"><strong aria-hidden="true">1.14.</strong> 14. Supplementary note – Rights, OFS, FPO</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/15.html"><strong aria-hidden="true">1.15.</strong> 15. Supplementary note – The 20 market depth or level 3 data</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Technical Analysis</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/1.html"><strong aria-hidden="true">2.1.</strong> 1. Background</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/2.html"><strong aria-hidden="true">2.2.</strong> 2. Introducing Technical Analysis</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/3.html"><strong aria-hidden="true">2.3.</strong> 3. The Chart Types</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/4.html"><strong aria-hidden="true">2.4.</strong> 4. Getting Started with Candlesticks</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/5.html"><strong aria-hidden="true">2.5.</strong> 5. Single Candlestick patterns (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/6.html"><strong aria-hidden="true">2.6.</strong> 6. Single Candlestick patterns (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/7.html"><strong aria-hidden="true">2.7.</strong> 7. Single Candlestick patterns (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/8.html"><strong aria-hidden="true">2.8.</strong> 8. Multiple candlestick patterns (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/9.html"><strong aria-hidden="true">2.9.</strong> 9. Multiple Candlestick Patterns (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/10.html"><strong aria-hidden="true">2.10.</strong> 10. Multiple Candlestick Patterns (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/11.html"><strong aria-hidden="true">2.11.</strong> 11. The Support and Resistance</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/12.html"><strong aria-hidden="true">2.12.</strong> 12. Volumes</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/13.html"><strong aria-hidden="true">2.13.</strong> 13. Moving Averages</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/14.html"><strong aria-hidden="true">2.14.</strong> 14. Indicators (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/15.html"><strong aria-hidden="true">2.15.</strong> 15. Indicators (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/16.html"><strong aria-hidden="true">2.16.</strong> 16. The Fibonacci Retracements</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/17.html"><strong aria-hidden="true">2.17.</strong> 17. The Dow Theory (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/18.html"><strong aria-hidden="true">2.18.</strong> 18. The Dow Theory (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/19.html"><strong aria-hidden="true">2.19.</strong> 19. The Finale – Helping you get started</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/20.html"><strong aria-hidden="true">2.20.</strong> 20. Other indicators</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/21.html"><strong aria-hidden="true">2.21.</strong> 21. Interesting features on TradingView</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/22.html"><strong aria-hidden="true">2.22.</strong> 22. The Central Pivot Range</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Fundamental Analysis</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/1.html"><strong aria-hidden="true">3.1.</strong> 1. Introduction to Fundamental Analysis</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/2.html"><strong aria-hidden="true">3.2.</strong> 2. Mindset of an Investor</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/3.html"><strong aria-hidden="true">3.3.</strong> 3. How to Read the Annual Report of a Company</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/4.html"><strong aria-hidden="true">3.4.</strong> 4. Understanding the P&L Statement (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/5.html"><strong aria-hidden="true">3.5.</strong> 5. Understanding P&L Statement (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/6.html"><strong aria-hidden="true">3.6.</strong> 6. Understanding Balance Sheet Statement (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/7.html"><strong aria-hidden="true">3.7.</strong> 7. Understanding the Balance Sheet Statement (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/8.html"><strong aria-hidden="true">3.8.</strong> 8. The Cash Flow statement</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/9.html"><strong aria-hidden="true">3.9.</strong> 9. The Financial Ratio Analysis (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/10.html"><strong aria-hidden="true">3.10.</strong> 10. The Financial Ratio Analysis (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/11.html"><strong aria-hidden="true">3.11.</strong> 11. The Financial Ratio Analysis (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/12.html"><strong aria-hidden="true">3.12.</strong> 12. The Investment Due Diligence</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/13.html"><strong aria-hidden="true">3.13.</strong> 13. Equity Research (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/14.html"><strong aria-hidden="true">3.14.</strong> 14. DCF Primer</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/15.html"><strong aria-hidden="true">3.15.</strong> 15. Equity Research (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/16.html"><strong aria-hidden="true">3.16.</strong> 16. The Finale</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Futures Trading</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/1.html"><strong aria-hidden="true">4.1.</strong> 1. Background – Forwards Market</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/2.html"><strong aria-hidden="true">4.2.</strong> 2. Introducing Futures Contract</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/3.html"><strong aria-hidden="true">4.3.</strong> 3. The Futures Trade</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/4.html"><strong aria-hidden="true">4.4.</strong> 4. Leverage & Payoff</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/5.html"><strong aria-hidden="true">4.5.</strong> 5. Margin & M2M</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/6.html"><strong aria-hidden="true">4.6.</strong> 6. Margin Calculator (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/7.html"><strong aria-hidden="true">4.7.</strong> 7. Margin Calculator (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/8.html"><strong aria-hidden="true">4.8.</strong> 8. All about Shorting</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/9.html"><strong aria-hidden="true">4.9.</strong> 9. The Nifty Futures</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/10.html"><strong aria-hidden="true">4.10.</strong> 10. The Futures Pricing</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/11.html"><strong aria-hidden="true">4.11.</strong> 11. Hedging with Futures</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/12.html"><strong aria-hidden="true">4.12.</strong> 12. Open Interest</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/13.html"><strong aria-hidden="true">4.13.</strong> 13. Quick Note on Physical Settlement</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> Options Theory for Professional Trading</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/1.html"><strong aria-hidden="true">5.1.</strong> 1. Call Option Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/2.html"><strong aria-hidden="true">5.2.</strong> 2. Basic Option Jargons</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/3.html"><strong aria-hidden="true">5.3.</strong> 3. Buying a Call Option</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/4.html"><strong aria-hidden="true">5.4.</strong> 4. Selling/Writing a Call Option</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/5.html"><strong aria-hidden="true">5.5.</strong> 5. The Put Option Buying</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/6.html"><strong aria-hidden="true">5.6.</strong> 6. The Put Option selling</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/7.html"><strong aria-hidden="true">5.7.</strong> 7. Summarizing Call & Put Options</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/8.html"><strong aria-hidden="true">5.8.</strong> 8. Moneyness of an Option Contract</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/9.html"><strong aria-hidden="true">5.9.</strong> 9. The Option Greeks (Delta) Part 1</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/10.html"><strong aria-hidden="true">5.10.</strong> 10. Delta (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/11.html"><strong aria-hidden="true">5.11.</strong> 11. Delta (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/12.html"><strong aria-hidden="true">5.12.</strong> 12. Gamma (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/13.html"><strong aria-hidden="true">5.13.</strong> 13. Gamma (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/14.html"><strong aria-hidden="true">5.14.</strong> 14. Theta</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/15.html"><strong aria-hidden="true">5.15.</strong> 15. Volatility Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/16.html"><strong aria-hidden="true">5.16.</strong> 16. Volatility Calculation (Historical)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/17.html"><strong aria-hidden="true">5.17.</strong> 17. Volatility & Normal Distribution</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/18.html"><strong aria-hidden="true">5.18.</strong> 18. Volatility Applications</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/19.html"><strong aria-hidden="true">5.19.</strong> 19. Vega</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/20.html"><strong aria-hidden="true">5.20.</strong> 20. Greek Interactions</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/21.html"><strong aria-hidden="true">5.21.</strong> 21. Greek Calculator</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/22.html"><strong aria-hidden="true">5.22.</strong> 22. Re-introducing Call & Put Options</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/23.html"><strong aria-hidden="true">5.23.</strong> 23. Case studies – wrapping it all up!</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/24.html"><strong aria-hidden="true">5.24.</strong> 24. Quick note on Physical Settlement</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/25.html"><strong aria-hidden="true">5.25.</strong> 25. Options M2M and P&L calculation</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> Option Strategies</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/1.html"><strong aria-hidden="true">6.1.</strong> 1. Orientation</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/2.html"><strong aria-hidden="true">6.2.</strong> 2. Bull Call Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/3.html"><strong aria-hidden="true">6.3.</strong> 3. Bull Put Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/4.html" class="active"><strong aria-hidden="true">6.4.</strong> 4. Call Ratio Back Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/5.html"><strong aria-hidden="true">6.5.</strong> 5. Bear Call Ladder</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/6.html"><strong aria-hidden="true">6.6.</strong> 6. Synthetic Long & Arbitrage</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/7.html"><strong aria-hidden="true">6.7.</strong> 7. Bear Put Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/8.html"><strong aria-hidden="true">6.8.</strong> 8. Bear Call Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/9.html"><strong aria-hidden="true">6.9.</strong> 9. Put Ratio Back spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/10.html"><strong aria-hidden="true">6.10.</strong> 10. The Long Straddle</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/11.html"><strong aria-hidden="true">6.11.</strong> 11. The Short Straddle</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/12.html"><strong aria-hidden="true">6.12.</strong> 12. The Long & Short Strangle</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/13.html"><strong aria-hidden="true">6.13.</strong> 13. Max Pain & PCR Ratio</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/14.html"><strong aria-hidden="true">6.14.</strong> 14. Iron Condor</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> Markets and Taxation</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/1.html"><strong aria-hidden="true">7.1.</strong> 1. Introduction (Setting the Context)</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/2.html"><strong aria-hidden="true">7.2.</strong> 2. Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/3.html"><strong aria-hidden="true">7.3.</strong> 3. Classifying Your Market Activity</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/4.html"><strong aria-hidden="true">7.4.</strong> 4. Taxation for Investors</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/5.html"><strong aria-hidden="true">7.5.</strong> 5. Taxation for Traders</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/6.html"><strong aria-hidden="true">7.6.</strong> 6. Turnover, Balance Sheet, and P&L</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/7.html"><strong aria-hidden="true">7.7.</strong> 7. ITR Forms (The Finale)</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> Currency, Commodity, and Government Securities</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/1.html"><strong aria-hidden="true">8.1.</strong> 1. Currency Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/2.html"><strong aria-hidden="true">8.2.</strong> 2. Reference Rates & Impact of events</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/3.html"><strong aria-hidden="true">8.3.</strong> 3. Impact of events (Brexit) & Interest Rate Parity</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/4.html"><strong aria-hidden="true">8.4.</strong> 4. The USD INR Pair (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/5.html"><strong aria-hidden="true">8.5.</strong> 5. The USD INR Pair (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/6.html"><strong aria-hidden="true">8.6.</strong> 6. EUR, GBP, and JPY</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/7.html"><strong aria-hidden="true">8.7.</strong> 7. Gold (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/8.html"><strong aria-hidden="true">8.8.</strong> 8. Gold (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/9.html"><strong aria-hidden="true">8.9.</strong> 9. Silver</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/10.html"><strong aria-hidden="true">8.10.</strong> 10. Crude Oil (Part 1), digging the past</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/11.html"><strong aria-hidden="true">8.11.</strong> 11. Crude Oil (Part 2), the crude oil eco system</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/12.html"><strong aria-hidden="true">8.12.</strong> 12. Crude Oil (Part 3), the crude oil contract</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/13.html"><strong aria-hidden="true">8.13.</strong> 13. Copper & Aluminium</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/14.html"><strong aria-hidden="true">8.14.</strong> 14. Lead & Nickel</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/15.html"><strong aria-hidden="true">8.15.</strong> 15. Cardamom & Mentha Oil</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/16.html"><strong aria-hidden="true">8.16.</strong> 16. Natural Gas</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/17.html"><strong aria-hidden="true">8.17.</strong> 17. Commodity Options</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/18.html"><strong aria-hidden="true">8.18.</strong> 18. Cross Currency Pairs</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/19.html"><strong aria-hidden="true">8.19.</strong> 19. Government Securities</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.</strong> Risk Management & Trading Psychology</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/1.html"><strong aria-hidden="true">9.1.</strong> 1. Orientation note</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/2.html"><strong aria-hidden="true">9.2.</strong> 2. Risk (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/3.html"><strong aria-hidden="true">9.3.</strong> 3. Risk (Part 2) – Variance & Covariance</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/4.html"><strong aria-hidden="true">9.4.</strong> 4. Risk (Part 3) – Variance & Covariance Matrix</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/5.html"><strong aria-hidden="true">9.5.</strong> 5. Risk (Part 4) – Correlation Matrix & Portfolio Variance</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/6.html"><strong aria-hidden="true">9.6.</strong> 6. Equity Curve</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/7.html"><strong aria-hidden="true">9.7.</strong> 7. Expected Returns</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/8.html"><strong aria-hidden="true">9.8.</strong> 8. Portfolio Optimization (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/9.html"><strong aria-hidden="true">9.9.</strong> 9. Portfolio Optimization (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/10.html"><strong aria-hidden="true">9.10.</strong> 10. Value at Risk</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/11.html"><strong aria-hidden="true">9.11.</strong> 11. Position Sizing for active trader</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/12.html"><strong aria-hidden="true">9.12.</strong> 12. Position Sizing for active traders (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/13.html"><strong aria-hidden="true">9.13.</strong> 13. Position Sizing for active traders (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/14.html"><strong aria-hidden="true">9.14.</strong> 14. Kelly’s Criterion</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/15.html"><strong aria-hidden="true">9.15.</strong> 15. Trading Biases</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/16.html"><strong aria-hidden="true">9.16.</strong> 16. Trading Biases (Part 2)</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">10.</strong> Trading Systems</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/1.html"><strong aria-hidden="true">10.1.</strong> 1. What to expect?</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/2.html"><strong aria-hidden="true">10.2.</strong> 2. Pair Trading logic</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/3.html"><strong aria-hidden="true">10.3.</strong> 3. Pair Trading, Method 1, Chapter 1 (PTM1, C1) -Tracking Pairs</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/4.html"><strong aria-hidden="true">10.4.</strong> 4. PTM1, C2 – Pair stats</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/5.html"><strong aria-hidden="true">10.5.</strong> 5. PTM1, C3 – Pre trade setup</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/6.html"><strong aria-hidden="true">10.6.</strong> 6. PTM1, C4 – The Density Curve</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/7.html"><strong aria-hidden="true">10.7.</strong> 7. PTM1,C5 – The Pair Trade</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/8.html"><strong aria-hidden="true">10.8.</strong> 8. Pair trade Method 2, Chapter 1 (PTM2, C1) – Straight line Equation</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/9.html"><strong aria-hidden="true">10.9.</strong> 9. PTM2, C2 – Linear Regression</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/10.html"><strong aria-hidden="true">10.10.</strong> 10. PTM2, C3 – The Error Ratio</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/11.html"><strong aria-hidden="true">10.11.</strong> 11. PTM2, C4 – The ADF test</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/12.html"><strong aria-hidden="true">10.12.</strong> 12. Trade Identification</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/13.html"><strong aria-hidden="true">10.13.</strong> 13. Live Example -1</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/14.html"><strong aria-hidden="true">10.14.</strong> 14. Live Example – 2</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/15.html"><strong aria-hidden="true">10.15.</strong> 15. Calendar Spreads</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/16.html"><strong aria-hidden="true">10.16.</strong> 16. Momentum Portfolios</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">11.</strong> Personal Finance - Mutual Funds</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/1.html"><strong aria-hidden="true">11.1.</strong> 1. Background and Orientation</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/2.html"><strong aria-hidden="true">11.2.</strong> 2. Personal Finance Math (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/3.html"><strong aria-hidden="true">11.3.</strong> 3. Personal Finance Math (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/4.html"><strong aria-hidden="true">11.4.</strong> 4. The retirement problem (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/5.html"><strong aria-hidden="true">11.5.</strong> 5. The retirement problem (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/6.html"><strong aria-hidden="true">11.6.</strong> 6. Introduction to Mutual Funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/7.html"><strong aria-hidden="true">11.7.</strong> 7. Concept of fund & NAV</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/8.html"><strong aria-hidden="true">11.8.</strong> 8. The mutual fund fact-sheet</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/9.html"><strong aria-hidden="true">11.9.</strong> 9. The Equity scheme (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/10.html"><strong aria-hidden="true">11.10.</strong> 10. Equity Scheme (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/11.html"><strong aria-hidden="true">11.11.</strong> 11. The Debt funds (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/12.html"><strong aria-hidden="true">11.12.</strong> 12. The Debt funds (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/13.html"><strong aria-hidden="true">11.13.</strong> 13. The Debt funds (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/14.html"><strong aria-hidden="true">11.14.</strong> 14. The Debt Funds (Part 4)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/15.html"><strong aria-hidden="true">11.15.</strong> 15. Investing in Bonds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/16.html"><strong aria-hidden="true">11.16.</strong> 16. Index Funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/17.html"><strong aria-hidden="true">11.17.</strong> 17. Arbitrage Funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/18.html"><strong aria-hidden="true">11.18.</strong> 18. Measuring Mutual fund Returns</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/19.html"><strong aria-hidden="true">11.19.</strong> 19. Rolling Returns</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/20.html"><strong aria-hidden="true">11.20.</strong> 20. Mutual fund Expense Ratio, Direct, and Regular plans</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/21.html"><strong aria-hidden="true">11.21.</strong> 21. Mutual Benchmarking</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/22.html"><strong aria-hidden="true">11.22.</strong> 22. Mutual Fund Beta, SD, and Sharpe Ratio</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/23.html"><strong aria-hidden="true">11.23.</strong> 23. Sortino and the Capture Ratios</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/24.html"><strong aria-hidden="true">11.24.</strong> 24. How to analyse an Equity Mutual fund?</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/25.html"><strong aria-hidden="true">11.25.</strong> 25. How to analyze a debt mutual fund?</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/26.html"><strong aria-hidden="true">11.26.</strong> 26. The Mutual Fund Portfolio</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/27.html"><strong aria-hidden="true">11.27.</strong> 27. Smart-beta funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/28.html"><strong aria-hidden="true">11.28.</strong> 28. Asset Allocation, An Introduction</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/29.html"><strong aria-hidden="true">11.29.</strong> 29. Exchange-traded funds (ETF)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/30.html"><strong aria-hidden="true">11.30.</strong> 30. Basics of Macro Economics</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">12.</strong> Innerworth — Mind over markets</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">13.</strong> Integrated Financial Modelling</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/1.html"><strong aria-hidden="true">13.1.</strong> 1. Introduction to Financial Modelling</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/2.html"><strong aria-hidden="true">13.2.</strong> 2. Excel workbook setup</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/3.html"><strong aria-hidden="true">13.3.</strong> 3. Historical Data</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/4.html"><strong aria-hidden="true">13.4.</strong> 4. Assumptions (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/5.html"><strong aria-hidden="true">13.5.</strong> 5. Assumptions (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/6.html"><strong aria-hidden="true">13.6.</strong> 6. Revenue model</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/7.html"><strong aria-hidden="true">13.7.</strong> 7. Asset Schedule (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/8.html"><strong aria-hidden="true">13.8.</strong> 8. Asset Schedule (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/9.html"><strong aria-hidden="true">13.9.</strong> 9. Debt Schedule</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/10.html"><strong aria-hidden="true">13.10.</strong> 10. Reserves Schedule (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/11.html"><strong aria-hidden="true">13.11.</strong> 11. Reserves Schedule (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/12.html"><strong aria-hidden="true">13.12.</strong> 12. Projections</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/13.html"><strong aria-hidden="true">13.13.</strong> 13. Cash flow statement</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/14.html"><strong aria-hidden="true">13.14.</strong> 14. Valuation (Part 1) – Overview</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/15.html"><strong aria-hidden="true">13.15.</strong> 15. Valuation (Part 2) – FCFF & FCFE</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/16.html"><strong aria-hidden="true">13.16.</strong> 16. Valuation (Part 3) – Risk Premium & Tax Shield</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/17.html"><strong aria-hidden="true">13.17.</strong> 17. Weighted average cost of capital and Terminal Growth</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/18.html"><strong aria-hidden="true">13.18.</strong> 18. Discounted Cash Flow Analysis (DCF)</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">14.</strong> Personal Finance - Insurance</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/1.html"><strong aria-hidden="true">14.1.</strong> 1. Introduction</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/2.html"><strong aria-hidden="true">14.2.</strong> 2. Perverse Incentives</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/3.html"><strong aria-hidden="true">14.3.</strong> 3. The nudge</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/4.html"><strong aria-hidden="true">14.4.</strong> 4. Skin in the game</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/5.html"><strong aria-hidden="true">14.5.</strong> 5. Dunning Kruger effect</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/6.html"><strong aria-hidden="true">14.6.</strong> 6. A mighty defence</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/7.html"><strong aria-hidden="true">14.7.</strong> 7. No free lunch</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/8.html"><strong aria-hidden="true">14.8.</strong> 8. Gimmick or not (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/9.html"><strong aria-hidden="true">14.9.</strong> 9. Gimmick or not (Part 2)</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Varsity mdBook</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <div class="post">
+<h2 id="41--background"><a class="header" href="#41--background">4.1 – Background</a></h2>
+<p>The Call Ratio Back Spread is an interesting options strategy. I call this interesting keeping in mind the simplicity of implementation and the kind of pay off it offers the trader. This should certainly have a spot in your strategy arsenal. The strategy is deployed when one is out rightly bullish on a stock (or index), unlike the bull call spread or bull put spread where one is moderately bullish.</p>
+<p>At a broad level this is what you will experience when you implement the Call Ratio Back Spread-</p>
+<ol>
+<li>Unlimited profit if the market goes up</li>
+<li>Limited profit if market goes down</li>
+<li>A predefined loss if the market stay within a range</li>
+</ol>
+<p>In simpler words you can get to make money as long as the market moves in either direction.</p>
+<p>&nbsp;</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2015/12/M6-Ch4-cartoon.png"><img alt="" class="aligncenter wp-image-2933 size-full" height="400" sizes="(max-width: 600px) 100vw, 600px" src="https://zerodha.com/varsity/wp-content/uploads/2015/12/M6-Ch4-cartoon.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/12/M6-Ch4-cartoon.png 600w, https://zerodha.com/varsity/wp-content/uploads/2015/12/M6-Ch4-cartoon-300x200.png 300w" width="600"/></a></p>
+<p>Usually, the Call Ratio Back Spread is deployed for a ‘net credit’, meaning money flows into your account as soon as you execute Call Ratio Back Spread. The ‘net credit’ is what you make if the market goes down, as opposed to your expectation (i.e market going up). On the other hand, if the market indeed goes up, then you stand to make an unlimited profit. I suppose this should also explain why the call ratio spread is better than buying a plain vanilla call option.</p>
+<p>So let’s go ahead and figure out how this works.</p>
+<h2 id="42--strategy-notes"><a class="header" href="#42--strategy-notes">4.2 – Strategy Notes</a></h2>
+<p>The Call Ratio Back Spread is a 3 leg option strategy as it involves <strong>buying two OTM</strong> call option and <strong>selling one ITM</strong> Call option. This is the classic 2:1 combo. In fact the call ratio back spread has to be executed in the 2:1 ratio meaning 2 options bought for every one option sold, or 4 options bought for every 2 option sold, so on and so forth.</p>
+<p>Let take an example – assume Nifty Spot is at 7743 and you expect Nifty to hit 8100 by the end of expiry. This is clearly a bullish outlook on the market. To implement the Call Ratio Back Spread –</p>
+<ol>
+<li>Sell <strong>one</strong> lot of 7600 CE (ITM)</li>
+<li>Buy <strong>two</strong> lots of 7800 CE (OTM)</li>
+</ol>
+<p>Make sure –</p>
+<ol>
+<li>The Call options belong to the same expiry</li>
+<li>Belongs to the same underlying</li>
+<li>The ratio is maintained</li>
+</ol>
+<p>The trade set up looks like this –</p>
+<ol>
+<li>7600 CE, one lot short, the premium received for this is Rs.201/-</li>
+<li>7800 CE, two lots long, the premium paid is Rs.78/- per lot, so Rs.156/- for 2 lots</li>
+<li>Net Cash flow is = Premium Received – Premium Paid i.e 201 – 156 = <strong>45</strong> (Net Credit)</li>
+</ol>
+<p>With these trades, the call ratio back spread is executed. Let us check what would happen to the overall cash flow of the strategies at different levels of expiry.</p>
+<p>Do note we need to evaluate the strategy payoff at various levels of expiry as the strategy payoff is quite versatile.</p>
+<p><strong>Scenario 1 – Market expires at 7400 (below the lower strike price)</strong></p>
+<p>We know the intrinsic value of a call option (upon expiry) is –</p>
+<p>Max [Spot – Strike, 0]</p>
+<p>The 7600 would have an intrinsic value of</p>
+<p>Max [7400 – 7600, 0]</p>
+<p>= 0</p>
+<p>Since we have sold this option, we get to retain the premium received i.e Rs.201</p>
+<p>The intrinsic value of 7800 call option would also be zero; hence we lose the total premium paid i.e Rs.78 per lot or Rs.156 for two lots.</p>
+<p>Net cash flow would Premium Received – Premium paid</p>
+<p>= 201 – 156</p>
+<p>= <strong>45</strong></p>
+<p><strong>Scenario 2 – Market expires at 7600 (at the lower strike price)</strong></p>
+<p>The intrinsic value of both the call options i.e 7600 and 7800 would be zero, hence both of them expire worthless.</p>
+<p>We get to retain the premium received i.e Rs.201 towards the 7600 CE however we lose Rs.156 on the 7800 CE resulting in a net payoff of <strong>Rs.45.</strong></p>
+<p><strong>Scenario 3 – Market expires at 7645 (at the lower strike price plus net credit)</strong></p>
+<p>You must be wondering why I picked the 7645 level, well this is to showcase the fact that the strategy break even is at this level.</p>
+<p>The intrinsic value of 7600 CE would be –</p>
+<p>Max [Spot – Strike, 0]</p>
+<p>= [7645 – 7600, 0]</p>
+<p>= 45</p>
+<p>Since, we have sold this option for 201 the net pay off from the option would be</p>
+<p>201 – 45</p>
+<p>= 156</p>
+<p>On the other hand we have bought two 7800 CE by paying a premium of 156. Clearly the 7800 CE would expire worthless hence, we lose the entire premium.</p>
+<p>Net payoff would be –</p>
+<p>156 – 156</p>
+<p>= <strong>0</strong></p>
+<p>So at 7645 the strategy neither makes money or loses any money for the trader, hence 7645 is treated as a breakeven point for this trade.</p>
+<p><strong>Scenario 4 – Market expires at 7700 (half way between the lower and higher strike price)</strong></p>
+<p>The 7600 CE would have an intrinsic value of 100, and the 7800 would have no intrinsic value.</p>
+<p>On the 7600 CE we get to retain 101, as we would lose 100 from the premium received of 201 i.e 201 – 100 = 101.</p>
+<p>We lose the entire premium of Rs.156 on the 7800 CE, hence the total payoff from the strategy would be</p>
+<p>= 101 – 156</p>
+<p>= <strong style="color: red;">– 55 </strong></p>
+<p><strong>Scenario 5 – Market expires at 7800 (at the higher strike price)</strong></p>
+<p>This is an interesting market expiry level, think about it –</p>
+<ol>
+<li>At 7800 the 7600 CE would have an intrinsic value of 200, and hence we have to let go of the entire premium received i.e 201</li>
+<li>At 7800, the 7800 CE would expire worthless hence we lose the entire premium paid for the 7800 CE i.e Rs.78 per lot, since we have 2 of these we lose Rs.156</li>
+</ol>
+<p>So this is like a ‘double whammy’ point for the strategy!</p>
+<p>The net pay off for the strategy is –</p>
+<p>Premium Received for 7600 CE – Intrinsic value of 7600 CE – Premium Paid for 7800 CE</p>
+<p>= 201 – 200 – 156</p>
+<p>= <strong style="color: red;">-155</strong></p>
+<p>This also happens to be the maximum loss of this strategy.</p>
+<p><strong>Scenario 6 – Market expires at 7955 (higher strike i.e 7800 + Max loss)</strong></p>
+<p>I’ve deliberately selected this strike to showcase the fact that at 7955 the strategy breakeven!</p>
+<p>But we dealt with a breakeven earlier, you may ask?</p>
+<p>Well, this strategy has two breakeven points – one on the lower side (7645) and another one on the upper side i.e 7955.</p>
+<p>At 7955 the net payoff from the strategy is –</p>
+<p>Premium Received for 7600 CE – Intrinsic value of 7600 CE + (2* Intrinsic value of 7800 CE) – Premium Paid for 7800 CE</p>
+<p>= 201 – 355 + (2*155) – 156</p>
+<p>= 201 – 355 + 310 – 156</p>
+<p>=<strong> 0</strong></p>
+<p><strong>Scenario 7 – Market expires at 8100 (higher than the higher strike price, your expected target)</strong></p>
+<p>The 7600 CE will have an intrinsic value of 500, and the 7800 CE will have an intrinsic value of 300.</p>
+<p>The net payoff would be –</p>
+<p>Premium Received for 7600 CE – Intrinsic value of 7600 CE + (2* Intrinsic value of 7800 CE) – Premium Paid for 7800 CE</p>
+<p>= 201 – 500 + (2*300) – 156</p>
+<p>= 201 – 500 + 600 -156</p>
+<p>= <strong>145</strong></p>
+<p>Here are various other levels of expiry, and the eventual payoff from the strategy. Do note, as the market goes up, so does the profits, but when the market goes down, you still make some money, although limited.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2015/12/Image-1_Payoff.png"><img alt="" class="aligncenter wp-image-2934 size-full" height="361" loading="lazy" sizes="(max-width: 917px) 100vw, 917px" src="https://zerodha.com/varsity/wp-content/uploads/2015/12/Image-1_Payoff.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/12/Image-1_Payoff.png 917w, https://zerodha.com/varsity/wp-content/uploads/2015/12/Image-1_Payoff-300x118.png 300w" width="917"/></a></p>
+<h2 id="43--strategy-generalization"><a class="header" href="#43--strategy-generalization">4.3 – Strategy Generalization</a></h2>
+<p>Going by the above discussed scenarios we can make few generalizations –</p>
+<ul>
+<li>Spread = Higher Strike – Lower Strike</li>
+<li>Net Credit = Premium Received for lower strike – 2*Premium of higher strike</li>
+<li>Max Loss = Spread – Net Credit</li>
+<li>Max Loss occurs at = Higher Strike</li>
+<li>The payoff when market goes down = Net Credit</li>
+<li>Lower Breakeven = Lower Strike + Net Credit</li>
+<li>Upper Breakeven = Higher Strike + Max Loss</li>
+</ul>
+<p>Here is a graph that highlights all these important points –</p>
+<p>&nbsp;</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2015/12/Image-2_Payoff-graph.png"><img alt="" class="aligncenter wp-image-2935 size-full" height="291" loading="lazy" sizes="(max-width: 482px) 100vw, 482px" src="https://zerodha.com/varsity/wp-content/uploads/2015/12/Image-2_Payoff-graph.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/12/Image-2_Payoff-graph.png 482w, https://zerodha.com/varsity/wp-content/uploads/2015/12/Image-2_Payoff-graph-300x181.png 300w" width="482"/></a></p>
+<p>Notice how the payoff remains flat even when the market goes down, the maximum loss at 7800, and the way the payoff takes off beyond 7955.</p>
+<h2 id="44--welcome-back-the-greeks"><a class="header" href="#44--welcome-back-the-greeks">4.4 – Welcome back the Greeks</a></h2>
+<p>I suppose you are familiar with these graphs by now. The following graphs show the profitability of the strategy considering the time to expiry and therefore these graphs help the trader select the right strikes.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/08/Image-3_start-of-the-series_1.png"><img alt="" class="aligncenter wp-image-2936 size-large" height="576" loading="lazy" src="https://zerodha.com/varsity/wp-content/uploads/2021/08/Image-3_start-of-the-series_1.png" width="1024"/></a></p>
+<p>&nbsp;</p>
+<p>Before understanding the graphs above, note the following –</p>
+<ol>
+<li>Nifty spot is assumed to be at 8000</li>
+<li>Start of the series is defined as anytime during the first 15 days of the series</li>
+<li>End of the series is defined as anytime during the last 15 days of the series</li>
+<li>The Call Ratio Back Spread is optimized and the spread is created with 300 points difference</li>
+</ol>
+<p>The thought here is that the market will move up by about 6.25% i.e from 8000 to 8500. So considering the move and the time to expiry, the graphs above suggest –</p>
+<ol>
+<li><strong>Graph 1 (top left) and Graph 2 (top right)</strong> – You are at the start of the expiry series and you expect the move over the next 5 days (and 15 days in case of Graph 2), then a Call Ratio Spread with 7800 CE (ITM) and 8100 CE (OTM) is the <strong>most profitable</strong> wherein you would sell 7800 CE and buy 2 8100 CE. Do note – even though you would be right on the direction of movement, selecting other far OTM strikes call options tend to lose money</li>
+<li><strong>Graph 3 (bottom left) and Graph 4 (bottom right)</strong> – You are at the start of the expiry series and you expect the move in <strong>25 days </strong>(and expiry day in case of Graph 3), then a Call Ratio Spread with 7800 CE (ITM) and 8100 CE (OTM) is the most profitable wherein you would sell 7800 CE and buy 2 8100 CE.</li>
+</ol>
+<p>You must be wondering that the selection of strikes is same irrespective of time to expiry. Well yes, in fact this is the point – Call ratio back spread works best when you sell slightly ITM option and buy slightly OTM option <strong>when there is ample time to expiry</strong>. In fact all other combinations lose money, especially the ones with far OTM options and especially when you expect the target to be achieved closer to the expiry.</p>
+<p>Here are another bunch of charts; the only difference is that the move (i.e 6.25%) occurs during the 2<sup>nd</sup> half of the series –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/08/Image-4_2nd-half-of-the-series.png"><img alt="" class="aligncenter wp-image-2937 size-large" height="576" loading="lazy" src="https://zerodha.com/varsity/wp-content/uploads/2021/08/Image-4_2nd-half-of-the-series.png" width="1024"/></a></p>
+<ol>
+<li><strong>Graph 1 (top left) &amp; Graph 2 (top right) </strong>– If you expect the move during the 2<sup>nd</sup> half of the series, and you expect the move to happen within <strong>a day (or within 5 days, graph 2)</strong> then the best strikes to opt are deep ITM and slightly ITM i.e 7600 (lower strike short) and 7900 (higher strike long). Do note, this is not the classic combo of an ITM + OTM spread, instead this is an ITM and ITM spread! In fact all other combinations don’t work.</li>
+<li><strong>Graph 3 (bottom right) &amp; Graph 4 (bottom left) </strong>– If you expect the move during the 2<sup>nd</sup> half of the series, and you expect the move to happen within <strong>10 days (or on expiry day, graph 4)</strong> then the best strikes to opt are deep ITM and slightly ITM i.e 7600 (lower strike short) and 7900 (higher strike long). This is similar to what graph 1 and graph 2 suggest.</li>
+</ol>
+<p>Again, the point to note here is besides getting the direction right, the strike selection is the key to the profitability of this strategy. One needs to be diligent enough to map the time to expiry to the right strike to make sure that the strategy works in your favor.</p>
+<p>What about the effect of volatility on this strategy? Well, volatility plays a key role here, have a look at the image below –</p>
+<p>&nbsp;</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/08/Image-5_volatility.png"><img alt="" class="alignnone wp-image-2938 size-large" height="576" loading="lazy" src="https://zerodha.com/varsity/wp-content/uploads/2021/08/Image-5_volatility.png" width="1024"/></a></p>
+<p>There are three colored lines depicting the change of “net premium” aka the strategy payoff versus change in volatility. These lines help us understand the effect of increase in volatility on the strategy keeping time to expiry in perspective.</p>
+<ol>
+<li><strong>Blue Line</strong> – This line suggests that an increase in volatility when there is ample time to expiry (30 days) is beneficial for the Call ratio back spread. As we can see the strategy payoff increases from -67 to +43 when the volatility increase from 15% to 30%. Clearly this means that when there is ample time to expiry, besides being right on the direction of stock/index you also need to have a view on volatility. For this reason, even though I’m bullish on the stock, I would be a bit hesitant to deploy this strategy at the start of the series if the volatility is on the higher side (say more than double of the usual volatility reading)</li>
+<li><strong>Green line</strong> – This line suggests that an increase in volatility when there are about 15 days time to expiry is beneficial, although not as much as in the previous case. As we can see the strategy payoff increases from -77 to -47 when the volatility increase from 15% to 30%.</li>
+<li><strong>Red line – </strong>This is an interesting, counter intuitive outcome. When there are very few days to expiry, increase in volatility has a negative impact on the strategy! Think about it, increase in volatility when there are few days to expiry enhances the possibility of the option to expiry OTM, hence the premium decreases. So, if you are bullish on a stock / index with few days to expiry, and you also expect the volatility to increase during this period then thread cautiously.</li>
+</ol>
+<hr/>
+<h3 id="key-takeaways-from-this-chapter"><a class="header" href="#key-takeaways-from-this-chapter">Key takeaways from this chapter</a></h3>
+<ol>
+<li>The Call Ratio Backspread is best executed when your outlook on the stock/index is bullish</li>
+<li>The strategy requires you to sell 1 ITM CE and buy 2 OTM CE, and this is to be executed in the same ratio i.e for every 1 sold option, 2 options have to be purchased</li>
+<li>The strategy is usually executed for a ‘net Credit’</li>
+<li>The strategy makes limited money if the stock price goes down, and unlimited profit if the stock price goes up. The loss is pre defined</li>
+<li>There are two break even points – lower breakeven and upper breakeven points</li>
+<li>Spread = Higher Strike – Lower Strike</li>
+<li>Net Credit = Premium Received for lower strike – 2*Premium of higher strike</li>
+<li>Max Loss = Spread – Net Credit</li>
+<li>Max Loss occurs at = Higher Strike</li>
+<li>The payoff when market goes down = Net Credit</li>
+<li>Lower Breakeven = Lower Strike + Net Credit</li>
+<li>Upper Breakeven = Higher Strike + Max Loss</li>
+<li>Irrespective of the time to expiry opt for slightly ITM + Slightly OTM combination of strikes</li>
+<li>Increase in volatility is good for this strategy when there is more time to expiry, but when there is less time to expiry, increase in volatility is not really good for this strategy.</li>
+</ol>
+<p>&nbsp;</p>
+<p style="text-align: center;"><a class="button" href="https://zerodha.com/varsity/wp-content/uploads/2015/12/Call-Ratio-Back-Spread.xlsx">Download Call Ratio Back Spread Excel Sheet</a></p>
+<div class="clear"> </div>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../mds/Option+Strategies/3.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../mds/Option+Strategies/5.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../mds/Option+Strategies/3.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../mds/Option+Strategies/5.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>

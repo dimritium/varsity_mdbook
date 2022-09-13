@@ -1,0 +1,179 @@
+<div class="post">
+<h2><img alt="SN-Cartoon" class="aligncenter size-full wp-image-3113" height="298" sizes="(max-width: 400px) 100vw, 400px" src="http://zerodha.com/varsity/wp-content/uploads/2016/02/SN-Cartoon2.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/02/SN-Cartoon2.png 400w, https://zerodha.com/varsity/wp-content/uploads/2016/02/SN-Cartoon2-300x224.png 300w" width="400"/></h2>
+<h2>Average Directional Index (ADX)</h2>
+<p><strong>About:<br/>
+</strong>The Average Directional Index (ADX), Minus Directional Indicator (-DI) and Directional Indicator (+DI) represent a group of directional movement indicators that form a trading system developed by Welles Wilder. The Average Directional Index (ADX) measures trend strength without regard to trend direction. The other two indicators, Plus Directional Indicator (+DI) and Minus Directional Indicator (-DI), complement ADX by defining trend direction. Used together, chartists can determine both the <em>direction</em>&nbsp;and&nbsp;<em>strength</em>&nbsp;of the trend. <em>Source: stockcharts.com</em></p>
+<p><strong>What should you know?</strong></p>
+<ol>
+<li>ADX system has three components – ADX, +DI, and -DI</li>
+<li>ADX is used to measure the strength/weakness of the trend and not the actual direction</li>
+<li>ADX above 25 indicates that the present trend is strong, ADX below 20 suggest that the trend lacks strength. ADX between 20 and 25 is a grey area</li>
+<li>A buy signal is generated when ADX is 25, and the +DI crosses over –DI</li>
+<li>A sell signal is generated when ADX is 25 and the –DI crosses over +DI</li>
+<li>Once the buy or sell signal is generated, take the trade by defining the stop loss.</li>
+<li>The stop loss is usually the low of the signal candle (for buy signals) and the high of the signal candles ( for short signals)</li>
+<li>The trade stays valid till the stoploss is breached (even if the +DI and –DI reverses the crossover)</li>
+<li>The default lookback period for ADX is 14 days.</li>
+</ol>
+<p><strong>On Kite:<br/>
+</strong>Load the ADX indicator from studies. Kite gives you an option to change the lookback period; by default, the lookback period is set.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-1_ADX1.png"><img alt="Image 1_ADX" class="aligncenter wp-image-3123" height="487" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-1_ADX1.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-1_ADX1.png 822w, https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-1_ADX1-300x182.png 300w" width="800"/></a></p>
+<p>You can customize the colour of all the three components of the ADX system. Click on ‘create’ to load the indicator –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-2_ADX_loaded.png"><img alt="Image 2_ADX_loaded" class="aligncenter wp-image-3099" height="417" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-2_ADX_loaded.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-2_ADX_loaded.png 824w, https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-2_ADX_loaded-300x156.png 300w" width="800"/></a></p>
+<p>By default, the ADX indicator is loaded below the instrument. The black line represents ADX, ensure it is above 25 while looking for the crossovers.</p>
+<h2>Alligator Indicator</h2>
+<p><strong>About:<br/>
+</strong>An indicator designed to signal a trend absence, formation and direction. Bill Williams saw the alligator’s behaviour as an allegory of the market’s one: the resting phase is turning into the price-hunting as the alligator awakes so that to come back to sleep after the feeding is over. The longer the alligator is sleeping, the hungrier it gets and the stronger the market move will be. <em>Source: infimarkets.com</em></p>
+<p><strong>What should you know?</strong></p>
+<ol>
+<li>The Alligator indicator is overlaid on the price chart.</li>
+<li>The indicator comprises three simple moving averages – 13, 8, and 5-period averages are used.</li>
+<li>The 13 period MA refers to the Alligator’s jaw, 8 period MA refers to the Alligator’s teeth, and the 5 period MA refers to the Alligator’s lips.</li>
+<li>By default 13 MA is coloured blue, 8 MA is coloured red, and 5 MA is coloured green.</li>
+<li>A buy signal is generated when the following condition is satisfied –
+<ol type="a">
+<li>All three MA’s are separated.</li>
+<li>The price is above the 5MA, 5MA is above 8MA, and 8MA is above 13 MA.</li>
+<li>Once the above condition is satisfied, it means that the asset is trending up.</li>
+<li>When the uptrend is established, it is upto the trader to identify a good entry point within this trend.</li>
+</ol>
+</li>
+<li>A sell signal is generated when the following condition is satisfied –
+<ol type="a">
+<li>All three MA’s are separated.</li>
+<li>The price is below the 5MA, 5MA is below 8MA, and 8MA is below 13 MA.</li>
+<li>Once the above condition is satisfied, it means that the asset is trending down.</li>
+<li>When the downtrend is established, it is upto the trader to identify a good entry point within this trend.</li>
+</ol>
+</li>
+<li>Periods, when the 13, 8, and 5 MA are intervened (or moving flat), is considered a ‘no trader’ zone, and therefore the trader is advised to stay out of markets.</li>
+</ol>
+<p><strong>On Kite:<br/>
+</strong>Load the Alligator indicator from the studies. As you can see, the moving averages’ default values are loaded, i.e. 13, 8, and 5.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-3_Aligator_load.png"><img alt="Image 3_Aligator_load" class="aligncenter wp-image-3100" height="443" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-3_Aligator_load.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-3_Aligator_load.png 829w, https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-3_Aligator_load-300x166.png 300w" width="800"/></a></p>
+<p>As you can see, the indicator input also loads the ‘offset’ values for each MA. Default values also load these offset values. Offsetting or displacing the moving average reduces the number of whipsaws in the average. Needless to say that you can change the default values for moving average and offset to any value that you deem appropriate. Further, you can even customize the colour of each indicator to your preference.</p>
+<p>Here is the snapshot of how the indicator looks when the indicator is overlaid on the chart. There are 2 instances when the sell condition is satisfied (highlighted in red) and 1 instance when the buy condition is satisfied (highlighted in blue).</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-4_aligator-overlay.png"><img alt="Image 4_aligator overlay" class="aligncenter wp-image-3101" height="345" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-4_aligator-overlay.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-4_aligator-overlay.png 820w, https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-4_aligator-overlay-300x130.png 300w" width="800"/></a></p>
+<h2>Aroon</h2>
+<p><strong>About:<br/>
+</strong>Developed by Tushar Chande in 1995, Aroon is an indicator system that determines whether a stock is trending or not and how strong the trend is. “Aroon” means “Dawn’s Early Light” in Sanskrit. Change chose this name because the indicators are designed to reveal the beginning of a new trend. The Aroon indicators measure the number of periods since price recorded an x-day high or low. There are two separate indicators: Aroon-Up and Aroon-Down.</p>
+<p>A 25-day Aroon-Up measures the number of days since a 25-day high. A 25-day Aroon-Down measures the number of days since a 25-day low. In this sense, the Aroon indicators are quite different from typical momentum oscillators, focusing on price relative to time. Aroon is unique because it focuses on time relative to price. Chartists can use the Aroon indicators to spot emerging trends, identify consolidations, define correction periods and anticipate reversals. <em>Source: stockcharts.com</em></p>
+<p><strong>What should you know?</strong></p>
+<ol>
+<li>The indicator measures the number of days since last high or low is made. Hence the indicator is a measure of time relative to the price.</li>
+<li>Aroon consists of two-component – Aroon up and Aroon Down.</li>
+<li>The default value for Aroon is 25 days. Aroon up measures the number of days since the last 25 day high occurred and Aroon down measures the number of days since the last 25 days low has occurred</li>
+<li>Both Aroon up and Aroon down are plotted side by side.</li>
+<li>Aroon Up/Down is lower bound to zero and upper bound to 100</li>
+<li>A buy is generated when Aroon up is above 50 and Aroon low is below 30</li>
+<li>A sell is generated when Aroon down is above 50, and Aroon up is below 30</li>
+</ol>
+<p><strong>On Kite:<br/>
+</strong>Here is the snapshot of the indicator when loaded from studies –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-5_aroon-load.png"><img alt="Image 5_aroon load" class="aligncenter wp-image-3102" height="400" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-5_aroon-load.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-5_aroon-load.png 817w, https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-5_aroon-load-300x150.png 300w" width="800"/></a></p>
+<p>As you can see, the default period is 14, feel free to change this to any number, you wish. 14 here represent the ‘number of days’. Remember if the period is 14; the Aroon measures the number of days since the stock made 14 days high/low.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-6_Aroon-applied.png"><img alt="Image 6_Aroon applied" class="aligncenter wp-image-3103" height="487" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-6_Aroon-applied.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-6_Aroon-applied.png 849w, https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-6_Aroon-applied-300x183.png 300w" width="800"/></a></p>
+<p>As you can see both Aroon up and Aroon Down are plotted.</p>
+<h2>Aroon Oscillator</h2>
+<p>Aroon Oscillator is an extension of the Aroon indicator. The Aroon Oscillator measures the difference between the Aroon up and Aroon down and plots the difference in the form of an oscillator. The oscillator swings between -100 to +100, with the ‘0’ level as the centre point.</p>
+<p>The snapshot below shows the Aroon Oscillator loaded on to the chart –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-7_Aroon-Osc.png"><img alt="Image 7_Aroon Osc" class="aligncenter wp-image-3104" height="417" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-7_Aroon-Osc.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-7_Aroon-Osc.png 835w, https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-7_Aroon-Osc-300x156.png 300w" width="800"/></a></p>
+<p>A reading above zero means that Aroon-Up is greater than Aroon-Down, which implies that prices make new highs more recently than new lows. Conversely, readings below zero indicate that Aroon-Down is greater than Aroon-Up. This implies that prices are recording new lows more recently than new highs.</p>
+<p>As you can see, the Aroon Oscillator is either going to be positive or negative the vast majority of the time. This makes interpretation straight-forward—time and price favour an uptrend when the indicator is positive and a downtrend when it is negative. A positive or negative threshold can be used to define the strength of the trend. For example, a surge above +50 would reflect a strong upside move, while a plunge below -50 would indicate a strong downside move. <em>Source: stockcharts.com</em></p>
+<h2>Average True Range</h2>
+<p><strong>About:<br/>
+</strong>Developed by J. Welles Wilder, the Average True Range (ATR) is an indicator that measures volatility. As with most of his indicators, Wilder designed ATR with commodities and daily prices in mind. Commodities are frequently more volatile than stocks. They were are often subject to gaps and limit moves, which occur when a commodity opens up or down its maximum allowed move for the session. A volatility formula based only on the high-low range would fail to capture volatility from gap or limit moves. Wilder created the Average True Range to capture this “missing” volatility. It is important to remember that ATR does not indicate the price direction, just volatility. <em>Source: stockcharts.com</em></p>
+<p><strong>What should you know?</strong></p>
+<ol>
+<li>Average True Range (ATR) is an extension of the True Range concept.</li>
+<li>ATR is no upper or lower bound, hence can take any value</li>
+<li>ATR is stock price specific, hence for Stock 1 ATR can be in the range of 1.2 and Stock 2 ATR could be in the range of 150</li>
+<li>ATR attempts to measure the volatility situation and not really the direction of the prices</li>
+<li>ATR is used to identify stop loss as well</li>
+<li>If the ATR of a stock is 48, then it means that the stock is likely to move 48 points either ways up or down on average. You can add this to the current day’s range to estimate the day’s range. For example, the stock price is 1320; then the stock is likely to trade between 1320 – 48 = <strong>1272</strong> and 1320 + 48 = <strong>1368</strong></li>
+<li>If the ATR for the next day decreases to say 40, then it means that the volatility is decreasing, and so is the expected range for the day.</li>
+<li>It is best to use ATR to identify the volatility-based SL while trading. Assume you have initiated a long trade on the stock at 1325, then your SL should be at least 1272 or below since the ATR is 48</li>
+<li>Likewise, if you have initiated a short at 1320, then your stoploss should be at least 1368 or above.</li>
+<li>If these SL levels are outside your risk to reward appetite, then its best to avoid such trade.</li>
+</ol>
+<p><strong>On Kite:<br/>
+</strong>As you can see, the default value of ATR is 14, which means to say that the system calculates the ATR for the last 14 days. Of course, you can change this to any value to wish. Here is the snapshot –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-8_ATR_load.png"><img alt="Image 8_ATR_load" class="aligncenter wp-image-3105" height="487" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-8_ATR_load.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-8_ATR_load.png 821w, https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-8_ATR_load-300x183.png 300w" width="800"/></a></p>
+<p>Once you load the chart, ATR is plotted below the price chart as seen below –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-9_ATR_create.png"><img alt="Image 9_ATR_create" class="aligncenter wp-image-3106" height="442" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-9_ATR_create.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-9_ATR_create.png 817w, https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-9_ATR_create-300x166.png 300w" width="800"/></a></p>
+<p>So the next time you place a stoploss make sure you check the ATR value to see if stoploss level is relevant. You may also want to read more about volatility and its application (including volatility based SL) – <strong><a href="http://zerodha.com/varsity/chapter/volatility-applications/" rel="noopener noreferrer" target="_blank">Click Here</a>.</strong></p>
+<h2>Average True Range Band</h2>
+<p>The ATR bands are an extension of the ATR concept. The idea is to plot an envelope around the stock price to evaluate if the stock prices are behaving “normally” or trending in a particular direction. To do this, the ATR band calculates the upper and lower band.</p>
+<p><strong>What should you know?</strong></p>
+<ol>
+<li>The ATR band calculates and plots the upper and lower envelope around the stock price.</li>
+<li>To begin with, a moving average of the stock price is calculated.</li>
+<li>The ATR value is added to the moving average value, and this forms the upper envelope.</li>
+<li>The ATR value is subtracted to the moving average value, and this forms the lower envelope.</li>
+<li>If the stock price penetrates either the upper or lower envelop, the expectation is that the stock price will continue to move in the same direction. For example, if the stock price has penetrated above the upper envelop, the expectation is that the stock will continue to move higher.</li>
+<li>You can even use the ATR bands as an alternative to the Bollinger Bands trading system. You can read more about the <a href="http://zerodha.com/varsity/chapter/indicators-part-2/" rel="noopener noreferrer" target="_blank"><strong>Bollinger Band (section 15.2)</strong></a></li>
+</ol>
+<p><strong>On Kite:<br/>
+</strong>When you load the ATR band from studies, you will be prompted for a few inputs –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-10_ATRB_load.png"><img alt="Image 10_ATRB_load" class="aligncenter size-full wp-image-3107" height="463" loading="lazy" sizes="(max-width: 320px) 100vw, 320px" src="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-10_ATRB_load.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-10_ATRB_load.png 320w, https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-10_ATRB_load-207x300.png 207w" width="320"/></a></p>
+<p>Period refers to the MA time frame; the default value is 5 days. You can change this to whichever time frame that you deem suitable. We would suggest you ignore the ‘shift’ parameter. For the ‘field’ option select ‘close’, this means to say that you are plotting the MA values on the closing prices. The rest of the options are mainly aesthetic features, feel free to explore them. Once you click create, you will see the ATR bands plotted on the chart.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-11_ATRbands_created.png"><img alt="Image 11_ATRbands_created" class="aligncenter wp-image-3108" height="308" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-11_ATRbands_created.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-11_ATRbands_created.png 804w, https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-11_ATRbands_created-300x116.png 300w" width="800"/></a></p>
+<h2>Super trend</h2>
+<p>Before understanding the supertrend indicator, understanding the ATR is necessary as the super trend employs ATR values to calculate the indicator values. The supertrend indicator is plotted over the price chart of the stock or the index. The indicator line changes its colour between green and red based on the price moment in the underlying. The super trend does not predict the direction, rather once the direction is established, it will guide you by initiating a position and suggesting that you stay in the position until the trend sustains.</p>
+<p><strong>What should you know?</strong></p>
+<ol>
+<li>When plotted, the supertrend indicator appears like an alternating green and red continuous line.</li>
+<li>A buy signal is generated when the stock/index price turns greater than the indicator value. At this stage, the indicator colour turns green, and you can also see a crossover of the price versus the indicator (price greater than indicator value)</li>
+<li>Once the long position has been established, the trader is advised to hold the position till the price closes below the green line. So in a sense, the green line helps as a trailing stoploss for the long position.</li>
+<li>A sell signal is generated when the stock/index price turns lesser than the indicator value. At this stage, the indicator colour turns red, and you can also see a crossover of the price versus the indicator (price lesser than indicator value)</li>
+<li>The sell signal can be used to initiate a fresh short or exit long. Although waiting for the sell signal to exit the existing long position can sometimes lead to the loss. So the trader should use his discretion here.</li>
+<li>Once the short position has been established, the trader is advised to hold the position till the price closes below the green line. So in a sense, the red line helps as a trailing stoploss for the short position.</li>
+<li>Supertrend is basically used to identify a trend. Therefore, it works best in a trending market.</li>
+<li>The supertrend indicator, when compared to a regular Moving Average trading system generates fewer false signals; for this reason, the super trend indicator is preferred over a Moving Average trading system.</li>
+</ol>
+<p><strong>On Kite:<br/>
+</strong>When you select the Supertrend indicator from the list of studies, you will be prompted for two inputs – Period and Multiplier.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-12_supertrend-load.png"><img alt="Image 12_supertrend load" class="aligncenter wp-image-3109" height="441" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-12_supertrend-load.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-12_supertrend-load.png 817w, https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-12_supertrend-load-300x165.png 300w" width="800"/></a></p>
+<p>Period refers to the ATR number of days. The default value on Kite is 7, which means that the system will calculate the ATR value for the last 7 days. You can input any value you deem suitable.</p>
+<p>The multiplier refers to a value by which the ATR will get multiplied. The default value on Kite is 3, so whatever is the ATR value, it will get multiplied by 3. The multiplier is a crucial input for Super trend. If the multiplier value is too high, then a lesser number of signals are generated. Likewise, if the multiplier value is too small, then the frequency of signals increase, hence chances of generating false trading signals are quite high. I would suggest you keep this value between 3 and 4.</p>
+<p>Once the indicator is plotted, this is how it appears on the chart –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-13_supertrend_create.png"><img alt="Image 13_supertrend_create" class="aligncenter wp-image-3110" height="406" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-13_supertrend_create.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-13_supertrend_create.png 816w, https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-13_supertrend_create-300x152.png 300w" width="800"/></a></p>
+<p>Notice how the indicator changes the colour as the price moves. Also, whenever the buy/sell signal is generated, green and red arrows are generated (respectively) prompting the trader to go long or short on the stock.<br/>
+<span id="vwap">&nbsp;</span></p>
+<h2>Volume weighted average price (VWAP)</h2>
+<p>VWAP is one of the simplest indicators to use. It works on the principle of averaging the traded price in terms of volume traded. Let me give you an example to help you understand this better.</p>
+<p>Here is how Infy traded between 14:30 and 14:35 on 2<sup>nd</sup> Nov 2016 –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/11/Image-14_VWAP.png"><img alt="image-14_vwap" class="aligncenter size-full wp-image-3899" height="143" loading="lazy" sizes="(max-width: 363px) 100vw, 363px" src="http://zerodha.com/varsity/wp-content/uploads/2016/11/Image-14_VWAP.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/11/Image-14_VWAP.png 363w, https://zerodha.com/varsity/wp-content/uploads/2016/11/Image-14_VWAP-300x118.png 300w" width="363"/></a></p>
+<p>The data is quite simple to understand; for example, at 14:32, 2475 shares were traded; it made a high of 983.95, low of 983, and closed the minute at 983.1.</p>
+<p>Now, we use this data and compute the VWAP price. To do this, we calculate the following –</p>
+<ol>
+<li>Typical price = which is the average price of High, Low, and close</li>
+<li>Volume Price (VP) = we get this by multiplying the typical price with its volume.</li>
+<li>Total VP = This is a cumulative number, which is got by adding the current VP to the previous VP</li>
+<li>Total volume = This is again a cumulative number, which is got by adding the current volume to the previous volume.</li>
+<li>VWAP = We get this VWAP number by dividing the Total VP by Total Volume. The resulting number indicates the average traded price, weighted by volume.</li>
+</ol>
+<p>Let’s do the math on Infy data –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/11/Image-15_VWAP.png"><img alt="image-15_vwap" class="aligncenter size-full wp-image-3900" height="143" loading="lazy" sizes="(max-width: 795px) 100vw, 795px" src="http://zerodha.com/varsity/wp-content/uploads/2016/11/Image-15_VWAP.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/11/Image-15_VWAP.png 795w, https://zerodha.com/varsity/wp-content/uploads/2016/11/Image-15_VWAP-300x54.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/11/Image-15_VWAP-768x138.png 768w" width="795"/></a></p>
+<p>As you see, the VWAP is a dynamic number, changing based on how the trades flow in.</p>
+<p><strong>How to use the VWAP?</strong></p>
+<ol>
+<li>VWAP is an intraday indicator, use it on minute charts. Often when you plot this, you will notice a jump at 9:15 AM, when compared to previous day’s data. Ignore this jump as it means nothing</li>
+<li>VWAP is an average, and like any indicators employing averages, this too lags the current market price</li>
+<li>VWAP is used for 2 main reasons – to get a sense of intraday direction and to get a sense of the efficiency of order execution</li>
+<li>If the current price is below VWAP, then the general opinion is that the intraday trend is down.</li>
+<li>If the current price is above VWAP, then the general opinion is that the stock is trending higher.</li>
+<li>If the VWAP lies in between the high and low, then the expectation is that the stock will remain volatile.</li>
+<li>If you intend to short a stock, it is considered an efficient fill if you short the stock at a higher price than VWAP.</li>
+<li>Likewise, if you intend to go long on a stock, it is considered an efficient fill if you go long at a price lower than VWAP.</li>
+</ol>
+<p><strong>On Kite:</strong></p>
+<p>Open the chart of your preference and select VWAP from the studies dropdown –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/11/Image-16_VWAP.png"><img alt="image-16_vwap" class="aligncenter wp-image-3901" height="468" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/11/Image-16_VWAP.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/11/Image-16_VWAP.png 862w, https://zerodha.com/varsity/wp-content/uploads/2016/11/Image-16_VWAP-300x175.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/11/Image-16_VWAP-768x449.png 768w" width="800"/></a></p>
+<p>Note, VWAP can be applied only on an intraday time frame and cannot be applied on EOD data.</p>
+<p>Once you select the time frame (1 min, 5 mins, 10 mins etc.), the engine calculates the VWAP and plots it on the chart as an overlay.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/11/Image-17_VWAP.png"><img alt="image-17_vwap" class="aligncenter wp-image-3902" height="469" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/11/Image-17_VWAP.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/11/Image-17_VWAP.png 870w, https://zerodha.com/varsity/wp-content/uploads/2016/11/Image-17_VWAP-300x176.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/11/Image-17_VWAP-768x450.png 768w" width="800"/></a></p>
+<p>You can now visualize the VWAP and the current market price and plan your trades accordingly.</p>
+<p>&nbsp;</p>
+<div class="clear"> </div>
+</div>
