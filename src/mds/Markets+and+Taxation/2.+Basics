@@ -1,0 +1,153 @@
+<div class="post">
+<h2>2.1 – Overview</h2>
+<p>India needs help from all of us countrymen in developing a tax culture. The fear of the income tax department can be removed only by gaining knowledge of all the basic rules and regulations. Income tax rates in India have drastically reduced from over 90% in the early seventies to now (2020) where no tax has to be paid on annual income up to Rs 2.5lks. But the apathy of taxpayers towards filing income tax returns and paying taxes continues till today.</p>
+<p>With the systems used by the IT department becoming sophisticated every year, the chances of repercussions in terms of notices and penalties due to non-filing, misfiling, and hiding information while filing your income tax returns (ITR) is going up significantly. Similar to how Income-tax (IT) department has access to all your bank account details, they can also check up on all your capital market activity easily through the exchanges as they are all mapped to your PAN (Permanent account number). With AADHAR slowly getting linked everywhere the day isn’t far when the IT department will be able to send you a consolidated activity (income and expenses) statement, similar to how NSDL/CDSL sends for your holdings across all Demat accounts.</p>
+<p>Check this notice received by a client who hadn’t declared his&nbsp;trading activity on commodity exchanges in FY 2012/13. The notice was sent only in 2015 asking for an explanation. <a href="http://tradingqna.com/34348/meaning-the-code-mentioned-the-income-tax-department-notice">Check this link</a> that has a list of various codes in which these notices are sent by the IT department.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/07/whytax1.jpg"><img alt="whytax" class="aligncenter wp-image-2642" height="595" sizes="(max-width: 529px) 100vw, 529px" src="http://zerodha.com/varsity/wp-content/uploads/2015/07/whytax1-911x1024.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/07/whytax1-911x1024.jpg 911w, https://zerodha.com/varsity/wp-content/uploads/2015/07/whytax1-267x300.jpg 267w" width="529"/></a></p>
+<p>Even if the intent is there to be compliant, most people including many Chartered Accountants (CAs) don’t understand the subject of taxation when investing &amp; trading very well. We had put up a blog post, “<a href="http://zerodha.com/z-connect/traders-zone/taxation-for-traders/taxation-simplified" rel="noopener noreferrer" target="_blank">Taxation Simplified</a>” on Z-Connect many years back simplifying key aspects of taxation for market participants. We received a few thousand queries on that post. Answering all of them it was obvious that we had to do a lot more to simplify all aspects around taxation while trading or investing in the markets, hence this module.</p>
+<p>If you only invest in stocks or mutual funds filing returns is quite simple, but can get tricky if trading intraday stocks or financial derivatives (futures and options).</p>
+<p>We will in this module break all the concepts down into small easy to understand chapters without any of that jargon typically used by CA’s or tax consultants. Here is a sneak peek into what you can expect going forward in this module –</p>
+<ol>
+<li>Introduction (Setting the Context)</li>
+<li>Basics</li>
+<li>Classify your Market Activity</li>
+<li>Taxation for Investors</li>
+<li>Taxation for Traders</li>
+<li>Turnover, Balance Sheet, and P&amp;L</li>
+<li>ITR Forms (The Finale)</li>
+</ol>
+<p><img alt="M7-C1-cartoon" class="aligncenter size-full wp-image-2224" height="300" loading="lazy" sizes="(max-width: 350px) 100vw, 350px" src="http://zerodha.com/varsity/wp-content/uploads/2015/06/M7-C1-cartoon1.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/06/M7-C1-cartoon1.png 350w, https://zerodha.com/varsity/wp-content/uploads/2015/06/M7-C1-cartoon1-300x257.png 300w" width="350"/></p>
+<h2>2.2 – What is income tax?</h2>
+<p>It is a tax levied by the Government of India on the income of every person. The provisions governing the Income-tax Law are given in the Income-tax Act, 1961. In simpler words, Income Tax is a portion of the money that you earn paid to the government of India.</p>
+<p><strong style="background-color: #78ddb9;">Why should I pay tax?</strong></p>
+<p>Yes, India does not offer social security and free medical facilities as being provided in some developed countries, but the government needs funds collected as taxes to discharge a number of responsibilities like Government hospitals, Education, National defense, Infrastructure development just to name a few.</p>
+<p><strong style="background-color: #78ddb9;">Who is supposed to pay income tax?</strong></p>
+<p>Income-tax is to be paid by every person who earns more than the minimum income slab set by the government. The term ‘person’ as defined under the Income-tax Act covers in its ambit natural as well as artificial persons (including corporate).</p>
+<p>Only 5 percent of over 130 crore population file income tax returns and only 1.5 crore Indians (&lt;1%) pay any income tax. If you had to compare, over 45% of the population in a developed economy like the U.S.A pay taxes. Part of the reason for such an abysmally low number is also because many Indians don’t earn enough to qualify to pay income tax, but the larger factor has got to do with a lack of tax culture.</p>
+<p>Taxes have to be paid based on how much income you earn every financial year. The financial year in India starts from April 1st and ends on 31st March. Do note that year can be specified either as a financial year (FY) or assessment Year (AY).</p>
+<p>FY is used to denote the actual year the income was earned for which you are filing taxes. So FY 2019/20 is the financial year starting April 1st, 2019, and ending 31st March 2020.</p>
+<p>AY is used to denote the year in which you are supposed to file your taxes. So AY 2020/21 is the year when you file the returns for income earned in FY 2019/20. So AY 2020/21 and FY 2019/20 are one and the same. So you will use ITR with AY 2020/21 on it to file your taxes for the income earned in the financial year starting April 1st, 2019, and ending 31st March 2020.</p>
+<h2>2.3 – Income tax slabs in India for financial year 2020/21</h2>
+<p>All Indians have to pay taxes on the total income earned every year as per the below tax slabs they belong to. If you are salaried, your employer would already be paying taxes on your behalf to the government and issuing you a ‘<strong>Form 16</strong>’ as an acknowledgment for having paid the taxes. Your employer will not have access to all your sources of income, like bank interest, capital gains, rental income, and others. You are supposed to use the form 16, add all your other income, calculate and pay any additional tax, and file your income tax returns before due date every year. The tax slab for individuals (FY 20/21) is as below –</p>
+<p><strong style="background-color: #78ddb9;">Individual (age upto 60 years)</strong></p>
+<table class="tableizer-table">
+<tbody>
+<tr class="tableizer-firstrow">
+<th>Income slabs</th>
+<th>Tax Rates</th>
+</tr>
+<tr>
+<td>0 – Rs 2.5lks</td>
+<td>NIL</td>
+</tr>
+<tr>
+<td>Rs 2.5lks – Rs 5lks</td>
+<td>5% of the amount by which income exceeds Rs 2.5lks.</td>
+</tr>
+<tr>
+<td>Rs 5lks – Rs 10lks</td>
+<td>Rs. 12,500 + 20% of the amount by which income exceeds Rs 5lks</td>
+</tr>
+<tr>
+<td>10lks and above</td>
+<td>Rs. 112,500 + 30% of the amount by which income exceeds Rs 10lks</td>
+</tr>
+</tbody>
+</table>
+<p><strong style="background-color: #78ddb9;">Senior citizen (age 60 to 80 years)</strong></p>
+<table class="tableizer-table">
+<tbody>
+<tr class="tableizer-firstrow">
+<th>Income slabs</th>
+<th>Tax Rates</th>
+</tr>
+<tr>
+<td>0 – Rs 3lks</td>
+<td>NIL</td>
+</tr>
+<tr>
+<td>Rs 3lks – Rs 5lks</td>
+<td>5% of amount by which income exceeds Rs 3lks.</td>
+</tr>
+<tr>
+<td>Rs 5lks – Rs 10lks</td>
+<td>Rs. 10,000 + 20% of the amount by which income exceeds Rs 5lks</td>
+</tr>
+<tr>
+<td>10lks and above</td>
+<td>Rs. 110,000 + 30% of the amount by which income exceeds Rs 10lks</td>
+</tr>
+</tbody>
+</table>
+<p><strong style="background-color: #78ddb9;">Super senior citizen (age 80 years and above)</strong></p>
+<table class="tableizer-table">
+<tbody>
+<tr class="tableizer-firstrow">
+<th>Income slabs</th>
+<th>Tax Rates</th>
+</tr>
+<tr>
+<td>0 – Rs 5 lks</td>
+<td>NIL</td>
+</tr>
+<tr>
+<td>Rs 5lks – Rs 10lks</td>
+<td>20% of the amount by which income exceeds Rs 5lks</td>
+</tr>
+<tr>
+<td>10lks and above</td>
+<td>Rs. 100,000 + 30% of the amount by which income exceeds Rs 10lks</td>
+</tr>
+</tbody>
+</table>
+<p>If total income between Rs 2.5 to Rs 5lks, you can claim for the 5% tax rebate and effectively paying zero tax.</p>
+<p>Surcharge for all the above age groups: &nbsp;10% of income tax if income between Rs 50lks to Rs 1 crore. 15% if income between Rs 1 Crore to Rs 2 crores. 25% if income between Rs 2 crores to Rs 5 crores. 37% if it exceeds Rs 5 crores.</p>
+<p>Budget 2020 has introduced a new tax regime where the taxpayer has an option to decide either to pay taxes as per the above slabs claiming the various deductions (eg. Investment in ELSS, House rent allowance, etc) or let go of all deductions and opt-in for the below tax slabs. The surcharge as applicable above.</p>
+<table>
+<tbody>
+<tr>
+<td><span style="font-weight: 400;">0 – Rs 2.5lks</span></td>
+<td><span style="font-weight: 400;">NIL</span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400;">Rs 2.5lks – Rs 5lks</span></td>
+<td><span style="font-weight: 400;">5% of the amount by which income exceeds Rs 2.5lks.</span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400;">Rs 5lks – Rs 7.5lks</span></td>
+<td><span style="font-weight: 400;">Rs. 12,500 + 10% of the amount by which income exceeds Rs 5lks</span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400;">Rs 7.5lks – Rs 10lks</span></td>
+<td><span style="font-weight: 400;">Rs. 37,500 + 15% of the amount by which income exceeds Rs 7.5lks</span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400;">Rs 10lks- Rs 12.5lks</span></td>
+<td><span style="font-weight: 400;">Rs. 75,000 + 20% of the amount by which income exceeds Rs 10lks</span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400;">Rs 12.5lks- Rs 15lks</span></td>
+<td><span style="font-weight: 400;">Rs. 1,25,000 + 25% of the amount by which income exceeds Rs 12.5lks</span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400;">Above 15lks</span></td>
+<td><span style="font-weight: 400;">Rs. 187,500 + 30% of the amount by which income exceeds Rs 15lks</span></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>From the next chapter, we will start focusing in detail on all aspects of taxation when trading and investing in the markets.</p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>Filing correct Income tax return is the duty of every Indian</li>
+<li>The Income-tax department has access to your market activity</li>
+<li>Only 5% of Indians file Income tax returns and ~1% pay any income tax.</li>
+<li>Financial year (FY) is the year when income was earned, Assessment year (AY) is the year you file your taxes on the income earned</li>
+<li>The financial year is between 1<sup>st</sup> of April of the current year and 31<sup>st</sup> March of the following year</li>
+<li>The income tax applicable to you depends on the income tax slab you belong to</li>
+<li>The income tax slabs vary based on your age group</li>
+</ol>
+<p><strong>Disclaimer</strong> – Do consult a chartered accountant (CA) before filing your returns. The content above is for your general knowledge only. Content meant for Individual retail investors/traders in India.</p>
+<div class="clear"> </div>
+</div>

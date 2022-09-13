@@ -1,0 +1,168 @@
+<div class="post">
+<h2><strong>2.1 – Simple Interest</strong></h2>
+<p>When it comes to personal finance, one of the key things to learn is the math that surrounds this topic. Once you understand the math bit, the rest is just the application of it and life becomes easy after that.</p>
+<p>In this chapter, I’ll try and explain the most basic math involved starting from simple interest. I know this is explained across multiple chapters across multiple modules in Varsity, but for the sake of completeness let me include all of it in one single chapter.</p>
+<p>Let us run through an imaginary transaction, my guess is that this a familiar situation for most of us.</p>
+<p><img alt="" class="aligncenter size-full wp-image-5575" height="400" sizes="(max-width: 600px) 100vw, 600px" src="https://zerodha.com/varsity/wp-content/uploads/2019/07/M11-C2-Cartoon.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2019/07/M11-C2-Cartoon.jpg 600w, https://zerodha.com/varsity/wp-content/uploads/2019/07/M11-C2-Cartoon-300x200.jpg 300w" width="600"/></p>
+<p>Imagine that one of your friends needs money urgently and he approaches you for it. Being a friend, you agree to help him with the money but being a capitalist at heart, you also expect your friend to pay you ‘interest’ on the cash you lend to him. I know we don’t usually ask a friend to pay us interest, but let’s just assume he is a friend whom you’d like to help, but not at the opportunity cost of your money.</p>
+<p>The transaction details are below –</p>
+<ul>
+<li>Amount – Rs.100,000/-</li>
+<li>Tenure – 5 years</li>
+<li>Interest (%) – 10</li>
+</ul>
+<p>As you can see, your friend agrees to repay Rs.100,000/- over a 5 year period and also agrees to pay you an interest of 10%.</p>
+<p>Given this, how much money will you make at the end of 5 years? Let’s do the math and find out the details.</p>
+<p>Remember, the yearly interest is paid on the principal amount.</p>
+<p>Principal = Rs.100,000/-</p>
+<p>Interest = 10%</p>
+<p>Yearly interest amount = 10% * 100,000</p>
+<p>= Rs.10,000/-</p>
+<p>Here is how the math looks –</p>
+<table>
+<tbody>
+<tr>
+<th width="55"><strong>Year </strong></th>
+<th width="174"><strong>Principal Outstanding </strong></th>
+<th width="150"><strong>Interest payable </strong></th>
+</tr>
+<tr>
+<td width="55">01</td>
+<td width="174">Rs.100,000/-</td>
+<td width="150">Rs.10,000/-</td>
+</tr>
+<tr>
+<td width="55">02</td>
+<td width="174">Rs.100,000/-</td>
+<td width="150">Rs.10,000/-</td>
+</tr>
+<tr>
+<td width="55">03</td>
+<td width="174">Rs.100,000/-</td>
+<td width="150">Rs.10,000/-</td>
+</tr>
+<tr>
+<td width="55">04</td>
+<td width="174">Rs.100,000/-</td>
+<td width="150">Rs.10,000/-</td>
+</tr>
+<tr>
+<td width="55">05</td>
+<td width="174">Rs.100,000/-</td>
+<td width="150">Rs.10,000/-</td>
+</tr>
+<tr>
+<td colspan="2" width="229"><strong>Total Interest received</strong></td>
+<td width="150"><strong>Rs.50,000/-</strong></td>
+</tr>
+</tbody>
+</table>
+<p>So as you can see, you can earn Rs.50,000/- in total interest from this payment. The amount you earn from the interest can also be calculated by applying a simple formula, which you may remember from your school days –</p>
+<p><strong>Amount = Principal * Time * Return &nbsp;</strong></p>
+<p>Where the return is the interest percentage.</p>
+<p>Amount = Rs.100,000 * 5 * 10%</p>
+<p>= <strong>Rs.50,000/-</strong></p>
+<p>I’m sure you’d agree that this is quite straightforward and most of you would remember that this is simple interest.</p>
+<p>In simple interest, the interest gets charged only on the outstanding principal.</p>
+<p>Imagine a bank transaction, you deposit Rs.100,000/- in a bank’s Fixed Deposit scheme, which promises to pay you a simple interest of 10% year on year for 5 years. At the end of 5 years, you’ll earn Rs.50,000/- as interest income. The math is still the same.</p>
+<p>Banks don’t pay simple interest, they pay compound interest. What do you think is the difference between simple interest and compound interest?</p>
+<h2><strong>2.2 – Compound interest</strong></h2>
+<p>Compound interest works differently compared to simple interest. If someone agrees to pay you compound interest, then it essentially means that the person or the entity is agreeing to pay you interest on the interest already earned.</p>
+<p>Let’s figure this out with the same example discussed above. The transaction details are as follows –</p>
+<ul>
+<li>Amount – Rs.100,000/-</li>
+<li>Tenure – 5 years</li>
+<li>Interest (%) – 10</li>
+<li>Interest type – Compound Interest (compounded annually)</li>
+</ul>
+<p>The math is as follows –</p>
+<p><strong>Year 1</strong></p>
+<p>At the end of 1<sup>st</sup> year, you are entitled to receive a 10% interest on the principal outstanding and previous interest (if any). For a moment assume you are closing this at the end of the 1<sup>st</sup> years, then you would receive the principal amount plus the interest applicable on the principal amount.</p>
+<p>Amount = Principal + (Principal * Interest),&nbsp; this can be simplified to</p>
+<p>= Principal * (1+ interest)</p>
+<p>Here, (1+interest) is the ‘interest’ part and the principal is obviously the principal. Applying this –</p>
+<p>= 100,000 *(1+10%)</p>
+<p>= 110,000</p>
+<p><strong>Year 2</strong></p>
+<p>Now assume, you want to close this in the 2<sup>nd</sup> year instead of the first, here is how much you’d get back –</p>
+<p>Remember, you are supposed to get paid interest on the interest earned in the first year, hence –</p>
+<p><span style="background-color: #48cbff;"><span style="color: #00ff00;">Principal *(1+ Interest)</span> * (1+Interest)</span></p>
+<p>The green bit is the amount receivable at the end of 1<sup>st</sup> year, and the blue bit is the interest applicable for the 2<sup>nd</sup> year.</p>
+<p>We can simplify the above equation –</p>
+<p>= Principal *(1+ Interest)^(2)</p>
+<p>= 100,000*(1+10%)^(2)</p>
+<p>= 121,000</p>
+<p><strong>Year 3</strong></p>
+<p>In the 3<sup>rd</sup> year, you’d get interest on the 1<sup>st</sup> two year’s interest as well. The math –</p>
+<p><span style="background-color: #48cbff;"><span style="color: #00ff00;">Principal *(1+ interest) *(1+interest)</span> *(1+interest)</span></p>
+<p>The green bit is the amount receivable at the end of 2 years, and the blue bit is the interest applicable for the 3<sup>rd</sup> year.</p>
+<p>We can simplify the above equation –</p>
+<p>= Principal *(1+ Interest)^(3)</p>
+<p>= 100,000*(1+10%)^(3)</p>
+<p>= 133,100</p>
+<p>We can generalize this –</p>
+<p><strong>P*(1+R)^(n)</strong>, where –</p>
+<ul>
+<li>P = Principal</li>
+<li>R = Interest rate</li>
+<li>N = Tenure</li>
+</ul>
+<p>So, if you were to have this open for the entire 5 years, you’d receive –</p>
+<p>= 100,000*(1+10%)^(5)</p>
+<p>=<strong>Rs.161,051/-</strong></p>
+<p>Contrast the difference between the 50K received in simple interest versus the Rs.61,051/- received via compound interest.</p>
+<p>Compound interest and compounded return work magic in finance. At the end of the day, every aspect of personal finance boils down to the compounded return. For this reason, I think it is best to spend some more time trying to understand the concept of compounding of money.</p>
+<h2><strong>2.3 – Compounded returns </strong></h2>
+<p>The concept of compounded return is similar to compound interest. The concept of return and interest is very similar, just like the two sides of the same coin. The interest is what you pay when you borrow money in any form and the return is what you earn when you invest your money in any asset. Therefore, if you understand interest, then it is easy to understand the return.</p>
+<p>In this section, you will learn about how the return is measured. Based on the time horizon of your investment, the return measurement differs.</p>
+<p>You will use the <strong>absolute </strong>method to measure the return if your investment horizon is less than a year. Otherwise, if your investment horizon is more than a year, you will use CAGR or the <strong>compounded annual growth rate</strong>, to measure returns.</p>
+<p>I guess the difference in absolute and CAGR is best understood with an example.</p>
+<p>Assume you invested Rs.100,000/- on 1<sup>st</sup> Jan 2019 in a financial instrument which yields you a 10% return (per year) and you withdraw this investment a year later. How much money do you make?</p>
+<p>Quite straight forward as you can imagine –</p>
+<p>You will make 10% of 100,000 which is Rs.10,000/-, in other words, your investment has grown by 10% on a year on year basis. This is the absolute return. This is straightforward because the time under consideration is 1 year or 365 days.</p>
+<p>Now, what if the same investment was held for 3 years instead of 1 year, and what if instead of a simple return of 10%, the return was compounded annually at 10%? How much money would you make at the end of 3 years?</p>
+<p>To calculate this, we simply have to apply the growth rate formula –</p>
+<p><strong>Amount = Principal*(1+return)^(time)</strong></p>
+<p>Which as you realize is the same formula used while calculating the compound interest. Applying this formula –</p>
+<p>100,000*(1+10%)^(3)</p>
+<p>= <strong>Rs.133,100/-</strong></p>
+<p>Referring to the previous section, if you were to charge compound interest, then this is the same amount of interest you receive from your friend in the 3<sup>rd</sup> year.</p>
+<p>Continuing on the same lines, here is another question –</p>
+<p>If you invest Rs.100,000/- and receive Rs.133,100/- after 3 years, then what is the growth rate of your investment?</p>
+<p>To answer this question, we just need to reorganize this formula –</p>
+<p><strong>Amount = Principal*(1+return)^(time)</strong></p>
+<p>and solve for ‘return’.</p>
+<p>By doing so, the formula reworks itself to –</p>
+<p><strong>Return</strong> = <strong>[(Amount/Principal)^(1/time)] – 1</strong></p>
+<p>Return here is the growth rate or the CAGR.</p>
+<p>Applying this to the problem –</p>
+<p>CAGR = [(133100/100000)^(1/3)]-1</p>
+<p>= <strong>10%</strong></p>
+<h2><strong>2.4 – The compounding effect</strong></h2>
+<p>Apparently, Albert Einstein once described ‘compound interest’ as the 8<sup>th</sup> wonder of the world. I guess he could not describe it any better. To understand why you need to understand the compound interest in conjunction with time.</p>
+<p>Compounding in the finance world refers to the ability of money to grow, given that the gains of year 1 get reinvested for year 2, gains of year 2 gets reinvested for year 3, so on and so forth.</p>
+<p>For example, consider you invest Rs.100 which is expected to grow at 20% year on year (recall this is also called the CAGR or simply the growth rate). At the end of the first year, the money grows to Rs.120.</p>
+<p>At the end of year 1, you have two options –</p>
+<ul>
+<li>Let Rs.20 in profits remain invested along with the original principal of Rs.100 or</li>
+<li>Withdraw the profits of Rs.20</li>
+</ul>
+<p>You decide not to withdraw Rs.20 profit; instead, you decide to reinvest the money for the 2<sup>nd</sup> year. At the end of the 2<sup>nd</sup> year, Rs.120 grows at 20% to Rs.144. At the end of 3<sup>rd</sup> year, Rs.144 grows at 20% to Rs.173. So on and so forth.</p>
+<p>Compare this with withdrawing Rs.20 profits every year. Had you opted to withdraw Rs.20 every year then at the end of the 3<sup>rd</sup> year the profits collected would be Rs. 60.</p>
+<p>However, since you decided to stay invested, the profits at the end of 3 years are Rs.173/-. This is good Rs.13 or 21.7% over Rs.60 earnt because you opted to do nothing and decided to stay invested.</p>
+<p>This is called the <strong>compounding effect</strong>.</p>
+<p>Let us take this analysis a little further, have a look at the chart below:</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2019/07/Compounding-Effect-image.jpg"><img alt="" class="aligncenter size-full wp-image-5573" height="333" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="https://zerodha.com/varsity/wp-content/uploads/2019/07/Compounding-Effect-image.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2019/07/Compounding-Effect-image.jpg 800w, https://zerodha.com/varsity/wp-content/uploads/2019/07/Compounding-Effect-image-300x125.jpg 300w, https://zerodha.com/varsity/wp-content/uploads/2019/07/Compounding-Effect-image-768x320.jpg 768w" width="800"/></a></p>
+<p>The chart above shows how Rs.100 invested at 20% grows over a 10-year period.</p>
+<p>In the next chapter, we will understand the other crucial concept in personal finance – Time value of money.</p>
+<h3><strong>Key takeaways from this chapter</strong></h3>
+<ul>
+<li>Simple interest is the interest that gets paid only on the outstanding principal</li>
+<li>Compound interest is paid on both interest and the principal outstanding</li>
+<li>Interest and return are like two sides of the same coin</li>
+<li>Absolute return is a measure of the growth in return when your investment is for less than a year</li>
+<li>Compounded annual growth rate (CAGR) is the measure of your return when your investment duration is more than a year</li>
+<li>Compounding works best when you give your investments enough time to grow</li>
+</ul>
+<div class="clear"> </div>
+</div>

@@ -1,0 +1,169 @@
+<div class="post">
+<h2>13.1 – Sumitomo Copper scandal</h2>
+<p>If you are remotely connected to the commodity world, then this is one story you must have heard of – ‘The Sumitomo Copper Scandal’. This scandal unfolded in Japan, around 1995, but the severity of this event sent a ripple down the spine of the entire commodity trading world. So much so, that it’s talked about even today and it gets a special mention whenever the financial world talks about ‘rogue trading’.</p>
+<p>Sumitomo Corporation is a huge conglomerate, incorporated and listed in Japan. The company is involved in general trading of goods and commodities. Back in the days, Sumitomo had a significant copper trading division. Sumitomo’s copper trading involved buying of copper in the spot market and physically storing them in its warehouses. The company also had a large exposure to copper futures on the London Metals Exchange (LME). Yasuo Hamanaka was Sumitomo’s chief ‘Copper Trader’. He was Sumitomo’s go-to man for anything related to Copper.</p>
+<p><img alt="" class="aligncenter size-full wp-image-3959" height="400" sizes="(max-width: 600px) 100vw, 600px" src="http://zerodha.com/varsity/wp-content/uploads/2016/12/M8-C13-cartoon-1.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/12/M8-C13-cartoon-1.png 600w, https://zerodha.com/varsity/wp-content/uploads/2016/12/M8-C13-cartoon-1-300x200.png 300w" width="600"/></p>
+<p>So here is what happened –</p>
+<ul>
+<li>Yasuo Hamanaka bought copper in physical form (spot market) and hoarded them in warehouses.</li>
+<li>He bought copper not just in Japan, but across the world and stored it at different locations/ports.</li>
+<li>Essentially, he was long copper in the spot market.</li>
+<li>His exposure in the spot market was around 5% of the entire world’s outstanding reserves. At that point, he was probably the only man on the planet with so much copper. This meant he could control the prices of copper, quite literally.</li>
+<li>At the same time, he also bought Copper Futures at LME.</li>
+<li>Every trader knew that Yasuo Hamanaka was copper bull, but nobody knew the extent of his exposure (as LME wasn’t publishing open interest data at the time).</li>
+<li>Whenever traders or trading firms shorted copper, Hamanaka would buy. He could buy because Sumitomo was cash-rich and funded these trades.</li>
+<li>Since he bought in such large quantities, copper prices went up.</li>
+<li>Remember, copper is an international commodity, and the price is market-driven (LME futures).</li>
+<li>So LME prices went up – short traders were squeezed, Hamanaka made profits on futures.</li>
+<li>Short traders would eventually default, which meant they had to deliver copper upon expiry.</li>
+<li>Invariably these traders would end up buying copper from Sumitomo at a premium, which meant Sumitomo minted crisp profits on their spot position as well.</li>
+<li>The profits snowballed, and Yasuo Hamanaka became the undisputed king of copper.</li>
+</ul>
+<p>This set up functioned really well for over a decade. However, sometime around the early 90s, China upped its copper production, to an extent where they flooded the market with excess supply. Naturally, the prices started to cool off, and Yasuo Hamanaka started feeling the heat. His exposure was so large that it was difficult for him to offload the contracts (especially since he was doing most of the buying)! He went to the extent of borrowing funds to maintain his long positions. Remember, these were all leveraged positions, and when you have super large quantities of any leveraged positions, a small move against you can result in massive losses.</p>
+<p>This is exactly what happened – copper prices crashed, and Yasuo Hamanaka’s copper kingdom collapsed. Losses piled to the extent that the Sumitomo Corporation filed for bankruptcy. The estimated losses were close to a whopping $5 billion, in 1995!</p>
+<p>What followed next were the routine blame games, lawsuits, denials, and all the resulting drama. However, the key take away from this story is the importance of <strong>risk management</strong>. We will talk about this soon in a separate module altogether.</p>
+<p>Anyway, that was that; let’s move ahead to copper basics.</p>
+<h2>13.2 – Copper Basics</h2>
+<p>Copper is a base metal, highly traded on MCX. A metal is classified as a ‘base’ if it is not precious like gold and silver.</p>
+<p>The daily traded value is approximated at INR 2,050 crores across an average of 55,000 lots. So, as you can imagine, copper on MCX is a very liquid contract. The liquidity matches that of crude oil and gold.</p>
+<p>Copper is an exciting metal. It is the 3<sup>rd</sup> most consumed metal after steel and aluminium. The price of copper (much like aluminium) is directly dependent on global economics. You may know, copper is one of the best conductors of electricity, and therefore, copper is the preferred choice of metal in electrical wires. In fact, did you know, at the core of Tesla’s hybrid car there is a copper motor as opposed a regular engine motor (permanent magnet motor)?</p>
+<p>Check this <a href="https://www.copper.org/applications/automotive/electric-vehicles/value_cast_copper.html" rel="noopener noreferrer" target="_blank">article.</a></p>
+<p>Of course, apart from this, copper finds its application in a whole host of other things such as –</p>
+<ul>
+<li>Building and construction</li>
+<li>Copper alloy moulds</li>
+<li>Electrical and electronics</li>
+<li>Plumbing solutions</li>
+<li>Industrial uses</li>
+<li>Telecom</li>
+<li>Railways</li>
+</ul>
+<p>But my favourite application of copper has to be this –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/12/Image-1_Copper-Still.png"><img class="aligncenter wp-image-3950 size-full" height="396" loading="lazy" sizes="(max-width: 528px) 100vw, 528px" src="http://zerodha.com/varsity/wp-content/uploads/2016/12/Image-1_Copper-Still.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/12/Image-1_Copper-Still.png 528w, https://zerodha.com/varsity/wp-content/uploads/2016/12/Image-1_Copper-Still-300x225.png 300w" width="528"/></a></p>
+<p>Can you guess what this is? If you can, then probably you and I have a common interest. J</p>
+<p>The demand – consumption of copper, showcases similar trends as aluminium. Have a look at this snapshot –</p>
+<p><em><a href="http://zerodha.com/varsity/wp-content/uploads/2016/12/Image-2_Copper.png"><img class="aligncenter wp-image-3951 size-full" height="292" loading="lazy" sizes="(max-width: 341px) 100vw, 341px" src="http://zerodha.com/varsity/wp-content/uploads/2016/12/Image-2_Copper.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/12/Image-2_Copper.png 341w, https://zerodha.com/varsity/wp-content/uploads/2016/12/Image-2_Copper-300x257.png 300w" width="341"/></a>Source: Hindalco annual Report (2015-16)</em></p>
+<p>In 2015, the global demand for refined copper was 24 million tons; half of this demand was from China and Japan. The supply was higher than the demand (look at the last two bars from right), and thanks to the recent commodity glut, the price has considerably cooled off over the last few years.</p>
+<p>It’s good to know fundamentals, but like any other commodity; I’d rely on charts to trade copper. Given this, let’s focus on the contract specifications. Of course, both aluminium and copper have two contracts – the big copper contract and its mini version. Let me list down the contract specs of the big copper contract.</p>
+<ul>
+<li>Price Quote – Per kilogram</li>
+<li>Lot size – 1 metric ton</li>
+<li>Tick size – Rs.0.05</li>
+<li>P&amp;L per tick – Rs.0.05 * 1000 = Rs.50/-</li>
+<li>Expiry –Last day of the month</li>
+<li>Delivery units – 10 MT</li>
+</ul>
+<p>Here is the snap quote of copper, expiring in Feb 2017 –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/12/Image-3_Copper-quote.png"><img class="aligncenter wp-image-3952 size-full" height="284" loading="lazy" sizes="(max-width: 379px) 100vw, 379px" src="http://zerodha.com/varsity/wp-content/uploads/2016/12/Image-3_Copper-quote.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/12/Image-3_Copper-quote.png 379w, https://zerodha.com/varsity/wp-content/uploads/2016/12/Image-3_Copper-quote-300x225.png 300w" width="379"/></a></p>
+<p>The price as seen here is Rs.389.1 per Kg. The contract value, therefore, would be –</p>
+<p>Lot size * price</p>
+<p>= 1000 * 389.1</p>
+<p>= <strong>Rs.389,100/-</strong></p>
+<p>The NRML margin is as shown below –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/12/Image-4_Copper-margin.png"><img class="aligncenter wp-image-3953" height="88" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/12/Image-4_Copper-margin.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/12/Image-4_Copper-margin.png 817w, https://zerodha.com/varsity/wp-content/uploads/2016/12/Image-4_Copper-margin-300x33.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/12/Image-4_Copper-margin-768x85.png 768w" width="800"/></a></p>
+<p>Rs.30,544/-, which works out to 7.8%. MIS margin is half this amount.</p>
+<p>The Copper Mini contract has a lesser lot size, therefore lesser P&amp;L per tick, and lesser margins.</p>
+<ul>
+<li>Price Quote – Per kilogram</li>
+<li>Lot size – 250 Kgs</li>
+<li>Tick size – Rs.0.05</li>
+<li>P&amp;L per tick – Rs.0.05 * 250 = Rs.12.5/-</li>
+<li>Expiry –Last day of the month</li>
+<li>Delivery units – 10 MT</li>
+</ul>
+<p>I’d suggest you look at technical analysis to trade copper, and commodities in general. They work really well on liquid commodities such as copper. So essentially, you need to know the contract details to get started.</p>
+<p>Onwards to Aluminium!</p>
+<h2>13.3 – Aluminium Basics</h2>
+<p>Remember, our objective here is to understand basic information. We are not going deep into the subject, simply because most of us would be trading this commodity with an average holding period of not more than 2-3 days. When this is the objective, it makes more sense to spend time on the price dynamics rather than the fundamentals. Hence, I’ll stick to basics, and for ease of reading, highlights of the chapter are presented as bullet points. Post this; we will dig deeper into contract specifications.</p>
+<p>Talk about Aluminium and chances are you will think about that wafer-thin, silvery foil, which wraps your leftover food in your refrigerator. Well, Aluminium’s applications go beyond that.</p>
+<p>Here are a few things you need to know (have collected this information from various online sources) –</p>
+<ol>
+<li style="list-style-type: none;">
+<ol>
+<li>There is plenty of Aluminium (supply is not an issue) – roughly 8% of the earth’s crust is made up of Aluminium. This makes aluminium the third most abundant, after oxygen and silicon.</li>
+<li>The fact that aluminium resists corrosion makes it a very desirable metal.</li>
+<li>Aluminium manufacturing is power-intensive – it takes a whopping 17.4-megawatt-hour of power to manufacture 1 metric ton of Aluminium. Check this –</li>
+</ol>
+</li>
+</ol>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/12/Image-5_PL.png"><img alt="" class="aligncenter size-full wp-image-3954" height="388" loading="lazy" sizes="(max-width: 720px) 100vw, 720px" src="http://zerodha.com/varsity/wp-content/uploads/2016/12/Image-5_PL.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/12/Image-5_PL.png 720w, https://zerodha.com/varsity/wp-content/uploads/2016/12/Image-5_PL-300x162.png 300w" width="720"/></a></p>
+<p>This is power and fuel cost of Hindalco (the leading manufacturer of Aluminium), and as you can see, nearly 10% of the expense is on power and fuel. Remember, Hindalco has its own captive power units. So, I’m guessing this power is consumed over and above what Hindalco generated internally.</p>
+<ol>
+<li>That said, recycling aluminium is a power-friendly affair. It requires just about 5% of the power to recycle.</li>
+<li>Aluminium has a wide range of applications – right from a smartphone to a Boeing 747. Did you know you need approximately 70,000 kilograms of aluminium is used up in a single Boeing 747?</li>
+<li>Aluminium is also used up in other industries – automotive, building &amp; construction, defence, electrical, electronic, pharmaceuticals, white goods, etc.,</li>
+<li>Aluminium is one metal that has abundant supply and demand.</li>
+<li>Aluminium prices on MCX closely follow the international prices of aluminium which is traded on the London Metal Exchange (LME).</li>
+</ol>
+<p>In fact, here is a snapshot which gives you the trends in production, supply, and the average price of aluminium on LME –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/12/Image-6_Al-trend.png"><img alt="" class="aligncenter size-full wp-image-3955" height="241" loading="lazy" sizes="(max-width: 358px) 100vw, 358px" src="http://zerodha.com/varsity/wp-content/uploads/2016/12/Image-6_Al-trend.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/12/Image-6_Al-trend.png 358w, https://zerodha.com/varsity/wp-content/uploads/2016/12/Image-6_Al-trend-300x202.png 300w" width="358"/></a></p>
+<p><em>Source: Hindalco Annual Report (2015-2016)</em></p>
+<p>This is a fascinating chart; in fact, based on this chart alone, a few basic trading principles can be formulated. Let’s break this graph up in smaller bits –</p>
+<ol>
+<li>The global production (blue bar) of aluminium in 2015 stands at 56 million tones. This represents a growth of about 4% from the previous year.</li>
+<li>The global production nets a CAGR of 6% over the last 8 years.</li>
+<li>The demand (yellow bar) on the other side matches up to global production – this implies that there are no supply-demand disruptions.</li>
+<li>In fact, demand and supply have remained more or less stable over the years.</li>
+<li>The price of aluminium over the last few years has declined. Its averages to $1,500/- per ton, which is a decline from its recent peak of $2,500/- per ton. You must have heard about the global commodity glut. Clearly, the Chinese demand plays a key role in the aluminium’s global pricing.</li>
+<li>The Indian demand, on the other hand, is better than the global demand (in percentage terms). Hindalco, in its annual report, claims the demand for aluminium in India is about 2 million tonnes. Much of this demand is met by importing aluminium.</li>
+</ol>
+<p>I guess these basic points should help you get started on Aluminium fundamentals. However, I’d be happy to trade aluminium based on technical analysis, simply because of my short holding period, usually not exceeding a few trading sessions.</p>
+<p>So, with this, I’d like to move ahead and discuss contract specifications, which will help you understand the practicality of trading aluminium on MCX.</p>
+<h2>13.4 – Aluminium contract specifications</h2>
+<p>As you may have guessed, there are two main aluminium contracts to trade on MCX. They are the big aluminium contract and the aluminium mini contract. Clearly, both of them differ on the lot size and therefore contract value. We will discuss the big aluminium contract first.</p>
+<p>The daily average traded value of big aluminium is roughly about INR 375 Cr. On a good day, the volume could reach a little over INR 500 crores.&nbsp; As you may have realized, the value is not as high as commodities such as gold and crude oil.</p>
+<p>The contract details are as follows –</p>
+<ul>
+<li>Price Quote – Per kilogram</li>
+<li>Lot size – 5 metric ton</li>
+</ul>
+<p>At this point, you may have realized that this is a huge contract. A&nbsp; metric ton is 1000 kilograms, so 5MT makes it 5000 kgs. Since the price is quoted per kg, and the lot size is 5000 kgs, each tick will cause a P&amp;L of Rs.5000/- PROVIDED the tick is Rs.1/-. Since this would be very large, especially for retail trading, MCX has reduced the tick size to the lowest possible value, i.e. Rs.0.05</p>
+<ul>
+<li>Tick size – Rs.0.05</li>
+<li>P&amp;L per tick – Rs.0.05 * 5000 = Rs.250/-</li>
+<li>Expiry –Last day of the month</li>
+<li>Delivery units – 10 MT</li>
+</ul>
+<p>Let’s understand this information in better detail. Aluminium on MCX is quoted on a per kilogram basis. Have a look at the image below; this is the snapshot of Aluminium’s market depth –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/12/Image-7_Al-quote.png"><img alt="" class="aligncenter size-full wp-image-3956" height="291" loading="lazy" sizes="(max-width: 376px) 100vw, 376px" src="http://zerodha.com/varsity/wp-content/uploads/2016/12/Image-7_Al-quote.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/12/Image-7_Al-quote.png 376w, https://zerodha.com/varsity/wp-content/uploads/2016/12/Image-7_Al-quote-300x232.png 300w" width="376"/></a></p>
+<p>As you can see, the aluminium expiring in Dec 2016 is trading at Rs.118.4/- per kg/</p>
+<p>The <strong>lot size is 5 MT (5000 kgs)</strong>, which means to say that if you want to buy (or go long) on Aluminium, the value of such a contract will be –</p>
+<p>Lot size * price quote</p>
+<p>= 5000 * 118.4 (offer price to go long)</p>
+<p>= <strong>Rs.592,000/-</strong></p>
+<p>The price movement in aluminium is 0.05, which means, if aluminium moves from 118.4 to 118.45, the profit will be –</p>
+<p>118.45 – 118.4</p>
+<p>=0.05</p>
+<p>=0.05*5000</p>
+<p>=Rs.250/-</p>
+<p>What about the margins? Have a look at the following snapshot –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/12/Image-8_margin.png"><img class="aligncenter wp-image-3957" height="213" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/12/Image-8_margin.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/12/Image-8_margin.png 1132w, https://zerodha.com/varsity/wp-content/uploads/2016/12/Image-8_margin-300x80.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/12/Image-8_margin-768x204.png 768w, https://zerodha.com/varsity/wp-content/uploads/2016/12/Image-8_margin-1024x272.png 1024w" width="800"/></a></p>
+<p>The NRML margin charged is Rs.33,719/- which works out to 5.6%. However, MIS margin is almost half of the NRML margin.</p>
+<p>Here are the contact details of Aluminium mini –</p>
+<ul>
+<li>Price Quote – Per kilogram</li>
+<li>Lot size – 1 metric ton</li>
+<li>Tick size – Rs.0.05</li>
+<li>P&amp;L per tick – Rs.0.05 * 1000 = Rs.50/-</li>
+<li>Expiry –Last day of the month</li>
+<li>Delivery units – 10 MT</li>
+</ul>
+<p>The contract value is quite small –</p>
+<p>= 1000 * 118.4</p>
+<p>=Rs.118,400/-</p>
+<p>NRML margin is Rs.6,779/-,, which is 5.7%. MIS margin is much lesser at Rs.3,389 or just about 2.8% of the contract value.</p>
+<p>P&amp;L per tick is Rs.50/-, a value which is much ‘deal-able’ while trading.</p>
+<p>I guess this info is good enough to get started on trading with Aluminium. Frankly, you need to look at the chart, develop a point of view, and place trades based on the chart pattern. If you are keen on digging deeper into aluminium, I’d recommend you spend time reading up on <a href="http://www.world-aluminium.org/" rel="noopener noreferrer" target="_blank">www.world-aluminium.org</a> and <a href="http://www.aluminum.org/" rel="noopener noreferrer" target="_blank">www.aluminium.org.</a></p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>Both Copper and Aluminium are base metals.</li>
+<li>Aluminium is found in abundance (next only to silicon and oxygen).</li>
+<li>The demand-consumption of aluminium and copper seem to have some equilibrium.</li>
+<li>The prices of both aluminium and copper have declined over the years.</li>
+<li>The prices of aluminium and copper on the London Metal Exchange (LME) act as a reference price for these international commodities.</li>
+<li>Both copper and aluminium have two contracts – the big one and mini.</li>
+<li>The contracts vary in lot size and therefore contract values and margins.</li>
+</ol>
+<div class="clear"> </div>
+</div>

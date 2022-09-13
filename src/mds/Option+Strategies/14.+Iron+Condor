@@ -1,0 +1,123 @@
+<div class="post">
+<h2><strong>14.1 – New margin framework</strong></h2>
+<p>These are fascinating times we are living in, especially if you are an options trader in India 🙂</p>
+<p>Starting 1<sup>st</sup> June 2020, NSE’s new margin framework is live, which essentially brings down the margin requirement for the hedged position.</p>
+<p>What is a hedged position you may ask? Well, we have discussed this several times in this module, but for the sake of completeness of this chapter, we will quickly discuss this again.</p>
+<p>Assume you are riding a bike at 75Kms per hour, without wearing a helmet. Suddenly you come across a pothole, you slam the breaks to cut speed, but it’s too late, you crash and fall.&nbsp; What is the probability of injuring your head? Quite high given the fact that you are not wearing a helmet.</p>
+<p>Now imagine the same situation, but instead of being carefree, you decide to wear a helmet. Given the crash, what is the probability of injuring your head? Low probability, right? Because the helmet protects you from an injury.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/06/M6-C14.png"><img alt="" class="aligncenter wp-image-8170" height="306" sizes="(max-width: 460px) 100vw, 460px" src="https://zerodha.com/varsity/wp-content/uploads/2020/06/M6-C14-300x200.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/06/M6-C14-300x200.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/06/M6-C14.png 600w" width="460"/></a></p>
+<p>The helmet acts as a hedge against a potential disaster.</p>
+<p>In the same way, a naked futures or options position in the market is like riding a bike without wearing a helmet. The risk of market-moving against your position, causing capital erosion is high.</p>
+<p>However, if you hedge your position, then the risk of losing capital reduces drastically.</p>
+<p>Now, think about this – if your capital loss is minimal, then it implies that the risk for your broker is also minimum right? Now, if the risk for the broker reduces, it also means the risk for the exchange reduces.</p>
+<p>So what does this mean to you as a trader?</p>
+<p>Remember, the critical margin dynamics – the lesser the risk you carry, the lower the margin requirement. Higher the risk, higher the margin requirement.</p>
+<p>Therefore, this means whenever you initiate a hedged strategy, the margins blocked by your broker is less compared to the margin required for a naked position.</p>
+<p>In essence, NSE has proposed the same in the new margin framework.</p>
+<p>You can check this <a href="https://drive.google.com/file/d/1CLeaZQIOiYJD40edLyAqiqxnISnE68yV/view">presentation by NSE for more details.&nbsp;</a></p>
+<p>The presentation is quite technical; you do not have to crack your head to understand this unless you really want to.</p>
+<p>From a trader’s point of view, there are three key takeaways from the new margin policy; all the three highlighted in 1 slide of this presentation, here is a snapshot –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-1_nse.png"><img alt="" class="aligncenter wp-image-8161" height="288" loading="lazy" sizes="(max-width: 513px) 100vw, 513px" src="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-1_nse-300x168.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-1_nse-300x168.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-1_nse-768x431.png 768w, https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-1_nse.png 994w" width="513"/></a></p>
+<p>Starting from the top –</p>
+<ul>
+<li>Portfolio 1 – Margins have increased for naked unhedged positions to 18.5% from the current 16.7%.</li>
+<li>Portfolio 2 – 70% reduction in margins for market-neutral positions</li>
+<li>Portfolio 3 – 80% reduction in margins for spread positions</li>
+</ul>
+<p>What does this mean to you as an options trader?</p>
+<p>Well, some of the useful strategies, which looked great on paper but were prohibitive to implement due to excessive margin requirement, now look enticing.</p>
+<p>A trick question for you here – why do you think the margin reduction is higher for spread position compared to a neutral market position?.</p>
+<p>Do think about it and post your response in the comment section.</p>
+<p>So given this, I want to discuss one more options strategy in this module, I had not discussed it earlier since the margin requirement was very high, but now, it’s no longer the case.</p>
+<h2><strong>14.2 – Iron Condor</strong></h2>
+<p>The iron condor is a four-legged option setup. The iron condor is an improvisation over the short strangle.</p>
+<p>Have a look at this –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-2_ss.png"><img alt="" class="aligncenter wp-image-8162" height="195" loading="lazy" sizes="(max-width: 508px) 100vw, 508px" src="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-2_ss-300x115.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-2_ss-300x115.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-2_ss-768x294.png 768w, https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-2_ss.png 924w" width="508"/></a></p>
+<p>I’ve taken this snapshot from <a href="https://sensibull.com/">Sensibull’s Strategy Builder</a>. As you can see, Nifty is at 9972.9, and I’m trying to set up a short strangle by shorting OTM calls and puts –</p>
+<ul>
+<li>9800 Put at 165.25</li>
+<li>10100 Call at 145.25</li>
+</ul>
+<p>Since both the options are written/sold, I get to collect a total premium of 164.25+145.25 = 309.5.</p>
+<p>For those of you not familiar with the strangles, I’d suggest you read through <a href="https://zerodha.com/varsity/chapter/the-long-short-strangle/">this chapter</a>.</p>
+<p>The pay off for this short strangle set up is as follows –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-3_ssp.png"><img alt="" class="aligncenter wp-image-8163" height="248" loading="lazy" sizes="(max-width: 492px) 100vw, 492px" src="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-3_ssp-300x151.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-3_ssp-300x151.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-3_ssp-768x386.png 768w, https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-3_ssp.png 901w" width="492"/></a></p>
+<p>I love this strategy because it lets me retain the premium as long as Nifty stays within a range, which most often it does. Besides, this is also a great way to trade volatility. Whenever you think the volatility has shot up (usually it does around big market events) and therefore the option premiums, then you’d want to be an options seller and pocket the high premiums. Short strangles is perfect for such trades.</p>
+<p>In a short strangle, since you sell/write options, it results in a net premium credit. In this case, you get a premium of Rs.23,288/-.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-4_breakeven.png"><img alt="" class="aligncenter wp-image-8164" height="116" loading="lazy" sizes="(max-width: 537px) 100vw, 537px" src="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-4_breakeven-300x65.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-4_breakeven-300x65.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-4_breakeven-768x165.png 768w, https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-4_breakeven.png 860w" width="537"/></a></p>
+<p>The only issue with short strangles is the exposed ends. The strategy bleeds if the underlying asset moves in either direction.</p>
+<p>For example, this particular short strangle has a range of safety between 9490 and 10411.</p>
+<p>I agree this is a wide enough range, but markets have taught that it can make crazy moves within a short period. Most recent being the COVID-19 crash in early 2020 followed by quick recovery from the lows.</p>
+<p>If you are caught with such a rapid market move, the potential loss can be colossal and can wipe your account clean. Now, because the possible loss is unlimited, this means the risk to you and the broker is quite high. Eventually, this translates to <a href="https://zerodha.com/margin-calculator/SPAN/">higher margins</a> as well –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-5_mar.png"><img alt="" class="aligncenter wp-image-8165" height="273" loading="lazy" sizes="(max-width: 318px) 100vw, 318px" src="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-5_mar-300x258.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-5_mar-300x258.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-5_mar.png 420w" width="318"/></a></p>
+<p>The margin to set up a short strangle is nearly 1.45L, which is quite prohibitive for many traders.</p>
+<p>However, this does not mean that you have to say goodbye to a short strangle. You can improvise on the short strangle and set up an iron condor, which in my opinion is a far better strategy.</p>
+<p>An iron condor improvises a short strangle by plugging in the open ends. Think of an iron condor in 3 parts –</p>
+<ul>
+<li>Part 1 – Set up a short strangle by selling a slightly OTM Call and Put option</li>
+<li>Part 2 – Buy a further OTM Call to protect the short call against a massive market rally</li>
+<li>Part 3 – Buy a further OTM Put to protect the short Put against a massive market decline</li>
+</ul>
+<p>This makes an iron condor a four-leg option strategy. Let us see how this looks –</p>
+<ul>
+<li>Part 1 – Sell 9800 PE at 165.25 and sell a 10100CE at 145.25, collect a premium of 310.5 or Rs.23,288/-.</li>
+<li>Part 2 – Buy 10300 CE at 77 to protect the short 10100 CE</li>
+<li>Part 3 – Buy 9600 PE at 105.05 to protect the short 9800 PE</li>
+</ul>
+<p>The trade setup looks like this –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-6_ic.png"><img alt="" class="aligncenter wp-image-8166" height="165" loading="lazy" sizes="(max-width: 481px) 100vw, 481px" src="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-6_ic-300x103.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-6_ic-300x103.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-6_ic-768x264.png 768w, https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-6_ic.png 797w" width="481"/></a></p>
+<p>If you think about this, the short option premium collected finances the long option positions.</p>
+<p>Since you buy two options to protect against two short options, the profit potential reduces to a certain extent –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-7_profit.png"><img alt="" class="aligncenter wp-image-8167" height="126" loading="lazy" sizes="(max-width: 582px) 100vw, 582px" src="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-7_profit-300x65.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-7_profit-300x65.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-7_profit-768x167.png 768w, https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-7_profit.png 857w" width="582"/></a></p>
+<p>As you can see, the max profit is now Rs.9,634/-, but the reduced profit comes with reduced stress 🙂</p>
+<p>The max loss is no longer unlimited but restricted to Rs.5,366, which in my opinion is awesome because I now have visibility on risk and it is not open-ended.</p>
+<p>The profit is restricted, as long as Nifty stays within a range, in this case between 9672 and 10228. Notice, the range has shrunk compared to the short strangle.</p>
+<p>The payoff of an iron condor looks like this –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-8_icpf.png"><img alt="" class="aligncenter wp-image-8168" height="229" loading="lazy" sizes="(max-width: 458px) 100vw, 458px" src="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-8_icpf-300x150.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-8_icpf-300x150.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-8_icpf-768x385.png 768w, https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-8_icpf.png 900w" width="458"/></a></p>
+<p>Now, what do you think about the risk? The risk here is completely defined. You have clear visibility on the worst-case scenario. So what does it mean to you as a trader, and what does it mean to the broker?</p>
+<p>You guessed it right since the risk is defined, the margins are lesser.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-9_mar.png"><img alt="" class="aligncenter wp-image-8169" height="327" loading="lazy" sizes="(max-width: 377px) 100vw, 377px" src="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-9_mar-300x261.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-9_mar-300x261.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-9_mar.png 426w" width="377"/></a></p>
+<p>This is where the new margin framework of NSE comes into play. An iron condor requires you to pay an upfront margin of only Rs.44,303/-, contrast this with the short strangle’s margin requirement of Rs.1.45L.</p>
+<p>Besides, before the new margin framework, executing an iron condor was not very viable for a retail trader. For these strikes and premiums, the margin requirement for an Iron Condor was roughly in the range of 2 to 2.2L.</p>
+<h2><strong>14.3 – Max P&amp;L&nbsp;</strong></h2>
+<p>There are a few important things you need to remember while executing an iron condor –</p>
+<ol>
+<li>The PE and CE that you buy should have even strike distribution from the sold strike. For example, here we have sold 9800 PE and 10,100 CE. We have protected the sold strikes by going long on 9600 PE and 10,300 CE. The difference between 9800 PE and 9600 PE is 200 and 10,100 CE and 10,300 CE is 200. The spread should be even. I cannot protect 9800 PE by buying 9700 PE (difference of 100) and then protect 10,100 CE with 10,300 CE (difference of 200).</li>
+<li>The Max loss occurs when the market moves either above long CE i.e. 10,300 CE or moves below long PE i.e. 9,600PE</li>
+<li><strong>Spread</strong> = 200 i.e. the difference between the sold strike and its protective strike.</li>
+<li><strong>Max Profit</strong> = Net premium received. In this case, it is 128.45 (9634/75)</li>
+<li><strong>Max loss</strong> = Spread – Net premium received. In this case, it is 200 – 128.45 = 71.54.</li>
+</ol>
+<p>I’d suggest you look at the excel sheet at the end of this chapter for detail working of this. Please note, I have updated the excel sheet 2 days after I wrote this chapter, hence the values are different.</p>
+<h2><strong>14.4 – ROI and Logistics </strong></h2>
+<p>By setting up a short strangle, you receive a premium of Rs.23,288/- and for the iron condor, the premium receivable is Rs.9,643/-. Agreed, in terms of absolute Rupees, the iron condor offers a far lesser premium inflow. But when you measure this against the margin requirement, the ROI flips in favour of the Iron condor.</p>
+<p>Short strangle requires a margin of Rs.1,45,090/-. Therefore the ROI is –</p>
+<p>23,288/1,45,090</p>
+<p>=16%.</p>
+<p>The margin requirement for iron condor is Rs.44,303/-. Therefore the ROI is –</p>
+<p>9,643/44,303</p>
+<p>= 21%</p>
+<p>As a trader, you need to think in terms of ROI and not absolute numbers, and the margin benefit makes a significant difference here.</p>
+<p>The sequence of trade execution makes a big difference here. If you are considering an iron condor, then here is the trade sequence –</p>
+<ul>
+<li>Buy the far OTM call option</li>
+<li>Sell the OTM Call option</li>
+<li>Buy the far OTM PUT</li>
+<li>Sell the OTM PUT option</li>
+</ul>
+<p>The point here is that you need to have a long position first before initiating the short position.</p>
+<p>Why? Because short option position is a margin guzzler, so when you have a long position, the system knows the risk is contained and hence will ask you for lesser margins for the short position.</p>
+<p>Please note, I’ve only considered the margin blocked for the ROI calculation, I’ve not considered the money paid to buy the options and the money received when you write an option.</p>
+<p>So traders, as a next step, I’d urge you to select different strikes for the long positions and see what happens to the premium receivable, breakeven points, and the max loss.</p>
+<p>Do post your observation and queries below.</p>
+<h3><strong>Key takeaways from this chapter</strong></h3>
+<ul>
+<li>NSE’s new margin framework reduces the margin requirement for market neutral and hedged strategies</li>
+<li>While the short strangle is an excellent strategy, it has open ends with potentially unlimited losses</li>
+<li>The iron condor is an improvisation over the short strangle</li>
+<li>In an iron condor, the long OTM calls and puts protect the open ends of the&nbsp; short strangle</li>
+<li>Margin required for an iron condor is far lesser compared to a short strangle</li>
+</ul>
+<p style="text-align: center;"><a class="button" href="https://zerodha.com/varsity/wp-content/uploads/2020/06/C14_Iron-Condor.xlsx">Download Iron Condor Excel Sheet</a></p>
+<div class="clear"> </div>
+</div>

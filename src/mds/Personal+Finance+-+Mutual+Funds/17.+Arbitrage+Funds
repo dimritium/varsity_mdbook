@@ -1,0 +1,99 @@
+<div class="post">
+<h2><strong>17.1 – Arbitrage</strong></h2>
+<p>We were to move ahead and discuss MF attributes and gradually steer our way to identify techniques of building a mutual fund portfolio. While I was all set to do that, I just remembered we hadn’t discussed the ‘Arbitrage Funds’, which for some reason has all the market attention these days. So I’ll keep this chapter short, consider the Arbitrage fund and move ahead.</p>
+<p>Before we understand the ‘Arbitrage Fund’, we need to understand what ‘Arbitrage’ means. Of course, if you are a regular Varsity reader, then this is something you guys are familiar. We have discussed arbitrage on a couple of occasions, in particular, we have looked at arbitrage in the form of calendar spreads, pair trading, and put-call parity.</p>
+<p>For others who are not familiar with ‘Arbitrage’, here is a quick note.</p>
+<p>All of us, at some point in life, would have carried out an arbitrage transaction. For example, when I was in my 1<sup>st</sup>-year college, I’d pay my cousin in Singapore to buy me Rock n Roll audio cassettes from Rs.100/- per tape and sell the same here in Bangalore for Rs.150/-. People here would happily buy the tape at Rs.150/- because there was no other source for them to buy these tapes.</p>
+<p>The above is an arbitrage transaction.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/06/M11-C17-Arbitrage-Funds-.jpg"><img alt="" class="aligncenter wp-image-8245" height="320" sizes="(max-width: 481px) 100vw, 481px" src="https://zerodha.com/varsity/wp-content/uploads/2020/06/M11-C17-Arbitrage-Funds--300x200.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/06/M11-C17-Arbitrage-Funds--300x200.jpg 300w, https://zerodha.com/varsity/wp-content/uploads/2020/06/M11-C17-Arbitrage-Funds-.jpg 600w" width="481"/></a></p>
+<p>In an arbitrage transaction, you buy an asset (like the audiotape) from one market (Singapore) where the asset is selling cheap (Rs.100/-) and sell the same asset (the audiotape) in another market (Bangalore) for a higher price (150). The arbitrageur (i.e. me in this example), makes a risk free profit (Rs.50/- in this case).</p>
+<p>If you think about this, arbitrage is beautiful, right? If the above were to hold, all I had to do in life was buy tapes from Singapore and sell the same in Bangalore. I do this in large quantities, and I’d be sitting on a massive pile of cash.</p>
+<p>But if only life was that easy 🙂</p>
+<p>The assumption here is that there are continuous supply and demand in both markets. I mean imagine a situation where I buy tapes worth Rs.100,000/- with a hope to sell it for Rs.150,000/- and suddenly I realise that people in Bangalore are no longer interested in Rock n Roll, but instead prefer listening to Boyzone! Then my money is gone, right?</p>
+<p>So the point is, unlike the popular notion, arbitrage is not risk-free. What we discussed is an example of the supply-demand risk associated with the arbitrage opportunity.</p>
+<p>But it is not just that.</p>
+<p>Imagine another scenario, where a friend of mine figures my little trick, and he does the same, i.e. buy tapes from Singapore at Rs.100/- but sells the same at a slightly lower rate at say Rs.140/- to ensure he beats me at my own game.</p>
+<p>What do you think would happen next? A price war would break, I’d offer the same at say 135, he would then reduce to 125 so on as so forth till all the margins evaporate.</p>
+<p>Point being, arbitrage opportunity or arbitrage profits shrink when more people try to exploit the same opportunity.</p>
+<p>Now, think about the stock markets. Take a look at the snapshot below –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-1_arb.png"><img alt="" class="aligncenter wp-image-8238" height="92" loading="lazy" sizes="(max-width: 389px) 100vw, 389px" src="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-1_arb-300x71.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-1_arb-300x71.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-1_arb.png 477w" width="389"/></a></p>
+<p>What you see here is the quote for Kirloskar Industries, on NSE it is trading at 562.4 per share, and on BSE the same company is trading at 546.40 per share. There is a difference of 16 Rupees.</p>
+<p>The above is an arbitrage opportunity. All you have to do is buy Kirloskar Industries at 546.4 in BSE and sell the same stock in NSE at 562.4. After all, it’s the same asset but two different prices in two different markets.</p>
+<p>If one were to execute this transaction well, then a 16 Rupee profit is more or less guaranteed.</p>
+<p>A mutual fund scheme that manages money by mostly chasing such arbitrage opportunities in the market is called ‘The Arbitrage Fund’.</p>
+<h2>&nbsp;<strong>17.2 – The&nbsp; Arbitrage Fund</strong></h2>
+<p>While we looked at one type of arbitrage opportunity in the previous section, in reality, there are many types of arbitrage opportunities in the market.</p>
+<p>For instance, one of the most attractive arbitrage opportunity that the mutual fund looks for is the ‘Spot-Future’ arbitrage, wherein the futures trade at a price which is significantly away from its fair value when compared to its underlying price.</p>
+<p>In other words, at any given point, the fund is continuously long or short on the stock in either the equity or futures market.</p>
+<p>Did the above line confuse you? Let me elaborate this a bit just to give you clarity on what happens under the hood of an Arbitrage Fund. Take a look at the snapshot below –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-8_cashfut.png"><img alt="" class="aligncenter wp-image-8256" height="117" loading="lazy" sizes="(max-width: 468px) 100vw, 468px" src="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-8_cashfut-300x75.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-8_cashfut-300x75.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-8_cashfut.png 487w" width="468"/></a></p>
+<p>As of today, i.e. 18<sup>th</sup> June 2020, the stock price of Maruti is at Rs.5,714.4/- per share. However, Maruti’s future’s is trading at Rs.5,735.6/-.</p>
+<p>The difference between cash and futures is –</p>
+<p>5,735.6 – 5,714.4</p>
+<p>= <strong>21.2</strong></p>
+<p>The difference between cash and futures is called the spread or the basis. One can capture the spread by setting up an arbitrage. Remember the thumb rule in arbitrage is to buy the asset in the cheaper market and sell the same asset in the expensive market. Hence, all one has to do here is –</p>
+<p>Buy Maruti @ 5714.4 in the cash market</p>
+<p>Sell Maruti Futures (Exping in June)@ 5735.6</p>
+<p>It is important to ensure the above transaction is simultaneously executed. Once you do, you’ve locked in the spread, and it no longer matters where Maruti trades because the spread of 21.6 is guaranteed.</p>
+<p>The key here is the fact that on the expiry day, Maruti in cash and Futures will trade at a single price (unlike today). The phenomenon is called ‘Cash-Futures Convergence’. So this trade has to be unwound or squared off or closed on the expiry day.</p>
+<p>For example, assume on the expiry day, Maruti trades at 5780 in both the cash and futures market. The P&amp;L is as follows –</p>
+<p><strong>Cash market trade</strong></p>
+<p>Buy @ 5714.4</p>
+<p>Sell @ 5780.</p>
+<p>P&amp;L =5780 – 5714.4</p>
+<p>= + 65.6</p>
+<p>Here you make a profit of 65.6.</p>
+<p><strong>Futures market trade –</strong></p>
+<p>Sell @ 5735.6</p>
+<p>Buy @ 5780</p>
+<p>P&amp;L =5735.6- 5780</p>
+<p>= -44.4</p>
+<p>Here you make a loss of 44.4.</p>
+<p>So, on the one hand, you make a profit of 65.6, and on the other, you lose 44.4, but overall you make 21.2, i.e. 65.6 – 44.4.</p>
+<p>The point here is that the spread is locked and you make that no matter what happens. I’d encourage you to do the same math at few other price points and see what happens.</p>
+<p>Of course, there are other technicalities like rollover, transaction costs, execution risk, etc. But there is no point getting into these details. All you need to do is understand what arbitrage is and what happens in an arbitrage fund.</p>
+<p>Have a look at the following; this is an extract of the investment objective of DSP’s Arbitrage fund –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-2_dsparb.png"><img alt="" class="aligncenter wp-image-8239" height="69" loading="lazy" sizes="(max-width: 575px) 100vw, 575px" src="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-2_dsparb-300x36.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-2_dsparb-300x36.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-2_dsparb-1024x124.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-2_dsparb-768x93.png 768w, https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-2_dsparb.png 1046w" width="575"/></a></p>
+<p>As you can see, the fund simply states that they aim to generate income through the cash and derivatives market, without getting into specific strategy details. Some of the funds also use the term ‘low volatility returns’ in their scheme description.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-3_icici.png"><img alt="" class="aligncenter wp-image-8240" height="239" loading="lazy" src="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-3_icici.png" width="329"/></a></p>
+<p>A pure arbitrage trade such as the spot-futures arbitrage is inherently less risky with a predictable outcome; hence it is naturally low volatile.</p>
+<p>However, one should not take this at face value. Yes, if the fund is 100% focused on arbitrage opportunities, the low volatility bit would have been valid. But then, look at SEBI’s definition of the Arbitrage Fund –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-4_arbfund.png"><img alt="" class="aligncenter wp-image-8241" height="69" loading="lazy" sizes="(max-width: 493px) 100vw, 493px" src="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-4_arbfund-300x42.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-4_arbfund-300x42.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-4_arbfund.png 753w" width="493"/></a></p>
+<p>An Arbitrage fund has a minimum of 65% of the funds in Arbitrage strategies, which implies that they are free to do whatever they want with the balance of 35% of the funds. There is no restriction on that. The usual practice for Arbitrage funds is to invest the balance 35% in debt funds, and since there is a restriction on duration, funds usually chase yields. Given this, an arbitrage fund is not a ‘low volatile’ 🙂</p>
+<p>Have a look at the portfolio of ICICI Pru’s Arbitrage fund –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/06/Portfolio_Allocation.jpg"><img alt="" class="aligncenter wp-image-8242" height="861" loading="lazy" src="https://zerodha.com/varsity/wp-content/uploads/2020/06/Portfolio_Allocation.jpg" width="882"/></a></p>
+<p>Every single equity position is hedged with its futures; these are mostly arbitrage positions. As we can see, nearly 65% of the exposure is the arbitrage position. The balance 35% is parked in debt and cash –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-6_debt.png"><img alt="" class="aligncenter wp-image-8243" height="303" loading="lazy" sizes="(max-width: 419px) 100vw, 419px" src="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-6_debt-300x217.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-6_debt-300x217.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-6_debt.png 334w" width="419"/></a></p>
+<p>The presence of debt papers is what makes the arbitrage funds risky. How risky may you ask? Well, look at this –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-7_principal.png"><img alt="" class="aligncenter wp-image-8244" height="326" loading="lazy" sizes="(max-width: 413px) 100vw, 413px" src="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-7_principal-300x237.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-7_principal-300x237.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-7_principal-768x606.png 768w, https://zerodha.com/varsity/wp-content/uploads/2020/06/Image-7_principal.png 916w" width="413"/></a></p>
+<p>If I’m not wrong, Principal Arbitrage Fund held a concentrated debt position in DHFL bonds, which DHFL defaulted upon sometime in October 2018. Naturally, the fund took a hit, and the NAV nose-dived from 11.5 to about 10.9, translating to a run of 5.22%.</p>
+<p>In all fairness, 5.22% is not a big hit, but the problem is the time spent on recovery. It took nearly 1.5 years to recover 5.22% and push the NAV back to 11.5.</p>
+<p>This chart teaches us three lessons about the Arbitrage fund –</p>
+<ul>
+<li>As many investors believe, Arbitrage funds are not risk-free. Thanks to the debt component, there is an element of risk.</li>
+<li>Returns hover in the range of about 5-7%, which can get wiped out in a single shot if things go wrong.</li>
+<li>Recovery takes time. Hence it is prudent to have a long term investment horizon while investing in an arbitrage fund.</li>
+</ul>
+<p>I hope I’ve not scared you away from investing in an Arbitrage fund 🙂</p>
+<p>The good part of an arbitrage fund is that it behaves as a debt fund but gets taxed as an equity fund. We will have a chapter dedicated to mutual fund taxation, till then, here is how taxation works (very broadly) –</p>
+<ul>
+<li>Gains from Equity funds sold within 12 months are treated as short term capital gain, attracts a 15% tax.</li>
+<li>Gains from Equity funds sold after 12 months are treated as long term capital gain, attracts a 10% tax, after an exemption of Rs.1,00,000/-</li>
+<li>Gain from debt funds held for less than 36 months is treated as short term capital gains, attracts a tax as per the investor’s income tax slab.</li>
+<li>Gain from debt funds held for more than 36 months is treated as long term capital gains, attracts a 20% tax post indexation.</li>
+</ul>
+<p>Given the tax treatment, in my opinion, if you are prepared to take some risk, then use the Arbitrage fund as a proxy for say low duration or a short duration fund. The risk and return profile are similar for these funds.</p>
+<p>Hence, in my opinion, the real arbitrage in an arbitrage fund is the tax arbitrage, i.e. it behaves like a debt fund and gets taxed as an equity fund.</p>
+<p>Lastly, when you look for an arbitrage fund, it is essential to look at the debt component of the portfolio. Ensure the fund does not have concentrated debt positions and also ensure the there are no papers which are below investible grade.</p>
+<p>Also, it is crucial to confirm that the arbitrage fund is not holding any unhedged equity position because this defeats the purpose of an arbitrage fund.</p>
+<p>Next up is Mutual fund metrics. Stay tuned.</p>
+<h3><strong>Key takeaways from this chapter</strong></h3>
+<ol>
+<li>Arbitrage funds are hedged position</li>
+<li>SEBI mandates AMCs to invest a minimum of 65% in arbitrage strategies</li>
+<li>Mutual funds usually spend up to 35% in debt</li>
+<li>Arbitrage funds can be volatile</li>
+<li>One can consider Arbitrage funds as a proxy for low/short duration funds</li>
+</ol>
+<div class="clear"> </div>
+</div>

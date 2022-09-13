@@ -1,0 +1,190 @@
+<div class="post">
+<h2><img alt="M4-Ch8-title" class="aligncenter size-full wp-image-1590" height="300" sizes="(max-width: 600px) 100vw, 600px" src="http://zerodha.com/varsity/wp-content/uploads/2015/02/M4-Ch8-title1.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/02/M4-Ch8-title1.jpg 600w, https://zerodha.com/varsity/wp-content/uploads/2015/02/M4-Ch8-title1-300x150.jpg 300w" width="600"/></h2>
+<h2>8.1 – Shorting in a nutshell</h2>
+<p>We briefly discussed shorting in <a href="http://zerodha.com/varsity/chapter/commonly-used-jargons/" rel="noopener" target="_blank"><strong>Module 1</strong></a>. However in this chapter we will look at shorting in greater detail. Shorting is a tricky concept because we are not used to shorting in our day to day transaction. For example imagine this transaction – You buy an apartment today for let us say Rs.X, sell it 2 years later for Rs.X+Y. The profit made on the transaction is the incremental value over and above Rs.X, which happens to be Rs.Y. This is a simple and a highly intuitive transaction. In fact most of the day to day transactions requires us to buy something first and sell it later (maybe for a profit or a loss). These are simple to understand transactions and we are used to it. However in a short sale or a just ‘shorting’ we carry out the transactions in the exact opposite direction i.e. to sell first and buy later.</p>
+<p>So what would compel a trader to sell something first and then buy it later? Well, it is quite simple – When we believe the price of an asset such as a stock is likely to increase we buy the stock first and sell it later. However, when we believe the price of the stock is going to decline, we usually sell it first and buy it later!</p>
+<p>Confused? Well, let me try giving you a rudimentary analogy just so that you can get the gist of the concept at this stage. Imagine your friend and you are watching a nail biting India Pakistan cricket match. Both of you are in a mood for a little wager. You bet that India is going to win the match, and your friend bets that India will lose the match. Quite naturally this means you make money if India wins. Likewise your friend would make money if India were to lose the match. Now for a minute think of the India (as in the Indian cricket team in this context) as a stock trading in the stock market. When you do so, your bet is equivalent to saying that you would make money if the stock goes up (India wins the match), and your friend would make money if the stock goes down (India loses the match). In market parlance, you are long on India and your friend is short on India.</p>
+<p>Still confused? May not be I suppose, but I would imagine a few unanswered questions crawling in your mind. If you are completely new to shorting, just remember this one point for now – <b>When you feel the price of a stock is likely to decline, you can make money by shorting the stock. To short stock or futures, you will have to sell first and buy later</b>. In fact the best way to learn shorting is by actually shorting a stock/futures and experiencing the P&amp;L. However in this chapter, I will try and explain all the things you need to know before you go ahead and short the stock/futures.</p>
+<h2>8.2 – Shorting stocks in the spot market</h2>
+<p>Before we understand how one can short a stock in the futures market, we need to understand how shorting works in the spot market. Think about the following hypothetical situation –</p>
+<ol>
+<li>A trader looks at the daily chart of HCL Technologies Limited and identifies the formation of a bearish Marubuzo</li>
+<li>Along with&nbsp; the bearish Marubuzo, other checklist items (as discussed in TA module) complies as well
+<ol type="a">
+<li>Above average volumes</li>
+<li>Presence of the resistance level</li>
+<li>Indicators confirm</li>
+<li>The Risk &amp; Reward ratio is satisfactory</li>
+</ol>
+</li>
+<li>Based on the analysis the trader is convinced that HCL Technologies will decline by at least 2.0% the following day</li>
+</ol>
+<p>Now given this outlook, the trader wants to profit by the expected price decline. Hence he decides to short the stock. Let us understand this better by defining the trade –</p>
+<table>
+<tbody>
+<tr>
+<td>Stock</td>
+<td>HCL Technologies</td>
+</tr>
+<tr>
+<td>Trade Type</td>
+<td>Short (sell first and buy later)</td>
+</tr>
+<tr>
+<td>Trade Type</td>
+<td>Short (sell first and buy later)</td>
+</tr>
+<tr>
+<td>Trade Duration</td>
+<td>Intra day</td>
+</tr>
+<tr>
+<td>Short Price</td>
+<td>Rs.1990/-</td>
+</tr>
+<tr>
+<td>Number of shares</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Target Price</td>
+<td>Rs.1950/-</td>
+</tr>
+<tr>
+<td>% Profit Expected</td>
+<td>2.0%</td>
+</tr>
+<tr>
+<td>Stoploss</td>
+<td>Rs.2000/-</td>
+</tr>
+<tr>
+<td>Risk</td>
+<td>Rs.10/-</td>
+</tr>
+<tr>
+<td>Reward</td>
+<td>Rs.40/-</td>
+</tr>
+</tbody>
+</table>
+<p>As we know, when one shorts a stock or stock futures, the expectation is that the stock price goes down and therefore one can profit out of the falling prices. So from the table above the idea is to short the stock at Rs.1990.</p>
+<p>On the trading platform when you are required to short, all you need to do is highlight the stock (or futures contract) you wish to short and press F2 on your <a href="http://zerodha.com/pi/" rel="noopener" target="_blank"><strong>trading platform.</strong></a> Doing so invokes the sell order form; enter the quantity and other details before you hit Submit. When you hit submit, the order hits the exchange and assuming it gets filled, you would have created a short open position for yourself.</p>
+<p>Anyway, now think about this – When you enter a trading position, under what circumstances would you make a loss? Well, quite obviously you would lose money when the stock price goes against your expected direction. So,</p>
+<ol>
+<li>When you short a stock what is the expected directional move?
+<ol type="a">
+<li>The expectation is that the stock price would decline, so the directional view is downwards</li>
+</ol>
+</li>
+<li>So when would you start making a loss?
+<ol type="a">
+<li>When the stock moves against the expected direction</li>
+</ol>
+</li>
+<li>And what would that be?
+<ol type="a">
+<li>This means you will start making a loss if the stock price instead of going down starts to move up</li>
+</ol>
+</li>
+</ol>
+<p>For this reason whenever you short, the stoploss price is always higher than the price at which you have shorted the stock. Therefore from the table above you can see that the short trade entry is Rs.1990/- and the stoploss is Rs.2000/-, which is Rs.10/- higher than the entry price.</p>
+<p>Now, after initiating the short trade at Rs.1990/- let us now hypothetically imagine 2 scenarios.</p>
+<p><b>Scenario 1 – The stock price hits the target of Rs.1950/-</b></p>
+<p>In this case the stock has moved as per the expectation. The stock has fallen from Rs.1990/- to Rs.1950/-. Since the target has been achieved, the trader is expected to close the position. As we know in a short position the trader is required to –</p>
+<ol>
+<li>First sell @ Rs.1990/- and</li>
+<li>Later buy @ Rs.1950/-</li>
+</ol>
+<p>In the whole process, the trader would have made a profit equal to the differential between the selling and buying price – i.e. Rs.40/- (1990 – 1950).</p>
+<p>If you look at it from another angle (i.e. the usual buy first and sell later angle), this is as good as buying at Rs.1950 and selling at Rs.1990. It is just that the trader has reversed the transaction order by selling first and buying later.</p>
+<p><b>Scenario 2 – The stock price increases to Rs.2000/-</b></p>
+<p>In this case the stock has gone higher than the short price of Rs.1990/-. Recollect when you short, for you to profit the stock needs to decline in price. If the stock price goes up instead then there would be a loss. In this case the stock has gone up, hence there would be a loss –</p>
+<ol>
+<li>The trader shorted @ Rs.1990/-. After shorting, the stock went up as opposed to the trader’s expectation</li>
+<li>The stock hits Rs.2000/- and triggers the stoploss. To prevent further losses, the trader will have to close the position by buying the stock back.</li>
+</ol>
+<p>In the whole process the trader would have suffered a loss of Rs.10/- (2000 – 1990). If you look at it from the regular buy first sell later angle – this transaction is as good as buying at Rs.2000/- and selling at Rs.1990/ , and again if we reverse the order it would be sell first and buy later.</p>
+<p>Hopefully the above two scenarios should have convinced you about the fact that, when you short you make money when the price goes down and you lose when the price increases.</p>
+<h2>8.3 – Shorting in spot (The stock exchange’s perspective)</h2>
+<p>Shorting in the spot market has one restriction – it strictly has to be done on an intraday basis. Meaning you can initiate the short trade anytime during the day, but you will have to buy back the shares (square off) by end of the day before the market closes. You cannot carry forward the short position for multiple days. To understand why shorting in the spot market is strictly an intraday affair we need to understand how the exchange treats the short position.</p>
+<p>When you short in the spot market, you obviously sell first. The moment you sell a stock, the backend process would alert the exchange that you have sold a particular stock. The exchange does not differentiate between a regular selling of stock (from DEMAT account) and a short sale. From their perspective they are of the opinion that you have sold the shares which would obligate you to deliver the same. In order to do so, you need to keep the shares ready in your DEMAT account by next day. However the exchange would know about your obligation only after the market closes and not during the market hours.</p>
+<p>Keep the above discussion in the back of your mind. Now for a moment let us assume you have shorted a stock and hope to benefit from the price decline. After you short, the price has not declined as expected and hence you decide to wait for another day. However at the end of the day, exchange would figure out that you have sold shares during the day, hence you would be required to keep these shares ready for delivery. However you do not have these shares for meeting your delivery obligation. This means you will default against your obligation; hence there would be a hefty penalty for this default. This situation is also referred to as “Short Delivery”.</p>
+<p>Under a short delivery situation, the exchange would take up the issue and settle it in the auction market. I would encourage you to read this <strong><a href="http://zerodha.com/z-connect/queries/stock-and-fo-queries/consequences-of-short-delivery-nse-bse" rel="noopener" target="_blank">article</a>&nbsp;</strong>on Z-Connect which beautifully explains the auction market procedures and how penalty is imposed on the client defaulting on delivery obligation. A piece of advice here, never get into the ‘short delivery’ situation, always make sure you close your short trade before the market close, else the penalty could be as high as 20% above your short price.</p>
+<p>Also, this leads us to an important thought – the exchange anyway checks for the obligations after the market closes. Hence before the exchange can run the ‘obligation check’ if one were to cover the short position (by squaring off) then there would be no obligation at all by end of the day. Hence for this reason, shorting in spot market has to be done strictly as an intraday trade without actually carrying forward the delivery obligation.</p>
+<p>So does that mean all short positions have to be closed within the day? Not really. A short position created in the futures market can be carried forward overnight.</p>
+<h2>8.4 – Shorting in the Futures Market</h2>
+<p>Shorting a stock in the futures segment has no restrictions like shorting the stock in the spot market. In fact this is one of the main reasons why trading in futures is so popular. Remember the ‘futures’ is a derivative instrument that just mimics the movement of its respective underlying. So if the underlying value is going down, so would the futures. This means if you are bearish about a stock then you can initiate a short position on its futures and hold on to the position overnight.</p>
+<p>Similar to depositing a margin while initiating a long position, the short position also would require a margin deposit. The margins are similar for both the long and short positions and they do not really change.</p>
+<p>To help you understand the ‘Mark to Market’ (M2M) perspective when you short futures, let us take up the following example. Imagine you have shorted HCL Technologies Limited at Rs.1990/-. The lot size is 125. The table below shows the stock price movement over the next few days and the respective M2M –</p>
+<table>
+<tbody>
+<tr>
+<th>Day</th>
+<th>Ref price for M2M</th>
+<th>Closing Price</th>
+<th>P&amp;L for the day</th>
+</tr>
+<tr>
+<td>01 – (Initiate short)</td>
+<td>1990</td>
+<td>1982</td>
+<td>125 x 8 = 1000</td>
+</tr>
+<tr>
+<td>02</td>
+<td>1982</td>
+<td>1975</td>
+<td>125 x 7 + 875</td>
+</tr>
+<tr style="color: red;">
+<td>03</td>
+<td>1975</td>
+<td>1980</td>
+<td>125 x 5 = 625</td>
+</tr>
+<tr style="color: red;">
+<td>04</td>
+<td>1980</td>
+<td>1989</td>
+<td>125 x 9 = 1125</td>
+</tr>
+<tr>
+<td>05</td>
+<td>1989</td>
+<td>1970</td>
+<td>125 x 19 = 2375</td>
+</tr>
+<tr>
+<td>06 – (Square off)</td>
+<td>1970</td>
+<td>1965</td>
+<td>125 x 5 = 625</td>
+</tr>
+</tbody>
+</table>
+<p>The two lines marked in red highlights the fact that they are loss making days. To get the overall profitability of the trade we could just add up all the M2M values –</p>
+<p>+ 1000 + 875 <span style="color: red;"> – 625 – 1125 </span> + 2375 + 625</p>
+<p><b>= Rs.3125/-</b></p>
+<p>Alternatively we could look at it as –</p>
+<p>(Selling Price – Buying price) * Lot Size</p>
+<p>= (1990 – 1965) * 125</p>
+<p>= 25*125</p>
+<p><b>=Rs.3125/-</b></p>
+<p>So, shorting futures is very similar to initiating a long futures position, except that when you short you profit only if the price declines. Besides this, the margin requirement and the M2M calculation remains the same.</p>
+<p>Shorting is a very integral part of active trading. I would suggest you get as comfortable with initiating a short trade as you would with a long trade.</p>
+<hr/>
+<p><b>Key takeaways from this chapter</b></p>
+<ol>
+<li>Shorting requires us to sell first and buy later</li>
+<li>Short trade is profitable only when the closing price is lower than the entry price</li>
+<li>When the price goes higher than the price at which one has shorted, then there would be a loss</li>
+<li>The stoploss in a short trade is always higher than the price at which one has shorted</li>
+<li>One can only short on an intraday basis in the spot market</li>
+<li>The short positions cannot be carried overnight in the spot market</li>
+<li>The short position in the futures market can be carried forward overnight</li>
+<li>The margins requirement for both short and long trades are similar</li>
+<li>The M2M computation is also similar for both short and long trades</li>
+</ol>
+<div class="clear"> </div>
+</div>

@@ -1,0 +1,305 @@
+<div class="post">
+<h2><img alt="M5-Ch11-title" class="aligncenter size-full wp-image-2055" height="174" sizes="(max-width: 600px) 100vw, 600px" src="http://zerodha.com/varsity/wp-content/uploads/2015/06/M5-Ch11-title.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/06/M5-Ch11-title.png 600w, https://zerodha.com/varsity/wp-content/uploads/2015/06/M5-Ch11-title-300x87.png 300w" width="600"/></h2>
+<h2>11.1 – Add up the Deltas</h2>
+<p>Here is an interesting characteristic of the Delta – The Deltas can be added up!</p>
+<p>Let me explain – we will go back to the Futures contract for a moment. We know for every point change in the underlying’s spot value the futures also changes by 1 point. For example if Nifty Spot moves from 8340 to 8350 then the Nifty Futures will also move from 8347 to 8357 (i.e. assuming Nifty Futures is trading at 8347 when the spot is at 8340). If we were to assign a delta value to Futures, clearly the future’s delta would be 1 as we know for every 1 point change in the underlying the futures also changes by 1 point.</p>
+<p>Now, assume I buy 1 ATM option which has a delta of 0.5, then we know that for every 1 point move in the underlying the option moves by 0.5 points. In other words owning 1 ATM option is as good as holding half futures contract. Given this, if I hold 2 such ATM contracts, then it as good as holding 1 futures contract because the delta of the 2 ATM options i.e. 0.5 and 0.5, which adds up to total delta of 1! In other words the deltas of two or more option contracts can be added to evaluate the total delta of the position.</p>
+<p>Let us take up a few case studies to understand this better –</p>
+<p><strong>Case 1 – Nifty spot at 8125, trader has 3 different Call option.</strong></p>
+<table class="tableizer-table">
+<tbody>
+<tr class="tableizer-firstrow">
+<th>Sl No</th>
+<th>Contract</th>
+<th>Classification</th>
+<th>Lots</th>
+<th>Delta</th>
+<th>Position Delta</th>
+</tr>
+<tr>
+<td>1</td>
+<td>8000 CE</td>
+<td>ITM</td>
+<td>1 -Buy</td>
+<td>0.7</td>
+<td>+ 1 * 0.7 = + 0.7</td>
+</tr>
+<tr>
+<td>2</td>
+<td>8120 CE</td>
+<td>ATM</td>
+<td>1 -Buy</td>
+<td>0.5</td>
+<td>+ 1 * 0.5 = + 0.5</td>
+</tr>
+<tr>
+<td>3</td>
+<td>8300 CE</td>
+<td>Deep OTM</td>
+<td>1- Buy</td>
+<td>0.05</td>
+<td>+ 1 * 0.05 = + 0.05</td>
+</tr>
+<tr>
+<td colspan="5"><strong>Total Delta of positions </strong></td>
+<td><strong>= 0.7 + 0.5 + 0.05 = + 1.25</strong></td>
+</tr>
+</tbody>
+</table>
+<p><span style="background-color: #ffaf59;">Observations –</span></p>
+<ol>
+<li>The positive sign next to 1 (in the Position Delta column) indicates ‘Long’ position</li>
+<li>The combined positions have a positive delta i.e. +1.25. This means both the underlying and the combined position moves in the same direction</li>
+<li>For every 1 point change in Nifty, the combined position changes by 1.25 points</li>
+<li>If Nifty moves by 50 points, the combined position is expected to move by 50 * 1.25 = 62.5 points</li>
+</ol>
+<p><strong>Case 2 – Nifty spot at 8125, trader has a combination of both Call and Put options.</strong></p>
+<table class="tableizer-table">
+<tbody>
+<tr class="tableizer-firstrow">
+<th>Sl No</th>
+<th>Contract</th>
+<th>Classification</th>
+<th>Lots</th>
+<th>Delta</th>
+<th>Position Delta</th>
+</tr>
+<tr>
+<td>1</td>
+<td>8000 CE</td>
+<td>ITM</td>
+<td>1- Buy</td>
+<td>0.7</td>
+<td>+ 1*0.7 =0.7</td>
+</tr>
+<tr>
+<td>2</td>
+<td>8300 PE</td>
+<td>Deep ITM</td>
+<td>1- Buy</td>
+<td><strong>– 1.0</strong></td>
+<td><strong>+ 1*-1.0 = -1.0</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td>8120 CE</td>
+<td>ATM</td>
+<td>1- Buy</td>
+<td>0.5</td>
+<td>+ 1*0.5 = 0.5</td>
+</tr>
+<tr>
+<td>4</td>
+<td>8300 CE</td>
+<td>Deep OTM</td>
+<td>1- Buy</td>
+<td>0.05</td>
+<td>+ 1*0.05 = 0.05</td>
+</tr>
+<tr>
+<td colspan="5"><strong>Total Delta of positions&nbsp;</strong></td>
+<td><strong>0.7 – 1.0 + 0.5 + 0.05 = + 0.25</strong></td>
+</tr>
+</tbody>
+</table>
+<p><span style="background-color: #ffaf59;">Observations –</span></p>
+<ol>
+<li>The combined positions have a positive delta i.e. +0.25. This means both the underlying and the combined position move in the same direction</li>
+<li>With the addition of Deep ITM PE, the overall position delta has reduced, this means the combined position is less sensitive to the directional movement of the market</li>
+<li>For every 1 point change in Nifty, the combined position changes by 0.25 points</li>
+<li>If Nifty moves by 50 points, the combined position is expected to move by 50 * 0.25 = 12.5 points</li>
+<li>Important point to note here – Deltas of the call and puts can be added as long as it belongs to the same underlying.</li>
+</ol>
+<p><strong>Case 3 – Nifty spot at 8125, trader has a combination of both Call and Put options. He has 2 lots Put option here.</strong></p>
+<table class="tableizer-table">
+<tbody>
+<tr class="tableizer-firstrow">
+<th>Sl No</th>
+<th>Contract</th>
+<th>Classification</th>
+<th>Lots</th>
+<th>Delta</th>
+<th>Position Delta</th>
+</tr>
+<tr>
+<td>1</td>
+<td>8000 CE</td>
+<td>ITM</td>
+<td>1- Buy</td>
+<td>0.7</td>
+<td>+ 1 * 0.7 = + 0.7</td>
+</tr>
+<tr>
+<td>2</td>
+<td>8300 PE</td>
+<td>Deep ITM</td>
+<td>2- Buy</td>
+<td>-1</td>
+<td>+ 2 * (-1.0) = -2.0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>8120 CE</td>
+<td>ATM</td>
+<td>1- Buy</td>
+<td>0.5</td>
+<td>+ 1 * 0.5 = + 0.5</td>
+</tr>
+<tr>
+<td>4</td>
+<td>8300 CE</td>
+<td>Deep OTM</td>
+<td>1- Buy</td>
+<td>0.05</td>
+<td>+ 1 * 0.05 = + 0.05</td>
+</tr>
+<tr>
+<td colspan="5"><strong>Total Delta of positions </strong></td>
+<td><strong>0.7 – 2 + 0.5 + 0.05 = – 0.75</strong></td>
+</tr>
+</tbody>
+</table>
+<p><span style="background-color: #ffaf59;">Observations –</span></p>
+<ol>
+<li>The combined positions have a negative delta. This means the underlying and the combined option position move in the opposite direction</li>
+<li>With an addition of 2 Deep ITM PE, the overall position has turned delta negative, this means the combined position is sensitive to the directional movement of the market</li>
+<li>For every 1 point change in Nifty, the combined position changes by – 0.75 points</li>
+<li>If Nifty moves by 50 points, the position is expected to move by 50 * (- 0.75) = -37.5 points</li>
+</ol>
+<p><strong>Case 4 – Nifty spot at 8125, the trader has Calls and Puts of the same strike, same underlying.</strong></p>
+<table class="tableizer-table">
+<tbody>
+<tr class="tableizer-firstrow">
+<th>Sl No</th>
+<th>Contract</th>
+<th>Classification</th>
+<th>Lots</th>
+<th>Delta</th>
+<th>Position Delta</th>
+</tr>
+<tr>
+<td>1</td>
+<td>8100 CE</td>
+<td>ATM</td>
+<td>1- Buy</td>
+<td>0.5</td>
+<td>+ 1 * 0.5 = + 0.5</td>
+</tr>
+<tr>
+<td>2</td>
+<td>8100 PE</td>
+<td>ATM</td>
+<td>1- Buy</td>
+<td>-0.5</td>
+<td>+ 1 * (-0.5) = -0.5</td>
+</tr>
+<tr>
+<td colspan="5"><strong>Total Delta of positions </strong></td>
+<td><strong>+ 0.5 – 0.5 = 0</strong></td>
+</tr>
+</tbody>
+</table>
+<p><span style="background-color: #ffaf59;">Observations –</span></p>
+<ol>
+<li>The 8100 CE (ATM) has a positive delta of + 0.5</li>
+<li>The 8100 PE (ATM) has a negative delta of – 0.5</li>
+<li>The combined position has a delta of 0, which implies that the combined position does not get impacted by any change in the underlying
+<ol type="a">
+<li>For example – If Nifty moves by 100 points, the change in the options positions will be 100 * 0 = 0</li>
+</ol>
+</li>
+<li>Positions such as this – which have a combined delta of 0 are also called <strong>‘Delta Neutral’</strong> positions</li>
+<li>Delta Neutral positions do not get impacted by any directional change. They behave as if they are insulated to the market movements</li>
+<li>However Delta neutral positions react to other variables like Volatility and Time. We will discuss this at a later stage.</li>
+</ol>
+<p><strong>Case 5 – Nifty spot at 8125, trader has sold a Call Option</strong></p>
+<table class="tableizer-table">
+<tbody>
+<tr class="tableizer-firstrow">
+<th>Sl No</th>
+<th>Contract</th>
+<th>Classification</th>
+<th>Lots</th>
+<th>Delta</th>
+<th>Position Delta</th>
+</tr>
+<tr>
+<td>1</td>
+<td>8100 CE</td>
+<td>ATM</td>
+<td>1- Sell</td>
+<td>0.5</td>
+<td>– 1 * 0.5 =&nbsp; – 0.5</td>
+</tr>
+<tr>
+<td>2</td>
+<td>8100 PE</td>
+<td>ATM</td>
+<td>1- Buy</td>
+<td>-0.5</td>
+<td>+ 1 * (-0.5) = – 0.5</td>
+</tr>
+<tr>
+<td colspan="5"><strong>Total Delta of positions </strong></td>
+<td><strong>– 0.5 – 0.5 = – 1.0</strong></td>
+</tr>
+</tbody>
+</table>
+<p><span style="background-color: #ffaf59;">Observations –</span></p>
+<ol>
+<li>The negative sign next to 1 (in the Position Delta column) indicates ‘short’ position</li>
+<li>As we can see a short call option gives rise to a negative delta – this means the option position and the underlying move in the opposite direction. This is quite intuitive considering the fact that the increase in spot value results in a loss to the call option seller</li>
+<li>Likewise if you short a PUT option the delta turns positive
+<ol type="a">
+<li>-1 * (-0.5) = +0.5</li>
+</ol>
+</li>
+</ol>
+<p>Lastly just consider a case wherein the trader has 5 lots long deep ITM option. We know the total delta of such position would + 5 * + 1 = + 5. This means for every 1 point change in the underlying the combined position would change by 5 points in the same direction.</p>
+<p>Do note the same can be achieved by shorting 5 deep ITM PUT options –</p>
+<p>– 5 * – 1 = + 5</p>
+<p>-5 indicate 5 short positions and -1 is the delta of deep ITM Put options.</p>
+<p>The above case study discussions should give you a perspective on how to add up the deltas of the individual positions and figure out the overall delta of the positions. This technique of adding up the deltas is very helpful when you have multiple option positions running simultaneously and <strong>you want to identify the overall directional impact on the positions</strong>.</p>
+<p>In fact I would strongly recommend you always add the deltas of individual position to get a perspective – this helps you understand the sensitivity and leverage of your overall position.</p>
+<p>Also, here is another important point you need to remember –</p>
+<p>Delta of ATM option = 0.5</p>
+<p>If you have 2 ATM options = delta of the position is 1</p>
+<p>So, for every point change in the underlying the overall position also changes by 1 point (as the delta is 1). This means the option mimics the movement of a Futures contract. However, do remember these two options should not be considered as a surrogate for a futures contract. Remember the Futures contract is only affected by the direction of the market, however the options contracts are affected by many other variables besides the direction of the markets.</p>
+<p>There could be times when you would want to substitute the options contract instead of futures (mainly from the margins perspective) – but whenever you do so be completely aware of its implications, more on this topic as we proceed.</p>
+<h2>11.2 – Delta as a probability</h2>
+<p>Before we wrap up our discussion on Delta, here is another interesting application of Delta. You can use the Delta to gauge the probability of the <strong>option contract to expire in the money</strong>.</p>
+<p>Let me explain – when a trader buys an option (irrespective of Calls or Puts), what is that he aspires? For example what do you expect when you buy Nifty 8000 PE when the spot is trading at 8100? (Note 8000 PE is an OTM option here). Clearly we expect the market to fall so that the Put option starts to make money for us.</p>
+<p>In fact the trader hopes the spot price falls below the strike price so <strong>that the option transitions from an OTM option to ITM option </strong>– and in the process the premium goes higher and the trader makes money.</p>
+<p>The trader can use the delta of an option to figure out the probability of the option to transition from OTM to ITM.</p>
+<p>In the example 8000 PE is slightly OTM option; hence its delta must be below 0.5, let us fix it to 0.3 for the sake of this discussion.</p>
+<p>Now to figure out the probability of the option to transition from OTM to ITM, simply convert the delta to a percentage number.</p>
+<p>When converted to percentage terms, delta of 0.3 is 30%. Hence there is only 30% chance for the 8000 PE to transition into an ITM option.</p>
+<p>Interesting right? Now think about this situation – although an arbitrary situation, this in fact is a very real life market situation –</p>
+<ol>
+<li>8400 CE is trading at Rs.4/-</li>
+<li>Spot is trading at 8275</li>
+<li>There are two day left for expiry – would you buy this option?</li>
+</ol>
+<p>Well, a typical trader would think that this is a low cost trade, after all the premium is just Rs.4/- hence there is nothing much to lose. In fact the trader could even convince himself thinking that if the trade works in his favor, he stands a chance to make a huge profit.</p>
+<p>Fair enough, in fact this is how options work. But let’s put on our ‘Model Thinking’ hat and figure out if this makes sense –</p>
+<ol>
+<li>8400 CE is deep OTM call option considering spot is at 8275</li>
+<li>The delta of this option could be around 0.1</li>
+<li>Delta suggests that there is only 10% chance for the option to expire ITM</li>
+<li>Add to this the fact that there are only 2 more days to expiry – the case <strong>against</strong> buying this option becomes stronger!</li>
+</ol>
+<p>A prudent trader would never buy this option. However don’t you think it makes perfect sense to sell this option and pocket the premium? Think about it – there is just 10% chance for the option to expire ITM or in other words there is 90% chance for the option to expire as an OTM option. With such a huge probability favoring the seller, one should go ahead and take the trade with conviction!</p>
+<p>In the same line – what would be the delta of an ITM option? Close to 1 right? So this means there is a very high probability for an already ITM option to expire as ITM. In other words the probability of an ITM option expiring OTM is very low, so beware while shorting/writing ITM options as the odds are already against you!</p>
+<p>Remember smart trading is all about taking trades wherein the odds favor you, and to know if the odds favor you, you certainly need to know your numbers and don your ‘Model Thinking’ hat.</p>
+<p>And with this I hope you have developed a fair understanding on the very first Option Greek – The delta.</p>
+<p>The Gamma beckons us now.</p>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>The delta is additive in nature</li>
+<li>The delta of a futures contract is always 1</li>
+<li>Two ATM option is equivalent to owning 1 futures contract</li>
+<li>The options contract is not really a surrogate for the futures contract</li>
+<li>The delta of an option is also the probability for the option to expire ITM</li>
+</ol>
+<div class="clear"> </div>
+</div>

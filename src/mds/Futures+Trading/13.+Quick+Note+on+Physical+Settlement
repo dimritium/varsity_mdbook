@@ -1,0 +1,61 @@
+<div class="post">
+<h2><b>13.1 – Overview</b></h2>
+<p><span style="font-weight: 400;">Until recent times, trading in equity futures and options was cash settled in India. What this means is that upon expiry of the contract, buyers or sellers had to settle their position in cash without having to take delivery of the underlying security. On April 11, 2018, SEBI released a circular making physical delivery of stocks for all stock F&amp;O contracts mandatory in a phased manner. The aim was to curb excessive speculation which would result in too much volatility in individual stocks.</span></p>
+<h2><b>13.2 What is Physical Settlement?&nbsp;</b></h2>
+<p><span style="font-weight: 400;">It means all stock F&amp;O contracts at expiry, are required to be given/taken delivery of the underlying security. From October 2019’s expiry, all stock F&amp;O contracts are compulsorily settled physically.&nbsp;</span></p>
+<p><span style="font-weight: 400;">Let’s understand this with an example, before the introduction of physical settlement, if you bought only a lot of SBI futures expiring this month, on expiry, the contract will be cash-settled based on the settlement price and you will receive the credit or debit in your trading account. We’ve explained how marked to market settlement works in this </span><a href="https://zerodha.com/varsity/chapter/margin-m2m/"><span style="font-weight: 400;">chapter</span></a><span style="font-weight: 400;">. But with the physical settlement, if you don’t close or rollover your position till expiry, you are required to pay the total contract and you will receive the delivery of shares to your Demat account.</span></p>
+<h2><b>13.3 Why is Physical Settlement enforced?</b></h2>
+<p><span style="font-weight: 400;">When the contract is cash-settled, traders only are required to maintain the margin(SPAN +Exposure) for the contract and can lead to short-sellers building up excessive short positions closer to expiry artificially bringing down the price. With the physical settlement, these traders will have to buy the stock from the equity market or borrow on the SLB markets to be able to deliver the stocks to the counterparty. This brings in balance to the price not allowing for price manipulation.</span></p>
+<h2><b>13.4 How are positions settled?</b></h2>
+<p><span style="font-weight: 400;">On expiry, various F&amp;O contracts are settled in the following manner</span></p>
+<ol>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Take Delivery(stocks are delivered to your Demat account)- Long Futures, long ITM Call and short ITM Put</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Give Delivery(you are required to deliver the stocks to the exchange)- Short Futures, short ITM Call and long ITM Put.&nbsp;</span></li>
+</ol>
+<p><span style="font-weight: 400;">Only ITM options will be physically settled, if the option expires OTM, they expire worthlessly and there won’t be any delivery obligation.&nbsp;</span></p>
+<h2><b>13.5 Netted off positions(subcategory)</b></h2>
+<p><span style="font-weight: 400;">If you have multiple positions of the same underlying for the same expiration date and they form a hedge, depending on the direction of the trade, they will be netted off.</span></p>
+<table>
+<tbody>
+<tr>
+<td><b>1st Leg</b></td>
+<td><b>2nd Leg</b></td>
+</tr>
+<tr>
+<td><b>Long Futures</b></td>
+<td><b>Short ITM Call</b>
+<p><b>Long ITM Put</b></p></td>
+</tr>
+<tr>
+<td><b>Short Futures</b></td>
+<td><b>Long ITM Call</b>
+<p><b>Short ITM Put</b></p></td>
+</tr>
+<tr>
+<td><b>Long ITM Call</b></td>
+<td><b>Long ITM Put</b>
+<p><b>Short ITM Call</b></p></td>
+</tr>
+<tr>
+<td><b>Long ITM Put</b></td>
+<td><b>Long ITM Call</b>
+<p><b>Short ITM Put</b></p></td>
+</tr>
+<tr>
+<td><b>Short ITM Call</b></td>
+<td><b>Long ITM Call</b>
+<p><b>Short ITM Put</b></p></td>
+</tr>
+<tr>
+<td><b>Short ITM Put</b></td>
+<td><b>Short ITM Call</b>
+<p><b>Long ITM Put</b></p></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-weight: 400;">For example, if you have an SBI June long futures contract and long ITM Put of strike 200(SBI spot price at Rs 180), the long futures position will lead to a take delivery obligation and the long put option to a given delivery obligation. This will be netted off for your account and there won’t be any physical delivery obligation.</span></p>
+<h2><b>13.6 Margins</b></h2>
+<p><span style="font-weight: 400;">When you are trading in the F&amp;O segment, for futures and short options, you will require to maintain only the margin amount in your account, for long options, just the premium required to buy. However, this changes with the physical settlement mechanism, where you are required to bring in 100% of the contract value to take delivery of the contract or bring in stocks to give delivery(depending on the direction of your trade). Brokers introduce additional margins when such positions get closer to expiry.&nbsp;</span></p>
+<p><span style="font-weight: 400;">You can read on Zerodha’s physical settlement policy </span><a href="https://zerodha.com/z-connect/queries/policy-on-settlement-of-compulsory-delivery-derivative-contracts-update-oct-2019"><span style="font-weight: 400;">here</span></a><span style="font-weight: 400;">.</span></p>
+<div class="clear"> </div>
+</div>

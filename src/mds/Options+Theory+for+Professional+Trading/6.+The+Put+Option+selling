@@ -1,0 +1,185 @@
+<div class="post">
+<h2>6.1 – Building the case</h2>
+<p>Previously we understood that, an option seller and the buyer are like two sides of the same coin. They have a diametrically opposite view on markets. Going by this, if the Put option buyer is bearish about the market, then clearly the put option seller must have a bullish view on the markets. Recollect we looked at the Bank Nifty’s chart in the previous chapter; we will review the same chart again, but from the perspective of a put option seller.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/04/Image-1_-Bank-Nifty1.png"><img alt="Image 1_ Bank Nifty" class="aligncenter size-full wp-image-1898" height="474" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2015/04/Image-1_-Bank-Nifty1.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/04/Image-1_-Bank-Nifty1.png 800w, https://zerodha.com/varsity/wp-content/uploads/2015/04/Image-1_-Bank-Nifty1-300x178.png 300w" width="800"/></a></p>
+<p>The typical thought process for the Put Option Seller would be something like this –</p>
+<ol>
+<li>Bank Nifty is trading at 18417</li>
+<li>2 days ago Bank Nifty tested its resistance level at 18550 (resistance level is highlighted by a green horizontal line)</li>
+<li>18550 is considered as resistance as there is a price action zone at this level which is well spaced in time (for people who are not familiar with the concept of resistance I would suggest you read about it <strong><a href="http://zerodha.com/varsity/chapter/support-resistance/">here</a></strong>)</li>
+<li>I have highlighted the price action zone in a blue rectangular boxes</li>
+<li>Bank Nifty has attempted to crack the resistance level for the last 3 consecutive times</li>
+<li>All it needs is 1 good push (maybe a large sized bank announcing decent results – HDFC, ICICI, and SBI are expected to declare results soon)</li>
+<li>A positive cue plus a move above the resistance will set Bank Nifty on the upward trajectory</li>
+<li>Hence writing the Put Option and collecting the premiums may sound like a good idea</li>
+</ol>
+<p>You may have a question at this stage – If the outlook is bullish, why write (sell) a put option and why not just buy a call option?</p>
+<p>Well, the decision to either buy a call option or sell a put option really depends on how attractive the premiums are. At the time of taking the decision, if the call option has a low premium then buying a call option makes sense, likewise if the put option is trading at a very high premium then selling the put option (and therefore collecting the premium) makes sense. Of course to figure out &nbsp;what exactly to do (buying a call option or selling a put option) depends on the attractiveness of the premium, and to judge how attractive the premium is you need some background knowledge on ‘option pricing’. Of course, going forward in this module we will understand option pricing.</p>
+<p>So, with these thoughts assume the trader decides to write (sell) the 18400 Put option and collect Rs.315 as the premium.&nbsp; As usual let us observe the P&amp;L behavior for a Put Option seller and make a few generalizations.</p>
+<p>Do Note – when you write options (regardless of Calls or Puts) margins are blocked in your account. We have discussed this perspective <strong><a href="http://zerodha.com/varsity/chapter/the-put-option-buying/">here,</a>&nbsp;</strong>request you to go through the same.</p>
+<p><img alt="M5-Ch6-title" class="aligncenter size-full wp-image-1901" height="300" loading="lazy" sizes="(max-width: 600px) 100vw, 600px" src="http://zerodha.com/varsity/wp-content/uploads/2015/04/M5-Ch6-title.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/04/M5-Ch6-title.png 600w, https://zerodha.com/varsity/wp-content/uploads/2015/04/M5-Ch6-title-300x150.png 300w" width="600"/></p>
+<h2>6.2 – P&amp;L behavior for the put option seller</h2>
+<p>Please do remember the calculation of the intrinsic value of the option remains the same for both writing a put option as well as buying a put option. However the P&amp;L calculation changes, which we will discuss shortly. We will assume various possible scenarios on the expiry date and figure out how the P&amp;L behaves.</p>
+<table class="tableizer-table">
+<tbody>
+<tr class="tableizer-firstrow">
+<th>Serial No.</th>
+<th>Possible values of spot</th>
+<th>Premium Received</th>
+<th>Intrinsic Value (IV)</th>
+<th>P&amp;L (Premium – IV)</th>
+</tr>
+<tr>
+<td>01</td>
+<td>16195</td>
+<td>+ 315</td>
+<td>18400 – 16195 = 2205</td>
+<td>315 – 2205 = <span style="color: red;">– 1890</span></td>
+</tr>
+<tr>
+<td>02</td>
+<td>16510</td>
+<td>+ 315</td>
+<td>18400 – 16510 = 1890</td>
+<td>315 – 1890 = <span style="color: red;">– 1575</span></td>
+</tr>
+<tr>
+<td>03</td>
+<td>16825</td>
+<td>+ 315</td>
+<td>18400 – 16825 = 1575</td>
+<td>315 – 1575 = <span style="color: red;">– 1260</span></td>
+</tr>
+<tr>
+<td>04</td>
+<td>17140</td>
+<td>+ 315</td>
+<td>18400 – 17140 = 1260</td>
+<td>315 – 1260 = <span style="color: red;">– 945</span></td>
+</tr>
+<tr>
+<td>05</td>
+<td>17455</td>
+<td>+ 315</td>
+<td>18400 – 17455 = 945</td>
+<td>315 – 945 = <span style="color: red;">– 630</span></td>
+</tr>
+<tr>
+<td>06</td>
+<td>17770</td>
+<td>+ 315</td>
+<td>18400 – 17770 = 630</td>
+<td>315 – 630 = <span style="color: red;">– 315</span></td>
+</tr>
+<tr>
+<td>07</td>
+<td>18085</td>
+<td>+ 315</td>
+<td>18400 – 18085 = 315</td>
+<td>315 – 315 = 0</td>
+</tr>
+<tr>
+<td>08</td>
+<td>18400</td>
+<td>+ 315</td>
+<td>18400 – 18400 = 0</td>
+<td>315 – 0 = <span style="color: green;">+ 315</span></td>
+</tr>
+<tr>
+<td>09</td>
+<td>18715</td>
+<td>+ 315</td>
+<td>18400 – 18715 = 0</td>
+<td>315 – 0 = <span style="color: green;">+ 315</span></td>
+</tr>
+<tr>
+<td>10</td>
+<td>19030</td>
+<td>+ 315</td>
+<td>18400 – 19030 = 0</td>
+<td>315 – 0 = <span style="color: green;">+ 315</span></td>
+</tr>
+<tr>
+<td>11</td>
+<td>19345</td>
+<td>+ 315</td>
+<td>18400 – 19345 = 0</td>
+<td>315 – 0 = <span style="color: green;">+ 315</span></td>
+</tr>
+<tr>
+<td>12</td>
+<td>19660</td>
+<td>+ 315</td>
+<td>18400 – 19660 = 0</td>
+<td>315 – 0 = <span style="color: green;">+ 315</span></td>
+</tr>
+</tbody>
+</table>
+<p>I would assume by now you will be in a position to easily generalize the P&amp;L behavior upon expiry, especially considering the fact that we have done the same for the last 3 chapters. The generalizations are as below (make sure you set your eyes on row 8 as it’s the strike price for this trade) –</p>
+<ol>
+<li>The objective behind selling a put option is to collect the premiums and benefit from the bullish outlook on market. Therefore as we can see, the profit stays flat at Rs.315 (premium collected) as long as the spot price stays above the strike price.
+<ol type="a">
+<li><strong>Generalization 1</strong> – Sellers of the Put Options are profitable as long as long as the spot price remains at or higher than the strike price. In other words sell a put option only when you are bullish about the underlying or when you believe that the underlying will no longer continue to fall.</li>
+</ol>
+</li>
+<li>As the spot price goes below the strike price (18400) the position starts to make a loss. Clearly there is no cap on how much loss the seller can experience here and it can be theoretically be unlimited
+<ol type="a">
+<li><strong>Generalization 2</strong> – A put option seller can potentially experience an unlimited loss as and when the spot price goes lower than the strike price.</li>
+</ol>
+</li>
+</ol>
+<p>Here is a general formula using which you can calculate the P&amp;L from writing a Put Option position. Do bear in mind this formula is applicable on positions held till expiry.</p>
+<p><strong style="background-color: #ffb05a;">P&amp;L = Premium Recieved – [Max (0, Strike Price – Spot Price)] </strong></p>
+<p>Let us pick 2 random values and evaluate if the formula works –</p>
+<ul>
+<li>16510</li>
+<li>19660</li>
+</ul>
+<p><strong style="background-color: #ffb05a;">@16510</strong> (spot below strike, position has to be loss making)</p>
+<p>= 315 – Max (0, 18400 -16510)</p>
+<p>= 315 – 1890</p>
+<p><strong>= – 1575</strong></p>
+<p><strong style="background-color: #ffb05a;">@19660</strong> (spot above strike, position has to be profitable, restricted to premium paid)</p>
+<p>= 315 – Max (0, 18400 – 19660)</p>
+<p>= 315 – Max (0, -1260)</p>
+<p><strong>= &nbsp;315</strong></p>
+<p>Clearly both the results match the expected outcome.</p>
+<p>Further, the breakdown point for a Put Option seller can be defined as a point where the Put Option seller starts making a loss after giving away all the premium he has collected –</p>
+<p><strong style="background-color: #ffb05a;">Breakdown point = Strike Price – Premium Received</strong></p>
+<p>For the Bank Nifty, the breakdown point would be</p>
+<p>= 18400 – 315</p>
+<p>= 18085</p>
+<p>So as per this definition of the breakdown point, at 18085 the put option seller should neither make any money nor lose any money. Do note this also means at this stage, he would lose the entire Premium he has collected. To validate this, let us apply the P&amp;L formula and calculate the P&amp;L at the breakdown point –</p>
+<p>= 315 – Max (0, 18400 – 18085)</p>
+<p>= 315 – Max (0, 315)</p>
+<p>= 315 – 315</p>
+<p>=<strong>0</strong></p>
+<p>The result obtained is clearly in line with the expectation of the breakdown point.</p>
+<h2>6.3 – Put option seller’s Payoff</h2>
+<p>If we connect the P&amp;L points (as seen in the table earlier) and develop a line chart, we should be able to observe the generalizations we have made on the Put option seller’s P&amp;L. Please find below the same –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/04/Image-3_Payoff.png"><img alt="Image 3_Payoff" class="aligncenter size-full wp-image-1900" height="327" loading="lazy" sizes="(max-width: 524px) 100vw, 524px" src="http://zerodha.com/varsity/wp-content/uploads/2015/04/Image-3_Payoff.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/04/Image-3_Payoff.png 524w, https://zerodha.com/varsity/wp-content/uploads/2015/04/Image-3_Payoff-300x187.png 300w" width="524"/></a></p>
+<p>Here are a few things that you should appreciate from the chart above, remember 18400 is the strike price –</p>
+<ol>
+<li>The Put option seller experiences a loss only when the spot price goes below the strike price (18400 and lower)</li>
+<li>The loss is theoretically unlimited (therefore the risk)</li>
+<li>The Put Option seller will experience a profit (to the extent of premium received) as and when the spot price trades above the strike price</li>
+<li>The gains are restricted to the extent of premium received</li>
+<li>At the breakdown point (18085) the put option seller neither makes money nor losses money. However at this stage he gives up the entire premium he has received.</li>
+<li>You can observe that at the breakdown point, the P&amp;L graph just starts to buckle down – from a positive territory to the neutral (no profit no loss) situation. It is only below this point the put option seller starts to lose money.</li>
+</ol>
+<p>And with these points, hopefully you should have got the essence of Put Option selling. Over the last few chapters we have looked at both the call option and the put option from both the buyer and sellers perspective. In the next chapter we will quickly summarize the same and shift gear towards other essential concepts of Options.</p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>You sell a Put option when you are bullish on a stock or when you believe the stock price will no longer go down</li>
+<li>When you are bullish on the underlying you can either buy the call option or sell a put option. The decision depends on how attractive the premium is</li>
+<li>Option Premium pricing along with Option Greeks gives a sense of how attractive the premiums are</li>
+<li>The put option buyer and the seller have a symmetrically opposite P&amp;L behaviour</li>
+<li>When you sell a put option you receive premium</li>
+<li>Selling a put option requires you to deposit margin</li>
+<li>When you sell a put option your profit is limited to the extent of the premium you receive and your loss can potentially be unlimited</li>
+<li>P&amp;L = Premium received – Max [0, (Strike Price – Spot Price)]</li>
+<li>Breakdown point = Strike Price – Premium received</li>
+</ol>
+<div class="clear"> </div>
+</div>

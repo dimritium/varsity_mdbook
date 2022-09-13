@@ -1,0 +1,264 @@
+<div class="post">
+<h2>8.1 – Intrinsic Value</h2>
+<p>The moneyness of an option contract is a classification method wherein each option (strike) gets classified as either – In the money (ITM), At the money (ATM), or Out of the money (OTM) option. This classification helps the trader to decide which strike to trade, given a particular circumstance in the market. However, before we get into the details, I guess it makes sense to look through the concept of intrinsic value again.</p>
+<p>The intrinsic value of an option is the money the option buyer makes from an options contract provided he has the right to exercise that option on the given day. Intrinsic Value is always a positive value and can never go below 0. Consider this example –</p>
+<table class="tableizer-table">
+<tbody>
+<tr class="tableizer-firstrow">
+<th>Underlying</th>
+<th>CNX Nifty</th>
+</tr>
+<tr>
+<td>Spot Value</td>
+<td>8070</td>
+</tr>
+<tr>
+<td>Option strike</td>
+<td>8050</td>
+</tr>
+<tr>
+<td>Option Type</td>
+<td>Call Option (CE)</td>
+</tr>
+<tr>
+<td>Days to expiry</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Position</td>
+<td>Long</td>
+</tr>
+</tbody>
+</table>
+<p>Given this, assume you bought the 8050CE and instead of waiting for 15 days to expiry you had the right to exercise the option today.&nbsp; Now my question to you is – How much money would you stand to make provided you exercised the contract today?</p>
+<p>Do you remember when you exercise a long option, the money you make is equivalent to the intrinsic value of an option minus the premium paid. Hence to answer the above question, we need to calculate the intrinsic value of an option, for which we need to pull up the call option intrinsic value formula from Chapter 3.</p>
+<p>Here is the formula –</p>
+<p><strong style="background-color: #ffb05a;">Intrinsic Value of a Call option = Spot Price – Strike Price</strong></p>
+<p>Let us plug in the values</p>
+<p>= 8070 – 8050</p>
+<p>= 20</p>
+<p>So, if you were to exercise this option today, you are entitled to make 20 points (ignoring the premium paid).</p>
+<p>Here is a table which calculates the intrinsic value for various options strike (these are just random values that I have used to drive across the concept) –</p>
+<table class="tableizer-table">
+<tbody>
+<tr class="tableizer-firstrow">
+<th>Option Type</th>
+<th>Strike</th>
+<th>Spot</th>
+<th>Formula</th>
+<th>Intrinsic Value</th>
+<th>Remarks</th>
+</tr>
+<tr>
+<td>Long Call</td>
+<td>280</td>
+<td>310</td>
+<td>Spot Price – Strike Price</td>
+<td>310 – 280 = 30</td>
+<td></td>
+</tr>
+<tr>
+<td>Long Put</td>
+<td>1040</td>
+<td>980</td>
+<td>Strike Price – Spot Price</td>
+<td>1040 -980 = 60</td>
+<td></td>
+</tr>
+<tr>
+<td>Long Call</td>
+<td>920</td>
+<td>918</td>
+<td>Spot Price – Strike Price</td>
+<td>918 – 920 = 0</td>
+<td>Since IV cannot be -ve</td>
+</tr>
+<tr>
+<td>Long Put</td>
+<td>80</td>
+<td>88</td>
+<td>Strike Price – Spot Price</td>
+<td>80 – 88 = 0</td>
+<td>Since IV cannot be -ve</td>
+</tr>
+</tbody>
+</table>
+<p>With this, I hope you are clear about the intrinsic value calculation for a given option strike. Let me summarize a few important points –</p>
+<ol>
+<li>The intrinsic value of an option is the amount of money you would make if you were to exercise the option contract</li>
+<li>The intrinsic value of an options contract can never be negative. It can be either zero or a positive number</li>
+<li>Call option Intrinsic value = Spot Price – Strike Price</li>
+<li>Put option Intrinsic value = Strike Price – Spot price</li>
+</ol>
+<p>Before we wrap up this discussion, here is a question for you – Why do you think the intrinsic value cannot be negative?</p>
+<p>To answer this, let us pick an example from the above table – Strike is 920, the spot is 918, and option type is a long call. Let us assume the premium for the 920 Call option is Rs.15.</p>
+<p>Now,</p>
+<ol>
+<li>If you were to exercise this option, what do you get?
+<ol type="a">
+<li>Clearly, we get the intrinsic value.</li>
+</ol>
+</li>
+<li>How much is the intrinsic value?
+<ol type="a">
+<li>Intrinsic Value = 918 – 920 = <strong>-2</strong></li>
+</ol>
+</li>
+<li>The formula suggests we get ‘<strong>– Rs.2</strong>’. What does this mean?
+<ol type="a">
+<li>This means Rs.2 is going from our pocket.</li>
+</ol>
+</li>
+<li>Let us believe this is true for a moment; what will be the total loss?
+<ol type="a">
+<li>15 + 2 = Rs.17/-</li>
+</ol>
+</li>
+<li>But we know the maximum loss for a call option buyer is limited to the extent of the premium one pays; in this case, it will be Rs.15/-
+<ol type="a">
+<li>However, if we include a negative intrinsic value, this property of option payoff is not obeyed (Rs.17/- loss as opposed to Rs.15/-). However, to maintain the non-linear property of option payoff, the Intrinsic value can never be negative</li>
+</ol>
+</li>
+<li>You can apply the same logic to the put option intrinsic value calculation</li>
+</ol>
+<p>Hopefully, this should give you some insights into why the intrinsic value of an option can never go negative.</p>
+<h2>8.2 – Moneyness of a Call option</h2>
+<p>With our discussions on the intrinsic value of an option, the concept of moneyness should be quite easy to comprehend. Moneyness of an option is a classification method that classifies each option strike based on how much money a trader will make if he were to exercise his option contract today. There are three broad classifications –</p>
+<ol>
+<li>In the Money (ITM)</li>
+<li>At the Money (ATM)</li>
+<li>Out of the Money (OTM)</li>
+</ol>
+<p>And for all practical purposes, I guess it is best to further classify these as –</p>
+<ol>
+<li>Deep In the money</li>
+<li>In the Money (ITM)</li>
+<li>At the Money (ATM)</li>
+<li>Out of the Money (OTM)</li>
+<li>Deep Out of the Money</li>
+</ol>
+<p>Understanding these options, strike classification is very easy. All you need to do is figure out the intrinsic value. If the intrinsic value is a non zero number, then the option strike is considered ‘In the money’. If the intrinsic value is a zero the option strike is called ‘Out of the money’. The strike, which is closest to the Spot price, is called ‘At the money’.</p>
+<p><img alt="M5-Ch8-title" class="aligncenter size-full wp-image-1945" height="300" sizes="(max-width: 600px) 100vw, 600px" src="http://zerodha.com/varsity/wp-content/uploads/2015/05/M5-Ch8-title.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/05/M5-Ch8-title.png 600w, https://zerodha.com/varsity/wp-content/uploads/2015/05/M5-Ch8-title-300x150.png 300w" width="600"/></p>
+<p>Let us take up an example to understand this well. As of today (7<sup>th</sup> May 2015) the value of Nifty is at 8060, keeping this in perspective I’ve taken the snapshot of all the available strike prices (the same is highlighted within a blue box). The objective is to classify each of these strikes as ITM, ATM, or OTM. We will discuss the ‘Deep ITM’ and ‘Deep OTM’ later.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/05/Image-1-_Call-Option.png"><img alt="Image 1 _Call Option" class="aligncenter wp-image-1941 size-full" height="595" loading="lazy" sizes="(max-width: 493px) 100vw, 493px" src="http://zerodha.com/varsity/wp-content/uploads/2015/05/Image-1-_Call-Option.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/05/Image-1-_Call-Option.png 493w, https://zerodha.com/varsity/wp-content/uploads/2015/05/Image-1-_Call-Option-249x300.png 249w" width="493"/></a></p>
+<p>As you can notice from the image above, the available strike prices trade starts from 7100 all the way upto 8700.</p>
+<p>We will first identify ‘At<strong> the Money Option (ATM)</strong>’ as this is the easiest to deal with.</p>
+<p>From the definition of ATM option that we posted earlier, we know, ATM option is that option strike which is closest to the spot price. Considering the spot is at 8060, the closest strike is probably 8050. If there were an 8060 strike, then clearly 8060 would be the ATM option. But in the absence of 8060 strikes, the next closest strike becomes ATM. Hence we classify 8050 as, the ATM option.</p>
+<p>Having established the ATM option (8050), we will proceed to identify ITM and OTM options. To do this, we will pick a few strikes and calculate the intrinsic value.</p>
+<ol>
+<li>7100</li>
+<li>7500</li>
+<li>8050</li>
+<li>8100</li>
+<li>8300</li>
+</ol>
+<p>Do remember the spot price is 8060, keeping this in perspective the intrinsic value for the strikes above would be –</p>
+<p><strong>@ 7100 </strong></p>
+<p>Intrinsic Value = 8060 – 7100</p>
+<p>= 960</p>
+<p>Non zero value, hence the strike should be In the Money (ITM) option</p>
+<p><strong>@7500</strong></p>
+<p>Intrinsic Value = 8060 – 7500</p>
+<p>= 560</p>
+<p>Non zero value, hence the strike should be In the Money (ITM) option</p>
+<p><strong>@8050</strong></p>
+<p>We know this is the ATM option as 8050 strike is closest to the spot price of 8060. So we will not bother to calculate its intrinsic value.</p>
+<p><strong>@ 8100 </strong></p>
+<p>Intrinsic Value = 8060 – 8100</p>
+<p>= – 40</p>
+<p>Negative intrinsic value, therefore the intrinsic value is 0. Since the intrinsic value is 0, the strike is Out of the Money (OTM).</p>
+<p><strong>@ 8300 </strong></p>
+<p>Intrinsic Value = 8060 – 8300</p>
+<p>= – 240</p>
+<p>Negative intrinsic value, therefore the intrinsic value is 0. Since the intrinsic value is 0, the strike is Out of the Money (OTM).</p>
+<p>You may have already sensed the generalizations (for call options) that exists here, however, allow me to restate the same again</p>
+<ol>
+<li>All option strikes that are higher than the ATM strike are considered OTM</li>
+<li>All option strikes that are below the ATM strike are considered ITM</li>
+</ol>
+<p>In fact, I would suggest you relook at the snapshot we just posted –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/05/Image-2-_Call-Option-again.png"><img alt="Image 2 _Call Option again" class="aligncenter size-full wp-image-1942" height="595" loading="lazy" sizes="(max-width: 493px) 100vw, 493px" src="http://zerodha.com/varsity/wp-content/uploads/2015/05/Image-2-_Call-Option-again.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/05/Image-2-_Call-Option-again.png 493w, https://zerodha.com/varsity/wp-content/uploads/2015/05/Image-2-_Call-Option-again-249x300.png 249w" width="493"/></a></p>
+<p>NSE presents ITM options with a pale yellow background, and all OTM options have a regular white background. Now let us look at 2 ITM options – 7500 and 8000. The intrinsic value works out to be 560 and 60, respectively (considering the spot is at 8060). Higher the intrinsic value, deeper the moneyness of the option. Therefore 7500 strikes are considered as ‘Deep In the Money’ option and 8000 as just ‘In the money’ option.</p>
+<p>I would encourage you to observe the premiums for all these strike prices (highlighted in the green box). Do you sense a pattern here? The premium decreases as you traverse from ‘Deep ITM’ option to ‘Deep OTM option’. In other words, ITM options are always more expensive compared to OTM options.</p>
+<h2>8.3 – Moneyness of a Put option</h2>
+<p>Let us run through the same exercise to find out how strikes are classified as ITM and OTM for Put options. Here is the snapshot of various strikes available for a Put option. The strike prices on the left are highlighted in a blue box. Do note at the time of taking the snapshot (8<sup>th</sup> May 2015) Nifty’s spot value is 8202.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/05/Image-3_Put-Option-Strikes.png"><img alt="Image 3_Put Option Strikes" class="aligncenter size-full wp-image-1943" height="591" loading="lazy" sizes="(max-width: 499px) 100vw, 499px" src="http://zerodha.com/varsity/wp-content/uploads/2015/05/Image-3_Put-Option-Strikes.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/05/Image-3_Put-Option-Strikes.png 499w, https://zerodha.com/varsity/wp-content/uploads/2015/05/Image-3_Put-Option-Strikes-253x300.png 253w" width="499"/></a></p>
+<p>As you can see, there are many strike prices available right from 7100 to 8700. We will first classify the ATM option and then proceed to identify the ITM and OTM option. Since the spot is at 8202, the nearest strike to spot should be the ATM option. As we can see from the snapshot above, there is a strike at 8200 which is trading at Rs.131.35/-. This obviously becomes the ATM option.</p>
+<p>We will now pick a few strikes above and below the ATM and figure out ITM and OTM options. Let us go with the following strikes and evaluate their respective intrinsic value (also called the moneyness) –</p>
+<ol>
+<li>7500</li>
+<li>8000</li>
+<li>8200</li>
+<li>8300</li>
+<li>8500</li>
+</ol>
+<p><strong>@ 7500 </strong></p>
+<p>We know the intrinsic value of the put option can be calculated as = <strong>Strike – Spot.</strong></p>
+<p>Intrinsic Value = 7500 – 8200</p>
+<p>= – 700</p>
+<p>Negative intrinsic value, therefore the option is OTM</p>
+<p><strong>@ 8000 </strong></p>
+<p>Intrinsic Value = 8000 – 8200</p>
+<p>= – 200</p>
+<p>Negative intrinsic value, therefore the option is OTM</p>
+<p><strong>@8200</strong></p>
+<p>8200 is already classified as an ATM option. Hence we will skip this and move ahead.</p>
+<p><strong>@ 8300 </strong></p>
+<p>Intrinsic Value = 8300 – 8200</p>
+<p>= +100</p>
+<p>Positive intrinsic value, therefore the option is ITM</p>
+<p><strong>@ 8500 </strong></p>
+<p>Intrinsic Value = 8500 – 8200</p>
+<p>= +300</p>
+<p>Positive intrinsic value, therefore the option is ITM</p>
+<p>Hence, an easy generalization for Put options are –</p>
+<ol>
+<li>All strikes <strong>higher than </strong>ATM options are considered ITM</li>
+<li>All strikes <strong>lower than </strong>ATM options are considered OTM</li>
+</ol>
+<p>And as you can see from the snapshot, the premiums for ITM options are much higher than the premiums for the OTM options. <strong>&nbsp;</strong></p>
+<p>I hope you have got a clear understanding of how option strikes are classified based on their moneyness. However, you may still be wondering about the need to classify options based on their moneyness. Well, the answer to this lies in ‘Option Greeks’ again. As you briefly know by now, Option Greeks are the market forces which act upon options strikes and therefore affect the premium associated with these strikes. So a certain market force will have a certain effect on ITM option while at the same time, it will have a different effect on an OTM option. Hence classifying the option strikes will help us in understanding the Option Greeks and their impact on the premiums better.</p>
+<h2>8.4 – The Option Chain</h2>
+<p>The Option chain is a common feature on most of the exchanges and trading platforms. The option chain is a ready reckoner of sorts that helps you identify all the strikes that are available for a particular underlying and also classifies the strikes based on their moneyness. Besides, the option chain also provides information such as the premium price (LTP), bid-ask price, volumes, open interest etc. for each of the option strikes.</p>
+<p>Have a look at the option chain of Ashoka Leyland Limited as published on NSE –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/05/Image-4_Option-Chain.png"><img alt="Image 4_Option Chain" class="aligncenter size-full wp-image-1944" height="400" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2015/05/Image-4_Option-Chain.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/05/Image-4_Option-Chain.png 800w, https://zerodha.com/varsity/wp-content/uploads/2015/05/Image-4_Option-Chain-300x150.png 300w" width="800"/></a></p>
+<p>Few observations to help you understand the option chain better –</p>
+<ol>
+<li>The underlying spot value is at Rs.68.7/- (highlighted in blue)</li>
+<li>The Call options are on to the left side of the option chain</li>
+<li>The Put options are on to the right side of the option chain</li>
+<li>The strikes are stacked on an increasing order in the centre of the option chain</li>
+<li>Considering the spot at Rs.68.7, the closest strike is 67.5. Hence that would be an ATM option (highlighted in yellow)</li>
+<li>For Call options – all option strikes lower than ATM options are ITM option. Hence they have a pale yellow background</li>
+<li>For Call options – all option strikes higher than ATM options are OTM options. Hence they have a white background</li>
+<li>For Put Options – all option strikes higher than ATM are ITM options. Hence they have a pale yellow background</li>
+<li>For Put Options – all option strikes lower than ATM are OTM options. Hence they have a white background</li>
+<li>The pale yellow and white background from NSE is just a segregation method to bifurcate the ITM and OTM options. The colour scheme is not a standard convention.</li>
+</ol>
+<p>Here is the link to check the option chain for <a href="http://www.nseindia.com/live_market/dynaContent/live_watch/option_chain/optionKeys.jsp?symbolCode=-10007&amp;symbol=NIFTY&amp;symbol=NIFTY&amp;instrument=-&amp;date=-&amp;segmentLink=17&amp;symbolCount=2&amp;segmentLink=17" rel="noopener noreferrer" target="_blank"><strong>Nifty Options</strong>.</a></p>
+<h2>8.4 – The way forward</h2>
+<p>Having understood the basics of the call and put options both from the buyers and sellers perspective and also having understood the concept of ITM, OTM, and ATM I suppose we are all set to dwell deeper into options.</p>
+<p>The next couple of chapters will be dedicated to understanding Option Greeks and the kind of impact they have on option premiums. Based on the Option Greeks impact on the premiums, we will figure out a way to select the best possible strike to trade for a given circumstance in the market. &nbsp;Further, we will also understand how options are priced by briefly running through the ‘Black &amp; Scholes Option Pricing Formula’. The ‘Black &amp; Scholes Option Pricing Formula’ will help us understand things like – Why Nifty 8200 PE is trading at 131 and not 152 or 102!</p>
+<p>I hope you are as excited to learn about all these topics as we are to write about the same. So please stay tuned.</p>
+<p>Onwards to Option Greeks now!</p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>The intrinsic value of an option is equivalent to the value of money the option buyer makes provided if he were to exercise the contract.</li>
+<li>Intrinsic Value of an option cannot be negative; it is a non zero positive value.</li>
+<li>The intrinsic value of call option = Spot Price – Strike Price</li>
+<li>The intrinsic value of put option = Strike Price – Spot Price.</li>
+<li>Any option that has an intrinsic value is classified as ‘In the Money’ (ITM) option.</li>
+<li>Any option that does not have an intrinsic value is classified as ‘Out of the Money’ (OTM) option.</li>
+<li>If the strike price is almost equal to spot price, then the option is considered as ‘At the money’ (ATM) option.</li>
+<li>All strikes lower than ATM are ITM options (for call options)</li>
+<li>All strikes higher than ATM are OTM options (for call options)</li>
+<li>All strikes higher than ATM are ITM options (for Put options)</li>
+<li>All strikes lower than ATM are OTM options (for Put options)</li>
+<li>When the intrinsic value is very high, it is called ‘Deep ITM’ option.</li>
+<li>Likewise, when the intrinsic value is the least, it is called ‘Deep OTM’ option.</li>
+<li>The premiums for ITM options are always higher than the premiums for OTM option.</li>
+<li>The Option chain is a quick visualization to understand which option strike is ITM, OTM, ATM (for both calls and puts) along with other information relevant to options.</li>
+</ol>
+<div class="clear"> </div>
+</div>

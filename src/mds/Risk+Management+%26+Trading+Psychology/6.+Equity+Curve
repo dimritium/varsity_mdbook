@@ -1,0 +1,98 @@
+<div class="post">
+<h2>6.1 – Overview</h2>
+<p>This is off topic – but a little digression hurts no one, I guess. Of all the chapters I have written in Varsity, I guess this one will be a very special one for me. Not because of the topic that I will be discussing. It is because of the place where I’m sitting right now and writing this for you all. Its 6:15 AM – surrounding me 360 degrees are misty mountains; the landscape I guess cannot get any better. There is only one shack here with a little music player, playing Bob Marley’s Redemption Song. &nbsp;Can it get any better? At least not for me I guess 🙂</p>
+<p><img alt="" class="aligncenter size-full wp-image-4197" height="400" sizes="(max-width: 600px) 100vw, 600px" src="http://zerodha.com/varsity/wp-content/uploads/2017/04/M9-C6-Cartoon.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/04/M9-C6-Cartoon.png 600w, https://zerodha.com/varsity/wp-content/uploads/2017/04/M9-C6-Cartoon-300x200.png 300w" width="600"/></p>
+<p>Anyway, back to school ☺</p>
+<p>We discussed Portfolio Variance in the previous chapter. It would be pointless to crunch all the numbers to extract the variance of the portfolio, unless we put that to good use. This is exactly what we will achieve over the next 2 chapters.</p>
+<p>Over the next 2 chapters, we will try and do the following –</p>
+<ul>
+<li>Discuss Equity curve and an alternate method to calculate portfolio variance</li>
+<li>Estimate the portfolio’s expected returns over 1 year</li>
+<li>Optimize the portfolio for maximum returns and minimum variance</li>
+</ul>
+<p>Note, this chapter is a continuation of the discussion panned out in the previous chapters. You need to know the context here. If you are reading this chapter without knowing what happened over the last few chapters, then I’d suggest you go back and read those chapters first.</p>
+<h2>6.2 – Equity Curve</h2>
+<p><strong>&nbsp;</strong>We will use this opportunity to develop an equity curve for the 5 stock portfolio that we have. In a very lose sense, a typical equity curve helps you visualize the performance of the portfolio on a normalized scale of 100. In other words, it will help you understand how Rs.100/- invested in this portfolio would have performed over the given period. You can further use this to benchmark the portfolio’s performance against its benchmark – say Nifty 50 or BSE Sensex.</p>
+<p>There are certain attributes which can be extracted out of the equity curve to develop deeper insights on the portfolio. More on that later.</p>
+<p>Let us proceed to build an equity curve for the 5 stock portfolio. Remember, we had the following stocks and we also assigned random weights to these stock to form our portfolio. Here are the stock names along with the weightages –</p>
+<table>
+<tbody>
+<tr>
+<th width="104"><strong>Stock Name</strong></th>
+<th width="117"><strong>Investment weight</strong></th>
+</tr>
+<tr>
+<td width="104">Cipla</td>
+<td width="117">7%</td>
+</tr>
+<tr>
+<td width="104">Idea Cellular Ltd</td>
+<td width="117">16%</td>
+</tr>
+<tr>
+<td width="104">Wonderla</td>
+<td width="117">25%</td>
+</tr>
+<tr>
+<td width="104">PVR</td>
+<td width="117">30%</td>
+</tr>
+<tr>
+<td width="104">Alkem</td>
+<td width="117">22%</td>
+</tr>
+</tbody>
+</table>
+<p>So what does ‘Investment weight’ means? – It represents the percentage of your corpus invested in the stock. For example, out of Rs.100,000/-, Rs.7,000/- has been invested in Cipla and Rs.22,000/- has been invested in Alkem Lab. So on and so forth.</p>
+<p>While developing an equity curve, the usual practice is to normalize the portfolio for Rs.100. This helps us understand how an investment of Rs.100/- in this portfolio behaved during the period of investment. I have incorporated this in the excel sheet (please note, the excel used here is a continuation of the excel used in the previous chapter)</p>
+<p>Have a look at the image below –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/04/Image-2_wt.png"><img alt="" class="aligncenter wp-image-4187" height="63" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2017/04/Image-2_wt.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-2_wt.png 1610w, https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-2_wt-300x24.png 300w, https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-2_wt-768x61.png 768w, https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-2_wt-1024x81.png 1024w" width="800"/></a></p>
+<p>I have introduced a new column next to the daily return column and included the weight of the respective stock. At the end, you will find two new column being introduced – starting value pegged at 100 and total weight at 100%.</p>
+<p>Starting value – this is basically the amount of money we are starting with. I have set this to Rs.100/-. This means, out of the 100 Rupees in total corpus, Rupees 7 is being invested in Cipla, Rupees 16 in Idea, Rupee 25 in Wonderla so on and so forth.</p>
+<p>Now, if I add up the individual weights, then they should all add up to 100%, indicating that 100% of Rs.100 is being invested.</p>
+<p>We now have to see how the investment in each stock has performed. To help you understand this better, lets take up the case of Cipla for now. The weight assigned to Cipla is 7%, which means out of Rs.100, Rs.7 is invested in Cipla. Based on the daily price movement of Cipla, our money i.e Rs.7/- either increases or decreases. It is important to note that, if on day 1, if Rs.7 becomes, Rs.7.5/- then the following day, our starting price is Rs.7.5 and not Rs.7/-. I’ve done this on excel for Cipla, and this is how the calculation looks.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/04/Image-3_daily-change.png"><img alt="" class="aligncenter size-full wp-image-4188" height="179" loading="lazy" sizes="(max-width: 364px) 100vw, 364px" src="http://zerodha.com/varsity/wp-content/uploads/2017/04/Image-3_daily-change.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-3_daily-change.png 364w, https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-3_daily-change-300x148.png 300w" width="364"/></a></p>
+<p>On 1st Sept, Cipla was trading at 579.15, this is the day we decided to invest Rs.7 in the stock. I understand that this is technically not possible, but for the sake of this example, let us just assume this is possible and proceed. So on day one i.e 1st Sept, 7 is invested, on 2nd Sept Cipla closed at 577.95, down -0.21% from the previous day. This also means we lose -0.21% on our investment of Rs.7/- making it Rs.6.985. On 6th Sept Cipla shot up by 0.11% to 578.6, hence we gain 0.11% on 6.985 to make it 6.993. So on and so forth the rest of the data points.</p>
+<p>I’ve done this math for all the stocks in portfolio and here is how the table looks –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/04/Image-4_wt-daily-change.png"><img alt="" class="aligncenter wp-image-4189" height="180" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2017/04/Image-4_wt-daily-change.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-4_wt-daily-change.png 1321w, https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-4_wt-daily-change-300x68.png 300w, https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-4_wt-daily-change-768x173.png 768w, https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-4_wt-daily-change-1024x231.png 1024w" width="800"/></a></p>
+<p>I’ve calculated the daily fluctuation in the invested price across all stocks and I;ve highlighted the same in blue.</p>
+<p>Now, think about what is happening here – I’ve basically split Rs.100/- across 5 stocks and invested in different proportions. If I sum up the daily variation in each stock, I should be able to get the overall daily fluctuation of Rs.100, right? Doing this gives me the overall perspective on how my portfolio is moving. Let me add these up and see how Rs.100 invested across 5 stocks moves on a daily basis –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/04/Image-5_port-eq.png"><img alt="" class="aligncenter wp-image-4190" height="137" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2017/04/Image-5_port-eq.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-5_port-eq.png 1472w, https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-5_port-eq-300x51.png 300w, https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-5_port-eq-768x131.png 768w, https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-5_port-eq-1024x175.png 1024w" width="800"/></a></p>
+<p>Adding up the values on a daily basis gives me the time series of the daily fluctuation of the portfolio.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/04/Image-6_port-all-values.png"><img alt="" class="aligncenter wp-image-4191" height="126" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2017/04/Image-6_port-all-values.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-6_port-all-values.png 1474w, https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-6_port-all-values-300x47.png 300w, https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-6_port-all-values-768x121.png 768w, https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-6_port-all-values-1024x161.png 1024w" width="800"/></a></p>
+<p>An ‘Equity Curve’ (EQ curve) can be developed if you plot the chart of this – i.e the time series data of the daily normalized portfolio value. I say normalized because I’ve scaled down the investment to Rs.100/-.</p>
+<p>So, here is the EQ curve for the portfolio that we have –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/04/Image-7_Eq-curve.png"><img alt="" class="aligncenter size-full wp-image-4192" height="293" loading="lazy" sizes="(max-width: 486px) 100vw, 486px" src="http://zerodha.com/varsity/wp-content/uploads/2017/04/Image-7_Eq-curve.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-7_Eq-curve.png 486w, https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-7_Eq-curve-300x181.png 300w" width="486"/></a></p>
+<p>As easy as that. Eq curve is a very popular way of visualizing the portfolio performance. It gives a quick estimate of the returns generated by the portfolio. In this case, we started with and investment of Rs.100/- and at the end of 6 months the portfolio was valued at 113.84. Have a look at the image below –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/04/Image-8_end-value.png"><img alt="" class="aligncenter wp-image-4193" height="70" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2017/04/Image-8_end-value.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-8_end-value.png 1459w, https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-8_end-value-300x26.png 300w, https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-8_end-value-768x67.png 768w, https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-8_end-value-1024x90.png 1024w" width="800"/></a></p>
+<p>So without much thinking, I know the portfolio has done close to 13.8% during the given period.</p>
+<h2>6.3 – Portfolio as a whole</h2>
+<p>Now, here is something I’d like you to think about. In the previous chapter, we calculated the portfolio variance. While doing so, one of the key things we had to calculate was the standard deviation of each stock. Standard deviation as you may know, represents the volatility of the stock which is nothing but the risk associated with the stock.</p>
+<p>To calculate the standard deviation, we used the inbuilt excel function ‘=STDEV()’ applied on the daily return of the stock. Now, think about this – we anyway have the daily value of the portfolio (although normalized to Rs.100).</p>
+<p>Now imagine the portfolio itself in its entirety, as a whole, as a single stock, and calculate its daily returns. Just like how we calculated the daily returns of the stocks in the previous chapter. Further, what if I apply the ‘=STDEV()’ function on the portfolio’s daily return? The resulting value should be the standard deviation of the portfolio which in other words should represents risk also called as Variance of the portfolio.</p>
+<p>Are you able to sense where we are heading? Yes, we are talking about calculating portfolio variance using a different approach all together ☺</p>
+<p>To help you comprehend this better, let me paste the portfolio variance value we calculated in the previous chapter,–</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/04/Image-9_port-var.png"><img alt="" class="aligncenter size-full wp-image-4194" height="77" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2017/04/Image-9_port-var.png" width="244"/></a></p>
+<p>We calculated the above value using the matrix multiplication and the correlation matrix technique.</p>
+<p>We will now look at the portfolio as a whole and calculate the daily returns of the normalized portfolio value. The standard deviation of the portfolio’s daily returns should yield us a value equal to or somewhere near the portfolio variance calculated previously.</p>
+<p>I’ve included a new column next to the daily normalized portfolio value and calculated the Portfolio’s daily returns –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/04/Image-10_port-varisd.png"><img alt="" class="aligncenter size-full wp-image-4195" height="175" loading="lazy" sizes="(max-width: 485px) 100vw, 485px" src="http://zerodha.com/varsity/wp-content/uploads/2017/04/Image-10_port-varisd.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-10_port-varisd.png 485w, https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-10_port-varisd-300x108.png 300w" width="485"/></a></p>
+<p>Once I have the returns in place, I will apply the standard deviation function on the time series data, this should yield a value close to the portfolio variance value we previously calculated.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2017/04/Image-11_sd.png"><img alt="" class="aligncenter wp-image-4196" height="429" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2017/04/Image-11_sd.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-11_sd.png 1148w, https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-11_sd-300x161.png 300w, https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-11_sd-768x412.png 768w, https://zerodha.com/varsity/wp-content/uploads/2017/04/Image-11_sd-1024x549.png 1024w" width="800"/></a></p>
+<p>So there you go, the STDEV function gives us the exact same value!</p>
+<p>You can <a href="http://zerodha.com/varsity/wp-content/uploads/2017/04/Chapter-6_EQ-Curve.xlsx"><strong>download</strong></a> the excel sheet used in this chapter. In the next chapter, we will use the portfolio variance to estimate the expected returns along with optimization.</p>
+<p>Quick Task – I’d like to leave you with a quick task here. We have assigned random weights to the stocks. Go ahead and change the weights of the stocks and see the impact on the overall returns. Do share your observation in the comment box below.</p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>An equity curve is a standard way to visualize the performance of a portfolio</li>
+<li>A standard industry wide practice is to normalize the portfolio to a starting investment value of Rs.100/-</li>
+<li>We assign weights and the respective investment to each stock</li>
+<li>We need to calculate the daily change in investment value in each stock</li>
+<li>The sum total of all the variation in each stock adds up to the variation of the entire portfolio</li>
+<li>The graph of the change in daily prices of the portfolio yields the equity curve</li>
+<li>We can look at the portfolio as a whole, as a single stock and calculate its SD</li>
+<li>The SD of portfolio also yields the portfolio variance</li>
+</ol>
+<div class="clear"> </div>
+</div>

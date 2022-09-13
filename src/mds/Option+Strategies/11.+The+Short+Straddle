@@ -1,0 +1,128 @@
+<div class="post">
+<h2>11.1 – Context</h2>
+<p>In the previous chapter we understood that for the long straddle to be profitable, we need a set of things to work in our favor, reposting the same for your quick reference –</p>
+<ol>
+<li>The volatility should be relatively low at the time of strategy execution</li>
+<li>The volatility should increase during the holding period of the strategy</li>
+<li>The market should make a large move – the direction of the move does not matter</li>
+<li>The expected large move is time bound, should happen quickly – well within the expiry</li>
+<li>Long straddles are to be setup around major events, and the outcome of these events to be drastically different from the general market expectation.</li>
+</ol>
+<p>Agreed that the directional movement of the market does not matter in the long straddle, but the bargain here is quite hard. Considering the 5 points list, getting the long straddle to work in you favor is quite a challenge.&nbsp; Do recall, in the previous chapter the breakdown was at 2%, add to this another 1% as desired profits and we are essentially looking for, at least a 3% move on the index. From my experience expecting the market to make such moves regularly is quite a challenge. In fact for this reason alone, I think twice each and every time I need to initiate a long straddle.</p>
+<p>I have witnessed many traders recklessly set up long straddles thinking they are insulated to the market’s directional movement. But in reality they end up losing money in a long straddle – time delay and the general movement in the market (or the lack of it) works against them. Please note, I’m not trying to discourage you from employing the long straddle, no one denies the simplicity and elegance of a long straddle. It works extremely well when all the 5 points above are aligned. My only issue with long straddle is the probability of these 5 points aligning with each other.</p>
+<p>Now think about this – there are quite a few factors which prevents the long straddle to be profitable. So as an extension of this – the same set of factors <strong>‘should’ </strong>favor the opposite of a long straddle, i.e the ‘Short Straddle’.</p>
+<p><img alt="M6-Ch11-cartoon" class="aligncenter size-full wp-image-3229" height="400" sizes="(max-width: 600px) 100vw, 600px" src="http://zerodha.com/varsity/wp-content/uploads/2016/04/M6-Ch11-cartoon.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/04/M6-Ch11-cartoon.png 600w, https://zerodha.com/varsity/wp-content/uploads/2016/04/M6-Ch11-cartoon-300x200.png 300w" width="600"/></p>
+<h2>11.2 – The Short Straddle</h2>
+<p>Although many traders fear the short straddle (as losses are uncapped), I personally prefer trading the short straddle on certain occasions over its peer strategies. Anyway let us quickly understand the set up of a short straddle, and how its P&amp;L behaves across various scenarios.</p>
+<p>Setting up a short straddle is quite straight forward – as opposed to buying the ATM Call and Put options (like in long straddle) you just have to sell the ATM Call and Put option. Obviously the short strategy is set up for a net credit, as when you sell the ATM options, you receive the premium in your account.</p>
+<p>Here is an example, consider Nifty is at 7589, so this would make the 7600 strike ATM. The option premiums are as follows –</p>
+<ul>
+<li>7600 CE is trading at 77</li>
+<li>7600 PE is trading at 88</li>
+</ul>
+<p>So the short straddle will require us to sell both these options and collect the net premium of 77 + 88 = 165.</p>
+<p>Please do note – the options should belong to the same underlying, same expiry, and of course same strike. So assuming you have executed this short straddle, let’s figure out the P&amp;L at various market expiry scenarios.</p>
+<p><strong>Scenario 1 – Market expires at 7200 (we lose money on put option)</strong></p>
+<p>This is a scenario where the loss in the put option is so large that it eats away the premium collected by both the CE and PE, resulting in an overall loss. At 7200 –</p>
+<ul>
+<li>7600 CE will expire worthless, hence we get the retain the premium received i.e <strong>77</strong></li>
+<li>7600 PE will have an intrinsic value of 400. After adjusting for the premium received i.e Rs.88, we lose 400 – 88 = <strong style="color: red;">– 312</strong></li>
+<li>The net loss would be 312 – 77 = <strong style="color: red;">– 235</strong></li>
+</ul>
+<p>As you can see, the gain in call option is offset by the loss in the put option.</p>
+<p><strong>Scenario 2 – Market expires at 7435 (lower breakdown)</strong></p>
+<p>This is a situation where the strategy neither makes money nor loses any money.</p>
+<ul>
+<li>7600 CE would expire worthless; hence the premium received is retained. Profit here is Rs.77</li>
+<li>7600 PE would have an intrinsic value of 165, out of which we have received Rs.88 as premium, hence our loss would be 165 – 88 = <strong style="color: red;">-77</strong></li>
+<li>The gain in the call option is completely offset by the loss in the put option. Hence we neither make money nor lose money at 7435.</li>
+</ul>
+<p><strong>Scenario 3 – Market expires at 7600 (at the ATM strike, maximum profit)</strong></p>
+<p>This is the most favorable outcome for a short straddle. At 7600, the situation is quite straight forward as both the call and put option would expire worthless and hence the premium received from both the call and put option will be retained. The gain here would be equivalent to the net premium received i.e Rs.165.</p>
+<p>So this means, in a short straddle you make maximum money when the markets don’t move!</p>
+<p><strong>Scenario 4 – Market expires at 7765 (upper breakdown)</strong></p>
+<p>This is similar to the 2<sup>nd</sup> scenario we discussed. This is a point at which the strategy breaks even at a point higher than the ATM strike.</p>
+<ul>
+<li>7600 CE would have an intrinsic value of 165, hence after adjusting for the premium received of Rs. 77, we stand to lose Rs.88 (165 – 77)</li>
+<li>7600 PE would expire worthless, hence the premium received i.e Rs.88 is retained</li>
+<li>The gain made in the 7600 PE is offset against the loss on the 7600 CE, hence we neither make money nor lose money.</li>
+</ul>
+<p>Clearly this is the upper breakdown point.</p>
+<p><strong>Scenario 5 – Market expires at 8000 (we lose money on call option)</strong></p>
+<p>Clearly the market in this scenario is way above the 7600 ATM mark. The call option premium would swell, so would the loss –</p>
+<ul>
+<li>7600 PE will expire worthless, hence the premium received i.e Rs.88 is retained</li>
+<li>At 8000, the 7600 CE will have an intrinsic value of 400, hence after adjusting for the premium received of Rs. 77, we stand to lose Rs. 323( 400 -77)</li>
+<li>We have received Rs.88 as premium for the Put option, therefore the loss would be 88- 323 = <strong style="color: red;">-235</strong></li>
+</ul>
+<p>So as you can see, the loss in the call option is significant enough to offset the combined premiums received.</p>
+<p>Here is the payoff table at different market expiry levels.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/04/Image-1_payoff.png" rel="attachment wp-att-3227"><img alt="Image 1_payoff" class="aligncenter wp-image-3227" height="386" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/04/Image-1_payoff.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/04/Image-1_payoff.png 933w, https://zerodha.com/varsity/wp-content/uploads/2016/04/Image-1_payoff-300x145.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/04/Image-1_payoff-768x370.png 768w" width="800"/></a></p>
+<p>As you can observe –</p>
+<ol>
+<li>The maximum profit 165 occurs at 7600, which is the ATM strike</li>
+<li>The strategy remains profitable only between the lower and higher breakdown numbers</li>
+<li>The losses are unlimited in either direction of the market</li>
+</ol>
+<p>We can visualize these points in the payoff structure here –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/04/Image-2_payoff-chart.png" rel="attachment wp-att-3228"><img alt="Image 2_payoff chart" class="aligncenter wp-image-3228" height="593" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/04/Image-2_payoff-chart.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/04/Image-2_payoff-chart.png 812w, https://zerodha.com/varsity/wp-content/uploads/2016/04/Image-2_payoff-chart-300x222.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/04/Image-2_payoff-chart-768x569.png 768w" width="800"/></a></p>
+<p>From the inverted V shaped payoff graph, the following things are quite clear –</p>
+<ol>
+<li>The point at which you can experience maximum profits is at ATM, the profits shrink as you move away from the ATM mark</li>
+<li>The strategy is profitable as long as the market stays within the breakdown points</li>
+<li>Maximum loss is experienced when markets move further away from the breakdown point. The further away the market moves from the breakdown point, higher the loss
+<ol type="a">
+<li><span style="background-color: #b5b2ea;">Max loss = Unlimited</span></li>
+</ol>
+</li>
+<li>There are two breakdown points – on either side, equidistant from ATM
+<ol type="a">
+<li><span style="background-color: #b5b2ea;">Upper Breakdown = ATM + Net premium</span></li>
+<li><span style="background-color: #b5b2ea;">Lower Breakdown = ATM – Net premium</span></li>
+</ol>
+</li>
+</ol>
+<p>As you may have realized by now, the short straddle works exactly opposite to the long straddle. Short straddle works best when markets are expected to be in a range and not really expected to make a large move.</p>
+<p>Many traders fear short straddle considering the fact that short straddles have unlimited losses on either side. However from my experience, short straddles work really well if you know how exactly to deploy this. In fact in the last chapter of the previous module, I had posted a case study involving short straddle. Probably that was one of the best examples of when to implement the short straddle.</p>
+<p>I will repost the same again here and I hope you will be able to appreciate the case study better.</p>
+<h2>11.3 – Case Study (repost from previous module)</h2>
+<p>The following case study was a part of <a href="http://zerodha.com/varsity/chapter/case-studies-wrapping-it-all-up/" rel="noopener noreferrer" target="_blank"><strong>Module 5, Chapter 23</strong>.</a> I’m reposting the same here as I assume you would appreciate the example better at this stage. To get the complete context, I’d request you to read the chapter.</p>
+<p>Infosys was expected to announce their Q2 results on 12<sup>th</sup> October. The idea was simple – news drives volatility up, so short options with an expectation that you can buy it back when the volatility cools off. The trade was well planned and the position was initiated on 8<sup>th</sup> Oct – 4 days prior to the event.</p>
+<p>Infosys was trading close to Rs.1142/- per share, so he decided to go ahead with the 1140 strike (ATM).</p>
+<p>Here is the snapshot at the time of initiating the trade –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/04/Image-3.png"><img alt="Image 3" class="aligncenter wp-image-3233" height="504" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/04/Image-3.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/04/Image-3.png 925w, https://zerodha.com/varsity/wp-content/uploads/2016/04/Image-3-300x189.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/04/Image-3-768x484.png 768w" width="800"/></a></p>
+<p>On 8<sup>th</sup> October around 10:35 AM the 1140 CE was trading at 48/- and the implied volatility was at 40.26%. The 1140 PE was trading at 47/- and the implied volatility was at 48%. The combined premium received was 95 per lot.</p>
+<p>Market’s expectation was that Infosys would announce fairly decent set of numbers. In fact the numbers were better than expected, here are the details –</p>
+<p>“For the July-September quarter, Infosys posted a net profit of $519 million, compared with $511 million in the year-ago period. Revenue jumped 8.7 % to $2.39 billion. On a sequential basis, revenue grew 6%, comfortably eclipsing market expectations of 4- 4.5% growth.</p>
+<p>In rupee terms, net profit rose 9.8% to Rs.3398 crore on revenue of Rs. 15,635 crore, which was up 17.2% from last year”.<em> Source: Economic Times.</em></p>
+<p>The announcement came in around 9:18 AM, 3 minutes after the market opened, and this trader did manage to close the trade around the same time.</p>
+<p>Here is the snapshot –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/04/Image-4.png"><img alt="Image 4" class="aligncenter wp-image-3234" height="480" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/04/Image-4.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/04/Image-4.png 914w, https://zerodha.com/varsity/wp-content/uploads/2016/04/Image-4-300x180.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/04/Image-4-768x460.png 768w" width="800"/></a></p>
+<p>The 1140 CE was trading at 55/- and the implied volatility had dropped to 28%. The 1140 PE was trading at 20/- and the implied volatility had dropped to 40%.</p>
+<p><strong>Do pay attention to this – the speed at which the call option shot up was lesser than the speed at which the Put option dropped its value. The combined premium was 75 per lot, and he made a 20 point profit per lot. </strong></p>
+<h2>11.4 – The Greeks</h2>
+<p>Since we are dealing with ATM options, the delta of both CE and PE would be around 0.5. We could add the deltas of each option and get a sense of how the overall position deltas behave.</p>
+<ul>
+<li>7600 CE Delta @ 0.5, since we are short, the delta would be -0.5</li>
+<li>7600 PE Delta @ – 0.5, since we are short, the delta would be + 0.5</li>
+<li>Combined delta would be -0.5 + 0.5 = 0</li>
+</ul>
+<p>The combined delta indicates that the strategy is directional neutral. Remember both long and short straddle is delta neutral. In case of long straddle, delta neutral suggests that the profits are uncapped and in case of short straddle, the losses are uncapped.</p>
+<p>Now here is something for you to think about – When you initiate a straddle you are obviously delta neutral. But as the markets move, will your position still remain delta neutral? If yes, why do you think so? If no, then is there a way to keep the position delta neutral?</p>
+<p>If you can build your thoughts around these points, then I can guarantee you that your options knowledge is far greater than 90% of the market participants. To answer these simple questions, you will need to step a little deeper and get into 2<sup>nd</sup> level of thinking.</p>
+<p>Do post your comments below.</p>
+<hr/>
+<h2>Key takeaways from this chapter</h2>
+<ol>
+<li>Short straddle requires you to simultaneously Sell the ATM Call and Put option. The options should belong to the same underlying, same strike, and same expiry</li>
+<li>By selling the CE and PE – the trader is placing the bet that the market wont move and would essentially stay in a range</li>
+<li>The maximum profit is equal to the net premium paid, and it occurs at the strike at which the long straddle has been initiated</li>
+<li>The upper breakdown is ‘strike + net premium’. The lower breakdown is ‘strike – net premium’</li>
+<li>The deltas in a short straddle adds up to zero</li>
+<li>The volatility should be relatively high at the time of strategy execution</li>
+<li>The volatility should decrease during the holding period of the strategy</li>
+<li>Short straddles can be set around major events, wherein before the event, the volatility would drive the premiums up and just after the announcement, the volatility would cool off, and so would the premiums.</li>
+</ol>
+<p style="text-align: center;"><a class="button" href="https://zerodha.com/varsity/wp-content/uploads/2016/04/C11_Short-Straddle.xlsx">Download Short Straddle Excel Sheet</a></p>
+<div class="clear"> </div>
+</div>

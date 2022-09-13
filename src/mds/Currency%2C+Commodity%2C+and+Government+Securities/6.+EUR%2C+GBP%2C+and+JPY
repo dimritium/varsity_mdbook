@@ -1,0 +1,175 @@
+<div class="post">
+<h2>6.1 – The other currency pairs</h2>
+<p>We focused on the USD INR pair extensively over the last few chapters, and we now look into the other currency pairs that are traded in the Indian markets, namely the EUR INR, GBP INR, and JPY INR. The functioning of the other currency pairs is very similar to the USD INR. Think about it this way – you know how the Nifty 50 contracts work, then you pretty much know or are capable of knowing how Bank Nifty works.</p>
+<p>Given this, the agenda for this chapter is to quickly run through the contract specifications of the other three crosses available for us to trade. In the 2<sup>nd</sup> part of this chapter, we’ll dwell on some of the common trading techniques, mainly employing technical analysis. With this, we will conclude our discussion on currencies and start looking into commodities.</p>
+<p>So let’s get started.</p>
+<p><img alt="M8-Cartoon1" class="aligncenter size-full wp-image-3808" height="299" sizes="(max-width: 400px) 100vw, 400px" src="http://zerodha.com/varsity/wp-content/uploads/2016/08/M8-Cartoon1.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/08/M8-Cartoon1.png 400w, https://zerodha.com/varsity/wp-content/uploads/2016/08/M8-Cartoon1-300x224.png 300w" width="400"/></p>
+<p><strong>EUR INR</strong></p>
+<p>Globally the EUR USD is one of the most actively traded currencies. However we do not have that contract yet in India, but RBI has given the exchanges a nod to list these crosses as well. So I guess it is a matter of time before we have the EUR USD pair along with GBP USD, JPY USD etc. But for now, we do have EUR INR to trade.</p>
+<p>The EUR, as we know, is the currency of the European Union. Unlike other currencies, the EURO is backed by the economy of many European countries and not just one economy.</p>
+<p>The EUR INR contract structure is quite similar to the USD INR contract. Here are the key details that you need to know –</p>
+<table>
+<thead>
+<tr>
+<th width="82"><strong>Particular</strong></th>
+<th width="234"><strong>EUR INR</strong></th>
+<th width="163"><strong>Remarks</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="82">Lot Size</td>
+<td width="234">€ 1,000</td>
+<td width="163">In equity derivatives lot is the number of shares, but here it’s a Euro amount</td>
+</tr>
+<tr>
+<td width="82">Underlying</td>
+<td width="234">The rate of Indian Rupee against 1 EUR</td>
+<td width="163"></td>
+</tr>
+<tr>
+<td width="82">Tick Size</td>
+<td width="234">0.25 Paise or in Rupee terms INR 0.0025</td>
+<td width="163"></td>
+</tr>
+<tr>
+<td width="82">Trading Hours</td>
+<td width="234">Monday to Friday between 9:00 AM to 5:00 PM</td>
+<td width="163"></td>
+</tr>
+<tr>
+<td width="82">Expiry Cycle</td>
+<td width="234">Upto 12 month contracts</td>
+<td width="163">Note, equity derivatives have an expiry upto 3 months.</td>
+</tr>
+<tr>
+<td width="82">Last trading day</td>
+<td width="234">Contracts trade till 12:30 PM, 2 days before the last working day.</td>
+<td width="163">Equity derivatives continue to trade till 3:30 PM of the expiry day.</td>
+</tr>
+<tr>
+<td width="82">Final Settlement day</td>
+<td width="234">Last working day of the month</td>
+<td width="163"></td>
+</tr>
+<tr>
+<td width="82">Margin</td>
+<td width="234">SPAN + Exposure</td>
+<td width="163">Usually, SAPN is about 1.5%, and exposure is around 1%. Hence roughly about 2.5% is the overall margin requirement.</td>
+</tr>
+<tr>
+<td width="82">Settlement Price</td>
+<td width="234">RBI Reference rate on the day of Final settlement</td>
+<td width="163">The closing price of spot</td>
+</tr>
+</tbody>
+</table>
+<p>So as you see, the contract specifications are similar to that of the USD INR pair. The only difference is that the lot size in EUR INR is € 1,000 as opposed to $1,000 in USD INR.</p>
+<p>Let’s see how this would impact the margins; here is the snapshot of the EUR INR futures –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/08/Image-1_eur-inr.png"><img alt="Image 1_eur inr" class="aligncenter size-full wp-image-3800" height="464" loading="lazy" sizes="(max-width: 572px) 100vw, 572px" src="http://zerodha.com/varsity/wp-content/uploads/2016/08/Image-1_eur-inr.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-1_eur-inr.png 572w, https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-1_eur-inr-300x243.png 300w" width="572"/></a></p>
+<p>As you can see, the last traded price of the contract is 74.8950, with this we can estimate the contract value –</p>
+<p>Contract Value = Lot size * Contract price</p>
+<p>= 1000 * 74.8950</p>
+<p>=74,895.0</p>
+<p>Assuming the margin is approximately 2.5%, the margin should be in the vicinity if Rs.1,870/-, in fact, one can use the margin calculator on Zerodha to get the exact value of the margin required.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/08/Image-2_margin.png"><img alt="Image 2_margin" class="aligncenter wp-image-3801" height="284" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/08/Image-2_margin.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-2_margin.png 1153w, https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-2_margin-300x106.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-2_margin-768x272.png 768w, https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-2_margin-1024x363.png 1024w" width="800"/></a></p>
+<p>So the margins are slightly higher than the USD INR pair, but still way lower compared to what is required for any equity derivative contract.</p>
+<p><img alt="M8-Cartoon2" class="aligncenter size-full wp-image-3809" height="299" loading="lazy" sizes="(max-width: 400px) 100vw, 400px" src="http://zerodha.com/varsity/wp-content/uploads/2016/08/M8-Cartoon2.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/08/M8-Cartoon2.png 400w, https://zerodha.com/varsity/wp-content/uploads/2016/08/M8-Cartoon2-300x224.png 300w" width="400"/></p>
+<p><strong>GBP INR</strong></p>
+<p>The GBP INR contract is probably the 2<sup>nd</sup> most popular currency contract after the USD INR pair. On the contract specification side of things, everything remains the same except for the lot size and the underlying. The underlying is the exchange rate of 1 GBP in Indian Rupees. The lot size is £1,000, which makes the contract value approximately Rs.89,345/- considering the futures are trading at 89.3450 as of 5<sup>th</sup> August 2016.</p>
+<p>As you see below, the margin required for this slightly higher compared to the other two contracts we’ve already discussed–</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/08/Image-3_gbp-inr.png"><img alt="Image 3_gbp inr" class="aligncenter wp-image-3802" height="207" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/08/Image-3_gbp-inr.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-3_gbp-inr.png 1158w, https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-3_gbp-inr-300x77.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-3_gbp-inr-768x198.png 768w, https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-3_gbp-inr-1024x264.png 1024w" width="800"/></a></p>
+<p>By the way, did you know in the international markets that the GBP USD pair is also called the ‘Cable’?. So, when you hear a currency trader says he is short cable, he means he is short GBP USD cross.</p>
+<p><img alt="M8-Cartoon3" class="aligncenter size-full wp-image-3810" height="299" loading="lazy" sizes="(max-width: 400px) 100vw, 400px" src="http://zerodha.com/varsity/wp-content/uploads/2016/08/M8-Cartoon3.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/08/M8-Cartoon3.png 400w, https://zerodha.com/varsity/wp-content/uploads/2016/08/M8-Cartoon3-300x224.png 300w" width="400"/></p>
+<p><strong>JPY INR</strong></p>
+<p>The JPY INR contracts are a bit tricky compared to the other currency contracts. The lot size is not the usual 1000 units, but 100000 and the underlying here is the exchange rate for 100 Japanese Yen in Indian Rupees.</p>
+<p>So when we look at this –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/08/Image-4_JPYINR.png"><img alt="Image 4_JPYINR" class="aligncenter size-full wp-image-3803" height="461" loading="lazy" sizes="(max-width: 570px) 100vw, 570px" src="http://zerodha.com/varsity/wp-content/uploads/2016/08/Image-4_JPYINR.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-4_JPYINR.png 570w, https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-4_JPYINR-300x243.png 300w" width="570"/></a></p>
+<p>We are essentially looking at the rate of 100 Japanese Yen, stated in Indian Rupees. In other words, it costs Rs.66.2750 to buy 100 Japanese Yen. Since the lot size is 100,000 the contract value is –</p>
+<p>= (100000 *66.2750) / 100</p>
+<p>= Rs.66,275/-</p>
+<p>The P&amp;L for one pip(tick) movement of the currency will be&nbsp;0.0025*1000= Rs 2.5 which is the same for all INR pairs</p>
+<p>The margin required for the JPY INR contract is Rs.2,808/-,, which translates to about 4.2%.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/08/Image-5_jpyinr.png"><img alt="Image 5_jpyinr" class="aligncenter wp-image-3804" height="207" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/08/Image-5_jpyinr.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-5_jpyinr.png 1160w, https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-5_jpyinr-300x78.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-5_jpyinr-768x199.png 768w, https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-5_jpyinr-1024x265.png 1024w" width="800"/></a></p>
+<p>Clearly, the margins required for JPY INR contract is the highest in the currency segment, and I guess this is because this contract could be the most volatile (owing to lower liquidity). Of course, this is just a casual observation, and I’d encourage you to calculate the actual value on Excel to get a perspective on the volatility of JPY INR.</p>
+<p>Spread contracts are available on all the currency pairs across all the expiries. Here is the snapshot of the same form NSE’s website –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/08/Image-6_spreads.png"><img alt="Image 6_spreads" class="aligncenter wp-image-3805" height="488" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/08/Image-6_spreads.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-6_spreads.png 903w, https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-6_spreads-300x183.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-6_spreads-768x469.png 768w" width="800"/></a></p>
+<p>But as you can see, the spread contracts (apart from USD INR) are not really liquid.</p>
+<p>Finally, if you were to select contracts to trade based on liquidity, here is what I’d suggest you look at, in order of preference–</p>
+<ol>
+<li>USD INR Futures</li>
+<li>USD INR ATM Options</li>
+<li>GBP INR Futures</li>
+<li>EUR INR Futures</li>
+<li>JPY INR Futures</li>
+</ol>
+<p>With this, I’m assuming that you are clear with the logistics involved in currency trading. We now focus on developing some basic trading approach.</p>
+<h2>6.2 – The test for seasonality</h2>
+<p>There is often a lot of debate on the seasonality involved in currencies. By seasonality I mean things like “USD INR always goes down in December” or something like “USD INR always goes up a week before expiry”. In fact, many people base their trades based on this expectation without actually validating for seasonality. Given this, we thought we should check for the seasonality in currencies, and needless to say, we picked the USD INR spot data to run the required test.</p>
+<p>** Warning**</p>
+<p>The following discussion can get a bit technical, and this is not meant for regular Varsity readers. If you want a direct answer for whether any seasonality exists in the USD INR pair, then the straight forward answer is – no, there is the seasonality of any sort across any time frame. With this conclusion, you can jump directly to the next section. However, if you have a statistical approach to things, then you may want to read through. Of course, I’ll try my best to keep it brief.</p>
+<p>Also, this section is contributed by our good friend Prakash; any queries regarding this should be directed to <a class="__cf_email__" data-cfemail="fcac8e9d979d8f94d2909997979d909dbc9b919d9590d29f9391d2" href="/cdn-cgi/l/email-protection">[email&nbsp;protected]</a></p>
+<p>Seasonality in any time series can be checked by employing a statistical test called “Holt-Winters test”. A typical Holt-Winters method has 3 components –</p>
+<ul>
+<li>Level</li>
+<li>Trend</li>
+<li>Seasonality</li>
+</ul>
+<p><strong>Level</strong>: this indicator measures the average change in USD INR on a YOY basis</p>
+<p><strong>Trend</strong>: This indicator measures the average change in USD INR on a month on month basis</p>
+<p><strong>Seasonality</strong>: This indicator measures if there is any seasonal impact on price change. For example – USD INR almost always rises in January, and almost always falls in April etc.</p>
+<p>There are two possibilities for components (level, trend, and seasonality)</p>
+<ul>
+<li>Additive</li>
+<li>Multiplicative</li>
+</ul>
+<p>I guess the details of this are beyond the scope of this discussion.</p>
+<p><u>Holt-Winters test for seasonality: </u></p>
+<p>In Holt-Winters test, we check for seasonality in a time series by building a forecast model (let us call it Model 1) and study its residuals. Model 1 does not have any seasonality component inbuilt. We then build another forecast model with a seasonality component (Model 2) and check for the errors of this model.</p>
+<p>We compare the errors of both the models and compare to check if model 2 gives us a better forecast when compared to Model 1. We do this by employing ‘Chi-Square’ test to determine if accuracies are better. If Model 2 is statistically better than Model 1, then we conclude that there is some seasonal pattern in data. However, if the accuracies are the same for both models or if Model 1 has better accuracy, there is no seasonality in data.</p>
+<p><u>Seasonality results for USD INR</u></p>
+<p>Check for weekly seasonality:</p>
+<p>Model 1 (without seasonality component): The best model is (M, N, N) with coefficients 0.9999</p>
+<p>This model indicates that weekly data has only a level component and no trend component. The coefficient of “level” is 0.9999, i.e. next week’s price is about 0.9999 times this week’s price.</p>
+<p>For readers who are aware of the Random Walk Theory will be able to appreciate these parameters. The model is suggesting that every week USD INR price movement is a random walk.</p>
+<p>Model 2 (with seasonality component):&nbsp; The best model is (M, N, M) with coefficients 0.7 and 0.0786</p>
+<p>This model indicates that weekly data have a level and seasonality component. The interpretation is that next week’s price is 0.7 times of this week’s price and the remaining price is contributed by seasonality.</p>
+<p>Conclusion: Chi-square test concluded that there is a 100% chance that model 2 accuracy is the same as model 1 accuracy, i.e. forcing a seasonality model on USD INR isn’t increasing its accuracy.</p>
+<p>This can only happen when there is no seasonality in the data. As the data is prepared for weekly analysis, we can conclude that there is no seasonality on weekly a basis.</p>
+<p>Monthly seasonality:</p>
+<p>Model 1: The best model is (A, N, N) with coefficients 0.9999</p>
+<p>Like in the case of a weekly model, model on monthly data also suggests a random walk.</p>
+<p>Model 2: The best model is (A, N, A) with coefficients 0.9999 and 0.0001</p>
+<p>This model indicates that next month closing price is almost the same as this month’s closing price with a small impact of seasonality.</p>
+<p>Conclusion: Chi-square test concluded that there is a 20% chance that model 2 accuracy is better than model 1 accuracy. In statistical terms, such improvement in accuracy might happen due to randomness, like the window period you choose, the sample data etc.</p>
+<p>Typically in statistics, the norm is to look for at least 95% chance that model 2’s accuracy is better than model 1’s to conclude there is seasonality in data. So in the case of USD-INR, we can conclude that there is neither monthly nor weekly seasonality.</p>
+<p>The last 8 years USD INR spot data for this is taken from <strong><a href="https://www.rbi.org.in/scripts/ReferenceRateArchive.aspx" rel="noopener noreferrer" target="_blank">RBI’s website.</a></strong></p>
+<p>So the next time you hear someone make a random statement like “the USD INR pair almost always goes down before Christmas”, then you know he is just trying to sound smart with no real insights. ☺</p>
+<h2>6.3 – Classic TA</h2>
+<p>Think about conducting a fundamental analysis of a company, for example – Hindustan Unilever Limited. Typically, you would study its business, financial statements, corporate governance, study its peers, and perhaps build a financial model to identify if the stock is worth investing in. Fundamental analysis is a straight forward affair when it comes to equities. However when you look at currency pairs, USD INR for example, they’re a lot more fundamental dimensions – the macroeconomics of the USA which is dependent on multiple domestic and international factors and the macroeconomics of India which is again dependent on multiple domestic and international factors. Once you understand these, you need to weigh each one of these against another and build a relative view.</p>
+<p>This is no easy task, and not many are capable of doing this. It would help if you were an economist with a trader’s mindset to pull off quality fundamental analysis on currency pairs. Perhaps, this is the reason why Technical Analysis (TA) is so much more popular when it comes to trading currencies and commodities. As you are probably aware, Technical Analysis assumes that the price that you see on the screen discounts everything, including all the complex fundamental views that are panning out at the moment. With this assumption, you go ahead and analyze the charts and develop a viewpoint.</p>
+<p>TA on currencies and commodities works just like it does on equities. If you are not conversant on how to use Technical Analysis, I’d strongly suggest you read through this <strong><a href="http://zerodha.com/varsity/module/technical-analysis/" rel="noopener noreferrer" target="_blank">module on TA</a>.</strong></p>
+<p>I’ll post few snapshots of TA based trade setups –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/08/Image-7_TA1.png"><img alt="Image 7_TA1" class="aligncenter wp-image-3806" height="388" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/08/Image-7_TA1.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-7_TA1.png 867w, https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-7_TA1-300x145.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-7_TA1-768x372.png 768w" width="800"/></a></p>
+<p>The two encircled candles form a classic candlestick pattern called ‘Piercing pattern’. The piercing pattern suggests the trader go long on the USD INR pair. As you can see, the trade panned out well without triggering the stop loss.</p>
+<p>Here is a bearish Marubozu on GBP INR –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/08/Image-8_TA2.png"><img alt="Image 8_TA2" class="aligncenter wp-image-3807" height="368" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/08/Image-8_TA2.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-8_TA2.png 915w, https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-8_TA2-300x138.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-8_TA2-768x353.png 768w" width="800"/></a></p>
+<p>The bearish Marubozu suggests you short the underlying with an expectation that the asset will continue to slide down.</p>
+<p>Naturally, the trade setups can be endless. I know many people are under the belief that currency and commodities require one to know a different set of technical analysis, but this is not true. TA works the same way on any time series data, be it – stocks, commodities, currencies, or bonds.</p>
+<p>And with this, I would like to end our discussion on Currencies and would like to start our discussion on the 2<sup>nd</sup> part of this module, i.e. commodity trading.</p>
+<hr/>
+<h3>Key takeaways from the chapter</h3>
+<ol>
+<li>The underlying for EUR INR is the spot rate of 1 Euro in Indian Rupees.</li>
+<li>The lot size for EUR INR is €</li>
+<li>The underlying for GBP INR is the spot rate of 1 GBP in Indian Rupees. GBP INR is the 2<sup>nd</sup> most traded contract in the currency segment.</li>
+<li>The lot size for GBP INR is £.</li>
+<li>Internationally GBP USD is also referred to as the ‘Cable’.</li>
+<li>JPY INR has the highest margin requirement in the currency segment, perhaps due to the higher volatility.</li>
+<li>Lot size in JPY INR is 100000.</li>
+<li>The underlying in JPY INR is the rate of 100 Japanese Yen in Indian Rupees.</li>
+<li>As opposed to popular belief, there is no seasonality in the USD INR pair – either every week or every month.</li>
+<li>TA can be applied to currencies just like the way it can be applied to stocks.</li>
+</ol>
+<div class="clear"> </div>
+</div>

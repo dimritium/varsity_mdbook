@@ -1,0 +1,90 @@
+<div class="post">
+<h2>21.1 – Background</h2>
+<p>So far in this module we have discussed all the important Option Greeks and their applications. It is now time to understand how to calculate these Greeks using the Black &amp; Scholes (BS) Options pricing calculator. The BS options pricing calculator is based on the Black and Scholes options pricing model, which was first published by Fisher Black and Myron Scholes (hence the name Black &amp; Scholes) in 1973, however Robert C Merton developed the model and brought in a full mathematical understanding to the pricing formula.</p>
+<p>This particular pricing model is highly revered in the financial market, so much so that both Robert C Merton and Myron Scholes received the 1997 Noble Prize for Economic Sciences. The B&amp;S options pricing model involves mathematical concepts such as partial differential equations, normal distribution, stochastic processes etc. The objective in this module is not to take you through the math in B&amp;S model; in fact you could look at this video from Khan Academy for the same –</p>
+<div style="text-align: center;"><iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/pr-u4LCFYEY" width="560"></iframe></div>
+<p>My objective is to take you through the practical application of the Black &amp; Scholes options pricing formula.</p>
+<h2>21.2 – Overview of the model</h2>
+<p>Think of the BS calculator as a black box, which takes in a bunch of inputs and gives out a bunch of outputs. The inputs required are mostly market data of the options contract and the outputs are the Option Greeks.</p>
+<p>The framework for the pricing model works like this:</p>
+<ol>
+<li>We input the model with Spot price, Strike price, Interest rate, Implied volatility, Dividend, and Number of days to expiry</li>
+<li>The pricing model churns out the required mathematical calculation and gives out a bunch of outputs</li>
+<li>The output includes all the Option Greeks and the theoretical price of the call and put option for the strike selected</li>
+</ol>
+<p>The illustration below gives the schema of a typical options calculator:</p>
+<p><img alt="M5-C21-Illustration" class="aligncenter size-full wp-image-2673" height="467" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2015/10/M5-C21-Illustration.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/10/M5-C21-Illustration.png 800w, https://zerodha.com/varsity/wp-content/uploads/2015/10/M5-C21-Illustration-300x175.png 300w" width="800"/></p>
+<p>On the input side:</p>
+<p><strong>Spot price</strong> – This is the spot price at which the underlying is trading. Note we can even replace the spot price with the futures price. We use the futures price when the option contract is based on futures as its underlying. Usually the commodity and in some cases the currency options are based on futures. For equity option contacts always use the spot price.</p>
+<p><strong>Interest Rate</strong> – This is risk free rate prevailing in the economy. Use the RBI 91 day Treasury bill rate for this purpose. You can get the rate from the RBI website, RBI has made it available on their landing page, as highlighted below.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/09/Image-1_91Tbill.png"><img alt="Image 1_91Tbill" class="aligncenter wp-image-2662" height="399" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2015/09/Image-1_91Tbill-1024x511.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/09/Image-1_91Tbill-1024x511.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2015/09/Image-1_91Tbill-300x150.png 300w, https://zerodha.com/varsity/wp-content/uploads/2015/09/Image-1_91Tbill.png 1076w" width="800"/></a></p>
+<p>As of September 2015 the prevailing rate is 7.4769% per annum.</p>
+<p><strong>Dividend </strong>– This is the dividend per share expected in the stock, provided the stock goes ex dividend within the expiry period. For example, assume today is 11<sup>th</sup> September and you wish to calculate the Option Greeks for the ICICI Bank option contract. Assume ICICI Bank is going ex dividend on 18<sup>th</sup> Sept with a dividend of Rs.4. The expiry for the September series is 24<sup>th</sup> September 2015, hence the dividend would be Rs.4. in this case.</p>
+<p><strong>Number of days to expiry</strong> – This the number of calendar days left to expiry</p>
+<p><strong>Volatility </strong>– This is where you need to enter the option’s implied volatility. You can always look at the option chain provided by NSE to extract the implied volatility data. For example, here is the snap shot of ICICI Bank’s 280 CE, and as we can see, the IV for this contract is 43.55%.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/09/Image-2_IV.png"><img alt="Image 2_IV" class="aligncenter wp-image-2663" height="424" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2015/09/Image-2_IV.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/09/Image-2_IV.png 1007w, https://zerodha.com/varsity/wp-content/uploads/2015/09/Image-2_IV-300x159.png 300w" width="800"/></a></p>
+<p>Let us use this information to calculate the option Greeks for ICICI 280 CE.</p>
+<ul>
+<li>Spot Price = 272.7</li>
+<li>Interest Rate = 7.4769%</li>
+<li>Dividend = 0</li>
+<li>Number of days to expiry = 1 (today is 23<sup>rd</sup> September, and expiry is on 24<sup>th</sup> September)</li>
+<li>Volatility = 43.55%</li>
+</ul>
+<p>Once we have this information, we need to feed this into a standard Black &amp; Scholes Options calculator. We do have this calculator on our website – <a href="https://zerodha.com/tools/black-scholes">https://zerodha.com/tools/black-scholes</a> , you can use the same to calculate the Greeks.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/09/Image-3_BS.png"><img alt="Image 3_BS" class="aligncenter size-full wp-image-2664" height="376" loading="lazy" sizes="(max-width: 563px) 100vw, 563px" src="http://zerodha.com/varsity/wp-content/uploads/2015/09/Image-3_BS.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/09/Image-3_BS.png 563w, https://zerodha.com/varsity/wp-content/uploads/2015/09/Image-3_BS-300x200.png 300w" width="563"/></a></p>
+<p>Once you enter the relevant data in the calculator and click on ‘calculate’, the calculator displays the Option Greeks –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/09/Image-4_Greeks.png"><img alt="Image 4_Greeks" class="aligncenter wp-image-2665" height="276" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2015/09/Image-4_Greeks-1024x353.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/09/Image-4_Greeks-1024x353.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2015/09/Image-4_Greeks-300x103.png 300w, https://zerodha.com/varsity/wp-content/uploads/2015/09/Image-4_Greeks.png 1102w" width="800"/></a></p>
+<p>On the output side, notice the following –</p>
+<ul>
+<li>The premium of 280 CE and 280 PE is calculated. This is the theoretical option price as per the B&amp;S options calculator. Ideally this should match with the current option price in the market</li>
+<li>Below the premium values, all the Options Greeks are listed.</li>
+</ul>
+<p>I’m assuming that by now you are fairly familiar with what each of the Greeks convey, and the application of the same.</p>
+<p>One last note on option calculators – the option calculator is mainly used to calculate the Option Greeks and the theoretical option price. Sometimes small difference arises owing to variations in input assumptions. Hence for this reason, it is good to have room for the inevitable modeling errors. However by and large, the option calculator is fairly accurate.</p>
+<h2>21.3 – Put Call Parity</h2>
+<p>While we are discussing the topic on Option pricing, it perhaps makes sense to discuss &nbsp;‘Put Call Parity’ (PCP). PCP is a simple mathematical equation which states –</p>
+<p><strong>Put Value + Spot Price = Present value of strike (invested to maturity) + Call Value</strong>.</p>
+<p>The equation above holds true assuming –</p>
+<ol>
+<li>Both the Put and Call are ATM options</li>
+<li>The options are European</li>
+<li>They both expire at the same time</li>
+<li>The options are held till expiry</li>
+</ol>
+<p>For people who are not familiar with the concept of Present value, I would suggest you read through this – <a href="http://zerodha.com/varsity/chapter/dcf-primer/">http://zerodha.com/varsity/chapter/dcf-primer/</a> (section 14.3).</p>
+<p>Assuming you are familiar with the concept of Present value, we can restate the above equation as –</p>
+<p>P + S = Ke<sup>(-rt)</sup> + C</p>
+<p>Where, Ke<sup>(-rt)</sup> represents the present value of strike, with K being the strike itself. In mathematical terms, strike K is getting discounted continuously at rate of ‘r’ over time‘t’</p>
+<p>Also, do realize if you hold the present value of the strike and hold the same to maturity, you will get the value of strike itself, hence the above can be further restated as –</p>
+<p><strong>Put Option + Spot Price = Strike + Call options</strong></p>
+<p>So why should the equality hold? To help you understand this better think about two traders, Trader A and Trader B.</p>
+<ul>
+<li>Trader A holds ATM Put option and 1 share of the underlying stock (left hand side of PCP equation)</li>
+<li>Trader B holds a Call option and cash amount equivalent to the strike (right hand side of PCP equation)</li>
+</ul>
+<p>This being the case, as per the PCP the amount of money both traders make (assuming they hold till expiry) should be the same. Let us put some numbers to evaluate the equation –</p>
+<p>Underlying = Infosys<br/>
+Strike = 1200<br/>
+Spot = 1200</p>
+<p>Trader A holds = 1200 PE + 1 share of Infy at 1200<br/>
+Trader B holds = 1200 CE + Cash equivalent to strike i.e 1200</p>
+<p>Assume upon expiry Infosys expires at 1100, what do you think happens?</p>
+<p>Trader A’s Put option becomes profitable and he makes Rs.100 however he loses 100 on the stock that he holds, hence his net pay off is 100 + 1100 = 1200.</p>
+<p>Trader B’s Call option becomes worthless, hence the option’s value goes to 0, however he has cash equivalent to 1200, hence his account value is 0 + 1200 = 1200.</p>
+<p>Let’s take another example, assume Infy hits 1350 upon expiry, lets see what happens to the accounts of both the trader’s.</p>
+<p>Trader A = Put goes to zero, stock goes to 1350/-<br/>
+Trader B = Call value goes to 150 + 1200 in cash = 1350/-</p>
+<p>So clearly, irrespective of where the stock expires, the equations hold true, meaning both trader A and trader B end up making the same amount of money.</p>
+<p>All good, but how would you use the PCP to develop a trading strategy? Well, for that you will have to wait for the next module which is dedicated to “Option Strategies” J. Before we start the next module on Option Strategies, we have 2 more chapters to go in this module.</p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>The options calculator is based on the Black &amp; Scholes model</li>
+<li>The Black &amp; Scholes model is used to estimate the option’s theoretical price along with the option’s Greek</li>
+<li>The interest rate in the B&amp;S calculator refers to the risk free rate as available on the RBI site</li>
+<li>The implied volatility can be fetched from the option chain from the NSE website</li>
+<li>The put call parity states that the payoff from a put option plus the spot equals the payoff from call option plus the strike.</li>
+</ol>
+<div class="clear"> </div>
+</div>

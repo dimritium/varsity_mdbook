@@ -1,0 +1,102 @@
+<div class="post">
+<h2><strong>12.1 – Overnight Fund </strong></h2>
+<p>We are in living in strange times, as I write this, the market is down nearly 30% from its peak. I’ve seen markets get hammered for a variety of reasons – recessions, business cyclicality, fraud, political unrest, civil unrest, geopolitical tensions, wars, and heck even family feuds. But never in my wildest dreams could I imagine the markets getting trashed owing to a virus of an unknown origin.</p>
+<p>I guess with COVID 19, we have seen it all. At least, I hope so :).</p>
+<p>Nevertheless, we have to do what we have to do. So let us get back to the debt funds.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/03/M11-C12-Illustration.jpg"><img alt="" class="aligncenter wp-image-7447" height="333" sizes="(max-width: 500px) 100vw, 500px" src="https://zerodha.com/varsity/wp-content/uploads/2020/03/M11-C12-Illustration-300x200.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/03/M11-C12-Illustration-300x200.jpg 300w, https://zerodha.com/varsity/wp-content/uploads/2020/03/M11-C12-Illustration.jpg 600w" width="500"/></a></p>
+<p>In the previous chapter, we introduced the concept of a bond or a debt structure and discussed the first debt mutual fund, i.e. the liquid fund. Do recall; the liquid fund is not risk-free as most people assume, it is susceptible to both default and credit rating risk. The Taurus MF and Ballarpur example highlighted this credit risk in liquid funds.</p>
+<p>Both these risk types are significantly reduced (not eliminated) in an overnight debt fund. Remember, a liquid fund invests in papers maturing up to 91 days, this typically includes both the corporate commercial papers and the Govt’s treasury bills.</p>
+<p>An overnight fund, on the other hand, invests in securities which have one-day maturity. Think of this as lending money to someone for one day only. So at the start of the day, the Fund manager of an overnight Fund lends to ‘someone’ which is recovered back in 24 hours.</p>
+<p>This is precisely what happens in an ‘overnight debt mutual fund’.</p>
+<p>Given the fact that the overnight fund invests (or lends) to 1-day debt obligation, the chance of a change in credit rating risk is low. The default risk still exists, although it is small.</p>
+<p>The next obvious question is – who are these overnight fund lending to? Well, the overnight loan happens to an RBI regulated money market instrument called ‘Tri party Repo’ or the ‘TREPS’.</p>
+<p>I’ll not get into the details of what a TREP is and its purpose, I think that will stray us from the main focus of this chapter. All you need to know is that a TREP is a relatively safe instrument wherein the act of lending and borrowing happens over a 24hr window. You can read more about TREPs here – <a href="https://www.ccilindia.com/FAQ/Pages/TREPS.aspx#1">https://www.ccilindia.com/FAQ/Pages/TREPS.aspx#1</a></p>
+<p>I want you to look at the portfolio of HDFC Overnight Fund –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-1_HDFCovernight.png"><img alt="" class="aligncenter wp-image-7440" height="130" loading="lazy" sizes="(max-width: 500px) 100vw, 500px" src="https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-1_HDFCovernight-300x78.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-1_HDFCovernight-300x78.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-1_HDFCovernight-768x199.png 768w, https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-1_HDFCovernight-1024x266.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-1_HDFCovernight.png 1494w" width="500"/></a></p>
+<p>As you can see, the entire portfolio consists of only one instrument, i.e. the TREP. Have a look at the portfolio of the UTI’s overnight fund –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-2_UTIovernight.png"><img alt="" class="aligncenter wp-image-7441" height="271" loading="lazy" sizes="(max-width: 500px) 100vw, 500px" src="https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-2_UTIovernight-300x162.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-2_UTIovernight-300x162.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-2_UTIovernight-768x416.png 768w, https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-2_UTIovernight-1024x554.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-2_UTIovernight.png 1618w" width="500"/></a></p>
+<p>Again, 100% of the fund invests in TREP only.</p>
+<p>This leads us to an important conclusion – as every overnight fund invests in TREP instrument, there is no difference between the overnight fund A and overnight Fund B. They all tend to put up the same performance. The only difference is because of the difference in the expense ratio.</p>
+<p>Of course, we have not discussed the expense ratio, yet in this module, we will in the coming chapter.</p>
+<p>So who would want to invest in an overnight fund? Well, this is an ideal fund for anyone looking at parking funds for a short term duration. By short term, I mean for less than three months. Remember, if you want to park funds for more than three months or 90 days, you are better off looking at a liquid fund.</p>
+<p>It is futile to look at the return aspect of an overnight fund. It does not make sense, because you don’t invest in an overnight fund to chase ‘returns’, you do for the sake of convenience.</p>
+<p>However, if you are interested, as of today, overnight funds yield around 4-5% annualized. So you can do the math on a pro-rata basis.</p>
+<h2><strong>12.2 – Ultra-short duration Fund</strong></h2>
+<p>Next up is the ultra short term debt mutual fund. Things in the debt mutual fund start getting interesting from now.</p>
+<p>Think of yourself as a debt mutual fund manager. Your job as a fund manager is to find investments opportunities in the debt market. You can do so by investing the scheme’s corpus in new bond/CP issues, or you can choose to buy these bonds from the secondary bond market.</p>
+<p>Think of this as buying a stock at the IPO or buying it post the IPO from the stock exchanges. Now, the moment you buy it from the secondary market, the price of the bond will (may) differ from the first issue price.</p>
+<p>Why would the price vary? Well, for a host of reasons including the demand and supply dynamics of the bond.</p>
+<p>Each time a bond is purchased, the bond manager expects a periodic coupon (interest) payment during the tenure of the bond and at the end of the tenure, the principal to be repaid.</p>
+<p>Let us hold on to this thought for a moment. We will get back to this thread in a bit.</p>
+<p>Think of another case. Your best friend needs Rs.10,000/-. He approaches you for it and promises to repay within a year. You decide to give him this money, interest-free.</p>
+<p>Now, how long does it take for you to recover back your money? The time taken to get back your money is a year. It was easy to evaluate the time taken because there is no other cash flow in the form of interest repayment.</p>
+<p>On the other hand, if there was an additional cash flow in terms of a coupon payment, paid every three months, then what do you think would be the time taken to recover the money?</p>
+<p>While pinpointing to the exact number can be a bit tricky, intuition says that the time taken to recover the money is little lower than a full year, because there is cash flow. Do note; you can do some math and get the exact time to recover the money, but let’s not get there.</p>
+<p>The point to note is – in the presence of cash flow, the time to recover the principal is lesser.</p>
+<p>With this point, let’s go back to the previous thread.</p>
+<p>Fund manager<strong> A</strong> subscribes to a bond at issuance. The specifications are as follows –</p>
+<ul>
+<li>Face value = Rs.1000</li>
+<li>Coupon = 8%</li>
+<li>Coupon payment frequency = Semi-annual</li>
+<li>Maturity = 3 years</li>
+</ul>
+<p><strong>Question</strong> – How long will the fund manager A take to recover the money invested in this bond?</p>
+<p><strong>Answer</strong> – Intuition says that it could be a little lesser than three years.</p>
+<p>Fund manager <strong>B</strong> buys the same bond from the secondary market. Now, we know that the bond prices fluctuate in the market. Assume the fund manager B pays Rs.1020 for the same bond.</p>
+<p><strong>Question</strong> – How long will the fund manager take to recover the money invested in this bond?</p>
+<p><strong>Answer</strong> – Intuition says Fund manager B will take slightly higher time to recover the price paid for the bond when compared to fund manager A.</p>
+<p>Fund manager <strong>C</strong> buys the same bond from the secondary market. Assume the fund manager pays Rs.980 for the same bond.</p>
+<p><strong>Question</strong> – How long will the fund manager take to recover the money invested in this bond?</p>
+<p><strong>Answer</strong> – Intuition says Fund manager C will take lesser time to recover the price paid for the bond when compared to Fund manager A.</p>
+<p>I’m trying to make two points here –</p>
+<ul>
+<li>Bond price fluctuates</li>
+<li>Based on the price paid, the time to recover the invested amount varies.</li>
+</ul>
+<p>There is an exact science to estimate the time to recover, that is an integral part of the bond math. The metric, ‘time to recover’, is called ‘<strong>Macaulay’s Duration of a Bond</strong>’.</p>
+<p>Why is ‘Macaulay Duration’ essential and why are we discussing that? Well, have a look at how SEBI defines the characteristics of an ultra-short duration fund –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-3_USTF.png"><img alt="" class="aligncenter wp-image-7442" height="217" loading="lazy" sizes="(max-width: 500px) 100vw, 500px" src="https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-3_USTF-300x130.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-3_USTF-300x130.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-3_USTF.png 767w" width="500"/></a></p>
+<p>According to this definition, an Ultra Short duration fund can invest in short maturity bills and CPs, which has a maturity between 3 month and six months (90 to 180 days).</p>
+<p>An important point to note here is that <a href="https://www.sebi.gov.in/legal/circulars/dec-2017/categorization-and-rationalization-of-mutual-fund-schemes_36804.html" rel="noopener noreferrer" target="_blank">SEBI later specified</a> that this is at a portfolio level and not restricted to an individual bill or CP. What this means is that the fund can buy CPs with a maturity of fewer than 90 days or maybe more than 180 days, they can even invest in TREPS, but at an overall portfolio level, the fund has to ensure that the Macaulay duration of the entire portfolio falls within 3 to 6 months.</p>
+<p>To give you a perspective, have a look at the portfolio of DSP’s Ultra-short duration fund –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-4_DSPmix.png"><img alt="" class="aligncenter wp-image-7443" height="122" loading="lazy" sizes="(max-width: 500px) 100vw, 500px" src="https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-4_DSPmix-300x73.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-4_DSPmix-300x73.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-4_DSPmix-768x188.png 768w, https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-4_DSPmix-1024x251.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-4_DSPmix.png 1225w" width="500"/></a></p>
+<p>The bulk of the ultra-short duration fund is invested in money market instruments; the maturity ranges anywhere between 1 day to 365 days. Mostly these are CPs belonging to various corporate entities, here is a snapshot of their money market portfolio –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-5_mmi.png"><img alt="" class="aligncenter wp-image-7444" height="206" loading="lazy" sizes="(max-width: 500px) 100vw, 500px" src="https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-5_mmi-300x123.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-5_mmi-300x123.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-5_mmi-768x316.png 768w, https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-5_mmi-1024x421.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-5_mmi.png 1210w" width="500"/></a></p>
+<p>They also hold NCDs and Bonds (NCDs and bonds are the same), which have a&nbsp; maturity of at least a year –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-6_ncds.png"><img alt="" class="aligncenter wp-image-7445" height="225" loading="lazy" sizes="(max-width: 500px) 100vw, 500px" src="https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-6_ncds-300x135.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-6_ncds-300x135.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-6_ncds-768x346.png 768w, https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-6_ncds-1024x462.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-6_ncds.png 1200w" width="500"/></a></p>
+<p>The job of the fund manager is to ensure that they not only manage the returns but also manage the Macaulay duration of the entire portfolio such that they adhere to the SEBI specified norm.</p>
+<p>There is another interesting point to note here – while the ratings of CPs kind of vary for the money market instruments, they are all triple-A for Bonds and NCDs. Triple AAA ratings imply that the probability of default is lower.</p>
+<p>As the maturity of the bond increases, the bond manager is more worried about possible default in the bond. Hence, they tend to stick AAA rate bonds.</p>
+<p>However, this leads us to a critical point concerning ultra-short duration funds&nbsp; – they are not risk-free. These funds too, have the risk of credit default and rating downgrade.</p>
+<p>Given this, who should invest in an ultra-short duration fund?</p>
+<p>I think that this is a good fund for anyone looking to park money for 1-2 years, plus they are ok to take a wee bit of risk on the parked capital. If you can make peace with the fact that on the downside your money can go down by a few percentage points, then go ahead and park your funds in this ultra short term funds.</p>
+<p>If you are looking at parking money for lesser than a year, stick to a liquid fund instead.</p>
+<p>On the return side, I think it is reasonable to expect a return close to the bank’s fixed deposit.</p>
+<h2><strong>12.3 – Franklin and Vodafone saga</strong></h2>
+<p>Since we are talking about Ultra-short duration bonds, I guess it makes sense to quickly discuss the Franklin – Vodafone drama that unfolded earlier this year.</p>
+<p>Franklin India had invested in Vodafone India Limited (VIL)’s debt papers across six different debt schemes, including its Ultra short-duration bond fund.</p>
+<p>In Oct 2019, the Supreme Court of India passed a judgement in favour of the Dept of Telecom (Dot), in a case against DoT and the telecom operators. As a result of the Supreme Court’s judgement, the operators were asked to pay the licence fee and the spectrum usage charge based on the Adjusted Gross Revenue (AGR).</p>
+<p>If you are not familiar with this, then I’d suggest you read this short note from the good folks at Finshots, they have done a great job at explaining the AGR episode – <a href="https://finshots.in/archive/the-final-verdict-on-agr-2/">https://finshots.in/archive/the-final-verdict-on-agr-2/</a></p>
+<p>Anyway, to cut a long story short, post this judgement, VIL was now expected to pay Rs.27,000 Crs to DoT towards unpaid dues.</p>
+<p>This means VIL would be cash squeezed; hence they are likely to default on their debt obligations.</p>
+<p>As a smart money manager, after all, sorts of ramification of this judgement, Franklin India took a proactive step, and they themself internally downgraded the VIL’s papers to junk status and wrote off that investment.</p>
+<p>To give you a perspective, Franklin India’s Ultra-short bond fund had 4.2% of its portfolio invested in VIL’s paper. Now, what do you think happens when 4.2% of your portfolio is rendered useless?</p>
+<p>Obviously, the NAV of the fund falls. &nbsp;Check this –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-7_franklin.png"><img alt="" class="aligncenter wp-image-7446" height="415" loading="lazy" sizes="(max-width: 500px) 100vw, 500px" src="https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-7_franklin-300x249.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-7_franklin-300x249.png 300w, https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-7_franklin-768x637.png 768w, https://zerodha.com/varsity/wp-content/uploads/2020/03/Image-7_franklin.png 954w" width="500"/></a></p>
+<p>In my view, Franklin may take at least a year or year and a half to get back to the previous NAV levels. The only reason I’m discussing the Franklin and Vodafone issue is to make you understand that debt funds too are risky, invest in them only after you fully understand the risk involved.</p>
+<p>I’ll stop this chapter at this stage. Before I wrap this up, I’d like to give you a quick insight into the direction we are heading with this module.</p>
+<p>So far, we have discussed Equity mutual and few debt funds. The discussion is restricted mainly to a brief introduction to these funds and what happens within these funds. In the next chapter, we will continue this and introduce a few other debt funds and probably wind up the introduction bit.</p>
+<p>Once we are through with that, we will start with the fund analysis bit and figure how to select mutual funds, both debt and equity and slowly steer our way in building a goal-based mutual fund portfolio.</p>
+<p>So, we have a long way to go. Stay tuned and stay safe!</p>
+<h2><strong>Key takeaways from this chapter </strong></h2>
+<ul>
+<li>Overnight funds invest in debt instruments with a 24hr settlement cycle</li>
+<li>Almost all overnight funds invest in Tri party repo</li>
+<li>The performance across overnight funds is similar</li>
+<li>Macaulay Duration of a fund gives us a sense of how long it takes for the fund to get back its invested amount</li>
+<li>Ultra-short duration fund has a Macaulay duration between 3 to 6 months</li>
+<li>Ultrashort duration funds are also risky</li>
+</ul>
+<div class="clear"> </div>
+</div>

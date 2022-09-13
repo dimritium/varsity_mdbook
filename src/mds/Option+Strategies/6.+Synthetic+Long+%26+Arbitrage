@@ -1,0 +1,185 @@
+<div class="post">
+<h2>6.1 – Background</h2>
+<p>Imagine a situation where you would be required to simultaneously establish a long and short position on Nifty Futures, expiring in the same series. How would you do this and more importantly why would you do this?</p>
+<p>We will address both these questions in this chapter. To begin with let us understand how this can be done and later move ahead to understand why one would want to do this (if you are curious, arbitrage is the obvious answer).</p>
+<p>Options as you may have realized by now, are highly versatile derivative instruments; you can use these instruments to create any kind of payoff structure including that of the futures (both long and short futures payoff).</p>
+<p>In this chapter we will understand how we can artificially replicate a long futures pay off using options. However before we proceed, you may want to just review the long Future’s ‘linear’ payoff <a href="http://zerodha.com/varsity/chapter/leverage-payoff/" rel="noopener" target="_blank"><strong>here</strong></a></p>
+<p>Alternatively, here is a quick overview –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/01/Image-1_fut-payoff.png"><img alt="Image 1_fut payoff" class="aligncenter size-full wp-image-3007" height="302" sizes="(max-width: 446px) 100vw, 446px" src="http://zerodha.com/varsity/wp-content/uploads/2016/01/Image-1_fut-payoff.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/01/Image-1_fut-payoff.png 446w, https://zerodha.com/varsity/wp-content/uploads/2016/01/Image-1_fut-payoff-300x203.png 300w" width="446"/></a></p>
+<p>As you can see, the long futures position has been initiated at 2360, and at that point you neither make money nor lose money, hence the point at which you initiate the position becomes the breakeven point. You make a profit as the futures move higher than the breakeven point and you make a loss the lower the futures move below the breakeven point. The amount of profit you make for a 10 point up move is exactly the same as the amount of loss you’d make for a 10 point down move. Because of this linearity in payoff, the future is also called a linear instrument.</p>
+<p>The idea with a Synthetic Long is to build a similar long Future’s payoff using options.</p>
+<h2>6.2 – Strategy Notes</h2>
+<p>Executing a Synthetic Long is fairly simple; all that one has to do is –</p>
+<ol>
+<li>Buy the ATM Call Option</li>
+<li>Sell the ATM Put Option</li>
+</ol>
+<p>When you do this, you need to make sure –</p>
+<ol>
+<li>The options belong to the same underlying</li>
+<li>Belongs to the same expiry</li>
+</ol>
+<p>Let us take an example to understand this better. Assume Nifty is at 7389, which would make 7400 the ATM strike. Synthetic Long would require us to go long on 7400 CE, the premium for this is Rs.107 and we would short the 7400 PE at 80.</p>
+<p>The net cash outflow would be the difference between the two premiums i.e 107 – 80 = <strong>27.</strong></p>
+<p>Let us consider a few market expiry scenarios –</p>
+<p><strong>Scenario 1 – Market expires at 7200 (below ATM)</strong></p>
+<p>At 7200, the 7400 CE would expire worthless, hence we would lose the premium paid i.e Rs.107/-. However the 7400 PE would have an intrinsic value, which can be calculated as follows –</p>
+<p>Intrinsic value of Put Option = Max [Strike-Spot, 0]</p>
+<p>= Max [7400 – 7200, 0]</p>
+<p>=Max [200, 0]</p>
+<p>= 200.</p>
+<p>Clearly, since we are short on this option, we would lose money from the premium we have received. The loss would be –</p>
+<p>80 – 200 = -120</p>
+<p>Total payoff from the long Call and short Put position would be –</p>
+<p>= -107 – 120</p>
+<p>= <strong style="color: red;">-227</strong></p>
+<p><strong>Scenario 2 – Market expires at 7400 (At ATM)</strong></p>
+<p>If the market expires exactly at 7400, both the options would expire worthless and hence –</p>
+<ol>
+<li>We lose the premium paid for the 7400 CE option i.e 107</li>
+<li>We get the retain the premium for the 7400 PE option i.e 80</li>
+<li>Net payoff from both the positions would be <strong>-27</strong>e 80 – 107</li>
+</ol>
+<p>Do note, 27 also happens to be the net cash outflow of the strategy, which is also the difference between the two premiums</p>
+<p><strong>Scenario 3 – Market expires at 7427 (ATM + Difference between the two premiums)</strong></p>
+<p>7427 is an interesting level, this is the breakeven point for the strategy, where we neither make money nor lose money.</p>
+<ol>
+<li>7400 CE – the option is ITM and has an intrinsic value of 27. However we have paid 107 as premium hence we experience a total loss of 80</li>
+<li>7400 PE – the option would expire OTM, hence we get to retain the entire premium of 80.</li>
+<li>On one hand we make 80 and the other we lose 80. Hence we neither make nor lose any money, making 7427 the <strong>breakeven point</strong> for this strategy.</li>
+</ol>
+<p><strong>Scenario 4 – Market expires at 7600 (above ATM)</strong></p>
+<p>At 7600, the 7400 CE would have an intrinsic value of 200, we would make –</p>
+<p>Intrinsic value – Premium</p>
+<p>= 200 – 107</p>
+<p>= 93</p>
+<p>The 7400 PE would expire worthless; hence we get to retain the entire premium of Rs.80.</p>
+<p>Total payoff from the strategy would be –</p>
+<p>= 93 + 80</p>
+<p>= 173</p>
+<p>With the above 4 scenarios, we can conclude that the strategy makes money while the market moves higher and loses money while the market goes lower, similar to futures. However this still does not necessarily mean that the payoff is similar to that of futures. To establish that the synthetic long payoff behaves similar to futures, we need evaluate the payoff of the strategy with reference to the breakeven point; let’s say 200 point above and below the breakeven point. If the payoff is identical, then clearly there is linearity in the payoff, similar to futures.</p>
+<p>So let’s figure this out.</p>
+<p>We know the breakeven point for this is –</p>
+<p><strong>ATM + difference between the premiums</strong></p>
+<p>= 7400 + 27</p>
+<p>= <strong>7427</strong></p>
+<p>The payoff around this point should be symmetric. We will consider <strong>7427 + 200 = 7627</strong> and <strong>7427-200 = 7227</strong> for this.</p>
+<p>At 7627 –</p>
+<ol>
+<li>The 7400 CE would have an intrinsic value of 227, hence we get to make 227 – 107 = 120</li>
+<li>The 7400 PE would expire worthless, hence we get to keep the entire premium of 80</li>
+<li>In all we experience a payoff of 120 + 80 = <strong>200</strong></li>
+</ol>
+<p>At 7227 –</p>
+<ol>
+<li>The 7400 CE would not have any intrinsic value, hence we lose the entire premium paid i.e 107</li>
+<li>The 7400 PE would have an intrinsic value of 7400 – 7227 = 173, since we have received 80 as premium the net loss would be 80 – 173 = -93.</li>
+<li>In all we experience a payoff of -93-107 =<strong style="color: red;"> -200</strong></li>
+</ol>
+<p>Clearly, there is payoff symmetry around the breakeven, and for this reason, the <strong>Synthetic Long mimics the payoff of the long futures instrument.</strong></p>
+<p>Further, here is the payoff at various expiry levels –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/01/Image-2_different-payoff.png"><img alt="Image 2_different payoff" class="aligncenter wp-image-3008" height="335" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/01/Image-2_different-payoff.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/01/Image-2_different-payoff.png 910w, https://zerodha.com/varsity/wp-content/uploads/2016/01/Image-2_different-payoff-300x126.png 300w" width="800"/></a></p>
+<p>And when you plot the Net Payoff, we get the payoff structure which is similar to the long call futures.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/01/Image-3_payoff.png"><img alt="Image 3_payoff" class="aligncenter size-full wp-image-3009" height="361" loading="lazy" sizes="(max-width: 524px) 100vw, 524px" src="http://zerodha.com/varsity/wp-content/uploads/2016/01/Image-3_payoff.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/01/Image-3_payoff.png 524w, https://zerodha.com/varsity/wp-content/uploads/2016/01/Image-3_payoff-300x207.png 300w" width="524"/></a></p>
+<p>Having figured out how to set up a Synthetic long, we need to figure out the typical circumstances under which setting up a synthetic long is required.</p>
+<h2>6.3 – The Fish market Arbitrage</h2>
+<p>I’ll assume that you have a basic understanding on Arbitrage. In easy words, arbitrage is an opportunity to buy goods/asset in a cheaper market and sell the same in expensive markets and pocket the difference in prices. If executed well, arbitrage trades are almost risk free. Let me attempt to give you a simple example of an arbitrage opportunity.</p>
+<p>Assume you live by a coastal city with abundant supply of fresh sea fish, hence the rate at which fish is sold in your city is very low, let’s say Rs.100 per Kg. The neighboring city which is 125 kms away has a huge demand for the same fresh sea fish. However, in this neighboring city the same fish is sold at Rs.150 per Kg.</p>
+<p>Given this if you can manage to buy the fish from your city at Rs.100 and manage to sell the same in the neighboring city at Rs.150, then in process you clearly get to pocket the price differential i.e Rs.50. Maybe you will have to account for transportation and other logistics, and instead of Rs.50, you get to keep Rs.30/- per Kg. This is still a beautiful deal and this is a typical arbitrage in the fish market!</p>
+<p><img alt="M6-C7-cartoon" class="aligncenter size-full wp-image-3013" height="400" loading="lazy" sizes="(max-width: 600px) 100vw, 600px" src="http://zerodha.com/varsity/wp-content/uploads/2016/01/M6-C7-cartoon.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/01/M6-C7-cartoon.png 600w, https://zerodha.com/varsity/wp-content/uploads/2016/01/M6-C7-cartoon-300x200.png 300w" width="600"/></p>
+<p>It looks perfect, think about it – if you can do this everyday i.e buy fish from your city at Rs.100 and sell in the neighboring city at Rs.150, adjust Rs.20 towards expenses then Rs.30 per KG is guaranteed risk free profit.</p>
+<p>This is indeed risk free, provides nothing changes. But if things change, so will your profitability, let me list few things that could change –</p>
+<ol>
+<li><strong>No Fish (opportunity risk)</strong> – Assume one day you go to the market to buy fish at Rs.100, and you realize there is no fish in the market. Then you have no opportunity to make Rs.30/-.</li>
+<li><strong>No Buyers (liquidity risk) </strong>– You buy the fish at Rs.100 and go to the neighboring town to sell the same at Rs.150, but you realize that there are no buyers. You are left holding a bag full of dead fish, literally worthless!</li>
+<li><strong>Bad bargaining (execution risk) </strong>– The entire arbitrage opportunity hinges upon the fact that you can ‘always’ bargain to buy at Rs.100 and sell at Rs.150. What if on a bad day you happen to buy at 110 and sell at 140? You still have to pay 20 for transport, this means instead of the regular 30 Rupees profit you get to make only 10 Rupees, and if this continues, then the arbitrage opportunity would become less attractive and you may not want to do this at all.</li>
+<li><strong>Transport becomes expensive (cost of transaction) – </strong>This is another crucial factor for the profitability of the arbitrage trade. Imagine if the cost of transportation increases from Rs.20 to Rs.30? Clearly the arbitrage opportunity starts looking less attractive as the cost of execution goes higher and higher. Cost of transaction is a critical factor that makes or breaks an arbitrage opportunity</li>
+<li><strong>Competition</strong> <strong>kicks in</strong> <strong>(who can drop lower?)</strong> – Given that the world is inherently competitive you are likely to attract some competition who would also like to make that risk free Rs.30. Now imagine this –
+<ol type="a">
+<li>So far you are the only one doing this trade i.e buy fish at Rs.100 and sell at Rs.150</li>
+<li>Your friend notices you are making a risk free profit, and he now wants to copy you. You can’t really prevent his as this is a free market.</li>
+<li>Both of you buy at Rs.100, transport it at Rs.20, and attempt to sell it in the neighboring town</li>
+<li>A potential buyer walks in, sees there is a new seller, selling the same quality of fish. Who between the two of you is likely to sell the fish to the buyer?</li>
+<li>Clearly given the fish is of the same quality the buyer will buy it from the one selling the fish at a cheaper rate. Assume you want to acquire the client, and therefore drop the price to Rs.145/-</li>
+<li>Next day your friend also drops the price, and offers to sell fish at Rs.140 per KG, and therefore igniting a price war. In the whole process the price keeps dropping and the arbitrage opportunity just evaporates.</li>
+<li>How low can the price drop? Obviously it can drop to Rs.120 (cost of buying fish plus transport). Beyond 120, it does not makes sense to run the business</li>
+<li>Eventually in a perfectly competitive world, competition kicks in and arbitrage opportunity just ceases to exist. In this case, the cost of fish in neighboring town would drop to Rs.120 or a price point in that vicinity.</li>
+</ol>
+</li>
+</ol>
+<p>I hope the above discussion gave you a quick overview on arbitrage. In fact we can define any arbitrage opportunity in terms of a simple mathematical expression, for example with respect to the fish example, here is the mathematical equation –</p>
+<p><strong>[Cost of selling fish in town B – Cost of buying fish in town A] = 20</strong></p>
+<p>If there is an imbalance in the above equation, then we essentially have an arbitrage opportunity. In all types of markets – fish market, agri market, currency market, and stock market such arbitrage opportunities exist and they are all governed by simple arithmetic equations.</p>
+<h2>6.4 – The Options arbitrage</h2>
+<p>Arbitrage opportunities exist in almost every market, one needs to be a keen observer of the market to spot it and profit from it. Typically stock market based arbitrage opportunities allow you to lock in a certain profit (small but guaranteed) and carry this profit irrespective of which direction the market moves. For this reason arbitrage trades are quite a favorite with risk intolerant traders.</p>
+<p>I would like to discuss a simple arbitrage case here, the roots of which lie in the concept of <strong>‘Put Call Parity’</strong>. I will skip discussing the Put Call Parity theory but would instead jump to illustrate one of its applications.</p>
+<p>However I’d suggest you watch this beautiful video from Khan Academy to understand the Put Call Parity –</p>
+<p style="text-align: center;"><iframe allowfullscreen="allowfullscreen" frameborder="0" height="355" loading="lazy" scrolling="no" src="https://www.khanacademy.org/embed_video?v=m4mrd7sHCPM" width="560"></iframe></p>
+<p>So based on Put Call Parity, here is an arbitrage equation –</p>
+<p><strong>Long Synthetic long + Short Futures = 0</strong></p>
+<p>You can elaborate this to –</p>
+<p><strong>Long ATM Call + Short ATM Put + Short Futures = 0</strong></p>
+<p>The equation states that the P&amp;L upon expiry by virtue of holding a long synthetic long and short future should be zero. Why should this position result in a zero P&amp;L, well the answer to this is attributable to the Put Call Parity.</p>
+<p>However, if the P&amp;L is a non zero value, then we have an arbitrage opportunity.</p>
+<p>Here is an example that will help you understand this well.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/01/Image-4_Nifty-Fut.png"><img alt="Image 4_Nifty Fut" class="aligncenter size-full wp-image-3010" height="517" loading="lazy" sizes="(max-width: 570px) 100vw, 570px" src="http://zerodha.com/varsity/wp-content/uploads/2016/01/Image-4_Nifty-Fut.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/01/Image-4_Nifty-Fut.png 570w, https://zerodha.com/varsity/wp-content/uploads/2016/01/Image-4_Nifty-Fut-300x272.png 300w" width="570"/></a></p>
+<p>On 21<sup>st</sup> Jan, Nifty spot was at 7304, and the Nifty Futures was trading at 7316.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/01/Image-5_Syn-Call.png"><img alt="Image 5_Syn Call" class="aligncenter wp-image-3011" height="364" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/01/Image-5_Syn-Call.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/01/Image-5_Syn-Call.png 828w, https://zerodha.com/varsity/wp-content/uploads/2016/01/Image-5_Syn-Call-300x137.png 300w" width="800"/></a></p>
+<p>The 7300 CE and PE (ATM options) were trading at 79.5 and 73.85 respectively. Do note, all the contracts belong to the January 2016 series.</p>
+<p>Going by the arbitrage equation stated above, if one were to execute the trade, the positions would be –</p>
+<ol>
+<li>Long 7300 CE @ 79.5</li>
+<li>Short 7300 PE @ 73.85</li>
+<li>Short Nifty futures @ 7316</li>
+</ol>
+<p>Do note, the first two positions together form a long synthetic long. Now as per the arbitrage equation, upon expiry the positions should result in a zero P&amp;L.&nbsp; Let’s evaluate if this holds true.</p>
+<p><strong>Scenario 1 – Expiry at 7200</strong></p>
+<ul>
+<li>The 7300 CE would expire worthless, hence we lose the premium paid i.e <strong style="color: red;">79.5</strong></li>
+<li>The 7300 PE would have an intrinsic value of 100, but since we are short at 73.85, the net payoff would be 73.85 – 100 = <strong style="color: red;">-26.15</strong></li>
+<li>We are short on futures at 7316, which would result in a profit of 116 points (7316 – 7200)</li>
+<li>Net payoff would be -79.5 – 26.15 + 116 = <strong>+10.35</strong></li>
+</ul>
+<p>Clearly, instead of a 0 payoff, we are experiencing a positive non zero P&amp;L.</p>
+<p><strong>Scenario 2 – Expiry at 7300</strong></p>
+<ul>
+<li>The 7300 CE would expire worthless, hence we lose the premium paid i.e <strong style="color: red;">79.5</strong></li>
+<li>The 7300 PE would expire worthless, hence we get to retain 73.85</li>
+<li>We are short on futures at 7316, which would result in a profit of 16 points (7316 – 7300)</li>
+<li>Net payoff would be -79.5 +73.85+16 = <strong>+10.35</strong></li>
+</ul>
+<p><strong>Scenario 3 – Expiry at 7400</strong></p>
+<ul>
+<li>The 7300 CE would have an intrinsic value of 100, and therefore the payoff would be 100 – 79.5 = 20.5</li>
+<li>The 7300 PE would expire worthless, hence we get to retain 73.85</li>
+<li>We are short on futures at 7316, which would result in loss of 84 points (7316 – 7400)</li>
+<li>Net payoff would be 20.5 + 73.85 – 84 = <strong>+10.35 </strong></li>
+</ul>
+<p>You could test this across any expiry value (in other words the markets can move in any direction) but you are likely to pocket 10.35 points, <strong>upon expiry.</strong> I’d like to stress this again; this arbitrage lets you make 10.35, upon expiry.</p>
+<p>Here is the payoff structure at different expiry values –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/01/Image-6_Arb-payoff.png"><img alt="Image 6_Arb payoff" class="aligncenter wp-image-3012" height="301" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/01/Image-6_Arb-payoff.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/01/Image-6_Arb-payoff.png 1013w, https://zerodha.com/varsity/wp-content/uploads/2016/01/Image-6_Arb-payoff-300x113.png 300w" width="800"/></a></p>
+<p>Interesting isn’t it? But what’s the catch you may ask?</p>
+<p>Transaction charges!</p>
+<p>One has to account for the cost of execution of this trade and figure out if it still makes sense to take up the trade. Consider this –</p>
+<ul>
+<li><strong>Brokerage</strong> – if you are trading with a traditional broker, then you will be charged on a percentage basis which will eat away your profits. So on one hand you make 10 points, but you may end up paying 8 – 10 points as brokerage. However if you were to do this trade with a discount broker like Zerodha, your breakeven on this trade would be around 4-5 points. This should give you more reason to open your account with Zerodha ☺</li>
+</ul>
+<ul>
+<li><strong>STT</strong> – Do remember the P&amp;L is realised upon expiry; hence you would have to carry forward your positions to expiry. If you are long on an ITM option (which you will be) then upon expiry you will have to pay a hefty STT, which will further eat away your profits. Please do <a href="http://zerodha.com/z-connect/queries/stock-and-fo-queries/stt-options-nse-bse-mcx-sx" rel="noopener" target="_blank"><strong>read this</strong></a> to know more.</li>
+<li><strong>Other applicable taxes – </strong>Besides you also have to account for service tax, stamp duty etc</li>
+</ul>
+<p>So considering these costs, the efforts to carry an arbitrage trade for 10 points may not make sense. But it certainly would, if the payoff was something better, maybe like 15 or 20 points. With 15 or 20 points you can even maneuver the STT trap by squaring off the positions just before expiry – although it will shave off a few points.</p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>You can use options to replicate futures payoff</li>
+<li>A synthetic long replicates the long futures payoff</li>
+<li>Simultaneously buying ATM call and selling ATM Put creates a synthetic long</li>
+<li>The breakeven point for the synthetic long is the <strong>ATM strike + net premium paid</strong></li>
+<li>An arbitrage opportunity is created when Synthetic long + short futures yields a positive non zero P&amp;L upon expiry</li>
+<li>Execute the arbitrage trade only if the P&amp;L upon expiry makes sense after accounting for expenses.</li>
+</ol>
+<p>&nbsp;</p>
+<p style="text-align: center;"><a class="button" href="https://zerodha.com/varsity/wp-content/uploads/2016/01/C6_Synthetic-Long-Arbitrage1.xlsx">Download Synthetic Long &amp; Arbitrage Excel Sheet</a></p>
+<div class="clear"> </div>
+</div>

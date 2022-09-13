@@ -1,0 +1,160 @@
+<div class="post">
+<h2>9.1 – Introduction to Linear Regression</h2>
+<p>The previous chapter laid down a basic understanding of a straight line equation. To keep things simple, we took a very basic example to explain how two variables can be related to each other. Needless to say, the examples were selected in a way that casual eyeballing could reveal the relationship. Towards the end of the chapter we posted a table containing two arrays of numbers – the task was to figure out if there was a relationship between the two sets of numbers, if yes, what how could one express the relationship in the form of a straight line equation. More precisely, what was the intercept and constant?</p>
+<p>We will figure how to establish a relationship in this chapter and move closer towards the relative value trading technique. For convenience, let me post the table with the two number arrays once again –</p>
+<table>
+<tbody>
+<tr>
+<th width="59"><strong>X</strong></th>
+<th width="59"><strong>Y</strong></th>
+</tr>
+<tr>
+<td width="59">10</td>
+<td width="59">3</td>
+</tr>
+<tr>
+<td width="59">12</td>
+<td width="59">6</td>
+</tr>
+<tr>
+<td width="59">8</td>
+<td width="59">4</td>
+</tr>
+<tr>
+<td width="59">9</td>
+<td width="59">17</td>
+</tr>
+<tr>
+<td width="59">20</td>
+<td width="59">36</td>
+</tr>
+<tr>
+<td width="59">18</td>
+<td width="59">22</td>
+</tr>
+</tbody>
+</table>
+<p>Clearly, casual eyeballing does not reveal any information about the relationship between the two sets of numbers. Maybe it does, if you are a mutant, but for a mere mortal like me, it does not work.</p>
+<p><img alt="" class="aligncenter wp-image-4872" height="345" sizes="(max-width: 518px) 100vw, 518px" src="https://zerodha.com/varsity/wp-content/uploads/2018/02/M10-C9.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/02/M10-C9.png 600w, https://zerodha.com/varsity/wp-content/uploads/2018/02/M10-C9-300x200.png 300w" width="518"/></p>
+<p>Under such circumstances, we rely upon a technique called the ‘Linear Regression’. Linear regression is a statistical operation wherein the input is an array of two sets of numbers and the output contains many different parameters, including the intercept and constant needed for constructing the straight line equation.</p>
+<p>To perform the linear regression operation, we will depend on the good old Excel. &nbsp;Here is the step by step guide to perform a simple linear regression on two arrays of numbers. Be prepared to see a lot of screenshots and instructions ☺</p>
+<p><strong>Step 1</strong> – <strong>Install the Plugin</strong></p>
+<p>Open a fresh excel sheet and insert the values of X &amp; Y as seen in the above table. I’ve done the same as shown below –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-1_table.png"><img alt="" class="aligncenter wp-image-4859" height="158" loading="lazy" src="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-1_table.png" width="120"/></a></p>
+<p>This is our data set. Do remember, Y is the ‘Dependent’ variable whose value depends on the independent variable X. Both X and Y will be the input variables for the linear regression operation.</p>
+<p>On the excel sheet, click on the Data ribbon as highlighted in red, shown below –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-2_data-ribbon.png"><img alt="" class="aligncenter wp-image-4860" height="180" loading="lazy" sizes="(max-width: 699px) 100vw, 699px" src="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-2_data-ribbon.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-2_data-ribbon.png 1705w, https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-2_data-ribbon-300x77.png 300w, https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-2_data-ribbon-768x198.png 768w, https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-2_data-ribbon-1024x264.png 1024w" width="699"/></a></p>
+<p>The data ribbon will now show you the ‘Data Analysis’, option. This is highlighted in blue. Now, some of you may not see this option, if yes, don’t panic. I’ll tell you what needs to be done.</p>
+<p>Click on ‘File’ –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-3_file.png"><img alt="" class="aligncenter wp-image-4861" height="63" loading="lazy" src="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-3_file.png" width="125"/></a></p>
+<p>This will open up a new window, and on your left-hand side panel, you will see an option to select ‘option’ –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-4_option.png"><img alt="" class="aligncenter wp-image-4862" height="416" loading="lazy" src="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-4_option.png" width="102"/></a></p>
+<p>Click on the Options, and you will see a bunch of general options to work with. On the left-hand panel, select ‘Add-Ins’, click on it and then click on the ‘Analysis Tool pack’. Then click on ‘Go’, and finally on ‘Ok’. With this, you’d essentially added the ‘Data Analysis’ option to the data ribbon.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-5_addin.png"><img alt="" class="aligncenter wp-image-4863" height="523" loading="lazy" sizes="(max-width: 677px) 100vw, 677px" src="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-5_addin.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-5_addin.png 1022w, https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-5_addin-300x232.png 300w, https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-5_addin-768x593.png 768w" width="677"/></a></p>
+<p>Close the excel sheet and restart your system and you are good to roll.</p>
+<p><strong>Step 2 – Enter the values</strong></p>
+<p>So we proceed further based on the assumption that your excel sheet has the data analysis pack. The next step is to invoke the linear regression function within the data analysis pack. To do this, click on the ‘Data’ ribbon, and select the Data Analysis. This will open up a pop-up, which will have a list of statistical operations which you can perform on data sets. Select the one which says ‘Regression’.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-6_data-analysis.png"><img alt="" class="aligncenter wp-image-4864" height="223" loading="lazy" sizes="(max-width: 681px) 100vw, 681px" src="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-6_data-analysis.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-6_data-analysis.png 1693w, https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-6_data-analysis-300x99.png 300w, https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-6_data-analysis-768x252.png 768w, https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-6_data-analysis-1024x336.png 1024w" width="681"/></a></p>
+<p>Select regression and click ok, you will see the following pop up –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-7_reg.png"><img alt="" class="aligncenter wp-image-4865" height="395" loading="lazy" sizes="(max-width: 516px) 100vw, 516px" src="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-7_reg.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-7_reg.png 635w, https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-7_reg-300x230.png 300w" width="516"/></a></p>
+<p>As you can see, there are a bunch of fields here. I’d suggest you pay attention to the first section, which is the input section. There are two fields here – ‘Input Y Range’ and ‘Input X Range’. As you may have imagined, Y is for the dependent variable and X is for the dependent variable.</p>
+<p>This is where we feed in the X and Y series data. To do that, click on the input channel and select Y and X range –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-8_input.png"><img alt="" class="aligncenter wp-image-4866" height="97" loading="lazy" sizes="(max-width: 401px) 100vw, 401px" src="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-8_input.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-8_input.png 451w, https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-8_input-300x73.png 300w" width="401"/></a></p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-9_label.png"><img alt="" class="aligncenter wp-image-4867" height="176" loading="lazy" sizes="(max-width: 541px) 100vw, 541px" src="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-9_label.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-9_label.png 607w, https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-9_label-300x97.png 300w" width="541"/></a></p>
+<p>Also, please notice that I’ve checked the label box, this indicates that the first cell value i.e A2 and B2 contain the series label i.e X &amp; Y respectively.</p>
+<p>I’d suggest you ignore the other input values for now.</p>
+<p>On the output side, ensure you’ve clicked the following –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-10_output.png"><img alt="" class="aligncenter wp-image-4868" height="241" loading="lazy" sizes="(max-width: 415px) 100vw, 415px" src="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-10_output.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-10_output.png 467w, https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-10_output-300x174.png 300w" width="415"/></a></p>
+<p>Selecting ‘New worksheet’, ensures that the output data is printed on a new worksheet. I’ve also clicked on two other variables called – Residuals and Standardized Residuals. I will talk about these two variables at a later point. For now, just ensure they are selected.</p>
+<p>With this, you are good to perform the linear regression operation. Click on the ‘Ok’ button which is available in the right-hand top corner.</p>
+<p>Excel will now take these inputs and perform the linear regression operation, the results will be posted in a new sheet within the same workbook.</p>
+<h2>9.2 – Linear Regression Output</h2>
+<p>So here is how the linear regression output looks and as expected, the summary of the output is presented in a new sheet.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-11_summary.png"><img alt="" class="aligncenter wp-image-4869" height="445" loading="lazy" sizes="(max-width: 654px) 100vw, 654px" src="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-11_summary.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-11_summary.png 1110w, https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-11_summary-300x204.png 300w, https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-11_summary-768x522.png 768w, https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-11_summary-1024x697.png 1024w" width="654"/></a></p>
+<p>Agreed, the summary output is quite scary at the first glance. It has lots and lots of information. We will unravel this output in bits and pieces as we proceed.</p>
+<p>For now, let’s concentrate on finding our slope and intercept. I’ve highlighted this for you in the below snapshot –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-12_coefficient.png"><img alt="" class="aligncenter wp-image-4870" height="431" loading="lazy" sizes="(max-width: 656px) 100vw, 656px" src="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-12_coefficient.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-12_coefficient.png 1107w, https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-12_coefficient-300x197.png 300w, https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-12_coefficient-768x505.png 768w, https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-12_coefficient-1024x673.png 1024w" width="656"/></a></p>
+<p>The data points highlighted in red contains the coefficients we are looking for i.e the intercept (or constant) and the slope (denoted by x).</p>
+<p>Some of you may be confused with the slope being represented by x, I understand its misleading, it would have been best if it was M instead of x as it would match the straight-line equation, but then I guess we will have to live with x for slope.</p>
+<p>So,</p>
+<ul>
+<li>Slope of the equation = 1.885</li>
+<li>Intercept (or constant) = -7.859813.</li>
+</ul>
+<p>Given this, the straight-line equation for the arbitrary set of data is –</p>
+<p>y = 1.885*x + (-7.859813) or</p>
+<p><strong style="background-color: #eacf32;">y = 1.885*x – 7.859813</strong></p>
+<p>So what does this really mean?</p>
+<p>Well, if you recollect from the previous chapter, this equation essentially helps us predict the value of y or the dependent variable for a certain x. Let me repost the table here for the sake of convenience –</p>
+<table>
+<tbody>
+<tr>
+<td width="59"><strong>X</strong></td>
+<td width="59"><strong>Y</strong></td>
+</tr>
+<tr>
+<td width="59">10</td>
+<td width="59">3</td>
+</tr>
+<tr>
+<td width="59">12</td>
+<td width="59">6</td>
+</tr>
+<tr>
+<td width="59">8</td>
+<td width="59">4</td>
+</tr>
+<tr>
+<td width="59">9</td>
+<td width="59">17</td>
+</tr>
+<tr>
+<td width="59">20</td>
+<td width="59">36</td>
+</tr>
+<tr>
+<td width="59">18</td>
+<td width="59">22</td>
+</tr>
+<tr>
+<td width="59"><span style="background-color: #eacf32;">15</span></td>
+<td width="59"><strong style="background-color: #eacf32;">??</strong></td>
+</tr>
+</tbody>
+</table>
+<p>I’ve added a new data point for x here i.e 15, now using the slope and intercept, we can predict the value of y. Let’s do that –</p>
+<p>y = 1.885 * 15 – 7.859813</p>
+<p>= 28.275 – 7.859813</p>
+<p>=<strong> 20.415</strong></p>
+<p>So, if x is 15, then most likely, the predicted value of y is 20.415.</p>
+<p>How accurate is this prediction, you may ask?</p>
+<p>Well, it’s not accurate. It is only an estimation. For example, consider the value of x is 18 (refer to the last but one data point), then according to the straight line equation, the value of y should be –</p>
+<p>y = 1.885*18 – 7.859813</p>
+<p>= 33.93 – 7.859813</p>
+<p>= 26.07019</p>
+<p>However, the actual value of y is 22.</p>
+<p>This leads us two values of y –</p>
+<ol>
+<li>Predicted value of y via the straight line equation</li>
+<li>Actual value of y</li>
+</ol>
+<p>The difference between the two values of y is called <strong>the residuals</strong>. For example, the residual for y (difference between actual and predicted y), when x = 18 is</p>
+<p>26.07019 – 22</p>
+<p>= <strong>4.070187</strong></p>
+<p>The summary output when you perform linear regression also contains the residuals, I’ve highlighted the same in the snapshot below –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-13_residuals.png"><img alt="" class="aligncenter wp-image-4871" height="376" loading="lazy" sizes="(max-width: 582px) 100vw, 582px" src="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-13_residuals.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-13_residuals.png 1128w, https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-13_residuals-300x194.png 300w, https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-13_residuals-768x496.png 768w, https://zerodha.com/varsity/wp-content/uploads/2018/02/Image-13_residuals-1024x662.png 1024w" width="582"/></a></p>
+<p>I’ve also highlighted the residual when x = 18, which is what we calculated above.</p>
+<p>To give you a heads up – the bulk of the focus for carrying out the relative value trade depends on the residuals. Stay tuned!</p>
+<p>Download the excel sheet <a href="https://zerodha.com/varsity/wp-content/uploads/2018/02/Chpater-9_Intro-to-linear-regression.xlsx" rel="noopener"><strong>here</strong>.</a></p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>Linear regression is a statistical operation which helps you construct a straight line equation</li>
+<li>Linear regression can be performed on excel. One needs to install the excel plugin to perform linear regression</li>
+<li>Amongst many other output variables, linear regression gives out the values of the slope and intercept</li>
+<li>With the help of the slope and intercept, one can predict the value of y</li>
+<li>The difference between actual y and predicted y is called the residual</li>
+<li>The residual is also a part of the output summary</li>
+</ol>
+<div class="clear"> </div>
+</div>

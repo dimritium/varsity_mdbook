@@ -1,0 +1,207 @@
+<div class="post">
+<h2>7.1 – Orientation</h2>
+<p>As you know, there are two commodity exchanges in India – Multi Commodity Exchange (MCX) and National Commodity and Derivative Exchange (NCDEX). MCX is particularly popular for the Metals and Energy commodities while NCDEX for all the agri commodities. However, there is a lot of activity picking up on MCX for agri commodities as well. My job over the next few chapters is to discuss these commodities which are traded on the exchanges and get you familiar with the commodity contracts.</p>
+<p>We will look into every commodity that is actively traded on the commodity exchanges. The idea is to know how the commodity contract works (contract specification), figure out which contract to trade and identify the factor which influences the commodity. I will skip the usual background to commodities market part, the one which talks about the history, forwards markets, the farmers in the US, the Chicago Mercantile Exchange etc. You will find this in almost any material on the Commodity market. I want to get straight to the heart of the topic by slicing and dicing the contract specifications of commodities and other details around them.</p>
+<p>Here is the list of commodities available on MCX to trade; of course I got this list from the MCX website –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/08/Image-1_A-list.png"><img alt="Image 1_A list" class="aligncenter size-full wp-image-3827" height="612" sizes="(max-width: 552px) 100vw, 552px" src="http://zerodha.com/varsity/wp-content/uploads/2016/08/Image-1_A-list.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-1_A-list.png 552w, https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-1_A-list-271x300.png 271w" width="552"/></a></p>
+<p>The idea is to cover all the major commodities that one can trade. Needless to say, one has to know how ‘Derivative Futures’ function before attempting to understand Commodities. So if you are not familiar with Futures, I’d encourage you to read the&nbsp;module on <strong><a href="http://zerodha.com/varsity/module/futures-trading/" rel="noopener noreferrer" target="_blank">futures trading.</a></strong></p>
+<p>Anyway, assuming you are familiar with Futures, we will now start with Gold.</p>
+<p><img alt="M8C7-cartoon" class="aligncenter size-full wp-image-3831" height="400" loading="lazy" sizes="(max-width: 600px) 100vw, 600px" src="http://zerodha.com/varsity/wp-content/uploads/2016/08/M8C7-cartoon.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/08/M8C7-cartoon.png 600w, https://zerodha.com/varsity/wp-content/uploads/2016/08/M8C7-cartoon-300x200.png 300w" width="600"/></p>
+<h2>7.2 – The Gold Contract</h2>
+<p>Gold is a very actively traded contract in MCX. It has ample liquidity, with daily trades of roughly 15,000 contracts translating to a Rupee value of over 4500 Crore. Note, these numbers belong to just one type of Gold contract, often nicknamed “Big Gold”.</p>
+<p>Gold comes in quite a few variants that one can choose to trade-in. Newbie and sometimes even the experienced commodity traders often get confused with these contracts, not knowing which one to trade and the difference between them. To begin with, let me list down all the different types of Gold contracts –</p>
+<ol>
+<li>Gold (The Big Gold)</li>
+<li>Gold Mini</li>
+<li>Gold Guinea</li>
+<li>Gold Petal</li>
+</ol>
+<p>All these variants belong to the same underlying, i.e. Gold. I guess the best way to understand the difference is by understanding the contract specification of each of these variants. We will start with the big boy first, i.e. ‘The Gold’.</p>
+<p>Here is the contract specification as per MCX, let me list the important things first, and then we will understand them one by one –</p>
+<table>
+<tbody>
+<tr>
+<th><strong>Particular</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+<tr>
+<td>Price Quotation</td>
+<td>Rupee per 10 grams inclusive of all taxes and levies relating to import duty</td>
+</tr>
+<tr>
+<td>Lot Size</td>
+<td>1 kilogram</td>
+</tr>
+<tr>
+<td>Tick Size</td>
+<td>1 rupee</td>
+</tr>
+<tr>
+<td>P&amp;L per tick</td>
+<td>Rs. 100</td>
+</tr>
+<tr>
+<td>Expiry Date</td>
+<td>5<sup>th</sup> day of the contract month</td>
+</tr>
+<tr>
+<td>Delivery Logic</td>
+<td>Compulsory</td>
+</tr>
+<tr>
+<td>Delivery Unit</td>
+<td>1 kilogram</td>
+</tr>
+</tbody>
+</table>
+<p>Let me discuss these details in the same sequential order so that it becomes easy for you to understand the subsequent contracts. We’ll start with the price quotation.</p>
+<p>The price quotation, as you can see, is for 10 grams of Gold. This price includes all the import duties and taxes; of course, we will talk more about this at a later stage. For now, be aware that the price of MCX is all-inclusive. Have a look at the following snapshot, and it shows the last traded price of gold futures on MCX –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/08/Image-2_Gold.png"><img alt="Image 2_Gold" class="aligncenter wp-image-3828 size-full" height="455" loading="lazy" sizes="(max-width: 419px) 100vw, 419px" src="http://zerodha.com/varsity/wp-content/uploads/2016/08/Image-2_Gold.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-2_Gold.png 419w, https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-2_Gold-276x300.png 276w" width="419"/></a></p>
+<p>As you can see, the last traded price of Gold is Rs.31,331/-. Do note; this is the quote for 10 grams of gold. Since the lot size is 1 Kg (1000 Grams), we can calculate the contract value –</p>
+<p>(1000 * 31331) / 10</p>
+<p>= Rs.31,33,100/-</p>
+<p>So what is the margin required to trade this? We can check this from Zerodha’s margin calculator –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/08/Image-3_gold-margin.png"><img alt="Image 3_gold margin" class="aligncenter wp-image-3829" height="201" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/08/Image-3_gold-margin.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-3_gold-margin.png 1182w, https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-3_gold-margin-300x75.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-3_gold-margin-768x193.png 768w, https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-3_gold-margin-1024x257.png 1024w" width="800"/></a></p>
+<p>&nbsp;</p>
+<p>The margin amount required is Rs.1,25,868/-, which means the margin percentage is roughly –</p>
+<p>1,25,868 / 31,33,100</p>
+<p>= <strong>4.017%</strong></p>
+<p>As you can see, the margin percentage is just about 4%, which is pretty much similar to the currency contracts. However, the Rupee value of the margin is way too high, and it, therefore, prohibits many retail traders from initiating positions in Gold. In fact, this is the reason we have contracts like Gold Mini and Gold Petal, where the Rupee value of the margins is lower. We will talk about these contracts a little later.</p>
+<p>Now assume you buy 1 lot of Gold on MCX, this means you have to park close to 1.25 lakhs as margin, and with each tick, you will either make Rs.100 or lose Rs.100 and how did we arrive at that? Well, it is fairly simple –</p>
+<p><strong>P&amp;L per tick = (Lot Size / Quotation) * Tick Size</strong></p>
+<p>Let us apply this on Gold –</p>
+<p>= (1000 Grams / 10 Grams) * 1 Rupee</p>
+<p><strong>= 100 Rupees</strong></p>
+<p>In fact, you can apply this formula to any futures and options contract to calculate the P&amp;L per tick. Let me demonstrate this formula for the JPY INR contract. If you recollect the lot size for this contract is 100000 JPY, and the quotation was for 100 JPY, and the tick size is 0.0025, using this we can calculate the P&amp;L per tick –</p>
+<p>(100000/100)*0.0025</p>
+<p>= 2.5 Rupees</p>
+<p>Anyway, let us now focus on expiry. If you look at the expiry of Gold, it simply says 5<sup>th</sup> day of the contract month. Gold contracts are introduced every 2 months, and each contract stays in the system for a year, and at any point, you will have 6 contracts to choose from. Considering we were in August 2016, the following table should give you an idea of how this works –</p>
+<table>
+<tbody>
+<tr>
+<th width="167"><strong>Currently available contract</strong></th>
+<th width="99"><strong>Expires on</strong></th>
+</tr>
+<tr>
+<td width="167">October 2016</td>
+<td width="99">5<sup>th</sup> Oct 2016</td>
+</tr>
+<tr>
+<td width="167">December 2016</td>
+<td width="99">5<sup>th</sup> Dec 2016</td>
+</tr>
+<tr>
+<td width="167">February 2017</td>
+<td width="99">5<sup>th</sup> Feb 2017</td>
+</tr>
+<tr>
+<td width="167">April 2017</td>
+<td width="99">5<sup>th</sup> April 2017</td>
+</tr>
+<tr>
+<td width="167">June 2017</td>
+<td width="99">5<sup>th</sup> Jun 2017</td>
+</tr>
+<tr>
+<td width="167">August 2017</td>
+<td width="99">5<sup>th</sup> Aug 2017</td>
+</tr>
+</tbody>
+</table>
+<p>Needless to say, the most recent contract is the most liquid contract to trade; in this case, it would be October 2016 contract. Now when the October 2016 contract expires on 5<sup>th</sup> Oct 2016, September 2017 contract will be introduced, and the most active contract from 5<sup>th</sup> Oct 2016 would now be the December 2016 contract.</p>
+<p>Do recall, settlement in equities is always in cash and not physical. However, when it comes to commodities, the settlement is physical and therefore ‘delivery’ is compulsory. This means if you hold 10 lots of gold and you opt for delivery, then you will get 10 kg of gold. To get the delivery of the commodity, one has to express his intention to do so. This has to be done any time before 4 days to expiry. So given that the expiry is on 5<sup>th</sup>, one has to express his intent to take delivery anytime on or before the 4<sup>th</sup> (1<sup>st</sup>, 2<sup>nd</sup>, 3<sup>rd</sup>, 4<sup>th</sup>).</p>
+<p>If you are trading with Zerodha then do note, we do not allow you to get into the physical delivery of commodities. So you will be forced to close the position before 1<sup>st</sup> of the expiry month. In fact, I personally prefer to close the positions early on and not really get into the physical delivery of commodities.</p>
+<p>For all practical purposes, if you know these things about the Gold contract, you pretty much know what is really required before you trade the big Gold contract.</p>
+<p>We will now move on to know the other variants of gold that gets traded on the exchange.</p>
+<h2>7.3 – The other contracts (Gold Mini, Gold Guinea, Gold Petal)</h2>
+<p>The big gold contract, as you realize demands a heavy margin requirement in terms of Rupee value. This prevents a lot of traders from trading the big gold contract, and perhaps this is the reason the exchanges introduced contracts with much lesser margin requirement.</p>
+<p>The other gold contracts that are available to trade is –</p>
+<ul>
+<li>Gold Mini</li>
+<li>Gold Guinea</li>
+<li>Gold Petal</li>
+</ul>
+<p>The details for the other gold contracts are as follows –</p>
+<table>
+<tbody>
+<tr>
+<th width="54"></th>
+<th width="68"><strong>Price Quote</strong></th>
+<th width="59"><strong>Lot Size</strong></th>
+<th width="53"><strong>Tick Size</strong></th>
+<th width="50"><strong>P&amp;L/tick</strong></th>
+<th width="45"><strong>Expiry </strong></th>
+<th width="77"><strong>Delivery Logic</strong></th>
+<th width="73"><strong>Delivery Unit</strong></th>
+</tr>
+<tr>
+<td width="54"><strong>Gold Mini</strong></td>
+<td width="68">Rs. per 10 gm</td>
+<td width="59">100 gm</td>
+<td width="53">1 rupee</td>
+<td width="50">Rs.10</td>
+<td width="45">5<sup>th</sup> day</td>
+<td width="77">Compulsory</td>
+<td width="73">100 gm</td>
+</tr>
+<tr>
+<td width="54"><strong>Gold Guinea</strong></td>
+<td width="68">Rs. per &nbsp;8 gm</td>
+<td width="59">8 gm</td>
+<td width="53">1 Rupee</td>
+<td width="50">Rs.1</td>
+<td width="45">Last day</td>
+<td width="77">Compulsory</td>
+<td width="73">8 gm</td>
+</tr>
+<tr>
+<td width="54"><strong>Gold Petal</strong></td>
+<td width="68">Rs. per &nbsp;1 gm</td>
+<td width="59">1 gm</td>
+<td width="53">1 Rupee</td>
+<td width="50">Rs.1</td>
+<td width="45">Last day</td>
+<td width="77">Compulsory</td>
+<td width="73">8 gm</td>
+</tr>
+</tbody>
+</table>
+<p>I’m assuming the table above is a lot easier to understand now considering we have discussed these details earlier. Let’s dig straight into the margin details.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/08/Image-4_gold-margins.png"><img alt="Image 4_gold margins" class="aligncenter wp-image-3830" height="193" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/08/Image-4_gold-margins.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-4_gold-margins.png 864w, https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-4_gold-margins-300x72.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/08/Image-4_gold-margins-768x185.png 768w" width="800"/></a></p>
+<p>As you can see, Gold Mini (GoldM) contract requires a margin of Rs.15,682/-. In terms of percentage –</p>
+<p>= Margin / Contract Value</p>
+<p>Contract Value = (Price * Lot size)/Price Quotation</p>
+<p>= (31365 * 100)/10</p>
+<p>= Rs.313,650</p>
+<p>=15682/313650</p>
+<p>= <strong>5%</strong></p>
+<p>In terms of margin percentage, this is roughly the same as big Gold. For the sake of completeness let us quickly calculate the P&amp;L per tick for Gold Mini. We know –</p>
+<p><strong>P&amp;L per tick = (Lot Size / Quotation) * Tick Size</strong></p>
+<p>= (100/10)*1</p>
+<p>= Rs.10/- per tick.</p>
+<p>Beyond the Gold Mini contract, we have Gold Guinea and Gold Petal contract. These are extremely tiny contracts which demand a shallow margin, as low as Rs.1251 (Gold Guinea) and Rs.154 (Gold Petal). The lot size is small, and therefore the contract value is small as well. You will find a few variants like Gold Petal (Delhi), Gold Guinea (Ahmadabad) etc., and I would suggest you ignore these, especially if your idea is to trade Gold.</p>
+<p>Here is my honest opinion – if you are trading Gold stick to either the Big Gold contract or the Gold Mini contract, simply because the liquidity is quite bad in all the other contracts. To give you a perspective on liquidity on a regular trading day (on MCX) –</p>
+<ul>
+<li>12 – 13K lots of big gold contracts get traded</li>
+<li>14-15K lots of Gold mini contracts get traded</li>
+<li>1-1.5K lots of Gold Guinea contracts get traded</li>
+<li>8-9K lots of Gold Petal contracts get traded</li>
+</ul>
+<p>The number of lots in Gold Petal should not entice you to believe that the liquidity is high, do remember Gold Petal lot size is just 8 grams, and therefore 8-9K lots translates to roughly 2-2.5 Crs.</p>
+<p>Another important thing to note – liquidity is highest in the nearest month contract, so always stick to these. The thumb rule here is – farther the contract expiry, lower is the liquidity.</p>
+<p>With this, I assume you are familiar with the Gold contracts and logistics. In the next chapter, we will discuss a few interesting topics such as the parity in domestic and International gold contracts, factors influencing Gold, the relationship between gold, equities, and dollar etc.</p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>Gold is one of the most popular bullion contracts that gets traded on MCX.</li>
+<li>The gold contract comes in a few variants – Big Gold, Gold Mini, Gold Guinea, and Gold Petal.</li>
+<li>Big Gold is the most popular contract, but requires a margin over Rs.1,25,000/-.</li>
+<li>The P&amp;L per tick for the big Gold is Rs.100.</li>
+<li>P&amp;L per tick can be calculated as = (Lot Size / Quotation) * Tick Size.</li>
+<li>Gold Mini is the 2<sup>nd</sup> most popular Gold contract, requires a margin of roughly 15K.</li>
+<li>Gold Petal and Guinea are other variants demanding much lower margin requirement. However, the liquidity in these contracts is quite low.</li>
+<li>It is always a good idea to stick to the nearest month contract as liquidity is high in these contracts.</li>
+<li>Delivery is compulsory for all these contracts; therefore, it makes sense to close these contracts at least 4 days before the expiry of the contract.</li>
+</ol>
+<div class="clear"> </div>
+</div>

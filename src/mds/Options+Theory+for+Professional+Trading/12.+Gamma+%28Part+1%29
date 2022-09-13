@@ -1,0 +1,111 @@
+<div class="post">
+<h2>12.1 – The other side of the mountain</h2>
+<p>How many of you remember your high school calculus? Does the word differentiation and integration ring a bell? The word ‘Derivatives’ meant something else to all&nbsp; of us back then – it simply referred to solving lengthy differentiation and integration problems.</p>
+<p>Let me attempt to refresh your memory – the idea here is to just drive a certain point across and not really get into the technicalities of solving a calculus problem. Please note, the following discussion is very relevant to options, so please do read on.</p>
+<p>Consider this –</p>
+<p>A car is set into motion; it starts from 0 kms travels for 10 minutes and reaches the 3<sup>rd</sup> kilometer mark. From the 3<sup>rd</sup> kilometer mark, the car travels for another 5 minutes and reaches the 7<sup>th</sup> kilometer mark.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/06/Ch12-diagram-1.png"><img alt="Ch12-diagram-1" class="aligncenter size-full wp-image-2096" height="80" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2015/06/Ch12-diagram-1.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/06/Ch12-diagram-1.png 800w, https://zerodha.com/varsity/wp-content/uploads/2015/06/Ch12-diagram-1-300x30.png 300w" width="800"/></a></p>
+<p>Let us focus and note what really happens between the <strong>3<sup>rd</sup> and 7<sup>th</sup> kilometer</strong>, –</p>
+<ol>
+<li>Let ‘x’ = distance, and ‘dx’ the change in distance</li>
+<li>Change in distance i.e. ‘dx’, is 4 (7 – 3)</li>
+<li>Let ‘t’ = time, and ‘dt’ the change in time</li>
+<li>Change in time i.e. ‘dt’, is 5 (15 – 10)</li>
+</ol>
+<p>If we divide <strong>dx over dt</strong> i.e. change in distance over change in time we get ‘Velocity’ (V)!</p>
+<p>V = dx / dt</p>
+<p>= 4/5</p>
+<p>This means the car is travelling 4Kms for every 5 Minutes. Here the velocity is being expressed in Kms travelled per minute, clearly this is not a convention we use in our day to day conversation as we are used to express speed or velocity in Kms travelled per hour (KMPH).</p>
+<p>We can convert 4/5 to KMPH by making a simple mathematical adjustment –</p>
+<p>5 minutes when expressed in hours equals 5/60 hours, plugging this back in the above equation</p>
+<p>= 4 / (5/ 60)</p>
+<p>= (4*60)/5</p>
+<p>= 48 Kmph</p>
+<p>Hence the car is moving at a velocity of 48 kmph (kilometers per hour).</p>
+<p>Do remember Velocity is <strong>change in distance travelled divided over change in time</strong>. In the calculus world, the Speed or Velocity is called the ‘<strong>1<sup>st</sup> order derivative</strong>’ of distance travelled.</p>
+<p>Now, let us take this example forward – In the 1<sup>st</sup> leg of the journey the car reached the 7<sup>th</sup> Kilometer after 15 minutes. Further assume in the 2<sup>nd</sup> leg of journey, starting from the 7<sup>th</sup> kilometer mark the car travels for another 5 minutes and reaches the 15<sup>th</sup> kilometer mark.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/06/Ch12-diagram-2.png"><img alt="Ch12-diagram-2" class="aligncenter size-full wp-image-2097" height="80" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2015/06/Ch12-diagram-2.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/06/Ch12-diagram-2.png 800w, https://zerodha.com/varsity/wp-content/uploads/2015/06/Ch12-diagram-2-300x30.png 300w" width="800"/></a></p>
+<p>We know the velocity of the car in the first leg was 48 kmph, and we can easily calculate the velocity for the 2<sup>nd</sup> leg of the journey as 96 kmph (here dx = 8 and dt = 5).</p>
+<p>It is quite obvious that the car travelled twice as fast in the 2<sup>nd</sup> leg of the journey.</p>
+<p>Let us call the change in velocity as ‘dv’. Change in velocity as we know is also called ‘Acceleration’.</p>
+<p>We know the change in velocity is</p>
+<p>= 96KMPH – 48 KMPH</p>
+<p>= 48 KMPH /??</p>
+<p>The above answer suggests that the change in velocity is 48 KMPH…. but over what? Confusing right?</p>
+<p>Let me explain –</p>
+<p>** <em>The following explanation may seem like a digression from the main topic about Gamma, but it is not, so please read on, if not for anything it will refresh your high school physics ☺</em> **</p>
+<p>When you want to buy a new car, the first thing the sales guy tells you is something like this – “the car is really fast as it can accelerate 0 to 60 in 5 seconds”. Essentially he is telling you that the car can change velocity from 0 KMPH (from the state of complete rest) to 60 KMPH in 5 seconds. Change in velocity here is 60KMPH (60 – 0) <strong>over 5 seconds</strong>.</p>
+<p>Likewise in the above example we know the change in velocity is 48KMPH but over what? Unless we answer “over what” part, we would not know what the acceleration really is.</p>
+<p>To find out the acceleration in this particular case, we can make some assumptions –</p>
+<ol>
+<li>Acceleration is constant</li>
+<li>We can ignore the 7<sup>th</sup> kilometer mark for time being – hence we consider the fact that the car was at 3<sup>rd</sup> kilometer mark at the 10<sup>th</sup> minute and it reached the 15<sup>th</sup> kilometer mark at the 20<sup>th</sup> minute</li>
+</ol>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/06/Ch12-diagram-3.png"><img alt="Ch12-diagram-3" class="aligncenter size-full wp-image-2098" height="80" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2015/06/Ch12-diagram-3.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/06/Ch12-diagram-3.png 800w, https://zerodha.com/varsity/wp-content/uploads/2015/06/Ch12-diagram-3-300x30.png 300w" width="800"/></a></p>
+<p>Using the above information, we can further deduce more information (in the calculus world, these are called the ‘initial conditions’).</p>
+<ul>
+<li>Velocity @ the 10<sup>th</sup> minute (or 3<sup>rd</sup> kilometer mark) = 0 KMPS. This is called the initial velocity</li>
+<li>Time lapsed @ the 3<sup>rd</sup> kilometer mark = 10 minutes</li>
+<li>Acceleration is constant between the 3<sup>rd</sup> and 15<sup>th</sup> kilometer mark</li>
+<li>Time at 15<sup>th</sup> kilometer mark = 20 minutes</li>
+<li>Velocity @ 20<sup>th</sup> minute (or 15<sup>th</sup> kilometer marks) is called ‘Final Velocity”</li>
+<li>While we know the initial velocity was 0 kmph, we do not know the final velocity</li>
+<li>Total distance travelled = 15 – 3 = 12 kms</li>
+<li>Total driving time = 20 -10 = 10 minutes</li>
+<li>Average speed (velocity) = 12/10 = 1.2 kmps per minute or in terms of hours it would be 72 kmph</li>
+</ul>
+<p>Now think about this, we know –</p>
+<ul>
+<li>Initial velocity = 0 kmph</li>
+<li>Average velocity = 72 kmph</li>
+<li>Final velocity =??</li>
+</ul>
+<p>By reverse engineering we know the final velocity should be 144 Kmph as the average of 0 and 144 is 72.</p>
+<p>Further we know acceleration is calculated as = Final Velocity / time (provided acceleration is constant).</p>
+<p>Hence the acceleration is –</p>
+<p>= 144 kmph / 10 minutes</p>
+<p>10 minutes when converted to hours is (10/60) hours, plugging this back in the above equation</p>
+<p>= 144 kmph / (10/60) hour</p>
+<p>= 864 Kilometers <strong>per hour. </strong></p>
+<p>This means the car is gaining a speed of 864 kilometers every hour, and if a salesman is selling you this car, he would say the car can accelerate 0 to 72kmph in 5 secs (I’ll let you do this math).</p>
+<p>We simplified this problem a great deal by making one assumption – acceleration is constant. However in reality acceleration is not constant, you accelerate at different speeds for obvious reasons. Generally speaking, to calculate such problems <strong>involving change in one variable due to the change in another variable</strong> one would have to dig into derivative calculus, more precisely one needs to use the concept of ‘differential equations’.</p>
+<p>Now just think about this for a moment –</p>
+<p>We know change in distance travelled (position) = Velocity, this is also called the 1<sup>st</sup> order derivative of distance position.</p>
+<p>Change in Velocity = Acceleration</p>
+<p>Acceleration = Change in Velocity over time, which is in turn the change in position over time.</p>
+<p>Hence it is apt to call Acceleration as the 2<sup>nd</sup> order derivative of the position or the 1<sup>st</sup> derivative of Velocity!</p>
+<p>Keep this point about the 1<sup>st</sup> order derivative and 2<sup>nd</sup> order derivative in perspective as we now proceed to understand the Gamma.</p>
+<p><img alt="M5-Ch12-title" class="aligncenter size-full wp-image-2099" height="240" loading="lazy" sizes="(max-width: 600px) 100vw, 600px" src="http://zerodha.com/varsity/wp-content/uploads/2015/06/M5-Ch12-title.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/06/M5-Ch12-title.png 600w, https://zerodha.com/varsity/wp-content/uploads/2015/06/M5-Ch12-title-300x120.png 300w" width="600"/></p>
+<h2>12.2 – Drawing Parallels</h2>
+<p>Over the last few chapters we understood how Delta of an option works. Delta as we know represents the change in premium for the given change in the underlying price.</p>
+<p>For example if the Nifty spot value is 8000, then we know the 8200 CE option is OTM, hence its delta could be a value between 0 and 0.5. Let us fix this to 0.2 for the sake of this discussion.</p>
+<p>Assume Nifty spot jumps 300 points in a single day, this means the 8200 CE is no longer an OTM option, rather it becomes slightly ITM option and therefore by virtue of this jump in spot value, the delta of 8200 CE will no longer be 0.2, it would be somewhere between 0.5 and 1.0, let us assume 0.8.</p>
+<p>With this change in underlying, one thing is very clear – <strong>the delta itself changes</strong>. Meaning delta is a variable, whose value changes based on the changes in the underlying and the premium! If you notice, Delta is very similar to velocity whose value changes with change in time and the distance travelled.</p>
+<p>The Gamma of an option measures this change in delta for the given change in the underlying. In other words Gamma of an option helps us answer this question – “For a given change in the underlying, what will be the corresponding change in the delta of the option?”</p>
+<p>Now, let us re-plug the velocity and acceleration example and draw some parallels to Delta and Gamma.</p>
+<p><strong style="background-color: #ffaf59;">1<sup>st</sup> order Derivative</strong></p>
+<ul>
+<li>Change in distance travelled (position) with respect to change in time is captured by velocity, and velocity is called the 1<sup>st</sup> order derivative of position</li>
+<li>Change in premium with respect to change in underlying is captured by delta, and hence delta is called the 1<sup>st</sup> order derivative of the premium</li>
+</ul>
+<p><strong style="background-color: #ffaf59;">2<sup>nd</sup> order Derivative</strong></p>
+<ul>
+<li>Change in velocity with respect to change in time is captured by acceleration, and acceleration is called the 2<sup>nd</sup> order derivative of position</li>
+<li>Change in delta is with respect to change in the underlying value is captured by Gamma, hence Gamma is called the 2<sup>nd</sup> order derivative of the premium</li>
+</ul>
+<p>As you can imagine, calculating the values of Delta and Gamma (and in fact all other Option Greeks) involves number crunching and heavy use of calculus (differential equations and stochastic calculus).</p>
+<p>Here is a trivia for you – as we know, derivatives are called derivatives because the derivative contracts derives its value based on the value of its respective underlying.</p>
+<p>This value that the derivatives contracts derive from its respective underlying is measured using the application of “Derivatives” as a mathematical concept, hence the reason why Futures &amp; Options are referred to as ‘Derivatives’ ☺.</p>
+<p>You may be interested to know there is a parallel trading universe out there where traders apply derivative calculus to find trading opportunities day in and day out. In the trading world, such traders are generally called ‘Quants’, quite a fancy nomenclature I must say. Quantitative trading is what really exists on the other side of this mountain called ‘Markets’.</p>
+<p>From my experience, understanding the 2<sup>nd</sup> order derivative such as Gamma is not an easy task, although we will try and simplify it as much as possible in the subsequent chapters.</p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>Financial derivatives are called Financial derivatives because of its dependence on calculus and differential equations (generally called Derivatives)</li>
+<li>Delta of an option is a variable and changes for every change in the underlying and premium</li>
+<li>Gamma captures the rate of change of delta, it helps us get an answer for a question such as “What is the expected value of delta for a given change in underlying”</li>
+<li>Delta is the 1<sup>st</sup> order derivative of premium</li>
+<li>Gamma is the 2<sup>nd</sup> order derivative of premium</li>
+</ol>
+<div class="clear"> </div>
+</div>

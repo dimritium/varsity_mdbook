@@ -1,0 +1,100 @@
+<div class="post">
+<h2>6.1 – A quick recap</h2>
+<p>I think a quick recap is justified at this stage, this is to ensure we are all on the same page. I’d strongly recommend you read through the recap, to ensure we are on track. I’ll keep this as a pointwise recap to ensure we don’t digress.</p>
+<ul>
+<li>Two companies are comparable if they have similar business background</li>
+<li>Business background includes factors which influence the day to day running of the business</li>
+<li>If two companies have similar business backgrounds, then it is reasonably safe to assume that their share prices move somewhat similarly on a day to day basis</li>
+<li>If the daily stock price of two comparable companies move together (and therefore their daily returns), then they do tend to have a tight correlation</li>
+<li>There are times when a local event can change the course of the movement in the stock price of one of the two companies, creating a pair trading opportunity</li>
+<li>The relationship between the stock prices of the two companies can be estimated by any of the three variables – spread, differential, or ratio</li>
+<li>The variables are expected to be normally distributed, hence we calculate the standard deviation of these variables, along with the basic descriptive statistics such as the mean, median, and mode.</li>
+<li>As a ready reckoner, we also have the standard deviation (SD) table, extending up to the 3<sup>rd</sup> SD, either sides</li>
+<li>Lastly, do remember we are in the process of discussing two variants of pair trading, starting with Paul Whistler’s technique of Pair Trading. After this, I will discuss a slightly more complicated version of Pair Trading</li>
+</ul>
+<p>So this brings us to where we are at this stage. In this chapter, we will go ahead and discuss the density curve and the eventual trigger to pair trade.</p>
+<h2>6.2 – Selecting the variable</h2>
+<p>We have come to a stage where we need to stick to one of the variables amongst Spread, Differential, and Ratio. Why just and why not all, you may ask?</p>
+<p>Well, this is to ensure that we are sticking to a regime and not really getting confused with conflicting signals. The reason I’ve introduced all three variables is to showcase that there are three different possibilities. It is up to you as a trader to choose the variable that you are most comfortable with. For example, I personally prefer the ratio over the differential or spread. This is because the ratio kind of captures the market valuation of the stocks since it considers the latest stock price. Besides the ratio also gives us a quick sense of how much of Stock 1 should be bought or sold with respect to stock 2.</p>
+<p>For example, if the price of Stock 1 is 190 and Stock 2 is 80, then the ratio of stock 1 over 2 is –</p>
+<p>190/80</p>
+<p>= 2.375</p>
+<p>This implies for every 1 share of Stock 1, 2.375 shares of Stock 2 has to be transacted. &nbsp;We will get to the finer details later, but for now, hope you get the drift.</p>
+<p>You are of course, free to choose any of the variable – spread, differential, or ratio. However, for the sake of this discussion, I will go ahead with the ratio.</p>
+<h2>6.3 – The trade trigger</h2>
+<p>As the name suggests, the pair consists of two stock. Until now, we have not defined how to buy or sell a pair, we will do that later in this chapter. For now, assume that you can buy or sell a pair just like the way you can buy or sell a single stock.</p>
+<p>As you may have guessed, the decision to buy or sell a pair is dependent on the variable that you track and the variable itself could be the spread, differential, or ratio. For the purpose of this discussion, we are going ahead with the Ratio.</p>
+<p>Think about it this way – the stock prices change every day, therefore the ratio of the pair itself changes every day. On most of the days, the daily change in the ratio falls within the expected range. However, there could be days when the daily change goes beyond the expected range. These are the days when a pair trading opportunity arises.</p>
+<p>Have a look at the chart below –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/01/Image-1_Ratio-daily-change.png"><img alt="" class="aligncenter wp-image-4680" height="230" sizes="(max-width: 389px) 100vw, 389px" src="https://zerodha.com/varsity/wp-content/uploads/2018/01/Image-1_Ratio-daily-change.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/01/Image-1_Ratio-daily-change.png 481w, https://zerodha.com/varsity/wp-content/uploads/2018/01/Image-1_Ratio-daily-change-300x178.png 300w" width="389"/></a></p>
+<p>Casual eyeballing reveals two obvious information –</p>
+<ol>
+<li>The ratio chart hovers around 1.8 and 2 – probably the ratio’s mean is around this price. I’ve highlighted this with a green line. I’d suggest you check the mean value of the ratio we calculated in the earlier chapters.</li>
+<li>On most of the days, the ratio hovers above or below the mean value</li>
+</ol>
+<p>I want you to pause here and think about this. This is the tipping point in Pair trading, if you can understand everything we have discussed up to now, then the rest is a cakewalk.</p>
+<p>The ratio itself is a variable which is derived by dividing stock 1 over stock 2. The ratio changes every day since the stock prices change every day. If you plot the chart of the daily change in the ratio you will notice that the ratio has an average (mean) value and the ratio trades above and below the mean value. Irrespective of where the ratio is today (i.e either above or below the mean) – there is a great chance that ratio will come back to mean over the next few days. Notice, I use the word ‘great chance’, here. This means, that we should be able to quantify the probability of the ratio reverting to mean.</p>
+<p>In fact, this phenomenon is referred to as ‘Mean reversion’ or reversion to mean.</p>
+<p>I’ve circled (in red) two points in the chart where the ratio has deviated away from the mean. The first circle from the left indicates a point where the ratio has deviated higher than the mean value. The 2<sup>nd</sup> circle from the left indicates a point where the ratio has deviated below the mean value. In both these cases, eventually, the ratio reverted to mean.</p>
+<p>Now, if you look at it in another way – we now seem to have an opinion on the direction in which the ratio is likely will move. For example, the first circle where the ratio has moved above the average indicates that the ratio is likely to retrace back to mean.&nbsp; Or in other words, you can short the ratio at the high point and buy it back around the mean. Likewise, the second circle points to an opportunity where one can buy the ratio, with an expectation that the ratio will move back to the average value.</p>
+<p>Think about the ratio as a stock or futures. Since the directional movement of the ratio is predictable, we can as well place bets on the directional movement of the ratio itself.</p>
+<p>I hope you are getting the point here.</p>
+<p>The ratio’s value with respect to the mean acts as a key trigger to initiate the trade. If the ratio is –</p>
+<ul>
+<li>Above the mean, the expectation is that the ratio will revert to mean, hence short the ratio</li>
+<li>Below the mean, the expectation is that the ratio will scale back to the mean and hence go long on the ratio</li>
+</ul>
+<p>Alright – so far so good. Here are few questions though –</p>
+<ol>
+<li>The ratio is always above or below the mean value – does this imply there is always a trading opportunity?</li>
+<li>There are multiple points where the ratio seemed to have bottomed out or peaked, how do we know the exact point at which the trade has to be initiated?</li>
+</ol>
+<p>The answers to these questions lie in something called as the ‘Density Curve’. Let’s figure that out.</p>
+<h2>6.3 – The Density Curve</h2>
+<p>Have a look at the chart below –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/01/Image-2_DC.png"><img alt="" class="aligncenter wp-image-4681" height="263" loading="lazy" sizes="(max-width: 445px) 100vw, 445px" src="https://zerodha.com/varsity/wp-content/uploads/2018/01/Image-2_DC.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/01/Image-2_DC.png 735w, https://zerodha.com/varsity/wp-content/uploads/2018/01/Image-2_DC-300x177.png 300w" width="445"/></a></p>
+<p>I’ve highlighted 4 points on the chart, at all these points, the ratio has traded above the mean. Assume, you were looking at this chart around the time the first circle is marked. Now, just because the ratio has shot up above the mean, would you take the trade? In fact, the same question can be asked every time the ratio has traded above (or below) the mean.</p>
+<p>I’m sure you’d agree that this would be a great idea. We need to observe the ratio closely and initiate a trade only when the chance of mean reversion is very high. Or in other words, we need to initiate a trade only when we are reasonably certain that the ratio will slide down to the mean value, <strong>as quickly as possible</strong>.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/01/M10C6-Cartoon-1.png"><img alt="" class="aligncenter wp-image-4686" height="353" loading="lazy" sizes="(max-width: 530px) 100vw, 530px" src="https://zerodha.com/varsity/wp-content/uploads/2018/01/M10C6-Cartoon-1.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/01/M10C6-Cartoon-1.png 600w, https://zerodha.com/varsity/wp-content/uploads/2018/01/M10C6-Cartoon-1-300x200.png 300w" width="530"/></a></p>
+<p>To put the point across – this is pretty much like a tiger waiting in the ambush to hunt down a prey. Just because the prey is in the open, the tiger will not jump and ruin its chances of a kill. It will attack only when it is convinced that the effort will lead to a kill.</p>
+<p>So how do we stay in the ambush and wait for our chance for the kill?</p>
+<p>Well, we seek refuge in the good old Normal distribution and its properties. I’m hoping you are aware of normal distribution and its properties by now.&nbsp; Here is a quick recap, I’d suggest you read the complete theory, I’ve discussed this across various chapters in Varsity –</p>
+<ul>
+<li>Within the 1<sup>st</sup> standard deviation (SD) one can observe 68% of the data</li>
+<li>Within the 2<sup>nd</sup> standard deviation one can observe 95% of the data</li>
+<li>Within the 3<sup>rd</sup> standard deviation one can observe 99.7% of the data</li>
+</ul>
+<p>So here is what this means with respect to the ratio –</p>
+<ul>
+<li>The ratio, irrespective of where it stands with reference to the mean, has a standard deviation value. For example – it could be just a few points away from the mean and this could translate to say, 0.5 standard deviations from mean</li>
+<li>If the ratio deviates to the 2<sup>nd</sup> standard deviation, then according to the normal distribution properties, there is only 5% chance of it going higher or in a very loose sense, it poses a 95% chance of reverting to mean.</li>
+<li>Likewise, if the ratio deviates to the 3<sup>rd</sup> standard deviation, then it only has a 0.3% chance of drifting higher or in a very loose sense, it poses a 99.7% chance of reverting to mean</li>
+</ul>
+<p>So at every SD, we can estimate the likelihood of the ratio reverting to mean. This means we can filter out opportunities and initiate a trade only at points where the likelihood of success is high.</p>
+<p>This further leads to an interesting take – the key trigger to initiate a trade is not just based on where the ratio is, but also depended on its standard deviation. Given this, it makes sense to directly track the daily standard deviation of the ratio as opposed to the ratio itself.</p>
+<p>This can be achieved by tracking the ‘Density Curve’ of the ratio. The density curve is a non-negative value which lies anywhere between 0 and 1. I’d suggest you <strong><a href="https://www.khanacademy.org/math/ap-statistics/density-curves-normal-distribution-ap/density-curves/v/density-curves" rel="noopener" target="_blank">watch this video</a></strong> on Khan Academy to learn more about <strong><a href="https://www.khanacademy.org/math/ap-statistics/density-curves-normal-distribution-ap/density-curves/v/density-curves" rel="noopener" target="_blank">Density Curve</a>.</strong></p>
+<p>Calculating the density curve on excel is quite straightforward. Here is how you can do this, have a look at the image below –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/01/Image-3_DC.png"><img alt="" class="aligncenter wp-image-4682" height="300" loading="lazy" sizes="(max-width: 470px) 100vw, 470px" src="https://zerodha.com/varsity/wp-content/uploads/2018/01/Image-3_DC.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/01/Image-3_DC.png 729w, https://zerodha.com/varsity/wp-content/uploads/2018/01/Image-3_DC-300x192.png 300w" width="470"/></a></p>
+<p>You can use the inbuilt excel function called Norm.dist for this. The function requires 4 inputs –</p>
+<ul>
+<li>X – this is the daily ratio value</li>
+<li>Mean – this is the mean or average value of the ratio</li>
+<li>Standard Deviation – this is the standard deviation of the ratio</li>
+<li>Cumulative – You have to select true or false, select the default value as true.</li>
+</ul>
+<p>I’ve calculated the density curve value for all variables, here is how the table looks –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/01/Image-4_DCall.png"><img alt="" class="aligncenter wp-image-4683" height="326" loading="lazy" sizes="(max-width: 327px) 100vw, 327px" src="https://zerodha.com/varsity/wp-content/uploads/2018/01/Image-4_DCall.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/01/Image-4_DCall.png 464w, https://zerodha.com/varsity/wp-content/uploads/2018/01/Image-4_DCall-150x150.png 150w, https://zerodha.com/varsity/wp-content/uploads/2018/01/Image-4_DCall-300x300.png 300w" width="327"/></a></p>
+<p>I guess we could break this chapter at this point. In the next chapter, we will look into details on how we can use the density curve to trigger long and short pair trade.</p>
+<p><strong><a href="https://zerodha.com/varsity/wp-content/uploads/2018/01/Chapter-6_Density-Curve.xlsx">Download</a></strong> the excel sheet used in this chapter.</p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ul>
+<li>Ratio as a variable is more versatile as it captures the valuation elements of the stock</li>
+<li>The ratio tends to trade above or below its mean value</li>
+<li>The idea is the ratio, when it deviates away from the mean, will also tend to revert to mean</li>
+<li>At every point at which the ratio deviates, we can measure the probability of its reversion to mean</li>
+<li>The above point can be measured by normal distribution</li>
+<li>The density curve is a non-negative value which varies between 0 and 1. This can be easily calculated on MS Excel by using an in build function.</li>
+</ul>
+<div class="clear"> </div>
+</div>

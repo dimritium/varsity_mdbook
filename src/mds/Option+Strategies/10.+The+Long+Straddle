@@ -1,0 +1,128 @@
+<div class="post">
+<h2>10.1 – The directional dilemma</h2>
+<p>How many times have you been in a situation wherein you take a trade after much conviction, either long or short and right after you initiate the trade the market moves just the other way round? All your strategy, planning, efforts, and capital go for a toss. I’m certain this is one situation all of us have been in. In fact this is one of the reasons why most professional traders go beyond the regular directional bets and set up strategies which are insulated against the unpredictable market direction.</p>
+<p>Strategies whose profitability does not really depend on the market direction are called “Market Neutral” or “Delta Neutral” strategies. Over the next few chapters we will understand some of the market neutral strategies and how a regular retail trader can execute such strategies. Let us begin with a ‘Long Straddle’. <img alt="M6-C10-Cartoon" class="aligncenter size-full wp-image-3206" height="400" sizes="(max-width: 600px) 100vw, 600px" src="http://zerodha.com/varsity/wp-content/uploads/2016/03/M6-C10-Cartoon.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/03/M6-C10-Cartoon.png 600w, https://zerodha.com/varsity/wp-content/uploads/2016/03/M6-C10-Cartoon-300x200.png 300w" width="600"/></p>
+<h2>10.2 – Long Straddle</h2>
+<p>Long straddle is perhaps the simplest market neutral strategy to implement. Once implemented, the P&amp;L is not affected by the direction in which the market moves. The market can move in any direction, but it has to move. As long as the market moves (irrespective of its direction), a positive P&amp;L is generated. To implement a long straddle all one has to do is –</p>
+<ol>
+<li>Buy a Call option</li>
+<li>Buy a Put option</li>
+</ol>
+<p>Ensure –</p>
+<ol>
+<li>Both the options belong to the same underlying</li>
+<li>Both the options belong to the same expiry</li>
+<li>Belong to the same strike</li>
+</ol>
+<p>Here is an example which explains the execution of a long straddle and the eventual strategy payoff. As I write this, the market is trading at 7579, which would make the strike 7600 ‘At the money’. Long straddle would require us to simultaneously purchase the ATM call and put options. <a href="http://zerodha.com/varsity/wp-content/uploads/2016/03/Image-1_Setup.png" rel="attachment wp-att-3202"><img alt="Image 1_Setup" class="aligncenter wp-image-3202" height="437" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/03/Image-1_Setup.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/03/Image-1_Setup.png 1001w, https://zerodha.com/varsity/wp-content/uploads/2016/03/Image-1_Setup-300x164.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/03/Image-1_Setup-768x420.png 768w" width="800"/></a> As you can see from the snapshot above, 7600CE is trading at 77 and 7600 PE is trading at 88. The simultaneous purchase of both these options would result in a net debit of Rs.165. The idea here is – the trader is long on both the call and put options belonging to the ATM strike. Hence the trader is not really worried about which direction the market would move.</p>
+<p>If the market goes up, the trader would expect to see gains in Call options far higher than the loss made (read premium paid) on the put option. Similarly, if the market goes down, the gains in the Put option far exceeds the loss on the call option. Hence irrespective of the direction, the gain in one option is good enough to offset the loss in the other and still yield a positive P&amp;L.&nbsp; Hence the market direction here is meaningless. Let us break this down further and evaluate different expiry scenarios.</p>
+<p><strong>Scenario 1 – Market expires at 7200, put option makes money</strong> This is a scenario where the gain in the put option not only offsets the loss made in the call option but also yields a positive P&amp;L over and above. At 7200 –</p>
+<ul>
+<li>7600 CE will expire worthless, hence we lose the premium paid i.e <strong style="color: red;">Rs. 77</strong></li>
+<li>7600 PE will have an intrinsic value of 400. After adjusting for the premium paid i.e Rs.88, we get to retain 400 – 88 = 312</li>
+<li>The net payoff would be 312 – 77 = <strong>+</strong> <strong>235</strong></li>
+</ul>
+<p>As you can see, the gain in put option after adjusting for the premium paid for put option and after adjusting for the premium paid for the call option still yields a positive P&amp;L.</p>
+<p><strong>Scenario 2 – Market expires at 7435 (lower breakeven)</strong> This is a situation where the strategy neither makes money nor loses any money.</p>
+<ul>
+<li>7600 CE would expire worthless; hence the premium paid has to be written off. Loss would be Rs.77</li>
+<li>7600 PE would have an intrinsic value of 165, hence this is the gain in the put option</li>
+<li>However the net premium paid for the call and put option is Rs.165, which gets adjusted with the gain in the put option</li>
+</ul>
+<p>If you think about it, with respect to the ATM strike, market has indeed expired at a lesser value. So therefore the put option makes money. However, the gains made in the put option adjusts itself against the premium paid for both the call and put option, eventually leaving no money on the table.</p>
+<p><strong>Scenario 3 – Market expires at 7600 (at the ATM strike)</strong> At 7600, the situation is quite straight forward as both the call and put option would expire worthless and hence the premium paid would be gone. The loss here would be equivalent to the net premium paid i.e Rs.165.</p>
+<p><strong>Scenario 4 – Market expires at 7765 (upper breakeven)</strong> This is similar to the 2<sup>nd</sup> scenario we discussed. This is a point at which the strategy breaks even at a point higher than the ATM strike.</p>
+<ul>
+<li>7600 CE would have an intrinsic value of 165, hence this is the gain in Call option</li>
+<li>7600 PE would expire worthless, hence the premium paid towards the option is lost</li>
+<li>The gain made in the 7600 CE is offset against the combined premium paid</li>
+</ul>
+<p>Hence the strategy would breakeven at this point.</p>
+<p><strong>Scenario 5 – Market expires at 8000, call option makes money</strong> Clearly the market in this scenario is way above the 7600 ATM mark. The call option premiums would swell, so much so that the gains in call option will more than offset the premiums paid. Let us check the numbers –</p>
+<ul>
+<li>7600 PE will expire worthless, hence the premium paid i.e Rs.88 is to be written off</li>
+<li>At 8000, the 7600 CE will have an intrinsic value of 400</li>
+<li>The net payoff here is 400 – 88 – 77 = <strong>+235</strong></li>
+</ul>
+<p>So as you can see, the gain in call option is significant enough to offset the combined premiums paid. Here is the payoff table at different market expiry levels. <a href="http://zerodha.com/varsity/wp-content/uploads/2016/03/Image-2_payofftable.png" rel="attachment wp-att-3203"><img alt="Image 2_payofftable" class="aligncenter wp-image-3203" height="408" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/03/Image-2_payofftable.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/03/Image-2_payofftable.png 944w, https://zerodha.com/varsity/wp-content/uploads/2016/03/Image-2_payofftable-300x153.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/03/Image-2_payofftable-768x391.png 768w" width="800"/></a> As you can observe –</p>
+<ol>
+<li>The maximum loss (165) occurs at 7600, which is the ATM strike</li>
+<li>The profits are unlimited in either direction of the market</li>
+</ol>
+<p>We can visualize these points in the payoff structure here – <a href="http://zerodha.com/varsity/wp-content/uploads/2016/03/Image-3_Payoff.png" rel="attachment wp-att-3204"><img alt="Image 3_Payoff" class="aligncenter size-full wp-image-3204" height="356" loading="lazy" sizes="(max-width: 576px) 100vw, 576px" src="http://zerodha.com/varsity/wp-content/uploads/2016/03/Image-3_Payoff.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/03/Image-3_Payoff.png 576w, https://zerodha.com/varsity/wp-content/uploads/2016/03/Image-3_Payoff-300x185.png 300w" width="576"/></a> From the V shaped payoff graph, the following things are quite clear –</p>
+<ol>
+<li>With reference to the ATM strike, the strategy makes money in either direction</li>
+<li>Maximum loss is experienced when markets don’t move and stay at ATM
+<ol type="a">
+<li><span style="background-color: yellow;">Max loss = Net premium paid</span></li>
+</ol>
+</li>
+<li>There are two breakevens – on either side, equidistant from ATM
+<ol type="a">
+<li><span style="background-color: yellow;">Upper Breakeven = ATM + Net premium</span></li>
+<li><span style="background-color: yellow;">Lower Breakeven = ATM – Net premium</span></li>
+</ol>
+</li>
+</ol>
+<p>I’m certain, you find this strategy quite straight forward to understand and implement. In summary, you buy calls and puts, each leg has a limited down side, hence the combined position also has a limited downside and an unlimited profit potential. So in essence, a long straddle is like placing a bet on the price action each-way&nbsp; – you make money if the market goes up or down. Hence the direction does not matter here. But let me ask you this – if the direction does not matter, what else matters for this strategy?</p>
+<h2>10.3 – Volatility Matters</h2>
+<p>Yes, volatility matters quite a bit when you implement the straddle. I would not be exaggerating if I said that volatility makes or breaks the straddle. Hence a fair assessment on volatility serves as the backbone for the straddle’s success. Have a look at this graph below – <a href="http://zerodha.com/varsity/wp-content/uploads/2016/03/Image-4_volatility.png" rel="attachment wp-att-3205"><img alt="Image 4_volatility" class="aligncenter wp-image-3205" height="370" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/03/Image-4_volatility.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/03/Image-4_volatility.png 866w, https://zerodha.com/varsity/wp-content/uploads/2016/03/Image-4_volatility-300x139.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/03/Image-4_volatility-768x355.png 768w" width="800"/></a> The y-axis represents the cost of the strategy, which is simply the combined premium of both the options and the x-axis represents volatility. The blue, green, and red line represents how the premium increases when the volatility increases given that there is 30, 15, and 5 days to expiry respectively. As you can see, this is a linear graph and irrespective of time to expiry, the strategy cost increases as and when the volatility increases. Likewise the strategy costs decreases when the volatility decreases.</p>
+<p>Have a look at the blue line; it suggests when volatility is 15%, the cost of setting up a long straddle is 160. Remember the cost of a long straddle represents the combined premium required to buy both call and put options. So at 15% volatility it costs Rs.160 to set up the long straddle, however keeping all else equal, when volatility increases to 30% it costs Rs.340 to set up the same long straddle. In other words, you are likely to double your money in the straddle provided –</p>
+<ol>
+<li>You set up the long straddle at the start of the month</li>
+<li>The volatility at the time of setting up the long straddle is relatively low</li>
+<li>After you set up the long straddle, the volatility doubles</li>
+</ol>
+<p>You can make similar observations with the green and red line which represents the ‘price to volatility’ behavior when the time to expiry is 15 and 5 days respectively. Now, this also means you will lose money if you execute the straddle when the volatility is high which starts to decline after you execute the long straddle. <strong>This is an extremely crucial point to remember.</strong> At this point, let us have a quick discussion on the overall strategy’s delta. Since we are long on ATM strike, the delta of both the options is close to 0.5.</p>
+<ul>
+<li>The call option has a delta of + 0.5</li>
+<li>The put option has a delta of – 0.5</li>
+</ul>
+<p>The delta of call option offsets the delta of put option thereby resulting in a net ‘0’ overall delta. Recall, delta shows the direction bias of the position. A +ve delta indicates a bullish bias and a -ve delta indicates a bearish bias. Given this, a 0 delta indicates that there is no bias whatsoever to the direction of the market. So all strategies which have zero deltas are called ‘Delta Neutral’ and Delta Neutral strategies are insulated against the market direction.</p>
+<h2>10.4 – What can go wrong with the straddle?</h2>
+<p>On the face of it a long straddle looks great. Think about it – you get to make money whichever way the market decides to move. All you need is the right volatility estimate. Therefore, what can really go wrong with a straddle? Well, two things come in between you and the profitability of a long straddle –</p>
+<ol>
+<li><strong>Theta Decay</strong> – All else equal, options are depreciating assets and this particularly hurts long positions. The closer you get to expiration, the lesser time value of the option. Time decay accelerates exponentially during the last week before expiration, so you do not want to hold onto out-of-the-money or at-the-money options into the last week and lose premiums rapidly.</li>
+<li><strong>Large breakevens </strong>– Recollect, in the example we discussed earlier, the breakeven points were 165 points away from the ATM strike. The lower breakeven point was 7435 and the upper breakeven was 7765, considering the ATM strike was 7600. In percentage terms, the market has to move 2.2% (either ways) to achieve breakeven.This means that from the time you initiate the straddle, the market or the stock has to move atleast 2.2% either ways for you to start making money…and this move has to happen within a maximum of 30 days. Further if you want to make a profit of atleast 1% on this trade, then we are talking about a 1% move over and above 2.2% on the index. Such large move on the index is quite a challenge in my opinion and I will explain why in the next chapter.</li>
+</ol>
+<p>Keeping the above two points plus the impact on volatility in perspective, we can summarize what really needs to work in your favor for the straddle to be profitable –</p>
+<ol>
+<li>The volatility should be relatively low at the time of strategy execution</li>
+<li>The volatility should increase during the holding period of the strategy</li>
+<li>The market should make a large move – the direction of the move does not matter</li>
+<li>The expected large move is time bound, should happen quickly – well within the expiry</li>
+</ol>
+<p>From my experience trading long straddles, they are profitable when setup around major market events and the impact of such events should exceed over and above what the market expects. Let me explain the ‘event and expectation’ part a bit more, please do read the following carefully. Let us take the Infosys results as an example here.</p>
+<p><strong>Event</strong> – Quarterly results of Infosys</p>
+<p><strong>Expectation</strong> – ‘Muted to flat’ revenue guideline for the coming few quarters.</p>
+<p><strong>Actual Outcome</strong> – As expected Infosys announces ‘muted to flat’ revenue guideline for the coming few quarters. If you were the set up a long straddle in the backdrop of such an event (and its expectation), and eventually the expectation is matched, then chances are that the straddle would fall apart. This is because around major events, volatility tends to increase which tends to drive the premium high.</p>
+<p>So if you are to buy ATM call and put options just around the corner of an event, then you are essentially buying options when the volatility is high. When events are announced and the outcome is known, the volatility drops like a ball, and therefore the premiums. This naturally breaks the straddle down and the trader would lose money owing to the ‘bought at high volatility and sold at low volatility’ phenomena. I’ve noticed this happening over and over again, and unfortunately have seen many traders lose money exactly for this reason.</p>
+<p><strong>Favorable Outcome</strong> – However imagine, instead of ‘muted to flat’ guideline they announce an ‘aggressive’ guideline. This would essentially take the market by surprise and drive premiums much higher, resulting in a profitable straddle trade. This means there is another angle to straddles – your assessment of the event’s outcome should be couple of notches better than the general market’s assessment.</p>
+<p>You cannot setup a straddle with a mediocre assessment of events and its outcome. This may seem like a difficult proposition but you will have to trust me here – few quality years of trading experience will actually get you to assess situations way better than the rest of the market. So, just for clarity, I’d like to repost all the angles which need to be aligned for the straddle to be profitable –</p>
+<ol>
+<li>The volatility should be relatively low at the time of strategy execution</li>
+<li>The volatility should increase during the holding period of the strategy</li>
+<li>The market should make a large move – the direction of the move does not matter</li>
+<li>The expected large move is time bound, should happen quickly – well within the expiry</li>
+<li>Long straddles are to be set around major events, and the outcome of these events to be drastically different from the general market expectation.</li>
+</ol>
+<p>You may be wondering there are far too many points that come in between you and the long straddle’s profitability. But worry not, I’ll share an antidote in the next chapter &nbsp;– The Short Straddle, and why it makes sense.</p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>Strategies which are insulated to market direction are called ‘Market Neutral’ or ‘Delta neutral’</li>
+<li>Market neutral strategies such as long straddle makes money either which way the market moves</li>
+<li>Long straddle requires you to simultaneously buy the ATM Call and Put option. The options should belong to the same underlying, same strike, and same expiry</li>
+<li>By buying the CE and PE – the trader is placing the bet on either direction</li>
+<li>The maximum loss is equal to the net premium paid, and it occurs at the strike at which the long straddle has been initiated</li>
+<li>The upper breakeven is ‘strike + net premium’. The lower breakeven is ‘strike – net premium’</li>
+<li>The deltas in a long straddle adds up to zero</li>
+<li>The volatility should be relatively low at the time of strategy execution</li>
+<li>The volatility should increase during the holding period of the strategy</li>
+<li>The market should make a large move – the direction of the move does not matter</li>
+<li>The expected large move is time bound, should happen quickly – well within the expiry</li>
+<li>Long straddles are to be set around major events, and the outcome of these events to be drastically different from the general market expectation.</li>
+</ol>
+<p style="text-align: center;"><a class="button" href="https://zerodha.com/varsity/wp-content/uploads/2016/03/C10_Long-Straddle.xlsx">Download Bull Call Spread Excel Sheet</a></p>
+<div class="clear"> </div>
+</div>

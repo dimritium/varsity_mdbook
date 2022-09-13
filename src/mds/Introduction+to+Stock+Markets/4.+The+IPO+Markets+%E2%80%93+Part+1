@@ -1,0 +1,347 @@
+<div class="post">
+<h2>4.1 Overview</h2>
+<p>The initial three chapters have set the background on some of the basic market concepts you need to know. It becomes imperative to address a fundamental question at this stage – Why do companies go public?</p>
+<p>A good understanding of this topic lays down a sound foundation for all future topics. We will learn new financial concepts during the course of this chapter.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2014/07/Ch4-title.jpg"><img alt="Ch4-title" class="size-full wp-image-185 aligncenter" height="268" sizes="(max-width: 515px) 100vw, 515px" src="http://zerodha.com/varsity/wp-content/uploads/2014/07/Ch4-title.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2014/07/Ch4-title.jpg 515w, https://zerodha.com/varsity/wp-content/uploads/2014/07/Ch4-title-300x156.jpg 300w" width="515"/></a></p>
+<h2>4.2 Origin of a Business</h2>
+<p>Before we jump ahead to seek an answer as to why companies go public, let us spend some time figuring out a more basic concept – the origins of a typical business. To understand this concept better, we will build a tangible story around it. Let us split this story into several scenes to get a clear understanding of how the business and the funding environment evolve.</p>
+<p>&nbsp;</p>
+<h3 style="text-align: center;">Scene 1 – The Angels</h3>
+<p style="text-align: center;"><img alt="A" class="alignnone size-full wp-image-196" height="94" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2014/07/A.png" width="170"/></p>
+<p>Imagine a budding entrepreneur with a brilliant business idea – to manufacture highly fashionable, organic cotton t-shirts. The designs are unique, has attractive price points, and the best quality cotton is used to make these t-shirts. He is confident that the business will be successful and is enthusiastic about launching the idea into a business.</p>
+<p>As a typical entrepreneur, he is likely to be hit by the typical problem – where would he get the money to fund the idea? Assuming the entrepreneur has no business background, he will not attract any serious investor at the initial stage. Chances are, he would approach his family and friends to pitch the idea and raise some money. He could approach the bank for a loan, but this would not be the best option.</p>
+<p>Let us assume that he pools in his own money and convinces two of his good friends to invest in his business. These two friends are investing in the pre-revenue stage and taking a blind bet on the entrepreneur called the<strong> Angel investors.</strong> Please note, the money from the angels is not a loan; it is actually an investment made by them.</p>
+<p>So let us imagine that the promoter, along with the angels, raises INR 5 Crore in the capital. This initial money that he gets to kick start his business is called<strong> ‘The Seed Fund’</strong>. It is important to note that the seed fund will not sit in the entrepreneur’s (also called the promoter) personal bank account but instead sits in its bank account. Once the seed capital hits the company’s bank account, the money will be referred to as the company’s initial <strong>share capital</strong>.</p>
+<p>In return for the initial seed investment, the original three (promoter plus 2 angels) will be issued share certificates of the company which entitles them to the company.</p>
+<p>The only asset that the company has at this stage is the cash of INR 5 Crs, the company’s value is also INR 5 Crs. This is called the company’s <strong>valuation.</strong></p>
+<p>Issuing shares is quite simple; the company assumes that each share is worth Rs.10 and because there is Rs.5 crore as share capital, there have to be 50 lakh shares with each share worth Rs.10. In this context, Rs.10 is called the ‘Face value’ (FV) of the share. The face value could be any number. If the FV is Rs.5, then the number of shares would be 1 crore, so on and so forth.</p>
+<p>A total of 50 lakh shares is called the <strong>Authorized shares</strong> of the company. These shares have to be allotted amongst the promoter, and two angels plus the company has to retain some amount of shares with itself to be issued in the future.</p>
+<p>So let us assume the promoter retains 40% of the shares, and the two angels get 5% each, and the company retains 50% of the shares. Since the promoter and two angels own 50% of the shares, this allotted portion is called <strong>Issued shares.</strong></p>
+<p>The shareholding pattern of this company would look something like this:</p>
+<table>
+<tbody>
+<tr>
+<th>Sl No</th>
+<th>Name of Share Holder</th>
+<th>No of Shares</th>
+<th>%Holding</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Promoter</td>
+<td>2,000,000</td>
+<td>40%</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Angel 1</td>
+<td>250,000</td>
+<td>05%</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Angel 2</td>
+<td>250,000</td>
+<td>05%</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: center;"><strong>Total</strong></td>
+<td><strong>2,500,000</strong></td>
+<td><strong>50%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Please note the company retains the balance of 50% of the shares totalling 2,500,000 equity shares. These shares are authorized <strong>but not allotted.</strong></p>
+<p>Now backed by a good company structure and a healthy seed fund, the promoter kick starts his business operations. He wants to move cautiously. Hence he decides to open just one small manufacturing unit and one store to retail his product.</p>
+<p>&nbsp;</p>
+<h3 style="text-align: center;">Scene 2 – The Venture Capitalist</h3>
+<p style="text-align: center;"><img alt="V" class="alignnone size-full wp-image-198" height="89" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2014/07/V1.png" width="200"/></p>
+<p>His hard work pays off, and the business starts to pick up. At the end of the first two years of operations, the company starts to break even. The promoter is now no longer a rookie business owner. Instead, he is more knowledgeable about his own business and of course, more confident.</p>
+<p>Backed by his confidence, the promoter now wants to expand his business by adding 1 more manufacturing unit and a few additional retail stores in the city. He chalks out the plan and figures out that the fresh investment needed for his business expansion is INR 7 Crs.</p>
+<p>He is now in a better situation when compared to where he was two years ago. The big difference is the fact that his business is generating revenues. The healthy inflow of revenue validates the business and its offerings. He is now in a situation where he can access reasonably savvy investors for investing in his business. Let us assume he meets one such professional investor who agrees to give him 7 Crs for a 14% stake in his company.</p>
+<p>The investor who typically invests in such an early stage of business is called a <strong>Venture Capitalist (VC),</strong> and the money that the business gets at this stage is called <strong>Series A</strong> funding.</p>
+<p>After the company agrees to allot 14% to the VC from the authorized capital, the shareholding pattern looks like this:</p>
+<table>
+<tbody>
+<tr>
+<th>Sl No</th>
+<th>Name of Share Holder</th>
+<th>No of Shares</th>
+<th>%Holding</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Promoter</td>
+<td>2,000,000</td>
+<td>40%</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Angel 1</td>
+<td>250,000</td>
+<td>05%</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Angel 2</td>
+<td>250,000</td>
+<td>05%</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Venture Capitalist</td>
+<td>700,000</td>
+<td>14%</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: center;"><strong>Total</strong></td>
+<td><strong>3,200,000</strong></td>
+<td><strong>64%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Note, the balance 36% of shares is still retained within the company and has not been issued.</p>
+<p>With the VC’s money coming into the business, an exciting development has taken place. <strong>The VC values the entire business at INR 50 Crs by valuing his 14% stake in the company at INR 7Crs.</strong> With the initial valuation of 5Crs, there is a 10 fold increase in the company’s valuation. This is what a good business plan, validated by a healthy revenue stream, can do to businesses. It works as a perfect recipe for wealth creation.</p>
+<p>With the valuations going up, the investments made by the initial investors will have an impact. The following table summarizes the same…</p>
+<table>
+<tbody>
+<tr>
+<th>Sl No</th>
+<th>Name of Share Holder</th>
+<th>Initial Shareholding</th>
+<th>Initial Valuation</th>
+<th>Shareholding after 2 Yrs</th>
+<th>Valuation after 2 Yrs</th>
+<th>Wealth Created</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Promoter</td>
+<td>40%</td>
+<td>2 Cr</td>
+<td>40%</td>
+<td>20 Cr</td>
+<td>10 times</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Angel 1</td>
+<td>05%</td>
+<td>25 Lakhs</td>
+<td>05%</td>
+<td>2.5 Cr</td>
+<td>10 times</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Angel 2</td>
+<td>05%</td>
+<td>25 Lakhs</td>
+<td>05%</td>
+<td>2.5 Cr</td>
+<td>10 times</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Venture Capitalist</td>
+<td>0%</td>
+<td>-NA-</td>
+<td>14%</td>
+<td>07 Cr</td>
+<td>-NA-</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: center;"><strong>Total</strong></td>
+<td><strong>50%</strong></td>
+<td><strong>2.5 Cr</strong></td>
+<td><strong>64%</strong></td>
+<td><strong>32 Cr</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Going forward with our story, the promoter now has the additional capital he requires for the business. The company gets an additional manufacturing unit and a few more retail outlets in the city as planned. Things are going great; the popularity of the product grows, translating into higher revenues. The management team gets more professional, thereby increasing the operational efficiency, which translates to better profits.</p>
+<p>&nbsp;</p>
+<h3 style="text-align: center;">Scene 3 – The Banker</h3>
+<p style="text-align: center;"><img alt="B" class="alignnone size-full wp-image-199" height="91" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2014/07/B.png" width="165"/></p>
+<p>Three more years pass by, and the company is phenomenally successful. The company decides to have a retail presence in at least 3 more cities. To back the retail presence across three cities, the company also plans to increase the production capacity and hire more resources. Whenever a company plans such expenditure to improve the overall business, the expenditure is called ‘Capital Expenditure’ or simply <strong>‘CAPEX’.</strong></p>
+<p>The management estimates 40Crs towards their CAPEX requirements. How does the company get this money or in other words, how can the company fund its CAPEX requirements?</p>
+<p>There are few options with the company to raise the required funds for their CAPEX:</p>
+<ol>
+<li>The company has made some profits over the last few years; a part of the CAPEX requirement can be funded through the profits. This is also called funding through <strong>internal accruals.</strong></li>
+<li>The company can approach another VC and raise another round of VC funding by allotting shares from the authorized capital – this is called <strong>Series B funding.</strong></li>
+<li>The company can approach a bank and seek a loan. The bank would be happy to tender this loan as the company has been doing fairly well. The loan is also called <strong>‘Debt.’</strong></li>
+</ol>
+<p>The company decides to exercise all three options at its disposal to raise funds for Capex. It ploughs 15Crs from internal accruals, plans a series B – divests 5% equity for a consideration of 10Crs from another VC and raises 15Crs debt from the banker.</p>
+<p>Note, with 10Crs coming in for 5%, the company’s valuation now stands at 200 Crs. Of course, this may seem a bit exaggerated, but then the whole purpose of this story is to drive across the concept!</p>
+<p>The shareholding and valuation look something like this:</p>
+<table>
+<tbody>
+<tr>
+<th>Sl No</th>
+<th>Name of Share Holder</th>
+<th>No of Shares</th>
+<th>%Holding</th>
+<th>Valuation</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Promoter</td>
+<td>2,000,000</td>
+<td>40%</td>
+<td>80 Cr</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Angel 1</td>
+<td>250,000</td>
+<td>05%</td>
+<td>10 Cr</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Angel 2</td>
+<td>250,000</td>
+<td>05%</td>
+<td>10 Cr</td>
+</tr>
+<tr>
+<td>4</td>
+<td>VC Series A</td>
+<td>700,000</td>
+<td>14%</td>
+<td>28 Cr</td>
+</tr>
+<tr>
+<td>5</td>
+<td>VC Series B</td>
+<td>250,000</td>
+<td>05%</td>
+<td>10 Cr</td>
+</tr>
+</tbody>
+</table>
+<p>Note, the company still has 31% of shares not allotted to shareholders now being valued at 62 Crs. Also, I would encourage you to think about the wealth that has been created over the years. This is exactly what happens to entrepreneurs with great business ideas and a highly competent management team.</p>
+<p>Classic real-world examples of such wealth creation stories would be Infosys, Page Industries, Eicher Motors, Titan Industries, and the international space one could think of Google, Facebook, Twitter, Whatsapp, etc.</p>
+<p>&nbsp;</p>
+<h3 style="text-align: center;">Scene 4 – The Private Equity</h3>
+<p><img alt="PE" class="size-full wp-image-201 aligncenter" height="79" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2014/07/PE.png" width="175"/></p>
+<p>A few years pass by, and the company’s success continues to shine on. With the growing success of this 8-year-old, 200 Cr Company, the ambitions are also growing. The company decides to raise the bar and branch out across the country. They also decide to diversify the company by manufacturing and retailing fashion accessories, designer cosmetics and perfumes.</p>
+<p>The CAPEX requirement for the new ambition is now pegged at 60 Crs. The company does not want to raise money through debt because of the interest rate burden, also called the <strong>finance</strong> <strong>charges,</strong> which would eat away the company’s profits.</p>
+<p>They decide to allot shares from the authorized capital for a Series C funding. They cannot approach a typical VC because VC funding is usually small and runs into a few crores. This is when a <strong>Private Equity (PE)</strong> investor comes into the picture.</p>
+<p>PE investors are quite savvy. They are highly qualified and have an excellent professional background. They invest large amounts of money to provide the capital for constructive use and place their own people on the board of the investee company to ensure the company steers in the required direction.</p>
+<p>Assuming they pick up a 15% stake for a consideration of 60Crs, they are now valuing the company at 400Crs. Let’s have a quick look at the shareholding and valuations:</p>
+<table>
+<tbody>
+<tr>
+<th>Sl No</th>
+<th>Name of Share Holder</th>
+<th>No of Shares</th>
+<th>%Holding</th>
+<th>Valuation (in Crs)</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Promoter</td>
+<td>2,000,000</td>
+<td>40%</td>
+<td>160</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Angel 1</td>
+<td>250,000</td>
+<td>05%</td>
+<td>20</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Angel 2</td>
+<td>250,000</td>
+<td>05%</td>
+<td>20</td>
+</tr>
+<tr>
+<td>4</td>
+<td>VC Series A</td>
+<td>700,000</td>
+<td>14%</td>
+<td>56</td>
+</tr>
+<tr>
+<td>5</td>
+<td>VC Series B</td>
+<td>250,000</td>
+<td>05%</td>
+<td>20</td>
+</tr>
+<tr>
+<td>6</td>
+<td>PE Series C</td>
+<td>7,50,000</td>
+<td>15%</td>
+<td>60</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: center;"><strong>Total</strong></td>
+<td><strong>4,450,000</strong></td>
+<td><strong>84%</strong></td>
+<td><strong>336</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Please note, the company has retained a 16% stake which has not been allotted to any shareholder. This portion is valued at 64 Crs.</p>
+<p>Usually, when a PE invests, they invest intending to fund large CAPEX requirements. Besides, they do not invest in the early stage of a business; instead, they prefer to invest in companies that already have a revenue stream, and are in operation for a few years. Deploying the PE capital and utilizing the capital for the CAPEX requirements takes up a few years.</p>
+<p>&nbsp;</p>
+<h3 style="text-align: center;">Scene 5 – The IPO</h3>
+<p style="text-align: center;"><img alt="IPO" class="alignnone size-full wp-image-202" height="58" loading="lazy" src="http://zerodha.com/varsity/wp-content/uploads/2014/07/IPO.png" width="291"/></p>
+<p>5 years after the PE investment, the company has progressed really well. They have successfully diversified their product portfolio and have a presence across all the country’s major cities. Revenues are good, profitability is stable, and the investors are happy. The promoter, however, does not want to settle in for just this.</p>
+<p>The promoter now aspires to go international! He wants his brand to be available across all the major international cities; he wants at least two outlets in each major city across the world.</p>
+<p>This means the company needs to invest in market research to understand what people like in other countries, invest in people, and increase manufacturing capacities. Besides they also need to invest in real estate space across the world.</p>
+<p>This time around the CAPEX requirement is huge, and the management estimates this at 200 Crs. The company has few options to fund the CAPEX requirement.</p>
+<ol>
+<li>Fund Capex from internal accruals</li>
+<li>Raise Series D from another PE fund</li>
+<li>Raise debt from bankers</li>
+<li>Float a bond (this is another form of raising debt)</li>
+<li>File for an Initial Public Offer (IPO) by allotting shares from authorized capital</li>
+<li>A combination of all the above</li>
+</ol>
+<p>For convenience, let us assume the company decides to fund the CAPEX partly through internal accruals and files for an IPO. When a company files for an IPO, they have to offer their shares to the general public. The general public will subscribe to the shares (i.e. if they want to) by paying a certain price. Now, because the company is offering the shares for the first time to the public, it is called the <strong>“Initial Public Offer’</strong>.</p>
+<p>We are now at a very crucial juncture, where a few questions need to be answered.</p>
+<ol>
+<li>Why did the company decide to file for an IPO? In general, why do companies go public?</li>
+<li>Why did they not file for the IPO when they were in Series A, B and C situation?</li>
+<li>What would happen to the existing shareholders after the IPO?</li>
+<li>What does the general public look for before they subscribe to the IPO?</li>
+<li>How does the IPO process evolve?</li>
+<li>Which of the financial intermediaries involved in the IPO markets?</li>
+<li>What happens after the company goes public?</li>
+</ol>
+<p>In the following chapter, we will address each of the above questions plus more, and we will also give you more insights into the IPO Market. For now, hopefully, you should have developed a sense of how a successful company evolves before they come out to the public to offer their shares.</p>
+<p>This chapter aims to give you a sense of completeness when one thinks about an IPO.</p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>Before understanding why companies go public, it is important to understand the origin of business.</li>
+<li>The people who invest in your business in the pre-revenue stage are called Angel Investors.</li>
+<li>Angel investors take the maximum risk. They take in as much risk as the promoter.</li>
+<li>The money that angels give to start the business is called the seed fund.</li>
+<li>Angel’s invest relatively a small amount of capital</li>
+<li>Valuation of a company simply signifies how much the company is valued at. When one values the company, they consider the company’s assets and liabilities.</li>
+<li>Face value is simply a denominator to indicate how much one share is originally worth.</li>
+<li>Authorized shares of the company are the total number of shares that are available with the company.</li>
+<li>&nbsp;The shares distributed from the authorized shares are called the issued shares. Issued shares are always a subset of authorized shares.</li>
+<li>The shareholding pattern of a company tells us who owns how much stake in the company.</li>
+<li>Venture Capitalists invest at an early stage in business; they do not risk Angel investors. The quantum of investments by a VC is usually somewhere in between an angel and private equity investment.</li>
+<li>The money the company spends on business expansion is called capital expenditure or CAPEX</li>
+<li>Series A, B, and C, etc., are all funding that the company seeks as they start evolving. Usually higher the series, higher is the investment required.</li>
+<li>Beyond a certain size, VCs cannot invest, and hence the company seeking investments will have to approach Private Equity firms.</li>
+<li>PE firms invest large sums of money, and they usually invest at a slightly more mature stage of the business.</li>
+<li>In terms of risk, PE’s have a lower risk appetite as compared to VC or angels.</li>
+<li>Typical PE investors would like to deploy their own people on the investee company’s board to ensure business moves in the right direction.</li>
+<li>The valuation of the company increases as and when the business, revenues and profitability increases.</li>
+<li>An IPO is a process using which a company can raise fund. The funds raised can be for any valid reason – for CAPEX, restructuring debt, rewarding shareholders, etc</li>
+</ol>
+<div class="clear"> </div>
+</div>

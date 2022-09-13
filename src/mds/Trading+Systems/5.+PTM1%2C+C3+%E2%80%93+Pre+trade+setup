@@ -1,0 +1,90 @@
+<div class="post">
+<h2><img alt="" class="aligncenter wp-image-4655" height="333" sizes="(max-width: 500px) 100vw, 500px" src="https://zerodha.com/varsity/wp-content/uploads/2017/12/M10C5-Cartoon.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/12/M10C5-Cartoon.png 600w, https://zerodha.com/varsity/wp-content/uploads/2017/12/M10C5-Cartoon-300x200.png 300w" width="500"/></h2>
+<h2>5.1 – Revisiting the Normal Distribution</h2>
+<p>If you have been a regular reader on Varsity, then chances are you’d have come across the discussion on Normal Distribution in the Options Module. If you’re not, then I’d strongly suggest you read up this chapter on <strong><a href="https://zerodha.com/varsity/chapter/volatility-normal-distribution/" rel="noopener" target="_blank">Normal distribution</a></strong>.</p>
+<p>This is a very important topic, I’d suggest you spend some time reading about it before you proceed. We will use the concept of Normal Distribution in both the techniques of Pair Trading, i.e the Mark Whistler’s Pair Trading technique, and the other technique we will discuss later on in this module. Given the central role it plays, you should spend time reading about it.</p>
+<p>I’m reproducing the central theme around Normal distribution, this should serve as a quick refresher for people who are familiar with Normal Distribution, but for those who are not, I hope this does not demotivate you from reading the chapter on Normal distribution –</p>
+<p>The general theory around the normal distribution which you should know –</p>
+<ul>
+<li>Within the 1<sup>st</sup> standard deviation, one can observe 68% of the data</li>
+<li>Within the 2<sup>nd</sup> standard deviation, one can observe 95% of the data</li>
+<li>Within the 3<sup>rd</sup> standard deviation, one can observe 99.7% of the data</li>
+</ul>
+<p>The following image should help you visualize the above –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-1_ND.png"><img alt="" class="aligncenter wp-image-4648" height="193" loading="lazy" sizes="(max-width: 425px) 100vw, 425px" src="https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-1_ND.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-1_ND.png 646w, https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-1_ND-300x136.png 300w" width="425"/></a></p>
+<p>Of course, there are other forms in which the data gets distributed – distribution such as uniform, binomial, exponential distribution etc. This is just for your information.</p>
+<h2>5.2 – Descriptive Statistics</h2>
+<p>In the previous chapter, we discussed three basic statistical metrics namely the Mean, Median, and Mode. We will now calculate these metrics on the pair data i.e the differential, spread, and ratio which we computed in the previous chapter. We will do these calculations using the excel functions.</p>
+<p>Please note, I’m continuing on the excel that we were working on in the previous chapter, needless to say, you can download the updated excel from the link provided towards the end of the chapter.</p>
+<p>The sheet is set up as below –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-2_setup.png"><img alt="" class="aligncenter wp-image-4649" height="99" loading="lazy" sizes="(max-width: 325px) 100vw, 325px" src="https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-2_setup.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-2_setup.png 435w, https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-2_setup-300x92.png 300w" width="325"/></a></p>
+<p>The Excel functions are as follows –</p>
+<ol>
+<li>Mean – ‘=average()’</li>
+<li>Median – ‘=median()’</li>
+<li>Mode – ‘=mode.mult()’</li>
+</ol>
+<p>And the numbers are as below –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-3_stast.png"><img alt="" class="aligncenter wp-image-4650" height="290" loading="lazy" sizes="(max-width: 450px) 100vw, 450px" src="https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-3_stast.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-3_stast.png 564w, https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-3_stast-300x193.png 300w" width="450"/></a></p>
+<p>As you may notice, the correlation numbers were calculated in the previous chapter.</p>
+<p>We now have the data setup. We need to add one key variable here and that would be the standard deviation. Again, standard deviation as a concept has been explained in Varsity earlier. I’d suggest you <a href="https://zerodha.com/varsity/chapter/understanding-volatility-part-1/" rel="noopener" target="_blank"><strong>read this chapter</strong></a><strong>&nbsp;</strong>to understand Standard Deviation better. Here is the summary though –</p>
+<p>Standard Deviation simply generalizes and represents the deviation from the average. Here is the textbook definition of SD “<em>In statistics, the&nbsp;<strong>standard deviation</strong>&nbsp;(SD, also represented by the Greek letter sigma, σ) is a measure that is used to quantify the amount of variation or dispersion of a set of data values</em>”.</p>
+<p>So in a sense, Standard Deviation gives us a sense of variability of the data or in other words, help us understand how widely the data set is spread out. Let me try and put this in the context of the Pair data we are dealing with.</p>
+<p>The differential data which we computed a while ago is something like this –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-4_diffdata.png"><img alt="" class="aligncenter wp-image-4651" height="444" loading="lazy" sizes="(max-width: 90px) 100vw, 90px" src="https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-4_diffdata.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-4_diffdata.png 112w, https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-4_diffdata-61x300.png 61w" width="90"/></a></p>
+<p>Together there are 496 differential data points and earlier in this chapter, we have even calculated the average value across these data points i.e 228.52.</p>
+<p>Now, what if I were to ask you to help me understand the variability of these data points from its average value? Or a better question to ask – why would I need to know the variability of the data points from its average value?</p>
+<p>Well, if we don’t know the variability of the data, then there is no way we can make an intelligent assessment of the behavior of the data set. For example, when the 498<sup>th</sup> data is generated, we will know if this value is around the mean or within the range it varies.</p>
+<p>This, in fact, forms the crux of pair trading.</p>
+<p>Standard Deviation helps us measure this variation.</p>
+<p>While I personally think standard deviation is good enough, there are traders who would also like to calculate another variable called the ‘Absolute Deviation’. Both standard deviation and absolute deviation help us understand the variability of the data. But they differ in terms of the way do they data is treated.</p>
+<p>I was looking at the explanation to help you understand the difference between standard deviation and absolute deviation, and I found the following on Investopedia, which I think is quite nice. I’m taking the liberty of reproducing the content here –</p>
+<p>“While there are many different ways to measure variability within a set of data, two of the most popular are standard deviation and average deviation. Though very similar, the calculation and interpretation of these two differ in some key ways. Determining range and volatility is especially important in the finance industry, so professionals in areas such as accounting, investing and economics should be very familiar with both concepts.</p>
+<p>Standard deviation is the most common measure of variability and is frequently used to determine the volatility of stock markets or other investments. To calculate the standard deviation, you must first determine the variance. This is done by subtracting the mean from each data point and then squaring, summing and averaging the differences. Variance in itself is an excellent measure of variability and range, as a larger variance reflects a greater spread in the underlying data. The standard deviation is simply the square root of the variance. Squaring the differences between each point and the mean avoids the issue of negative differences for values below the mean, but it means the variance is no longer in the same unit of measure as the original data. Taking the root of the variance means the standard deviation returns to the original unit of measure and is easier to interpret and utilize in further calculations.</p>
+<p>The average deviation, also called the mean absolute deviation, is another measure of variability. However, average deviation utilizes absolute values instead of squares to circumvent the issue of negative differences between data and the mean. To calculate the average deviation, simply subtract the mean from each value, then sum and average the absolute values of the differences. The mean absolute value is used less frequently because the use of absolute values makes further calculations more complicated and unwieldy than using the simple standard deviation.”</p>
+<p>We will go ahead and compute both “Standard Deviation”, and “Absolute Deviation” for all the three pair data variables.</p>
+<p>By the way, I’m interchanging the Y-axis to Mean, Median, and Mode. The X-axis to Differential, Ratio, and Spread. Given this, the snapshots posted above will be slightly different from the one posted below, hope you won’t mind my clumsy data handling skills J</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-5_stdev.png"><img alt="" class="aligncenter wp-image-4652" height="305" loading="lazy" sizes="(max-width: 475px) 100vw, 475px" src="https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-5_stdev.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-5_stdev.png 557w, https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-5_stdev-300x193.png 300w" width="475"/></a></p>
+<p>The excel function to calculate these variables are –</p>
+<p>Standard Deviation – ‘=Stdev.p()’</p>
+<p>Absolute Deviation – ‘=avedev()’</p>
+<p>The Mean, Median, Mode, Standard Deviation, and Absolute Deviation is also known as the basic descriptive statistics.</p>
+<h2>5.3 – The Standard deviation table</h2>
+<p>The standard deviation as you know helps us get a sense of the variation in the data. We will now take this a step further and try and quantify the variation. Why do we need to do this, you may ask? Well, this will help us understand the extent of the variation from the mean value. For example, the 498<sup>th</sup> differential data could be 275, we will exactly know if 275 is way above the mean or way too below the mean.</p>
+<p>With this information, we can choose to either buy the pair or short the pair. Of course, we will get into these details later on. For now, let us focus on quantifying the extent of the variation. In order to quantify the data point, we need to build something called as a standard deviation table.</p>
+<p>The structure of the table is as below –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-6_sd.png"><img alt="" class="aligncenter wp-image-4653" height="248" loading="lazy" sizes="(max-width: 750px) 100vw, 750px" src="https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-6_sd.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-6_sd.png 1056w, https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-6_sd-300x99.png 300w, https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-6_sd-768x254.png 768w, https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-6_sd-1024x338.png 1024w" width="750"/></a></p>
+<p>As you may have guessed, we are now going to calculate the values of 1, 2, and 3 standard deviations above the mean and below the mean, across spread, differential, and the ratio.</p>
+<p>For example, let us just focus on the Spread data for now. The mean of the spread is 0.06. We also know the standard deviation (SD) is 8.075.</p>
+<p>Therefore, the 1st SD above the mean would be –</p>
+<p>0.064 + 8.075 = <strong>8.139</strong></p>
+<p>2<sup>nd</sup> SD –</p>
+<p>0.064 + (2*8.075) = <strong>16.123</strong></p>
+<p>3<sup>rd</sup> SD –</p>
+<p>0.064 + (3*8.075) = <strong>24.288</strong></p>
+<p>These are all values above the mean. We can do the same to identify the values below the mean –</p>
+<p>-1 SD –</p>
+<p>0.064 – 8.075 = <strong>-8.011</strong></p>
+<p>-2 SD –</p>
+<p>0.064 – (2*8.075) = <strong>-16.086</strong></p>
+<p>-3 SD –</p>
+<p>0.064 – (3*8.075) = <strong>-24.160</strong></p>
+<p>I’ve done the same math across Differential and Ratio. Here is how the table looks –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-7_sdcalculated.png"><img alt="" class="aligncenter wp-image-4654" height="261" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-7_sdcalculated.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-7_sdcalculated.png 1083w, https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-7_sdcalculated-300x98.png 300w, https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-7_sdcalculated-768x250.png 768w, https://zerodha.com/varsity/wp-content/uploads/2017/12/Image-7_sdcalculated-1024x334.png 1024w" width="800"/></a></p>
+<p>So if the 498<sup>th</sup> differential data read 315, then we can quickly understand that the value is around the +2 standard deviation and with 95% confidence you could conclude that there is only 5% chance for the next set of data points to go higher than 315.</p>
+<p>Anyway, at this stage, we have almost all the data that we need to make the assessment of the pair and probably identify if there is an opportunity to trade. In the next chapter, we will go ahead and do this. In fact, I’ll start the next chapter with a quick recap of everything we have discussed so far, this is just to ensure we are all on the same page.</p>
+<p>You can download the excel sheet used in this chapter <a href="https://zerodha.com/varsity/wp-content/uploads/2017/12/Chapter-5_Pair-Data.xlsx"><strong>here</strong>.</a></p>
+<p>Signing of this chapter by wishing you all a very happy Xmas and a happy new year! Hope 2018 brings in wisdom, wealth, and peace your way.</p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>Normal distribution plays a pivotal role in pair trading</li>
+<li>Within the 1<sup>st</sup> standard deviation, one can observe 68% of the data</li>
+<li>Within the 2<sup>nd</sup> standard deviation, one can observe 95% of the data</li>
+<li>Within the 3<sup>rd</sup> standard deviation, one can observe 99.7% of the data</li>
+<li>Standard deviation and absolute deviation measures the variability of the data</li>
+<li>The standard deviation table gives us a sense of how the current data stands with respect to its expected variation</li>
+<li>The cues to trade the pair either long or short comes from the standard deviation table.</li>
+</ol>
+<div class="clear"> </div>
+</div>

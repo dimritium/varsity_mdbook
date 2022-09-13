@@ -1,0 +1,256 @@
+<div class="post">
+<h2><strong>6.1 – Common sense approach</strong></h2>
+<p>In the previous chapter, we built the Balance Sheet and P&amp;L assumption. Within the P&amp;L assumptions, we dealt with the revenue of the company as well. We did take a rather simplistic approach to estimate the revenue of the company. The approach is ok as long as you intend to build a simple financial model.</p>
+<p>However, at times, taking efforts to build a dedicated revenue model of a company pays off.&nbsp; With a dedicated revenue model, you can identify the key revenue drivers and get some granular insights into the behaviour of these revenue drivers.</p>
+<p>In this chapter, I’d like to discuss the approach you need to take while building a company’s revenue model. As you can imagine, the revenue model sits within the integrated financial model, just like the assumption sheet.</p>
+<p>Think of the revenue model as a sub-model within the financial model.</p>
+<p>I’ll take the example of Bajaj auto in this chapter to explain how one can build a company’s revenue model.</p>
+<p>A sensible way to start building a revenue model is by asking common sense questions about the company. In most cases, these questions themselves segways into a template for the revenue model. We will take the same approach to build Bajaj Auto’s revenue model.</p>
+<p>So here are a bunch of common-sense questions, and the answers to these questions will help us build the revenue model. &nbsp;By the way, the answers to all the questions are in the company’s annual report.</p>
+<p>So let us start.</p>
+<h2><strong>6.2 – Digging data</strong></h2>
+<p>As a first step, I download the latest annual report (FY 2020-21) from Bajaj Auto’s website. I’d suggest you do the same. Like I mentioned, the annual report is where you will find all the information you’d need.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/M13-C6-Web.png"><img alt="" class="aligncenter wp-image-10096" height="371" sizes="(max-width: 504px) 100vw, 504px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/M13-C6-Web-300x221.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/M13-C6-Web-300x221.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/M13-C6-Web-768x566.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/M13-C6-Web.png 800w" width="504"/></a></p>
+<p>Usually, from my experience, as the company matures, the annual report also evolves and provides you with all the necessary information you’d need.</p>
+<p>Anyway, let us get started with our common sense QnA. We will begin with a fundamental question.</p>
+<p><span style="color: #993300;"><em><strong>What does Bajaj Auto do?</strong></em></span></p>
+<p>No brainer, we have seen Bajaj Auto’s bikes and autorickshaws flood the Indian streets. So it is evident that Bajaj manufactures and sells 2 and 3 wheelers. We will cross-check our assumption from the annual report as well.</p>
+<p>&nbsp;</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-1_bikes.png"><img alt="" class="wp-image-10075 aligncenter" height="244" loading="lazy" sizes="(max-width: 452px) 100vw, 452px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-1_bikes-300x162.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-1_bikes-300x162.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-1_bikes.png 684w" width="452"/></a></p>
+<p>From their annual report, we can see that our assumption is correct (image above if from the annual report). Bajaj does manufacture bikes and autorickshaws. The bikes are further segregated into different segments.</p>
+<p>The image below shows the ‘sports segment’ or ’S segment’ bikes. Apart from the S segment, Bajaj has the Milage or M segment, Supersport or SS segment, Pro biking segment, and scooters.</p>
+<p>But the point is Bajaj manufactures’ bikes’ or two-wheelers, so let us stick to that for now and ignore the segmentation of bikes.</p>
+<p>Apart from bikes, they also manufacture autorickshaws’ Commerical Vehicles’ (CV) or the three-wheeler segment.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-2_cv.png"><img alt="" class="aligncenter wp-image-10076" height="171" loading="lazy" sizes="(max-width: 498px) 100vw, 498px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-2_cv-300x103.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-2_cv-300x103.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-2_cv.png 685w" width="498"/></a></p>
+<p>The CV category has different segments: passenger carrier (good old autorickshaws) and goods carrier.</p>
+<p>Why are the segments important to a revenue model?</p>
+<p>Well, if you know the segments within a category, you can also figure out the segment-wise revenue.</p>
+<p>For example, the S segment is a segment within the bikes category, it will interesting to understand how much revenue they make segment-wise, and which are their popular segments, and what drives these segments.</p>
+<p>With this information, you can build a granular revenue model. Unfortunately, the segment-wise revenue distribution is not available in the annual report. Hence we will consider revenue for the entire category as a whole, i.e. the two-wheeler (bikes) and the commercial vehicle (3 wheelers).</p>
+<p><em><span style="color: #993300;"><strong>How much does Bajaj Auto manufacture?</strong></span></em></p>
+<p>I suppose this is also a straightforward question. As a financial modeller (or even an investor), you need to understand the manufacturing capacity of the company. The reason is simple.</p>
+<p>Suppose they manufacture 100 bikes in the year, and if they are selling 60 bikes, then with this information we can interpret the following –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>The manufacturing plant operates at 60% capacity utilization. Capacity utilization is a simple ratio of how much they sell versus how much they manufacture.</li>
+<li>The company has enough manufacturing buffer to meet future demands</li>
+<li>The company is unlikely to spend more money in terms of CAPEX anytime soon</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Other perspectives –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Why is the company selling only 60?</li>
+<li>How much do their competitors sell?</li>
+<li>Where does the company stand in terms of competition?</li>
+<li>How big is the industry? How many bikes (across all companies) are sold in a year?</li>
+<li>What is the company’s market share? (company sales divided/industry sales)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>These questions will help us size up the company and eventually help the investors in the valuation process.</p>
+<p>Anyway, we will get back to the revenue model.&nbsp; I found this image in their annual report interesting –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-3_loc.png"><img alt="" class="aligncenter wp-image-10077" height="360" loading="lazy" sizes="(max-width: 501px) 100vw, 501px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-3_loc-300x216.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-3_loc-300x216.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-3_loc.png 729w" width="501"/></a></p>
+<p>The image gives us all the information in one shot. Let me list down the information for you –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>The company has three manufacturing units (or plants) in India, located in – Pantnagar, Waluj, and Chakan.</li>
+<li>Waluj is the oldest plant (set up in 1984), while the Pantnagar plant is their newest.</li>
+<li>All plants have been operational for a long time now.</li>
+<li>Pantnagar plant has a production capacity to manufacture 1.8M bikes, no commercial vehicles here.</li>
+<li>Waluj plant has a production capacity to manufacture 2.4M bikes and 9.3L commercial vehicles. Waluj is a super important plant for Bajaj auto since this plant has production of both categories plus this is the only plant to manufacture commercial vehicles.</li>
+<li>Chakan plant has a production capacity to manufacture 1.2M units of bikes.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Since all the manufacturing facilities are old enough, assuming that the company has had a similar production capacity for the last few years is fair.</p>
+<p><span style="color: #993300;"><em><strong>Where do they sell?</strong></em></span></p>
+<p>The question is to help us understand where their target market is. We have seen Bajaj vehicles across India. But do they sell in other countries apart from India?</p>
+<p>Here is an extract from the annual report –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-4_exports.png"><img alt="" class="aligncenter wp-image-10078" height="211" loading="lazy" sizes="(max-width: 502px) 100vw, 502px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-4_exports-300x126.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-4_exports-300x126.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-4_exports.png 706w" width="502"/></a></p>
+<p>Without reading much into the details, we know –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Bajaj Auto sells within India (domestic market)</li>
+<li>Bajaj Auto also sells outside India (international market)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>From the extract, we can quickly note that Bajaj Auto sells around 2M vehicles in the global market.</p>
+<p><span style="color: #993300;"><em><strong>How many units of two-wheelers and CVs does Bajaj Auto sell in India and the International market?</strong></em></span></p>
+<p>Now that we have established that Bajaj has a domestic and international market, it makes sense to figure out how many units of bikes and commercial vehicles are sold in India and in the International market.</p>
+<p>From the annual report –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-5_domestic-sale.png"><img alt="" class="aligncenter wp-image-10080" height="229" loading="lazy" sizes="(max-width: 471px) 100vw, 471px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-5_domestic-sale-300x146.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-5_domestic-sale-300x146.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-5_domestic-sale.png 494w" width="471"/></a></p>
+<p>The highlighted data indicates the sale of domestic bikes. For example, in the year 2020, Bajaj Auto sold 3.9M bikes. The break up of 3.9M across different segments of bikes is not available (therefore no segment-wise revenue). But that’s ok for now.</p>
+<p>Data for Domestic CV sales&nbsp; –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-6_0.png"><img alt="" class="aligncenter wp-image-10081" height="363" loading="lazy" sizes="(max-width: 498px) 100vw, 498px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-6_0-300x219.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-6_0-300x219.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-6_0.png 559w" width="498"/></a></p>
+<p>As far as the exports are concerned, here is the snapshot –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-6_Exp.png"><img alt="" class="aligncenter wp-image-10082" height="204" loading="lazy" sizes="(max-width: 502px) 100vw, 502px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-6_Exp-300x122.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-6_Exp-300x122.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-6_Exp.png 588w" width="502"/></a></p>
+<p>The company has only reported domestic sales numbers across motorcycles (bikes) and CV for FY20 and FY21. We will have to dig up the older annual reports for historical numbers.</p>
+<p>Ok, a quick recap at this point. So far we know –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>The product the company sells</li>
+<li>Places where it manufactures the products</li>
+<li>The capacity of each manufacturing plant</li>
+<li>The geographies in which the company sells</li>
+<li>How many units the company sells across all their markets</li>
+</ul>
+</li>
+</ul>
+<p>That’s a fair bit of information. We now have to steer our way to find out details about how much money the company earns in terms of revenues.</p>
+<p>Remember, so far, we collected information by asking ourselves a few common-sense questions. Once we collect all the necessary information, we make the revenue model on excel, step by step.</p>
+<p>Let us continue our QnA.</p>
+<p><span style="color: #993300;"><em><strong>How much revenue do they make?</strong></em></span></p>
+<p>The most crucial question perhaps 😊</p>
+<p>Clearly, when we talk about revenue for this company, we need to figure four essential things –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>How much revenue is from domestic bikes sales?</li>
+<li>How much revenue is from domestic CV sales?</li>
+<li>How much revenue is from international bikes sales?</li>
+<li>How much revenue is from international CV sales?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>If we can collect the above information, we are on track to build the revenue model.</p>
+<p>But here is where the challenge occurs; the company does not easily give out this information. The information we have is –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-7_rev.png"><img alt="" class="aligncenter wp-image-10083" height="105" loading="lazy" sizes="(max-width: 500px) 100vw, 500px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-7_rev-300x63.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-7_rev-300x63.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-7_rev-768x161.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-7_rev.png 890w" width="500"/></a></p>
+<p>Revenue is a consolidated number, which includes both domestic and export revenue. But thankfully, Bajaj Auto gives us the export revenue –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-8_exp-rev.png"><img alt="" class="aligncenter wp-image-10084" height="239" loading="lazy" sizes="(max-width: 501px) 100vw, 501px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-8_exp-rev-300x143.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-8_exp-rev-300x143.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-8_exp-rev.png 612w" width="501"/></a></p>
+<p>With both these bits of information, we have to back work the details. For example, for FY 2020,</p>
+<p>Revenue =Rs.29,111 Cr</p>
+<p>Export Revenue = Rs.12,216 Cr</p>
+<p>So Domestic revenue must be –</p>
+<p>29111 – 12216</p>
+<p>= <strong>Rs.16,895 Crs.</strong></p>
+<p>Once we have the revenue split from domestic and exports, we can do few other things to set up the revenue model.</p>
+<h2><strong>6.3 – Connecting the dots </strong></h2>
+<p>We have now gathered all the info required to build the revenue model. We now have to plug these values into an excel sheet and give it a logical sequence. Please note that if you are doing this yourself, as a first step, you will have to get the historical data from the annual report.&nbsp; In the section above, I’ve highlighted how the data is collected. Hopefully, that will help you accelerate your data collection process.</p>
+<p>Given the data in hand, here are the steps that I’ll follow to develop the revenue model. As I have stressed earlier, the steps that I follow make sense to me; if you feel there is a better way, you should explore. Remember, there is no prescribed methods to build a model.</p>
+<p>But I hope these steps will give you a good starting point.</p>
+<p>Here is the overview of the steps I’ll carry out on excel –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Organize the capacity data</li>
+<li>Gather the International sales data, i.e. the number of units of bikes and CV sold</li>
+<li>Gather the India sales data, i.e. the number of units of bikes and CV sold</li>
+<li>Add up the sales data to get consolidated bikes and CV sales data</li>
+<li>Input the historical revenue data</li>
+<li>Calculate the average cost of sale of bike and CV</li>
+<li>Identify the trend in change of average cost of sale</li>
+<li>Project the average price of the vehicle and reverse engineer the revenue data from the average prices.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>If the steps above confuse you, then don’t worry, we will execute each of the steps, one at a time.</p>
+<p>As a first step, we set up our excel sheet with the indexation. I’ve discussed this in the earlier chapters, so I’ll directly post the snapshot for your reference.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-9_setup.png"><img alt="" class="aligncenter wp-image-10085" height="126" loading="lazy" sizes="(max-width: 525px) 100vw, 525px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-9_setup-300x72.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-9_setup-300x72.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-9_setup-1024x244.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-9_setup-768x183.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-9_setup.png 1228w" width="525"/></a></p>
+<p>I guess you are reasonably familiar with the layout. Columns A and B are indexed, C expanded, panes frozen at E3. The actual financial years stated from F1 to J1, and the estimated years from K1 to O1.</p>
+<p>I have organized the manufacturing capacity data. Note I have segregated this in terms of bikes and CV, but you can also arrange the data from the manufacturing plant perspective.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-10_capacity.png"><img alt="" class="aligncenter wp-image-10086" height="141" loading="lazy" sizes="(max-width: 528px) 100vw, 528px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-10_capacity-300x80.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-10_capacity-300x80.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-10_capacity-1024x273.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-10_capacity-768x205.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-10_capacity.png 1193w" width="528"/></a></p>
+<p>I have populated the manufacturing capacity numbers –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-11_capacitynumbers.png"><img alt="" class="aligncenter wp-image-10087" height="123" loading="lazy" sizes="(max-width: 528px) 100vw, 528px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-11_capacitynumbers-300x70.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-11_capacitynumbers-300x70.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-11_capacitynumbers-1024x239.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-11_capacitynumbers-768x179.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-11_capacitynumbers.png 1361w" width="528"/></a></p>
+<p>Note, the numbers are constant historically and for the future years as well.</p>
+<p>Next up is the sales data. As I mentioned earlier, I’m interested in identifying the bike and CV sales in India and Internationally. Once I have the data, I’m also interested in year on year (YoY) changes in sales data.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-12_sales-data.png"><img alt="" class="aligncenter wp-image-10088" height="249" loading="lazy" sizes="(max-width: 530px) 100vw, 530px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-12_sales-data-300x141.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-12_sales-data-300x141.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-12_sales-data-1024x483.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-12_sales-data-768x362.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-12_sales-data.png 1376w" width="530"/></a></p>
+<p>As we saw earlier, most of the sales data is available in the annual report, except for the India sales data for bikes. But this is ok; the company gives us the total bike sales (India + International) and the total international bike sales data.</p>
+<p>If we calculate the difference, we get the India bikes sales data. So a bit of number jugglery that you will have to do.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-13_total-bikes.png"><img alt="" class="aligncenter wp-image-10089" height="267" loading="lazy" sizes="(max-width: 530px) 100vw, 530px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-13_total-bikes-300x151.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-13_total-bikes-300x151.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-13_total-bikes-1024x515.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-13_total-bikes-768x386.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-13_total-bikes.png 1362w" width="530"/></a></p>
+<p>Next, we calculate the YoY change (in percentage) bikes and CV sales in the Indian and the International markets.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-14_yoy.png"><img alt="" class="aligncenter wp-image-10090" height="269" loading="lazy" sizes="(max-width: 531px) 100vw, 531px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-14_yoy-300x152.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-14_yoy-300x152.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-14_yoy-1024x519.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-14_yoy-768x389.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-14_yoy.png 1362w" width="531"/></a></p>
+<p>The math is simple for the YoY change –</p>
+<p>= this year’s sales data/ previous year’s sales data – 1</p>
+<p>= year on year change in sales, expressed in percentage.</p>
+<p>The idea of calculating the YoY percentage change is to identify consistent trends if any. But clearly, there is no trend in the data we have.</p>
+<p>We could have taken a rolling average of the yoy change and projected for future years if there was a trend. But now, we have to assume a flat YoY change.</p>
+<p>I’ll project the YoY change without thinking much (to move ahead quickly), but of course, if this were a serious model (based on which you’d invest), then we would have to spend some time before we make the YoY change assumptions.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-15_yoyass.png"><img alt="" class="aligncenter wp-image-10079" height="281" loading="lazy" sizes="(max-width: 533px) 100vw, 533px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-15_yoyass-300x158.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-15_yoyass-300x158.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-15_yoyass-1024x540.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-15_yoyass-768x405.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-15_yoyass.png 1371w" width="533"/></a></p>
+<p>You can see the assumption I’ve made for the sales YoY change in percentage. You can also see the calculation that I’ve made to project the future year’s sale of bikes and CV. I’ve completed the math, and here is how the excel sheet looks –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-16_total.png"><img alt="" class="aligncenter wp-image-10091" height="277" loading="lazy" sizes="(max-width: 535px) 100vw, 535px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-16_total-300x155.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-16_total-300x155.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-16_total-1024x530.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-16_total-768x397.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-16_total.png 1368w" width="535"/></a></p>
+<p>Please note, I’ve summed up the bike and CV sales from both the Indian and the International markets to get the total sales. For your reference, I’ve highlighted the total sales of bikes for FY22E.</p>
+<p>In the next step, we move our attention to the revenue data. I’ve taken the revenue data (India and International) from the annual report.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-17_rev.png"><img alt="" class="aligncenter wp-image-10092" height="188" loading="lazy" sizes="(max-width: 537px) 100vw, 537px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-17_rev-300x105.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-17_rev-300x105.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-17_rev-1024x358.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-17_rev-768x269.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-17_rev.png 1364w" width="537"/></a></p>
+<p>Below the revenue numbers, I’ve set up excel to calculate the average sale cost for vehicles (bikes + CV) across the Indian and the international markets. To calculate this, we need to divide the India revenue number by the India vehicles sold data.</p>
+<p>Let me do this math for FY 17 –</p>
+<p>Revenue from India (FY17) = Rs.14,815 Cr</p>
+<p>Total vehicles sold in India (bikes+ CV) = 22,54,617</p>
+<p>Average selling price of a vehicle = 14815*(10^7)/2254617</p>
+<p>= Rs.65,709.61/-</p>
+<p>If you wonder why I used 10^7 in the math above, then it is to get the revenue number in Crores.</p>
+<p>Here is how it looks on Excel –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-18_avgcost.png"><img alt="" class="aligncenter wp-image-10094" height="268" loading="lazy" sizes="(max-width: 528px) 100vw, 528px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-18_avgcost-300x152.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-18_avgcost-300x152.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-18_avgcost-1024x518.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-18_avgcost-768x388.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-18_avgcost.png 1371w" width="528"/></a></p>
+<p>I’ve calculated the YoY change in average cost of sale as well. I hope at this stage; you can figure what to do next. If you do, then I’d be happy to know that my notes are helping you think ahead 😊</p>
+<p>Anyway, here are the last two steps to complete the revenue model.</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Assume a YoY change for future years, it could be a rolling average, or it could be a flat assumption</li>
+<li>Project the average cost of sale in the Indian and the International market</li>
+<li>Multiply the avg cost of sale and the number of vehicles sold to get the revenue in the Indian and International market</li>
+<li>Sum up both to get the total revenue.</li>
+</ul>
+</li>
+</ul>
+<p>I’ve executed all the above steps in excel, and here is how it looks –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-19_final.png"><img alt="" class="aligncenter wp-image-10095" height="266" loading="lazy" sizes="(max-width: 529px) 100vw, 529px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-19_final-300x151.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-19_final-300x151.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-19_final-1024x517.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-19_final-768x388.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-19_final.png 1403w" width="529"/></a></p>
+<p>I have highlighted both the cells so that you can see the formula I’ve used.</p>
+<p>Here are few other things that you can do with the revenue model –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>We have the total bike and CV sales data. Compare this with the production data. Ensure the company is not selling more than what it is making. If yes, then our model may be wrong and needs some tweaking</li>
+<li>If the vehicles sold are close to manufactured, the company may have to invest in a CAPEX cycle. This is valuable information from an overall financial modelling perspective</li>
+<li>Calculate the capacity utilization, i.e. number of vehicles manufacture versus the number of vehicles sold.</li>
+<li>Calculate the market share. You can get the industry bike/CV sales data from an industry report (guess even the annual report contains this), contrast this with what the company has sold, and get the market share number.</li>
+</ul>
+</li>
+</ul>
+<p>I guess this has turned into a lengthy chapter; I’ll stop it at this. But I hope this chapter has given you a sense of how you can develop a company’s revenue model using a common-sense approach. Always remember to start your revenue model by asking few basic questions.</p>
+<p>The revenue model we have built here can be used for other auto manufacturing companies like Hero Motors, TVS, MRF, Maruti, Tata Motors, and even Tesla!</p>
+<p>You can <a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Chapter-6_Revenue-model.xlsx">download the excel used in this chapter here</a>.</p>
+<h3><strong>Key takeaways from this chapter </strong></h3>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>The revenue model is a sub-model within your primary model</li>
+<li>You can build complex revenue models by starting with simple common sense questions</li>
+<li>All the data needed to make a revenue model is usually available in the annual report of the company</li>
+<li>Use the revenue model to extract other information like capacity utilization, CAPEX cycles, and industry market share.</li>
+</ul>
+</li>
+</ul>
+<div class="clear"> </div>
+</div>

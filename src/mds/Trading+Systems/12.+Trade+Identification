@@ -1,0 +1,66 @@
+<div class="post">
+<h2>12.1 – Trading the equation</h2>
+<p>At this stage, we have discussed pretty much all the background information we need to know about Pair trading. We now have to patch things together and understand how all these concepts make sense while taking up a pair trade.</p>
+<p>Let’s start with the basic equation again. I understand we have gone through this equation earlier in this module, but I want you to relook at this equation from a trader’s perspective. I want you to think about ways in which you can trade this equation. I want you to see opportunities here. This is where everything starts to culminate.</p>
+<p style="text-align: center;"><strong style="background-color: yellow;"> y = M*x + c </strong></p>
+<p>&nbsp;</p>
+<p><img alt="" class="aligncenter size-full wp-image-5075" height="400" sizes="(max-width: 600px) 100vw, 600px" src="https://zerodha.com/varsity/wp-content/uploads/2018/05/M10-C12-cartoon.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/05/M10-C12-cartoon.png 600w, https://zerodha.com/varsity/wp-content/uploads/2018/05/M10-C12-cartoon-300x200.png 300w" width="600"/></p>
+<p>What is this equation essentially trying to tell you? Well, frankly, it depends on how your perspective of this equation. You can look at it from two different perspectives –</p>
+<ol>
+<li>As a statistician</li>
+<li>As a trader</li>
+</ol>
+<p>Since we are dealing with two stocks here, the <strong>statistician</strong> would look at this as an equation where the stock price of a dependent stock ‘y’ is being explained with respect to an independent stock price ‘x’. This process of ‘price explanation’ generates two other variables i.e the slope (or beta) ‘M’ and the intercept ‘c’.</p>
+<p>So in an ideal world, the stock price of y should be exactly equal to the Beta times X plus the intercept.</p>
+<p>But we know that this is not true, there is always a variation in this equation which leads to the difference between the actual stock price of Y and the predicted stock price of Y. This difference is also termed as the ‘residual’ or the error term.</p>
+<p>In fact, we can extend the above equation to include the residuals and with that, the equation would look like this –</p>
+<p style="text-align: center;"><strong style="background-color: yellow;"> y = M*x + c + ε </strong></p>
+<p>Where, ε<strong>&nbsp;</strong>represents the error or the residual of the equation. Of course, by now we are even familiar with the stationarity of the residuals which adds more sanctity to the above equation.</p>
+<p>Fair enough, now for the interesting bit – how would a <strong>trader</strong> look at this equation? Let me repost the equation again –</p>
+<p style="text-align: center;"><strong style="background-color: yellow;"> y = M*x + c + ε </strong></p>
+<p>Let us break this equation into smaller pieces –</p>
+<p><strong style="background-color: yellow;"> y = M*x&nbsp;</strong>, this essentially means, the price of the dependent stock ‘y’ is equal to the independent stock price ‘x’, multiplied by the slope M. Well, the slope is essentially the beta and it tells us how many stocks of x would equal the price of y.</p>
+<p>For example, here is the linear regression output of HDFC Bank (y) vs ICICI Bank (x) –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/05/Image-1_slope.png"><img alt="" class="aligncenter wp-image-5073" height="304" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="https://zerodha.com/varsity/wp-content/uploads/2018/05/Image-1_slope.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/05/Image-1_slope.png 1087w, https://zerodha.com/varsity/wp-content/uploads/2018/05/Image-1_slope-300x114.png 300w, https://zerodha.com/varsity/wp-content/uploads/2018/05/Image-1_slope-768x292.png 768w, https://zerodha.com/varsity/wp-content/uploads/2018/05/Image-1_slope-1024x389.png 1024w" width="800"/></a></p>
+<p>And here is the snapshot of the prices of ICICI and HDFC –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2018/05/Image-2_bank.png"><img alt="" class="aligncenter wp-image-5074 size-medium" height="78" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://zerodha.com/varsity/wp-content/uploads/2018/05/Image-2_bank-300x78.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2018/05/Image-2_bank-300x78.png 300w, https://zerodha.com/varsity/wp-content/uploads/2018/05/Image-2_bank.png 508w" width="300"/></a></p>
+<p>Now, this means, the price of HDFC Bank is roughly equal to the price of ICICI times the Beta. So, 1914 = 291 *7.61.</p>
+<p>Don’t jump in to do the math, I know that does not add up ☺</p>
+<p>But for a moment, assume if this equation were to be true, then, in other words, this essentially means 7.61 shares of ICICI equals 1 share of HDFC. This is an important conclusion.</p>
+<p>This also means, if I were to go long on one share of HDFC and short on 7.61 shares of ICIC, then I’m essentially long and short at the same time, hence I’ve hedged away a large amount of directional risk. Don’t forget the basic premise here, we are considering these two stocks because they are co-integrated in the first place.</p>
+<p>So here is the equation again –</p>
+<p style="text-align: center;"><strong style="background-color: yellow;">y = M*x + c + ε</strong></p>
+<p>If this equation were to be true, then by going long and short on y and x, we are hedging away the directional risk associated with this pair.</p>
+<p>This leaves us with the 2<sup>nd</sup> part of the equation i.e <strong style="background-color: yellow;"> c + ε</strong></p>
+<p>As you know, C is the intercept. Now, at this point, I want you to recollect the ‘Error Ratio’ which we discussed in chapter 10.</p>
+<p><strong>Error Ratio = Standard Error of Intercept / Standard Error</strong>.</p>
+<p>As you may recollect, we discussed the lower the error ratio, the better it is. Mathematically, this also implies that we are looking at pairs which have a low intercept.</p>
+<p>Again this is a very crucial point for you to note, we are selecting the pairs, such that the standard error of the intercept is low.</p>
+<p>Remember, in this equation&nbsp;<strong style="background-color: yellow;"> y = M*x + c + ε&nbsp;</strong>we are trying to establish a trade (or hedge) every element. We are hedging y with Mx. We are trying to minimize c or the intercept because we are not trading or hedging it. Therefore, the lower it is, the better for us.</p>
+<p>This leaves us with just the residual or the ε.</p>
+<p>Remember, the residual is a time series. We have even validated the stationarity of this series. Now, because the residual is a stationary time series, the properties of normal distribution can be quite beautifully applied. This means, I only need to track the residuals and trigger a trade when it hits the upper or lower standard deviation!</p>
+<p>Generally speaking, a trade is initiated when –</p>
+<ol>
+<li>Long on the pair (buy y, sell x) when the residuals hit -2 standard deviation (-2SD)</li>
+<li>Short on the pair (sell y, buy x) when the residuals hit +2 standard deviation (+2SD)</li>
+</ol>
+<p>Like in the first method, the idea here is to initiate a trade at the 2<sup>nd</sup> standard deviation and hold the trade till the residual reverts to mean. The SL can be kept at 3SD for both the trades. More on this in the next chapter.</p>
+<p>I know this is a short chapter, but I will conclude it here, as I don’t want to clutter your mind with other information.</p>
+<p>It is important for you to understand this equation from a trader’s perspective and figure out what exactly you are trading. Remember, we are only trading the residuals here. We are hedging away the stock price of y with x. The intercept is kept low, and the residual is traded.</p>
+<p>Why is the residual tradable? Because its stationary and therefore, its behavior is kind of predictable. In the next chapter, I’ll try and take up a live trade and deal with the practical aspects of pair trading.</p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>The pair trading equation is actually the main equation which we trade</li>
+<li>Every element of the equation is looked into</li>
+<li>We hedge the stock price of y with the stock price of x. The beta of x tells us the number stocks required to hedge 1 stock of y</li>
+<li>By looking into the error ratio, we are ensuring the intercept is kept low. Please remember we are not hedging the intercept, hence this needs to be kept low</li>
+<li>The residual is what we trade as it is stationary and follows the normal distribution quite well</li>
+<li>A long trade is initiated when residuals hit -2SD. Likewise, a short trade is initiated when the residuals hit +2SD</li>
+<li>Long on a pair requires us to go long on Y and short on X</li>
+<li>Short on a pair requires us to go short on Y and long on X</li>
+<li>When we initiate a pair trade, we expect the residual to hit the mean, so we hold until then</li>
+<li>The SL can be kept at 3SD for both long and short trades</li>
+</ol>
+<div class="clear"> </div>
+</div>

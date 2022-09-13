@@ -1,0 +1,233 @@
+<div class="post">
+<h2>10.1 – Model Thinking</h2>
+<p>The previous chapter gave you a sneak peek into the first option Greek – the Delta. Besides discussing the delta, there was another hidden agenda in the previous chapter – to set you on a ‘model thinking’ path. Let me explain what I mean by this – the previous chapter opened up a new window to evaluate options. The window threw open different option trading perspectives – hopefully, you now no longer think about options in a one-dimensional perspective.</p>
+<p>For instance, going forward if you have a view on markets (bullish for example) you <strong>may not</strong> strategize your trade this way – ‘My view is bullish, therefore it makes sense to either buy a call option or collect a premium by selling a put option’.</p>
+<p>Rather you may strategize this way – “My view is bullish as I expect the market to move by 40 points, therefore it makes sense to buy an option which has a delta of 0.5 or more as the option is expected to gain at least 20 points for the given 40 point move in the market”.</p>
+<p>See the difference between the two thought processes? While the former is a bit naïve and casual, the latter is well defined and quantitative in nature. The expectation of a 20 point move in the option premium was an outcome of a formula that we explored in the previous chapter –</p>
+<p><strong>Expected change in option premium = Option Delta * Points change in underlying</strong></p>
+<p>The above formula is just one piece in the whole game plan. As and when we discover the other Greeks, the evaluation metric becomes more quantitative and in the process, the trade selection becomes more scientifically streamlined. Point is – the thinking going forward will be guided by equations and numbers and ‘casual trading thoughts’ will have a very little scope. I know there are many traders who trade just with a few random thoughts and some may even be successful. However, this is not everybody’s cup of tea. The odds are better when you put numbers in perspective – and this happens when you develop ‘model thinking’.</p>
+<p>So please do keep model thinking framework in perspective while analyzing options, as this will help you set up systematic trades.</p>
+<h2>10.2 – Delta versus the spot price</h2>
+<p>In the previous chapter, we looked at the significance of Delta and also understood how one can use delta to evaluate the expected change in premium. Before we proceed any further, here is a quick recap from the previous chapter –</p>
+<ol>
+<li>Call options have a +ve delta. A Call option with a delta of 0.4 indicates that for every 1 point gain/loss in the underlying the call option premium gains/losses 0.4 points</li>
+<li>Put options have a –ve delta. A Put option with a delta of -0.4 indicates that for every 1 point loss/gain in the underlying the put option premium gains/losses 0.4 points</li>
+<li>OTM options have a delta value between 0 and 0.5, ATM option has a delta of 0.5, and ITM option has a delta between 0.5 and 1.</li>
+</ol>
+<p>Let me take cues from the 3<sup>rd</sup> point here and make some deductions. Assume Nifty Spot is at 8312, strike under consideration is 8400, and option type is CE (Call option, European).</p>
+<ol>
+<li>What is the approximate Delta value for the 8400 CE when the spot is 8312?
+<ol type="a">
+<li>Delta should be between 0 and 0.5 as 8400 CE is OTM. Let us assume Delta is 0.4</li>
+</ol>
+</li>
+<li>Assume Nifty spot moves from 8312 to 8400, what do you think is the Delta value?
+<ol type="a">
+<li>Delta should be around 0.5 as the 8400 CE is now an ATM option</li>
+</ol>
+</li>
+<li>Further assume Nifty spot moves from 8400 to 8500, what do you think is the Delta value?
+<ol type="a">
+<li>Delta should be closer to 1 as the 8400 CE is now an ITM option. Let us say 0.8.</li>
+</ol>
+</li>
+<li>Finally assume Nifty Spot cracks heavily and drops back to 8300 from 8500, what happens to delta?
+<ol type="a">
+<li>With the fall in spot, the option has again become an OTM from ITM, hence the value of delta also falls from 0.8 to let us say 0.35.</li>
+</ol>
+</li>
+<li>What can you deduce from the above 4 points?
+<ol type="a">
+<li>Clearly as and when the spot value changes, the moneyness of an option changes, and therefore the delta also changes.</li>
+</ol>
+</li>
+</ol>
+<p>Now this is a very important point here – <strong>the delta changes with changes in the value of spot</strong>. Hence delta is a variable and not really a fixed entity. Therefore if an option has a delta of 0.4, the value is likely to change with the change in the value of the underlying.</p>
+<p>Have a look at the chart below – it captures the movement of delta versus the spot price. The chart is a generic one and not specific to any particular option or strike as such. As you can see there are two lines –</p>
+<ol>
+<li>The blue line captures the behaviour of the Call option’s delta (varies from 0 to 1)</li>
+<li>The red line captures the behavior of the Put option’s delta (varies from -1 to 0)</li>
+</ol>
+<p>Let us understand this better –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/06/Image-1_Delta-vs-Spot1.png"><img alt="Image-1_Delta-vs-Spot" class="aligncenter size-full wp-image-2021" height="640" sizes="(max-width: 640px) 100vw, 640px" src="http://zerodha.com/varsity/wp-content/uploads/2015/06/Image-1_Delta-vs-Spot1.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/06/Image-1_Delta-vs-Spot1.png 640w, https://zerodha.com/varsity/wp-content/uploads/2015/06/Image-1_Delta-vs-Spot1-150x150.png 150w, https://zerodha.com/varsity/wp-content/uploads/2015/06/Image-1_Delta-vs-Spot1-300x300.png 300w" width="640"/></a></p>
+<p>This is a very interesting chart, and to begin with I would suggest you look at only the blue line and ignore the red line completely. The blue line represents the delta of a call option. The graph above captures few interesting characteristics of the delta; let me list them for you (meanwhile keep this point in the back of your mind – as and when the spot price changes, the moneyness of the option also changes) –</p>
+<ol>
+<li>Look at the X-axis – starting from left the moneyness increases as the spot price traverses from OTM to ATM to ITM</li>
+<li>Look at the delta line (blue line) – as and when the spot price increases so does the delta</li>
+<li>Notice at OTM the delta is flattish near 0 – this also means irrespective of how much the spot price falls ( going from OTM to deep OTM) the option’s delta will remain at 0
+<ol type="a">
+<li>Remember the call option’s delta is lower bound by 0</li>
+</ol>
+</li>
+<li>When the spot moves from OTM to ATM the delta also starts to pick up (remember the option’s moneyness also increases)
+<ol type="a">
+<li>Notice how the delta of option lies within 0 to 0.5 range for options that are less than ATM</li>
+</ol>
+</li>
+<li>At ATM, the delta hits a value of 0.5</li>
+<li>When the spot moves along from the ATM towards ITM the delta starts to move beyond the 0.5 mark</li>
+<li>Notice the delta starts to fatten out when it hits a value of 1
+<ol type="a">
+<li>This also implies that as and when the delta moves beyond ITM to say deep ITM the delta value does not change. It stays at its maximum value of 1.</li>
+</ol>
+</li>
+</ol>
+<p>You can notice similar characteristics for the Put Option’s delta (red line).</p>
+<p><img alt="M5-Ch10-title" class="aligncenter size-full wp-image-2008" height="223" loading="lazy" sizes="(max-width: 600px) 100vw, 600px" src="http://zerodha.com/varsity/wp-content/uploads/2015/06/M5-Ch10-title.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/06/M5-Ch10-title.png 600w, https://zerodha.com/varsity/wp-content/uploads/2015/06/M5-Ch10-title-300x112.png 300w" width="600"/></p>
+<h2>10.3 – The Delta Acceleration</h2>
+<p>If you are fairly involved in the options world you may have heard of bizarre stories of how traders double or triple their money by trading OTM option. If you have not heard such stories, let me tell you one – It was 17<sup>th</sup> May 2009 (Sunday), the election results were declared, the UPA Government got re-elected at the center and Dr.Manmohan Singh came back as the country’s Prime Minister to serve his 2<sup>nd</sup> term. Stock markets likes stability at the center and we all knew that the market would rally the next day i.e. 18<sup>th</sup> May 2009. The previous day Nifty had closed at 3671.</p>
+<p>Zerodha was not born then, we were just a bunch of traders trading our own capital along with a few clients. One of our associates had taken a huge risk few days prior to 17<sup>th</sup> May – he bought far off options (OTM) worth Rs.200,000/-. A dare devil act this was considering the fact that nobody can really predict the outcome of a general election. Obviously he would benefit if the market rallied, but for the market to rally there were many factors at play. Along with him, we too were very anxious to figure out what would happen. Finally the results were declared and we all knew he would make money on 18<sup>th</sup> May – but none of us really knew to what extent he would stand to benefit.</p>
+<p>18<sup>th</sup> May 2009, a day that I cannot forget – markets opened at 9:55 AM (that was the market opening time back then), it was a big bang open for market, Nifty immediately hit an upper circuit and the markets froze. Within a matter of few minutes Nifty rallied close to 20% to close the day at 4321! The exchanges decided to close the market at 10:01 AM as it was overheated…and thus it was the shortest working day of my life.</p>
+<p>Here is the chart that highlights that day’s market move –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/06/Image-3_Story.png"><img alt="Image 3_Story" class="aligncenter size-full wp-image-2007" height="476" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2015/06/Image-3_Story.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/06/Image-3_Story.png 800w, https://zerodha.com/varsity/wp-content/uploads/2015/06/Image-3_Story-300x179.png 300w" width="800"/></a></p>
+<p>In the whole process our dear associate had made a sweet fortune. At 10:01 AM on that glorious Monday morning, his option were valued at Rs.28,00,000/-&nbsp; a whopping 1300% gain all achieved overnight! This is the kind of trades that almost all traders including me aspire to experience.</p>
+<p>Anyway, let me ask you a few questions regarding this story and that will also bring us back to the main topic –</p>
+<ol>
+<li>Why do you think our associate choose to buy OTM options and not really ATM or ITM options?</li>
+<li>What would have happened if he had bought an ITM or ATM option instead?</li>
+</ol>
+<p>Well, the answers to these questions lie in this graph –</p>
+<p><img alt="Image 2_Delta accelaration" class="aligncenter wp-image-2017" height="480" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2015/06/Image-2_Delta-accelaration-1024x614.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/06/Image-2_Delta-accelaration-1024x614.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2015/06/Image-2_Delta-accelaration-300x180.png 300w, https://zerodha.com/varsity/wp-content/uploads/2015/06/Image-2_Delta-accelaration.png 1280w" width="800"/></p>
+<p>This graph talks about the ‘Delta Acceleration’ – there are 4 delta stages mentioned in the graph, let us look into each one of them.</p>
+<p>Before we move ahead with the following discussion some points for you here –</p>
+<ul>
+<li>I would advise you to pay a lot of attention to the following discussion, these are some of the really important points to know and remember</li>
+<li>Do recollect and revise the delta table (option type, approximate delta value etc) from the previous chapter</li>
+<li>Please do bear in mind the delta and premium numbers used here is an intelligent assumption for the sake of this illustration –</li>
+</ul>
+<p><strong style="background-color: #ffaf59;">Predevelopment</strong> – This is the stage when the option is OTM or deep OTM. The delta here is close to 0. The delta will remain close to 0 even when the option moves from deep OTM to OTM. For example when spot is 8400, 8700 Call Option is Deep OTM, which is likely to have a delta of 0.05. Now even if the spot moves from 8400 to let us say 8500, the delta of 8700 Call option will not move much as 8700 CE is still an OTM option. The delta will still be a small non – zero number.</p>
+<p>So if the premium for 8700 CE when spot is at 8400 is Rs.12, then when Nifty moves to 8500 (100 point move) the premium is likely to move by 100 * 0.05 = 5 points.</p>
+<p>Hence the new premium will be Rs.12 + 5 = Rs.17/-. However the 8700 CE is now considered slightly OTM and not really deep OTM.</p>
+<p>Most important to note – the change in premium value in absolute terms maybe small (Rs.5/-) but in percentage terms the Rs.12/- option has changed by 41.6% to Rs.17/-</p>
+<p><strong>Conclusion</strong> – Deep OTM options tends to put on an impressive percentage however for this to happen the spot has to move by a large value.</p>
+<p><strong>Recommendation</strong> – avoid buying <strong>deep OTM</strong> options because the deltas are really small and the underlying has to move massively for the option to work in your favor. There is more bang for the buck elsewhere. However for the very same reason selling deep OTM makes sense, but we will evaluate when to sell these options when we take up the Greek ‘Theta’.</p>
+<p><strong style="background-color: #ffaf59;">Take off &amp; Acceleration</strong><strong> – </strong>This is the stage when the option transitions from OTM to ATM. This is where the maximum bang for the buck lies, and therefore the risk.</p>
+<p>Consider this – Nifty spot @ 8400, Strike is 8500 CE, option is slightly OTM, delta is 0.25, Premium is Rs.20/-.</p>
+<p>Spot moves from 8400 to 8500 (100 points), to figure out what happens on the premium side, let us do some math –</p>
+<p>Change in underlying = 100</p>
+<p>Delta for 8500 CE = 0.25</p>
+<p>Premium change = 100 * 0.25 = 25</p>
+<p>New premium = Rs.20 + 25 = Rs.45/-</p>
+<p>Percentage change = 125%</p>
+<p>Do you see that? For the same 100 point move slightly OTM options behaves very differently.</p>
+<p><strong>Conclusion</strong> – The slightly OTM option which usually has a delta value of say 0.2 or 0.3 is more sensitive to changes in the underlying. For any meaningful change in the underlying the percentage change in the slightly OTM options is very impressive. In fact this is exactly how option traders double or triple their money i.e. by buying slightly OTM options when they expect big moves in the underlying. But I would like to remind you that this is just one face of the cube, there are other faces we still need to explore.</p>
+<p><strong>Recommendation</strong> – Buying slightly OTM option is more expensive than buying deep OTM options, but if you get your act right you stand to make a killing. Whenever you buy options, consider buying slightly OTM options (of course assuming there is plenty of time to expiry, we will talk about this later).</p>
+<p>Let us take this forward and see how the ATM option would react for the same 100 point move.</p>
+<p>Spot = 8400</p>
+<p>Strike = 8400 (ATM)</p>
+<p>Premium = Rs.60/-</p>
+<p>Change in underlying = 100</p>
+<p>Delta for 8400 CE = 0.5</p>
+<p>Premium change = 100 * 0.5 = 50</p>
+<p>New premium = Rs.60 + 50 = Rs.110/-</p>
+<p>Percentage change = 83%</p>
+<p><strong>Conclusion – </strong>ATM options are more sensitive to changes in the spot when compared to OTM options. Now because the ATM’s delta is high the underlying need not really move by a large value. Even if the underlying moves by a small value the option premium changes. However, buying ATM options are more expensive when compared to OTM options. <strong>&nbsp;</strong></p>
+<p><strong>Recommendation – </strong>Buy ATM options when you want to play safe. The ATM option will move even if the underlying does not move by a large value. Also as a corollary, do not attempt to sell an ATM option unless you are very sure about what you are doing.</p>
+<p><strong style="background-color: #ffaf59;">Stabilization</strong><strong> – </strong>When the option transitions from ATM to ITM and Deep ITM the delta starts to stabilize at 1. As we can see from the graph, the delta starts to flatten out when hits the value of 1. This means the option can be ITM or deep ITM but the delta gets fixed to 1 and would not change in value.</p>
+<p>Let us see how this works –</p>
+<p>Nifty Spot = 8400</p>
+<p>Option 1 = 8300 CE Strike, ITM option, Delta of 0.8, and Premium is Rs.105</p>
+<p>Option 2 = 8200 CE Strike, Deep ITM Option, Delta of 1.0, and Premium is Rs.210</p>
+<p>Change in underlying = 100 points, hence Nifty moves to 8500.</p>
+<p>Given this let us see how the two options behave –</p>
+<p>Change in premium for Option 1 = 100 * 0.8 = <strong>80</strong></p>
+<p>New Premium for Option 1 = Rs.105 + 80 = Rs.185/-</p>
+<p>Percentage Change = 80/105 = <strong>76.19%</strong></p>
+<p>Change in premium for Option 2 = 100 * 1 = <strong>100</strong></p>
+<p>New Premium for Option 2 = Rs.210 + 100 = Rs.310/-</p>
+<p>Percentage Change = 100/210 = <strong>47.6%</strong></p>
+<p><strong>Conclusion – </strong>In terms of the absolute change in the number of points, the deep ITM option scores over the slightly ITM option. However, in terms of percentage change, it is the other way round. Clearly ITM options are more sensitive to the changes in the underlying but certainly most expensive.</p>
+<p>Most importantly notice the change in the deep ITM option (delta 1) for a change of 100 points in the underlying there is a change of 100 points in the option premium. <strong>This means to say when you buy a deep ITM option it is as good as buying the underlying itself.</strong> This is because whatever is the change in the underlying, the deep ITM option will experience the same change.</p>
+<p><strong>Recommendation – </strong>Buy the ITM options when you want to play very safe. When I say safe, I’m contrasting the deep ITM option with deep OTM option. The ITM options have a high delta, which means they are most sensitive to changes in the underlying.</p>
+<p>Deep ITM option moves in line with the underlying, this means you can substitute a deep ITM option to a futures contract!</p>
+<p>Think about this –</p>
+<p>Nifty Spot @ 8400</p>
+<p>Nifty Futures = 8409</p>
+<p>Strike = 8000 (deep ITM)</p>
+<p>Premium = 450</p>
+<p>Delta = 1.0</p>
+<p>Change in spot = 30 points</p>
+<p>New Spot value = 8430</p>
+<p>Change in Futures = 8409 + 30 = 8439 à Reflects the entire 30 point change</p>
+<p>Change Option Premium = 1*30 = 30</p>
+<p>New Option Premium = 30 + 450 = 480 à Reflects the entire 30 point change</p>
+<p>So the point is, both futures and Deep ITM options react very similar to the changes in the underlying. Hence you are better off buying a Deep ITM option and therefore lessen your margin burden. However if you opt to do this, you need to constantly make sure that the Deep ITM option continues to remain Deep ITM (in other words make sure the delta is always 1), plus do keep an eye on the liquidity of the contract.</p>
+<p>I would suspect that at this stage the information contained in this chapter could be an overdose, especially if you are exploring the Greeks for the first time. I would suggest you take your time to learn this one bit at a time.</p>
+<p>There are few more angles we need to explore with respect to the delta, but will do that in the next chapter. However before we conclude this chapter let us summarize the discussion with the help of a table.</p>
+<p>This table will help us understand how different options behave differently given a certain change in the underlying.</p>
+<p>I’ve considered Bajaj Auto as the underlying. The price is 2210 and the expectation is a 30 point change in the underlying (which means we are expecting Bajaj Auto to hit 2240). &nbsp;We will also assume there is plenty of time to expiry; hence time is not really a concern.</p>
+<table class="tableizer-table">
+<tbody>
+<tr class="tableizer-firstrow">
+<th>Moneyness</th>
+<th>Strike</th>
+<th>Delta</th>
+<th>Old Premium</th>
+<th>Change in Premium</th>
+<th>New Premium</th>
+<th>% Change</th>
+</tr>
+<tr>
+<td>Deep OTM</td>
+<td>2400</td>
+<td>0.05</td>
+<td>Rs.3/-</td>
+<td>30* 0.05 = 1.5</td>
+<td>3+1.5 = 4.5</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>Slightly OTM</td>
+<td>2275</td>
+<td>0.3</td>
+<td>Rs.7/-</td>
+<td>30*0.3 = 9</td>
+<td>7 +9 = 16</td>
+<td>129%</td>
+</tr>
+<tr>
+<td>ATM</td>
+<td>2210</td>
+<td>0.5</td>
+<td>Rs.12/-</td>
+<td>30*0.5 = 15</td>
+<td>12+15 = 27</td>
+<td>125%</td>
+</tr>
+<tr>
+<td>Slightly ITM</td>
+<td>2200</td>
+<td>0.7</td>
+<td>Rs.22/-</td>
+<td>30*0.7 = 21</td>
+<td>22+21 = 43</td>
+<td>95.45%</td>
+</tr>
+<tr>
+<td>Deep ITM</td>
+<td>2150</td>
+<td>1</td>
+<td>Rs.75/-</td>
+<td>30*1 = 30</td>
+<td>75 + 30 =105</td>
+<td>40%</td>
+</tr>
+</tbody>
+</table>
+<p>As you can see each option behaves differently for the same move in the underlying.</p>
+<p>Before I wrap this chapter – I narrated a story to you earlier in this chapter following which I posted few questions. Perhaps you can now revisit the questions and you will hopefully know the answers .</p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>Model Thinking helps in developing a scientifically streamlined approach to trading</li>
+<li>The Delta changes as and when the spot value changes</li>
+<li>As the option transitions from OTM to ATM to ITM, so does the delta</li>
+<li>Delta hits a value of 0.5 for ATM options</li>
+<li>Delta predevelopment is when the option transitions from Deep OTM to OTM</li>
+<li>Delta Take off and acceleration is when the option transitions from OTM to ATM</li>
+<li>Delta stabilization is when the option transitions from ATM to ITM to Deep ITM</li>
+<li>Buying options in the take off stage tends to give high % return</li>
+<li>Buying Deep ITM option is as good as buying the underlying.</li>
+</ol>
+<div class="clear"> </div>
+</div>

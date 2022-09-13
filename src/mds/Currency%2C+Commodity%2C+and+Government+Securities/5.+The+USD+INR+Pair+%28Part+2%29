@@ -1,0 +1,129 @@
+<div class="post">
+<h2>5.1 – Futures Calendar spread</h2>
+<p>All else equal, the futures contract is always supposed to trade at a premium to the spot. This, as we know, can be attributed to the interest rate factor (cost of carrying) in the Futures pricing formula. We have discussed this earlier in the <strong><a href="http://zerodha.com/varsity/chapter/futures-pricing/" rel="noopener noreferrer" target="_blank">Futures module.</a></strong> Any variation in this equation leads to an arbitrage opportunity.</p>
+<p>For a quick low-level recap on that, consider this scenario where there is arbitrage opportunity between Spot and Futures –</p>
+<p><strong>Futures trade at a lower price</strong> – Assume the spot price is at 100, and the fair value of its future is at 105. The fair value of the future can be calculated using the futures pricing formula. The ‘no-arbitrage spread’ is the difference between spot and Future’s fair value, i.e. 105 – 100 = 5</p>
+<p>Given this, for whatever reasons (read as market mispricing) assume the future is trading at 98, this leads to a spread of 7 (105-98) between the spot and future, which can be captured.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/07/M8-C5-cartoon-1.png"><img alt="M8-C5-cartoon" class="aligncenter size-full wp-image-3773" height="299" sizes="(max-width: 600px) 100vw, 600px" src="http://zerodha.com/varsity/wp-content/uploads/2016/07/M8-C5-cartoon-1.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/07/M8-C5-cartoon-1.png 600w, https://zerodha.com/varsity/wp-content/uploads/2016/07/M8-C5-cartoon-1-300x150.png 300w" width="600"/></a></p>
+<p>All one has to do is buy the future at 98, and simultaneously sell the spot at 100. We know upon expiry, the futures and the spot will converge, and therefore the spread gets captured.</p>
+<p>If you are unable to understand the above clearly, I will encourage you to read the chapter from the Futures module (link posted above).</p>
+<p>Likewise, if the futures trade at a higher price (over and above its fair value), then one can capture the spread by selling the futures and buying the spot.</p>
+<p>We have learnt this before, and this is quite straight forward. However, when it comes to the USDINR contract, for practical reasons such as arbitrage trades involving spot and futures cannot be executed. This is because the USDINR spot market is not really accessible to the retail.</p>
+<p>So how does one trade the spreads in the currency segment? Well, this is fairly easy – as opposed to spot-future spread, one has to identify the spread between two different futures contracts expiring over two different dates. This is also known as the ‘Calendar Spread’.</p>
+<p>In a calendar spread, you decide whether the spread between two futures contract is considered normal or otherwise. All else equal, the long-dated futures contract will always trade at a premium over the ‘short term’ dated futures contract. For example, the August month futures contract is expected to trade at a premium when compared to July month. Therefore a certain amount of spread between these two contracts is deemed ‘normal’. However, there could be situations where the spread goes beyond normal (either higher or lower), and this is when opportunities arise.</p>
+<p>As of today the USD INR July Futures is trading at 67.3075, and the August contract is trading at 67.6900.</p>
+<p>The spread is calculated as the difference between the two futures contract –</p>
+<p>67.6900 – 67.3075</p>
+<p>= 0.3825</p>
+<p>Now assume, for whatever reason you think this spread of 0.3825 high, and it should ideally be 0.2000 as opposed to 0.3825. This means you have an arbitrage opportunity here, and you stand to make –</p>
+<p>0.3825 – 0.2000</p>
+<p>= 0.1825</p>
+<p>To capture the spread, you are required to buy the July Futures and simultaneously sell the Aug futures –</p>
+<p>Long July Futures at 67.3075</p>
+<p>Short August Futures at 67.6900</p>
+<p>When you set up a trade wherein you are long current expiry and short further term expiry; it is also called a “<strong>Future Bull Spread</strong>”. Likewise, a ‘<strong>Futures Bear spread</strong>’ is when you are required to short the current month expiry and go long on the further month expiry.</p>
+<p>Anyway, once you set up the ‘Future Bull Spread’, you will have to monitor the trade and close the position when the spread converges to 0.2000 or lower. You will profit when one of the following things happen –</p>
+<ol>
+<li>When the July (long) leg rises and Aug (short) leg falls</li>
+<li>When the long leg raises, and the short leg remains unchanged</li>
+<li>When the long leg raises, and short leg rises, albeit at a lower rate.</li>
+<li>When the short leg falls faster than the long leg</li>
+<li>When the long leg remains unchanged and short leg falls</li>
+</ol>
+<p>Will the spread converge? If yes, then when will it converge? Why should it converge? Will one of the above situations really pan out? Well, the answer to this really depends on how well you know the spread, and for you to know the spread really well, you need to backtest it. Techniques of backtesting are perhaps a topic for another day; however, I’d like to show you how easy it is to buy sell the spread from your trading terminal.</p>
+<h2>5.2 – Executing the spread</h2>
+<p>How would it be if you could directly buy or sell the spread? For example, in the above case, we concluded 0.3825 is an overpriced spread, to capture this spread you execute two orders, i.e. buy July Futures and sell August futures.</p>
+<p>Executing these trades has some inefficiency mainly in terms of execution risk – by the time you buy/sell both the contracts, the prices could move, and thereby the spread may no longer look attractive.</p>
+<p>Given this, it would be really convenient to buy the spreads directly and not really deal with two different contracts. If you are a Zerodha customer, you have access to NEST trader, from which you can trade the spread directly. Of course, in the future, this will also be available in both Pi and Kite.</p>
+<p>Here is a series of snapshots which will help you trade the spreads directly.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/07/Image-1_load.png"><img alt="Image 1_load" class="aligncenter wp-image-3761" height="267" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/07/Image-1_load.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/07/Image-1_load.png 910w, https://zerodha.com/varsity/wp-content/uploads/2016/07/Image-1_load-300x100.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/07/Image-1_load-768x257.png 768w" width="800"/></a></p>
+<p>Look at the part highlighted in red, as you may have realized; this snapshot is from the market watch. Starting from the left –</p>
+<ol>
+<li>We select ‘Spread’ from the dropdown, which specifies that we are looking at spread contracts.</li>
+<li>After selecting spreads, we choose CDS from the dropdown to indicate currency derivatives as the segment.</li>
+<li>FUTCUR indicates that within CDS spreads; we are interested in Future contracts.</li>
+<li>USDINR indicates that we are interested in the USDINR contracts.</li>
+<li>The full view of the dropdown menu is visible here, as you can see, there are many different spreads available. However, we are only interested in the July-August spread, which is what we have selected.</li>
+</ol>
+<p>Once we configure the above-market watch, we submit this to load the spread, here is how it looks like –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/07/Image-2_Spread.png"><img alt="Image 2_Spread" class="aligncenter wp-image-3762" height="68" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/07/Image-2_Spread.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/07/Image-2_Spread.png 1073w, https://zerodha.com/varsity/wp-content/uploads/2016/07/Image-2_Spread-300x25.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/07/Image-2_Spread-768x65.png 768w, https://zerodha.com/varsity/wp-content/uploads/2016/07/Image-2_Spread-1024x87.png 1024w" width="800"/></a></p>
+<p>I’ve highlighted the spread’s last traded price. As you can see, this particular spread instrument denotes the spread between July and August contract.</p>
+<p>Note – the spread should be trading at 0.3825 and not really 0.3700 right? Why do you think there is a price difference?</p>
+<p>I’ll try and explain this from as per my own understanding, and I could be wrong; therefore, comments are more than welcome! Also, we are digressing a bit here, so try not to lose focus on the main topic, i.e. how to trade the spreads.</p>
+<p>Have a look at the snapshot below –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/07/Image-3_spread.png"><img alt="Image 3_spread" class="aligncenter wp-image-3763" height="84" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/07/Image-3_spread.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/07/Image-3_spread.png 1079w, https://zerodha.com/varsity/wp-content/uploads/2016/07/Image-3_spread-300x31.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/07/Image-3_spread-768x80.png 768w, https://zerodha.com/varsity/wp-content/uploads/2016/07/Image-3_spread-1024x107.png 1024w" width="800"/></a></p>
+<p>The market watch has July, August and the July-August spread contract loaded.</p>
+<p>Forget about the spread contract, for now, assume you want to set up a Future Bull Spread (buy July, sell Aug) contract, then you essentially –</p>
+<p>Buy July contract at the Ask Rate – 67.3100</p>
+<p>Sell Aug contract at the Bid Rate – 67.6775</p>
+<p><span style="background-color: #d1c36f;"> Spread = 67.6775 – 67.3100 = 0.3675 </span></p>
+<p>Now, if you were to set up a Future Bear Spread, then you essentially –</p>
+<p>Buy August contract at Ask Rate – 67.6850</p>
+<p>Sell July contract at Bid Rate – 67.3075</p>
+<p><span style="background-color: #d1c36f;"> Spread = 67.6850 – 67.3075 = 0.3775 </span></p>
+<p>As you can see, there are two spreads possible based on what you intend to do, i.e. future bull/bear spread.</p>
+<p>Now the question is – which price should the spread reflect? Would it be that of the Future Bull Spread or the Future Bear spread?</p>
+<p>I guess that the spread trades close to the average of the two spreads. In this case, the average is 0.3725, and the actual market spread is 0.3700. Why 0.3700 and not really 0.3725? I’d attribute this to one of the two things – the latest quote has not been captured by the terminal or lack of liquidity.</p>
+<p>A different explanation here could be that the spread itself is mispriced!</p>
+<p>Anyway, back to the main topic, i.e. buying/selling the spread. Once the spread instrument is loaded, all you need to do is select the instrument from your market watch and press F1 or F2 for buying and selling respectively.</p>
+<p>This is what you see&nbsp;upon invoking&nbsp;the buy order window&nbsp;–</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/07/Image-4_Buy.png"><img alt="Image 4_Buy" class="aligncenter wp-image-3766" height="281" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/07/Image-4_Buy.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/07/Image-4_Buy.png 1071w, https://zerodha.com/varsity/wp-content/uploads/2016/07/Image-4_Buy-300x105.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/07/Image-4_Buy-768x270.png 768w, https://zerodha.com/varsity/wp-content/uploads/2016/07/Image-4_Buy-1024x359.png 1024w" width="800"/></a></p>
+<p>The window is pre-populated with the spread details; you may want to edit the quantity bit to suit your lot size requirement. Press submit to place the order.</p>
+<p>As simple as that!</p>
+<h2>5.3 – USD INR Stats</h2>
+<p>I thought it would be interesting to study some statistics on the USD INR pair; I downloaded the <strong><a href="https://www.rbi.org.in/scripts/ReferenceRateArchive.aspx" rel="noopener noreferrer" target="_blank">USD INR spot data</a></strong> from the RBI site.</p>
+<p>Let us start by looking at the long term chart of the USD INR over the last 8 years (July 2008 to July 2016) –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/07/Image-5_USD-INR.png"><img alt="Image 5_USD INR" class="aligncenter wp-image-3767 size-full" height="266" loading="lazy" sizes="(max-width: 485px) 100vw, 485px" src="http://zerodha.com/varsity/wp-content/uploads/2016/07/Image-5_USD-INR.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/07/Image-5_USD-INR.png 485w, https://zerodha.com/varsity/wp-content/uploads/2016/07/Image-5_USD-INR-300x165.png 300w" width="485"/></a></p>
+<p>Clearly, the US Dollar has strengthened against the Indian Rupee over the last 8 years. Quite intuitive as our economy has literally stagnated over these years. ☺</p>
+<p>Have a look at the daily return plot of the USD INR –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/07/Image-6_daily-rt.png"><img alt="Image 6_daily rt" class="aligncenter size-full wp-image-3768" height="291" loading="lazy" sizes="(max-width: 483px) 100vw, 483px" src="http://zerodha.com/varsity/wp-content/uploads/2016/07/Image-6_daily-rt.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/07/Image-6_daily-rt.png 483w, https://zerodha.com/varsity/wp-content/uploads/2016/07/Image-6_daily-rt-300x181.png 300w" width="483"/></a></p>
+<p>We can observe a few interesting parameters from this –</p>
+<p>The average daily return of USD INR is about 0.025%. The maximum and minimum daily return stands at +4.01% and -2.962%, contrast this with Nifty 50’s maximum and minimum daily return of +3.81% and -5.92%, you will realize that the USD INR pair is a lot less volatility compared to Nifty 50 or in fact any other indices. This fact is further manifested in the volatility numbers –</p>
+<ul>
+<li>Daily Standard deviation (last 8 years) – 0.567%</li>
+<li>Daily standard deviation (2015) – 0.311%</li>
+<li>Annualized standard deviation (2015) – 4.94%</li>
+</ul>
+<p>These numbers are clearly much lower compared to the Nifty 50’s daily volatility and annualized volatility number of 0.82% and 15.71% respectively.</p>
+<p>Further, I also ran a correlation function on Nifty 50 and USD INR, before I tell you the answer I want you to guess what this correlation would be like.</p>
+<p>For those of you who don’t know what correlation is, here is a quick explanation –</p>
+<p>Correlation between two variables gives us a sense of how two variables move concerning each other. Correlation is measured as a number which varies between -1 to +1. For example, if the correlation between the two variables is +0.75, then it tells us two things –</p>
+<ol>
+<li>The plus preceding the number tells us that they both are positively correlated, i.e. they move in the same direction.</li>
+<li>The actual number gives us a sense of the strength of this movement. In a loose sense, the closer it is to +1 (or -1) the higher is the tendency for the two variables to move in tandem.</li>
+<li>A correlation of 0 suggests that the two variables are not related to each other.</li>
+</ol>
+<p>From the above, we know a correlation of +0.75 suggests that the two variables move not only in the same direction but also tend to move together closely. Note, the correlation does not suggest the extent of the move; all suggest is that the move in the same direction is likely to happen. For example, if Stock A moves 3%, and the correlation between stock A and stock B is +0.75, then it does not mean that Stock B will also move by 3%, all that the correlation suggests is that Stock B will move up positively, just like Stock A.</p>
+<p>But, there is another twist here – suppose stock A and Stock B are correlated at 0.75, and the daily average return of Stock A and Stock B is 0.9% a 1.2%. It can be said that on any given day, if Stock A moves above its daily average return of 0.9%, then stock B is also likely to move higher than its daily average return of 1.2%.</p>
+<p>Likewise, a correlation of -0.75 indicates that the two variables move in opposite directions (indicated by the -ve sign). Suppose stock A moves up by +2.5%, then under a correlation, we know that Stock B is likely to come down, but by what degree will it come down isn’t known.</p>
+<p>While we are at it, one more point on correlation. This bit is only for those interested in the maths of correlation. The correlation data makes sense only if the data series is ‘stationary around the mean’. What does this mean? – Well, it simply means that the data set should be sticking close to the average values. Take another look at the graph of the daily returns of the USD INR, reposting the same for your convenience –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/07/Image-7_daily-rt.png"><img alt="Image 7_daily rt" class="aligncenter size-full wp-image-3769" height="291" loading="lazy" sizes="(max-width: 483px) 100vw, 483px" src="http://zerodha.com/varsity/wp-content/uploads/2016/07/Image-7_daily-rt.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/07/Image-7_daily-rt.png 483w, https://zerodha.com/varsity/wp-content/uploads/2016/07/Image-7_daily-rt-300x181.png 300w" width="483"/></a></p>
+<p>The daily average return here is 0.025%. If you notice the daily returns, it is mean reverting in nature, meaning even if the returns shoots up, or comes down, it eventually sticks back to the average value. A data series which exhibits such property is said to be “stationary around the mean”. Stock/commodity/currency returns are invariably stationary, but the Stock/commodity/currency prices are not stationary as they tend to trend.</p>
+<p>Confusing? Well, the key point that you need to remember here is that when you run a correlation test, make sure you run it on the daily returns (as they are stationary) and not really on the daily prices (as they tend to trend).</p>
+<p>Calculating the correlation between two variables is quite easy, in fact, has just 2 steps –</p>
+<ol>
+<li>Calculate the daily returns</li>
+<li>Use the ‘=Correl’ function in excel.</li>
+</ol>
+<p>Press enter, and you get the correlation between the two variables.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/07/Image-8_correl.png"><img alt="Image 8_correl" class="aligncenter size-full wp-image-3770" height="223" loading="lazy" sizes="(max-width: 692px) 100vw, 692px" src="http://zerodha.com/varsity/wp-content/uploads/2016/07/Image-8_correl.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/07/Image-8_correl.png 692w, https://zerodha.com/varsity/wp-content/uploads/2016/07/Image-8_correl-300x97.png 300w" width="692"/></a></p>
+<p>Remember the correlation between stock A and Stock B is the same as the correlation between Stock B and Stock A.</p>
+<p>I hope you’ve had a decent understanding of correlation, its time I repost the question asked earlier.</p>
+<p>If you were to guess the correlation between USDINR and Nifty 50, what would it be? Forget about the number, can you at least guess whether they are positively correlated or negatively correlated?</p>
+<p>Let us try and deduce this – If the markets (as a representation of the whole economy) are doing good, then the markets tend to attract investments from overseas. This means dollars are coming into the country. The dollars get sold to get converted to Rupee. Essentially this translates to dollars being sold for Rupees, naturally the Rupee strengths. This means the USDINR goes down while the Nifty 50 increases. The same logic can be applied when you look at it from the other way, i.e. market going down while USDINR increases.</p>
+<p>This means Nifty 50 and the USDINR should be inversely correlated. In fact, this is true, and the correlation value is -0.12267 (2015 data).</p>
+<p>You can <a href="http://zerodha.com/varsity/wp-content/uploads/2016/07/USDINR_RBI-data_hitorical.xlsx"><strong>download</strong></a> the excel sheet.</p>
+<p>In the next chapter, we will briefly look into other currency contracts and the role of Technical Analysis while trading currencies. With this discussion, we will wrap up currencies and start exploring the world oh commodities!</p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ul>
+<li>The classic future – spot arbitrage is not really accessible to the retail market. Hence traders tend to look at calendar spreads.</li>
+<li>In a calendar spread you simultaneously buy and sell contracts belonging to two different expires.</li>
+<li>A future Bull spread is when you buy near month futures and sell the further month expiry.</li>
+<li>Futures bear spread when you sell near month futures and buy the further month expiry.</li>
+<li>You can directly trade the spread from your trading terminal; these are called the ‘Spread contracts’</li>
+<li>The USD INR pair tends to have lower volatility when compared to Nifty 50</li>
+<li>The USD INR and Nifty 50 are inversely correlated</li>
+</ul>
+<div class="clear"> </div>
+</div>

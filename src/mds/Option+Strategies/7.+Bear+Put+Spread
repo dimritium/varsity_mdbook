@@ -1,0 +1,249 @@
+<div class="post">
+<h2>7.1 – Spreads versus naked positions</h2>
+<p>Over the last five chapters we’ve discussed various multi leg bullish strategies. These strategies ranged to suit an assortment of market outlook – from an outrightly bullish market outlook to moderately bullish market outlook. Reading through the last 5 chapters you must have realised that most professional options traders prefer initiating a spread strategy versus taking on naked option positions. No doubt, spreads tend to shrink the overall profitability, but at the same time spreads give you a greater visibility on risk. Professional traders value ‘risk visibility’ more than the profits. In simple words, it’s a much better deal to take on smaller profits as long as you know what would be your maximum loss under worst case scenarios.</p>
+<p>Another interesting aspect of spreads is that invariably there is some sort of financing involved, wherein the purchase of an option is funded by the sale of another option. In fact, financing is one of the key aspects that differentiate a spread versus a normal naked directional position. Over the next few chapters we will discuss strategies which you can deploy when your outlook ranges from moderately bearish to out rightly bearish. The composition of these strategies is similar to the bullish strategies that we discussed earlier in the module.</p>
+<p>The first bearish strategy we will look into is the Bear Put Spread, which as you may have guessed is the equivalent of the Bull Call Spread.</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/02/M6-C7-Cartoon1.png"><img alt="M6-C7-Cartoon" class="aligncenter wp-image-3054" height="377" sizes="(max-width: 566px) 100vw, 566px" src="http://zerodha.com/varsity/wp-content/uploads/2016/02/M6-C7-Cartoon1.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/02/M6-C7-Cartoon1.png 600w, https://zerodha.com/varsity/wp-content/uploads/2016/02/M6-C7-Cartoon1-300x200.png 300w" width="566"/></a></p>
+<h2>7.2 – Strategy notes</h2>
+<p>Similar to the Bull Call Spread, the Bear Put Spread is quite easy to implement. One would implement a bear put spread when the market outlook is moderately bearish, i.e you expect the market to go down in the near term while at the same time you don’t expect it to go down much. If I were to quantify ‘moderately bearish’, a 4-5% correction would be apt. By invoking a bear put spread one would make a modest gain if the markets correct (go down) as expected but on the other hand if the markets were to go up, the trader will end up with a limited loss.</p>
+<p>A conservative trader (read as risk averse trader) would implement Bear Put Spread strategy by simultaneously –</p>
+<ol>
+<li>Buying an In the money Put option</li>
+<li>Selling an Out of the Money Put option</li>
+</ol>
+<p>There is no compulsion that the Bear Put Spread has to be created with an ITM and OTM option. The Bear Put spread can be created employing any two put options. The choice of strike depends on the aggressiveness of the trade. However do note that both the options should belong to the same expiry and same underlying. To understand the implementation better, let’s take up an example and see how the strategy behaves under different scenarios.</p>
+<p>As of today Nifty is at 7485, this would make 7600 PE In the money and 7400 PE Out of the money. The ‘Bear Put Spread’ would require one to sell 7400 PE, the premium received from the sale would partially finance the purchase of the 7600 PE. The premium paid (PP) for the 7600 PE is Rs.165, and the premium received (PR) for the 7400 PE is Rs.73/-. The net debit for this transaction would be –</p>
+<p>73 – 165</p>
+<p>= <strong style="color: red;">-92</strong></p>
+<p>To understand how the payoff of the strategy works under different expiry circumstances, we need to consider different scenarios. Please do bear in mind the payoff is upon expiry, which means to say that the trader is expected to hold these positions till expiry.</p>
+<p><strong>Scenario 1 – Market expires at 7800 (above long put option i.e 7600)</strong></p>
+<p>This is a case where the market has gone up as opposed to the expectation that it would go down. At 7800 both the put option i.e 7600 and 7400 would not have any intrinsic value, hence they would expire worthless.</p>
+<ul>
+<li>The premium paid for 7600 PE i.e Rs.165 would go to 0, hence we retain nothing</li>
+<li>The premium received for 7400 PE i.e Rs.73 would be retained entirely</li>
+<li>Hence at 7800, we would lose Rs.165 on one hand but this would be partially offset by the premium received i.e Rs.73</li>
+<li>The overall loss would be -165 + 73 = <strong style="color: red;">-92</strong></li>
+</ul>
+<p>Do note the ‘-ve’ sign associated with 165 indicates that this is a money outflow from the account, and the ‘+ve’ sign associated with 73 indicates that the money is received into the account.</p>
+<p>Also, the net loss of 92 is equivalent to the net debit of the strategy.</p>
+<p><strong>Scenario 2 – Market expired at 7600 (at long put option)</strong></p>
+<p>In this scenario we assume the market expires at 7600, where we have purchased a Put option. But then, at 7600 both 7600 and 7400 PE would expire worthless (similar to scenario 1) resulting in a loss of <strong style="color: red;">-92.</strong></p>
+<p><strong>Scenario 3 – Market expires at 7508 (breakeven)</strong></p>
+<p>7508 is half way through 7600 and 7400, and as you may have guessed I’ve picked 7508 specifically to showcase that the strategy neither makes money nor loses any money at this specific point.</p>
+<ul>
+<li>The 7600 PE would have an intrinsic value equivalent to Max [7600 -7508, 0], which is 92.</li>
+<li>Since we have paid Rs.165 as premium for the 7600 PE, some of the premium paid would be recovered. That would be 165 – 92 = 73, which means to say the net loss on 7600 PE at this stage would be Rs.73 and not Rs.165</li>
+<li>The 7400 PE would expire worthless, hence we get to retain the entire premium of Rs.73</li>
+<li>So on hand we make 73 (7400 PE) and on the other we lose 73 (7600 PE) resulting in a no loss no profit situation</li>
+</ul>
+<p>Hence, 7508 would be the breakeven point for this strategy.</p>
+<p><strong>Scenario 4 – Market expires at 7400 (at short put option)</strong></p>
+<p>This is an interesting level, do recall when we initiated the position the spot was at 7485, and now the market has gone down as expected. At this point both the options would have interesting outcomes.</p>
+<ul>
+<li>The 7600 PE would have an intrinsic value equivalent to Max [7600 -7400, 0], which is 200</li>
+<li>We have paid a premium of Rs.165, which would be recovered from the intrinsic value of Rs.200, hence after compensating for the premium paid one would retain Rs.35/-</li>
+<li>The 7400 PE would expire worthless, hence the entire premium of Rs.73 would be retained</li>
+<li>The net profit at this level would be 35+73 = 108</li>
+</ul>
+<p>The net payoff from the strategy is in line with the overall expectation from the strategy i.e the trader gets to make a modest profit when the market goes down.</p>
+<p><strong>Scenario 5 – Market expires at 7200 (below the short put option)</strong></p>
+<p>This is again an interesting level as both the options would have an intrinsic value. Lets figure out how the numbers add up –</p>
+<ul>
+<li>The 7600 PE would have an intrinsic value equivalent to Max [7600 -7200, 0], which is 400</li>
+<li>We have paid a premium of Rs.165, which would be recovered from the intrinsic value of Rs.400, hence after compensating for the premium paid one would retain Rs.235/-</li>
+<li>The 7400 PE would have an intrinsic value equivalent to Max [7400 -7200, 0], which is 200</li>
+<li>We received a premium of Rs.73, however we will have to let go of the premium and bear a loss over and above 73. This would be 200 -73 = 127</li>
+<li>On one hand we make a profit of Rs.235 and on the other we lose 127, therefore the net payoff of the strategy would be 235 – 127 = 108.</li>
+</ul>
+<p>Summarizing all the scenarios (I’ve put up the payoff values directly after considering the premiums)</p>
+<table class="tableizer-table">
+<tbody>
+<tr class="tableizer-firstrow">
+<th>Market Expiry</th>
+<th>Long Put (7600)_IV</th>
+<th>Short Put (7400)_IV</th>
+<th>Net payoff</th>
+</tr>
+<tr>
+<td>7800</td>
+<td>0</td>
+<td>0</td>
+<td>-92</td>
+</tr>
+<tr>
+<td>7600</td>
+<td>0</td>
+<td>0</td>
+<td>-92</td>
+</tr>
+<tr>
+<td>7508</td>
+<td>92</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>7200</td>
+<td>400</td>
+<td>200</td>
+<td>+108</td>
+</tr>
+</tbody>
+</table>
+<p>Do note, the net payoff from the strategy is in line with the overall expectation from the strategy i.e the trader gets to make a modest profit when the market goes down while at the same time the losses are capped in case the market goes up.</p>
+<p>Have a look at the table below –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-1_payoff1.png"><img alt="Image 1_payoff" class="aligncenter wp-image-3052" height="313" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-1_payoff1.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-1_payoff1.png 885w, https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-1_payoff1-300x117.png 300w" width="800"/><br/>
+</a>The table below shows the strategy payoff at different expiry levels. The losses are capped to 92 (when markets go up) and the profits are capped to 108 (when markets go down).</p>
+<h2>7.3 – Strategy critical levels</h2>
+<p>From the above discussed scenarios we can generalize a few things –</p>
+<ol>
+<li>Strategy makes a loss if the spot moves above the breakeven point, and makes a profit below the breakeven point</li>
+<li>Both the profits and loss are capped</li>
+<li>Spread is <strong>difference between the two strike prices</strong>.
+<ol type="a">
+<li>In this example spread would be 7600 – 7400 = 200</li>
+</ol>
+</li>
+<li>Net Debit = Premium Paid – Premium Received
+<ol type="a">
+<li>165 – 73 = 92</li>
+</ol>
+</li>
+<li>Breakeven = Higher strike – Net Debit
+<ol type="a">
+<li>7600 – 92 = 7508</li>
+</ol>
+</li>
+<li>Max profit = Spread – Net Debit
+<ol type="a">
+<li>200 – 92 = 108</li>
+</ol>
+</li>
+<li>Max Loss = Net Debit
+<ol type="a">
+<li>92</li>
+</ol>
+</li>
+</ol>
+<p>You can note all these critical points in the strategy payoff diagram –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-2_graph.png"><img alt="Image 2_graph" class="aligncenter size-full wp-image-3044" height="291" loading="lazy" sizes="(max-width: 481px) 100vw, 481px" src="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-2_graph.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-2_graph.png 481w, https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-2_graph-300x181.png 300w" width="481"/></a></p>
+<h2>7.4 – Quick note on Delta</h2>
+<p>This is something I missed talking about in the earlier chapters, but its better late than never :-). Whenever you implement an options strategy always add up the deltas. I used the <strong><a href="https://zerodha.com/tools/black-scholes" rel="noopener" target="_blank">B&amp;S calculator</a></strong>&nbsp;to calculate the deltas.</p>
+<p>The delta of 7600 PE is -0.618</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-3_delta-1.png"><img alt="Image 3_delta 1" class="aligncenter wp-image-3045" height="267" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-3_delta-1-1024x342.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-3_delta-1-1024x342.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-3_delta-1-300x100.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-3_delta-1.png 1108w" width="800"/></a></p>
+<p>The delta of 7400 PE is – 0.342</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-4_delta-21.png"><img alt="Image 4_delta 2" class="aligncenter wp-image-3051" height="276" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-4_delta-21-1024x353.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-4_delta-21-1024x353.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-4_delta-21-300x103.png 300w, https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-4_delta-21.png 1109w" width="800"/></a></p>
+<p>The negative sign indicates that the put option premium will go down if the markets go up, and premium gains value if the markets go down. But do note, we have written the 7400 PE, hence the Delta would be</p>
+<p>-(-0.342)</p>
+<p>+ 0.342</p>
+<p>Now, since deltas are additive in nature we can add up the deltas to give the combined delta of the position. In this case it would be –</p>
+<p>-0.618 + (+0.342)</p>
+<p><strong>= – 0.276</strong></p>
+<p>This means the strategy has an overall delta of 0.276 and the ‘–ve’ indicates that the premiums will go up if the markets go down. Similarly you can add up the deltas of other strategies we’ve discussed earlier – Bull Call Spread, Call Ratio Back spread etc and you will realize they all have a positive delta indicating that the strategy is bullish.</p>
+<p>When you have more than 2 option legs it gets really difficult to estimate the overall bias of the strategy (whether the strategy is bullish or bearish), in such cases you can quickly add up the deltas to know the bias. Further, if in case the deltas add to zero, then it means that the strategy is not really biased to any direction. Such strategies are called ‘Delta Neutral’. We will eventually discuss these strategies at a later point in this module.</p>
+<p>Also, you may be interested to know that while the delta neutral strategies are immune to market’s directional move, they react to changes in volatility and time, hence these are also sometime called “Volatility based strategies”.</p>
+<h2>7.5 – Strike selection and effect of volatility</h2>
+<p>The strike selection for a bear put spread is very similar to the strike selection methodology of a bull call spread. I hope you are familiar with the ‘1<sup>st</sup> half of the series’ and ‘2<sup>nd</sup> half of the series’ methodology. If not I’d suggest you to kindly read through <strong><a href="http://zerodha.com/varsity/chapter/bull-call-spread/" rel="noopener" target="_blank">section 2.3</a>.</strong></p>
+<p>Have a look at the graph below –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-5_start-of-the-series.png"><img alt="Image 5_start of the series" class="aligncenter wp-image-3047" height="357" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-5_start-of-the-series.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-5_start-of-the-series.png 860w, https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-5_start-of-the-series-300x134.png 300w" width="800"/></a></p>
+<p>If we are in the first half of the series (ample time to expiry) and we expect the market to go down by about 4% from present levels, choose the following strikes to create the spread</p>
+<table class="tableizer-table">
+<tbody>
+<tr class="tableizer-firstrow">
+<th>Expect 4% move to happen within</th>
+<th>Higher strike</th>
+<th>Lower strike</th>
+<th>Refer graph on</th>
+</tr>
+<tr>
+<td>5 days</td>
+<td>Far OTM</td>
+<td>Far OTM</td>
+<td>Top left</td>
+</tr>
+<tr>
+<td>15 days</td>
+<td>ATM</td>
+<td>Slightly OTM</td>
+<td>Top right</td>
+</tr>
+<tr>
+<td>25 days</td>
+<td>ATM</td>
+<td>OTM</td>
+<td>Bottom left</td>
+</tr>
+<tr>
+<td>At expiry</td>
+<td>ATM</td>
+<td>OTM</td>
+<td>Bottom right</td>
+</tr>
+</tbody>
+</table>
+<p>Now assuming we are in the 2<sup>nd</sup> half of the series, selecting the following strikes to create the spread would make sense –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-6_2nd-half-of-series.png"><img alt="Image 6_2nd half of series" class="aligncenter wp-image-3048" height="370" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-6_2nd-half-of-series.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-6_2nd-half-of-series.png 866w, https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-6_2nd-half-of-series-300x139.png 300w" width="800"/></a></p>
+<table class="tableizer-table">
+<tbody>
+<tr class="tableizer-firstrow">
+<th>Expect 4% move to happen within</th>
+<th>Higher strike</th>
+<th>Lower strike</th>
+<th>Refer graph on</th>
+</tr>
+<tr>
+<td>Same day (even specific)</td>
+<td>OTM</td>
+<td>OTM</td>
+<td>Top left</td>
+</tr>
+<tr>
+<td>5 days</td>
+<td>ITM/OTM</td>
+<td>OTM</td>
+<td>Top right</td>
+</tr>
+<tr>
+<td>10 days</td>
+<td>ITM/OTM</td>
+<td>OTM</td>
+<td>Bottom left</td>
+</tr>
+<tr>
+<td>At expiry</td>
+<td>ITM/OTM</td>
+<td>OTM</td>
+<td>Bottom right</td>
+</tr>
+</tbody>
+</table>
+<p>I hope you will find the above two tables useful while selecting the strikes for the bear put spread.</p>
+<p>We will now shift our focus on the effect of volatility on the bear put spread. Have a look at the following image –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-7_volatility-effect.png"><img alt="Image 7_volatility effect" class="aligncenter wp-image-3049" height="370" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="http://zerodha.com/varsity/wp-content/uploads/2016/02/Image-7_volatility-effect.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-7_volatility-effect.png 866w, https://zerodha.com/varsity/wp-content/uploads/2016/02/Image-7_volatility-effect-300x139.png 300w" width="800"/></a></p>
+<p>The graph above explains how the premium varies with respect to variation in volatility and time.</p>
+<ul>
+<li>The blue line suggests that the cost of the strategy <strong>does not vary much</strong> with the increase in volatility when there is <strong>ample time to expiry</strong> (30 days)</li>
+<li>The green line suggests that the cost of the strategy <strong>varies moderately</strong> with the increase in volatility when there is about <strong>15 days to expiry</strong></li>
+<li>The red line suggests that the cost of the strategy <strong>varies significantly</strong> with the increase in volatility when there is about <strong>5 days to expiry</strong></li>
+</ul>
+<p>From these graphs it is clear that one should not really be worried about the changes in the volatility when there is ample time to expiry. However one should have a view on volatility between midway and expiry of the series. It is advisable to take the bear put spread only when the volatility is expected to increase, alternatively if you expect the volatility to decrease, its best to avoid the strategy.</p>
+<hr/>
+<h3>Key takeaways from this chapter</h3>
+<ol>
+<li>Spread offers visibility on risk but at the same time shrinks the reward</li>
+<li>When you create a spread, the proceeds from the sale of an option offsets the purchase of an option</li>
+<li>Bear put spread is best invoked when you are moderately bearish on the markets</li>
+<li>Both the profits and losses are capped</li>
+<li>Classic bear put spread involves simultaneously purchasing ITM put options and selling OTM put options</li>
+<li>Bear put spread usually results in a net debit</li>
+<li>Net Debit = Premium Paid – Premium Received</li>
+<li>Breakeven = Higher strike – Net Debit</li>
+<li>Max profit = Spread – Net Debit</li>
+<li>Max Loss = Net Debit</li>
+<li>Select strikes based on the time to expiry</li>
+<li>Implement the strategy only when you expect the volatility to increase (especially in the 2<sup>nd</sup> half of the series)</li>
+</ol>
+<p>&nbsp;</p>
+<p style="text-align: center;"><a class="button" href="https://zerodha.com/varsity/wp-content/uploads/2016/02/C7_Bear-Put_spread.xlsx">Download Bear Put Spread Excel Sheet</a></p>
+<div class="clear"> </div>
+</div>
