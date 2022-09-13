@@ -1,0 +1,400 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>7. Asset Schedule (Part 1) - Varsity mdBook</title>
+                
+
+        <!-- Custom HTML head -->
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+                <link rel="icon" href="../../favicon.svg">
+                        <link rel="shortcut icon" href="../../favicon.png">
+                <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+                <link rel="stylesheet" href="../../css/print.css" media="print">
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+                <link rel="stylesheet" href="../../fonts/fonts.css">
+        
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+            </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><div><strong aria-hidden="true">1.</strong> Introduction to Stock Markets</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/1.html"><strong aria-hidden="true">1.1.</strong> The Need to Invest</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/2.html"><strong aria-hidden="true">1.2.</strong> Regulators</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/3.html"><strong aria-hidden="true">1.3.</strong> Financial Intermediaries</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/4.html"><strong aria-hidden="true">1.4.</strong> The IPO Markets – Part 1</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/5.html"><strong aria-hidden="true">1.5.</strong> The IPO Markets – Part 2</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/6.html"><strong aria-hidden="true">1.6.</strong> The Stock Markets</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/7.html"><strong aria-hidden="true">1.7.</strong> The Stock Markets Index</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/8.html"><strong aria-hidden="true">1.8.</strong> Commonly Used Jargons</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/9.html"><strong aria-hidden="true">1.9.</strong> The Trading Terminal</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/10.html"><strong aria-hidden="true">1.10.</strong> Clearing and Settlement Process</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/11.html"><strong aria-hidden="true">1.11.</strong> Five Corporate Actions and Its Impact on Stock Prices</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/12.html"><strong aria-hidden="true">1.12.</strong> Key Events and Their Impact on Markets</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/13.html"><strong aria-hidden="true">1.13.</strong> Getting started!</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/14.html"><strong aria-hidden="true">1.14.</strong> Supplementary note – Rights, OFS, FPO</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/15.html"><strong aria-hidden="true">1.15.</strong> Supplementary note – The 20 market depth or level 3 data</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Technical Analysis</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/1.html"><strong aria-hidden="true">2.1.</strong> Background</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/2.html"><strong aria-hidden="true">2.2.</strong> Introducing Technical Analysis</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/3.html"><strong aria-hidden="true">2.3.</strong> The Chart Types</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/4.html"><strong aria-hidden="true">2.4.</strong> Getting Started with Candlesticks</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/5.html"><strong aria-hidden="true">2.5.</strong> Single Candlestick patterns (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/6.html"><strong aria-hidden="true">2.6.</strong> Single Candlestick patterns (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/7.html"><strong aria-hidden="true">2.7.</strong> Single Candlestick patterns (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/8.html"><strong aria-hidden="true">2.8.</strong> Multiple candlestick patterns (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/9.html"><strong aria-hidden="true">2.9.</strong> Multiple Candlestick Patterns (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/10.html"><strong aria-hidden="true">2.10.</strong> Multiple Candlestick Patterns (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/11.html"><strong aria-hidden="true">2.11.</strong> The Support and Resistance</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/12.html"><strong aria-hidden="true">2.12.</strong> Volumes</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/13.html"><strong aria-hidden="true">2.13.</strong> Moving Averages</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/14.html"><strong aria-hidden="true">2.14.</strong> Indicators (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/15.html"><strong aria-hidden="true">2.15.</strong> Indicators (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/16.html"><strong aria-hidden="true">2.16.</strong> The Fibonacci Retracements</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/17.html"><strong aria-hidden="true">2.17.</strong> The Dow Theory (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/18.html"><strong aria-hidden="true">2.18.</strong> The Dow Theory (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/19.html"><strong aria-hidden="true">2.19.</strong> The Finale – Helping you get started</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/20.html"><strong aria-hidden="true">2.20.</strong> Other indicators</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/21.html"><strong aria-hidden="true">2.21.</strong> Interesting features on TradingView</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/22.html"><strong aria-hidden="true">2.22.</strong> The Central Pivot Range</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Fundamental Analysis</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/1.html"><strong aria-hidden="true">3.1.</strong> Introduction to Fundamental Analysis</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/2.html"><strong aria-hidden="true">3.2.</strong> Mindset of an Investor</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/3.html"><strong aria-hidden="true">3.3.</strong> How to Read the Annual Report of a Company</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/4.html"><strong aria-hidden="true">3.4.</strong> Understanding the P&amp;L Statement (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/5.html"><strong aria-hidden="true">3.5.</strong> Understanding P&amp;L Statement (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/6.html"><strong aria-hidden="true">3.6.</strong> Understanding Balance Sheet Statement (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/7.html"><strong aria-hidden="true">3.7.</strong> Understanding the Balance Sheet Statement (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/8.html"><strong aria-hidden="true">3.8.</strong> The Cash Flow statement</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/9.html"><strong aria-hidden="true">3.9.</strong> The Financial Ratio Analysis (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/10.html"><strong aria-hidden="true">3.10.</strong> The Financial Ratio Analysis (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/11.html"><strong aria-hidden="true">3.11.</strong> The Financial Ratio Analysis (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/12.html"><strong aria-hidden="true">3.12.</strong> The Investment Due Diligence</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/13.html"><strong aria-hidden="true">3.13.</strong> Equity Research (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/14.html"><strong aria-hidden="true">3.14.</strong> DCF Primer</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/15.html"><strong aria-hidden="true">3.15.</strong> Equity Research (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/16.html"><strong aria-hidden="true">3.16.</strong> The Finale</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Futures Trading</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/1.html"><strong aria-hidden="true">4.1.</strong> Background – Forwards Market</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/2.html"><strong aria-hidden="true">4.2.</strong> Introducing Futures Contract</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/3.html"><strong aria-hidden="true">4.3.</strong> The Futures Trade</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/4.html"><strong aria-hidden="true">4.4.</strong> Leverage &amp; Payoff</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/5.html"><strong aria-hidden="true">4.5.</strong> Margin &amp; M2M</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/6.html"><strong aria-hidden="true">4.6.</strong> Margin Calculator (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/7.html"><strong aria-hidden="true">4.7.</strong> Margin Calculator (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/8.html"><strong aria-hidden="true">4.8.</strong> All about Shorting</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/9.html"><strong aria-hidden="true">4.9.</strong> The Nifty Futures</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/10.html"><strong aria-hidden="true">4.10.</strong> The Futures Pricing</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/11.html"><strong aria-hidden="true">4.11.</strong> Hedging with Futures</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/12.html"><strong aria-hidden="true">4.12.</strong> Open Interest</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/13.html"><strong aria-hidden="true">4.13.</strong> Quick Note on Physical Settlement</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> Options Theory for Professional Trading</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/1.html"><strong aria-hidden="true">5.1.</strong> Call Option Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/2.html"><strong aria-hidden="true">5.2.</strong> Basic Option Jargons</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/3.html"><strong aria-hidden="true">5.3.</strong> Buying a Call Option</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/4.html"><strong aria-hidden="true">5.4.</strong> Selling/Writing a Call Option</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/5.html"><strong aria-hidden="true">5.5.</strong> The Put Option Buying</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/6.html"><strong aria-hidden="true">5.6.</strong> The Put Option selling</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/7.html"><strong aria-hidden="true">5.7.</strong> Summarizing Call &amp; Put Options</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/8.html"><strong aria-hidden="true">5.8.</strong> Moneyness of an Option Contract</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/9.html"><strong aria-hidden="true">5.9.</strong> The Option Greeks (Delta) Part 1</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/10.html"><strong aria-hidden="true">5.10.</strong> Delta (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/11.html"><strong aria-hidden="true">5.11.</strong> Delta (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/12.html"><strong aria-hidden="true">5.12.</strong> Gamma (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/13.html"><strong aria-hidden="true">5.13.</strong> Gamma (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/14.html"><strong aria-hidden="true">5.14.</strong> Theta</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/15.html"><strong aria-hidden="true">5.15.</strong> Volatility Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/16.html"><strong aria-hidden="true">5.16.</strong> Volatility Calculation (Historical)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/17.html"><strong aria-hidden="true">5.17.</strong> Volatility &amp; Normal Distribution</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/18.html"><strong aria-hidden="true">5.18.</strong> Volatility Applications</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/19.html"><strong aria-hidden="true">5.19.</strong> Vega</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/20.html"><strong aria-hidden="true">5.20.</strong> Greek Interactions</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/21.html"><strong aria-hidden="true">5.21.</strong> Greek Calculator</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/22.html"><strong aria-hidden="true">5.22.</strong> Re-introducing Call &amp; Put Options</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/23.html"><strong aria-hidden="true">5.23.</strong> Case studies – wrapping it all up!</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/24.html"><strong aria-hidden="true">5.24.</strong> Quick note on Physical Settlement</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/25.html"><strong aria-hidden="true">5.25.</strong> Options M2M and P&amp;L calculation</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> Option Strategies</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/1.html"><strong aria-hidden="true">6.1.</strong> Orientation</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/2.html"><strong aria-hidden="true">6.2.</strong> Bull Call Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/3.html"><strong aria-hidden="true">6.3.</strong> Bull Put Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/4.html"><strong aria-hidden="true">6.4.</strong> Call Ratio Back Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/5.html"><strong aria-hidden="true">6.5.</strong> Bear Call Ladder</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/6.html"><strong aria-hidden="true">6.6.</strong> Synthetic Long &amp; Arbitrage</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/7.html"><strong aria-hidden="true">6.7.</strong> Bear Put Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/8.html"><strong aria-hidden="true">6.8.</strong> Bear Call Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/9.html"><strong aria-hidden="true">6.9.</strong> Put Ratio Back spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/10.html"><strong aria-hidden="true">6.10.</strong> The Long Straddle</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/11.html"><strong aria-hidden="true">6.11.</strong> The Short Straddle</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/12.html"><strong aria-hidden="true">6.12.</strong> The Long &amp; Short Strangle</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/13.html"><strong aria-hidden="true">6.13.</strong> Max Pain &amp; PCR Ratio</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/14.html"><strong aria-hidden="true">6.14.</strong> Iron Condor</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> Markets and Taxation</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/1.html"><strong aria-hidden="true">7.1.</strong> Introduction (Setting the Context)</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/2.html"><strong aria-hidden="true">7.2.</strong> Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/3.html"><strong aria-hidden="true">7.3.</strong> Classifying Your Market Activity</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/4.html"><strong aria-hidden="true">7.4.</strong> Taxation for Investors</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/5.html"><strong aria-hidden="true">7.5.</strong> Taxation for Traders</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/6.html"><strong aria-hidden="true">7.6.</strong> Turnover, Balance Sheet, and P&amp;L</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/7.html"><strong aria-hidden="true">7.7.</strong> ITR Forms (The Finale)</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> Currency, Commodity, and Government Securities</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/1.html"><strong aria-hidden="true">8.1.</strong> Currency Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/2.html"><strong aria-hidden="true">8.2.</strong> Reference Rates &amp; Impact of events</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/3.html"><strong aria-hidden="true">8.3.</strong> Impact of events (Brexit) &amp; Interest Rate Parity</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/4.html"><strong aria-hidden="true">8.4.</strong> The USD INR Pair (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/5.html"><strong aria-hidden="true">8.5.</strong> The USD INR Pair (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/6.html"><strong aria-hidden="true">8.6.</strong> EUR, GBP, and JPY</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/7.html"><strong aria-hidden="true">8.7.</strong> Gold (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/8.html"><strong aria-hidden="true">8.8.</strong> Gold (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/9.html"><strong aria-hidden="true">8.9.</strong> Silver</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/10.html"><strong aria-hidden="true">8.10.</strong> Crude Oil (Part 1), digging the past</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/11.html"><strong aria-hidden="true">8.11.</strong> Crude Oil (Part 2), the crude oil eco system</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/12.html"><strong aria-hidden="true">8.12.</strong> Crude Oil (Part 3), the crude oil contract</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/13.html"><strong aria-hidden="true">8.13.</strong> Copper &amp; Aluminium</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/14.html"><strong aria-hidden="true">8.14.</strong> Lead &amp; Nickel</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/15.html"><strong aria-hidden="true">8.15.</strong> Cardamom &amp; Mentha Oil</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/16.html"><strong aria-hidden="true">8.16.</strong> Natural Gas</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/17.html"><strong aria-hidden="true">8.17.</strong> Commodity Options</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/18.html"><strong aria-hidden="true">8.18.</strong> Cross Currency Pairs</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/19.html"><strong aria-hidden="true">8.19.</strong> Government Securities</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.</strong> Risk Management &amp; Trading Psychology</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/1.html"><strong aria-hidden="true">9.1.</strong> Orientation note</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/2.html"><strong aria-hidden="true">9.2.</strong> Risk (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/3.html"><strong aria-hidden="true">9.3.</strong> Risk (Part 2) – Variance &amp; Covariance</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/4.html"><strong aria-hidden="true">9.4.</strong> Risk (Part 3) – Variance &amp; Covariance Matrix</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/5.html"><strong aria-hidden="true">9.5.</strong> Risk (Part 4) – Correlation Matrix &amp; Portfolio Variance</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/6.html"><strong aria-hidden="true">9.6.</strong> Equity Curve</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/7.html"><strong aria-hidden="true">9.7.</strong> Expected Returns</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/8.html"><strong aria-hidden="true">9.8.</strong> Portfolio Optimization (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/9.html"><strong aria-hidden="true">9.9.</strong> Portfolio Optimization (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/10.html"><strong aria-hidden="true">9.10.</strong> Value at Risk</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/11.html"><strong aria-hidden="true">9.11.</strong> Position Sizing for active trader</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/12.html"><strong aria-hidden="true">9.12.</strong> Position Sizing for active traders (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/13.html"><strong aria-hidden="true">9.13.</strong> Position Sizing for active traders (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/14.html"><strong aria-hidden="true">9.14.</strong> Kelly’s Criterion</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/15.html"><strong aria-hidden="true">9.15.</strong> Trading Biases</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/16.html"><strong aria-hidden="true">9.16.</strong> Trading Biases (Part 2)</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">10.</strong> Trading Systems</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/1.html"><strong aria-hidden="true">10.1.</strong> What to expect?</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/2.html"><strong aria-hidden="true">10.2.</strong> Pair Trading logic</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/3.html"><strong aria-hidden="true">10.3.</strong> Pair Trading, Method 1, Chapter 1 (PTM1, C1) -Tracking Pairs</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/4.html"><strong aria-hidden="true">10.4.</strong> PTM1, C2 – Pair stats</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/5.html"><strong aria-hidden="true">10.5.</strong> PTM1, C3 – Pre trade setup</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/6.html"><strong aria-hidden="true">10.6.</strong> PTM1, C4 – The Density Curve</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/7.html"><strong aria-hidden="true">10.7.</strong> PTM1,C5 – The Pair Trade</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/8.html"><strong aria-hidden="true">10.8.</strong> Pair trade Method 2, Chapter 1 (PTM2, C1) – Straight line Equation</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/9.html"><strong aria-hidden="true">10.9.</strong> PTM2, C2 – Linear Regression</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/10.html"><strong aria-hidden="true">10.10.</strong> PTM2, C3 – The Error Ratio</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/11.html"><strong aria-hidden="true">10.11.</strong> PTM2, C4 – The ADF test</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/12.html"><strong aria-hidden="true">10.12.</strong> Trade Identification</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/13.html"><strong aria-hidden="true">10.13.</strong> Live Example -1</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/14.html"><strong aria-hidden="true">10.14.</strong> Live Example – 2</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/15.html"><strong aria-hidden="true">10.15.</strong> Calendar Spreads</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/16.html"><strong aria-hidden="true">10.16.</strong> Momentum Portfolios</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">11.</strong> Personal Finance - Mutual Funds</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/1.html"><strong aria-hidden="true">11.1.</strong> Background and Orientation</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/2.html"><strong aria-hidden="true">11.2.</strong> Personal Finance Math (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/3.html"><strong aria-hidden="true">11.3.</strong> Personal Finance Math (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/4.html"><strong aria-hidden="true">11.4.</strong> The retirement problem (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/5.html"><strong aria-hidden="true">11.5.</strong> The retirement problem (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/6.html"><strong aria-hidden="true">11.6.</strong> Introduction to Mutual Funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/7.html"><strong aria-hidden="true">11.7.</strong> Concept of fund &amp; NAV</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/8.html"><strong aria-hidden="true">11.8.</strong> The mutual fund fact-sheet</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/9.html"><strong aria-hidden="true">11.9.</strong> The Equity scheme (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/10.html"><strong aria-hidden="true">11.10.</strong> Equity Scheme (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/11.html"><strong aria-hidden="true">11.11.</strong> The Debt funds (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/12.html"><strong aria-hidden="true">11.12.</strong> The Debt funds (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/13.html"><strong aria-hidden="true">11.13.</strong> The Debt funds (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/14.html"><strong aria-hidden="true">11.14.</strong> The Debt Funds (Part 4)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/15.html"><strong aria-hidden="true">11.15.</strong> Investing in Bonds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/16.html"><strong aria-hidden="true">11.16.</strong> Index Funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/17.html"><strong aria-hidden="true">11.17.</strong> Arbitrage Funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/18.html"><strong aria-hidden="true">11.18.</strong> Measuring Mutual fund Returns</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/19.html"><strong aria-hidden="true">11.19.</strong> Rolling Returns</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/20.html"><strong aria-hidden="true">11.20.</strong> Mutual fund Expense Ratio, Direct, and Regular plans</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/21.html"><strong aria-hidden="true">11.21.</strong> Mutual Benchmarking</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/22.html"><strong aria-hidden="true">11.22.</strong> Mutual Fund Beta, SD, and Sharpe Ratio</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/23.html"><strong aria-hidden="true">11.23.</strong> Sortino and the Capture Ratios</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/24.html"><strong aria-hidden="true">11.24.</strong> How to analyse an Equity Mutual fund?</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/25.html"><strong aria-hidden="true">11.25.</strong> How to analyze a debt mutual fund?</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/26.html"><strong aria-hidden="true">11.26.</strong> The Mutual Fund Portfolio</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/27.html"><strong aria-hidden="true">11.27.</strong> Smart-beta funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/28.html"><strong aria-hidden="true">11.28.</strong> Asset Allocation, An Introduction</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/29.html"><strong aria-hidden="true">11.29.</strong> Exchange-traded funds (ETF)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/30.html"><strong aria-hidden="true">11.30.</strong> Basics of Macro Economics</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">12.</strong> Innerworth — Mind over markets</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">13.</strong> Integrated Financial Modelling</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/1.html"><strong aria-hidden="true">13.1.</strong> Introduction to Financial Modelling</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/2.html"><strong aria-hidden="true">13.2.</strong> Excel workbook setup</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/3.html"><strong aria-hidden="true">13.3.</strong> Historical Data</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/4.html"><strong aria-hidden="true">13.4.</strong> Assumptions (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/5.html"><strong aria-hidden="true">13.5.</strong> Assumptions (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/6.html"><strong aria-hidden="true">13.6.</strong> Revenue model</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/7.html" class="active"><strong aria-hidden="true">13.7.</strong> Asset Schedule (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/8.html"><strong aria-hidden="true">13.8.</strong> Asset Schedule (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/9.html"><strong aria-hidden="true">13.9.</strong> Debt Schedule</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/10.html"><strong aria-hidden="true">13.10.</strong> Reserves Schedule (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/11.html"><strong aria-hidden="true">13.11.</strong> Reserves Schedule (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/12.html"><strong aria-hidden="true">13.12.</strong> Projections</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/13.html"><strong aria-hidden="true">13.13.</strong> Cash flow statement</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/14.html"><strong aria-hidden="true">13.14.</strong> Valuation (Part 1) – Overview</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/15.html"><strong aria-hidden="true">13.15.</strong> Valuation (Part 2) – FCFF &amp; FCFE</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/16.html"><strong aria-hidden="true">13.16.</strong> Valuation (Part 3) – Risk Premium &amp; Tax Shield</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/17.html"><strong aria-hidden="true">13.17.</strong> Weighted average cost of capital and Terminal Growth</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/18.html"><strong aria-hidden="true">13.18.</strong> Discounted Cash Flow Analysis (DCF)</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">14.</strong> Personal Finance - Insurance</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/1.html"><strong aria-hidden="true">14.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/2.html"><strong aria-hidden="true">14.2.</strong> Perverse Incentives</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/3.html"><strong aria-hidden="true">14.3.</strong> The nudge</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/4.html"><strong aria-hidden="true">14.4.</strong> Skin in the game</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/5.html"><strong aria-hidden="true">14.5.</strong> Dunning Kruger effect</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/6.html"><strong aria-hidden="true">14.6.</strong> A mighty defence</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/7.html"><strong aria-hidden="true">14.7.</strong> No free lunch</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/8.html"><strong aria-hidden="true">14.8.</strong> Gimmick or not (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/9.html"><strong aria-hidden="true">14.9.</strong> Gimmick or not (Part 2)</a></li></ol></li></ol>            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                                            </div>
+
+                    <h1 class="menu-title">Varsity mdBook</h1>
+
+                    <div class="right-buttons">
+                                                <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                                                                        
+                    </div>
+                </div>
+
+                                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <div class="post">
+<h2 id="71--recap-and-way-forward"><a class="header" href="#71--recap-and-way-forward"><strong>7.1 – Recap and way forward</strong></a></h2>
+<p>In the previous chapter, we looked at how a basic common sense approach can lead us to build a simple revenue model of a company. We made the revenue model using the helper model. In this chapter, we switch back to the primary model and continue to build our financial model.</p>
+<p>To refresh your memory, so far in the primary model, we have –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Set up the basic excel layout for the financial model (indexing, grids, pane freeze)</li>
+<li>Input the balance sheet and P&amp;L data. The data source for the model input is the annual report of the company</li>
+<li>Colour coded the numbers to distinguish between assumptions and facts</li>
+<li>Built the P&amp;L assumptions</li>
+<li>Built the Balance sheet assumption</li>
+</ul>
+</li>
+</ul>
+<p>Both P&amp;L and balance sheet assumptions are in the same sheet, called the ‘assumption sheet’. So far, our model has only three sheets –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Assumption sheet</li>
+<li>Balance sheet, sheet</li>
+<li>P&amp;L Sheet</li>
+</ul>
+</li>
+</ul>
+<p>While we did make assumptions for line items where ever possible, we left out few line items to build a separate schedule for the same. I’d suggest you <a href="https://zerodha.com/varsity/wp-content/uploads/2021/07/FM_Varsity_Main-model_Chapter-5.xlsx">download the excel shee</a>t to get a quick grasp of where we are in our journey of building a financial model.</p>
+<p>Over the following few chapters, let us go ahead and build these schedules.</p>
+<p>We will start with the asset schedule.</p>
+<h2 id="72--base-rule"><a class="header" href="#72--base-rule"><strong>7.2 – Base rule </strong></a></h2>
+<p>Before we build schedules, we need to understand the concept of the base rule. It is a simple concept, you’d probably already know this, but I might as well discuss it now 😊</p>
+<p>As usual, let us take an example.</p>
+<p>We all know electric vehicles are making a buzz in the market. Ola has plans to manufacture and sell electric bikes.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/M13-C7-Web.png"><img alt="" class="aligncenter wp-image-10183" height="305" sizes="(max-width: 414px) 100vw, 414px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/M13-C7-Web-300x221.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/M13-C7-Web-300x221.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/M13-C7-Web-768x566.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/M13-C7-Web.png 800w" width="414"/></a></p>
+<p>Consider for the sake of simplicity that Ola manufactures 4000 electric bikes in its first year of operation. Here are few data points that I’ve made up –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Number of bikes manufactured in 1<sup>st</sup>-year operations = 4000</li>
+<li>Number of bikes sold = 3750</li>
+<li>Number of bikes unsold = 250</li>
+</ul>
+</li>
+</ul>
+<p>On excel –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-1_sales.png"><img alt="" class="aligncenter wp-image-10164" height="178" loading="lazy" sizes="(max-width: 376px) 100vw, 376px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-1_sales-300x142.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-1_sales-300x142.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-1_sales.png 396w" width="376"/></a></p>
+<p>I’ve introduced opening balance, total bikes, and closing balance here. The opening balance in this context is the number of unsold bikes carried forward from the previous year. It is zero in this example since it’s Ola’s first year of operation.</p>
+<p>Total bikes are the sum of opening balance and bikes manufactured. It is 4000 in this case as the opening balance is zero.</p>
+<p>The closing balance is the number of unsold bikes for the given year.</p>
+<p>Now, let us assume that Ola manufactures and sells the same number of bikes in the 2<sup>nd</sup> year.</p>
+<p>Can you pause and tell me what the opening balance, total bikes, and closing balance for the 2<sup>nd</sup> year is?</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-2_sales2.png"><img alt="" class="aligncenter wp-image-10165" height="200" loading="lazy" sizes="(max-width: 414px) 100vw, 414px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-2_sales2-300x145.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-2_sales2-300x145.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-2_sales2.png 396w" width="414"/></a></p>
+<p>I hope you got that right. If not, let me quickly explain –</p>
+<p>The opening balance for year 2 is the closing balance of year 1. So, in this case, the opening balance for Year 2 is 250.</p>
+<p>They manufacture 4000 new bikes, so the total number of bikes is 4250, of which 3750 bikes are sold. Hence the closing balance for year 2 is 500.</p>
+<p>The opening balance for Year 3 is the closing balance for year 2. So on and so forth.</p>
+<p>The technique of linking the closing and opening balance is the ‘Base rule’. We use this pretty much in all the schedules that we build, including the asset schedule. For now, keep the base rule in the back of your mind. We will get back to it shortly.</p>
+<h2 id="73--capex"><a class="header" href="#73--capex"><strong>7.3 – CAPEX </strong></a></h2>
+<p>At this stage, let’s quickly understand what we are dealing with here. If you take a good look at the assets (or application of funds) side of the balance sheet –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-3_liabilities-snapshot.png"><img alt="" class="aligncenter wp-image-10166" height="259" loading="lazy" sizes="(max-width: 442px) 100vw, 442px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-3_liabilities-snapshot-300x176.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-3_liabilities-snapshot-300x176.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-3_liabilities-snapshot-768x450.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-3_liabilities-snapshot.png 857w" width="442"/></a></p>
+<p>You will quickly understand that the Gross block is a large item. In fact, in most balance sheets (at least for manufacturing companies), the gross block is the most significant chunk on the asset side. More so, when it comes to the balance sheet assumptions, we have used gross block extensively –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-4_gbbased.png"><img alt="" class="aligncenter wp-image-10167" height="390" loading="lazy" sizes="(max-width: 305px) 100vw, 305px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-4_gbbased-235x300.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-4_gbbased-235x300.png 235w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-4_gbbased.png 405w" width="305"/></a></p>
+<p>Given its heavyweight, it makes perfect sense to dig deeper into Gross block and strengthen our understanding. I would suggest you do this little exercise –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Pick a company of your choice and open its annual report</li>
+<li>Open the balance sheet, check the asset side, and pay attention to the Gross block</li>
+<li>Notice the associated note number</li>
+<li>Look at the notes in detail</li>
+</ul>
+</li>
+</ul>
+<p>What do you observe? You are likely to notice the following –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Gross block is also called ‘Property, plant, and equipment.’</li>
+<li>Gross block is (most likely) the heavyweight on the asset side</li>
+<li>Few companies may report gross block, deduct the depreciation, and report the netblock</li>
+<li>Few companies report the netblock directly</li>
+</ul>
+</li>
+</ul>
+<p>Further, the associated notes give you a detailed breakup of the gross block, so the notes give you a sense of the nature of this line item. Gross block invariably includes all the details related to the assets the company holds &nbsp;–</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Land (freehold and leasehold)</li>
+<li>Improvements for leasehold lands</li>
+<li>Buildings</li>
+<li>Plant and machinery</li>
+<li>Computer hardware</li>
+<li>Factory equipment’s</li>
+<li>Electric fittings</li>
+<li>Vehicles (including aircraft)</li>
+<li>Maintenance and repair works</li>
+</ul>
+</li>
+</ul>
+<p>The things listed here are ‘CAPEX’ in nature. Now, what is CAPEX?</p>
+<p>Capital expenditure or just the CAPEX of a company are funds used by the company to invest,&nbsp; upgrade, and maintain physical assets such as the ones listed above. For example, if the office roof is leaky, money spent on fixing the roof gets reported as CAPEX.</p>
+<p>Or if a manufacturing company wants to build a new manufacturing plant, then right from acquiring the land (or leasing), to setting up the plant with equipment and factory machinery is considered as ‘Capital expenditure’.</p>
+<p>Some companies can take up projects so large that the capital expenditure can run across several consecutive years, draining the company of its financing avenues. Of course, companies do this with an expectation that the future payoff from the project far exceeds its current capital expenditure.</p>
+<p>When such capital expenditure occurs across many years, it’s called ‘the CAPEX cycle’ of a company.</p>
+<p>As an analyst, it is crucial to understand if the company is going through a CAPEX cycle (expansion)&nbsp; or running just the maintenance CAPEX. If the company is in an expansionary phase, you need to understand why, how, and will the payoff likely exceed the current cash burn.</p>
+<p>If the company’s CAPEX is essentially maintenance CAPEX, then you need to figure if the maintenance CAPEX is something that the company can sustain through year on year.</p>
+<p>Whenever I think of how maintenance CAPEX can be taxing, I remember my friend’s story.</p>
+<p>A good friend of mine (a regular salaried person, like many of us in Bangalore) sold a plot in Bangalore and suddenly became cash-rich overnight. The first thing he did was reinvest the bulk of cash into another property. With the remaining money, he bought himself a fancy BMW, and with that, he expended all the cash he gained from the sale of the property.</p>
+<p>The maintenance CAPEX on the BMW is quite heavy – its fuel-guzzling, hefty insurance premiums, and repairs are super expensive. His salary was not supportive of such a CAPEX in the first place. Eventually, he had to sell the car.</p>
+<p>I detoured to give you this story to bring your attention to the maintenance CAPEX of the company.</p>
+<p>Ensure the company earns enough to maintain its assets.</p>
+<h2 id="74--estimating-capex"><a class="header" href="#74--estimating-capex"><strong>7.4 – Estimating CAPEX</strong></a></h2>
+<p>We discussed Ola earlier in the chapter, so let me continue the same example here. Assume, Ola commenced its manufacturing operation with an initial CAPEX plan of 500Crs for year 1. Assume they invest 500Cr into acquiring land, machinery, equipment’s, assembly lines, etc. Remember, this is also Ola’s gross block.</p>
+<p>What do you think is Ola’s opening and closing gross block?</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-5_capex.png"><img alt="" class="aligncenter wp-image-10168" height="159" loading="lazy" sizes="(max-width: 473px) 100vw, 473px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-5_capex-300x101.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-5_capex-300x101.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-5_capex.png 402w" width="473"/></a></p>
+<p>We know that for year 2, the opening balance is the closing balance of year 1. Assume Ola does another 100Cr worth of CAPEX in year 2.<a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-6_capex2.png"><img alt="" class="aligncenter wp-image-10169" height="161" loading="lazy" sizes="(max-width: 478px) 100vw, 478px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-6_capex2-300x101.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-6_capex2-300x101.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-6_capex2.png 402w" width="478"/></a></p>
+<p>I hope it is clear so far. In year 3, assume Ola does not add any Capex but rather sells off machinery worth 50Crs. What do you think is the closing balance for Year 3? And what is and the opening balance for year 4?</p>
+<p>Here is the table –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-7_capex3.png"><img alt="" class="aligncenter wp-image-10170" height="171" loading="lazy" sizes="(max-width: 471px) 100vw, 471px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-7_capex3-300x109.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-7_capex3-300x109.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-7_capex3.png 419w" width="471"/></a></p>
+<p>Again, the opening balance for Year 4 is the closing balance for Year 3. Hopefully, this example gives you a sense of calculating the opening and closing balance of the gross block.</p>
+<p>When you look at the balance sheet of companies, they directly report the gross block (or property, plant, and equipment) number. Of course, they do not state the CAPEX number in the balance sheet. For example, in the model that we are working on, the gross block numbers are as follows –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-8_gb.png"><img alt="" class="aligncenter wp-image-10171" height="121" loading="lazy" sizes="(max-width: 601px) 100vw, 601px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-8_gb-300x60.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-8_gb-300x60.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-8_gb-768x153.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-8_gb.png 897w" width="601"/></a></p>
+<p>These numbers are good enough starting point to develop the asset schedule.</p>
+<h2 id="75--asset-schedule"><a class="header" href="#75--asset-schedule"><strong>7.5 – Asset schedule</strong></a></h2>
+<p>We will now start building the asset schedule for the model. As a first step, let’s set up our excel sheet. Setting up the excel is precisely the same as the other sheets in the model –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-9_aslayout.png"><img alt="" class="aligncenter wp-image-10172" height="166" loading="lazy" sizes="(max-width: 586px) 100vw, 586px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-9_aslayout-300x85.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-9_aslayout-300x85.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-9_aslayout-1024x289.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-9_aslayout-768x217.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-9_aslayout.png 1330w" width="586"/></a></p>
+<p>Let’s roll out the base rule in motion; hopefully, you get the drift here –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-10_asset-schedule1.png"><img alt="" class="aligncenter wp-image-10173" height="134" loading="lazy" sizes="(max-width: 620px) 100vw, 620px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-10_asset-schedule1-300x65.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-10_asset-schedule1-300x65.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-10_asset-schedule1-1024x222.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-10_asset-schedule1-768x167.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-10_asset-schedule1.png 1332w" width="620"/></a></p>
+<p>As you can imagine, I’ve linked the closing gross block for Year 1 as the opening gross block for Year 2.</p>
+<p>The closing gross block for year 2 is 310.58, and this means the assets of the company has increased –</p>
+<p>310.58 – 257.78</p>
+<p>= 52.80</p>
+<p>Hence the CAPEX for year two must be 52.80 Crs. Since the CAPEX has increased, there has been no disposal of assets. I can add this on excel –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-11_capexadd.png"><img alt="" class="aligncenter wp-image-10174" height="119" loading="lazy" sizes="(max-width: 673px) 100vw, 673px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-11_capexadd-300x53.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-11_capexadd-300x53.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-11_capexadd-1024x180.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-11_capexadd-768x135.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-11_capexadd.png 1329w" width="673"/></a></p>
+<p>I hope you found this easy to understand because it is 😊</p>
+<p>I can continue the calculation the same way for the rest of the years.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-12_fullgb.png"><img alt="" class="aligncenter wp-image-10175" height="119" loading="lazy" sizes="(max-width: 672px) 100vw, 672px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-12_fullgb-300x53.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-12_fullgb-300x53.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-12_fullgb-1024x183.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-12_fullgb-768x137.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-12_fullgb.png 1329w" width="672"/></a></p>
+<p>The numbers here will match the numbers stated in the balance sheet, but we have managed to extract the CAPEX numbers from gross block, which wasn’t explicitly available in the balance sheet.</p>
+<p>Remember, the end objective is to arrive at the netblock of the company. Net block, as you know –</p>
+<p>Gross Block – Depreciation = Net block.</p>
+<p>Sounds straightforward, but here is a twist.</p>
+<p>I want you to quickly take a look at the Y2 depreciation numbers stated in the Balance sheet and P&amp;L. Tell me what you think?</p>
+<p>Y2, depreciation in the Balance sheet is 121.73 Crs, and for the same year, Depreciation in P&amp;L is 24.45 Crs. Which one will you consider here?</p>
+<p>Well, you have to consider both.</p>
+<p>Remember, depreciation is an expense. Hence it gets stated in P&amp;L as an expense for that year. But this year’s depreciation gets carried over to the following year in the balance sheet; hence it’s called the accumulated depreciation.</p>
+<p>Let us deal with it in excel. Here is how I’ve set up my sheet –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-13_dep.png"><img alt="" class="aligncenter wp-image-10176" height="199" loading="lazy" sizes="(max-width: 523px) 100vw, 523px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-13_dep-300x114.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-13_dep-300x114.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-13_dep-768x293.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-13_dep.png 1010w" width="523"/></a></p>
+<p>Yes, we will apply the base rule again. I’ll take the closing balance for year 1, set that as the opening balance for year 2. I’ll add to this the current year depreciation stated in the P&amp;L. When I add the opening balance and closing balance, I should get the closing balance of the accumulated depreciation for year 2. The number I get here should match the depreciation number stated in the balance sheet.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-14_dep1.png"><img alt="" class="aligncenter wp-image-10177" height="251" loading="lazy" sizes="(max-width: 512px) 100vw, 512px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-14_dep1-300x147.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-14_dep1-300x147.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-14_dep1-768x376.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-14_dep1.png 945w" width="512"/></a></p>
+<p>As per the base rule, the closing balance is 125.39Crs, but as stated in the Balance sheet is 121.73 Crs. A difference of nearly 3.66 Crs.</p>
+<p>How and why is this difference?</p>
+<p>Well, the difference arises due to the small asset write-offs and adjustment that happens. We treat this as a depreciation non-expense. If you adjust for this, the numbers should match.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-15_dep2.png"><img alt="" class="aligncenter wp-image-10178" height="120" loading="lazy" sizes="(max-width: 522px) 100vw, 522px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-15_dep2-300x69.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-15_dep2-300x69.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-15_dep2.png 670w" width="522"/></a></p>
+<p>I hope you’ve been able to keep up with this. It is not too complicated, but as a person doing this for the first time, you may find it overwhelming.</p>
+<p>Now that we have calculated the gross block and the accumulated depreciation getting the netblock is pretty straightforward.</p>
+<p>Net block is the difference between the closing gross block and the closing balance of depreciation.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-16_netblock.png"><img alt="" class="aligncenter wp-image-10179" height="298" loading="lazy" sizes="(max-width: 609px) 100vw, 609px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-16_netblock-300x147.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-16_netblock-300x147.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-16_netblock-768x375.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-16_netblock.png 944w" width="609"/></a></p>
+<p>I’d suggest you match this with the netblock number in the balance sheet for your reference.</p>
+<h2 id="76--capex-projections"><a class="header" href="#76--capex-projections"><strong>7.6 – Capex projections </strong></a></h2>
+<p>Now that we have set up the asset schedule, we need to move ahead and make some projections here.</p>
+<p>The most crucial projection here is the CAPEX projection. It is super important to understand how the company will be dealing with capital expenditure over the coming years. Now, because this is such an important figure, companies usually explicitly state their CAPEX plans. You can get this information by reading the management discussion analysis or the analyst reports (or even watching a business channel).</p>
+<p>I’d suggest you take some time to watch this interview to the context into how you can project the CAPEX by considering management’s statements.</p>
+<div style="text-align: center;">https://www.youtube.com/watch?v=Wa-kUaIcm4E</div>
+<p>In this recent interview, the CFO of Bajaj Auto clearly states the CAPEX requirements for the coming years. In my view, this kind of information is more valuable than any projection we can do.</p>
+<p>If you don’t have access to this kind of information, then you have two alternatives –</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Find out the average CAPEX and assume the averages hold for the coming years</li>
+<li>Variable method, here you look at the company’s historical CAPEX. If the company has been through an expansionary phase (high capex spend), you taper it down. Alternatively, if the company has had a low CAPEX cycle, you gradually increase the CAPEX spend.</li>
+</ul>
+</li>
+</ul>
+<p>Remember, both these techniques are your alternate. Your first option should be the management itself.</p>
+<p>In this model, we will use the variable method. Historically, the CAPEX was high, so I will gradually taper it down with an assumption that the company is through with the bulk of its CAPEX cycle. I’ve also assumed that the company has zero disposal of assets.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-17_capexpro.png"><img alt="" class="aligncenter wp-image-10180" height="163" loading="lazy" sizes="(max-width: 488px) 100vw, 488px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-17_capexpro-300x100.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-17_capexpro-300x100.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-17_capexpro-1024x341.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-17_capexpro-768x256.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-17_capexpro.png 1341w" width="488"/></a></p>
+<p>Now that you have the CAPEX number, isn’t it easy to figure the Closing gross block number? Of course, it is. Let us complete this –</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-18_gbcomplete.png"><img alt="" class="aligncenter wp-image-10181" height="94" loading="lazy" sizes="(max-width: 513px) 100vw, 513px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-18_gbcomplete-300x55.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-18_gbcomplete-300x55.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-18_gbcomplete-1024x186.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-18_gbcomplete-768x140.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-18_gbcomplete.png 1343w" width="513"/></a></p>
+<p>Now that we have the closing gross block number, we can plough these numbers back to the balance sheet.</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-19_bs1st.png"><img alt="" class="aligncenter wp-image-10182" height="213" loading="lazy" sizes="(max-width: 484px) 100vw, 484px" src="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-19_bs1st-300x132.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-19_bs1st-300x132.png 300w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-19_bs1st-1024x451.png 1024w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-19_bs1st-768x338.png 768w, https://zerodha.com/varsity/wp-content/uploads/2021/09/Image-19_bs1st.png 1227w" width="484"/></a></p>
+<p>With this, we have made our first balance sheet projection, so congratulations on that 😊</p>
+<p>But why did we plough this back into the Balance sheet right away? Why not complete the depreciation projections and then make the projections in the balance sheet? Well, there is a reason for that.</p>
+<p>I’m tempted to continue that explanation here, but I guess this is a super long chapter already. I promise I’ll put up the next chapter quickly, which will have this explanation.</p>
+<p>Stay tuned until then!</p>
+<p><a href="https://zerodha.com/varsity/wp-content/uploads/2021/09/FM_Varsity_Main-model_Chapter-7.xlsx">Download the excel used in this chapter here</a>.</p>
+<h3 id="key-takeaways-from-this-chapter"><a class="header" href="#key-takeaways-from-this-chapter"><strong>Key takeaways from this chapter</strong></a></h3>
+<ul>
+<li>As per the base rule, the closing balance for year 1 is the opening balance for year 2. We use base rule across many schedules in a financial model</li>
+<li>Gross block includes all the assets that the company owns; usually, the gross block number is a heavyweight on the asset side</li>
+<li>Capital expenditure or the CAPEX of a company includes all funds spent on acquiring new assets or maintaining assets</li>
+<li>Asset schedule helps us extract the CAPEX numbers from the gross block number</li>
+<li>To project the CAPEX, ideally, one should look at what the management has to say</li>
+<li>Other CAPEX projections techniques include the averages and the variable method.</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="clear"> </div>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                                                    <a rel="prev" href="../../mds/Integrated+Financial+Modelling/6.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+                                                    <a rel="next" href="../../mds/Integrated+Financial+Modelling/8.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                                    <a rel="prev" href="../../mds/Integrated+Financial+Modelling/6.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+                                    <a rel="next" href="../../mds/Integrated+Financial+Modelling/8.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                            </nav>
+
+        </div>
+
+        
+        
+        
+                <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+        
+                <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        
+    </body>
+</html>

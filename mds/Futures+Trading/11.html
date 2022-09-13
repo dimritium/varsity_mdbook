@@ -1,0 +1,668 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>11. Hedging with Futures - Varsity mdBook</title>
+                
+
+        <!-- Custom HTML head -->
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+                <link rel="icon" href="../../favicon.svg">
+                        <link rel="shortcut icon" href="../../favicon.png">
+                <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+                <link rel="stylesheet" href="../../css/print.css" media="print">
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+                <link rel="stylesheet" href="../../fonts/fonts.css">
+        
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+            </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><div><strong aria-hidden="true">1.</strong> Introduction to Stock Markets</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/1.html"><strong aria-hidden="true">1.1.</strong> The Need to Invest</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/2.html"><strong aria-hidden="true">1.2.</strong> Regulators</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/3.html"><strong aria-hidden="true">1.3.</strong> Financial Intermediaries</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/4.html"><strong aria-hidden="true">1.4.</strong> The IPO Markets – Part 1</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/5.html"><strong aria-hidden="true">1.5.</strong> The IPO Markets – Part 2</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/6.html"><strong aria-hidden="true">1.6.</strong> The Stock Markets</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/7.html"><strong aria-hidden="true">1.7.</strong> The Stock Markets Index</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/8.html"><strong aria-hidden="true">1.8.</strong> Commonly Used Jargons</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/9.html"><strong aria-hidden="true">1.9.</strong> The Trading Terminal</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/10.html"><strong aria-hidden="true">1.10.</strong> Clearing and Settlement Process</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/11.html"><strong aria-hidden="true">1.11.</strong> Five Corporate Actions and Its Impact on Stock Prices</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/12.html"><strong aria-hidden="true">1.12.</strong> Key Events and Their Impact on Markets</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/13.html"><strong aria-hidden="true">1.13.</strong> Getting started!</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/14.html"><strong aria-hidden="true">1.14.</strong> Supplementary note – Rights, OFS, FPO</a></li><li class="chapter-item expanded "><a href="../../mds/Introduction+to+Stock+Markets/15.html"><strong aria-hidden="true">1.15.</strong> Supplementary note – The 20 market depth or level 3 data</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Technical Analysis</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/1.html"><strong aria-hidden="true">2.1.</strong> Background</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/2.html"><strong aria-hidden="true">2.2.</strong> Introducing Technical Analysis</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/3.html"><strong aria-hidden="true">2.3.</strong> The Chart Types</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/4.html"><strong aria-hidden="true">2.4.</strong> Getting Started with Candlesticks</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/5.html"><strong aria-hidden="true">2.5.</strong> Single Candlestick patterns (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/6.html"><strong aria-hidden="true">2.6.</strong> Single Candlestick patterns (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/7.html"><strong aria-hidden="true">2.7.</strong> Single Candlestick patterns (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/8.html"><strong aria-hidden="true">2.8.</strong> Multiple candlestick patterns (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/9.html"><strong aria-hidden="true">2.9.</strong> Multiple Candlestick Patterns (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/10.html"><strong aria-hidden="true">2.10.</strong> Multiple Candlestick Patterns (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/11.html"><strong aria-hidden="true">2.11.</strong> The Support and Resistance</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/12.html"><strong aria-hidden="true">2.12.</strong> Volumes</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/13.html"><strong aria-hidden="true">2.13.</strong> Moving Averages</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/14.html"><strong aria-hidden="true">2.14.</strong> Indicators (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/15.html"><strong aria-hidden="true">2.15.</strong> Indicators (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/16.html"><strong aria-hidden="true">2.16.</strong> The Fibonacci Retracements</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/17.html"><strong aria-hidden="true">2.17.</strong> The Dow Theory (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/18.html"><strong aria-hidden="true">2.18.</strong> The Dow Theory (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/19.html"><strong aria-hidden="true">2.19.</strong> The Finale – Helping you get started</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/20.html"><strong aria-hidden="true">2.20.</strong> Other indicators</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/21.html"><strong aria-hidden="true">2.21.</strong> Interesting features on TradingView</a></li><li class="chapter-item expanded "><a href="../../mds/Technical+Analysis/22.html"><strong aria-hidden="true">2.22.</strong> The Central Pivot Range</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Fundamental Analysis</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/1.html"><strong aria-hidden="true">3.1.</strong> Introduction to Fundamental Analysis</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/2.html"><strong aria-hidden="true">3.2.</strong> Mindset of an Investor</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/3.html"><strong aria-hidden="true">3.3.</strong> How to Read the Annual Report of a Company</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/4.html"><strong aria-hidden="true">3.4.</strong> Understanding the P&amp;L Statement (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/5.html"><strong aria-hidden="true">3.5.</strong> Understanding P&amp;L Statement (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/6.html"><strong aria-hidden="true">3.6.</strong> Understanding Balance Sheet Statement (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/7.html"><strong aria-hidden="true">3.7.</strong> Understanding the Balance Sheet Statement (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/8.html"><strong aria-hidden="true">3.8.</strong> The Cash Flow statement</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/9.html"><strong aria-hidden="true">3.9.</strong> The Financial Ratio Analysis (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/10.html"><strong aria-hidden="true">3.10.</strong> The Financial Ratio Analysis (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/11.html"><strong aria-hidden="true">3.11.</strong> The Financial Ratio Analysis (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/12.html"><strong aria-hidden="true">3.12.</strong> The Investment Due Diligence</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/13.html"><strong aria-hidden="true">3.13.</strong> Equity Research (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/14.html"><strong aria-hidden="true">3.14.</strong> DCF Primer</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/15.html"><strong aria-hidden="true">3.15.</strong> Equity Research (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Fundamental+Analysis/16.html"><strong aria-hidden="true">3.16.</strong> The Finale</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Futures Trading</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/1.html"><strong aria-hidden="true">4.1.</strong> Background – Forwards Market</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/2.html"><strong aria-hidden="true">4.2.</strong> Introducing Futures Contract</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/3.html"><strong aria-hidden="true">4.3.</strong> The Futures Trade</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/4.html"><strong aria-hidden="true">4.4.</strong> Leverage &amp; Payoff</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/5.html"><strong aria-hidden="true">4.5.</strong> Margin &amp; M2M</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/6.html"><strong aria-hidden="true">4.6.</strong> Margin Calculator (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/7.html"><strong aria-hidden="true">4.7.</strong> Margin Calculator (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/8.html"><strong aria-hidden="true">4.8.</strong> All about Shorting</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/9.html"><strong aria-hidden="true">4.9.</strong> The Nifty Futures</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/10.html"><strong aria-hidden="true">4.10.</strong> The Futures Pricing</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/11.html" class="active"><strong aria-hidden="true">4.11.</strong> Hedging with Futures</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/12.html"><strong aria-hidden="true">4.12.</strong> Open Interest</a></li><li class="chapter-item expanded "><a href="../../mds/Futures+Trading/13.html"><strong aria-hidden="true">4.13.</strong> Quick Note on Physical Settlement</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> Options Theory for Professional Trading</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/1.html"><strong aria-hidden="true">5.1.</strong> Call Option Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/2.html"><strong aria-hidden="true">5.2.</strong> Basic Option Jargons</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/3.html"><strong aria-hidden="true">5.3.</strong> Buying a Call Option</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/4.html"><strong aria-hidden="true">5.4.</strong> Selling/Writing a Call Option</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/5.html"><strong aria-hidden="true">5.5.</strong> The Put Option Buying</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/6.html"><strong aria-hidden="true">5.6.</strong> The Put Option selling</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/7.html"><strong aria-hidden="true">5.7.</strong> Summarizing Call &amp; Put Options</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/8.html"><strong aria-hidden="true">5.8.</strong> Moneyness of an Option Contract</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/9.html"><strong aria-hidden="true">5.9.</strong> The Option Greeks (Delta) Part 1</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/10.html"><strong aria-hidden="true">5.10.</strong> Delta (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/11.html"><strong aria-hidden="true">5.11.</strong> Delta (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/12.html"><strong aria-hidden="true">5.12.</strong> Gamma (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/13.html"><strong aria-hidden="true">5.13.</strong> Gamma (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/14.html"><strong aria-hidden="true">5.14.</strong> Theta</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/15.html"><strong aria-hidden="true">5.15.</strong> Volatility Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/16.html"><strong aria-hidden="true">5.16.</strong> Volatility Calculation (Historical)</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/17.html"><strong aria-hidden="true">5.17.</strong> Volatility &amp; Normal Distribution</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/18.html"><strong aria-hidden="true">5.18.</strong> Volatility Applications</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/19.html"><strong aria-hidden="true">5.19.</strong> Vega</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/20.html"><strong aria-hidden="true">5.20.</strong> Greek Interactions</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/21.html"><strong aria-hidden="true">5.21.</strong> Greek Calculator</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/22.html"><strong aria-hidden="true">5.22.</strong> Re-introducing Call &amp; Put Options</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/23.html"><strong aria-hidden="true">5.23.</strong> Case studies – wrapping it all up!</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/24.html"><strong aria-hidden="true">5.24.</strong> Quick note on Physical Settlement</a></li><li class="chapter-item expanded "><a href="../../mds/Options+Theory+for+Professional+Trading/25.html"><strong aria-hidden="true">5.25.</strong> Options M2M and P&amp;L calculation</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> Option Strategies</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/1.html"><strong aria-hidden="true">6.1.</strong> Orientation</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/2.html"><strong aria-hidden="true">6.2.</strong> Bull Call Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/3.html"><strong aria-hidden="true">6.3.</strong> Bull Put Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/4.html"><strong aria-hidden="true">6.4.</strong> Call Ratio Back Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/5.html"><strong aria-hidden="true">6.5.</strong> Bear Call Ladder</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/6.html"><strong aria-hidden="true">6.6.</strong> Synthetic Long &amp; Arbitrage</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/7.html"><strong aria-hidden="true">6.7.</strong> Bear Put Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/8.html"><strong aria-hidden="true">6.8.</strong> Bear Call Spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/9.html"><strong aria-hidden="true">6.9.</strong> Put Ratio Back spread</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/10.html"><strong aria-hidden="true">6.10.</strong> The Long Straddle</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/11.html"><strong aria-hidden="true">6.11.</strong> The Short Straddle</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/12.html"><strong aria-hidden="true">6.12.</strong> The Long &amp; Short Strangle</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/13.html"><strong aria-hidden="true">6.13.</strong> Max Pain &amp; PCR Ratio</a></li><li class="chapter-item expanded "><a href="../../mds/Option+Strategies/14.html"><strong aria-hidden="true">6.14.</strong> Iron Condor</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> Markets and Taxation</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/1.html"><strong aria-hidden="true">7.1.</strong> Introduction (Setting the Context)</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/2.html"><strong aria-hidden="true">7.2.</strong> Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/3.html"><strong aria-hidden="true">7.3.</strong> Classifying Your Market Activity</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/4.html"><strong aria-hidden="true">7.4.</strong> Taxation for Investors</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/5.html"><strong aria-hidden="true">7.5.</strong> Taxation for Traders</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/6.html"><strong aria-hidden="true">7.6.</strong> Turnover, Balance Sheet, and P&amp;L</a></li><li class="chapter-item expanded "><a href="../../mds/Markets+and+Taxation/7.html"><strong aria-hidden="true">7.7.</strong> ITR Forms (The Finale)</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> Currency, Commodity, and Government Securities</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/1.html"><strong aria-hidden="true">8.1.</strong> Currency Basics</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/2.html"><strong aria-hidden="true">8.2.</strong> Reference Rates &amp; Impact of events</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/3.html"><strong aria-hidden="true">8.3.</strong> Impact of events (Brexit) &amp; Interest Rate Parity</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/4.html"><strong aria-hidden="true">8.4.</strong> The USD INR Pair (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/5.html"><strong aria-hidden="true">8.5.</strong> The USD INR Pair (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/6.html"><strong aria-hidden="true">8.6.</strong> EUR, GBP, and JPY</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/7.html"><strong aria-hidden="true">8.7.</strong> Gold (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/8.html"><strong aria-hidden="true">8.8.</strong> Gold (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/9.html"><strong aria-hidden="true">8.9.</strong> Silver</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/10.html"><strong aria-hidden="true">8.10.</strong> Crude Oil (Part 1), digging the past</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/11.html"><strong aria-hidden="true">8.11.</strong> Crude Oil (Part 2), the crude oil eco system</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/12.html"><strong aria-hidden="true">8.12.</strong> Crude Oil (Part 3), the crude oil contract</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/13.html"><strong aria-hidden="true">8.13.</strong> Copper &amp; Aluminium</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/14.html"><strong aria-hidden="true">8.14.</strong> Lead &amp; Nickel</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/15.html"><strong aria-hidden="true">8.15.</strong> Cardamom &amp; Mentha Oil</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/16.html"><strong aria-hidden="true">8.16.</strong> Natural Gas</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/17.html"><strong aria-hidden="true">8.17.</strong> Commodity Options</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/18.html"><strong aria-hidden="true">8.18.</strong> Cross Currency Pairs</a></li><li class="chapter-item expanded "><a href="../../mds/Currency%2C+Commodity%2C+and+Government+Securities/19.html"><strong aria-hidden="true">8.19.</strong> Government Securities</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.</strong> Risk Management &amp; Trading Psychology</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/1.html"><strong aria-hidden="true">9.1.</strong> Orientation note</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/2.html"><strong aria-hidden="true">9.2.</strong> Risk (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/3.html"><strong aria-hidden="true">9.3.</strong> Risk (Part 2) – Variance &amp; Covariance</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/4.html"><strong aria-hidden="true">9.4.</strong> Risk (Part 3) – Variance &amp; Covariance Matrix</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/5.html"><strong aria-hidden="true">9.5.</strong> Risk (Part 4) – Correlation Matrix &amp; Portfolio Variance</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/6.html"><strong aria-hidden="true">9.6.</strong> Equity Curve</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/7.html"><strong aria-hidden="true">9.7.</strong> Expected Returns</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/8.html"><strong aria-hidden="true">9.8.</strong> Portfolio Optimization (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/9.html"><strong aria-hidden="true">9.9.</strong> Portfolio Optimization (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/10.html"><strong aria-hidden="true">9.10.</strong> Value at Risk</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/11.html"><strong aria-hidden="true">9.11.</strong> Position Sizing for active trader</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/12.html"><strong aria-hidden="true">9.12.</strong> Position Sizing for active traders (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/13.html"><strong aria-hidden="true">9.13.</strong> Position Sizing for active traders (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/14.html"><strong aria-hidden="true">9.14.</strong> Kelly’s Criterion</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/15.html"><strong aria-hidden="true">9.15.</strong> Trading Biases</a></li><li class="chapter-item expanded "><a href="../../mds/Risk+Management+%26+Trading+Psychology/16.html"><strong aria-hidden="true">9.16.</strong> Trading Biases (Part 2)</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">10.</strong> Trading Systems</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/1.html"><strong aria-hidden="true">10.1.</strong> What to expect?</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/2.html"><strong aria-hidden="true">10.2.</strong> Pair Trading logic</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/3.html"><strong aria-hidden="true">10.3.</strong> Pair Trading, Method 1, Chapter 1 (PTM1, C1) -Tracking Pairs</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/4.html"><strong aria-hidden="true">10.4.</strong> PTM1, C2 – Pair stats</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/5.html"><strong aria-hidden="true">10.5.</strong> PTM1, C3 – Pre trade setup</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/6.html"><strong aria-hidden="true">10.6.</strong> PTM1, C4 – The Density Curve</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/7.html"><strong aria-hidden="true">10.7.</strong> PTM1,C5 – The Pair Trade</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/8.html"><strong aria-hidden="true">10.8.</strong> Pair trade Method 2, Chapter 1 (PTM2, C1) – Straight line Equation</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/9.html"><strong aria-hidden="true">10.9.</strong> PTM2, C2 – Linear Regression</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/10.html"><strong aria-hidden="true">10.10.</strong> PTM2, C3 – The Error Ratio</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/11.html"><strong aria-hidden="true">10.11.</strong> PTM2, C4 – The ADF test</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/12.html"><strong aria-hidden="true">10.12.</strong> Trade Identification</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/13.html"><strong aria-hidden="true">10.13.</strong> Live Example -1</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/14.html"><strong aria-hidden="true">10.14.</strong> Live Example – 2</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/15.html"><strong aria-hidden="true">10.15.</strong> Calendar Spreads</a></li><li class="chapter-item expanded "><a href="../../mds/Trading+Systems/16.html"><strong aria-hidden="true">10.16.</strong> Momentum Portfolios</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">11.</strong> Personal Finance - Mutual Funds</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/1.html"><strong aria-hidden="true">11.1.</strong> Background and Orientation</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/2.html"><strong aria-hidden="true">11.2.</strong> Personal Finance Math (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/3.html"><strong aria-hidden="true">11.3.</strong> Personal Finance Math (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/4.html"><strong aria-hidden="true">11.4.</strong> The retirement problem (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/5.html"><strong aria-hidden="true">11.5.</strong> The retirement problem (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/6.html"><strong aria-hidden="true">11.6.</strong> Introduction to Mutual Funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/7.html"><strong aria-hidden="true">11.7.</strong> Concept of fund &amp; NAV</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/8.html"><strong aria-hidden="true">11.8.</strong> The mutual fund fact-sheet</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/9.html"><strong aria-hidden="true">11.9.</strong> The Equity scheme (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/10.html"><strong aria-hidden="true">11.10.</strong> Equity Scheme (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/11.html"><strong aria-hidden="true">11.11.</strong> The Debt funds (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/12.html"><strong aria-hidden="true">11.12.</strong> The Debt funds (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/13.html"><strong aria-hidden="true">11.13.</strong> The Debt funds (Part 3)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/14.html"><strong aria-hidden="true">11.14.</strong> The Debt Funds (Part 4)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/15.html"><strong aria-hidden="true">11.15.</strong> Investing in Bonds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/16.html"><strong aria-hidden="true">11.16.</strong> Index Funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/17.html"><strong aria-hidden="true">11.17.</strong> Arbitrage Funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/18.html"><strong aria-hidden="true">11.18.</strong> Measuring Mutual fund Returns</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/19.html"><strong aria-hidden="true">11.19.</strong> Rolling Returns</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/20.html"><strong aria-hidden="true">11.20.</strong> Mutual fund Expense Ratio, Direct, and Regular plans</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/21.html"><strong aria-hidden="true">11.21.</strong> Mutual Benchmarking</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/22.html"><strong aria-hidden="true">11.22.</strong> Mutual Fund Beta, SD, and Sharpe Ratio</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/23.html"><strong aria-hidden="true">11.23.</strong> Sortino and the Capture Ratios</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/24.html"><strong aria-hidden="true">11.24.</strong> How to analyse an Equity Mutual fund?</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/25.html"><strong aria-hidden="true">11.25.</strong> How to analyze a debt mutual fund?</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/26.html"><strong aria-hidden="true">11.26.</strong> The Mutual Fund Portfolio</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/27.html"><strong aria-hidden="true">11.27.</strong> Smart-beta funds</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/28.html"><strong aria-hidden="true">11.28.</strong> Asset Allocation, An Introduction</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/29.html"><strong aria-hidden="true">11.29.</strong> Exchange-traded funds (ETF)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Mutual+Funds/30.html"><strong aria-hidden="true">11.30.</strong> Basics of Macro Economics</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">12.</strong> Innerworth — Mind over markets</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">13.</strong> Integrated Financial Modelling</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/1.html"><strong aria-hidden="true">13.1.</strong> Introduction to Financial Modelling</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/2.html"><strong aria-hidden="true">13.2.</strong> Excel workbook setup</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/3.html"><strong aria-hidden="true">13.3.</strong> Historical Data</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/4.html"><strong aria-hidden="true">13.4.</strong> Assumptions (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/5.html"><strong aria-hidden="true">13.5.</strong> Assumptions (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/6.html"><strong aria-hidden="true">13.6.</strong> Revenue model</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/7.html"><strong aria-hidden="true">13.7.</strong> Asset Schedule (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/8.html"><strong aria-hidden="true">13.8.</strong> Asset Schedule (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/9.html"><strong aria-hidden="true">13.9.</strong> Debt Schedule</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/10.html"><strong aria-hidden="true">13.10.</strong> Reserves Schedule (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/11.html"><strong aria-hidden="true">13.11.</strong> Reserves Schedule (Part 2)</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/12.html"><strong aria-hidden="true">13.12.</strong> Projections</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/13.html"><strong aria-hidden="true">13.13.</strong> Cash flow statement</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/14.html"><strong aria-hidden="true">13.14.</strong> Valuation (Part 1) – Overview</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/15.html"><strong aria-hidden="true">13.15.</strong> Valuation (Part 2) – FCFF &amp; FCFE</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/16.html"><strong aria-hidden="true">13.16.</strong> Valuation (Part 3) – Risk Premium &amp; Tax Shield</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/17.html"><strong aria-hidden="true">13.17.</strong> Weighted average cost of capital and Terminal Growth</a></li><li class="chapter-item expanded "><a href="../../mds/Integrated+Financial+Modelling/18.html"><strong aria-hidden="true">13.18.</strong> Discounted Cash Flow Analysis (DCF)</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">14.</strong> Personal Finance - Insurance</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/1.html"><strong aria-hidden="true">14.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/2.html"><strong aria-hidden="true">14.2.</strong> Perverse Incentives</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/3.html"><strong aria-hidden="true">14.3.</strong> The nudge</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/4.html"><strong aria-hidden="true">14.4.</strong> Skin in the game</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/5.html"><strong aria-hidden="true">14.5.</strong> Dunning Kruger effect</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/6.html"><strong aria-hidden="true">14.6.</strong> A mighty defence</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/7.html"><strong aria-hidden="true">14.7.</strong> No free lunch</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/8.html"><strong aria-hidden="true">14.8.</strong> Gimmick or not (Part 1)</a></li><li class="chapter-item expanded "><a href="../../mds/Personal+Finance+-+Insurance/9.html"><strong aria-hidden="true">14.9.</strong> Gimmick or not (Part 2)</a></li></ol></li></ol>            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                                            </div>
+
+                    <h1 class="menu-title">Varsity mdBook</h1>
+
+                    <div class="right-buttons">
+                                                <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                                                                        
+                    </div>
+                </div>
+
+                                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <div class="post">
+<h2 id="img-altm4-ch11-title-classaligncenter-size-full-wp-image-1679-height300-sizesmax-width-600px-100vw-600px-srchttpzerodhacomvarsitywp-contentuploads201503m4-ch11-titlejpg-srcsethttpszerodhacomvarsitywp-contentuploads201503m4-ch11-titlejpg-600w-httpszerodhacomvarsitywp-contentuploads201503m4-ch11-title-300x150jpg-300w-width600"><a class="header" href="#img-altm4-ch11-title-classaligncenter-size-full-wp-image-1679-height300-sizesmax-width-600px-100vw-600px-srchttpzerodhacomvarsitywp-contentuploads201503m4-ch11-titlejpg-srcsethttpszerodhacomvarsitywp-contentuploads201503m4-ch11-titlejpg-600w-httpszerodhacomvarsitywp-contentuploads201503m4-ch11-title-300x150jpg-300w-width600"><img alt="M4-Ch11-title" class="aligncenter size-full wp-image-1679" height="300" sizes="(max-width: 600px) 100vw, 600px" src="http://zerodha.com/varsity/wp-content/uploads/2015/03/M4-Ch11-title.jpg" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/03/M4-Ch11-title.jpg 600w, https://zerodha.com/varsity/wp-content/uploads/2015/03/M4-Ch11-title-300x150.jpg 300w" width="600"/></a></h2>
+<h2 id="111--hedging-what-is-it"><a class="header" href="#111--hedging-what-is-it">11.1 – Hedging, what is it?</a></h2>
+<p>One of the most important and practical applications of Futures is ‘Hedging’. In the event of any adverse market movements, hedging is a simple work around to protect your trading positions from making a loss. Let me to attempt giving you an analogy to help you understand what hedging really is.</p>
+<p>Imagine you have a small bit of vacant barren land just outside your house, instead of seeing it lie vacant and barren you decide to lawn the entire plot and plant few nice flowering plants. You nurture the little garden, water it regularly, and watch it grow. Eventually your efforts are paid off and the lawn grows lush green and the flowers finally start to blossom. As the plants grow and flowers start to bloom it starts to attract attention of the wrong kind. Soon you realize your little garden has become a hot destination for a few stray cows. You notice these stray cows merrily gazing away the grass and spoiling the nice flowers. You are really annoyed with this and decide to protect your little garden? A simple work around is what you have in mind – you erect a fence (maybe a wooden hedge) around the garden to prevent the cows from entering your garden. This little work around ensures your garden stays protected and also lets your garden flourish.</p>
+<p>Let us now correlate this analogy to the markets –</p>
+<ul>
+<li>Imagine you nurture a portfolio by picking each stock after careful analysis. Slowly you invest a sizable corpus in your portfolio. This is equivalent to the garden you grow</li>
+<li>At some point after your money is invested in the markets you realize that the markets may soon enter a turbulent phase which would result in portfolio losses. This is equivalent to the stray cow grazing your lawn and spoiling your flower plants</li>
+<li>To prevent your market positions from losing money you construct a portfolio hedge by employing futures. This is equivalent to erecting a fence (wooden hedge) around your garden</li>
+</ul>
+<p>I hope the above analogy gave you got a fair sense of what ‘hedging’ is all about. Like I had mentioned earlier, hedging is a technique to ensure your position in the market is not affected by any adverse movements. Please don’t be under the impression that hedging is done only to protect a portfolio of stocks, in fact you can employ a hedge to protect individual stock positions, albeit with some restrictions.</p>
+<h2 id="112--hedge--but-why"><a class="header" href="#112--hedge--but-why">11.2 – Hedge – But why?</a></h2>
+<p>A common question that gets asked frequently when one discusses about hedging is why really hedge a position? Imagine this – A trader or an investor has a stock which he has purchased at Rs.100. Now he feels the market is likely to decline and so would his stock. Given this, he can choose to do one of the following –</p>
+<ol>
+<li>Take no action and let his stock decline with a hope it will eventually bounce back</li>
+<li>Sell the stock and hope to buy it back later at a lower price</li>
+<li>Hedge the position</li>
+</ol>
+<p>Firstly let us understand what really happens when the trader decides not to hedge. Imagine the stock you invested declines from Rs.100 to let us say Rs.75. We will also assume eventually as time passes by the stock will bounce back to Rs.100. So the point here is when the stock eventually moves back to its original price, why should one really hedge?</p>
+<p>Well, you would agree the drop from Rs.100/- to Rs.75/- is a 25% drop. However when the stock has to move back from Rs.75/- to Rs.100/- it is no longer a scale back of 25% instead it works out to that the stock has to move by 33.33% to reach the original investment value! This means when the stock drops it takes less effort do to so, but it requires extra efforts to scale back to the original value. Also, from my experience I can tell you stocks do not really go up that easily unless it is a raging bull market. Hence for this reason, whenever one anticipates a reasonably massive adverse movement in the market, it is always prudent to hedge the positions.</p>
+<p>But what about the 2<sup>nd</sup> option ? Well, the 2<sup>nd</sup> option where the investor sells the position and buys back the same at a later stage requires one to time the market, which is not something easy to do. Besides when the trader transacts frequently, he will also not get the benefit of Long term capital tax. Needless to say, frequent transaction also incurs additional transactional fees.</p>
+<p>For all these reasons, hedging makes sense as he is virtually insulates the position in the market and is therefore becomes indifferent to what really happens in the market. It is like taking vaccine shot against a virus. Hence when the trader hedges he can be rest assured the adverse movement in the market will not affect his position.</p>
+<h2 id="113--risk"><a class="header" href="#113--risk">11.3 – Risk</a></h2>
+<p>Before we proceed to understand how we could hedge our positions in the market, I guess it is important to understand what is that we are trying to hedge. Quite obviously as you can imagine, we are hedging the risk, but what kind of risk?</p>
+<p>When you buy the stock of a company you are essentially exposed to risk. In fact there are two types of risk – <strong>Systematic Risk and Unsystematic Risk</strong>. When you buy a stock or a stock future, you are automatically exposed to both these risks.</p>
+<p>The stock can decline (resulting in losses for you) for many reasons. Reasons such as –</p>
+<ol>
+<li>Declining revenue</li>
+<li>Declining profit margins</li>
+<li>Higher financing cost</li>
+<li>High leverage</li>
+<li>Management misconduct</li>
+</ol>
+<p>All these reasons represent a form of risk, in fact there could be many other similar reasons and this list can go on. However if you notice, there is one thing common to all these risks – they are all <strong>company specific risk</strong>. For example imagine you have an investable capital of Rs.100,000/-. You decide to invest this money in HCL Technologies Limited. Few months later HCL makes a statement that their revenues have declined. Quite obviously HCL stock price will decline. Which means you will lose money on your investment. However this news will not impact HCL’s competitor’s (Tech Mahindra or Mindtree) stock price. Likewise if the management is guilty of any misconduct, then Tech Mahindra’s stock price will go down and not its competitors. Clearly these risks which are specific to the company affect only the company in question and not others. Such risks are often called the “<strong>Unsystematic Risk</strong>”.</p>
+<p>Unsystematic risk can be diversified, meaning instead of investing all the money in one company, you can choose to diversify and invest in 2-3 different companies (preferably from different sectors). When you do so, unsystematic risk is drastically reduced. Going back to the above example imagine instead of buying HCL for the entire capital, you decide to buy HCL for Rs.50,000/- and maybe Karnataka Bank Limited for the other Rs.50,000/-. Under such a circumstance, even if HCL stock price declines (owing to the unsystematic risk) the damage is only on half of the investment as the other half is invested in a different company. In fact instead of just two stocks you can have a 5 stock or 10 or maybe 20 stock portfolio. The higher the number of stocks in your portfolio, higher the diversification and therefore lesser the unsystematic risk.</p>
+<p>This leads us to a very important question – how many stocks should a good portfolio have so that the unsystematic risk is completely diversified. Research has it that up to 21 stocks in the portfolio will have the required necessary diversification effect and anything beyond 21 stocks may not help much in diversification.</p>
+<p>The graph below should give you a fair sense of how diversification works –</p>
+<p><a href="http://zerodha.com/varsity/wp-content/uploads/2015/03/graph-m4-ch11.png"><img alt="graph-m4-ch11" class="aligncenter size-full wp-image-2770" height="500" loading="lazy" sizes="(max-width: 700px) 100vw, 700px" src="http://zerodha.com/varsity/wp-content/uploads/2015/03/graph-m4-ch11.png" srcset="https://zerodha.com/varsity/wp-content/uploads/2015/03/graph-m4-ch11.png 700w, https://zerodha.com/varsity/wp-content/uploads/2015/03/graph-m4-ch11-300x214.png 300w" width="700"/></a></p>
+<p>As you can notice from the graph above, the unsystematic risk drastically reduces when you diversify and add more stocks. However after about 20 stocks the unsystematic risk is not really diversifiable, this is evident as the graph starts to flatten out after 20 stocks. &nbsp;In fact the risk that remains even after diversification is called the “<strong>Systematic Risk</strong>”.</p>
+<p>Systematic risk is the risk that is common to all stocks. These are usually the macroeconomic risks which tend to affect the whole market. Example of systematic risk include –</p>
+<ol>
+<li>De-growth in GDP</li>
+<li>Interest rate tightening</li>
+<li>Inflation</li>
+<li>Fiscal deficit</li>
+<li>Geo political risk</li>
+</ol>
+<p>Of course the list can go on but I suppose you got a fair idea of what constitutes systematic risk. Systematic risk affects all stocks. So assuming you have a well diversified 20 stocks portfolio, a de-growth in GDP will certainly affect all 20 stocks and hence they are all likely to decline. Systematic risk is <strong>inherent in the system</strong> and it cannot really be diversified. However systematic risk can be ‘<strong>hedged</strong>’. So when we are talking about hedging, do bear in mind that it is not the same as diversification.</p>
+<p>Remember, we diversify to minimize unsystematic risk and we hedge to minimize systematic risk.</p>
+<h2 id="114--hedging-a-single-stock-position"><a class="header" href="#114--hedging-a-single-stock-position">11.4 – Hedging a single stock position</a></h2>
+<p>We will first talk about hedging a single stock future as it is relatively simple and straight forward to implement. We will also understand its limitation and then proceed to understand how to hedge a portfolio of stocks.</p>
+<p>Imagine you have bought 250 shares of Infosys at Rs.2,284/- per share. This works out to an investment of Rs.571,000/-. Clearly you are ‘<strong>Long</strong>’ on Infosys in the spot market. After you initiated this position, you realize the quarterly results are expected soon. You are worried Infosys may announce a not so favorable set of numbers, as a result of which the stock price may decline considerably. To avoid making a loss in the spot market you decide to hedge the position.</p>
+<p>In order to hedge the position in spot, we simply have to enter a counter position in the futures market. Since the position in the spot is ‘<strong>long</strong>’, we have to ‘<strong>short</strong>’ in the futures market.</p>
+<p>Here are the short futures trade details –</p>
+<p>Short Futures @ 2285/-</p>
+<p>Lot size = 250</p>
+<p>Contract Value = Rs.571,250/-</p>
+<p>Now on one hand you are long on Infosys (in spot market) and on the other hand we are short on Infosys (in futures price), although at different prices. However the variation in price is not of concern as directionally we are ‘<strong>neutral</strong>’. You will shortly understand what this means.</p>
+<p>After initiating this trade, let us arbitrarily imagine different price points for Infosys and see what will be the overall impact on the positions.</p>
+<table>
+<tbody>
+<tr class="tableizer-firstrow">
+<th>Arbitrary Price</th>
+<th>Long Spot P&amp;L</th>
+<th>Short Futures P&amp;L</th>
+<th>Net P&amp;L</th>
+</tr>
+<tr>
+<td>2200</td>
+<td>2200 – 2284 = – 84</td>
+<td>2285 – 2200 = +85</td>
+<td>-84 + 85 = +1</td>
+</tr>
+<tr>
+<td>2290</td>
+<td>2290 – 2284 = +6</td>
+<td>2285 – 2290 = -5</td>
+<td>+6 – 5 = +1</td>
+</tr>
+<tr>
+<td>2500</td>
+<td>2500 – 2284 = +216</td>
+<td>2285 – 2500 = -215</td>
+<td>+216 – 215 = +1</td>
+</tr>
+</tbody>
+</table>
+<p>The point to note here is – irrespective of where the price is headed (whether it increases or decreases) the position will neither make money nor lose money. It is as if the overall position is frozen. In fact the position becomes indifferent to the market, which is why we say when a position is hedged it stays ‘neutral’ to the overall market condition. As I had mentioned earlier, hedging single stock positions is very straight forward with no complications. We can use the stock’s futures contract to hedge the position. But to use the stocks futures position one must have the same number of shares as that of the lot size. If they vary, the P&amp;L will vary and position will no longer be perfectly hedged. This leads to a few important questions –</p>
+<ol>
+<li>What if I have a position in a stock that does not have a futures contract? For example South Indian Bank does not have a futures contract, does that mean I cannot hedge a spot position in South Indian Bank?</li>
+<li>The example considered the spot position value was Rs.570,000/-, but what if I have relatively small positions – say Rs.50,000/- or Rs.100,000/- is it possible to hedge such positions?</li>
+</ol>
+<p>In fact the answer to both these questions is not really straight forward. We will understand how and why shortly. For now we will proceed to understand how we can hedge multiple spot positions (usually a portfolio). In order to do so, we first need to understand something called as “<strong>Beta</strong>” of a stock.<br/>
+<span id="beta">&nbsp;</span></p>
+<h2 id="115--understanding-beta-β"><a class="header" href="#115--understanding-beta-β">11.5 – Understanding Beta (β)</a></h2>
+<p>Beta, denoted by the Greek symbol β, plays a very crucial concept in market finance as it finds its application in multiple aspects of market finance. I guess we are at a good stage to introduce beta, as it also finds its application in hedging portfolio of stocks.</p>
+<p>In plain words Beta measures the sensitivity of the stock price with respect to the changes in the market, which means it helps us answer these kinds of questions –</p>
+<ol>
+<li>If market moves up by 2% tomorrow, what is the likely movement in stock XYZ?</li>
+<li>How risky (or volatile)is stock XYZ compared to market indices (Nifty, Sensex)?</li>
+<li>How risky is stock XYZ compared to stock ABC?</li>
+</ol>
+<p>The beta of a stock can take any value greater or lower than zero. However, the beta of the &nbsp;market indices (Sensex and Nifty) is always +1. Now for example assume beta of BPCL is +0.7, the following things are implied –</p>
+<ol>
+<li>For every +1.0% increase in market, BPCL is expected to move up by 0.7%
+<ol type="a">
+<li>If market moves up by 1.5%, BPCL is expected to move up by 1.05%</li>
+<li>If market decreases by 1.0%, BPCL is expected to decline by 0.7%</li>
+</ol>
+</li>
+<li>Because BPCL’s beta is less than the market beta (0.7% versus 1.0%) by 0.3%, it is believed that BPCL is 30% less risky than markets
+<ol type="a">
+<li>One can even say, BPCL relatively carries less systematic risk</li>
+</ol>
+</li>
+<li>Assuming HPCL’s beta is 0.85%, then BPCL is believed to be less volatile compared HPCL, therefore less risky</li>
+</ol>
+<p>The following table should help you get a perspective on how to interpret beta value for stock –</p>
+<table>
+<tbody>
+<tr class="tableizer-firstrow">
+<th>If Beta of a stock is</th>
+<th>Interpretation</th>
+</tr>
+<tr>
+<td style="text-align: left;">Less than 0, Ex : -0.4</td>
+<td style="text-align: left;">A -ve sign indicates the stock price and markets move in the<br/>
+opposite direction.&nbsp;If market moves up by 1%, then –ve beta stock<br/>
+of -0.4 is expected to decline by 0.4%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Equal to 0</td>
+<td style="text-align: left;">It means the stock is independent of the market movement.<br/>
+The variation in the market is not likely to affect the movement in the<br/>
+stock. However, stocks with 0 beta is hard to find</td>
+</tr>
+<tr>
+<td style="text-align: left;">Higher than 0 lesser than 1,<br/>
+Ex : 0.6</td>
+<td style="text-align: left;">It means the stock and the market move in the same direction;<br/>
+however the stock is relatively less risky. A move of 1% in the market<br/>
+influences the stock to move up by 0.6%. These are generally called the low beta stocks.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Higher than 1, Ex : 1.2</td>
+<td style="text-align: left;">It means the stock moves in the same direction as the markets;<br/>
+however the stock tends to move 20% more than the market.<br/>
+Meaning, if the market increases by 1.0%, the stock is expected<br/>
+to go up by 1.2%. Likewise if the market declines by 1% the stock<br/>
+is expected to decline by 1.2%. These are generally called the high beta stocks.</td>
+</tr>
+</tbody>
+</table>
+<p>As of January 2015, here is the Beta value for a few blue chip stocks –</p>
+<table>
+<tbody>
+<tr class="tableizer-firstrow">
+<th>Stock Name</th>
+<th>Beta Value</th>
+</tr>
+<tr>
+<td>ACC Limited</td>
+<td>1.22</td>
+</tr>
+<tr>
+<td>Axis Bank Limited</td>
+<td>1.40</td>
+</tr>
+<tr>
+<td>BPCL</td>
+<td>1.42</td>
+</tr>
+<tr>
+<td>Cipla</td>
+<td>0.59</td>
+</tr>
+<tr>
+<td>DLF</td>
+<td>1.86</td>
+</tr>
+<tr>
+<td>Infosys</td>
+<td>0.43</td>
+</tr>
+<tr>
+<td>LT</td>
+<td>1.43</td>
+</tr>
+<tr>
+<td>Maruti Suzuki</td>
+<td>0.95</td>
+</tr>
+<tr>
+<td>Reliance</td>
+<td>1.27</td>
+</tr>
+<tr>
+<td>SBI Limited</td>
+<td>1.58</td>
+</tr>
+</tbody>
+</table>
+<h2 id="116--calculating-beta-in-ms-excel"><a class="header" href="#116--calculating-beta-in-ms-excel">11.6 – Calculating beta in MS Excel</a></h2>
+<p>You can easily calculate the beta value of any stock in excel by using a function called ‘=SLOPE’. Here is a step by step method to calculate the same; I have taken the example of TCS.</p>
+<ol>
+<li style="list-style-type: none;">
+<ol>
+<li>Download the last 6 months daily close prices of Nifty and TCS. You can get this from the NSE website</li>
+<li>Calculate the daily return of both Nifty and TCS.
+<ol type="a">
+<li>Daily return = [Today Closing price / Previous day closing price]-1</li>
+</ol>
+</li>
+<li>In a blank cell enter the slope function
+<ol type="a">
+<li>Format for the slope function is =SLOPE(known_y’s,known_x’s), where known_y’s is the array of daily return of TCS, and known_x’s is the array of daily returns of Nifty.</li>
+</ol>
+</li>
+<li>TCS 6 month beta (3<sup>rd</sup> September 2014 to 3<sup>rd</sup> March 2015) works out to 0.62</li>
+</ol>
+</li>
+</ol>
+<p>You can refer to this <a href="http://zerodha.com/varsity/wp-content/uploads/2015/03/Beta-Calculation.xlsx" rel="noopener noreferrer" target="_blank"><strong>excel sheet</strong></a> for the above calculation.</p>
+<h2 id="117--hedging-a-stock-portfolio"><a class="header" href="#117--hedging-a-stock-portfolio">11.7 – Hedging a stock Portfolio</a></h2>
+<p>Let us now focus back to hedging a portfolio of stocks by employing Nifty futures. However before we proceed with this, you may have this question – why should we use Nifty Futures to hedge a portfolio? Why not something else?</p>
+<p>Do recall there are 2 types of risk – systematic and unsystematic risk. When we have a diversified portfolio we are naturally minimizing the unsystematic risk. What is left after this is the systematic risk. As we know systematic risk is the risk associated with the markets, hence the best way to insulate against market risk is by employing an index which represents the market. Hence the Nifty futures come as a natural choice to hedge the systematic risk.</p>
+<p>Assume I have Rs.800,000/- invested across the following stocks –</p>
+<table>
+<tbody>
+<tr class="tableizer-firstrow">
+<th>Sl No</th>
+<th>Stock Name</th>
+<th>Stock Beta</th>
+<th>Investment Amount</th>
+</tr>
+<tr>
+<td>01</td>
+<td>ACC Limited</td>
+<td>1.22</td>
+<td>Rs.30,000/-</td>
+</tr>
+<tr>
+<td>02</td>
+<td>Axis Bank Limited</td>
+<td>1.40</td>
+<td>Rs.125,000/-</td>
+</tr>
+<tr>
+<td>03</td>
+<td>BPCL</td>
+<td>1.42</td>
+<td>Rs.180,000/-</td>
+</tr>
+<tr>
+<td>04</td>
+<td>Cipla</td>
+<td>0.59</td>
+<td>Rs.65,000/-</td>
+</tr>
+<tr>
+<td>05</td>
+<td>DLF</td>
+<td>1.86</td>
+<td>Rs.100,000/-</td>
+</tr>
+<tr>
+<td>06</td>
+<td>Infosys</td>
+<td>0.43</td>
+<td>Rs.75,000/-</td>
+</tr>
+<tr>
+<td>07</td>
+<td>LT</td>
+<td>1.43</td>
+<td>Rs.85,000/-</td>
+</tr>
+<tr>
+<td>08</td>
+<td>Maruti Suzuki</td>
+<td>0.95</td>
+<td>Rs.140,000/-</td>
+</tr>
+<tr>
+<td colspan="3">Total</td>
+<td>Rs.800,000/-</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Step 1 – Portfolio Beta</strong></p>
+<p>There are a few steps involved in hedging a stock portfolio. As the first step we need to calculate the overall <strong>“Portfolio Beta”.</strong></p>
+<ol>
+<li style="list-style-type: none;">
+<ol>
+<li style="list-style-type: none;">
+<ul>
+<li>Portfolio beta is the sum of the “weighted beta of each stock”.</li>
+<li>Weighted beta is calculated by multiplying the individual stock beta with its respective weightage in the portfolio</li>
+<li>Weightage of each stock in the portfolio is calculated by dividing the sum invested in each stock by the total portfolio value</li>
+<li>For example, weightage of Axis Bank is 125,000/800,000 = 15.6%
+<ul>
+<li>Hence the weighted beta of Axis Bank on the portfolio would be 15.6% * 1.4 = 0.21</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<p>The following table calculates the weighted beta of each stock in the portfolio –</p>
+<table>
+<tbody>
+<tr class="tableizer-firstrow">
+<th>Sl No</th>
+<th>Stock Name</th>
+<th>Beta</th>
+<th>Investment</th>
+<th>Weight in Portfolio</th>
+<th>Weighted Beta</th>
+</tr>
+<tr>
+<td>01</td>
+<td>ACC Limited</td>
+<td>1.22</td>
+<td>Rs.30,000/-</td>
+<td>3.8%</td>
+<td>0.046</td>
+</tr>
+<tr>
+<td>02</td>
+<td>Axis Bank Limited</td>
+<td>1.40</td>
+<td>Rs.125,000/-</td>
+<td>15.6%</td>
+<td>0.219</td>
+</tr>
+<tr>
+<td>03</td>
+<td>BPCL</td>
+<td>1.42</td>
+<td>Rs.180,000/-</td>
+<td>22.5%</td>
+<td>0.320</td>
+</tr>
+<tr>
+<td>04</td>
+<td>Cipla</td>
+<td>0.59</td>
+<td>Rs.65,000/-</td>
+<td>8.1%</td>
+<td>0.048</td>
+</tr>
+<tr>
+<td>05</td>
+<td>DLF</td>
+<td>1.86</td>
+<td>Rs.100,000/-</td>
+<td>12.5%</td>
+<td>0.233</td>
+</tr>
+<tr>
+<td>06</td>
+<td>Infosys</td>
+<td>0.43</td>
+<td>Rs.75,000/-</td>
+<td>9.4%</td>
+<td>0.040</td>
+</tr>
+<tr>
+<td>07</td>
+<td>LT</td>
+<td>1.43</td>
+<td>Rs.85,000/-</td>
+<td>10.6%</td>
+<td>0.152</td>
+</tr>
+<tr>
+<td>08</td>
+<td>Maruti Suzuki</td>
+<td>0.95</td>
+<td>Rs.140,000/-</td>
+<td>17.5%</td>
+<td>0.166</td>
+</tr>
+<tr>
+<td colspan="3"><span style="background-color: #ffa9ba;">Total</span></td>
+<td><span style="background-color: #ffa9ba;">Rs.800,000/-</span></td>
+<td><span style="background-color: #ffa9ba;">100%</span></td>
+<td><span style="background-color: #ffa9ba;">1.223</span></td>
+</tr>
+</tbody>
+</table>
+<p>The sum of the weighted beta is the overall <strong>Portfolio Beta</strong>. For the portfolio above the beta happens to be 1.223. This means, if Nifty goes up by 1%, the portfolio as a whole is expected to go up by 1.223%. Likewise if Nifty goes down, the portfolio is expected to go down by 1.223%.</p>
+<p><strong>Step 2 – Calculate the hedge value</strong></p>
+<p>Hedge value is simply the product of the Portfolio Beta and the total portfolio investment</p>
+<p>= 1.223 * 800,000</p>
+<p>= <strong>978,400/-</strong></p>
+<p>Remember this is a long only portfolio, where we have purchased these stocks in the spot market. We know in order to hedge we need to take a counter position in the futures markets. The hedge value suggests, to hedge a portfolio of Rs.800,000/- we need to short futures worth Rs.978,400/-. This should be quite intuitive as the portfolio is a ‘high beta portfolio’.</p>
+<p><strong>Step 3 – Calculate the number of lots required</strong></p>
+<p>At present Nifty futures is trading at 9025, and with the current lot size of 25, the contract value per lot works out to –</p>
+<p>= 9025 * 25</p>
+<p>= Rs.225,625/-</p>
+<p>Hence the number of lots required to short Nifty Futures would be</p>
+<p>= Hedge Value / Contract Value</p>
+<p>= 978,400 / 225625</p>
+<p>= <strong>4.33</strong></p>
+<p>The calculation above suggests that, in order to perfectly hedge a portfolio of Rs.800,000/- with a beta of 1.223, one needs to short 4.33 lots of Nifty futures. Clearly we cannot short 4.33 lots as we can short either 4 or 5 lots, fractional lot sizes are not available.</p>
+<p>If we choose to short 4 lots, we would be slightly <strong>under hedged</strong>. Likewise if we short 5 units we would be <strong>over hedged</strong>. In fact for this reason, we cannot always perfectly hedge a portfolio.</p>
+<p>Now, let as assume after employing the hedge, Nifty in fact goes down by 500 points (or about 5.5%). With this we will calculate the effectiveness of the portfolio hedge. Just for the purpose of illustration, I will assume we can short 4.33 lots.</p>
+<p><strong>Nifty Position</strong></p>
+<p>Short initiated at – 9025</p>
+<p>Decline in Value – 500 points</p>
+<p>Nifty value – 8525</p>
+<p>Number of lots – 4.33</p>
+<p>P &amp; L = 4.33 * 25 * 500 = <strong>Rs.54,125</strong></p>
+<p>The short position has gained Rs.54,125/-. We will look into what could have happened on the portfolio.</p>
+<p><strong>Portfolio Position</strong></p>
+<p>Portfolio Value = Rs.800,000/-</p>
+<p>Portfolio Beta = 1.223</p>
+<p>Decline in Market = 5.5%</p>
+<p>Expected Decline in Portfolio = 5.5% * 1.233 = 6.78%</p>
+<p>= 6.78% * 800000</p>
+<p>= <strong>Rs. 54,240</strong></p>
+<p>Hence as you can see, one hand the Nifty short position has gained Rs.54,125 and on the other hand the long portfolio has lost Rs.54,240/-. As a net result, there is no loss or gain (please ignore the minor difference) in the net position in the market. The loss in portfolio is offset by the gain in the Nifty futures position.</p>
+<p>With this, I hope you are now in a position to understand how you could hedge a portfolio of stocks. I would encourage you to replace 4.33 lots by either 4 or 5 lots and run the same exercise.</p>
+<p>Finally before we wrap up this chapter, let us revisit two unanswered questions that we posted when we discussed hedging single stock positions. I will repost the same here for your convenience –</p>
+<ol>
+<li>What if I have a position in a stock that does not have a futures contract? For example South Indian Bank does not have a futures contract, does that mean I cannot hedge a spot position in South Indian Bank?</li>
+<li>The example considered, the spot position value was Rs.570,000/-, but what if I have relatively small positions – say Rs.50,000/- or Rs.100,000/- is it possible to hedge such positions?</li>
+</ol>
+<p>Well, you can hedge stocks that do not have stock futures. For example assume you have Rs.500,000/- worth of South Indian Bank. All you need to do is multiply the stocks beta with the investment value to identify the hedge value. Assuming the stock has a beta of 0.75, the hedge value would be</p>
+<p>500000*0.75</p>
+<p>= 375,000/-</p>
+<p>Once you arrive at this, directly divide the hedge value by the Nifty’s contract value to estimate the number of lots required (to short) in the futures market, and hence with this you can hedge the spot position safely.</p>
+<p>As far as the 2<sup>nd</sup> question goes – no, you cannot hedge small positions whose value is relatively lower than the contract value of Nifty. However you can hedge such positions by employing options. We will discuss the same when we take up options.</p>
+<hr/>
+<h3 id="key-takeaways-from-this-chapter"><a class="header" href="#key-takeaways-from-this-chapter">Key takeaways from this chapter</a></h3>
+<ol>
+<li style="list-style-type: none;">
+<ol>
+<li>Hedging allows you to insulate your market position against any adverse movements in the market</li>
+<li>When you hedge your loss in the spot market it is offset by gains in the futures market</li>
+<li>There are two types of risk – systematic and unsystematic risk</li>
+<li>Systematic risk is risk specific to macroeconomic events. Systematic risk can be hedged. Systematic risk is common to all stocks</li>
+<li>Unsystematic risk is the risk associated with the company. This is unique to each company. Unsystematic risk cannot be hedge, but can be diversified</li>
+<li>Research suggests, beyond 21 stocks unsystematic risk cannot be diversified any further</li>
+<li>To hedge a single stock position in spot we simply have to take a counter position in the futures market. But the extent of spot value and futures value have to be same</li>
+<li>Market beta is always +1.0</li>
+<li>Beta measures the sensitivity of stock
+<ol type="a">
+<li>Stock with Beta of less than 1 is called low beta stock</li>
+<li>Stocks with Beta higher than 1 is called a high beta stock</li>
+</ol>
+</li>
+<li>One can easily estimate the stock beta in MS Excel by employing the ‘Slope’ function</li>
+<li>To hedge a portfolio of stocks we need to follow the following steps
+<ol type="a">
+<li>Calculate individual stock beta</li>
+<li>Calculate individual weightage of each stock in the portfolio</li>
+<li>Estimate the weighted beta of each stock</li>
+<li>Sum up the weighted beta to get the portfolio beta</li>
+<li>Multiply the portfolio beta with Portfolio value to get the hedge value</li>
+<li>Divide the hedge value by Nifty Contract Value to get the number of lots</li>
+<li>Short the required number of lots in the futures market</li>
+</ol>
+</li>
+<li>Remember a perfect hedge is difficult to construct, for this reason we are forced to either under hedge or over hedge.</li>
+</ol>
+</li>
+</ol>
+<div class="clear"> </div>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                                                    <a rel="prev" href="../../mds/Futures+Trading/10.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+                                                    <a rel="next" href="../../mds/Futures+Trading/12.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                                    <a rel="prev" href="../../mds/Futures+Trading/10.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+                                    <a rel="next" href="../../mds/Futures+Trading/12.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                            </nav>
+
+        </div>
+
+        
+        
+        
+                <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+        
+                <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        
+    </body>
+</html>
